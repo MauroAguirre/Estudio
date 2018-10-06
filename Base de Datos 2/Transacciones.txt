@@ -1,0 +1,14 @@
+Transacciones
+
+Propiedades de ACID
+tipos implicita eplicita
+transacciones anidadas (@@trancount)
+Save tran
+punto de confirmacion
+estados de una transaccion
+scheduler
+niveles de aislamiento
+	-Aisladas
+	-Repetible
+	-Confirmada
+	-Desconfirmada

@@ -1,0 +1,10 @@
+Matrices y vetores
+*Una matriz es una estructura que permita almacenar informacion
+*Si la matriz tiene sola una dimension, se la denomina vector o arreglo
+*En java se declaran los vetores utilizando corchetes[], tras la declaracion del tipo de datos que contendria el valor
+*Por ejemplo, esta seria la declaracion de un vector de numeros enteros enteros: int vectorDeNumeros[]; vector de numeros
+int vector[]=new int[5];
+int vector[]= {1,2,3,4,5};
+Matrices son arreglos multidimensionales
+int matriz[][] = new int[3][3];
+int matriz[][] = {{1,2,3},{1,2,3},{1,2,3}};

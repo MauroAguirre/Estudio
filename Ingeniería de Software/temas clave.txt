@@ -1,0 +1,20 @@
+definicion de ingenieria de software:
+	-aplicacion disciplinada de principios de ingenieria, ciencia y matematica, metodos
+y herramientas a la produccion economica de software.[Humphrey]
+
+Calidad del software:
+	-es un conjunto de caracteristicas de un producto que satisfacen las necesidades de
+los clientes y, en consecuencia, hacen satisfactorio el producto
+	-consiste en no tener deficiencias en el producto o en el proceso
+
+calidad e ingenieria de software (SUPER IMPORTANTE)
+	-la ingenieria de software, como disciplina tecnologica y gerencial, busca aplicar
+ciertas practicas a la produccion de software, con el objetivo de lograr la calidad
+
+ciclos de vida:
+	Cascada
+	Incremental
+	Evolutivo
+	Scrum
+
+Caracteristicas de calidad (TRIPLE IMPORTANTE)

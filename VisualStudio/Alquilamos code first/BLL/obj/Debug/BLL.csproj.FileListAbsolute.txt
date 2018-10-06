@@ -1,0 +1,12 @@
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\BLL.dll
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\BLL.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\obj\Debug\BLL.dll
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\obj\Debug\BLL.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\BLL\bin\Debug\es\EntityFramework.resources.dll

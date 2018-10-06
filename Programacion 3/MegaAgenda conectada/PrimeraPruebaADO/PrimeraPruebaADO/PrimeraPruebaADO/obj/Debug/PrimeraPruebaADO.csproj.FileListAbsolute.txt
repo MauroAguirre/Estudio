@@ -1,0 +1,12 @@
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.exe.config
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.csprojResolveAssemblyReference.cache
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.exe
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.pdb
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.exe
+D:\Adriana\P3\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.pdb
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.exe.config
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.exe
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.pdb
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.exe
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\bin\Debug\PrimeraPruebaADO.pdb
+C:\ort\p3\semanas\01\PrimeraPruebaADO\PrimeraPruebaADO\PrimeraPruebaADO\obj\Debug\PrimeraPruebaADO.csprojResolveAssemblyReference.cache

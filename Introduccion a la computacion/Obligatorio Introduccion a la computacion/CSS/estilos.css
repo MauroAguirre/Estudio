@@ -1,0 +1,27 @@
+table{width:100%}
+#div1{
+	background:Bisque;
+	border-bottom: solid black 1px;
+}
+#div2{
+	background:BlanchedAlmond;
+	border-bottom: solid black 1px;
+}
+#div3{
+	background:Beige;
+	border-bottom: solid black 1px;
+}
+#div4{
+	background:FloralWhite;
+	border-bottom: solid black 1px;
+}
+body{
+	background-color: Beige;
+}
+.tablita{
+	text-align: center;
+	position: relative;
+}
+#tblPuntoFlotante1,.table-bordered{
+	border:solid black 1px;
+}

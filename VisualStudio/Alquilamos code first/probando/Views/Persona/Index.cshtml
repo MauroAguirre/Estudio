@@ -1,0 +1,72 @@
+﻿@model probando.Models.Personas
+<!--  model IEnumerable<Dominio.Cliente>  --> 
+<h2>Usuario</h2>
+<h3>Ingreso de clientes</h3>
+<form action="/Persona/AltaCliente" method="post">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" class="form-control" id="txtNombreCli">
+    </div>
+    <div class="form-group">
+        <label for="documento">Documento</label>
+        <input type="number" name="documento" class="form-control" id="txtDocumentoCli">
+    </div>
+    <input type="submit" value="Agregar cliente" />
+</form>
+<h3>Ingreso de funcionarios</h3>
+<form action="/Persona/AltaFuncionario" method="post">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" class="form-control" id="txtNombreFun">
+    </div>
+    <div class="form-group">
+        <label for="documento">Documento</label>
+        <input type="number" name="documento" class="form-control" id="txtDocumentoFun">
+    </div>
+    <input type="submit" value="Agregar funcionario" />
+</form>
+<h3>Clientes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Documento</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in @Model.clientes)
+        {
+            <tr>
+                <form action="/Persona/Modificar">
+                    <td>@item.ID</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Documento</td>
+                    <td><input type="submit" value="Borrar" /></td>
+                    <td><a type="button">Editar</a>Proximamente en cines</td>
+                </form>
+            </tr>
+        }
+    </tbody>
+</table>
+<h3>Funcionarios</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Documento</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model.funcionarios)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Nombre</td>
+                <td>@item.Documento</td>
+                <td><a type="button">Editar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

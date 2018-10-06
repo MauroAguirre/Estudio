@@ -1,0 +1,174 @@
+Complejo
+clientes : List<Cliente>
+alojamientos : List<Alojamiento>
+registros : List<Registro>
+AltaAlojamiento(Alo : Alojamiento) : void
+AltaCliente(cli : cliente) : void
+AltaRegistro(reg : registro) : void
+CostoFinalEstadia(cod : int) : int
+EstadiaContratados(int : cel, fec : DateTime, fec2 : DateTime) :List<Registro>
+AlojamientosMenosDemandados() : List<Alojamiento>
+
+Registro
+cliente : Cliente
+fecha : DateTime
+cantDias : int
+alojamiento : Alojamiento
+cantHoras : int
+codigo : int
+ultimoCodigo : int      //esto va subrayado
+CostoEstadia(cod : int) int
+DarCliente() : cliente
+DarAlojamiento89 : Alojamiento
+
+cliente
+cedula : int
+pais : string
+mail : string
+telefono : int
+EsYruguayo() : bool
+
+Alojamiento
+codigo : string
+ubicacion : string
+cantidadHuespedes : int
+Costo() : int
+
+ApartHotel
+costo : int
+garaje : bool
+Costo() : int
+
+Cabana
+cantidadAmbientes : int
+aireCon : bool
+parillero : bool
+costo : int
+Costo(dia : int) : int
+
+
+
+
+
+public class Cabana
+{
+	public int Costo(int dia)
+	{
+		int total = costo + (300 * cantidadAmbientes);
+		if(aireCon)
+			total += 150*dia;
+		if(!parillero)
+			total -= total*0,1;
+		return total;
+	}
+}
+
+public class ApartHotel
+{
+	public int Costo()
+	{
+		if(garaje)
+			return costo + costo*0,2;
+		return costo;
+	}
+}
+
+public class Registro : IComparable			//La funcion esta es para comparar las listas
+{
+	public CostoEstadia(int cod)
+	{
+		int costo = alojamiento.Costo()*cantDias;
+		if(cliente.EsUruguayo() == true)
+			return costo -= costo * 0,15;
+		return costo;
+	}
+	public Cliente DarCliente()
+	{
+		return cliente;
+	}
+	public Alojamiento DarAlojamiento()
+	{
+		return alojamiento;
+	}
+	public int CompareTo(registro reg)		//La funcion esta es para comparar las listas
+	{
+		return reg.cantHoras.Compareto(this.cantHoras);
+	}
+}
+
+public class Cliente
+{
+	public bool EsUruguayo()
+	{
+		if(pais = "Uruguay")
+			return true;
+		return false;
+	}
+}
+
+public class Complejo
+{
+	public int CostoTotalEstadia(int cod)
+	{
+		foreach(Registro registro in registros)
+		{
+			if(registro.codigo = cod)
+				return registro.CostoEstadia();
+		}	
+	}
+	public List<Registro> EstadiaContratados(int cel, DateTime fec, DateTime fec2)
+	}
+		List<Registro> auxEstadia = new List<Registor>();
+		foreach(Registro registro in registros)
+		{
+			if(registro.fecha > fec && registro.fecha < fec2)
+			{
+				if(registro.DarCliente().cedula = cel)
+					auxEstadia.Add(registro);
+			}
+		}
+		return auxEstadia.sort();	//devuelvo la lista y uso el sort para devolverla ordenada
+	}
+	public List<Alojamiento> AlojamientoMenosDemandado()
+	{
+		List<Alojamiento> auxAlojamiento = New List<Alojamiento>();
+		int min = 0;		//este min va a ser el alojamiento con menos registros;
+		int min2 = 0;		//este min se usa para comparar
+		bool primera = true;
+		foreach(Alojamiento alo in alojamientos)
+		{
+			if(primera)
+			{
+				foreach(Registro registro in registros)
+				{
+					if(registro.DarAlojamiento == alo)
+						min++;
+				}
+				auxAlojamiento.Add(alo);
+				PRIMERA = FALSE;		
+			}
+			else
+			{
+				foreach(Registro registro in registros)
+				{
+					if(registro.DarAlojamiento == alo)
+						min2++;
+				}
+				if(min==min2)
+				{
+					auxAlojamiento.Add(alo);
+				}
+				else
+				{
+					if(min2<min)
+					{
+						auxAlojamiento.Clear();
+						auxAlojamiento.Add(alo);
+						min=min2;
+					}
+				}
+				min2 = 0;
+			}
+		}
+	}
+}

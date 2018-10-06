@@ -1,0 +1,14 @@
+Limpiar consola 
+	cls
+Mostrar bases de datos
+	show dbs
+Crear coleccion
+	db.createCollection("Personas")
+Borrar colecciones
+	db.Personas.drop()
+Agregar objeto a coleccion
+	db.Personas.insert({Nombre:"Pepe",Edad:32})
+Mostrar objetos en coleccion
+	db.Personas.find()
+	db.Personas.find().pretty()
+	db.Personas.find({Nombre:"Raul"}).pretty()

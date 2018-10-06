@@ -1,0 +1,10 @@
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\ProbandoORM.exe.config
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\ProbandoORM.exe
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\ProbandoORM.pdb
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\EntityFramework.SqlServer.dll
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\bin\Debug\EntityFramework.SqlServer.xml
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\obj\Debug\ProbandoORM.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\obj\Debug\ProbandoORM.exe
+G:\Estudio\VisualStudio\ProbandoORM\ProbandoORM\obj\Debug\ProbandoORM.pdb

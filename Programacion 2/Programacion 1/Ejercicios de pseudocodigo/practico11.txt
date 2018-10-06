@@ -1,0 +1,14 @@
+clave:cadena
+intentos:numerico
+clave="eureka"
+intentos=3
+repetir 
+	Escribir "Ingrese la clave"
+	Leer clave
+	si clave!="eureka"
+		intentos-1
+	fin si
+hasta clave="eureka" o intentos=0
+si intentos=0
+	Escribir "Se acabaron los intentos"
+fin si

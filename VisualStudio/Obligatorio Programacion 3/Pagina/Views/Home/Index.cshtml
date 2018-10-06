@@ -1,0 +1,16 @@
+﻿@model string
+<h1>Ingreso de usuarios</h1>
+<form action="/Home/Ingresar" method="post">
+    <div class="form-group">
+        <label for="Mail">Mail</label>
+        <input class="form-control" type="text" name="Mail" id="txtNombre" />
+    </div>
+    <div class="form-group">
+        <label for="Contra">Contraseña</label>
+        <input class="form-control" type="password" name="Contra" id="txtContra" />
+    </div>
+    <div class="form-group">
+        <label for="Agregar"> @Model </label>
+        <input name="Agregar" class="btn-default" value="Ingresar" type="submit" />
+    </div>
+</form>

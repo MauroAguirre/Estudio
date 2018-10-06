@@ -1,0 +1,1 @@
+G:\Estudio\VisualStudio\EF code first\EF code first\bin\Debug\EF code first.exe.config

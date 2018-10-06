@@ -1,0 +1,12 @@
+F:\VisualStudio\Television\Television\bin\Debug\Television.exe.config
+F:\VisualStudio\Television\Television\obj\Debug\Television.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Television\Television\bin\Debug\Television.exe
+F:\VisualStudio\Television\Television\bin\Debug\Television.pdb
+F:\VisualStudio\Television\Television\obj\Debug\Television.exe
+F:\VisualStudio\Television\Television\obj\Debug\Television.pdb
+G:\VisualStudio\Television\Television\bin\Debug\Television.exe.config
+G:\VisualStudio\Television\Television\obj\Debug\Television.exe
+G:\VisualStudio\Television\Television\obj\Debug\Television.pdb
+G:\VisualStudio\Television\Television\bin\Debug\Television.exe
+G:\VisualStudio\Television\Television\bin\Debug\Television.pdb
+G:\VisualStudio\Television\Television\obj\Debug\Television.csprojResolveAssemblyReference.cache

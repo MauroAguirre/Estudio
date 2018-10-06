@@ -1,0 +1,201 @@
+podriamos agregar una variable activo en deportista para cuando lo borramos para que no desaparescan los puntos
+
+create database Obligatorio_Base_de_Datos;
+use Obligatorio_Base_de_Datos;
+
+create table Equipos(Nro_Equipo int primary key, Nombre varchar(45) unique, Ciudad varchar(45), Direccion varchar(45),Telefono int, Cant_Jugadores int);
+create table Deportistas(Nro_Deportista int primary key identity(1,1), ci int, Nombre varchar(45) unique,Apellido varchar(45), Peso int, Altura int, Edad int, Nro_Equipo int foreign key references Equipos(Nro_Equipo));
+create table Partidos(id_Partido int primary key identity(1,1), Nro_Club_Loc int foreign key references Equipos(Nro_Equipo), Nro_Club_Vis int foreign key references Equipos(Nro_Equipo), Tantos_Loc int, Tantos_Vis int);
+create table Deportista_Partidos(id_Partido int foreign key references Partidos(id_Partido),Nro_Deportista int Foreign key references Deportistas(Nro_Deportista),Triples int, Dobles int, Simples int, Faltas int, primary key(id_Partido, Nro_Deportista));
+
+Crear Alta Jugadores
+
+create procedure Alta_Deportista @ci int,@Nombre varchar(45),@Apellido varchar(45), @Peso int, @Altura int, @Edad int, @Nro_Equipo int as
+begin
+	insert into Deportistas (ci , Nombre,Apellido,Peso, Altura, Edad, Nro_Equipo) values(@ci ,@Nombre ,@Apellido ,@Peso , @Altura , @Edad , @Nro_Equipo )
+end
+
+Modificar Jugador
+
+create procedure Modificar_Deportista @ci int,@Nombre varchar(45),@Apellido varchar(45), @Peso int, @Altura int, @Edad int, @Nro_Equipo int as
+begin
+	update Equipos set cant_Jugadores -=1 where Nro_Equipo = (select Nro_Equipo from Deportista where ci = @ci);
+	update Deportistas set Nombre = @Nombre,Apellido = @Apellido, Peso = @Peso, Altura = @Altura, Edad = @Edad, Nro_Equipo = @Nro_Equipo where ci = @ci;
+	update Equipos set cant_Jugadores += 1 where Nro_Equipo = @Nro_Equipo;
+end
+
+Borrar Jugador
+
+create procedure Borrar_Deportista @ci int as
+begin
+	
+	begin try
+		update Equipos set cant_Jugadores -=1 where Nro_Equipo = (select Nro_Equipo from Deportista where ci = @ci);
+		delete Deportista where ci = ci;
+		commit tran
+	end try
+	begin catch
+		Rollback tran
+		print 'Tiene partidos';
+	end catch
+end
+
+//////////////////////////////
+Agregar y modificar Partidos
+
+create procedure Partidos_AddMod @id_Partido int, @Nro_Deportista int, @Triples int,@Dobles int,@Simples int,@Faltas int as
+begin
+	begin try
+		insert into Deportista_Partidos(id_Partido,Nro_Deportista,Triples,Dobles,Simples,Faltas) values(@id_Partido,@Nro_Deportista,@Triples,@Dobles,@Simples,@Faltas);
+		print 'Tabla agregada';
+	end try
+	begin catch
+		Rollback tran
+		update Deportista_Partidos set Triples = @Triples, Dobles = @Dobles, Simples = @Simples,Faltas = @Faltas where id_Partido = @id_Partido and Nro_Deportista = @Nro_Deportista;
+		print 'Tabla modificada';
+	end catch
+end
+
+Realizar un trigger que incremente la cantidad de tantos en la tabla partidos,
+tanto para el equipo visitante como para el local
+
+create trigger Agregar_Tantos on Deportista_Partidos after insert as
+begin
+	if((select Deportistas.Nro_Equipo from Deportistas where Nro_Deportista = (select Nro_Deportista from inserted))=
+	 (select Partidos.Nro_Club_Loc from Partidos where Partidos.id_Partido = (select id_Partido from inserted)))
+		update Partidos set Tantos_Loc+= ((select Triples from inserted)*3)+((select Dobles from inserted)*2)+((select Simples from inserted)*1) where id_Partido= (select id_Partido from inserted);
+	else
+		update Partidos set Tantos_Vis+= ((select Triples from inserted)*3)+((select Dobles from inserted)*2)+((select Simples from inserted)*1) where id_Partido= (select id_Partido from inserted);
+end
+
+create trigger Modificar_Tantos on Deportista_Partidos after update as
+begin
+	if((select Deportistas.Nro_Equipo from Deportistas where Nro_Deportista = (select Nro_Deportista from inserted))=
+	 (select Partidos.Nro_Club_Loc from Partidos where Partidos.id_Partido = (select id_Partido from inserted)))
+		begin
+		update Partidos set Tantos_Loc+= ((select Triples from inserted)*3)+((select Dobles from inserted)*2)+((select Simples from inserted)*1) where id_Partido= (select id_Partido from inserted);
+		update Partidos set Tantos_Loc-= ((select Triples from deleted)*3)+((select Dobles from deleted)*2)+((select Simples from deleted)*1) where id_Partido= (select id_Partido from deleted);
+		end
+	else
+		begin
+		update Partidos set Tantos_Vis+= ((select Triples from inserted)*3)+((select Dobles from inserted)*2)+((select Simples from inserted)*1) where id_Partido= (select id_Partido from inserted);
+		update Partidos set Tantos_Vis-= ((select Triples from deleted)*3)+((select Dobles from deleted)*2)+((select Simples from deleted)*1) where id_Partido= (select id_Partido from deleted);
+		end
+end
+
+create trigger Quitar_Tantos on Deportista_Partidos after delete as
+begin
+	if((select Deportistas.Nro_Equipo from Deportistas where Nro_Deportista = (select Nro_Deportista from inserted))=
+	 (select Partidos.Nro_Club_Loc from Partidos where Partidos.id_Partido = (select id_Partido from inserted)))
+		update Partidos set Tantos_Loc-= ((select Triples from deleted)*3)+((select Dobles from deleted)*2)+((select Simples from deleted)*1) where id_Partido= (select id_Partido from deleted);
+	else
+		update Partidos set Tantos_Vis-= ((select Triples from deleted)*3)+((select Dobles from deleted)*2)+((select Simples from deleted)*1) where id_Partido= (select id_Partido from deleted);
+end
+
+Realizar una función almacenada que reciba los parámetros para ingresar un nuevo jugador en la tabla correspondiente, utilice una transacción para asegurarse de que los datos en ambas tablas queden almacenados.
+
+create trigger Aumentar_Jugadores on Deportistas after insert as
+begin
+	update Equipos set Cant_Jugadores+=1 where Nro_Equipo = (select Nro_Equipo from inserted);
+end
+
+Seleccionar el/los deportistas que han tenido la mayor cantidad de tantos en el campeonato para 
+un equipo dado por parámetro. (Tener en cuenta triples, dobles, simples y como se almacenan estos datos)
+
+create procedure Deportista_mayor_tantos_Equipo @Nro_Equipo int as
+begin
+	select tab1.Nro_Deportista,tab1.ci,tab1.Altura,tab1.Edad,tab1.Nombre,tab1.Apellido,tab1.Peso,max(tab1.puntos)as puntos from 
+(select Deportistas.Nro_Deportista, ci, Nombre,Apellido, Peso, Altura, Edad,sum(
+((Triples * 3) + (Dobles * 2) + Simples))as puntos from Deportista_Partidos inner join 
+Deportistas on Deportista_Partidos.Nro_Deportista = Deportistas.Nro_Deportista
+ group by Deportistas.Nro_Deportista, ci, Nombre,Apellido, Peso, Altura, Edad)
+  as tab1 group by tab1.Nro_Deportista,tab1.ci,tab1.Altura,tab1.Edad,tab1.Nombre,tab1.Apellido,tab1.Peso
+end
+
+Seleccionar los datos de los deportistas que siempre han salido por 5 faltas en los partidos.
+
+create procedure Deportistas_Faltas as
+begin
+	select * from (select sum(Faltas)as Faltas,Deportistas.Altura,Deportistas.ci,Deportistas.Edad,Deportistas.Nombre,Deportistas.Apellido
+	,Deportistas.Nro_Deportista,Deportistas.Nro_Equipo,Deportistas.Peso
+	 from Deportista_Partidos inner join Deportistas on 
+	Deportista_Partidos.Nro_Deportista = Deportistas.Nro_Deportista
+	group by Deportistas.Altura,Deportistas.ci,Deportistas.Edad,Deportistas.Nombre,Deportistas.Apellido
+	,Deportistas.Nro_Deportista,Deportistas.Nro_Equipo,Deportistas.Peso)as tabla1 where tabla1.Faltas >= 5;
+end
+
+
+//
+
+create procedure Deportista_Jugo_Mas as
+begin
+	select max(tab1.Partidos) as Partidos,Deportistas.Nombre,Deportistas.Apellido,Deportistas.Altura,Deportistas.ci,Deportistas.Edad,Deportistas.Nro_Deportista,Deportistas.Nro_Equipo,Deportistas.Peso,
+	tab2.Nombre_Equipo,tab2.Cant_Jugadores,tab2.Ciudad,tab2.Direccion,tab2.Telefono
+ 	from Deportistas inner join (select Equipos.Cant_Jugadores,Equipos.Ciudad,Equipos.Direccion,Equipos.Nombre as Nombre_Equipo,Equipos.Telefono,Equipos.Nro_Equipo from Equipos) as tab2 
+	 on Deportistas.Nro_Equipo = tab2.Nro_Equipo inner join 
+	(select count(*) as Partidos,Deportista_Partidos.Nro_Deportista  from Deportista_Partidos group by Deportista_Partidos.Nro_Deportista) as tab1 on tab1.Nro_Deportista = Deportistas.Nro_Deportista
+	group by Deportistas.Nombre,Deportistas,Apellido,Deportistas.Altura,Deportistas.ci,Deportistas.Edad,Deportistas.Nro_Deportista,Deportistas.Nro_Equipo,Deportistas.Peso,
+	tab2.Nombre_Equipo,tab2.Cant_Jugadores,tab2.Ciudad,tab2.Direccion,tab2.Telefono;
+end
+//
+
+create procedure Equipos_Sin_Jugador_Apellido @Apellido varchar(45) as
+begin
+	 select Equipos.Nombre,Equipos.Nro_Equipo,Equipos.Cant_Jugadores,Equipos.Ciudad,Equipos.Direccion,Equipos.Telefono from Equipos EXCEPT
+	 (select Equipos.Nombre,Equipos.Nro_Equipo,Equipos.Cant_Jugadores,Equipos.Ciudad,Equipos.Direccion,Equipos.Telefono from Equipos inner join 
+	(select * from Deportistas where Deportistas.Apellido = @Apellido) as Depor on Equipos.Nro_Equipo = Depor.Nro_Equipo group by 
+	 Equipos.Nombre,Equipos.Nro_Equipo,Equipos.Cant_Jugadores,Equipos.Ciudad,Equipos.Direccion,Equipos.Telefono);
+end
+//
+
+create procedure Equipos_Con_Puntos as
+begin
+	select tablota.*,(tablota.Simples_totales+tablota.Dobles_Totales*2+tablota.Triples_Totales*3)as Puntos_Totales from 
+	(select Equipos.Nro_Equipo,sum(Deportista_Partidos.Simples) as Simples_totales
+	,sum(Deportista_Partidos.Dobles) as Dobles_Totales
+	,sum(Deportista_Partidos.Triples) as Triples_Totales
+	 from Deportista_Partidos inner join Deportistas on Deportista_Partidos.Nro_Deportista = Deportistas.Nro_Deportista
+	inner join Equipos on Equipos.Nro_Equipo = Deportistas.Nro_Equipo
+	group by Equipos.Nro_Equipo,Deportista_Partidos.Simples,Deportista_Partidos.Dobles,Deportista_Partidos.Triples) as tablota
+end
+
+
+
+
+
+//
+
+//
+//insertacion
+insert into Equipos(Nro_Equipo,Nombre,Ciudad,Direccion,Telefono,Cant_Jugadores)values(12,'Loquitos','Loquilandia','mad y crazy',7686754,0);
+insert into Equipos(Nro_Equipo,Nombre,Ciudad,Direccion,Telefono,Cant_Jugadores)values(23,'ReLoquitos','Loquilandia','mad y umad',1121342,0);
+insert into Equipos(Nro_Equipo,Nombre,Ciudad,Direccion,Telefono,Cant_Jugadores)values(38,'Tigres','Selva','ramitas y arboles',5416222,0);
+insert into Equipos(Nro_Equipo,Nombre,Ciudad,Direccion,Telefono,Cant_Jugadores)values(49,'Los Peces','Mar','salado y saladito',8786432,0);
+
+exec Alta_Deportista 4782120,'Raul','Aguirre', 80, 2, 29, 12;
+exec Alta_Deportista 1233232,'Pedro','Perez', 84, 1, 34, 12;
+exec Alta_Deportista 4984723,'Alex','De Leon', 90, 2, 27, 12;
+
+exec Alta_Deportista 7657534,'Tito','Sanches', 88, 2, 30, 23;
+exec Alta_Deportista 1231232,'Mujica','Rada', 77, 1, 31, 23;
+exec Alta_Deportista 5435535,'Tabare','Aguirre', 100, 1, 30, 23;
+exec Alta_Deportista 4342234,'Lautaro','Caceres', 98, 1, 40, 23;
+
+exec Alta_Deportista 8849333,'Carlos','Toledo', 96, 1, 33, 38;
+exec Alta_Deportista 2398475,'Fabian','Caceres', 97, 2, 44, 38;
+
+exec Alta_Deportista 1233234,'Alejo','Lopez',89, 2, 34, 49;
+exec Alta_Deportista 8768656,'Matias','Alvira', 90, 1, 36, 49;
+exec Alta_Deportista 5345445,'Max','Fernandez',89 ,1, 26, 49;
+exec Alta_Deportista 3458723,'Kain','Rivero', 79,2, 27, 49;
+exec Alta_Deportista 4398675,'Santiago','Concalvez', 81, 2, 28, 49;
+
+insert into Partidos(Nro_Club_Loc,Nro_Club_Vis,Tantos_Loc,Tantos_Vis)values(12,23,0,0);
+insert into Partidos(Nro_Club_Loc,Nro_Club_Vis,Tantos_Loc,Tantos_Vis)values(38,49,0,0);
+
+insert into Deportista_Partidos(id_Partido,Nro_Deportista,Triples, Dobles, Simples, Faltas )values(1,1,2,2,2,6);
+insert into Deportista_Partidos(id_Partido,Nro_Deportista,Triples, Dobles, Simples, Faltas )values(1,2,2,2,2,6);
+insert into Deportista_Partidos(id_Partido,Nro_Deportista,Triples, Dobles, Simples, Faltas )values(1,5,1,0,2,8);
+insert into Deportista_Partidos(id_Partido,Nro_Deportista,Triples, Dobles, Simples, Faltas )values(2,11,5,2,0,0);
+
+

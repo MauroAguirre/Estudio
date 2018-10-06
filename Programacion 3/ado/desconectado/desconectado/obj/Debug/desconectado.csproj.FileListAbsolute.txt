@@ -1,0 +1,9 @@
+D:\p3\ado\desconectado\desconectado\bin\Debug\desconectado.exe.config
+D:\p3\ado\desconectado\desconectado\bin\Debug\desconectado.exe
+D:\p3\ado\desconectado\desconectado\bin\Debug\desconectado.pdb
+D:\p3\ado\desconectado\desconectado\obj\Debug\desconectado.csprojResolveAssemblyReference.cache
+D:\p3\ado\desconectado\desconectado\obj\Debug\desconectado.exe
+D:\p3\ado\desconectado\desconectado\obj\Debug\desconectado.pdb
+G:\Estudio\Programacion 3\ado\desconectado\desconectado\bin\Debug\desconectado.exe.config
+G:\Estudio\Programacion 3\ado\desconectado\desconectado\obj\Debug\desconectado.exe
+G:\Estudio\Programacion 3\ado\desconectado\desconectado\obj\Debug\desconectado.pdb

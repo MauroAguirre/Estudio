@@ -1,0 +1,14 @@
+C:\p2_2017\cei\capas\capas\bin\Debug\capas.exe.config
+C:\p2_2017\cei\capas\capas\bin\Debug\capas.exe
+C:\p2_2017\cei\capas\capas\bin\Debug\capas.pdb
+C:\p2_2017\cei\capas\capas\bin\Debug\dominio.dll
+C:\p2_2017\cei\capas\capas\bin\Debug\dominio.pdb
+C:\p2_2017\cei\capas\capas\obj\Debug\capas.csprojResolveAssemblyReference.cache
+C:\p2_2017\cei\capas\capas\obj\Debug\capas.exe
+C:\p2_2017\cei\capas\capas\obj\Debug\capas.pdb
+F:\VisualStudio\Obligatorio con capas\capas\bin\Debug\capas.exe.config
+F:\VisualStudio\Obligatorio con capas\capas\obj\Debug\capas.exe
+F:\VisualStudio\Obligatorio con capas\capas\obj\Debug\capas.pdb
+F:\VisualStudio\Obligatorio dividido\capas\bin\Debug\capas.exe.config
+F:\VisualStudio\Obligatorio dividido\capas\obj\Debug\capas.exe
+F:\VisualStudio\Obligatorio dividido\capas\obj\Debug\capas.pdb

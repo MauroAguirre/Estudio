@@ -1,0 +1,19 @@
+table,td,tr{
+	border: solid black 2px;
+	background: skyblue;
+}
+.medio{
+	text-align:center;
+}
+div{
+	background:white;
+}
+body{
+	background-color:white;
+}
+#MenuPrincipal{
+	text-align:center;
+}
+#currito{
+	text-align:center;
+}

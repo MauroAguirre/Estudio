@@ -1,0 +1,84 @@
+Temas parcial
+transacciones (propiedades,tipos)
+
+Una transaccion son multiples cunsultas que el cliente espera que sea tratada como una sola unidad
+
+ACID
+Atomicidad:la tramsaccion se ejecuta una vez, y como resultado se realiza el trabajo en su totalidad, o no se erealiza
+Coherencia:mantiene la coherencia de los datos auqnue los transforme
+Aislamiento:permite que las transacciones concurrentes se comporten como si cada una fuera la unica a ejecutar en el sistema
+Durabilidad:si se logra hacer una transaccion , los datos se matienen en el sistema aunque falle despues la transaccion
+
+tres tipos de transsacciones
+autocommit:cada instruccion individual es una transaccion
+explicitas:comienza con una instruccion begin transaction y finaliza con un commit o rollback
+implicitas:se inicia implicitamente cuando otra a terminado pero cada transacion se completa explicitamente con una instruccion commit o rollback
+
+transacciones anidadas (comportamiento,tres cosas que tienen)
+
+Son transacciones dentro de otras transacciones, pueden empezar una nueva sin haber terminado la anterior
+rollback tran: esta instruccion deshace todas las transacciones internas hasta la mas externa
+commit tran:reduce el valor de @@trancount en 1 cuan este valor es igual a 1, commit tran hace que todos los cambios en la base de datos sean permanentes
+save tran:crea un punto de almacenamiento en la transaccion.sirve para deshacer una transsaccion en curso hasta ese punto
+
+transacciones concurrentes(cuando ocurre,posibles problemas,operaciones en conflicto, ejercicio grafo de precedencia )
+
+son transaccione que ocurren al mismo tiempo.
+
+actualizacion perdida:dos transacciones leen un dato luego la primera lo actualiza y la segunda tambien
+problema de actualizacion temporal llamada lectura sucia: una traccion lee lo que escribe otra pero esta retrocede
+problema de resumen incorrecto:una transaccion lee y escribe a, luego otra lee a y b(son iguales),luego la primera transaccion lee y escribe b
+
+hay operaciones en conflico cuando dos transacciones diferentes si tienen acceso al mismo elemento o intentan escribir dicho elemento
+
+T1: L(Y) E(Y) C
+T2: L(Z) L(Y) E(Z) C
+
+PLAN L1(Y) L2(Z) E1(Y) L2(Y) E1(Z) C1 C2 
+
+tecnicas de bloqueo(tipos de bloqueo, tecnicas,ejercicio)
+
+compartido: solo para operaciones de lectura, pueden acceder pero no modificar
+exclusivo: para operaciones de escritura, ninguna otra transaccion puede acceder a los datos bloqueados
+
+T1: L(A), L(B), E(A) C
+BC(A) L(A) BC(B) L(B) BC(A) D(B) E(A) D(A) C
+
+tecnicas de recuperacion(comportamiento en bitacora,tipos de actualizacion)
+
+La bitacora es un registro donde se guarda informacion sobre los cambios realizados en la base de datos, si esta llega a fallar y no se realizaron los cambios estos quedaran guardados en la bitacora para despues ser recuperrados
+Se guardan los datos cuando llegan a un checkpoint
+ACtualizacion diferida:primero se actualiza la bitacora y luego la base de datos
+actualizacion inmediata:se actualiza la base de datos antes de actualizar la bitacora
+
+seguridad(dos fases, roles,grant,deny,revoke,coneptos)
+
+Autenticacion:proceso por el cual el servidor se registra en el sistema
+validacion de permisos:controlas las actividades que puede desarrolar el usuario tras su autenticacion
+existen diferentes roles dependiende de que hace el usuario en la base de datos, pueden ser que solo modifique o lea datos etc,
+Se le puede asignar permisos par adeterminar las acciones que puede hacer el usuario
+grant es para darle permisos
+revoke para quitarle permisos
+deny: es para denegarle un permiso
+
+base de datos distribuidas(replicacion conponentes fragmentacion,tipos forma de acceso casual y servidor vinculado,conceptos)
+
+se trata de datos dipersos en varias bases de datos diferentes, administrador por varios dbms distinos, ejecutados en varias maquinas diferentes, sistemas operativos y redes de comunicacion distintas.
+Las formas de distribuir son en:
+replica: se crea una copia identica en lugares diferentes
+fragmentacion: se divide en varios fragmentos, y cada uno se guarda en lugares diferentes,
+esta informacion se puede dividir horizontalmente o verticalmente
+Se pueden vincular los servidores para acceder entre ellos mas seguido mas facilmente
+o se puede hacer un acceso de forma casual para acceder una vez
+Elementos: Publicador distribuidor, subscriptor(puede ser de inserciom:da la actualizaciones a los subcriptores,extraccion:permite a los subcriptores iniciar la duplicacion)
+Tipos de duplicacion:instantanea,transacciones,combinacion
+
+datawarehouse(conecpto,datamining,cudo olap,tipos,dimension y medida)
+
+Repositorio completo de datos de la empresa donde se almacena datos estrategico,tactico y operativos,generalmente en una plataforma de hardware aislada que permite realizar la toma de deciciones de forma agil.
+Datamart: repositorio parcial de datos de la empresa.
+Datamining:es el conjunto de tecnicas y tecnologias que permiten explorar grandes bases de datos,de manera automatica o semiautomatica, con el objetivo de encontrar patrones repetitivos,tenencias o reglas que epliquen el comportamiento de los datos en un determinado contexto
+cubo olap: es una estructura multidimensional que permite analizar bases de datos relacionales de gran volumen y bariedad con una gran agilidad y rapidez, reduciendo enormemente el tiempo y los recursos empleados en el analisis
+dos operaciones baiscas: rotar y taladrar
+Esquema en estrella 
+esquema en copo de nieve

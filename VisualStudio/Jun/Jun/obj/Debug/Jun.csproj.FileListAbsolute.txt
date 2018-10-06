@@ -1,0 +1,11 @@
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.csprojResolveAssemblyReference.cache
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.csproj.CoreCompileInputs.cache
+F:\Estudio\VisualStudio\Jun\Jun\bin\Debug\Jun.exe.config
+F:\Estudio\VisualStudio\Jun\Jun\bin\Debug\Jun.exe
+F:\Estudio\VisualStudio\Jun\Jun\bin\Debug\Jun.pdb
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.exe
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.pdb
+F:\Estudio\VisualStudio\Jun\Jun\bin\Debug\Jun.exe.manifest
+F:\Estudio\VisualStudio\Jun\Jun\bin\Debug\Jun.application
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.exe.manifest
+F:\Estudio\VisualStudio\Jun\Jun\obj\Debug\Jun.application

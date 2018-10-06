@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<head>
+		
+	</head>
+	<body>
+		<h1>Encuesta de opinion sobre esta copa america</h1>
+		<i>Campos requeridos indicados con un asterisco(*)</i>
+		<fieldset>
+			<legend>Usuario</legend>
+			Alias
+			<input type="text" id="txtAlias" placeholder="Tu primer alias"/>(*)<br>
+			Contraseña
+			<input type="text" id="txtContrasela" placeholder="Contraseña"/>(*)
+		</fieldset>
+		<fieldset>
+			<legend>Datos Personales</legend>
+			Nombre
+			<input type="text" id="txtNombre" placeholder="Tu primer nombre"/>
+			<hr color="black" size="1">
+			Primer Apellido
+			<input type="text" id="txtPrimAp" placeholder="Primer Apellido">(*)<br>
+			Segundo Apellido
+			<input type="text" id="txtSegAp" placeholder="Segundo Apellido">
+			<hr color="black" size="1">
+			Hombre <input type="radio" id="rdoHombre" name="sexo" checked="true"/>
+			Mujer <input type="radio" id="rdoMujer" name="sexo"/>
+			<hr color="black" size="1">
+			Teléfono <input type="Number" id="txtNumero" placeholder="123456789"/>(*)<br>
+			Mail <input type="text" id="txtMail" placeholder="Tu@email.com"/>
+		</fieldset>
+		<fieldset>
+			<legend>Participación por remera</legend>
+			Taller 
+			<Select id="sltTalle">
+				<option value="1">S</option>
+				<option value="2" selected>M</option>
+				<option value="3">L</option>
+				<option value="4">XL</option>
+			</select>
+			Color
+			<input type="color" id="clrColor"/>(*)
+			<hr color="black" size="1">
+			Me gustaria que mi remera este firmada por los jugadores de la seleccion de
+			<Select id="sltPaises">
+				<option value="1">Argentina</option>
+				<option value="2">Brasil</option>
+				<option value="3">Paraguay</option>
+				<option value="4" selected>Uruguay</option>
+			</select>
+			<hr color="black" size="1">
+			Fecha de la solicitud <input type="date" id="dteSolicitud"/>
+			<input type="button" id="btnRecuerdos" value="No recuerdo que dia es hoy"/>
+		</fieldset>
+		Subir mi foto festejando <input type="button" value="Seleccionar archivo"/> Ningun archivo seleccionado
+		<fieldset>
+			<legend>Opinión sobre el campeonato</legend>
+			Fue justo el resultado <input type="radio"  id="rdoSi" name="justo" checked/>
+			No fue justo el resultado <input type="radio"  id="rdoNo" name="justo"/>
+			<hr color="black" size="1">
+			Mejor Jugador Uruguayo <input type="text" id="txtJugador"/>
+			<hr color="black" size="1">
+			Comentario para la organización<br>
+			<textarea rows="10" cols="180"></textarea><br>
+			1<input type="range" id="rngRango"/>10<br>
+			Conformidad con la organización (1 nada conforme - 10 muy conforme)
+		</fieldset>
+		Deseo participar por entradas para la proxima copa del mundo
+		<input type="checkbox" id="ckbParticipar" name="deseo" checked/><br>
+		Deseo poder trabajar en la proxima copa del mundo
+		<input type="checkbox" id="ckbTrabajar" name="deseo"/><br>
+		<input type="button" id="btnEnviar" value="Enviar"/>
+		<input type="button" id="btnBorrar" value="Borrar"/>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			var oportunidades = 3;
+			var codigo;
+			var logrado=false;
+			do{
+				codigo = prompt("Ingrese el codigo");
+				if (codigo=="eureka")
+					logrado=true;
+				oportunidades-=1;
+			}while(oportunidades>0 && logrado==false)
+			if(logrado==true)
+				alert("Contraseña correcta");
+			else
+				alert("Contraseña incorrecta, ya no hay mas intentos");
+		</script>
+	</head>
+	<body>
+		<a href="Index.html">Volver al inicio</a>
+	</body>
+</html>

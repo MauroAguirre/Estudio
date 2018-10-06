@@ -1,0 +1,6 @@
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\obj\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Dominio\obj\Debug\Dominio.pdb

@@ -1,0 +1,50 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MantenimientoDirecciones.js")"></script>
+}
+<h2>Administracion de direcciones</h2>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label>Ingrese un nombre</label>
+            </td>
+            <td>
+                <input type="text" id="txtNomDir" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Ingresar" onclick="Agregar()" class="btn btn-default" />
+            </td>
+            <td>
+                <label id="lblDirRes"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Regresar", "Regresar", null, new { @class = "btn btn-default" });
+            </td>
+        </tr>
+    </table>
+</form>
+<h2>Direcciones</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Borrar</td>
+        </tr>
+    </thead>
+    <tbody id="tbyDir">
+        @{
+            foreach (var dir in ViewBag.direcciones)
+            {
+                <tr>
+                    <td>@dir.Nombre</td>
+                    <td><input type="button" value="Borrar" onclick="Borrar('@dir.Nombre',this)" class="btn btn-default" /></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+G:\Programacion 3\Alquiler\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+G:\Programacion 3\Alquiler\BLL\bin\Debug\BLL.dll
+G:\Programacion 3\Alquiler\BLL\bin\Debug\BLL.pdb
+G:\Programacion 3\Alquiler\BLL\bin\Debug\DAL.dll
+G:\Programacion 3\Alquiler\BLL\bin\Debug\Dominio.dll
+G:\Programacion 3\Alquiler\BLL\bin\Debug\EntityFramework.dll
+G:\Programacion 3\Alquiler\BLL\bin\Debug\DAL.pdb
+G:\Programacion 3\Alquiler\BLL\bin\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\BLL\bin\Debug\EntityFramework.xml
+G:\Programacion 3\Alquiler\BLL\obj\Debug\BLL.dll
+G:\Programacion 3\Alquiler\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,108 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MantenimientoEnviosUsuario.js")"></script>
+}
+<input type="hidden" value="@ViewBag.mail" id="userMail">
+<h2>Administracion de envios de usuario</h2>
+<table class="table">
+    <tr>
+        <td>
+            <label>Fecha de envio</label>
+        </td>
+        <td>
+            <input type="date" id="dteEnvio" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Fecha de llegada</label>
+        </td>
+        <td>
+            <input type="date" id="dteLlegada" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Direcciones del usuario</label>
+        </td>
+        <td>
+            <input type="text" id="txtDir" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Paquetes para el envio</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="form-control" id="sltPaq">
+                    @{
+                        if (ViewBag.paquetes.Count == 0)
+                        {
+                            <option value="-1">No hay paquetes ingresados</option>
+                        }
+                        else
+                        {
+                            foreach (var paq in ViewBag.paquetes)
+                            {
+                                <option value="@paq.ID" id="@paq.ID">@paq.ID @paq.Descripcion @paq.Cantidad @paq.Tamano</option>
+                            }
+                        }
+                    }
+                </select>
+            </div>
+        </td>
+        <td>
+            <input value="Agregar paquete" type="button" onclick="AgregarPaq()" class="btn btn-default" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input value="Agregar envio" type="button" onclick="AgregarEnv()" class="btn btn-default"/>
+        </td>
+        <td>
+            @Html.ActionLink("Regresar", "Regresar", null, new { @class = "btn btn-default" });
+        </td>
+        <td>
+            <label id="lblRes">Agrege un envio</label>
+        </td>
+    </tr>
+</table>
+<h2>Paquetes para el envio</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Descripcion</td>
+            <td>Cantidad</td>
+            <td>Tamaño</td>
+            <td>Borrar</td>
+        </tr>
+    </thead>
+    <tbody id="tbyPaq"></tbody>
+</table>
+<h2>Lista de envios</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Fecha de envio</td>
+            <td>Fecha de llegada</td>
+            <td>Direcciones del usuario</td>
+            <td>Estado</td>
+            <td>Lugar del paquete</td>
+        </tr>
+    </thead>
+    <tbody id="tbyEnv"></tbody>
+    @{
+        foreach (var env in ViewBag.envios)
+        {
+            <tr>
+                <td>@env.FechaEnvio</td>
+                <td>@env.FechaLlegada</td>
+                <td>@env.DireccionUsuario</td>
+                <td>@env.Estado</td>
+                <td>@env.DireccionLugar</td>
+            </tr>
+        }
+    }
+</table>

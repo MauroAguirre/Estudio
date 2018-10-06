@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appConsola", "appConsola\appConsola.csproj", "{BEB03508-9747-4259-8B14-75B7653B1095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{A9241675-CB24-408F-BAAC-3363B6139320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEB03508-9747-4259-8B14-75B7653B1095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB03508-9747-4259-8B14-75B7653B1095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB03508-9747-4259-8B14-75B7653B1095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB03508-9747-4259-8B14-75B7653B1095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9241675-CB24-408F-BAAC-3363B6139320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9241675-CB24-408F-BAAC-3363B6139320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9241675-CB24-408F-BAAC-3363B6139320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9241675-CB24-408F-BAAC-3363B6139320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

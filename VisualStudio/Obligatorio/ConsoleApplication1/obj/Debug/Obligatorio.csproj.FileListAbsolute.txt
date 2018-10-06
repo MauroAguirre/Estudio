@@ -1,0 +1,10 @@
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.csprojResolveAssemblyReference.cache
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.csproj.CoreCompileInputs.cache
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\bin\Debug\Obligatorio.exe.config
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\bin\Debug\Obligatorio.exe
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\bin\Debug\Obligatorio.pdb
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.exe
+F:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.pdb
+G:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\bin\Debug\Obligatorio.exe.config
+G:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.exe
+G:\Estudio\VisualStudio\Obligatorio\ConsoleApplication1\obj\Debug\Obligatorio.pdb

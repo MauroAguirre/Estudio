@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Mi primera pagina</title>
+		<META name="author"content="Mauro">
+		<META name="description"content="esto es para practicar">	<!--tambien se usa "keywords" y "copyright"-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<script>
+			var nombre;
+			alert("Hola mundo");	//Esto es un alert
+			document.write("Wopa");	/*
+			esto es un comentario
+			*/
+			document.write('<u>Hola</u><br>');
+			nombre = prompt("Ingrese su nombre");
+			alert(nombre);
+		</script>
+	</head>
+	<body  background="IMG/Imagen.jpg"   >		<!--se puede cambiar el fondo con bgcolor="color" adentro de body-->
+		<a name="inicio"></a>		<!-- en vez de name se puede poner id-->
+		<i><b>!Hola Mundo!</b></i>	<!--b es negrita y i es cursiva-->
+		<br>	<!--esto es un espacio-->
+		<font color="red">!Hola!</font>		<!--obsoleto, usemos <p>-->
+		<h1>Encabezado h1</h1>
+		<h2>Encabezado h2</h2>
+		<h3>Encabezado h3</h3>
+		<tt>el tt</tt><br>
+		<u>subrayado</u><br>
+		<s>tachado</s><br>
+		<big>grande</big><br>
+		<small>chiquito</small><br>
+		A<sub>subindice</sub><br>
+		2<sup>subindice/exponente</sup><br>
+		<p align="center" class="negrita cursiva tachado" id="titulo">Bienvenidos a P1</p>		<!--se puede usar right left center o justify-->
+		<!-- atributos face="tipo de fuente" size="tamaño" color="color" align="ubicacion"-->
+		<hr color="black" align="left" width="66%" size="3">		<!-- una linea-->
+		<a href="https://www.google.com.uy/"><IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"></a><br>		<!--etiqueta para poner imagenes y title para al poner el mouse sobre el objeto diga algo-->
+		<IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"><br>
+		<IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"><br>
+		<IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"><br>
+		<IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"><br>
+		<IMG src="IMG/G.png" title="google" width="8%" border="1" height="120"><br>
+		<!-- atributos width height border align(left right top middle bottom) alt-->
+		<a href="Paginas/contactos.html"><IMG src="IMG/contactos.jpg" title="google" width="8%" border="1" height="120"></a>		<!-- para ir a otras paginas-->
+		<a href="#inicio">Subir</a>
+		<a href="https://www.youtube.com/?hl=es-419">Youtube</a>
+		<a href="mailto:adesosa@uni.ort.edu.uy">Enviar correo a Andrés</a>
+		<ul type="disc">		<!-- ul y li para usar viñetas-->
+			<li> Programacion 1 </li>
+			<li> Introducciòn a la computacion </li>
+		</ul>
+		<ol value="1">	<!-- ol y li para usar viñetas numeradas-->
+			<li><ol valure="2">
+				<li>Paso1</li>
+				<li>Paso2</li>
+			</ol>
+			<li> Introducciòn a la computacion </li>
+		</ol>
+		<div style="border-style:solid; border-width:4px; border-color:blue; font-size:48; color:white; background-color:red; height:30%; width:40%" > <!--div es como un mini body-->
+			hola <br>
+			chau <br>
+		</div>
+		<table   cellspacing="15px"width="100%" style="background-color:pink" >		<!--esto es para mostrar una tabla-->
+			<thead style="color:blue;border-color:red;background-color:white">
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+				</tr>
+			</thead>
+			<tbody  cellpadding="100px" style="font-size:18;background-color:orange" >
+				<tr>
+					<td colspan="2">Pepe</td>
+					<th valign="top" rowspan="2">20</th>
+				</tr>
+				<tr >
+					<td align="center">Roberto</td>
+					<td>De leon</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

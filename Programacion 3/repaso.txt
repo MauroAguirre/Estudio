@@ -1,0 +1,12 @@
+localhost = 127.0.0.1 = Mi PC
+linux /etc/hosts
+c:/windows/system32/drivers/etc/hosts
+https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
+https://msdn.microsoft.com/es-es/library/bb738708(v=vs.110).aspx
+
+Install-Package EntityFramework
+enable-migrations
+add-migration nombre
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
+(localdb)\v11.0

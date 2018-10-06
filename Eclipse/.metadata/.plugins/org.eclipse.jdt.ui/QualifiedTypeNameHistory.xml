@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.rmi.registry.Registry"/>
+<fullyQualifiedTypeName name="java.rmi.registry.LocateRegistry"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerdistribuido.common.server.ServerApp"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerdistribuido.common.Observer"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerdistribuido.common.Observable"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerdistribuido.server.ServerAppImpl"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerrmi.common.Observer"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerrmi.common.Observable"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="uy.edu.cei.observerrmi.common.ServerApp"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Server"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.LoginPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.MainWindow"/>
+<fullyQualifiedTypeName name="java.rmi.RemoteException"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.UsuarioModel"/>
+<fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
+<fullyQualifiedTypeName name="java.rmi.Remote"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.MainPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Server.Impl.UsuarioServiceMemoryImpl"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="Algoritmo2.Stack"/>
+</qualifiedTypeNameHistroy>

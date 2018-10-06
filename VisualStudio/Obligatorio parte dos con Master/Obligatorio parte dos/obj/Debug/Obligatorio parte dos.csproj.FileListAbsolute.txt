@@ -1,0 +1,59 @@
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.pdb
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.dll
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.pdb
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+J:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\bin\Dominio.pdb
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+G:\VisualStudio\Obligatorio parte dos\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.dll
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.pdb
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+J:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+F:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.pdb
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+G:\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll.config
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.dll
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Obligatorio parte dos.pdb
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.dll
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\bin\Dominio.pdb
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.csproj.CoreCompileInputs.cache
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.dll
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Obligatorio parte dos\obj\Debug\Obligatorio parte dos.pdb

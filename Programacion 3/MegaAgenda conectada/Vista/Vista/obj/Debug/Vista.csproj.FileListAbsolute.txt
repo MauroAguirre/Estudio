@@ -1,0 +1,8 @@
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\bin\Debug\Vista.exe.config
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\bin\Debug\Vista.exe
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\bin\Debug\Vista.pdb
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\obj\Debug\Vista.csprojResolveAssemblyReference.cache
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\obj\Debug\Vista.exe
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\obj\Debug\Vista.pdb
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\bin\Debug\ClassLibrary1.dll
+C:\ort\p3\semanas\01\doscapas\Vista\Vista\bin\Debug\ClassLibrary1.pdb

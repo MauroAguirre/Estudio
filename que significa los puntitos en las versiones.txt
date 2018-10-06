@@ -1,0 +1,7 @@
+1.2.3
+Primer numero:
+	Cambiamos las librerias, cambia una funcion, puede explotar el programa si se cambia
+Segundo numero:
+	features -> se agregan caracteristicas, cosas
+Tercer numero:
+	minor change->bugs,improvements

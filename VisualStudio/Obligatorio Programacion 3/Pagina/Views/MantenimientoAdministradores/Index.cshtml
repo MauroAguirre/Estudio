@@ -1,0 +1,70 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MantenimientoAdministradores.js")"></script>
+}
+<h2>Mantenimiento de administradores</h2>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label>Nombre</label>
+            </td>
+            <td>
+                <input type="text" id="txtNombre" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Mail</label>
+            </td>
+            <td>
+                <input type="text" id="txtMail" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Contraseña</label>
+            </td>
+            <td>
+                <input type="password" id="pwdContra" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Ingresar" onclick="Agregar()" class="btn btn-default"/>
+            </td>
+            <td>
+                <label id="lblRes"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Regresar", "Regresar", null, new { @class = "btn btn-default" });
+            </td>
+        </tr>
+    </table>
+</form>
+<h2>Administradores</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Mail</td>
+            <td>Contraseña</td>
+        </tr>
+    </thead>
+    <tbody id="tbyDir">
+        @{
+            foreach (var adm in ViewBag.administradores)
+            {
+                <tr>
+                    <td>@adm.Nombre</td>
+                    <td>@adm.Mail</td>
+                    <td>@adm.Contra</td>
+                    <td><input type="button" value="Modificar" onclick="Modificar('@adm.Mail',this)" class="btn btn-default" /></td>
+                    <td><input type="button" value="Borrar" onclick="Borrar('@adm.Mail',this)" class="btn btn-default" /></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

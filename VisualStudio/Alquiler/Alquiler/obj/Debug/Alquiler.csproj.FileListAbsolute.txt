@@ -1,0 +1,31 @@
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\Alquiler.exe.config
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\Alquiler.exe
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\Alquiler.pdb
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\DAL.dll
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\Dominio.dll
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\EntityFramework.dll
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\DAL.pdb
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\Dominio.pdb
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\bin\Debug\EntityFramework.xml
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\obj\Debug\Alquiler.csprojResolveAssemblyReference.cache
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\obj\Debug\Alquiler.exe
+c:\users\cei\documents\visual studio 2013\Projects\Alquiler\Alquiler\obj\Debug\Alquiler.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\Alquiler.exe.config
+G:\Programacion 3\Alquiler\Alquiler\obj\Debug\Alquiler.exe
+G:\Programacion 3\Alquiler\Alquiler\obj\Debug\Alquiler.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\Alquiler.exe
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\Alquiler.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\DAL.dll
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\Dominio.dll
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\EntityFramework.dll
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\DAL.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\EntityFramework.xml
+G:\Programacion 3\Alquiler\Alquiler\obj\Debug\Alquiler.csprojResolveAssemblyReference.cache
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\BLL.dll
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\BLL.pdb
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\EntityFramework.SqlServer.dll
+G:\Programacion 3\Alquiler\Alquiler\bin\Debug\EntityFramework.SqlServer.xml
+G:\Estudio\VisualStudio\Alquiler\Alquiler\bin\Debug\Alquiler.exe.config
+G:\Estudio\VisualStudio\Alquiler\Alquiler\obj\Debug\Alquiler.exe
+G:\Estudio\VisualStudio\Alquiler\Alquiler\obj\Debug\Alquiler.pdb

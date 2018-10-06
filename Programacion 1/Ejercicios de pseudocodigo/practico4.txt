@@ -1,0 +1,4 @@
+niños:numerico
+niñas:numerico
+Escribir "Ingrese la cantidad de niños y luego la cantidad de niñas del curso"
+Escribir "El porcentaje de niños es de " + (niños*100)/(niños+niñas) + "y el porcentaje de niñas es de " + (niñas*100)/(niñas+niños)

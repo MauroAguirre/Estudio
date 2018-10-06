@@ -1,0 +1,73 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MantenimientoEnviosAdministrador.js")"></script>
+}
+<h2>Administracion de envios de administrador</h2>
+<table class="table">
+    <tr>
+        <td>
+            <label>Estado</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="form-control" id="sltEst">
+                    <option value="Abierto">Abierto</option>
+                    <option value="En transito">En transito</option>
+                    <option value="Entregado">Entregado</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Direcciones</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="form-control" id="sltDir">
+                    @{
+                        foreach (var dir in ViewBag.direcciones)
+                        {
+                            <option value="@dir.Nombre">@dir.Nombre</option>
+                        }
+                    }
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Regresar", "Regresar", null, new { @class = "btn btn-default" });
+        </td>
+        <td>
+            <label id="lblRes">Agrege un envio</label>
+        </td>
+    </tr>
+</table>
+<h2>Lista de envios</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Fecha de envio</td>
+            <td>Fecha de llegada</td>
+            <td>Direcciones del usuario</td>
+            <td>Estado</td>
+            <td>Lugar del paquete</td>
+            <td>Modificar</td>
+        </tr>
+    </thead>
+    <tbody id="tbyEnv"></tbody>
+    @{
+        foreach (var env in ViewBag.envios)
+        {
+            <tr>
+                <td>@env.FechaEnvio</td>
+                <td>@env.FechaLlegada</td>
+                <td>@env.DireccionUsuario</td>
+                <td>@env.Estado</td>
+                <td>@env.DireccionLugar</td>
+                <td><input type="button" value="Modificar" onclick="CambiarEnvio('@env.ID')" class="btn btn-default" /></td>
+            </tr>
+        }
+    }
+</table>

@@ -1,0 +1,17 @@
+select * from cursos;
+select * from alumnos;
+select * from alumnos where Nombre like"a%";
+select count(*) from alumnos;
+select Nombre, Tel from profesores;
+select ID, Nombre from cursos;
+select max(ID) from cursos;
+select max(ID), Nombre from cursos;
+select Nombre, Tel from alumnos;
+select NombreProfesor from cursos where id=1;
+select * from profesores where Nombre = (select NombreProfesor from cursos where id=1);
+select CI from alumnos where CI in (select IDAlumno from alumnoscursando where IDCUrso=1);
+select * from alumnos where CI in (select IDAlumno from alumnoscursando where IDCUrso=1);
+select IDCurso from alumnoscursando where IDAlumno= 211321;
+select * from cursos where ID = (select IDCurso from alumnoscursando where IDAlumno = 5416514); 
+select Nombre, Tel from alumnos where Ci in (select IDAlumno from alumnoscursando where IDcurso in (select Id from cursos where NombreProfesor = "Pabloo"));
+select Nombre, Tel from profesores where Nombre in (select NombreProfesor from cursos where id in (select idCurso from alumnoscursando where IdAlumno in (select Ci from alumnos where nombre = "pepe")));

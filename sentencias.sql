@@ -1,0 +1,10 @@
+select * from profesores inner join cursos on profesores.Nombre = cursos.NombreProfesor where profesores.nombre = "Yasuo";
+select * from cursos inner join (select * from alumnos inner join alumnoscursando on alumnos.Ci = alumnoscursando.CiAlumno) as tablita on cursos.Id = tablita.idcurso;
+select tablita.nombre,tablita.ci,tablita.telefono,id,nombreprofesor,duracion from cursos inner join (select ci,nombre,telefono,idcurso from alumnos inner join alumnoscursando on alumnos.Ci = alumnoscursando.CiAlumno) as tablita on cursos.Id = tablita.idcurso;
+select cialumno,'ci' as ciss from alumnoscursando union select nombre,'nombre' from alumnos;
+select nombre,'tipo?' as curso from cursos union select nombre,'chabon' from alumnos;
+select count(*) cantidad,'cursos' as Quien from cursos union select count(*) alumnos,'alumnos' from alumnos;
+select * from alumnos inner join alumnoscursando on alumnos.ci = alumnoscursando.cialumno order by idcurso asc;
+select count(*) from alumnos inner join alumnoscursando on alumnos.ci = alumnoscursando.cialumno group by (ci);
+select max(ci) from alumnos inner join alumnoscursando on alumnos.ci = alumnoscursando.cialumno group by (ci);
+select min(nombre) from alumnos inner join alumnoscursando on alumnos.ci = alumnoscursando.cialumno group by (ci);

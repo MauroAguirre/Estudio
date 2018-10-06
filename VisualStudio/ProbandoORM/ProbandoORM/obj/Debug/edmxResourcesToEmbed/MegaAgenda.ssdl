@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MegaAgendaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Agenda">
+    <Key>
+      <PropertyRef Name="nombre" />
+    </Key>
+    <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="fecha_creacion" Type="date" />
+  </EntityType>
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="nombre_agenda" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="nombre_agenda" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="45" />
+    <Property Name="fecha_nacimiento" Type="date" />
+    <Property Name="mail" Type="varchar" MaxLength="45" />
+    <Property Name="pais" Type="varchar" MaxLength="45" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="nombre" />
+    </Key>
+    <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Telefono">
+    <Key>
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="contacto_id" />
+      <PropertyRef Name="nombre_agenda" />
+    </Key>
+    <Property Name="numero" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="45" />
+    <Property Name="contacto_id" Type="int" Nullable="false" />
+    <Property Name="nombre_agenda" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Contacto__nombre__0519C6AF">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="1" />
+    <End Role="Contacto" Type="Self.Contacto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="nombre" />
+      </Principal>
+      <Dependent Role="Contacto">
+        <PropertyRef Name="nombre_agenda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Telefono__09DE7BCC">
+    <End Role="Contacto" Type="Self.Contacto" Multiplicity="1" />
+    <End Role="Telefono" Type="Self.Telefono" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacto">
+        <PropertyRef Name="id" />
+        <PropertyRef Name="nombre_agenda" />
+      </Principal>
+      <Dependent Role="Telefono">
+        <PropertyRef Name="contacto_id" />
+        <PropertyRef Name="nombre_agenda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MegaAgendaModelStoreContainer">
+    <EntitySet Name="Agenda" EntityType="Self.Agenda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contacto" EntityType="Self.Contacto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Telefono" EntityType="Self.Telefono" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Contacto__nombre__0519C6AF" Association="Self.FK__Contacto__nombre__0519C6AF">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="Contacto" EntitySet="Contacto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Telefono__09DE7BCC" Association="Self.FK__Telefono__09DE7BCC">
+      <End Role="Contacto" EntitySet="Contacto" />
+      <End Role="Telefono" EntitySet="Telefono" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

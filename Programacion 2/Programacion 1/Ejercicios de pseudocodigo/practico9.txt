@@ -1,0 +1,8 @@
+valor:numerico
+suma:numerico
+suma=0
+Escribir "Ingrese un numero"
+para i=1 hasta valor [incremento1]
+	suma=suma + (i*i)
+fin para
+Escribir "La suma es de " + suma

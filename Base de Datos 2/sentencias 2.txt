@@ -1,0 +1,38 @@
+
+
+create trigger ci_bien on Empleados instead of insert as 
+	begin
+	if((select ci from inserted) < 8)
+	begin
+		RAISERROR('ci muy chica',14,1);	
+	end
+	else
+	begin
+		insert into Empleados(ci,nombre,sueldo)values((select ci from inserted),(select nombre from inserted),(select sueldo from inserted));
+	end
+	end
+
+create trigger Agregar_obras on Obras after insert as
+	begin
+		update Ciudades set Cantidad_obras+=1 where nomciud = (select nomciud from inserted); 
+	end
+
+create trigger Borrar_obras on Obras after delete as
+	begin
+		update Ciudades set Cantidad_obras-=1 where nomciud = (select nomciud from deleted); 
+	end
+
+create trigger Actualizar_obras on Obras after update as
+begin
+	update Ciudades set Cantidad_obras+=1 where nomciud = (select nomciud from inserted); 
+	update Ciudades set Cantidad_obras-=1 where nomciud = (select nomciud from deleted); 
+end
+
+alter table Ciudades add Cantidad_obras int;
+update Ciudades set Cantidad_obras = 1 where nomciud = 'Noxus';
+update Ciudades set Cantidad_obras = 1 where nomciud = 'Demacia';
+delete from Empleados where ci = 9;
+insert into Empleados (ci, nombre,sueldo) values(3,'2ssad',20);
+insert into Obras (codobr,descripcion,nomciud,capataz)values(6755,'nueva obra','Noxus','Raul');
+delete from Obras where codobr = 6755;
+update Obras set nomciud = 'Demacia' where codobr = 6755;

@@ -1,0 +1,32 @@
+alumno:cadena
+error:numerico
+practica:numerico
+problemas:numerico
+teorica:numerico
+Repetir 
+	error=1
+	Escribir "Ingrese el nombre del alumno"
+	Leer alumno
+	si alumno!=vacio
+		Escribir "Ingrese la nota de la parte practica"
+		leer practica
+		si practica >-1 y <11
+			Escribir "Ingrese la nota de los problemas"
+			leer problemas
+			si problemas  >-1 y <11
+				Escribir "Ingrese la nota de la parte teorica"
+				Leer teorica
+				si teorica >-1 y <11
+					Escribir "El resultado es: " + (practica*0.1+problemas*0.5+teorica*0.4)
+				sino
+					error=2
+			sino
+				error=2
+		sino 
+			error=2
+	sino
+		error=3
+	fin sino
+	si error=2
+		Escribir "nota incorrecta"
+mientras error!=3

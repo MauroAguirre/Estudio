@@ -1,0 +1,5 @@
+C:\ort\p3\semanas\01\doscapas\Vista\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\ort\p3\semanas\01\doscapas\Vista\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\ort\p3\semanas\01\doscapas\Vista\ClassLibrary1\obj\Debug\modelo.csprojResolveAssemblyReference.cache
+C:\ort\p3\semanas\01\doscapas\Vista\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\ort\p3\semanas\01\doscapas\Vista\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+	<head>
+		<script type="text/javascript" src="JS/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="JS/program.js"></script>
+		<script src="JS/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+		<link href="CSS/estilos.css" type="text/css" rel="stylesheet"></link>
+		<title>Patronal</title>
+		<link rel="icon" type="image/png" href="recursos/icono-taxi.png" />
+	</head>
+	<body>
+		<header>
+			<h1>Taxi-Tour</h1>
+			<h4><u>Maldonado- Punta del Este</u></h4>
+		</header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header efecto">
+					<a class="navbar-brand efecto" id="aInicio" href="#">Historia</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="dropdown efecto">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Paradas
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="aAeropuerto taxi"class="aParadas">Aeropuerto Punta del Este</a></li>
+							<li><a href="#" id="aBarrio Norte"class="aParadas">Barrio Norte</a></li>
+							<li><a href="#" id="aBiarriz" class="aParadas">Biarriz</a></li>
+							<li><a href="#" id="aCantegril" class="aParadas">Cantegril</a></li>
+							<li><a href="#" id="aCasino Nogaro" class="aParadas">Casino Nogaro</a></li>
+							<li><a href="#" id="aColonial"class="aParadas">Colonial</a></li>
+							<li><a href="#" id="aFragata" class="aParadas">La Fragata</a></li>
+							<li><a href="#" id="aHospital Maldonado"class="aParadas">Hospital Maldonado</a></li>
+							<li><a href="#" id="aLafayette" class="aParadas">Lafayette</a></li>
+							<li><a href="#" id="aLa Barra" class="aParadas">La Barra</a></li>
+							<li><a href="#" id="aLausana" class="aParadas">Lausana</a></li>		
+							<li><a href="#" id="aMaldonado Nuevo" class="aParadas">Maldonado Nuevo</a></li>
+							<li><a href="#" id="aMarco de los Reyes"class="aParadas">Marco De Los Reyes</a></li>
+							<li><a href="#" id="aOasis" class="aParadas">Oasis</a></li>
+							<li><a href="#" id="aPunta Shopping taxi" class="aParadas">Punta Shopping</a></li>
+							<li><a href="#" id="aSanatorio Mautone taxi" class="aParadas">Sanatorio Mautone</a></li>
+							<li><a href="#" id="aSan Rafael" class="aParadas">San Rafael</a></li>
+							<li><a href="#" id="aTerminal de Maldonado" class="aParadas">Terminal De Maldonado</a></li>
+							<li><a href="#" id="aTerminal Punta del Este" class="aParadas">Terminal Punta del Este</a></li>						
+						</ul>
+					</li>
+					<li class="dropdown efecto">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Zonas de interes
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="aAsociacion Espanola" class="aInteres">Asociacion Española</a></li>
+							<li><a href="#" id="aBanco de Seguros" class="aInteres">Banco de Seguros</a></li>
+							<li><a href="#" id="aBlue Cross and Blue Shield" class="aInteres">Blue Cross and Blue Shield</a></li>
+							<li><a href="#" id="aCasmu" class="aInteres">Casmu</a></li>
+							<li><a href="#" id="aCampus Municipal" class="aInteres">Campus Municipal</a></li>
+							<li><a href="#" id="aCeter" class="aInteres">Ceter</a></li>
+							<li><a href="#" id="aConsulado Argentino" class="aInteres">Consulado Argentino</a></li>
+							<li><a href="#" id="aCorreo" class="aInteres">Correo</a></li>
+							<li><a href="#" id="aCredencial" class="aInteres">Credencial</a></li>
+							<li><a href="#" id="aDNIC" class="aInteres">DNIC</a></li>
+							<li><a href="#" id="aHospital" class="aInteres">Hospital</a></li>
+							<li><a href="#" id="aIntendencia Municipal de Maldonado" class="aInteres">Intendencia Municipal de Maldonado</a></li>
+							<li><a href="#" id="aJefatura" class="aInteres">Jefatura</a></li>
+							<li><a href="#" id="aMigraciones" class="aInteres">Migraciones</a></li> 
+							<li><a href="#" id="aSanatorio Cantegril" class="aInteres">Sanatorio Cantegril</a></li>
+							<li><a href="#" id="aSanatorio Mautones" class="aInteres">Sanatorio Mautones</a></li>		
+						</ul>
+					</li>
+					<li class="dropdown efecto">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Zonas turisticas
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="aAzotea de Haedo" class="aTuristicas" >Azotea de Haedo</a></li>
+							<li><a href="#" id="aBeverly Hills" class="aTuristicas" >Beverly Hills</a></li>
+							<li><a href="#" id="aCachimba del Rey" class="aTuristicas" >Cachimba del Rey</a></li>
+							<li><a href="#" id="aCasa de la Cultura" class="aTuristicas" >Casa de la Cultura</a></li>
+							<li><a href="#" id="aCasa Pueblo" class="aTuristicas" >Casa Pueblo</a></li>
+							<li><a href="#" id="aCatedral San Fernando" class="aTuristicas" >Catedral San Fernando</a></li>
+							<li><a href="#" id="aCentro de Convenciones" class="aTuristicas" >Centro de Convenciones</a></li>
+							<li><a href="#" id="aConrad" class="aTuristicas">Conrad</a></li>
+							<li><a href="#" id="aCuartel de Dragones" class="aTuristicas" >Cuartel de Dragones (Museo Didactico Artiguista)</a></li>
+							<li><a href="#" id="aFaro Punta del Este" class="aTuristicas" >Faro Punta del Este</a></li>
+							<li><a href="#" id="aFundacion Pablo Atchugarry" class="aTuristicas" >Fundacion Pablo Atchugarry</a></li>
+							<li><a href="#" id="aIglesia de la Candelaria" class="aTuristicas" >Iglesia de la Candelaria</a></li>
+							<li><a href="#" id="aJose Ignacio" class="aTuristicas" >José Ignacio</a></li>
+							<li><a href="#" id="aLos Dedos" class="aTuristicas" >Los Dedos</a></li>
+							<li><a href="#" id="aMuseo del Mar" class="aTuristicas" >Museo del Mar</a></li>
+							<li><a href="#" id="aMuseo Mazzoni" class="aTuristicas" >Museo Mazzoni</a></li>
+							<li><a href="#" id="aMuseo Ralli" class="aTuristicas" >Museo Ralli</a></li>
+							<li><a href="#" id="aOh La Barra" class="aTuristicas" >Oh! La Barra</a></li>
+							<li><a href="#" id="aParque Jaguel" class="aTuristicas" >Parque Jagüel</a></li>
+							<li><a href="#" id="aPlaya Bikini" class="aTuristicas" >Playa Bikini</a></li>
+							<li><a href="#" id="aPlaza Artigas" class="aTuristicas" >Plaza Artigas</a></li>
+							<li><a href="#" id="aTorre del Vigia" class="aTuristicas" >Plaza Torre del Vigía</a></li>
+							<li><a href="#" id="aPlazoleta Gran Bretaña" class="aTuristicas" >Plazoleta Gran Bretaña</a></li>
+							<li><a href="#" id="aPuente de la Barra" class="aTuristicas" >Puente de la Barra</a></li>
+							<li><a href="#" id="aPuente Garzon" class="aTuristicas" >Puente Garzón</a></li>
+							<li><a href="#" id="aPuerto de Punta del Este" class="aTuristicas" >Puerto de Punta del Este</a></li>
+							<li><a href="#" id="aPunta Shopping" class="aTuristicas" >Punta Shopping</a></li>
+							<li><a href="#" id="aSan Rafael" class="aTuristicas" >San Rafael</a></li>
+						</ul>
+					</li>
+					<li class="efecto"><a id="aCostoTiempo" href="#" >Tabla general</a></li>
+					<li class="efecto"><a id="aPropioViaje" href="#">Cree su propio viaje</a></li>
+				</ul>	
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" id="aConfigurar"><span class="glyphicon glyphicon-cog"></span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<section id="Inicio">
+			<h2 id="CE">CE.PA.TA.MA.</h2>
+			<img class="tax" src="recursos/Patronal.png" />
+			<p>Centro Propietario Taximetro de Maldonado, fue fundado el 4 de abril del año 1968 y en la actualidad cuentra con personalidad juridica.</p>
+			<p>El objetivo de este servicio es dar sactisfaccion a las nececidades del traslado de los ciudadanos en forma comoda, agil, segura, mediante el pago de una tarifa en el menor tiempo posible y en las condiciones establecidas por la ley de transito y conexas.</p>
+			<p>Los automoviles con taximetro esta destinado en forma permanente al servicio publico de transporte de pasajeros y su equipaje mediante un precio determinado por las autoridades competentes.</p>
+			<p>La historia de dicho transporte data de los años 40 donde lo cual ya existian autos con alquiler con chofer. En esos años ya se trataba de comprar veiculos que brindaran una comodida acuerdo al servicio. Uno de los dos primeros taximetristas que trabajo en la ciudad de Maldonado y Punta del este fue Nicasio de los Santos y Ángel Gaggioni</p>
+			<h3>Color de vehiculo</h3>
+			<p>En los primeros años de dicho transporte los colores siempre fueron un tema a resaltar para poder identificarlos del resto de los veiculos que circulaban en la calle. Ya por la decada del 60 se compraron autos de color rojo y se pintaron sus techos de color blanco pasando despues por la decada de los 80 a un nuevo color verde con techo blanco. Y ya entrando en los años 90 se eligio un solo color para el coche que fue el marfil, y hoy en la actualidad se a definido como norma general pasar al color blanco. Esta ultima norma tomada fue una de las mas aceptadas ya que cualquier vehiculo importado o fabricado en el Uruguay ya vienen de blanco.</p>
+			<img class="tax1" src="recursos/parada-taxi-Mejillon-2.jpg"/>
+			<h3>Tarifa</h3>
+			<p>En los principios del transporte se figaba precio por distancia lo cual con el transcurir del tiempo eso fue evolucionando. Los primeros veiculos en los años 50 comenzaron a trabajar con aparatos de taximetro, dicho aparato marcaba distancia de recorrido y del tiempo, en el cual se determinaba la suma a pagar por el usuario. Para determinar el pago se implemento el sistema tabla o planilla de los valores del precio del alquier del servicio, medido en metros de recorrido y/o tiempo de espera. Y se fijo planillas diferenciales entre lo que es el trabajo diurno y nocturno.</p>
+			<h3>Normas Generales</h3>
+			<p>El Centro Propietario de Taximetros de Maldonado se rije por una comision directiva votada por sus socios activos, dicha eleccion se realiza cada dos años. Todas las resoluciones todamas por dicha institucion tienen que estar al amparo a la ordenanza general del servicio de automoviles con taximetro en el departamento de Maldonado. Esta ordenaza la hace cumplir la intendecia municipal de Maldonado. Cualquier resolucion que afecte el no cumplimiento de dichas normas la intendencia tiene potestades de sansionar a cualquier propietario de taximetro. Cabe definir tambien que en la actualidad el control sobre los aparatos de taximetro estan rejidos por el LATU. Y este es el que fija el tecnico especializado en el acondicionamiento de las tarifas en dichos aparatos.</p>
+			<figure><img class="tax" src="recursos/Gaggioni-01.jpg"/><figcaption>Parque de vehículos de alquiler apostados en la estación de Maldonado, aguardando la llegada del ferrocarril. Ángel Gaggioni, padre de Wilfredo, es el primero desde la derecha.</figcaption></figure>
+			<br>
+			<div id="myCarousel" class="carousel slide myCarousel" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="recursos/Chevrolet-Superior-1924.jpg"/>
+						</div>
+						<div class="item">
+							<img src="recursos/taxis-punta-del-este_Conrad-3.jpg"/>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+		</section>
+		<section id="Paradas">
+			<div id="Aeropuerto taxi" class="divParadas">
+				<h2>Aeropuerto Punta del Este (Radio taxi)</h2>
+				<img src="recursos/Aeropuerto-taxi.png"/>
+				<p>Telefono: 4255 9100</p>
+				<p>Direccion: Ruta Interbalnearia km. 122 - Laguna del Sauce</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp0">
+					</tbody>
+				</table>
+			</div>
+			<div id="Barrio Norte" class="divParadas">
+				<h2>Barrio Norte (Radio taxi)</h2>
+				<img src="recursos/Barrio-Norte.png"/>
+				<p>Telefono: 4223 1515</p>
+				<p>Direccion: Sarandí y Francisco Maldonado</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp1">
+					</tbody>
+				</table>
+			</div>
+			<div id="Biarriz" class="divParadas">
+				<h2>Biarriz (Radio taxi)</h2>
+				<img src="recursos/Biarriz.png"/>
+				<p>Telefono: 4224 5454</p>
+				<p>Direccion: Mario Arregui y Serafin J. Garcia</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp2">
+					</tbody>
+				</table>
+			</div>
+			<div id="Cantegril" class="divParadas">
+				<h2>Cantegril (Radio taxi)</h2>
+				<img src="recursos/Cantegril-taxi.png"/>
+				<p>Telefono: 4248 6680</p>
+				<p>Direccion: Av. Roosevelt y av. Buenos Aires</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp3">
+					</tbody>
+				</table>
+			</div>
+			<div id="Casino Nogaro" class="divParadas">
+				<h2>Casino Nogaro (Radio taxi)</h2>
+				<img src="recursos/Casino-Nogaro.png"/>
+				<p>Telefono: 4244 1018</p>
+				<p>Direccion: Av. Gorlero y calle 31</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp4">
+					</tbody>
+				</table>
+			</div>
+			<div id="Colonial" class="divParadas">
+				<h2>Colonial (Radio taxi)</h2>
+				<img src="recursos/Colonial.png"/>
+				<p>Telefono: 4222 9090</p>
+				<p>Direccion: Florida y 18 de Julio</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp5">
+					</tbody>
+				</table>
+			</div>
+			<div id="Fragata" class="divParadas">
+				<h2>La Fragata (Radio taxi)</h2>
+				<img src="recursos/La-Fragata.png"/>
+				<p>Telefono: 4244 0599</p>
+				<p>Direccion: Calle 27 y Av. Gorlero</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp6">
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div id="Hospital Maldonado" class="divParadas">
+				<h2>Hospital Maldonado (Radio taxi)</h2>
+				<img src="recursos/Maldonado-Hospital-taxi.png"/>
+				<p>Telefono: 4222 5852</p>
+				<p>Direccion: Ventura Alegre y Los Tulipanes</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp7">
+					</tbody>
+				</table>
+			</div>
+			<div id="Lafayette" class="divParadas">
+				<h2>Lafayette (Radio taxi)</h2>
+				<img src="recursos/Lafayette.png"/>
+				<p>Telefono: 4244 1123</p>
+				<p>Direccion: Av. Gorlero y Calle 11</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp8">
+					</tbody>
+				</table>
+			</div>	
+			<div id="La Barra" class="divParadas">
+				<h2>La Barra (Radio taxi)</h2>
+				<img src="recursos/La-Barra.png"/>
+				<p>Telefono: 4277 1122</p>
+				<p>Direccion: Ruta 10 y Los Remansos</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp9">
+					</tbody>
+				</table>
+			</div>
+			<div id="Lausana" class="divParadas">
+				<h2>Lausana (Radio taxi)</h2>
+				<img src="recursos/Lausana.png"/>
+				<p>Telefono: 4222 5222</p>
+				<p>Direccion: Beta y Acuario</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp10">
+					</tbody>
+				</table>
+			</div>
+			<div id="Maldonado Nuevo" class="divParadas">
+				<h2>Maldonado Nuevo (Radio taxi)</h2>
+				<img src="recursos/Maldonado-Nuevo.png"/>
+				<p>Telefono: 4222 0606</p>
+				<p>Direccion: Camino de los Gauchos y Calle 7</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp11">
+					</tbody>
+				</table>
+			</div>
+			<div id="Marco de los Reyes" class="divParadas">
+				<h2>Marco de los Reyes (Radio taxi)</h2>
+				<img src="recursos/Marco-de-los-Reyes.png"/>
+				<p>Telefono: 4222 4444</p>
+				<p>Direccion: Florida y Sarandi</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp12">
+					</tbody>
+				</table>
+			</div>
+			<div id="Oasis" class="divParadas">
+				<h2>Oasis (Radio taxi)</h2>
+				<img src="recursos/Oasis.png"/>
+				<p>Telefono: 4244 1228</p>
+				<p>Direccion: Gorlero y 28</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp13">
+					</tbody>
+				</table>
+			</div>
+			<div id="Punta Shopping taxi" class="divParadas">
+				<h2>Punta Shoppingo (Radio taxi)</h2>
+				<img src="recursos/Punta-Shopping-taxi.png"/>
+				<p>Telefono: 4248 9666</p>
+				<p>Direccion: Av. Roosevelt y parada 7</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp14">
+					</tbody>
+				</table>
+			</div>
+			<div id="Sanatorio Mautone taxi" class="divParadas">
+				<h2>Sanatorio Mautone (Radio taxi)</h2>
+				<img src="recursos/Sanatorio-Mautone-taxi.png"/>
+				<p>Telefono: 4224 8888</p>
+				<p>Direccion: Av- Roosevelt y Honduras</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp15">
+					</tbody>
+				</table>
+			</div>
+			<div id="San Rafael" class="divParadas">
+				<h2>San Rafael (Radio taxi)</h2>
+				<img src="recursos/San-Rafael.png"/>
+				<p>Telefono: 4248 2929</p>
+				<p>Direccion: Mar de Plata y Valparaiso</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp16">
+					</tbody>
+				</table>
+			</div>
+			<div id="Terminal de Maldonado" class="divParadas">
+				<h2>Terminal de Maldonado (Radio taxi)</h2>
+				<img src="recursos/Terminal-de-Maldonado.png"/>
+				<p>Telefono: 4222 5253</p>
+				<p>Direccion: Sarandi y Av. Roosevelt</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp17">
+					</tbody>
+				</table>
+			</div>	
+			<div id="Terminal Punta del Este" class="divParadas">
+				<h2>Terminal Punta del Este (Radio taxi)</h2>
+				<img src="recursos/Terminal-Punta-del-Este.png"/>
+				<p>Telefono: 4248 2691</p>
+				<p>Direccion: Bulevar Artigas</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyp18">
+					</tbody>
+				</table>
+			</div>	
+		</section>
+		<section id="Zonas de Interes">
+			<div id="Asociacion Espanola" class="divInteres">
+				<h2>Asociacion Española</h2>
+				<img src="recursos/Asociacion-Espanola.jpg" alt="">				
+				<p><b>Teléfono:</b> 1920 3550</p>
+				<p><b>Médico a Domicilio:</b> 1920 1010</p>
+				<p><b>Afiliaciones:</b> 1920 1234</p>
+				<p><b>Reservas:</b> 1920 1212</p>
+				<p><b>Confirmar Reservas:</b> 1920 1515</p>
+				<p><b>Dirección:</b> Franklin D. Roosevelt esq. Simón Bolivar</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi0">
+					</tbody>
+				</table>
+			</div>
+			<div id="Banco de Seguros" class="divInteres">
+				<h2>Banco de Seguros</h2>
+				<img src="recursos/BSE.png" alt="">				
+				<p><b>Teléfono:</b> 4222 2221</p>
+				<p><b>Dirección:</b> Ventura Alegre 784</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi1">
+					</tbody>
+				</table>
+			</div>
+			<div id="Blue Cross and Blue Shield" class="divInteres">
+				<h2>Blue Cross and Blue Shield</h2>
+				<img src="recursos/Blue.png" alt="">
+				<p><b>Teléfono:</b> 4249 1000</p>
+				<p><b>Dirección:</b> Av Rio Branco y Cuentos de la Selva</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi2">
+					</tbody>
+				</table>
+			</div>
+			<div id="Casmu" class="divInteres">
+				<h2>Casmu</h2>
+				<img src="recursos/Casmu.png" alt="">				
+				<p><b>Teléfono:</b> 4223 6309</p>
+				<p><b>Dirección:</b> Av. Joaquín de Viana entre Ventura Alegre e Ituzaingo</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi3">
+					</tbody>
+				</table>
+			</div>
+			<div id="Campus Municipal" class="divInteres">
+				<h2>Campus Municipal</h2>
+				<img src="recursos/Campus.jpg" alt="">				
+				<p><b>Teléfono:</b> 4223 6811</p>
+				<p><b>Dirección:</b> 3 de Febrero</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi4">
+					</tbody>
+				</table>
+			</div>
+			<div id="Ceter" class="divInteres">
+				<h2>Ceter</h2>
+				<img src="recursos/Casmu.png" alt="">				
+				<p><b>Teléfono:</b> 4223 6192</p>
+				<p><b>Dirección:</b> Av. Joaquín de Viana entre Ventura Alegre e Ituzaingo</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi5">
+					</tbody>
+				</table>
+			</div>
+			<div id="Consulado Argentino" class="divInteres">
+				<h2>Consulado Argentino</h2>
+				<img src="recursos/Consulado-Argentino.jpg" alt="">				
+				<p><b>Teléfono:</b> 4224 3966</p>
+				<p><b>Dirección:</b> Sarandí 822</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi6">
+					</tbody>
+				</table>
+			</div>
+			<div id="Correo" class="divInteres">
+				<h2>Correo</h2>
+				<img src="recursos/Correo.png" alt="">				
+				<p><b>Teléfono:</b> 4222 2003</p>
+				<p><b>Dirección:</b> 18 de Julio 965</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi7">
+					</tbody>
+				</table>
+			</div>
+			<div id="Credencial" class="divInteres">
+				<h2>Credencial</h2>
+				<img src="recursos/Azotea-de-Haedo.png" alt="">				
+				<p><b>Teléfono:</b> 4222 3288</p>
+				<p><b>Dirección:</b> Av. Batlle y Ordoñez esq. Hector Gutierrez Ruiz</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi8">
+					</tbody>
+				</table>
+			</div>
+			<div id="DNIC" class="divInteres">
+				<h2>DNIC</h2>
+				<img src="recursos/DNIC.png" alt="">				
+				<p><b>Teléfono:</b> 4222 1300</p>
+				<p><b>Dirección:</b> Treinta y Tres 776</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi9">
+					</tbody>
+				</table>
+			</div>
+			<div id="Migraciones" class="divInteres">
+				<h2>Migraciones</h2>
+				<img src="recursos/Azotea-de-Haedo.png" alt="">				
+				<p><b>Teléfono:</b> 4223 7624</p>
+				<p><b>Dirección:</b>  Sarandí y Ventura Alegre</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi10">
+					</tbody>
+				</table>
+			</div>
+			<div id="Hospital" class="divInteres">
+				<h2>Hospital</h2>
+				<img src="recursos/Hospital-Maldonado.jpg" alt="">
+				<p><b>Teléfono:</b> 4222 5889</p>
+				<p><b>Dirección:</b> Ventura Alegre y Aurelia Ramos de Segarra</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi11">
+					</tbody>
+				</table>
+			</div>
+			<div id="Intendencia Municipal de Maldonado" class="divInteres">
+				<h2>Intendencia Municipal de Maldonado</h2>
+				<img src="recursos/Intendencia-Maldonado.jpg" alt="">				
+				<p><b>Teléfono:</b> 4222 3333</p>
+				<p><b>Dirección:</b> Acuña de Figueroa y Burnett</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi12">
+					</tbody>
+				</table>
+			</div>
+			<div id="Jefatura" class="divInteres">
+				<h2>Jefatura</h2>
+				<img src="recursos/Jefatura.png" alt="">				
+				<p><b>Teléfono:</b> 4222 4401</p>
+				<p><b>Dirección:</b> 25 de Mayo 795</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi13">
+					</tbody>
+				</table>
+			</div>
+			<div id="Sanatorio Cantegril" class="divInteres">
+				<h2>Sanatorio Cantegril</h2>
+				<img src="recursos/Asistencial.jpg" alt="">				
+				<p><b>Teléfono:</b> 4248 9151</p>
+				<p><b>Dirección:</b> Av. Roosevelt y Dr. Antonio Abramo</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi14">
+					</tbody>
+				</table>
+			</div>
+			<div id="Sanatorio Mautones" class="divInteres">
+				<h2>Sanatorio Mautones</h2>
+				<img src="recursos/Mautone.jpg" alt="">				
+				<p><b>Teléfono:</b> 4222 5353</p>
+				<p><b>Dirección:</b> Av. Roosevelt y honduras</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Destino</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody id="tbyi15">
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section id="Zonas Turisticas">
+			<div id="Azotea de Haedo" class="divTuristicas">
+				<h2>Azotea de Haedo</h2>
+				<img src="recursos/Azotea-de-Haedo.png" alt="">
+				<p><b>Teléfono:</b> 4222 3288</p>
+				<p><b>Dirección:</b> Del Museo casi Gral. José de San Martín</p>
+				<p><b>Descripción: </b><br>Fue construida a finales de los años 50 por el ex presidente uruguayo Eduardo Víctor Haedo, con la intención de que fuese un centro cultural, usando para ello su propia residencia. Destaca, aparte de la colección artística, el hermoso jardín que circunda la propiedad. Actualmente depende del BROU y está gestionado por la Fundación Banco República.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz0">
+					</tbody>
+				</table>
+			</div>
+			<div id="Beverly Hills" class="divTuristicas">
+				<h2>Beverly Hills</h2>
+				<img src="recursos/Beverly-Hills.png" alt="">
+				<p><b>Dirección: </b>Pedragosa Sierra</p>
+				<p><b>Descripción: </b><br>En ubicación al norte de Avda. Roosevelt, a 7 minutos de la Península y del Hotel Conrad, se levantan residencias de majestuoso porte, con metrajes que exceden los 400 m² construidos y jardines de hasta 5.000 m² o aún más.</p>
+				<p>Mansiones ideales para recibir una cantidad considerable de invitados o realizar las fiestas más importantes de fin de año en Punta del Este.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz1">
+					</tbody>
+				</table>
+			</div>
+			<div id="Cachimba del Rey" class="divTuristicas">
+				<h2>Cachimba del Rey</h2>
+				<img src="recursos/Cachimba-del-Rey.png"/>
+				<p><b>Dirección:</b> Av. Cachimba del Rey, entre Alférez Cámpora y Simón Bolívar</p>
+				<p><b>Descripción:</b> <br>La Cachimba del rey es un rincón histórico de la ciudad de Maldonado (Uruguay). Toma su nombre de una cachimba que desde los inicios fundacionales de la ciudad de Maldonado hacia la segunda mitad del siglo XVIII, abasteció de agua dulce a los pobladores de la zona hasta alrededor del año 1873, siendo reutilizada durante la sequía de 1921 para paliar la falta de agua de la población. "Su agua era de gran pureza y debido a su abundancia se le llamó -del rey- según la costumbre de la época de nombrar así a todo lo que se destacara de sus pares.".</p>​
+				<blockquote>
+				<cite>"Leyenda que acuña sueños entre médanos dorados, el que bebe en la cachimba siempre vuelve a Maldonado"</cite>
+				</blockquote>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz2">
+					</tbody>
+				</table>
+			</div>
+			<div id="Casa de la Cultura" class="divTuristicas">
+				<h2>Casa de la Cultura</h2>
+				<img src="recursos/Casa-de-la-Cultura.png"/>
+				<p><b>Teléfono: </b>4222 3871</p>
+				<p><b>Dirección: </b>Rafael Perez del Puerto entre Roman Guerra y Sarandí</p>
+				<p><b>Descripción: </b><br>Desde 1875 se reconoce como público este edificio que fue sede sucesivamente de la Policía, posteriormente la Escuela Pública de Varones, y parte de la Aduana en un par de habitaciones ruinosas.</p>
+				<p>En 1877 se refaccionó para destinarlo a oficinas públicas instalándose en él la Junta Económico Administrativa cuyas oficinas consistían en: despacho, secretaría, sala, biblioteca, receptoría y depósito.</p>
+				<p>Hasta hace algunos años funcionó aquí la Intendencia Municipal.</p>
+				<p>Actualmente es un complejo que ha vuelto a ser remodelado y ampliado donde convergen la Dirección de Cultura, la Escuela Municipal de Artes Plásticas, el Museo San Fernando - inaugurado el 5 de enero de 1985 -, la biblioteca municipal y el conservatorio.</p>
+				<p>Todos los veranos se realiza un ciclo de exposiciones y durante el año, entre sus actividades es centro de reunión de diversos grupos relacionados con la cultura de Maldonado.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz3">
+					</tbody>
+				</table>
+			</div>
+			<div id="Casa Pueblo" class="divTuristicas">
+				<h2>Casa Pueblo</h2>
+				<img src="recursos/Casa-Pueblo.png"/>
+				<p><b>Teléfono:</b> 4257 8611</p>
+				<p><b>Dirección:</b> Mar Mediterraneo</p>
+				<p><b>Descripción:</b> <br>Carlos Páez Vilaró nació en la capital uruguaya de Montevideo el 1º de noviembre de 1923. Su vocación artística lo llevó a partir por el mundo y a conocer las más grandes ciudades, hasta que regresó a Uruguay en la década de 1940 para tratar de retratar el candombe (una de sus pasiones) y los ritmos afro-orientales que circulaban en el país. </p>
+				<p>Su arte lo llevó a viajar por el mundo pintando, esculpiendo y creando, por sobre todas las cosas, y entre tantas de sus creaciones apareció Casapueblo como una escultura en la cual era posible vivir, pintar y recibir a los amigos que le había dado la vida y los viajes.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz4">
+					</tbody>
+				</table>
+			</div>
+			<div id="Catedral San Fernando" class="divTuristicas">
+				<h2>Catedral San Fernando</h2>
+				<img src="recursos/Catedral-San-Fernando.png"/>
+				<p><b>Teléfono:</b> 4222 3342</p>
+				<p><b>Dirección:</b> 18 de Julio, 20000 Maldonado, Departamento de Maldonado</p>
+				<p><b>Descripción:</b> <br>La Catedral de Maldonado (también denominada Catedral de San Fernando) es una construcción neoclásica. Su construcción comenzó en 1801 y fue suspendida por las invasiones inglesas de 1806, lo que llevó a que la culminación de la obra demorara casi un siglo. Su inauguración se realizó 94 años más tarde, en el año 1895, por el arzobispo de Montevideo Mariano Soler.</p>
+				<p>Consta de una nave principal con dos campanarios y una cúpula central. A los costados y al fondo de la nave se disponen dos edificios pequeños que completan el conjunto dando forma de cruz. Su magnífico Altar Mayor es obra de Antonio Veiga, habiendo obtenido dos premios en la exposición continental realizada en Buenos Aires en 1882. </p>
+				<p>En el mismo, se encuentra la imagen de la Virgen del Carmen, la cual perteneció al vapor "Ciudad del Santander", que naufragó cerca de Isla de Lobos en el año 1829. El Marqués de Comillas, dueño del vapor siniestrado, tras salvarse del naufragio donó la imagen que hoy recibe la veneración, y en cuya base el pintor uruguayo Carlos de Santiago, reprodujo la "Ciudad del Santander". </p>
+				<p>A la izquierda del Altar se encuentra un Cristo agonizante policromado el cual, perfectamente embalado en un cajón, fue encontrado en las costas del océano, desconociéndose su destino: nadie sabe quién lo hizo, para quién era, ni de dónde vino. </p>
+				<p>Fue declarada Monumento Histórico Nacional.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz5">
+					</tbody>
+				</table>
+			</div>
+			<div id="Centro de Convenciones" class="divTuristicas">
+				<h2>Centro de Convenciones</h2>
+				<img src="recursos/Centro-de-Convenciones.jpg"/>
+				<p><b>Teléfono:</b> 4247 7477<p/>
+				<p><b>Dirección:</b> Av. Pedragosa Sierra esq. Aparicio Saravia</p>
+				<p><b>Descripción:</b> <br>Con un predio de más de 12 hectáreas, "Punta del Este Convention & Exhibition Center" ofrece una infraestructura única para la realización de eventos de toda índole. Sus salas con capacidad para más de 4.000 delegados y su pabellón de exhibiciones de 6.700 m2, sumados a los 60.000 m2 de espacio abierto para la realización de eventos al aire libre ofrecen posibilidades hasta ahora inexistentes en nuestro país.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz6">
+					</tbody>
+				</table>
+			</div>
+			<div id="Conrad" class="divTuristicas">
+				<h2>Conrad</h2>
+				<img src="recursos/Conrad.jpg"/>
+				<p><b>Teléfono:</b> 4249 1111<p/>
+				<p><b>Dirección:</b> Rambla C. Williman Parada 4 Playa Mansa</p>
+				<p><b>Descripción:</b> <br>El Conrad es un hotel y casino 5 estrellas, localizado a orillas de Playa Mansa, en el balneario de Punta del Este, Uruguay, frente a la Isla Gorriti. Cuenta con 294 habitaciones, incluyendo 41 suites de lujo.</p>
+				<p>La construcción del hotel comenzó en marzo de 1993, en la que trabajaron 1.700 obreros hasta su inauguración oficial, el día 14 de noviembre de 1997.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz7">
+					</tbody>
+				</table>
+			</div>
+			<div id="Cuartel de Dragones" class="divTuristicas">
+				<h2>Cuartel de Dragones</h2>
+				<img src="recursos/Cuartel-de-Dragones.png"/>
+				<p><b>Teléfono:</b> 42 225 378</p>
+				<p><b>Horarios:</b> 14:00 a 18:00, Martes cerrado</p>
+				<p><b>Dirección:</b> 18 de Julio y Rafael Pérez del puerto</p>
+				<p><b>Descripción:</b> <br>Comenzado a construir en 1771 por el español Bartolomé Howel. Tiene una superficie de 2500 metros cuadrados, toda una manzana hecha la base por piedra de sillería y techos de teja. Este lugar se construyo destinado a un cuartel de Cuerpo de Dragones o Blandengues. Para la historia de Maldonado se destaca el hecho de que el libertador General José Artigas pernoctara en él en el año 1797 cuando formaba parte del cuerpo de Blandengues. En la actualidad en sus instalaciones se realizan exposiciones y en la capilla ceremonias de casamiento por civil.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz8">
+					</tbody>
+				</table>
+			</div>
+			<div id="Faro Punta del Este" class="divTuristicas">
+				<h2>Faro Punta del Este</h2>
+				<img src="recursos/Faro-Punta-del-Este.jpg"/>
+				<p><b>Dirección:</b> Calle 2 de Febrero y Calle 5</p>
+				<p><b>Descripción:</b> <br>Fue construido y entregado al servicio el 17 de noviembre de 1860 por Tomás Libarena, con el fin de orientar la navegación en el Océano Atlántico y el Río de la Plata. El Faro se conserva en perfecto estado hasta el día de hoy debido a que para su construcción se utilizó una mezcla de tierra de origen volcánico procedente de Roma, más dura que el cemento. </p>
+				<p>Tiene 45 metros de altura y los prismas de cristal que constituyen el sistema de iluminación fueron traídos desde Francia, funciona a electricidad y en caso de emergencia a gas de acetileno. Tiene una altura focal de 44 mts; alcance geográfico de 18 millas, alcance lumínico de 11 millas, intensidad luminosa de 43.000 candelas y emite 2 destellos blancos cada 8 segundos. El ascenso por el interior del Faro es posible a través de una escalera en forma de caracol de 150 escalones. </p>
+				<p>Al principio se pensaba que el mejor lugar para su instalación era en la isla de lobos, pero los pescadores alegaron que la luz molestaba a los lobos y elefantes marinos, razón por la cual fue trasladado a la península. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz9">
+					</tbody>
+				</table>
+			</div>
+			<div id="Fundacion Pablo Atchugarry" class="divTuristicas">
+				<h2>Fundacion Pablo Atchugarry</h2>
+				<img src="recursos/fundacion-pablo-atchugarry.jpg"/>
+				<p><b>Teléfono:</b> 4277 5563</p>
+				<p><b>Dirección:</b> Ruta 104 Km. 4.5</p>
+				<p><b>Descripción:</b> <br>La Fundación Pablo Atchugarry es una institución sin fines de lucro, obra del escultor Pablo Atchugarry inaugurada en el 2007.</p>
+				<p>Fue creada con el espíritu de promover las artes plásticas, la literatura, la música , la danza y otras manifestaciones creativas del hombre. Este proyecto social y cultural se construye en forma constante y dinámica, consolidándose a través del trabajo y la experiencia de su fundador.</p>
+				<p>Su proyección, como un centro de encuentro de todas las disciplinas del arte, permite tanto a maestros de reconocida trayectoria como a jóvenes que inician sus carreras en el arte, exponer sus  trabajos.</p>
+				<br>
+				<br>
+				<br>
+				<blockquote>
+					<cite>" El arte es una expresión interior profunda donde pasado y futuro se funden creando una plataforma para el vuelo de las nuevas generaciones..."</cite>
+					<footer>Pablo Atchugarry</footer>
+				</blockquote>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz10">
+					</tbody>
+				</table>
+			</div>
+			<div id="Iglesia de la Candelaria" class="divTuristicas">
+				<h2>Iglesia de la Candelaria</h2>
+				<img src="recursos/Iglesia-la-Candelaria.png"/>
+				<p><b>Teléfono:</b> 4244 0417</p>
+				<p><b>Dirección:</b> Calle 5 y 12</p>
+				<p><b>Descripción:</b> <br>La Iglesia de la Candelaria o Parroquia de Santa María de la Candelaria es el templo católico más importante de Punta del Este, Uruguay. Ubicado en la península, constituye un centro de culto importante durante todo el año. A tal punto que la diócesis con jurisdicción sobre este templo se llamó Diócesis de Maldonado y Punta del Este.</p>
+				<p>Frente a la plaza del Faro de Punta del Este se encuentra el edificio, en cuya fachada impacta el color celeste y en su interior se aprecia una imagen de la Virgen de la Candelaria que provino de España.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz11">
+					</tbody>
+				</table>
+			</div>
+			<div id="Jose Ignacio" class="divTuristicas">
+				<h2>José Ignacio</h2>
+				<img src="recursos/Jose-Ignacio.jpg"/>
+				<p><b>Dirección:</b> Ruta 10 Km. 179</p>
+				<p><b>Descripción:</b> <br>Existen varias versiones acerca del origen del nombre del balneario. Una de ellas es que el nombre proviene de un antiguo poblador de la zona, llamado José Ignacio Sylveira; otra versión es que refiere al nombre de un faenador o un tropero indio de las Misiones Jesuíticas. En 1763, el Virrey Cevallos creó una estancia en la zona, donde las tierras pertenecían al patrimonio fiscal y la llamó «José Ignacio».</p>
+				<p>En 1877, se inauguró el Faro de José Ignacio con el objetivo de evitar naufragios en la zona. La empresa Costa y Cía. fue la encargada de controlar el faro, hasta que en 1907, finalizó la concesión y la explotación del mismo pasó al Estado. En esa época la única forma de acceder al lugar era a caballo, en carruajes, o por mar.​ El Faro de José Ignacio es símbolo del lugar, fue construido en el extremo más saliente y rocoso de la península. Su altura focal es de 32.5 metros, su alcance geográfico de 16.5 millas, y su alcance lumínico de 9 millas.</p>
+				<p>Se trata de una pequeña península que se interna en el mar a través de sus dos kilómetros de largo y 800 metros de ancho. Hacia el oeste de la península, se encuentra la Playa Brava, que se caracteriza por su ancho y sus grandes olas.Hacia el este, se encuentra localizada la Laguna Garzón,</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz12">
+					</tbody>
+				</table>
+			</div>
+			<div id="Los Dedos" class="divTuristicas">
+				<h2>Los Dedos</h2>
+				<img src="recursos/Los-Dedos.jpg"/>
+				<p><b>Dirección:</b> Parada 1 playa Brava</p>
+				<p><b>Descripción:</b> <br>"La Mano" que emerge de la arena en plena Parada 1 de la Brava se encuentra allí desde febrero de 1982, cuando el artista chileno Mario Irrazábal llegó invitado por la Intendencia de Maldonado para participar del Primer Encuentro Internacional de Escultura Moderna al Aire Libre de Punta del Este. 
+				Durante todo ese mes, la explanada frente a La Barra se convirtió en un insólito taller al aire libre, donde nueve artistas de diversos países trabajaban. 
+				Irrazábal llegó con una maqueta de plástico y tuvo que improvisar el resto. Tardó seis días en completar la obra. 
+				Con la ayuda de un soldador y de varillas de acero armó los dedos, que luego recubrió con una malla y unos ocho centímetros de estuco.</p>
+				<p>Tan pronto se convirtió en uno de los símbolos más distintivos de Punta del Este que fue el molde inicial para crear otras obras, que hoy se exhiben en varios países. Manos similares y del mismo autor se pueden ver en Madrid (desde 1987), en el desierto de Atacama (1992) y en Venecia (1995), con la misma fuerza de hito mágico. </p>
+				<p>Interpretación de la Mano: Significa la presencia del hombre en la naturaleza.</p>
+				<p>El hombre surgiendo a la vida. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz13">
+					</tbody>
+				</table>
+			</div>
+			<div id="Museo del Mar" class="divTuristicas">
+				<h2>Museo del Mar</h2>
+				<img src="recursos/Museo-del-Mar.jpg"/>
+				<p><b>Teléfono:</b> 4277 1817</p>
+				<p><b>Dirección:</b> Romildo Risso entre Pedro Aicardi y Av. Juana de América</p>
+				<p><b>Descripción:</b> <br>El Museo del Mar es un museo de historia natural ubicado en La Barra, en el departamento de Maldonado, Uruguay. Cuenta con unos 2.300 m² divididos en cuatro grandes salas, y ofrece su material al público durante todo el año.</p>
+				<p>El museo, abierto en 1996,​ cuenta con un acervo de más de 5.000 ejemplares marinos. Los ejemplares están exhibidos con claras referencias, que sirven con finalidad didáctica. Cuenta, entre otras cosas, con esqueletos de ballenas. En sus diversas salas se pueden encontrar erizos, estrellas de mar, caparazones de tortugas, pero también fotografías antiguas, o inclusive uno de los viejos coches para entrar al agua, que utilizaban las mujeres a inicios del siglo XX. También existe una sala con información sobre los piratas más famosos de la historia. En dicha sala se pueden ver catalejos y trabucos de la época.</p>
+				<p>La enorme cantidad de objetos, muestras, fotos e historias son el resultado del trabajo de su creador Pablo Etchegaray, un coleccionista autodidacta que hace muchos años comenzó a juntar piezas marinas de todo el mundo.</p>
+				<p>El Museo del Mar se compone de cuatro museos dentro de uno. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz14">
+					</tbody>
+				</table>
+			</div>
+			<div id="Museo Mazzoni" class="divTuristicas">
+				<h2>Museo Mazzoni</h2>
+				<img src="recursos/Museo-Mazzoni.jpg"/>
+				<p><b>Teléfono:</b> 4222 1107</p>
+				<p><b>Dirección:</b> Calle Ituzaingo 789 casi 18 de Julio</p>
+				<p><b>Horarios:</b> Invierno: 13:00 a 18:00 hs Verano: 8:00 a 22.00</p>
+				<p>Descripción: <br>Considerado como uno de los rincones más atractivos y sugerentes de la ciudad, el Museo Mazzoni funciona en un añejo caserón patricio cuya planta original data de fin de del siglo XVIII.</p>
+				<p>El edificio consta de doce salas, adornadas con refinados ejemplares mobiliarios del siglo pasado, y posee dos íntimos patios interiores donde la exuberancia de la vegetación contribuye a recrear el clima evocador de los tiempos de la colonia. </p>
+				<p>En este ambiente de casa solariega, que alguna vez le valió la paradójica categorización de "museo vivo", el Museo Mazzoni exhibe los mas diversos objetos y colecciones y, entre estos, es posible contemplar muestras de antiguos instrumentales médicos y farmacéuticos, aperos gauchos, armas, artes de pesca, curiosidades artesanales y una considerable muestra de utensilios propios de los indígenas del país. Sin excluir otras sorpresas y curiosidades, como ejemplares disecados de la fauna autóctona u objetos que pertenecieron a celebridades de la talla de Giuseppe Garibaldi. </p>
+				<p>El edificio consta de doce salas, adornadas con refinados ejemplares mobiliarios del siglo pasado, y posee dos íntimos patios interiores donde la exuberancia de la vegetación contribuye a recrear el clima evocador de los tiempos de la colonia. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz15">
+					</tbody>
+				</table>
+			</div>			
+			<div id="Museo Ralli" class="divTuristicas">
+				<h2>Museo Ralli</h2>
+				<img src="recursos/Museo-Ralli.png"/>
+				<p><b>Teléfono:</b> 4248 3476</p>
+				<p><b>Dirección:</b> Curupay y Los Arrayanes Barrio Beverly Hills</p>
+				<p><b>Desceripión:</b> <br>El Museo Ralli Punta del Este, inaugurado 1988 está situado en el centro del residencial Barrio de Beverly Hills, rodeado por un hermoso parque arbolado de su propiedad donde la arquitectura y la naturaleza se fusionan en un entorno único.</p>
+				<p>Diseñado y proyectado por los arquitectos uruguayos Marita Casciani y Manuel Quinteiro, exclusivamente para museo con una superficie construida de más de 6.000 metros cuadrados , alterna amplias salas de exposición con patios interiores de gran belleza donde descansan esculturas en bronce y mármol, creando un entorno mágico que enamora a sus visitantes.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz16">
+					</tbody>
+				</table>
+			</div>
+			<div id="Oh La Barra" class="divTuristicas">
+				<h2>Oh! La Barra</h2>
+				<img src="recursos/Oh-La-Barra.png"/>
+				<p><b>Teléfono:</b> 4277 3896</p>
+				<p><b>Dirección:</b> Av. Eduardo Victor Haedo entre Los Romances y Las Brisas</p>
+				<p><b>Descripción:</b> <br>Para la temporada esteña 2013 - 2014, La Barra sorprendía con la Inauguración, del nuevo y tan esperado Centro Comercial, OH! LA BARRA, ideado y diseñado, como <i>"el espacio perfecto"</i> para deleitar y satisfacer a un público tan exigente, internacional y sofisticado como el de Punta del Este. </p>
+				<p>OH! LA BARRA, se concibió con la premisa de que sea parte del maravilloso paisaje de estas playas, siendo un ''shopping abierto'', que se transformará, en el lugar ideal para la familia, divertido, interesante y atractivo para todas las edades, a sólo unos metros de la playa y en pleno corazón de La Barra. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz17">
+					</tbody>
+				</table>
+			</div>
+			<div id="Parque Jaguel" class="divTuristicas">
+				<h2>Parque Jagüel</h2>
+				<img src="recursos/Parque-Jaguel.jpg"/>
+				<p><b>Teléfono:</b> 4248-1291</p>
+				<p><b>Dirección:</b> Av. Aparicio Saravia esq. Av. Pedragosa Sierra</p>
+				<p><b>Descripción:</b> <br>El Parque Municipal El Jagüel constituye uno de lo más tradicionales paseos de la zona. Tiene una extensión de tres a cuatro manzanas, con calles internas, determinando una zona ideal para cabalgar, pasar un día al aire libre y conectarse con la naturaleza. </p>
+				<p>Los más chiquitos pueden disfrutar de los juegos de maderas, hechos con troncos del lugar simulando animales, hamacas, toboganes, puentes, etc. Al igual que en todos los parques municipales está previsto que se pueda pasar el día por lo que cuenta con parrilleros, bancos y mesas para disfrutar de asados o un día de picnic.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz18">
+					</tbody>
+				</table>
+			</div>
+			<div id="Playa Bikini" class="divTuristicas">
+				<h2>Playa Bikini</h2>
+				<img src="recursos/bikini.jpg"/>
+				<p><b>Dirección:</b> Ruta 10 Km 163.5</p>
+				<p><b>Descripción:</b> <br>Otra de las playas elegidas por los famosos, <b>Bikini es el hot spot del verano.</b></p>
+				<p>Hermoso paisaje, mar profundo con buenas olas, arena abundante y con mucha protección natural debido a su formación de pequeñas bahías rocosas en el este.</p>
+				<p>La gran concurrencia sucita varias actividades que tienen lugar en la tarde, desde clases de surf, jet ski  y aeróbica hasta eventos promocionales, desfiles de moda y música de djs al igual que barras de tragos. Cuenta con un pequeño parador que tiene servicio de snacks y comidas livianas donde los comensales pueden disfrutar de la vista acompañado de algo delicioso.</p>
+				<p>Bikini no es una playa mansa y presenta cierto riesgo al ingresar al mar, por lo cual hay un servicio reforzado de salvavidas para controlar cualquier situación de peligro.</p>
+				<p>Llega ser la favorita de los círculos argentinos, donde hay mucho glamour y eventos sociales exclusivos.</p>
+				<p></p>
+				<p></p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz19">
+					</tbody>
+				</table>
+			</div>
+			<div id="Plaza Artigas" class="divTuristicas">
+				<h2>Plaza Artigas</h2>
+				<img src="recursos/Plaza-Artigas.jpg"/>
+				<p><b>Dirección:</b> Av. Gorlero entre calle 25 y 23</p>
+				<p><b>Horarios:</b> 17:00 a 02:00, todos los días durante el verano y de 10:00 a 17:00 los Sábados y Domingos.</p> 
+				<p><b>Descripción:</b><br> La plaza Artigas es la principal plaza de la península y se la conoce comúnmente como la plaza de los artesanos, porque en ella funciona desde 1967 una feria artesanal. Ésta cuenta con más de 200 stands en donde se pueden adquirir desde simples souvenirs hasta valiosas joyas en plata, oro y piedras semipreciosas. </p>
+				<p>En las inmediaciones de los stands hay espacios para artistas plásticos y caricaturistas y en época estival, al llegar la noche, artistas callejeros sorprenden con shows de malabares y títeres haciendo más atractiva su visita. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz20">
+					</tbody>
+				</table>
+			</div>			
+			<div id="Torre del Vigia" class="divTuristicas">
+				<h2>Torre del Vigía</h2>
+				<img src="recursos/Torre-del-Vigia.png"/>
+				<p><b>Dirección:</b> Rafael Pérez del Puerto entre Zelmar Michelini y Solís</p>
+				<p><b>Descripción:</b> La torre demuestra claramente el avance edilicio de la ciudad de Maldonado. En la esquina de Rafael Pérez del Puerto y Zelmar Michellini, en medio de una plaza con el mismo nombre, se construyó a fines del siglo XVIII y principios del XIX la Torre del Vigía.</p>
+				<p>Su función era vigilar, por ello fue construida en una zona estratégica en donde el terreno se eleva a 39 metros del nivel de mar, permitiendo así, controlar sigilosamente la llegada de los barcos a la costa de Maldonado. </p>
+				<p>Es difícil, actualmente, pensar que desde esa construcción equilibrada, blanca y sólida se podía divisar el mar, pero con ese fin fueron edificados 13 metros de ladrillo y cal en forma cuadrangular; una puerta de acceso en la base, escaleras y una distinguida baranda de hierro que permitían ver el mar. </p>
+				<p>Hoy en día es posible subir y divisar la capital fernandina, la Torre ya no cuenta las novedades que ocurren en las puertas del Río de la Plata. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz21">
+					</tbody>
+				</table>
+			</div>
+			<div id="Plazoleta Gran Bretaña" class="divTuristicas">
+				<h2>Plazoleta Gran Bretaña</h2>
+				<img src="recursos/Plaza-de-los-Ingleses.jpg"/>
+				<p><b>Dirección:</b> Rambla Artigas</p>
+				<p><b>Descripción:</b> Se encuentra ubicada en el punto más austral del país llamado Punta de las Salinas, el mismo establece el límite entre el Río de la Plata y el Océano Atlántico. </p>
+				<p>Su nombre hace alusión a la histórica Batalla del Río de la Plata que tuvo lugar en 1939 en las cercanías de Punta del Este, en la que participaron el buque Alemán Graff Spee y los cruceros británicos Ajax, Aquiles y Exeter. Testimonio de la Batalla es el ancla del buque Ajax que es posible apreciar en la plaza.. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz22">
+					</tbody>
+				</table>
+			</div>
+			<div id="Puente de la Barra" class="divTuristicas">
+				<h2>Puente de la Barra</h2>
+				<img src="recursos/Puente-de-la-Barra.jpg"/>
+				<p><b>Dirección:</b> A 10 Km de la Península sobre ruta 10</p>
+				<p><b>Descripción:</b> El puente Leonel Viera, más conocido como puente ondulado, no sólo es una de las obras de ingeniería más notables del Uruguay sino que también... es la más divertida. </p>
+				<p>Pese a que nunca se recibió de ingeniero, el uruguayo Leonel Viera (1913-1975) realizó en 1965 el primer puente ondulado en la desembocadura del Arroyo de Maldonado. Hoy con el fin de facilitar la circulación, de la gran cantidad de visitantes que tiene el balneario de La Barra, es posible contemplar dos puentes ondulados. El segundo se termino de construir en el 2000 respetando las características arquitectónicas del primero. </p>
+				<p>Atravesar en auto estas dos ingeniosas estructuras provoca en el estómago una sensación única, muy divertida, que lo impulsarán a querer cruzarlo otra vez ó a gritar y querer bajarse del auto. </p>
+				<p>Viera también proyectó el techo colgante del Cilindro Municipal de Montevideo, colaboró con el puente Paysandú-Colón y otras obras en Argentina, un personaje uruguayo muy creativo, reconocido en el mundo entero. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz23">
+					</tbody>
+				</table>
+			</div>
+			<div id="Puente Garzon" class="divTuristicas">
+				<h2>Puente Garzón</h2>
+				<img src="recursos/Puente-Garzon.jpg"/>
+				<p><b>Dirección:</b> Ruta 10 Km. 191</p>
+				<p><b>Descripción:</b> El Puente Laguna Garzón, inaugurado en diciembre 2015, une los departamentos de Rocha y Maldonado, al sur de la Laguna Garzón, próximo a su desembocadura en el Océano Atlántico. Es una maravilla arquitectónica conciliadora y totalmente novedosa. Su forma de anillo sostenido por una serie de columnas permite el libre flujo de los cambios de la laguna y además el uso de embarcaciones, un elemento típico del lugar. Un proyecto de Rafael Viñoli, afamado arquitecto uruguayo reconocido por numerosas obras internacionales y por el diseño del nuevo aeropuerto de Carrasco, en Montevideo, capital de Uruguay.</p>
+				<p>Posee pasarelas peatonales para el avistamiento paisajístico, tiene 830 metros de barandas externas e internas en acero galvanizado que van desde una a otra cabecera del puente. </p>
+				<p></p>
+				<p></p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz24">
+					</tbody>
+				</table>
+			</div>	
+			<div id="Puerto de Punta del Este" class="divTuristicas">
+				<h2>Puerto de Punta del Este</h2>
+				<img src="recursos/Puerto-Punta-del-Este.jpg"/>
+				<p><b>Dirección:</b> Península costa oeste</p>
+				<p><b>Descripción:</b> En sus comienzos fue un paradero indígena, luego un pueblo de pescadores. Su primer nombre fue "Villa Ituzaingó" pero en 1907 se solicitó el cambio de nombre y pasó a llamarse definitivamente Punta del Este. </p>
+				<p>Esta Villa fue fundada en el año 1829 por Don Francisco Aguilar, siendo el primero en explotar los recursos de la zona, desarrollando varias industrias principalmente los saladeros. </p>
+				<p>Francisco Aguilar arribó a nuestro país en el año 1810, era un hombre de fortuna, fue dueño de una flota de barcos mercantes y el primer armador de barcos del Uruguay, además de estanciero y ganadero, fue dueño de pulperías y político, ocupando varios cargos importantes, Alcalde de Maldonado desde 1829 a 1830, Administrador de Correos en 1834 y Senador en 1840. En Maldonado se radicó en 1811, compró tierras y con pocos colonos se dedicó a la agricultura (las principales plantaciones que le pertenecieron fueron las de tabaco y papas) a la cría de gusanos de seda y a la fabricación de baldosas siendo en Punta del Este donde se instaló la primer fábrica. </p>
+				<p>La abundancia de ballenas en nuestras costas por aquellos años era tan grande, que durante la Presidencia del General Fructuoso Rivera se le concedió a Aguilar el derecho exclusivo de pescar y faenar estos animales durante 10 años en el Puerto de Maldonado y costas del Estado. Tenía además la concesión para faenar los lobos marinos de Isla de Lobos y del Departamento de Rocha. </p>
+				<p>Francisco Aguilar como Alcalde de Maldonado participó en la realización de obras públicas como escuelas, cárceles e iglesias, como autoridad máxima del Departamento los ciudadanos del mismo (llamados fernandinos) juraron ante él la Constitución de 1830. Falleció en 1840 a los 64 años ejerciendo el cargo de Senador, dejando a Punta del Este en marcha hacia lo que es hoy. </p>
+				<p>El 13 de junio de 1843 se vendió la península a los hermanos Samuel y Alejandro Lafone quienes la compraron en 4.500 pesos, así como también la Isla Gorriti la cual costó 1.500 pesos, al igual que Aguilar, los Lafone explotaron los saladeros. </p>
+				<p>Los vehículos que unían a Punta del Este con la ciudad de Maldonado por aquellos años eran las carretas que debían atravesar enormes médanos de arena y venían por la costa, por ello los primeros animales que se trajeron para trabajar fueron dromedarios y los trajo Aguilar, ya que con otra clase de animales era imposible realizar las tareas diarias Punta del Este era un gran desierto. </p>
+				<p>Punta del Este le debe a Enrique Burnet gran parte de la forestación que posee pues fue él, quien inició la plantación de pinos en la península, gracias a ellos se pudo contener la avalancha de arena que amenazaba con cubrir la pequeña ciudad.  </p>
+				<p>En 1907 en Punta del Este existía una pequeña población, el Hotel Risso, la Capitanía, el Chalet de Suárez y 50 casas, en este año arribaron los primeros veraneantes a bordo del vapor "Golondrina", fueron un grupo de familias argentinas y montevideanas, invitadas por el Directorio de la Sociedad "Balneario Punta del Este", las cuales arribaron a nuestras costas. </p>
+				<p>Desde entonces el balneario ha crecido considerablemente en habitantes y en número de visitantes, consolidándose actualmente como uno de los mejores balnearios de Sudamérica. </p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz25">
+					</tbody>
+				</table>
+			</div>
+			<div id="Punta Shopping" class="divTuristicas">
+				<h2>Punta Shopping</h2>
+				<img src="recursos/Punta-Shopping.jpg"/>
+				<p><b>Teléfono:</b> 4248 9666</p>
+				<p><b>Dirección:</b> P.7 - Playa Mansa, Ave Roosevelt, Punta del Este</p>
+				<p><b>Horario:</b> 10:00 a 22:00</p>
+				<p><b>Descripción:</b> El Punta Shopping fue inaugurado a fines de 1997 y ocupa un total de 38 mil metros cuadrados, de los cuales 11 mil corresponden a su área comercial.</p>
+				<p>Fue proyectado por el reconocido arquitecto Carlos Ott, de prestigiosa trayectoria en el mundo entero.</p>
+				<p>Sus instalaciones constan de tres pisos, donde se reparten más de 100 locales, un supermercado, el complejo de cines más importante de la región (8 salas) y siete locales de comidas.</p>
+				<p>Posee un estacionamiento que puede albergar más de 1.500 vehículos.</p>
+				<p>Durante la temporada alta se llega a una circulación de 25 mil personas, mientras que en temporada baja la cantidad de visitantes ronda los 8 mil.</p>
+				<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz26">
+					</tbody>
+				</table>
+			</div>
+			<div id="San Rafael" class="divTuristicas">
+				<h2>San Rafael</h2>
+				<img src="recursos/San-Rafael.jpg" alt="">
+				<p><b>Dirección: </b>Península costa oeste</p>
+				<p><b>Descripción:</b> El Hotel San Rafael de Punta del Este está ubicado en el barrio San Rafael de Punta del Este, Uruguay, en la parada 11 de la Playa Brava. Se comenzó a construir en el año 1945 y se inauguró en diciembre 1948, por iniciativa del Cr. José Pizzorno Scarone, quien ideó un fraccionamiento de terrenos en la zona, que junto con Manuel Lussich Nin y Laureano Alonsoperez, lo realizaron y le dieron nombre al hotel y su casino.</p>
+				<p>El Hotel contó durante 10 años con un lujoso Casino privado el cual fue otorgado al amparo de la Ley del 22 de setiembre de 1911, que permitía la explotación de casinos privados a quienes construyeran hoteles en las zonas balnearias. Vencido los 10 años el Casino pasó a un régimen directo de explotación por el Estado incluyendo sus instalaciones y equipamiento total, destacándose en su alhajamiento un juego completo de fichas de nácar.</p>
+				<p>En el año 1997, coincidiendo con la inauguración de un Hotel y Casino privados, el Estado Uruguayo cerró la sala de Casino del Hotel San Rafael, lo que originó una corriente de huéspedes hacia otros destinos. Esto obligó al Hotel San Rafael a bajar de categoría a tres estrellas en busca de otros segmentos turísticos.</p>
+				<p>El Hotel, de estilo Tudor, fue símbolo del auge de Punta del Este como principal balneario del Uruguay y uno de los más prestigiosos de Sudamérica. En su etapa de oro en las décadas de 1950 a 1990 sus instalaciones y Casino atrajeron tanto a las familias patricias del Río de la Plata como a figuras de la política, la realeza, las artes y el entretenimiento mundano. </p>
+				<p>El emblemático Hotel San Rafael ha sido históricamente todo un hito como ámbito de Exposiciones, Convenciones, Reuniones y Conferencias Internacionales. Los salones de eventos del San Rafael, entre ellos el Salón Gótico de capacidad para 1500 asistentes, fue Sede de varios congresos políticos y elegido para la Reunión de Presidentes de América en 1967 y la primera reunión de la Ronda Uruguay del GATT y la OEA, Congreso Interparlamentario, Conferencias del Bid, Cies Cecom y Congresos de las más variadas disciplinas. Su boite “Le Carousel” fue el lugar donde se realizaron espectáculos artísticos de primer nivel mundial.</p>
+				<p>En la temporada 2011/12, una asociación de inversores argentinos reservó el derecho a adquirirlo, cosa que posteriormente se frustró, no concretándose nunca, hasta hoy, la venta del hotel. La errónea difusión como venta, confundió a la opinión pública porque se mencionó a una determinada empresa y a una cadena hotelera como adquirentes del hotel, cuando no fue así.</p>
+				<p>Hoy el Hotel San Rafael, por su trayectoria reclama la puesta en valor exigida por su imagen única y de renombre mundial, a fin de lograr recuperar su lugar en el ámbito turístico internacional que ostentó por tantos años. Es reconocido a nivel mundial como uno de los símbolos fuertes de la identidad de Punta del Este que resalta por su relevancia arquitectónica y su rica historia.</p>
+				<<table class="table table-bordered">
+					<tr>
+						<th>Origen</th>
+						<th>Precio de Dia</th>
+						<th>Precio de Noche</th>
+						<th>Tiempo</th>
+					</tr>
+					<tbody	id="tbyz27">
+					</tbody>
+				</table>
+			</div>			
+		</section>
+		<section id="Costos de traslado y tiempo">
+			<h2>Costo del viaje</h2>
+			<table class="table table-bordered" id="bda">
+				<tbody id="tblGeneralCosto">
+				</tbody>
+			</table>
+			<h2>Tiempo de viaje</h2>
+			<table class="table table-bordered" >
+				<tbody id="tblGeneralTiempo">
+				</tbody>
+			</table>
+		</section>
+		<section id="PropioViaje">
+			<h2>Cree su propio viaje</h2>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+						Eliga su punto de partida 
+					</td>
+					<td colspan="2">
+						<select class="form-control" id="posicion">
+							<option value="0">Aeropuerto Punta del Este</option>
+							<option value="1">Barrio Norte</option>
+							<option value="2">Biarritz</option>
+							<option value="3">Cantegril</option>
+							<option value="4">Casino Nogaro</option>
+							<option value="5">Colonial</option>
+							<option value="6">La Fragata</option>
+							<option value="7">Hospital Maldonado</option>
+							<option value="8">Lafayette</option>
+							<option value="9">La Barra</option>
+							<option value="10">Lausana</option>
+							<option value="11">Maldonado Nuevo</option>
+							<option value="12">Marco de los Reyes</option>
+							<option value="13">Oasis</option>
+							<option value="14">Punta Shopping</option>
+							<option value="15">Sanatorio Mautone</option>
+							<option value="16">San Rafael</option>
+							<option value="17">Terminal de Maldonado</option>
+							<option value="18">Terminal Punta del Este</option>
+						</select>
+					</td>
+					<td>
+						<input class="btn" type="button" id="btnViaje" value="Crear"/>
+					</td>					
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box0">Azotea de Haedo</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box1">Beverly Hills</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box2">Cachimba del Rey</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box3">Casa de la cultura</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box4">Casa Pueblo</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box5">Catedral San Fernando</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box6">Centro de Convenciones</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box7">Conrad</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box8">Cuartel de Dragones</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box9">Faro de Punta del Este</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box10">Fundacion Pablo Atchugarry</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box11">Iglesia de la Candelaria</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box12">José Ignacio</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box13">Los Dedos</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box14">Museo del Mar</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box15">Museo Mazzoni</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box16">Museo Ralli</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box17">Oh! La Barra</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box18">Parque Jagüel</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box19">Playa Bikini</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box20">Plaza Artigas</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box21">Plaza Torre del Vigía</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box22">Plazoleta Gran Bretaña</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box23">Puente de la Barra</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box24">Puente Garzón</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box25">Puerto de Punta del Este</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box26">Punta Shopping</label>
+						</div>
+					</td>
+					<td>
+						 <div class="checkbox">
+							<label><input type="checkbox" id="box27">San Rafael</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div id="divRes">				
+				<table id="tbeRes" class="table table-bordered">
+					<tr>
+						<th>
+							Origen
+						</th>
+						<th>
+							Destino
+						</th>
+						<th>
+							Precio
+						</th>
+						<th>
+							Tiempo
+						</th>
+					</tr>
+					<tbody id="tbyRes">
+					</tbody>
+				</table>
+				<p id="pRes">No ha elegido un destino</p>
+				<h4 id="hRes"></h4>
+			</div>
+		</section>
+		<section id="Configurar">
+			<h2>Tabla de Valores (pesos)<h2>
+			<table class="table table-bordered">
+				<tr>
+					<th>
+						Kilometro
+					</th>
+					<th>
+						Minutos
+					</th>
+					<th>
+						Hora
+					</th>
+					<th>
+						Bajada
+					</th>
+					<th>
+						valijas(la primera es gratis)
+					</th>
+				</tr>
+				<tr>
+					<td id="costoKilometros">
+						50
+					</td>
+					<td>
+						7.2
+					</td>
+					<td>
+						388
+					</td>
+					<td>
+						50
+					</td>
+					<td>
+						18
+					</td>
+				</tr>
+			</table>
+			<h2>Cambie el precio del kilometro</2>
+			<input class="form-control"type="number" id="precio"/>
+			<input class="btn" type="button" id="btnPrecio" value="Cambiar"/>
+		</section>
+	</body>
+</html>

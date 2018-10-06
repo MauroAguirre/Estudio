@@ -1,0 +1,17 @@
+package Algoritmo2;
+
+public class Stack {
+	private String[] stack;
+	
+	public Stack() {
+		stack = new String[10];
+	}
+	public void Push(String s) {
+		int num=0;
+		while(!stack[0].equals(null)) {
+			num++;
+		}
+		if(num!=10)
+			stack[num]=s;
+	}
+}

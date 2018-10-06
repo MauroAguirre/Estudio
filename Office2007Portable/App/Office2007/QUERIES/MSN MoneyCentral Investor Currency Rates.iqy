@@ -1,0 +1,9 @@
+WEB
+1
+http://moneycentral.msn.com/investor/external/excel/rates.asp
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

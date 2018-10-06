@@ -1,0 +1,11 @@
+valor:numerico
+suma:numerico
+Escribir "Ingrese un valor"
+si MOD(valor,2)=1
+	valor=valor+1
+fin si
+suma=valor
+para i=valor+2 hasta valor+10 [incremento2]
+	suma=suma+valor
+fin para
+Escribir "La suma es: " + suma	

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obligatorio parte dos", "Obligatorio parte dos\Obligatorio parte dos.csproj", "{66CAA2E3-24C7-4478-9F23-E07CA80A4783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{4542A443-06DD-4DC7-965C-968CC15B3901}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66CAA2E3-24C7-4478-9F23-E07CA80A4783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CAA2E3-24C7-4478-9F23-E07CA80A4783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CAA2E3-24C7-4478-9F23-E07CA80A4783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CAA2E3-24C7-4478-9F23-E07CA80A4783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4542A443-06DD-4DC7-965C-968CC15B3901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4542A443-06DD-4DC7-965C-968CC15B3901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4542A443-06DD-4DC7-965C-968CC15B3901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4542A443-06DD-4DC7-965C-968CC15B3901}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

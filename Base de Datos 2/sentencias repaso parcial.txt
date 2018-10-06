@@ -1,0 +1,29 @@
+create database Optica;
+use Optica;
+create table Monturas(idMonturas int primary key,Marca varchar(45),Precio int,nombre varchar(45));
+create table Color(idColor int primary key,descripcionColor varchar(45));
+create table Stock(idMontura int foreign key references Monturas(idMonturas),idColor int foreign key references Color(idColor),primary key(idMontura,idColor));
+create table Venta(fecha date,idMontura int foreign key references Monturas(idMonturas),idColor int foreign key references Color(idColor),cantVendidos int,precio int,primary key(fecha,idMontura,idColor));
+alter table Monturas add constraint valorPrecio check(Precio>1000 and Precio<100000);
+alter table Color add constraint tipoColor check(descripcionColor in('rojo','amarillo','verde','negro','blanco'));
+insert into Monturas(idMonturas,Marca,Precio,nombre)values(1,'dsa',10500,'error');
+exec LimpiarMonturas 10600;
+create procedure LimpiarMonturas @precio int as
+begin
+	delete from Monturas where nombre = 'error' and Precio < @precio;
+end
+create procedure DescuentoDia @fec date as
+begin
+	update Venta set precio -= precio *0.1 where fecha = @fec;
+end
+create procedure BorrarMontura @idMontura int as
+begin 
+	delete from Venta where idMontura = @idMontura;
+	delete from Stock where idMontura = @idMontura;
+	delete from Montura where idMonturas = @idMontura;
+end
+
+create procedure listadoMonturas @fec date, @nom varchar(45) as
+begin
+	select * from (select Monturas.idMonturas,Monturas.Marca,Monturas.Precio,Monturas.nombre from Monturas where nombre = @nom and Precio>10000)as pepe inner join (select * from Venta where fecha = @fec) as tabla on pepe.idMonturas = tabla.idMontura;
+end

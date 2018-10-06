@@ -1,0 +1,64 @@
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe.config
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.pdb
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.dll
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.dll
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.pdb
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.pdb
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.csprojResolveAssemblyReference.cache
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.exe
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.pdb
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.dll
+H:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe.config
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.exe
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.dll
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.dll
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.csprojResolveAssemblyReference.cache
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe.config
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.exe
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\MegaAgenda.pdb
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.dll
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.dll
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\BLL.pdb
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\Domain.pdb
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\bin\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.csprojResolveAssemblyReference.cache
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.csproj.CoreCompileInputs.cache
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.csproj.CopyComplete
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.exe
+D:\Estudio\VisualStudio\MegaAgenda\MegaAgenda\obj\Debug\MegaAgenda.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.csprojResolveAssemblyReference.cache
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.csproj.CoreCompileInputs.cache
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.exe
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.exe.config
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.exe
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\BLL.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\Domain.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\BLL.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\Domain.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.csproj.CopyComplete
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.exe.config
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.exe
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.exe
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\MegaAgenda.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\BLL.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\Domain.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\BLL.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\Domain.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\MegaAgenda\obj\Debug\MegaAgenda.csprojResolveAssemblyReference.cache

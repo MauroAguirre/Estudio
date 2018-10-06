@@ -1,0 +1,8 @@
+dato1:numerico
+Escribir "Ingrese un numero"
+Leer dato1
+	Si dato1<1
+		Escribir "Error"
+	sino
+		Escribir dato1 + ", " + dato1*dato1 ", " + RAIZ(dato1)
+	fin sino

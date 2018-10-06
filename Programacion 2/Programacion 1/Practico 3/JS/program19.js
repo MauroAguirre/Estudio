@@ -1,0 +1,50 @@
+document.write('<table>		
+			<thead>
+				<tr>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+					<th>Sabado</th>
+					<th>Domingo</th>
+				</tr>
+			</thead>
+			<tbody >
+				<tr>
+					<td>1</td>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>7</th>
+				</tr>
+				<tr >
+					<td>8</td>
+					<th>9</th>
+					<th>10</th>
+					<th>11</th>
+					<th>12</th>
+					<th>13</th>
+					<th>14</th>
+				</tr>
+				<tr >
+					<td>15</td>
+					<th>16</th>
+					<th>17</th>
+					<th>18</th>
+					<th>19</th>
+					<th>20</th>
+					<th>21</th>
+				</tr>
+				<tr >
+					<td>22</td>
+					<th>23</th>
+					<th>24</th>
+					<th>25</th>
+					<th>26</th>
+					<th>27</th>
+					<th>28</th>
+				</tr>
+			</tbody>');

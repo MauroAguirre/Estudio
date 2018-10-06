@@ -1,0 +1,12 @@
+dato1:numerico
+dato2:numerico
+dato3:numerico
+Escribir "Ingrese tres numeros"
+Leer dato1
+Leer dato2
+Leer dato3
+si dato1>1
+	Escribir dato1*dato2*dato3
+sino
+	Escribir dato1+dato2+dato3
+fin si

@@ -1,0 +1,18 @@
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe.config
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.pdb
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.exe
+F:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.pdb
+G:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe.config
+G:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.exe
+G:\VisualStudio\Ejercicio 01-09\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.pdb
+G:\VisualStudio\Farmacia\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe.config
+G:\VisualStudio\Farmacia\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.exe
+G:\VisualStudio\Farmacia\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.pdb
+G:\VisualStudio\Farmacia\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe
+G:\VisualStudio\Farmacia\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.pdb
+G:\VisualStudio\Farmacia\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Farmacia\Ejercicio 01-09\bin\Debug\Ejercicio 01-09.exe.config
+F:\VisualStudio\Farmacia\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.exe
+F:\VisualStudio\Farmacia\Ejercicio 01-09\obj\Debug\Ejercicio 01-09.pdb

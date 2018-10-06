@@ -1,0 +1,91 @@
+Base de datos 2
+
+Temas:
+-Leguaje de definicion de datos
+-Estructuras de BD
+-Seguridad
+-BD distribuidas
+-Data Ware House
+
+
+
+Insertar en una tabla!
+
+insert into A (c1, c2, c3) values (10, "A", 40);
+
+
+DDL (Lenguaje de definicion de datos):
+
+- Create
+- Modify
+- Drop
+
+*Create database MiBase;
+*Use MiBase;
++create table Clientes (ci int primary key, nombre carchar(20) not null, email varchar(45) unique);
+
+//constraint pkCliente primary key (ci, nombre)
+//constraint pkClientesEmails foreign key (email) references Cuentas (email) update cascade on delete restrict;
+
+Restricciones:
+-not null
+-unique
+-primary key
+-foreing key
+-check
+
+Diccionario de datos:
+
+	informacion sobre las tablas, los campos y sus caracteristicas. 
+	A saber tipo de dato y dominio, reflecciones y valores x defecto.
+
+Update:
+-cascade
+-set null
+-retrict
+-no action
+
+constraint chCi check (ci>1000000)
+		check (c1>c2)
+		check nombre in ("Ana","Maria")
+		check email in () Select email from Cuentas)
+
+Indices:
+Son estructuras internas que ayudan a ordenar los datos.
+-Primario (PK)(se crea con la clave primaria)
+-Secundario (FK)(unique)(crear)
+
+Create index NomApe on Clientes (Nombre, Apellido);
+
+
+sentencias my sql
+
+Create database Ejercicio2;
+use Ejercicio2;
+Create table Empleados( ci int primary key, nombre varchar(45), sueldo int);
+Create table Obras( codobr int primary key, descripcion varchar(45), nomciud varchar(45), capataz varchar(45));
+Create table Ciudades( nomciud varchar(45) primary key, habitantes int, tipo varchar(45), intendente varchar(45), alcalde varchar(45));
+Create table Maquinas( matriculas varchar(45) primary key, descripcion varchar(45), costoHora int, colorMaq varchar(45));
+Create table Trabajan( fecha datetime, ci int primary key, codobr int unique, matriculaMaq varchar(45) foreign key (matriculaMaq) references Maquinas (matriculas) );
+
+
+
+create database Probando;
+use Probando;
+create table Empleados(ci int primary key, nombre varchar(45), sueldo int, constraint cksueldo check(sueldo>0 and sueldo<10000));
+create table Ciudades(nomciud varchar(45) primary key, habitantes int, tipo varchar(45),intendente varchar(45) unique, alcalde varchar(45) unique, constraint chCiudades check( tipo in('Grande','Mediana','Chica')), constraint ckhabitantes check(habitantes>0));
+create table Maquinas(matricula varchar(45) primary key, descripcion varchar(45) not null, costoHora int, colorMaq varchar(45));
+create table Obras(codobr int primary key, descripcion varchar(45), nomciud varchar(45), capataz varchar(45) unique, constraint fkCiudades foreign key (nomciud) references Ciudades (nomciud));
+create table Trabajan(fecha date, ci int, codobr int, matriculaMaq varchar(45), constraint fkObras foreign key (codobr) references Obras (codobr), constraint fkEmpleados foreign key (ci) references Empleados (ci),constraint fkMaquinas foreign key (matriculaMaq) references Maquinas (matricula),constraint pkTrabajan primary key(ci,codobr,matriculaMaq));
+
+create database Probando;
+use Probando;
+create table Empleados(ci int primary key, nombre varchar(45), sueldo int, constraint cksueldo check(sueldo>0 and sueldo<10000));
+create table Ciudades(nomciud varchar(45) primary key, habitantes int, tipo varchar(45),intendente varchar(45) unique, alcalde varchar(45) unique, constraint chCiudades check( tipo in('Grande','Mediana','Chica')), constraint ckhabitantes check(habitantes>0));
+create table Maquinas(matricula varchar(45) primary key, descripcion varchar(45) not null, costoHora int, colorMaq varchar(45));
+create table Obras(codobr int primary key, descripcion varchar(45), nomciud varchar(45), capataz varchar(45) unique, constraint fkCiudades foreign key (nomciud) references Ciudades (nomciud));
+create table Trabajan(fecha date, ci int, codobr int, matriculaMaq varchar(45), constraint fkObras foreign key (codobr) references Obras (codobr), constraint fkEmpleados foreign key (ci) references Empleados (ci),constraint fkMaquinas foreign key (matriculaMaq) references Maquinas (matricula),constraint pkTrabajan primary key(ci,codobr,matriculaMaq));
+
+--create view numero1 as select * from Empleados where sueldo >10000;
+--create view numero2 as select * from Empleados where ci = (select ci from Trabajan where codobr = (select codobr from Obras where nomciud = 'Montevideo' ));
+select descripcion from Maquinas where costoHora != 0 inner join  

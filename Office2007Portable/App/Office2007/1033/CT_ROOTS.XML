@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<categories>
+  <word>
+    <ct assetid="CT101172311033" name="Agendas" />
+    <ct assetid="CT101043001033" name="Award certificates" />
+    <ct assetid="CT101043031033" name="Brochures" />
+    <ct assetid="CT101043091033" name="Business cards" />
+    <ct assetid="CT101043131033" name="Calendars" />
+    <ct assetid="CT101172451033" name="Contracts" />
+    <ct assetid="CT101043141033" name="Envelopes" />
+    <ct assetid="CT101172521033" name="Faxes" />
+    <ct assetid="CT101043191033" name="Flyers" />
+    <ct assetid="CT101043201033" name="Forms" />
+    <ct assetid="CT101043211033" name="Gift certificates" />
+    <ct assetid="CT101043221033" name="Greeting cards" />
+    <ct assetid="CT101043231033" name="Invitations" />
+    <ct assetid="CT101172551033" name="Invoices" />
+    <ct assetid="CT101043241033" name="Labels" />
+    <ct assetid="CT101172561033" name="Letters" />
+    <ct assetid="CT101172571033" name="Lists" />
+    <ct assetid="CT101172591033" name="Memos" />
+    <ct assetid="CT101172601033" name="Minutes" />
+    <ct assetid="CT101043281033" name="Newsletters" />
+    <ct assetid="CT101172331033" name="Plans" />
+    <ct assetid="CT101423511033" name="Planners" />
+    <ct assetid="CT101043351033" name="Postcards" />
+    <ct assetid="CT101172741033" name="Purchase orders" />
+    <ct assetid="CT101423521033" name="Receipts" />
+    <ct assetid="CT101043371033" name="Resumes" />
+    <ct assetid="CT101172751033" name="Schedules" />
+    <ct assetid="CT101172761033" name="Statements" />
+    <ct assetid="CT101423531033" name="Stationery" />
+    <ct assetid="CT101172771033" name="Time sheets" />
+    <ct assetid="CT101485751033" name="More categories" />
+  </word>
+  <excel>
+    <ct assetid="CT101172311033" name="Agendas" />
+    <ct assetid="CT101172321033" name="Budgets" />
+    <ct assetid="CT101043131033" name="Calendars" />
+    <ct assetid="CT101423481033" name="Expense reports" />
+    <ct assetid="CT101043201033" name="Forms" />
+    <ct assetid="CT101172541033" name="Inventories" />
+    <ct assetid="CT101172551033" name="Invoices" />
+    <ct assetid="CT101172571033" name="Lists" />
+    <ct assetid="CT101172331033" name="Plans" />
+    <ct assetid="CT101423511033" name="Planners" />
+    <ct assetid="CT101172741033" name="Purchase orders" />
+    <ct assetid="CT101423521033" name="Receipts" />
+    <ct assetid="CT101172751033" name="Schedules" />
+    <ct assetid="CT101423531033" name="Stationery" />
+    <ct assetid="CT101172771033" name="Time sheets" />
+    <ct assetid="CT101485751033" name="More categories" />
+  </excel>
+  <powerpoint>
+    <ct assetid="CT101172311033" name="Agendas" />
+    <ct assetid="CT101043001033" name="Award certificates" />
+    <ct assetid="CT101043131033" name="Calendars" />
+    <ct assetid="CT101423491033" name="Content slides" />
+    <ct assetid="CT101172621033" name="Design slides" />
+    <ct assetid="CT101172501033" name="Diagrams" />
+    <ct assetid="CT101172331033" name="Plans" />
+    <ct assetid="CT101172721033" name="Presentations" />
+    <ct assetid="CT101043371033" name="Resumes" />
+    <ct assetid="CT101172751033" name="Schedules" />
+    <ct assetid="CT101485751033" name="More categories" />
+  </powerpoint>
+  <access>
+    <ct assetid="CT101428241033" name="Business" />
+    <ct assetid="CT101428511033" name="Personal" />
+    <ct assetid="CT101428651033" name="Sample" />
+    <ct assetid="CT101428361033" name="Education" />
+  </access>
+</categories>

@@ -1,0 +1,858 @@
+<html>
+	<head>
+		<title>El currito S.A</title>
+		<script type="text/javascript" src="JS/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="JS/program.js"></script>
+		<script src="JS/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+		<link href="CSS/estilos.css" type="text/css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div id="MenuPrincipal" class="container-fluid"  >
+				<div class="btn-group">
+					<input type="button" value="Inicio" id="btnIni" class="btn btn-primary"/>
+					<input type="button" value="Sectores" id="btnSec" class="btn btn-primary"/>
+					<input type="button" value="Clientes" id="btnCli" class="btn btn-primary"/>
+					<input type="button" value="AltadeProducto" id="btnPro" class="btn btn-primary"/>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle"
+							data-toggle="dropdown">
+						Informes <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a id="CatInf" class="btnlista">Productos por categoria</a></li>
+							<li class="divider"></li>
+							<li><a id="SecInf" class="btnlista">Productos por sector</a></li>
+							<li class="divider"></li>
+							<li><a id="SecFec" class="btnlista">Productos por fecha</a></li>
+							<li class="divider"></li>
+							<li><a id="SecCan" class="btnlista">Productos por cantidad</a></li>
+						</ul>
+					</div>
+					<input type="button" value="Control" id="btnCon" class="btn btn-primary"/>
+					<input type="button" value="Transferencias" id="btnTra" class="btn btn-primary"/>
+					<input type="button" value="Pedidos" id="btnPed" class="btn btn-primary"/>	
+				</div>
+		</div>
+		<div id="FaltanDatos" class="container-fluid">
+			<h2 class="medio">No hay sectores y/o productos ingresados</h2>
+		</div>
+		<div id="FaltanDatosPedidos" class="container-fluid">
+			<h2 class="medio">No hay sectores, clientes y/o productos ingresados</h2>
+		</div>
+		<div id="Inicio" class="container-fluid">
+			<h2 id="currito">Bienvenido a la pagina del Currito S.A.</h2>
+		</div>
+		<div id="Sectores" class="container-fluid">
+			<h2>Sectores</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Numero</b>
+					</td>
+					<td>
+						<input type="number" id="numSector" class="form-control"/>
+					</td>
+				</tr>				
+				<tr>
+					<td>
+						<b>Tipo</b>
+					</td>
+					<td>
+						<select type="number" id="numTipoSector" class="form-control"/>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Descripcion</b>
+					</td>
+					<td>
+						<input type="text" id="txtDesSector" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Observaciones</b>
+					</td>
+					<td>
+						<input type="text" id="txtObsSector" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="AddSector" value="Agregar Sector" class="btn btn-default"/>
+						<input type="button" id="ModSector" value="Aceptar la modificacion" pos="-1" class="btn btn-default"/>
+						<input type="button" id="CanSector" value="Cancelar" pos="-1" class="btn btn-default"/>
+					</td>
+					<td id="SecRes" >
+					</td>
+				</tr>
+			</table>
+			<table id="SecCol" class="table">
+				<tr>
+					<th>
+						<b>Numero</b>
+					</th>
+					<th>
+						<b>Tipo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Observaciones</b>
+					</th>
+					<th colspan="2">
+						<b>Cambios</b>
+					</th>
+				</tr>
+				<tbody id="tblSecCol">
+				</tbody>
+			</table>
+		</div>
+		<div id="Clientes" class="container-fluid">
+			<h2>Clientes</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Nombre</b>
+					</td>
+					<td>
+						<input type="texto" id="txtCliente" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>RUT</b>
+					</td>
+					<td>
+						<input type="number" id="numRUT" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Telefono</b>
+					</td>
+					<td>
+						<input type="number" id="numTelefono" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Email</b>
+					</td>
+					<td>
+						<input type="texto" id="txtEmail" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="btnAddCli" value="Agregar cliente" class="btn btn-default"/>
+						<input type="button" id="btnModCli" value="Aceptar la modificacion" pos="-1" class="btn btn-default"/>
+						<input type="button" id="btnBorCli" value="Cancelar" pos="-1" class="btn btn-default"/>
+					</td>
+					<td id="CliRes">
+					</td>
+				</tr>
+			</table>
+			<table id="CliCol" class="table">
+				<tr>
+					<th>
+						<b>Id</b>
+					</th>
+					<th>
+						<b>Nombre</b>
+					</th>
+					<th>
+						<b>RUT</b>
+					</th>
+					<th>
+						<b>Telefono</b>
+					</th>
+					<th>
+						<b>Email</b>
+					</th>
+					<th colspan="2">
+						<b>Cambios</b>
+					</th>
+				</tr>
+				<tbody id="tblCliCol">
+				</tbody>
+			</table>
+		</div>
+		<div id="AltadeProducto" class="container-fluid">
+			<h2>Alta de Productos</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Codigo</b>
+					</td>
+					<td>
+						<input type="number" id="numCod" maxlength="20" class="form-control"/>
+					</td>
+				</tr>				
+				<tr>
+					<td>
+						<b>Descripcion</b>
+					</td>
+					<td>
+						<input type="text" id="txtDesCod" maxlength="100" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Categoria</b>
+					</td>
+					<td>
+						<select id="numCatCod" class="form-control">
+							<option value="1">Alimentos</option>
+							<option value="2">Jugueteria</option>
+							<option value="3">Electronica</option>
+							<option value="4">Electrodomesticos</option>
+							<option value="5">Bebidas</option>
+							<option value="6">Bazar</option>
+							<option value="7">Cosmeticos</option>
+							<option value="8">Perfumeria</option>
+							<option value="9">Vestimenta</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Marca</b>
+					</td>
+					<td>
+						<input type="text" id="txtMarCod" maxlength="70" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="AltaPro" value="Dar de Alta" class="btn btn-default"/>
+						<input type="button" id="ModPro" value="Aceptar la modificacion" class="btn btn-default"/>
+						<input type="button" id="CanPro" value="Cancelar" class="btn btn-default"/>
+					</td>
+					<td id="codRes">
+					</td>
+				</tr>
+			</table>
+			<table id="DisCol" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Categoria</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th colspan="2">
+						<b>Cambios</b>
+					</th>
+				</tr>
+				<tbody id="tblDisCol">
+				</tbody>
+			</table>
+		</div>
+		<div id="PorCategoria" class="container-fluid">
+			<h2>Informes por Categoria</h2>
+			<h3 id="ali">Alimentos</h3>
+			<table id="tableAli" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableAliBod">
+				</tbody>
+			</table>
+			<h3 id="jug">Jugueteria</h3>
+			<table id="tableJug" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableJugBod">
+				</tbody>
+			</table>
+			<h3 id="nica">Electronica</h3>
+			<table id="tablenica" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tablenicaBod">
+				</tbody>
+			</table>
+			<h3 id="ticos">Electrodomesticos</h3>
+			<table id="tableticos" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableticosBod">
+				</tbody>
+			</table>
+			<h3 id="beb">Bebidas</h3>
+			<table id="tableBeb" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableBebBod">
+				</tbody>
+			</table>
+			<h3 id="baz">Bazar</h3>
+			<table id="tableBaz" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableBazBod">
+				</tbody>
+			</table>
+			<h3 id="cos">Cosmeticos</h3>
+			<table id="tableCos" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableCosBod">
+				</tbody>
+			</table>
+			<h3 id="per">Perfumeria</h3>
+			<table id="tablePer" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tablePerBod">
+				</tbody>
+			</table>
+			<h3 id="ves">Vestimenta</h3>
+			<table id="tableVes" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tableVesBod">
+				</tbody>
+			</table>
+		</div>
+		<div id="PorSector"  class="container-fluid">
+			<h2>Productos por Sector</h2>
+			<table id="tblSec" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Categoria</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+				</tr>
+				<tbody id="tblSecBody">
+				</tbody>
+			</table>
+		</div>
+		<div id="PorFecha"  class="container-fluid">
+			<h2>Productos por Fecha</h2>
+			<table id="tblFec" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Categoria</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+				</tr>
+				<tbody id="tblFecBody">
+				</tbody>
+			</table>
+		</div>
+		<div id="PorCantidad"  class="container-fluid">
+			<h2>Los 5 productos con major stock</h2>
+			<table id="tblMayCan" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Categoria</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+				</tr>
+				<tbody id="tblMayor">
+				</tbody>
+			</table>
+			<h2>Los 5 productos con menor stock</h2>
+			<table id="tblMenCan" class="table">
+				<tr>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Marca</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Categoria</b>
+					</th>
+					<th>
+						<b>Sector</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+				</tr>
+				<tbody id="tblMenor">
+				</tbody>
+			</table>
+		</div>
+		<div id="Control" class="container-fluid">
+			<h2>Control</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Sector</b>
+					</td>
+					<td>
+						<select id="SecCtrl" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Codigo</b>
+					</td>
+					<td>
+						<select id="SecCod" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cantidad</b>
+					</td>
+					<td>
+						<input type="number" id="SecCantidad" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Fecha de vencimiento</b>
+					</td>
+					<td>
+						<input type="date" id="SecDate" min="2000-01-02" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="Agregar" id="ConAdd" class="btn btn-default"/>
+						<input type="button" value="Aceptar la modificar" id="ConMod" class="btn btn-default"/>
+						<input type="button" value="Cancelar" id="ConCan" class="btn btn-default"/>
+					</td>
+					<td id="ConRes">
+					</td>
+				</tr>
+			</table>
+			<table id="tbeCon" class="table">
+				<tr>
+					<th>
+						<b>Sector</b>
+					</th>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Descripcion</b>
+					</th>
+					<th>
+						<b>Fecha de ultimo cambio</b>
+					</th>
+					<th>
+						<b>Fecha de vencimiento</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Modificacion</b>
+					</th>
+					<th colspan="2">
+						<b>Cambios</b>
+					</th>
+				</tr>
+				<tbody id="tbeConBod">
+				</tbody>
+			</table>
+		</div>
+		<div id="Transferencias" class="container-fluid">
+			<h2>Transferencias</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Sector Origen</b>
+					</td>
+					<td>
+						<select id="numOriSec" class="form-control">
+						</select>
+					</td>
+				</tr>				
+				<tr>
+					<td>
+						<b>Productor</b>
+					</td>
+					<td>
+						<select id="txtOriPro" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cantidad Origen</b>
+					</td>
+					<td>
+						<input type="number" id="numCanOriPro" class="form-control" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Sector Destino</b>
+					</td>
+					<td>
+						<select id="numDesSec" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="MovProducto" value="Mover Producto" class="btn btn-default"/>
+					</td>
+					<td id="MovProRes">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="Pedidos" class="container-fluid">
+			<h2>Pedidos</h2>
+			<table class="table">
+				<tr>
+					<td>
+						<b>Id de cliente</b>
+					</td>
+					<td>
+						<select id="sltIdCliente" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Codigo del pedido</b>
+					</td>
+					<td>
+						<input type="text" id="txtCodPed" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Sector</b>
+					</td>
+					<td>
+						<select id="sltSec" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Producto</b>
+					</td>
+					<td>
+						<select id="sltPro" class="form-control">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cantidad</b>
+					</td>
+					<td>
+						<input type="number" id="numCanCli" class="form-control"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="btnPedAdd" value="Hacer pedido" class="btn btn-default"/>
+						<input type="button" id="btnPedMod" value="Modificar el pedido" class="btn btn-default"/>
+						<input type="button" id="btnPedCan" value="Cancelar" class="btn btn-default"/>
+					</td>
+					<td>
+						<p id="resPed"></p>
+					</td>
+				</tr>
+			</table>
+			<table id="tbePed" class="table">
+				<tr>
+					<th>
+						<b>Numero de pedido</b>
+					</th>
+					<th>
+						<b>Codigo</b>
+					</th>
+					<th>
+						<b>Cliente</b>
+					</th>
+					<th>
+						<b>Producto</b>
+					</th>
+					<th>
+						<b>Cantidad</b>
+					</th>
+					<th>
+						<b>Fecha</b>
+					</th>
+				</tr>
+				<tbody id="tbePedBod">
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

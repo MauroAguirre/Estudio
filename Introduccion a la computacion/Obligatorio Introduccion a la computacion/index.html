@@ -1,0 +1,447 @@
+<html>
+	<head>
+		<script type="text/javascript" src="JS/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="JS/program.js"></script>
+		<script src="JS/bootstrap.min.js"></script>
+		<link href="CSS/estilos.css" type="text/css" rel="stylesheet"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="div1" class="container-fluid">
+			<h1 class="text-center">Obligatorio de Introduccion a la computacion</h1>
+		</div>
+		<div id="div2" class="container-fluid">
+			<h2>Cambio de base</h2>
+			<form>
+				<table>
+					<tr>
+						<th>
+							Ingrese un numero
+						</th>
+						<th>
+							Eliga la base del numero
+						</th>
+						<th>
+							Eliga la base a convertir
+						</th>
+						<th>
+							<input type="button" id="btnCambioBase" value="Cambiar" class="btn btn-danger"/>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" id="txt1" class="form-control" />
+						</td>
+						<td>
+							<select name="base" id="select1" class="form-control" >
+								<option value="2">2</option>
+								<option value="8">8</option>
+								<option value="10">10</option>
+								<option value="16">16</option>	
+							</select>
+						</td>						
+						<td>
+							<select name="base" id="select2" class="form-control" >
+								<option value="2">2</option>
+								<option value="8">8</option>
+								<option value="10">10</option>
+								<option value="16">16</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" id="txt2" readonly="readonly" class="form-control"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="div3" class="container-fluid">
+			<h2>Almacenar internamente un valor</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							Ingrese un valor
+						</th>
+						<th>
+							Eliga el tipo
+						</th>
+						<th>
+							Eliga el signo
+						</th>
+						<th>
+							Eliga en que lo almacenara
+						</th>
+						<th>
+							<input type="button" id="btnAlmacenarInternamente" value="Verificar" class="btn btn-danger"/>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" id="txt3" class="form-control" />
+						</td>
+						<td>
+							<select name="tipo" id="select3" class="form-control" >
+								<option value="texto">texto</option>
+								<option value="2">2</option>
+								<option value="8">8</option>
+								<option value="10">10</option>
+								<option value="16">16</option>	
+							</select>
+						</td>
+						<td>
+							<select name="signo" id="select4" class="form-control" >
+							</select>
+						</td>
+						<td>
+							<select name="almacenaje" id="select5" class="form-control" >
+							</select>
+						</td>
+						<td>
+							<input type="text" id="txt4" readonly="readonly" class="form-control"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<p id="res"></p>
+		</div>
+		<div id="div4" class="container-fluid">
+			<h2>Almacenamiento de punto flotante</h2>
+			<table>
+				<head>
+					<tr>
+						<th colspan="6">
+						</th>
+						<th>
+							<input type="number" id="numElevado" class="form-control"/>
+						</th>
+						<th>
+							<input type="text" id="res2" class="form-control" readonly="readonly"/>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<select name="signo" id="select6" class="form-control">
+								<option value="1">+</option>
+								<option value="2">-</option>
+							</select>
+						</td>
+						<td>
+							<input type="number" id="numEntero" class="form-control"/>
+						</td>
+						<td>
+							<b>,</b>
+						</td>
+						<td>
+							<input type="number" id="numFraccion" class="form-control"/>
+						</td>
+						<td>
+							X
+						</td>
+						<td>
+							10
+						</td>
+						<td>
+							<select name="formato" id="select7" class="form-control">
+								<option value="1">Precision media (16 bits)</option>
+								<option value="2">Precision sencilla (32 bits)</option>
+								<option value="3">Precision doble (64 bits)</option>
+							</select>
+						</td>
+						<td>
+							<input type="button" value="Calcular" id="btnPuntoFlotante" class="btn btn-danger"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table id="tblPuntoFlotante1" class="table-bordered">
+				<thead>
+					<tr>
+						<th>
+							Signo
+						</th>
+						<th colspan="8">
+							Exponente
+						</th>
+						<th colspan="7">
+							Mantisa
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="signo">
+						</td>
+						<td id="exp1">
+						</td>
+						<td id="exp2">
+						</td>
+						<td id="exp3">
+						</td>
+						<td id="exp4">
+						</td>
+						<td id="exp5">
+						</td>
+						<td id="exp6">
+						</td>
+						<td id="exp7">
+						</td>
+						<td id="exp8">
+						</td>
+						<td id="man1">
+						</td>
+						<td id="man2">
+						</td>
+						<td id="man3">
+						</td>
+						<td id="man4">
+						</td>
+						<td id="man5">
+						</td>
+						<td id="man6">
+						</td>
+						<td id="man7">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table id="tblPuntoFlotante2" class="table-bordered">
+				<thead>
+					<tr>
+						<th>
+							Signo
+						</th>
+						<th colspan="8">
+							Exponente
+						</th>
+						<th colspan="23">
+							Mantisa
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="2signo">
+						</td>
+						<td id="2exp1">
+						</td>
+						<td id="2exp2">
+						</td>
+						<td id="2exp3">
+						</td>
+						<td id="2exp4">
+						</td>
+						<td id="2exp5">
+						</td>
+						<td id="2exp6">
+						</td>
+						<td id="2exp7">
+						</td>
+						<td id="2exp8">
+						</td>
+						<td id="2man1">
+						</td>
+						<td id="2man2">
+						</td>
+						<td id="2man3">
+						</td>
+						<td id="2man4">
+						</td>
+						<td id="2man5">
+						</td>
+						<td id="2man6">
+						</td>
+						<td id="2man7">
+						</td>
+						<td id="2man8">
+						</td>
+						<td id="2man9">
+						</td>
+						<td id="2man10">
+						</td>
+						<td id="2man11">
+						</td>
+						<td id="2man12">
+						</td>
+						<td id="2man13">
+						</td>
+						<td id="2man14">
+						</td>
+						<td id="2man15">
+						</td>
+						<td id="2man16">
+						</td>
+						<td id="2man17">
+						</td>
+						<td id="2man18">
+						</td>
+						<td id="2man19">
+						</td>
+						<td id="2man20">
+						</td>
+						<td id="2man21">
+						</td>
+						<td id="2man22">
+						</td>
+						<td id="2man23">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table id="tblPuntoFlotante3" class="table-bordered">
+				<thead>
+					<tr>
+						<th>
+							Signo
+						</th>
+						<th colspan="11">
+							Exponente
+						</th>
+						<th colspan="52">
+							Mantisa
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="3signo">
+						</td>
+						<td id="3exp1">
+						</td>
+						<td id="3exp2">
+						</td>
+						<td id="3exp3">
+						</td>
+						<td id="3exp4">
+						</td>
+						<td id="3exp5">
+						</td>
+						<td id="3exp6">
+						</td>
+						<td id="3exp7">
+						</td>
+						<td id="3exp8">
+						</td>
+						<td id="3exp9">
+						</td>
+						<td id="3exp10">
+						</td>
+						<td id="3exp11">
+						</td>
+						<td id="3man1">
+						</td>
+						<td id="3man2">
+						</td>
+						<td id="3man3">
+						</td>
+						<td id="3man4">
+						</td>
+						<td id="3man5">
+						</td>
+						<td id="3man6">
+						</td>
+						<td id="3man7">
+						</td>
+						<td id="3man8">
+						</td>
+						<td id="3man9">
+						</td>
+						<td id="3man10">
+						</td>
+						<td id="3man11">
+						</td>
+						<td id="3man12">
+						</td>
+						<td id="3man13">
+						</td>
+						<td id="3man14">
+						</td>
+						<td id="3man15">
+						</td>
+						<td id="3man16">
+						</td>
+						<td id="3man17">
+						</td>
+						<td id="3man18">
+						</td>
+						<td id="3man19">
+						</td>
+						<td id="3man20">
+						</td>
+						<td id="3man21">
+						</td>
+						<td id="3man22">
+						</td>
+						<td id="3man23">
+						</td>
+						<td id="3man24">
+						</td>
+						<td id="3man25">
+						</td>
+						<td id="3man26">
+						</td>
+						<td id="3man27">
+						</td>
+						<td id="3man28">
+						</td>
+						<td id="3man29">
+						</td>
+						<td id="3man30">
+						</td>
+						<td id="3man31">
+						</td>
+						<td id="3man32">
+						</td>
+						<td id="3man33">
+						</td>
+						<td id="3man34">
+						</td>
+						<td id="3man35">
+						</td>
+						<td id="3man36">
+						</td>
+						<td id="3man37">
+						</td>
+						<td id="3man38">
+						</td>
+						<td id="3man39">
+						</td>
+						<td id="3man40">
+						</td>
+						<td id="3man41">
+						</td>
+						<td id="3man42">
+						</td>
+						<td id="3man43">
+						</td>
+						<td id="3man44">
+						</td>
+						<td id="3man45">
+						</td>
+						<td id="3man46">
+						</td>
+						<td id="3man47">
+						</td>
+						<td id="3man48">
+						</td>
+						<td id="3man49">
+						</td>
+						<td id="3man50">
+						</td>
+						<td id="3man51">
+						</td>
+						<td id="3man52">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

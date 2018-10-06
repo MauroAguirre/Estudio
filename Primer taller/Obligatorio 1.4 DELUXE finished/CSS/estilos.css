@@ -1,0 +1,71 @@
+*{
+	font-family:Georgia;
+}
+body{
+	margin-left:10%;
+	margin-right:10%;
+	background-color: #FFF8DC;
+}
+nav{box-shadow: 10px 10px grey;}
+img{
+	margin-right:1%;
+	float:left;
+	display:block;
+	width:60%;
+}
+.myCarousel{
+	width:60%;
+	float:left;
+	margin-right:1%;
+	max-height:340px;
+}
+.myCarousel img{
+	width:100%;
+	max-height:340px;
+}
+#CE{
+	text-align:center;
+}
+.tax{
+	margin-right:1%;
+	float:left;
+	width:40%;
+	height:40%;
+}
+.tax1{
+	margin-left:1%;
+	float:right;
+	width:40%;
+	height:40%;
+}
+h1, h4{
+	text-align:center;
+}
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+h2{
+	margin-left:1%;
+}
+.efecto:hover{
+	background-color:gray;
+}
+.navbar-header{
+	margin-left:15px;
+}
+@media screen and (max-width: 1200px) {
+    body {
+
+		margin-left: 5%;
+		margin-right: 5%;
+		}
+}
+@media screen and (max-width: 700px) {
+    body {
+		margin-left: 2%;
+		margin-right: 2%;
+		}
+}

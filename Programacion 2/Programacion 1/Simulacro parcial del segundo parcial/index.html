@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<script type="text/javascript" src="JS/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="JS/program.js"></script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>
+					<b>Codigo</b>
+				</th>
+				<th>
+					<b>Talle</b>
+				</th>
+				<th>
+					<b>Color</b>
+				</th>
+				<th>
+					<b>Descripcion</b>
+				</th>
+				<th>
+					<input type="button" value="Ingresar" id="btnIngresar"/> 
+				</th>
+				<th>
+					<input type="button" value="Mostrar" id="btnMostrar"/> 
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="txt" id="txtCodigo"/>
+				</td>
+				<td>
+					<select id="sltTalle">
+						<option value="1">XL</option>
+						<option value="2">L</option>
+						<option value="3">M</option>
+						<option value="4">S</option>
+					</select>
+				</td>
+				<td>
+					<input type="text" id="txtColor"/>
+				</td>
+				<td>
+					<input type="text" id="txtDescripcion"/>
+				</td>
+				<td colspan="2">
+					<p id="lblRespuesta"></p>
+				</td>
+			</tr>
+		</table>
+		<p id="lbl2"></p>
+	</body>
+</html>

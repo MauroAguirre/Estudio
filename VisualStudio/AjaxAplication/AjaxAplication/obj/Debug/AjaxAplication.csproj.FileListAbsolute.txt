@@ -1,0 +1,148 @@
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\AjaxAplication.dll.config
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\AjaxAplication.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\AjaxAplication.pdb
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Antlr3.Runtime.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\EntityFramework.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\EntityFramework.SqlServer.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Google.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Web.Infrastructure.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Newtonsoft.Json.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Owin.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Helpers.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Mvc.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Optimization.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Razor.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Deployment.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Razor.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\WebGrease.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Helpers.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Mvc.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Optimization.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.Razor.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Deployment.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Razor.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Newtonsoft.Json.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Antlr3.Runtime.pdb
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\EntityFramework.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\EntityFramework.SqlServer.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Google.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.Helpers.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.Mvc.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.Optimization.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.Razor.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\EntityFramework.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.csprojResolveAssemblyReference.cache
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.dll
+c:\users\cei\documents\visual studio 2013\Projects\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.pdb
+G:\AjaxAplication\AjaxAplication\bin\AjaxAplication.dll.config
+G:\AjaxAplication\AjaxAplication\bin\AjaxAplication.dll
+G:\AjaxAplication\AjaxAplication\bin\AjaxAplication.pdb
+G:\AjaxAplication\AjaxAplication\bin\Antlr3.Runtime.dll
+G:\AjaxAplication\AjaxAplication\bin\EntityFramework.dll
+G:\AjaxAplication\AjaxAplication\bin\EntityFramework.SqlServer.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Core.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Cookies.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Facebook.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Google.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.OAuth.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Twitter.dll
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Web.Infrastructure.dll
+G:\AjaxAplication\AjaxAplication\bin\Newtonsoft.Json.dll
+G:\AjaxAplication\AjaxAplication\bin\Owin.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Helpers.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Mvc.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Optimization.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Razor.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Deployment.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Razor.dll
+G:\AjaxAplication\AjaxAplication\bin\WebGrease.dll
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Helpers.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Mvc.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Optimization.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.Razor.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Deployment.xml
+G:\AjaxAplication\AjaxAplication\bin\System.Web.WebPages.Razor.xml
+G:\AjaxAplication\AjaxAplication\bin\Newtonsoft.Json.xml
+G:\AjaxAplication\AjaxAplication\bin\Antlr3.Runtime.pdb
+G:\AjaxAplication\AjaxAplication\bin\EntityFramework.xml
+G:\AjaxAplication\AjaxAplication\bin\EntityFramework.SqlServer.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Core.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Facebook.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Cookies.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.OAuth.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Google.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.Twitter.xml
+G:\AjaxAplication\AjaxAplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.Helpers.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.Mvc.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.Optimization.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.Razor.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.Deployment.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\System.Web.WebPages.Razor.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\EntityFramework.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\EntityFramework.SqlServer.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Google.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+G:\AjaxAplication\AjaxAplication\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+G:\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.csprojResolveAssemblyReference.cache
+G:\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.dll
+G:\AjaxAplication\AjaxAplication\obj\Debug\AjaxAplication.pdb

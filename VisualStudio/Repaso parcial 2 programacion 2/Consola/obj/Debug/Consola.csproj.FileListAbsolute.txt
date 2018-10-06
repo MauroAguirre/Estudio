@@ -1,0 +1,9 @@
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\bin\Debug\Consola.exe.config
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\bin\Debug\Consola.exe
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\bin\Debug\Consola.pdb
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\obj\Debug\Consola.exe
+G:\Estudio\VisualStudio\Repaso parcial 2 programacion 2\Consola\obj\Debug\Consola.pdb

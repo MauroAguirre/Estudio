@@ -1,0 +1,47 @@
+*{
+	font-family:Georgia;
+}
+body{
+	margin-left:10%;
+	margin-right:10%;
+	background-color: #FFF8DC;
+}
+nav{box-shadow: 10px 10px grey;}
+img{
+	display:block;
+	width:100%;
+	max-height:350px;
+	min-height:350px;
+}
+.myCarousel{
+	width:60%;
+	float:left;
+	margin-right:1%;
+	max-height:350px;
+	min-height:350px;
+}
+h1{
+	text-align:center;
+}
+h2{
+	margin-left:1%;
+}
+.efecto:hover{
+	background-color:gray;
+}
+.navbar-header{
+	margin-left:15px;
+}
+@media screen and (max-width: 1100px) {
+    body {
+
+		margin-left: 5%;
+		margin-right: 5%;
+		}
+}
+@media screen and (max-width: 700px) {
+    body {
+		margin-left: 2%;
+		margin-right: 2%;
+		}
+}

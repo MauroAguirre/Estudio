@@ -1,0 +1,39 @@
+﻿@using WebApplicationAjax.App_Code
+@{
+    /**/
+
+    ViewBag.Title = "Home Page";
+}
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/home.js")"></script>
+}
+<div class="row">
+    <div class="col-md-12">
+
+        <h1>@TextUtil.SayHello("yo")</h1>
+        <form method="post" action="/home/save" id="todo-item-form">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="Insert description here" />
+            <input type="submit" onclick="submitWithAJAX();" />
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="items-container"></div>
+        <button type="button" onclick="dobleLlamada();">Cargar la vista parcial</button>
+        <div id="items-container-partial-view-1">ACÁ VA LA VISTA</div>
+        <div id="items-container-partial-view-2">ACÁ VA LA VISTA</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+        <button type="button" class="btn btn-primary" onclick="showDataOnModal()">Show</button>
+    </div>
+</div>
+@ModalHelper.MakeAModal()

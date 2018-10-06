@@ -1,0 +1,39 @@
+H:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.dll
+H:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.pdb
+H:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.dll
+H:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.pdb
+H:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.dll
+H:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.dll
+G:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.pdb
+G:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.dll
+D:\Estudio\VisualStudio\MegaAgenda\DAL\bin\Debug\Domain.pdb
+D:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda\DAL\obj\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\DAL.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\Domain.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\Domain.pdb
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.dll
+D:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\Domain.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\bin\Debug\Domain.pdb
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.dll
+G:\Estudio\VisualStudio\MegaAgenda 2.0\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,14 @@
+create database MegaAgenda;
+use MegaAgenda;
+create table Agenda(nombre varchar(45) primary key, fecha_creacion Date);
+create table Contacto(nombre_agenda varchar(45) foreign key references Agenda(nombre),nombre varchar(45),fecha_nacimiento date,mail varchar(45),pais varchar(45),id int identity(1,1),primary key(id,nombre_agenda));
+create table Telefono(numero varchar(45),tipo varchar(45), contacto_id int, nombre_agenda varchar(45),foreign key(contacto_id,nombre_agenda) references Contacto(id,nombre_agenda),primary key(nombre_agenda,contacto_id,numero));
+create table Pais(nombre varchar(45) primary key);
+create table Cita(ida int,idb int,nombre_agenda_a varchar(45),nombre_agenda_b varchar(45),foreign key(ida,nombre_agenda_a)references Contacto(id,nombre_agenda),foreign key(idb,nombre_agenda_b)references Contacto(id,nombre_agenda),primary key(ida,idb,nombre_agenda_a,nombre_agenda_b));
+
+insert into Pais("nombre")values('Uruguay');
+insert into Pais("nombre")values('Argentina');
+insert into Pais("nombre")values('Brasil');
+use Probando;
+drop database MegaAgenda;
+

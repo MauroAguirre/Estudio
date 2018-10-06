@@ -1,0 +1,6 @@
+respuesta:cadena
+Escribir "Usted tiene titulo de bachiller?"
+Leer respuesta
+si respuesta = "no"
+	Escribir "A superado una prueba de acceso?"
+	

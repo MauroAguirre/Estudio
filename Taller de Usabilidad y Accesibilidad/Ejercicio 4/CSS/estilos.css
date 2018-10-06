@@ -1,0 +1,213 @@
+div{
+	outline: solid 1px green;  /*	sirve para crear bordes sin que ocupe pixeles	*/
+	height:400px;
+	width:400px;
+	margin:auto;
+}
+span{
+	width:33.333333%; 
+	height:33.333333%;
+	outline: solid 1px red;
+	float:left;
+}
+span:first-child:hover{
+	background:url(../imagenes/cerdo-shrek.png);
+	background-size: cover;
+}
+span:first-child+span:hover{
+	background:url(../imagenes/donkey.png);
+	background-size: cover;
+}
+span:nth-child(3):hover{
+	background:url(../imagenes/fiona-antes.png);
+	background-size: cover;
+}
+span:nth-child(4):hover{
+	background:url(../imagenes/fiona-despues.png);
+	background-size: cover;
+}
+span:nth-child(5):hover{
+	background:url(../imagenes/galletita.png);
+	background-size: cover;
+}
+span:nth-child(6):hover{
+	background:url(../imagenes/gato-shrek.png);
+	background-size: cover;
+}
+span:nth-child(7):hover{
+	background:url(../imagenes/mago-merlin.png);
+	background-size: cover;
+}
+span:nth-child(8):hover{
+	background:url(../imagenes/shrek.png);
+	background-size: cover;
+}
+span:last-child:hover{
+	background:url(../imagenes/shrek-pinocho.png);
+	background-size: cover;
+}
+/*
+span{
+	width:100px; 
+	height:100px;
+	border: solid 1px red;
+}
+div{
+	border: solid 1px green;
+	height:304px;
+	width:304px;
+}
+span:nth-child(1){
+	display:flex;
+	float:left;
+	border-top: 0;
+	border-left:0;
+}
+span:nth-child(1):hover{
+	background:url(../imagenes/cerdo-shrek.png);
+}
+span:nth-child(2){
+	display:flex;
+	float:left;
+	border-top: 0;
+}
+span:nth-child(2):hover{
+	background:url(../imagenes/donkey.png);
+}
+span:nth-child(3){
+	display:flex;
+	float:left;
+	border-top: 0;
+	border-right:0;
+}
+span:nth-child(3):hover{
+	background:url(../imagenes/fiona-antes.png);
+}
+span:nth-child(4){
+	display:flex;
+	float:left;
+	border-left:0;
+}
+span:nth-child(4):hover{
+	background:url(../imagenes/fiona-despues.png);
+}
+span:nth-child(5){
+	display:flex;
+	float:left;
+}
+span:nth-child(5):hover{
+	background:url(../imagenes/galletita.png);
+}
+span:nth-child(6){
+	display:flex;
+	border-right:0;
+}
+span:nth-child(6):hover{
+	background:url(../imagenes/gato-shrek.png);
+}
+span:nth-child(7){
+	display:flex;
+	float:left;
+	border-left:0;
+	border-bottom:0;
+}
+span:nth-child(7):hover{
+	background:url(../imagenes/mago-merlin.png);
+}
+span:nth-child(8){
+	display:flex;
+	float:left;
+	border-bottom:0;
+}
+span:nth-child(8):hover{
+	background:url(../imagenes/shrek.png);
+}
+span:nth-child(9){
+	display:flex;
+	float:left;
+	border-right:0;
+	border-bottom:0;
+}
+span:nth-child(9):hover{
+	background:url(../imagenes/shrek-pinocho.png);
+}
+*/
+
+
+/*
+span{
+	width:100px; 
+	height:100px;
+	box-shadow: 0px 0px 1px 0px red;
+}
+div{
+	border: solid 1px green;
+	height:300px;
+	width:300px;
+}
+span:nth-child(1){
+	display:flex;
+	float:left;
+}
+span:nth-child(1):hover{
+	background:url(../imagenes/cerdo-shrek.png);
+}
+span:nth-child(2){
+	display:flex;
+	float:left;
+	box-shadow: 0px 0px 1px 0px red;
+}
+span:nth-child(2):hover{
+	background:url(../imagenes/donkey.png);
+}
+span:nth-child(3){
+	display:flex;
+}
+span:nth-child(3):hover{
+	background:url(../imagenes/fiona-antes.png);
+}
+span:nth-child(4){
+	display:flex;
+	float:left;
+	box-shadow: 0px 0px 1px 0px red;
+}
+span:nth-child(4):hover{
+	background:url(../imagenes/fiona-despues.png);
+}
+span:nth-child(5){
+	display:flex;
+	float:left;
+}
+span:nth-child(5):hover{
+	background:url(../imagenes/galletita.png);
+}
+span:nth-child(6){
+	display:flex;
+	box-shadow: 0px 0px 1px 0px red;
+}
+span:nth-child(6):hover{
+	background:url(../imagenes/gato-shrek.png);
+}
+span:nth-child(7){
+	display:flex;
+	float:left;
+}
+span:nth-child(7):hover{
+	background:url(../imagenes/mago-merlin.png);
+}
+span:nth-child(8){
+	display:flex;
+	float:left;
+	box-shadow: 0px 0px 1px 0px red;
+}
+span:nth-child(8):hover{
+	background:url(../imagenes/shrek.png);
+}
+span:nth-child(9){
+	display:flex;
+	float:left;
+}
+span:nth-child(9):hover{
+	background:url(../imagenes/shrek-pinocho.png);
+}
+*/

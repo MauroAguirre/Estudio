@@ -1,0 +1,28 @@
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\bin\Debug\Dominio.dll
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\bin\Debug\Dominio.pdb
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.dll
+G:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.pdb
+F:\Estudio\Taller de objetos\Obligatorio\Dominio\bin\Debug\Dominio.dll
+F:\Estudio\Taller de objetos\Obligatorio\Dominio\bin\Debug\Dominio.pdb
+F:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+F:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.dll
+F:\Estudio\Taller de objetos\Obligatorio\Dominio\obj\Debug\Dominio.pdb
+F:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.dll
+F:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.pdb
+F:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+F:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.dll
+F:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.dll
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.dll
+C:\Users\Mauro\Desktop\Obligatorio documentacion\Obligatorio taller objetos\Dominio\obj\Debug\Dominio.pdb

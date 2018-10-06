@@ -1,0 +1,26 @@
+F:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.pdb
+G:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.pdb
+G:\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.pdb
+G:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.dll
+G:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Obligatorio parte dos con Master\Dominio\obj\Debug\Dominio.pdb

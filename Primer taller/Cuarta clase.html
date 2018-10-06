@@ -1,0 +1,108 @@
+<!-- 
+		Que es CSS?
+	CSS es un lenguaje que permite asociar estilos a documentos de marcacion como html y xml de temas ademas de poder ser utilizados por actionscript
+	Son conjuntos de reglas las cuales asocian un estilo a parte de  todo el documento
+	Su uso constribuye a tener documentos bien definidos "documentos semanticos" 
+	La forma de que CSS se asocian los documentos nos permite reutilizarlos para determinar el formato de sitios enteros. Facilidad de mantenimiento
+		Beneficios 
+	Aumento de accesibilidad, ya que el contenido se mantiene "limpio" con etiquetas semanticas 
+	Trabajo ordenado, disminucion del trabajo de producción y mantenimiento 
+	Utilidades que no se pueden lograr con html
+	Anidamiento 
+		Sintaxis 
+	Selector o patron de seleccion 
+	Una o mas declaraciones (una prodiedad y un valor) 
+		ejemplo:
+	selector{
+		propiedad1 : valor1;
+		propiedad2 : valor2;
+	}
+	CSS externo
+	No repetir los mismos estilos
+		Tipos de selectores
+	Selector universal
+	*{
+	color:red;
+	}
+	Selectores de tipo
+	p{
+		color:blue;
+	}
+	h1{
+		color:blue;
+	}
+	Selector de clase
+	.nombreClase{
+		background-color: grey;
+	}
+	Selector de id
+	#nombreId{
+		color:red;
+	}
+	Selectores de descendencia
+	p a{
+		color:blue;
+	}
+	todos los a que sean hijos de un p (a que esten adentro de un p)
+	.menu li a{
+		color:green;
+	}
+	los a que esten adentro de un li que esten adentro de una clase menu
+	no tiene porque ser hijos directos
+	selectores agrupados
+	p, a, li{
+		color:red;
+	}
+	Separados por comas
+	Selectores de atributo
+	a[class]{
+		color:green;
+	}
+	todos los a que contengas el atributo class
+	input[type="text"]{
+		color:red;
+	}
+	todos los input que tengan atributo type con text
+	Selectores compuestos
+	: link		(no visitados)
+	: visited	(visitados)
+	: hover		(pasar por ensima)
+	: active	(mientras se acciona)
+	: focus		(cuando tiene foco)
+	a: visited{
+		color:blue;
+	}
+	.menu li a:active{
+		background-color:yellow;
+	}
+	Pseudoelementos
+	:before
+	p:before{
+		content : "Nuevo!"
+	}
+	:after
+	p: after{
+		content: "*"
+	}
+	<p>Hola</p>
+	Nuevo!Hola*
+		Prevalencia
+	Cuando mas especifica sea la regla mas poder tiene
+	Si hay dos normas iguales prevalece la ultima declarada
+	!importante:	La regla se vuelve mas importante	(no todos los navegadores lo soportan)
+		Modelo de cajas	CSS
+	Todos los elementos incluidos en una pagina html se representan mediante capas rectangulares
+	Estan formadas por margin, borde, padding, contenido
+	El margen, el rrelleno y los bordes determinan la anchura y altura final del elemento
+	final: ancho contenido (300px) y padding + borde + margen
+		Posicion:
+	Static (normal)
+	relative (relativo) al objeto que lo contiene
+	absolute (absoluto)
+	fixed (fijo)
+	top: 2px
+	bottom
+	left
+	right
+	mejor manejar con porcentajes para que sea mas responsive
+-->

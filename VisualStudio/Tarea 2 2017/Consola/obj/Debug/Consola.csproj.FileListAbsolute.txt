@@ -1,0 +1,37 @@
+J:\VisualStudio\Tarea 2\Consola\bin\Debug\Consola.exe.config
+J:\VisualStudio\Tarea 2\Consola\bin\Debug\Consola.exe
+J:\VisualStudio\Tarea 2\Consola\bin\Debug\Consola.pdb
+J:\VisualStudio\Tarea 2\Consola\bin\Debug\Dominio.dll
+J:\VisualStudio\Tarea 2\Consola\bin\Debug\Dominio.pdb
+J:\VisualStudio\Tarea 2\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Tarea 2\Consola\obj\Debug\Consola.exe
+J:\VisualStudio\Tarea 2\Consola\obj\Debug\Consola.pdb
+G:\VisualStudio\Tarea 2 2013\Consola\bin\Debug\Consola.exe.config
+G:\VisualStudio\Tarea 2 2013\Consola\obj\Debug\Consola.exe
+G:\VisualStudio\Tarea 2 2013\Consola\obj\Debug\Consola.pdb
+G:\VisualStudio\Tarea 2 2013\Consola\bin\Debug\Consola.exe
+G:\VisualStudio\Tarea 2 2013\Consola\bin\Debug\Consola.pdb
+G:\VisualStudio\Tarea 2 2013\Consola\bin\Debug\Dominio.dll
+G:\VisualStudio\Tarea 2 2013\Consola\bin\Debug\Dominio.pdb
+G:\VisualStudio\Tarea 2 2013\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.exe.config
+J:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.exe
+J:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.pdb
+J:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Dominio.dll
+J:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Dominio.pdb
+J:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.exe
+J:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.pdb
+F:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.exe.config
+F:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.exe
+F:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.pdb
+F:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.exe
+F:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.pdb
+F:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Dominio.dll
+F:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Dominio.pdb
+F:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Tarea 2 2017\Consola\bin\Debug\Consola.exe.config
+G:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.exe
+G:\VisualStudio\Tarea 2 2017\Consola\obj\Debug\Consola.pdb

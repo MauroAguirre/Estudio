@@ -1,0 +1,6 @@
+1)Crear una carpeta donde vamos a querer tener el servidor
+2)nos situamos adentro de dicha carpeta en la consola e instalamos todo esto usando los siguientes comandos
+1)npm init
+2)npm install express -save
+3)npm install body-parser -save
+4)npm install mongoose -save

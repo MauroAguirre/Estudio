@@ -1,0 +1,5 @@
+G:\VisualStudio\Asp Ejercicio 2\Dominio\bin\Debug\Dominio.dll
+G:\VisualStudio\Asp Ejercicio 2\Dominio\bin\Debug\Dominio.pdb
+G:\VisualStudio\Asp Ejercicio 2\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Asp Ejercicio 2\Dominio\obj\Debug\Dominio.dll
+G:\VisualStudio\Asp Ejercicio 2\Dominio\obj\Debug\Dominio.pdb

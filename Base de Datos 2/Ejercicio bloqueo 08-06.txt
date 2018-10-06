@@ -1,0 +1,24 @@
+L(Z) L(Ñ) Z+Ñ E(Z) C
+solo importan los escribir y leer
+
+a)Basico BC(Z) L(Z) D(Z) BE(Ñ) L(Ñ) D(Ñ) BE(Z) E(Z) D(Z) C
+bloqueo, hago algo, desbloqueo
+
+b)Conservador BE(Z) BC(Ñ) L(Z) L(Ñ) D(Ñ) E(Z) D(Z) C
+bloqueo al principio
+desbloqueo las cosas cuando no las uso mas
+
+C)Estricto BC(Z) L(Z) BE(Ñ) L(Ñ) BE(z) E(Z) C Desbloqueo despues del commit
+
+T1 L(z) L(A) E(Z) L(B) C
+T2 L(Y) E(Z) L(B) C
+T3 L(A) L(B) E(B) E(A) C
+Bloqueo esclusivo al final
+
+BE(Z) BC(A) BC(Z) L(Z) L(A) L(E) L(B) D(A) D(B) D(Z)
+
+BC(Y) BE(Z) BC(B) L(Y) E(Z) L(B) D(Y) D(B) D(Z)
+
+BE(A) BE(B) L(A) L(B) E(B) E(A) D(A) D(B)
+
+seguridad

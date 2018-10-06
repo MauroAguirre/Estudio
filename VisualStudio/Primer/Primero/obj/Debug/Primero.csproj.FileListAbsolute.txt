@@ -1,0 +1,26 @@
+G:\VisualStudio\Primero\Primero\bin\Primero.dll.config
+G:\VisualStudio\Primero\Primero\bin\Primero.dll
+G:\VisualStudio\Primero\Primero\bin\Primero.pdb
+G:\VisualStudio\Primero\Primero\obj\Debug\Primero.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Primero\Primero\obj\Debug\Primero.dll
+G:\VisualStudio\Primero\Primero\obj\Debug\Primero.pdb
+F:\VisualStudio\Primero\Primero\obj\Debug\Primero.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Primero\Primero\obj\Debug\Primero.dll
+F:\VisualStudio\Primero\Primero\bin\Primero.dll.config
+F:\VisualStudio\Primero\Primero\bin\Primero.dll
+F:\VisualStudio\Primero\Primero\bin\Primero.pdb
+F:\VisualStudio\Primero\Primero\obj\Debug\Primero.pdb
+J:\VisualStudio\Primer ejercicio html c#\Primero\bin\Primero.dll.config
+J:\VisualStudio\Primer ejercicio html c#\Primero\bin\Primero.dll
+J:\VisualStudio\Primer ejercicio html c#\Primero\bin\Primero.pdb
+J:\VisualStudio\Primer ejercicio html c#\Primero\obj\Debug\Primero.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Primer ejercicio html c#\Primero\obj\Debug\Primero.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Primer ejercicio html c#\Primero\obj\Debug\Primero.dll
+J:\VisualStudio\Primer ejercicio html c#\Primero\obj\Debug\Primero.pdb
+J:\VisualStudio\Primer\Primero\bin\Primero.dll.config
+J:\VisualStudio\Primer\Primero\bin\Primero.dll
+J:\VisualStudio\Primer\Primero\bin\Primero.pdb
+J:\VisualStudio\Primer\Primero\obj\Debug\Primero.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Primer\Primero\obj\Debug\Primero.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Primer\Primero\obj\Debug\Primero.dll
+J:\VisualStudio\Primer\Primero\obj\Debug\Primero.pdb

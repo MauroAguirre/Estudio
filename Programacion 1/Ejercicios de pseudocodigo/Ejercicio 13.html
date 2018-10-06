@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script>
+			var alumno;
+			var practico;
+			var teorico;
+			var problemas;
+			do{
+				alumno=prompt("Ingrese el nombre del alumno");
+				if(alumno!=""){
+					practico=Number(prompt("Ingrese la nota de la parte practica"));
+					teorico=Number(prompt("Ingrese la nota de la parte teorica"));
+					problemas=Number(prompt("Ingrese la nota de la parte de los problemas"));
+					if(practico>-1 && practico<11 && teorico>-1 && teorico<11 && problemas>-1 && problemas<11)
+						alert("El alumno "+alumno+" tiene una nota de: "+((practico*0.1)+(teorico*0.4)+(problemas*0.5)));
+					else
+						alert("Error en la nota, ingrese otro alumno");
+				}
+			}while(alumno!="");
+		</script>
+	</head>
+	<body>
+		<a href="Index.html">Volver al inicio</a>
+	</body>
+</html>

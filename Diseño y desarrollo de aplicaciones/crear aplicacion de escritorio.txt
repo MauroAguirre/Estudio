@@ -1,0 +1,7 @@
+commando ls para mostrar los archivos del directorio
+
+1 - me paro en el proyecto con la consola
+2 - ingreso: mvn clean package
+3 - voy a donde se creo el archivo jar
+4 - voy al archivo de la clase que tiene el main
+5 - ingreso: java App

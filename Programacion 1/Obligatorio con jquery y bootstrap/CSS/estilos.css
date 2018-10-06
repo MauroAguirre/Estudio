@@ -1,0 +1,16 @@
+table,td,tr{
+	border: solid black 2px;
+	background: skyblue;
+}
+.medio{
+	text-align:center;
+}
+div{
+	background: MintCream  ;
+}
+body{
+	background-color: MintCream  ;
+}
+#MenuPrincipal{
+	text-align:center;
+}

@@ -1,0 +1,18 @@
+la alcaldia de punta del este desea contratarnos para crear un sitio web que permita gestionar los destinos turisticos
+de la ciudad. Dicho sitio web debe contar con dos roles: Administrador y usuario final.
+Panel de administracion: este panel debe contar con las siguientes funcionalidades:
+	*alta
+	*modificacion
+	*borrado
+	*listado de sitios: cada sitio esta compuesto de un nombre, descripcion, ubicacion (debe ser seleccionada en un mapa), tipo, imagen y costo.
+	alta modificacion borrado y listado de tipo 
+	cada tipo esta compuesto de un nombre y descripcion
+	*Debe incluirse una seccion en donde se puedan ver los 5 sitio con mejor y peor valoracion.
+Sitio destinado a los usuarios finales:
+	*El sitio debe contar con un mapa de la ciudad (debe localisarte en la misma) en donde se muestran todos los sitios
+	ingresados, en donde al seleccionar el punto en el mapa debe desplegarse de alguna forma del lugar seleccionado.
+	*El usuario del sitio debe poder agregar comentarios y valoraciones de cada lugar, de cada comentario se le 
+	solicita un correo electronico, comentario y valoracion.
+Solicitud de sitio:
+	*los usuarios de la aplicacion deben de tener la posibilidad de solicitar a los administrativos el ingreso de 
+	un nuevo sitio, el cual debera ser autorisado en el panel de admistracion

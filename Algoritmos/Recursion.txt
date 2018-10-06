@@ -1,0 +1,15 @@
+Volver una cosa al sitio donde salio, vector,repetirse,reaparecer
+=>En terminos de programacion
+*Si una funcion se invoca a si misma, entonces dicha funcion es una funcion recursiva
+*La funcion se define en terminos de si misma
+*Circularidad debemos evitar la recurrencia inutil
+public void a()
+{
+	a(); =>error StackOverFlow (pila de memoria llena)
+}
+	pila de llamadas
+*Cada vez que un programa Q llama a otro programa R,
+debe guardarse una indicacion del punto en Q al cual debe devolverse el control al finalizar la ejecucion de R.
+*Se utiliza una estructura para almacenar los sucesivos puntos de retorno.
+	=>la estructura crece con cada nueva llamada (un lugar) y decrece al terminar la ejecucion de un subprograma
+La estructura se comporta como una pila

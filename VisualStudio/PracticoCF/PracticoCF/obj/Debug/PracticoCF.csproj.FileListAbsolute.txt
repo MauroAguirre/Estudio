@@ -1,0 +1,12 @@
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\PracticoCF.exe.config
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\obj\Debug\PracticoCF.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\PracticoCF.exe
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\PracticoCF.pdb
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\EntityFramework.SqlServer.dll
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\bin\Debug\EntityFramework.SqlServer.xml
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\obj\Debug\PracticoCF.exe
+G:\Estudio\VisualStudio\PracticoCF\PracticoCF\obj\Debug\PracticoCF.pdb

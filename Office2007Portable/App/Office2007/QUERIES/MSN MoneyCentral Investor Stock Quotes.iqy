@@ -1,0 +1,9 @@
+WEB
+1
+http://moneycentral.msn.com/investor/external/excel/quotes.asp?SYMBOL=["QUOTE","Enter stock, fund or other MSN MoneyCentral Investor symbols separated by commas."]
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

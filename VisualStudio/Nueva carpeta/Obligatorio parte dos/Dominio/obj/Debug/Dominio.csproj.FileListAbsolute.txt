@@ -1,0 +1,4 @@
+F:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos\Dominio\bin\Debug\Dominio.pdb
+F:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.dll
+F:\VisualStudio\Obligatorio parte dos\Dominio\obj\Debug\Dominio.pdb

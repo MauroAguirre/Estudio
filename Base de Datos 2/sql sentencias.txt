@@ -1,0 +1,92 @@
+create database Probando;
+use Probando;
+create table Empleados(ci int primary key, nombre varchar(45), sueldo int, constraint cksueldo check(sueldo>0 and sueldo<10000));
+create table Ciudades(nomciud varchar(45) primary key, habitantes int, tipo varchar(45),intendente varchar(45) unique, alcalde varchar(45) unique, constraint chCiudades check( tipo in('Grande','Mediana','Chica')), constraint ckhabitantes check(habitantes>0));
+create table Maquinas(matricula varchar(45) primary key, descripcion varchar(45) not null, costoHora int, colorMaq varchar(45));
+create table Obras(codobr int primary key, descripcion varchar(45), nomciud varchar(45), capataz varchar(45) unique, constraint fkCiudades foreign key (nomciud) references Ciudades (nomciud));
+create table Trabajan(fecha date, ci int, codobr int, matriculaMaq varchar(45), constraint fkObras foreign key (codobr) references Obras (codobr), constraint fkEmpleados foreign key (ci) references Empleados (ci),constraint fkMaquinas foreign key (matriculaMaq) references Maquinas (matricula),constraint pkTrabajan primary key(ci,codobr,matriculaMaq));
+
+insert into Empleados ("nombre","sueldo","ci")values('Mauro',30,47821209); 
+insert into Empleados ("nombre","sueldo","ci")values('Pepe',60,98311319);
+insert into Empleados ("nombre","sueldo","ci")values('Raul',20,31193204);
+insert into Maquinas ("matricula","descripcion","costoHora","colorMaq")values('0293 ABC','buena condicion',30,'verde');
+insert into Maquinas ("matricula","descripcion","costoHora","colorMaq")values('0310 ABC','media rota',15,'rojo');
+insert into Ciudades ("alcalde","habitantes","intendente","nomciud","tipo")values('Tito',3000,'Milton','Demacia','Mediana');
+insert into Ciudades ("alcalde","habitantes","intendente","nomciud","tipo")values('Swain',5500,'Darius','Noxus','grande');
+insert into Obras("capataz","codobr","descripcion","nomciud")values('Carlos','3887','hay que hacer un buen pùente','Demacia');
+insert into Obras("capataz","codobr","descripcion","nomciud")values('Jun','1211','Se rompio el hospital','Noxus');
+insert into Trabajan("ci","codobr","fecha","matriculaMaq")values(47821209,'3887','2018-05-23','0293 ABC');
+insert into Trabajan("ci","codobr","fecha","matriculaMaq")values(98311319,'1211','2018-06-10','0310 ABC');
+
+--create view numero1 as select * from Empleados where sueldo >10000;
+select * from Empleados where ci = (select ci from Trabajan where codobr = (select codobr from Obras where nomciud = 'Montevideo' ));
+select Maquinas.descripcion,Tabla1.nombre from Maquinas inner join (select Empleados.nombre,Trabajan.matriculaMaq from Empleados inner join Trabajan on Empleados.ci = Trabajan.ci) as Tabla1 on Maquinas.matricula = Tabla1.matriculaMaq;
+select sum(sueldo) from Empleados;
+//en proceso
+select Obras.nomciud,Tabla1.ci,Tabla1.costoHora from Obras inner join (select Maquinas.costoHora,Trabajan.ci,Trabajan.codobr from Maquinas inner join Trabajan on maquinas.matricula = Trabajan.matriculaMaq) as Tabla1 on Tabla1.codobr = Obras.codobr order by Obras.nomciud;
+select descripcion from Maquinas where colorMaq = 'rojo' and costoHora < 40 and not exists (select * from Trabajan where Maquinas.matricula = Trabajan.matriculaMaq);
+select MAX(costoHora) from Maquinas;
+
+Create procedure nombre_proc as
+	select * from Empleados
+exec nombre_proc;
+drop procedure nombre_proc;
+
+Create procedure existe_empleado @nombre char(10), @existe char(2) output as
+	set @existe='No'
+	if exists (select * from Empleados where nombre=@nombre)
+	Begin
+		set @existe='Si' 
+	End 
+1
+Create procedure Datos @ci int as
+	select * from empleados where ci = @ci;
+2
+create procedure Asignar_empleado_obra_maquina @matricula char(10),@codobr int,@ci int as
+	insert into Trabajan("ci","matriculaMaq","codobr")values(@ci,@matricula,@codobr);
+
+
+
+---------------------------------------------------
+Create procedure existe_maquina @matricula char(10), @existe char(2) output as
+	set @existe='No'
+	if exists (select * from Maquinas where matricula=@matricula)
+	Begin
+		set @existe='Si' 
+	End 
+
+
+declare @res char(2)
+exec existe_maquina '0310 ABC',@res output;
+select @res;
+-----------------------------
+Create FUNCTION Dame_2 () returns int as 
+begin 
+	return 2; 
+end
+
+select dbo.Dame_2();
+------------------------------
+
+create procedure Asignar_empleado_obra_maquina @matricula char(10),@codobr int,@ci int as
+	insert into Obras
+
+exec Asignar_empleado_obra_maquina '0293 ABC',3887,87657879;
+--------------------------------
+Create FUNCTION Datos_por_ciudad() returns @tabla table(tipo char(10),cantidad int) as 
+begin 
+	insert into @tabla ("tipo","cantidad")values('obras',(select count(*) from Obras));
+	insert into @tabla ("tipo","cantidad")values('Maquinas',(select count(*) from Maquinas));
+	insert into @tabla ("tipo","cantidad")values('Empleados',(select count(*) from Empleados));
+	return;
+
+select * from dbo.Datos_por_ciudad();
+
+----------------------------------
+create function Promedio_empleados(@codobr int) returns int as
+begin
+	return (select avg(sueldo) from Empleados inner join (select * from Trabajan where codobr = @codobr)as tab1 on Empleados.ci = tab1.ci);
+end
+end
+
+select * from dbo.Datos_por_ciudad();

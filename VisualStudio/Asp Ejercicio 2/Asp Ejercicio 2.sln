@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp Ejercicio 2", "Asp Ejercicio 2\Asp Ejercicio 2.csproj", "{88A90782-52BF-4BFF-8BC5-2AAE25A12D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{2D12DF44-AB6A-46AC-8D6A-18EC8EDE3647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88A90782-52BF-4BFF-8BC5-2AAE25A12D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A90782-52BF-4BFF-8BC5-2AAE25A12D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A90782-52BF-4BFF-8BC5-2AAE25A12D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A90782-52BF-4BFF-8BC5-2AAE25A12D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D12DF44-AB6A-46AC-8D6A-18EC8EDE3647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D12DF44-AB6A-46AC-8D6A-18EC8EDE3647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D12DF44-AB6A-46AC-8D6A-18EC8EDE3647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D12DF44-AB6A-46AC-8D6A-18EC8EDE3647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

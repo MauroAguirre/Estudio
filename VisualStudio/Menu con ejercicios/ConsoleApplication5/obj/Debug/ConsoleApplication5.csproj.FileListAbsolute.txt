@@ -1,0 +1,15 @@
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb
+G:\VisualStudio\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.csprojResolveAssemblyReference.cache
+F:\VisualStudio\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+F:\VisualStudio\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+F:\VisualStudio\ConsoleApplication5\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb
+F:\VisualStudio\Menu con ejercicios\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+F:\VisualStudio\Menu con ejercicios\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+F:\VisualStudio\Menu con ejercicios\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb
+G:\VisualStudio\Menu con ejercicios\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+G:\VisualStudio\Menu con ejercicios\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+G:\VisualStudio\Menu con ejercicios\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb

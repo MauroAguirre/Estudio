@@ -1,0 +1,41 @@
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe.config
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\bin\Debug\appConsola.pdb
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\bin\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\bin\Debug\Dominio.pdb
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\obj\Debug\appConsola.csprojResolveAssemblyReference.cache
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\obj\Debug\appConsola.exe
+C:\Users\portable\Desktop\tarea2\appConsola\appConsola\obj\Debug\appConsola.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\bin\Debug\appConsola.exe.config
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\obj\Debug\appConsola.exe
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\obj\Debug\appConsola.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\bin\Debug\appConsola.exe
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\bin\Debug\appConsola.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\bin\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\bin\Debug\Dominio.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\appConsola\obj\Debug\appConsola.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe.config
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.exe
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.pdb
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.pdb
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.dll
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.pdb
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe.config
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.exe
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.pdb
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.pdb
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.dll
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.pdb
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.exe
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\obj\Debug\appConsola.pdb
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe.config
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.exe
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\appConsola.pdb
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.dll
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\appConsola\bin\Debug\Dominio.pdb

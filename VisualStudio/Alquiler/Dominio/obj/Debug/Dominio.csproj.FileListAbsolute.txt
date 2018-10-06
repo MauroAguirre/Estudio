@@ -1,0 +1,19 @@
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\Dominio.dll
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\Dominio.pdb
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\EntityFramework.dll
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\EntityFramework.xml
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\obj\Debug\Dominio.dll
+C:\Users\cei\Documents\Visual Studio 2013\Projects\Alquiler\Dominio\obj\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\Dominio.dll
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\EntityFramework.dll
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\EntityFramework.xml
+G:\Programacion 3\Alquiler\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+G:\Programacion 3\Alquiler\Dominio\obj\Debug\Dominio.dll
+G:\Programacion 3\Alquiler\Dominio\obj\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache

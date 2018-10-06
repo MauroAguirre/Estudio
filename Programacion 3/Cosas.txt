@@ -1,0 +1,27 @@
+GIT
+SVN							---
+							|C|
+capaz							|O|						
+	UI	presentacion, ventanitas o consola API	|M|
+	BLL	business Logic layer UML		|M|
+	DAL	data access layer, base de datos	|O|
+dependencias UI <--> BLL <--> DAL			|N|
+							---
+GIT
+https://bitbucket.org
+SourceTree
+https://bitbucket.org/fcvillegas/megaagenda/src/master/
+msql server management studio
+localhost
+using System.Data.SqlCliente;
+connectionString.com
+visual studio explorador de objetos de noseque 
+boton derecho en sql server agregar sql server, loca b11 
+si instalamos sql express cambiar el cadenaConexion
+server explorer
+data source microsoft sql server database file sqlclient
+
+stock
+id movimiento fecha 
+
+parcial 9 

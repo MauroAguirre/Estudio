@@ -1,0 +1,65 @@
+Mi compra aca
+sistema de envios de compras de miami
+Primera parte console, segunda parte web;
+BLL
+DAL
+
+-Registro de usuario(ABM)CRUD
+-Registro de paquete comprado
+-Estados de paquetes
+-Tienda  almacen  mi casa
+puede haber varios almacenes
+puede cambiar de direccion mientras no se encuentre llendo a un almacen
+
+entity framework 	https://msdn.microsoft.com/es-es/library/bb399182(v=vs.100).aspx
+LINQ	https://www.youtube.com/watch?v=gwD9awr3NNo
+	from d in noseque
+	orderby algo
+	select d;
+MVC razor     para hacer vistas web
+	podemos poner codigo entre lineas de la pagina
+	<!-- Single-statement block -->
+	@{ var theMonth = DateTime.Now.Month; }
+
+	<!-- Multi-statement block -->
+	@{
+    	var outsideTemp = 79;
+    	var weatherMessage = "Hello, it is " + outsideTemp + " degrees.";
+	}
+
+	<!-- Inline expression, so no semicolon -->
+	<p>Today's weather: @weatherMessage</p>
+sql 
+jquery
+boostrap
+
+documentacion	pagina del cei mirar los formatos
+	302
+	303
+uml 
+	diagrama de dominio
+	diagrama de clases
+
+mer
+descripcion del problema
+manual con capturas de pantallas
+requerimientos 
+casos de uso
+
+entra obligatorio primera parte 14/05 documentacion analysis
+segunda parte 
+
+envio tiene estado
+	abierto
+	entransito
+	entregado
+
+
+herramientas -> administador de paquetes nuGet -> consola de administrador de paquetes -> Install-Package EntityFramework
+
+paquete, envio que tiene varios paquetes
+
+el envio puede levantar en almacen
+	 puede enviar a domicilio
+
+almacen en mvd	-> transporte nacional  - > entregado

@@ -1,0 +1,29 @@
+reglas
+5 dados de los cuales y se puede llegar a 1 total de 14 jugadas.
+se pueden tirar 3 veces x turno
+
+trio 3 iguales 10
+poker 4 iguales 20
+full 2 iguales y un trio 15
+escalera baja 4 en secuencia 30
+escalera alta todos en secuancia 40
+generala 5 iguales 50
+par 2 iguales 5
+comodin suma todos los dalos pero pierde si hay juegos armados, 1 sola vez se puede usar
+suma se usa para sumar los dados repetidos
+
+objetivo 1 dados moviendose
+objetivo 2 interfaz grafica amigable
+3 rapido
+4 robusto
+5 no se caiga
+6 respete estas reglas
+7 avatart maestro tierra
+8 top 5 mejores jugadores mas puntos y mayor porcentaje partidas ganadas
+9 modulo de apuestas
+10 top 5 de los mas ricos
+
+presentacion del problema!: Como se juega el programa en la actualidad explicar el paso a paso
+del inicio fin las apuestas y las jugadas posibles en cada turno.
+
+ 

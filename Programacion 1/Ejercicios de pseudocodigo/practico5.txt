@@ -1,0 +1,14 @@
+numero:numerico
+Escribir "Ingrese un numero"
+Leer numero
+si MOD(numero,2)=0
+	Escribir "El numero no es par ni impar"
+	sino
+		si numero%2=0
+			Escribir "El numero es par"
+			sino 
+				Escribir "El numero es impar"
+			fin sino
+		fin si
+	fin sino
+fin si

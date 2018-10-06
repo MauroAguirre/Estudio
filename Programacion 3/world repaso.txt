@@ -1,0 +1,3 @@
+control enter pasar de pagina
+poner la P dada vuelta para marcar parrafos
+cambiar el formato de normal,titulos,etc en vez de cambiar uno por uno

@@ -1,0 +1,199 @@
+
+<html DIR="LTR">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>What Will Microsoft Office Diagnostics Do?</title>
+<style>
+<!--
+body	{
+		font: normal 80% Arial,sans-serif;	
+		background-color:"#FFFFFF";			
+		} 
+#title
+		{
+		font-size: 130%;					
+		font-weight:bold;					
+		}
+.important
+		{
+		color: red;							
+		font-weight:bold;					
+		}
+h1
+		{
+		font-size: 110%;					
+		}
+.runinhead
+		{
+		font-weight:bold;					
+		}
+.note
+		{
+		font-weight:bold;					
+		}
+li
+		{
+		margin-bottom:1em;					
+		}
+li p
+		{
+		margin-top:.5em;					
+		}
+li ul
+		{
+		margin-top:.5em;					
+		}
+li ol
+		{
+		margin-top:.5em;					
+		}
+.ui
+		{
+		font-weight:bold;					
+		}
+.variable
+		{
+		font-style:italic;					
+		}
+#copyright
+		{
+		font: normal 90% Arial,sans-serif;	
+		}
+-->
+</style>
+</head>
+
+<body>
+<img border="0" src="../officelogo.gif" alt="Microsoft Office">
+
+<p id="title">
+What will Microsoft Office Diagnostics do?</p>
+<p>
+Microsoft Office Diagnostics in Microsoft Office 2007 is a series of 
+diagnostic tests that can help you to discover why your computer is crashing 
+(closing abnormally). 
+The diagnostic tests can solve some problems directly and might identify ways that 
+you can solve other problems.</p>
+<p>
+<span class="important">Important</span>&nbsp;&nbsp;Diagnostic information that 
+is gathered from your computer is compiled and kept on your computer. When 
+Office Diagnostics determines that the data might be useful to help diagnose and 
+fix a problem, the system asks whether you want to send the information to 
+Microsoft. Also, after the tests are completed, you are prompted to visit a 
+Web page to get advice tailored based the results of the tests. Any information that you share with Microsoft is completely 
+anonymous, and absolutely no information is personally identifiable as being 
+yours. To learn more about information confidentiality, see Help in a Microsoft Office program.</p>
+<h1>
+What do the individual diagnostic tests do?</h1>
+<p>
+When you run Office Diagnostics, you generally are running all of the tests. 
+However, in some cases, some tests are not run --- for example, if you are 
+running a server version of Microsoft Windows or if an administrator has 
+disabled some of the tests.</p>
+<p>
+The Office Diagnostics are:</p>
+<ul>
+<li>
+	<span class="runinhead">Setup Diagnostic</span>&nbsp;&nbsp; 
+	This test checks for corruption in the files and registry settings in your 
+	Office 2007 installation. Files and settings can be corrupted by malicious 
+	viruses or by hardware that is faulty or incorrectly configured.
+	<p>
+	The following are some important facts about this test:</p>
+	<ul>
+	<li>This test might take 15 minutes or longer to run.</li>
+	<li>This test might not run effectively if you are logged onto the system 
+	using Terminal Services or Remote Desktop.</li>
+	<li>While running the test, in some uncommon situations, you might be 
+	prompted to insert the Microsoft Office installation disc. Make sure you 
+	have access to the disc or network share from which you installed Office.</li>
+	</ul>
+	<p>
+	<span class="note">Note</span> In earlier versions of Office, this feature was called Detect and 
+	Repair.</p>
+</li>
+<li>
+	<span class="runinhead">Disk Diagnostic</span>&nbsp;&nbsp;This test looks for evidence of problems
+	with your hard disk. Specifically, this test checks for errors logged by
+	<ul>
+	<li>The Windows system event log.</li>
+	<li>The Self-Monitoring, Analysis and Reporting Technology (SMART) feature 
+	of your hard disk. SMART is a feature that some disk drive manufacturers 
+	provide to give users advance notice of potential hard disk failure.</li>
+	</ul>
+</li>
+<li>
+	<span class="runinhead">Memory Diagnostic</span>&nbsp;&nbsp; This test verifies 
+	the integrity of your computer's random access memory (RAM).
+	<p>
+	<span class="note">Note</span> This test is disabled by default on server versions of Windows.</p>
+</li>
+<li>
+<span class="runinhead">Update Diagnostic</span>&nbsp;&nbsp; This test checks 
+whether your computer is up to date with installed free service packs from 
+Microsoft. Service packs are designed to make Office more stable. If your 
+installation of Office is missing one or more service packs, it is important to 
+install them as soon as possible. (Updates are available at
+<a href="http://r.office.microsoft.com/r/rlidOfficeUpdate?clid=en-us">Downloads on Microsoft Office Online</a>. 
+Under <span class="ui">Office Update</span>, click <span class="ui">Check for Updates</span>.) 
+This test is run only if you enable it; for information on how to do this, see
+<a href="#update_enable">Enable the Update Diagnostic test</a> below.</li>
+
+<li>
+<span class="runinhead">Compatibility Diagnostic</span>&nbsp;&nbsp; This 
+test identifies conflicting versions of Microsoft Office Outlook that might be 
+installed on your computer. Two different versions of Outlook cannot be 
+installed on the same computer without causing instability.</li>
+<li>
+<span class="runinhead">Check for known solutions</span>&nbsp;&nbsp; This test 
+reviews the data on crashes of the 2007 Office release that have recently occurred on your 
+system. The test then connects to a server to look for any solutions that might be 
+available for the problems that caused these crashes.</li>
+</ul>
+
+<h1>
+<a  name="update_enable">How do I enable the Update Diagnostic test?</a></h1>
+<p>Before running Office Diagnostics, and to ensure all the tests can run 
+successfully, we recommend that you do the following:</p>
+<ul>
+	<li>Plan to run the tests during a time when you can stop using your system. 
+	In particular, you should avoid using the system while the Memory Diagnostic 
+	is running.</li>
+	<li>Close as many running programs as you can.</li>
+</ul>
+<p>To enable the Update Diagnostic test, do the following in one of these 2007 
+Microsoft Office system programs</p>
+<ul>
+<li><span class="runinhead">Word, Excel, PowerPoint, or Access</span>
+	<ol>
+	<li>Click the <span class="ui">Microsoft Office Button</span><img src="../officebutton.gif" alttext="Button image" alt="Button image"></img>,
+	and then click <span class="ui"><span class="variable">Program Name</span> Options</span>, 
+	where <span class="variable">Program Name</span> is the name of the program you are in, for 
+	example, <b class="ui">Word Options</b>.</li>
+	<li>Click <span class="ui">Trust Center</span>, click <ui>Advanced Trust Center Settings</ui>,
+	and then click <ui>Privacy Options</ui>.</li>
+	<li>Select the <ui>Download a file periodically that helps determine system problems</ui> check box.</li>
+	<li>Wait about a week to allow the file to be downloaded, and then run Microsoft Office Diagnostics again.</li>
+	</ol>
+</li>
+
+<li><span class="runinhead">Visio, Outlook, Publisher, or InfoPath</span>
+	<ol>
+	<li>On the <ui>Tools</ui> menu, click <ui>Trust Center</ui>, and then click <ui>Privacy Options</ui>.</li>
+	<li>Select the <ui>Download a file periodically that helps determine system problems</ui> check box.</li>
+	<li>Wait about a week to allow the file to be downloaded, and then run Microsoft Office Diagnostics again.</li>
+	</ol>
+</li>
+</ul>
+
+
+
+
+
+<p id=copyright>
+©&nbsp;2006 Microsoft Corporation. All rights reserved.</p>
+</body>
+
+</html>

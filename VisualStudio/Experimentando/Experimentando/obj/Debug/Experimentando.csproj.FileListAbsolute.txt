@@ -1,0 +1,7 @@
+F:\Estudio\VisualStudio\Experimentando\Experimentando\bin\Debug\Experimentando.exe.config
+F:\Estudio\VisualStudio\Experimentando\Experimentando\bin\Debug\Experimentando.exe
+F:\Estudio\VisualStudio\Experimentando\Experimentando\bin\Debug\Experimentando.pdb
+F:\Estudio\VisualStudio\Experimentando\Experimentando\obj\Debug\Experimentando.csprojResolveAssemblyReference.cache
+F:\Estudio\VisualStudio\Experimentando\Experimentando\obj\Debug\Experimentando.csproj.CoreCompileInputs.cache
+F:\Estudio\VisualStudio\Experimentando\Experimentando\obj\Debug\Experimentando.exe
+F:\Estudio\VisualStudio\Experimentando\Experimentando\obj\Debug\Experimentando.pdb

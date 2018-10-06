@@ -1,0 +1,16 @@
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\Alquilamos code first.exe.config
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\Alquilamos code first.exe
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\Alquilamos code first.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\BLL.dll
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\DAL.dll
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\BLL.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\DAL.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\obj\Debug\Alquilamos code first.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\obj\Debug\Alquilamos code first.exe
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\obj\Debug\Alquilamos code first.pdb
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\EntityFramework.SqlServer.dll
+G:\Estudio\VisualStudio\Alquilamos code first\Alquilamos code first\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,11 @@
+numero:numerico
+Repetir
+	Escribir "Ingrese un numero"
+	Leer numero
+hasta numero>0
+si MOD(numero,2)=0
+	Escribir "El numero es par"
+	sino
+		Escribir "El numero es impar"
+	fin sino
+fin si

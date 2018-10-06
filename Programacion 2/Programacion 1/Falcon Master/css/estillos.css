@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1,h2{
+    color:red;
+}
+h2{
+    font-size:50px;
+}
+p a{
+    font-size:30px;
+    color:pink;
+}
+body {
+    color:#fff;
+}
+.green{
+    color:green;
+}
+article{
+    background:blue;
+    width:50%;
+}

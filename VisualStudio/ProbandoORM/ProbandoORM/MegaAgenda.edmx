@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MegaAgendaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Agenda">
+          <Key>
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="fecha_creacion" Type="date" />
+        </EntityType>
+        <EntityType Name="Contacto">
+          <Key>
+            <PropertyRef Name="nombre_agenda" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="nombre_agenda" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="45" />
+          <Property Name="fecha_nacimiento" Type="date" />
+          <Property Name="mail" Type="varchar" MaxLength="45" />
+          <Property Name="pais" Type="varchar" MaxLength="45" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pais">
+          <Key>
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Telefono">
+          <Key>
+            <PropertyRef Name="numero" />
+            <PropertyRef Name="contacto_id" />
+            <PropertyRef Name="nombre_agenda" />
+          </Key>
+          <Property Name="numero" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="tipo" Type="varchar" MaxLength="45" />
+          <Property Name="contacto_id" Type="int" Nullable="false" />
+          <Property Name="nombre_agenda" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Contacto__nombre__0519C6AF">
+          <End Role="Agenda" Type="Self.Agenda" Multiplicity="1" />
+          <End Role="Contacto" Type="Self.Contacto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agenda">
+              <PropertyRef Name="nombre" />
+            </Principal>
+            <Dependent Role="Contacto">
+              <PropertyRef Name="nombre_agenda" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Telefono__09DE7BCC">
+          <End Role="Contacto" Type="Self.Contacto" Multiplicity="1" />
+          <End Role="Telefono" Type="Self.Telefono" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacto">
+              <PropertyRef Name="id" />
+              <PropertyRef Name="nombre_agenda" />
+            </Principal>
+            <Dependent Role="Telefono">
+              <PropertyRef Name="contacto_id" />
+              <PropertyRef Name="nombre_agenda" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MegaAgendaModelStoreContainer">
+          <EntitySet Name="Agenda" EntityType="Self.Agenda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contacto" EntityType="Self.Contacto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pais" EntityType="Self.Pais" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Telefono" EntityType="Self.Telefono" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Contacto__nombre__0519C6AF" Association="Self.FK__Contacto__nombre__0519C6AF">
+            <End Role="Agenda" EntitySet="Agenda" />
+            <End Role="Contacto" EntitySet="Contacto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Telefono__09DE7BCC" Association="Self.FK__Telefono__09DE7BCC">
+            <End Role="Contacto" EntitySet="Contacto" />
+            <End Role="Telefono" EntitySet="Telefono" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MegaAgendaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Agenda">
+          <Key>
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fecha_creacion" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Contacto" Relationship="Self.FK__Contacto__nombre__0519C6AF" FromRole="Agenda" ToRole="Contacto" />
+        </EntityType>
+        <EntityType Name="Contacto">
+          <Key>
+            <PropertyRef Name="nombre_agenda" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="nombre_agenda" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_nacimiento" Type="DateTime" Precision="0" />
+          <Property Name="mail" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="pais" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Agenda" Relationship="Self.FK__Contacto__nombre__0519C6AF" FromRole="Contacto" ToRole="Agenda" />
+          <NavigationProperty Name="Telefono" Relationship="Self.FK__Telefono__09DE7BCC" FromRole="Contacto" ToRole="Telefono" />
+        </EntityType>
+        <EntityType Name="Pais">
+          <Key>
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Telefono">
+          <Key>
+            <PropertyRef Name="numero" />
+            <PropertyRef Name="contacto_id" />
+            <PropertyRef Name="nombre_agenda" />
+          </Key>
+          <Property Name="numero" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tipo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="contacto_id" Type="Int32" Nullable="false" />
+          <Property Name="nombre_agenda" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Contacto" Relationship="Self.FK__Telefono__09DE7BCC" FromRole="Telefono" ToRole="Contacto" />
+        </EntityType>
+        <Association Name="FK__Contacto__nombre__0519C6AF">
+          <End Role="Agenda" Type="Self.Agenda" Multiplicity="1" />
+          <End Role="Contacto" Type="Self.Contacto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agenda">
+              <PropertyRef Name="nombre" />
+            </Principal>
+            <Dependent Role="Contacto">
+              <PropertyRef Name="nombre_agenda" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Telefono__09DE7BCC">
+          <End Role="Contacto" Type="Self.Contacto" Multiplicity="1" />
+          <End Role="Telefono" Type="Self.Telefono" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacto">
+              <PropertyRef Name="id" />
+              <PropertyRef Name="nombre_agenda" />
+            </Principal>
+            <Dependent Role="Telefono">
+              <PropertyRef Name="contacto_id" />
+              <PropertyRef Name="nombre_agenda" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LaMegaAgenda" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Agenda" EntityType="Self.Agenda" />
+          <EntitySet Name="Contacto" EntityType="Self.Contacto" />
+          <EntitySet Name="Pais" EntityType="Self.Pais" />
+          <EntitySet Name="Telefono" EntityType="Self.Telefono" />
+          <AssociationSet Name="FK__Contacto__nombre__0519C6AF" Association="Self.FK__Contacto__nombre__0519C6AF">
+            <End Role="Agenda" EntitySet="Agenda" />
+            <End Role="Contacto" EntitySet="Contacto" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Telefono__09DE7BCC" Association="Self.FK__Telefono__09DE7BCC">
+            <End Role="Contacto" EntitySet="Contacto" />
+            <End Role="Telefono" EntitySet="Telefono" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MegaAgendaModelStoreContainer" CdmEntityContainer="LaMegaAgenda">
+          <EntitySetMapping Name="Agenda">
+            <EntityTypeMapping TypeName="MegaAgendaModel.Agenda">
+              <MappingFragment StoreEntitySet="Agenda">
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacto">
+            <EntityTypeMapping TypeName="MegaAgendaModel.Contacto">
+              <MappingFragment StoreEntitySet="Contacto">
+                <ScalarProperty Name="nombre_agenda" ColumnName="nombre_agenda" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="pais" ColumnName="pais" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pais">
+            <EntityTypeMapping TypeName="MegaAgendaModel.Pais">
+              <MappingFragment StoreEntitySet="Pais">
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Telefono">
+            <EntityTypeMapping TypeName="MegaAgendaModel.Telefono">
+              <MappingFragment StoreEntitySet="Telefono">
+                <ScalarProperty Name="numero" ColumnName="numero" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="contacto_id" ColumnName="contacto_id" />
+                <ScalarProperty Name="nombre_agenda" ColumnName="nombre_agenda" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

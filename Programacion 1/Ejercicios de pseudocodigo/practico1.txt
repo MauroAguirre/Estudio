@@ -1,0 +1,20 @@
+dato1:numerico
+dato2:numerico
+dato3:numerico
+Escribir "Ingrese tres numeros"
+Leer dato1
+Leer dato2
+Leer dato3
+Si dato1>=dato2
+	si dato1>=dato3
+		Escribir "El numero mayor es " + dato1
+	sino
+		Escribir "El numero mayor es " + dato3
+	fin si
+sino
+	si dato2>=dato3
+		Escribir "El numero mayor es " + dato2
+	sino
+		Escribir "El numero mayor es " + dato3
+	fin si
+fin si

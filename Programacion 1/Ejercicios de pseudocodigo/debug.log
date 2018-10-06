@@ -1,0 +1,16 @@
+[0427/193729.967:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0427/193730.421:ERROR:process_info.cc(116)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32> *): Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0427/193730.421:ERROR:process_info.cc(559)] ReadProcessData failed
+[0427/193730.421:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6c697dc8 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0427/193730.421:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0427/193730.421:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0427/193730.842:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0427/193730.842:ERROR:process_info.cc(343)] VirtualQueryEx: Acceso denegado. (0x5)
+[0427/193730.842:ERROR:process_info.cc(564)] ReadMemoryInfo failed
+[0427/193730.842:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6c697dc8 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0427/193730.842:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0427/193730.842:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0427/193731.404:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0427/193731.404:ERROR:process_reader_win.cc(142)] SuspendThread: Acceso denegado. (0x5)
+[0427/193731.404:ERROR:exception_snapshot_win.cc(87)] thread ID 2136 not found in process
+[0427/193731.404:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

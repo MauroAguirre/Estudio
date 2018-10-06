@@ -1,0 +1,14 @@
+﻿@model probando.Models.Raul
+@{
+    ViewBag.Title = "Hola mundooooooooo";
+ }
+<h2>@ViewBag.Title</h2>
+<p>@Model.Nombre</p>
+<input id="btnBoton" class="btn btn-danger" type="button" title="boton" value="tocar"/>
+<form action="/Raul/Save" method="post">
+    <label for="nombre" >Nombre</label>
+    <input type="text" name="nombre" id="txtNombre" placeholder="Escribe algo chabon"/>
+    <input type="text" name="apellido" id="txtApellido" placeholder="Escribe algo chabon" />
+    <input type="submit" value="Salvar" />
+</form>
+<a href="/Home">Ir a inicio</a>

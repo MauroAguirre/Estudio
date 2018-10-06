@@ -1,0 +1,31 @@
+C:\p2_2017\cei\capas\dominio\bin\Debug\dominio.dll
+C:\p2_2017\cei\capas\dominio\bin\Debug\dominio.pdb
+C:\p2_2017\cei\capas\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+C:\p2_2017\cei\capas\dominio\obj\Debug\dominio.dll
+C:\p2_2017\cei\capas\dominio\obj\Debug\dominio.pdb
+F:\VisualStudio\Obligatorio dividido\dominio\bin\Debug\dominio.dll
+F:\VisualStudio\Obligatorio dividido\dominio\bin\Debug\dominio.pdb
+F:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.dll
+F:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.pdb
+G:\VisualStudio\Obligatorio dividido\dominio\bin\Debug\dominio.dll
+G:\VisualStudio\Obligatorio dividido\dominio\bin\Debug\dominio.pdb
+G:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.dll
+G:\VisualStudio\Obligatorio dividido\dominio\obj\Debug\dominio.pdb
+J:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.dll
+J:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.pdb
+J:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.dll
+J:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.pdb
+G:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.dll
+G:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.pdb
+G:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.dll
+G:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.pdb
+F:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.dll
+F:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.dll
+F:\VisualStudio\Obligatorio 2017\dominio\bin\Debug\dominio.pdb
+F:\VisualStudio\Obligatorio 2017\dominio\obj\Debug\dominio.pdb

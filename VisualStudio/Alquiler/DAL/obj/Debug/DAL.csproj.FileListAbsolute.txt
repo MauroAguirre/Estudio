@@ -1,0 +1,27 @@
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\DAL.dll.config
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\DAL.dll
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\DAL.pdb
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\Dominio.dll
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\EntityFramework.dll
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\Dominio.pdb
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\EntityFramework.xml
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\obj\Debug\DAL.dll
+c:\Users\cei\documents\visual studio 2013\Projects\Alquiler\DAL\obj\Debug\DAL.pdb
+G:\Programacion 3\Alquiler\DAL\bin\Debug\DAL.dll
+G:\Programacion 3\Alquiler\DAL\bin\Debug\DAL.pdb
+G:\Programacion 3\Alquiler\DAL\bin\Debug\Dominio.dll
+G:\Programacion 3\Alquiler\DAL\bin\Debug\EntityFramework.dll
+G:\Programacion 3\Alquiler\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\Programacion 3\Alquiler\DAL\bin\Debug\Dominio.pdb
+G:\Programacion 3\Alquiler\DAL\bin\Debug\EntityFramework.xml
+G:\Programacion 3\Alquiler\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.dll
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.pdb
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.Migrations.initial.resources
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.Migrations.AddTelefono.resources
+G:\Programacion 3\Alquiler\DAL\obj\Debug\DAL.Migrations.RemoveTelefono.resources

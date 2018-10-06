@@ -1,0 +1,5 @@
+C:\p2_2017\cei\Farmacia\Farmacia\dominio\bin\Debug\dominio.dll
+C:\p2_2017\cei\Farmacia\Farmacia\dominio\bin\Debug\dominio.pdb
+C:\p2_2017\cei\Farmacia\Farmacia\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
+C:\p2_2017\cei\Farmacia\Farmacia\dominio\obj\Debug\dominio.dll
+C:\p2_2017\cei\Farmacia\Farmacia\dominio\obj\Debug\dominio.pdb

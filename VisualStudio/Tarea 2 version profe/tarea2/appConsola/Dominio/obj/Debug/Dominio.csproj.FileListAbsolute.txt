@@ -1,0 +1,26 @@
+C:\Users\portable\Desktop\tarea2\appConsola\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\portable\Desktop\tarea2\appConsola\Dominio\bin\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\appConsola\Dominio\bin\Debug\Dominio.pdb
+C:\Users\portable\Desktop\tarea2\appConsola\Dominio\obj\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\appConsola\Dominio\obj\Debug\Dominio.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\Dominio\bin\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\cei\appConsola\Dominio\bin\Debug\Dominio.pdb
+C:\Users\portable\Desktop\tarea2\cei\appConsola\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\portable\Desktop\tarea2\cei\appConsola\Dominio\obj\Debug\Dominio.dll
+C:\Users\portable\Desktop\tarea2\cei\appConsola\Dominio\obj\Debug\Dominio.pdb
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.dll
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.pdb
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.dll
+G:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.pdb
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.dll
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.pdb
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.dll
+F:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.pdb
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.dll
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\obj\Debug\Dominio.pdb
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.dll
+J:\VisualStudio\Tarea 2 version profe\tarea2\appConsola\Dominio\bin\Debug\Dominio.pdb

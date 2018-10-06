@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;uy.edu.cei.Obligatorio.Domain.Usuario&apos; to &apos;UsuarioModel&apos;&#x0D;&#x0A;- Original project: &apos;Domain&apos;&#x0D;&#x0A;- Original element: &apos;uy.edu.cei.Obligatorio.Domain.Usuario&apos;&#x0D;&#x0A;- Renamed element: &apos;uy.edu.cei.Obligatorio.Domain.UsuarioModel&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Usuario&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;uy.edu.cei.Obligatorio.Domain{Usuario.java[Usuario" matchStrategy="1" name="UsuarioModel" qualified="false" references="true" similarDeclarations="false" stamp="1538434928798" textual="false" version="1.0"/>
+</session>

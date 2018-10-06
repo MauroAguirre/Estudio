@@ -1,0 +1,6 @@
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\bin\Debug\repaso parcial 1.exe.config
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\obj\Debug\repaso parcial 1.csprojResolveAssemblyReference.cache
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\bin\Debug\repaso parcial 1.exe
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\bin\Debug\repaso parcial 1.pdb
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\obj\Debug\repaso parcial 1.exe
+G:\VisualStudio\repaso parcial 1\repaso parcial 1\obj\Debug\repaso parcial 1.pdb

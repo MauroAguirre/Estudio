@@ -1,0 +1,74 @@
+<html>
+	<head>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/program.js"></script>
+		<script src="JS/bootstrap.min.js"></script>
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+    <h1>Vamo vamo vamo</h1>
+    <input type="button" value="Tocadme" onclick="Probando()" class="btn btn-default">
+    <p id="pRes">hola</p>
+		<form>
+			<table class="table">
+				<tr>
+					<td>
+						Nombre
+					</td>
+					<td>
+						<input type="text" id="txtNom">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Edad
+					</td>
+					<td>
+						<input type="number" id="numNum">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Genero
+					</td>
+					<td>
+						<form>
+						  <input type="radio" name="genero" value="hombre" id="rdoM">
+							<label>Hombre</label>
+						  <input type="radio" name="genero" value="mujer" id="rdoF">
+							<label>Mujer</label>
+						  <input type="radio" name="genero" value="otro" id="rdoO">
+							<label>Otro</label>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="Agregar" class="btn btn-default" onclick="AgregarPersonas()">
+					</td>
+					<td>
+						<label id=lblRes>Agregame una persona</label>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<td>
+						Nombre
+					</td>
+					<td>
+						Edad
+					</td>
+					<td>
+						Genero
+					</td>
+				</tr>
+			</thead>
+			<tbody id=tbyP>
+			</tbody>
+		</table>
+  </body>
+</html>

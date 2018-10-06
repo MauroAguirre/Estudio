@@ -1,0 +1,75 @@
+<!DOCTYPE html>					<!-- El doctype significa que se va a usar html 5, Declara como sera la sintaxis del documento -->
+	<head>						<!-- cuando el codigo ya a alcanzado o terminado se valida para comprobar que esta correcto -->
+		<meta charset= "UTF-8">	<!-- la forma de validacion sera en funcion a lo declarado-->
+		<meta name= "viewport" content="width= device-width, inicial=scale1.0">
+		<meta name="keyword" content="palabra">	<!-- Autor ,copyright, etc-->
+		<meta name="Descripcion" content="...">
+								<!-- La etiqueta viewport: Cuando tenemos un diseño responsivo debemos especificar que el ancho de la pagina-->
+								<!-- sea el mismo que el del dispositivo y establecer que el zoom minimo sea 1.0-->
+								<!-- En la etiqueta charset declara que letras se van a usar, sirve por ejemplo para escribir la ñ-->
+								<!-- En el HEAD va la informacion que se necesita para que la pagina funcione-->
+								<!-- No la va a ver el usuario, el usuario solo ve el html, que es muy importante para los motores de busqueda-->
+	</head>						
+	<body>						<!-- En el body va lo que ve el usuario-->	
+		<figure><img src="recursos/Jellyfish.jpg"/><figcaption>Esta imagen ta buenasa chabon</figcaption></figure>
+		<table>
+			<caption>el caption esta aqui</caption>
+			<tr>
+				<th>
+					th434341
+				</th>
+				<th>
+					th2
+				</th>
+			</tr>
+			<tr>
+				<td>
+					td1
+				</td>
+				<td>
+					td2
+				</td>
+			</tr>
+		</table>
+		<form>
+			<fieldset>
+				<legend>soy legend-da</legend>
+				Elementos de formulario como: listas de selecciones, botones, entrada de texto o numeros, radio, etc
+			</fieldset>
+		</form>
+	</body>						
+</html>							
+<!-- Las etiquetas estan formados por: Atributos ej <img src="..." width="..."> los atributos son src y width -->
+<!-- No es recomendable incluir atributos de apariencia en html, PONELO EN ESTILOS.css BANANA-->
+<!-- Es recomendable mantener la jerarquia de las estiquetas ej <h1> <h2> <h3>....-->
+<!-- los encabezados deben comunicar la estructura del documento correctamente -->
+<!-- Asi nos garantizamos que la informacion y las relaciones que se implican en formato visual se conservan -->
+<!-- cuando cambia el formato de la presentacion-->
+								
+<!-- Virtudes de html 5:-subir y reproducir videos en linea sin necesidad de un plugin para poder hacerlo-->
+<!-- Crear animaciones usando solamente codigo y no flash-->
+<!-- Existen unas nuevas etiquetas semanticas que ayudan a los motores de busqueda-->
+<!-- Nuevos atributos que facilitan validaciones-->
+								
+<!-- Etiquetas semanticas: indica que es lo que contiene en lugar de como se formatea ej: <strong> <b>-->
+<!-- Las etiquetas semanticas y estilos CSS pueden crear algunos efectos deseados pero debemos tener presente-->
+<!-- que una linea de codigo debe "visualizarse" o entenderse de la misma manera en un navegador que soporte CSS y no lo soporte-->
+<!-- Todo componente de la pagina debe cumplir con su proposito-->
+								
+<!-- la etiqueta <img/> tiene los atributos id="identificacion" src="deDondeVieneLaImagen" class="clase"  -->
+<!-- alt="paraQuienNoPuedeVerLaImagen" title="detalleDeLoQueTrataLaImagen"-->
+								
+<!-- Nueva etiqueta de html 5 que van por fuera de img: -->
+<!-- <figure> define que el contenido alli sean ilustraciones, diagramas  fotos, etc-->
+<!-- <figcaption> Define el pie de foto o "titulo" puede usarse antes o despues de la etiqueta <img/> pero dentro de figure-->
+<!-- la imagen es un contenido no textual, la descripcion alt aparece antes de que se carge el archivo asociado o en su sustitucion-->
+<!-- Debe asegurar que mediante esto identifique de que es trata la imagen (texto alternativo )-->
+<!-- El titulo aparece cuando el puntero pase por encima de la imagen-->
+
+<!-- Cuando trabajamos con formularios debemos usar las etiquetas para estos:-->
+<!-- *Asociar rotulos con campos -->
+<!-- Desde el punto de vista comunicativo debe estar claro que pedimos en cada campo-->
+<!-- *Debe estar claro como completar los campos y si son o no requeridos -->
+<!-- *Para agrupar campos y hacer mas facil el completado usar <fieldset> y <legend>-->
+<!-- *Se recomienda corroborar que el formulario pueda ser recorrido en su totalidad con el teclado-->
+<!-- *Si se detecta un error de entrada de datos, identificar el item erroneo y describir al usuario el error por medio de texto y su solucion-->

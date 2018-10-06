@@ -1,0 +1,14 @@
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\Dominio.dll.config
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\Dominio.dll
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\PracticoCF\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.dll
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.pdb
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.Migrations.InitialCreate.resources
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.csproj.GenerateResource.Cache
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.Migrations.AddEmail.resources
+G:\Estudio\VisualStudio\PracticoCF\Dominio\obj\Debug\Dominio.Migrations.CambiarCi.resources

@@ -1,0 +1,85 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MantenimientoPaquetes.js")"></script>
+}
+<input type="hidden" value="@ViewBag.mail" id="userMail">
+<h2>Mantenimiento de Paquetes</h2>
+<table>
+    <tr>
+        <td>
+            <label>Descripcion</label>
+        </td>
+        <td>
+            <input type="text" id="txtDescripcion" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Cantidad</label>
+        </td>
+        <td>
+            <input type="number" id="numCantidad" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Tamaño</label>
+        </td>
+        <td>
+            <div class="form-group">
+                <select class="form-control" id="sltPaq">
+                    <option value="Chico">Chico</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input value="Agregar" type="button" onclick="Agregar()" class="btn btn-default"/>
+        </td>
+        <td>
+            <label id="lblRes">Ingrese un paquete</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Regresar", "Regresar", null, new { @class = "btn btn-default" });
+        </td>
+    </tr>
+</table>
+<table>
+    <thead>
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                Descripcion
+            </td>
+            <td>
+                Cantidad
+            </td>
+            <td>
+                Tamaño
+            </td>
+        </tr>
+    </thead>
+    <tbody id="tbyPaq">
+        @{
+            foreach (var paquete in ViewBag.paquetes)
+            {
+                <tr>
+                    <td>@paquete.ID</td>
+                    <td>@paquete.Descripcion</td>
+                    <td>@paquete.Cantidad</td>
+                    <td>@paquete.Tamano</td>
+                    <td><input type="button" value="Modificar" onclick="Modificar('@paquete.ID',this)" class="btn btn-default"/></td>
+                    <td><input type="button" value="Borrar" onclick="Borrar('@paquete.ID',this)" class="btn btn-default"/></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

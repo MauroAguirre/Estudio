@@ -1,0 +1,9 @@
+﻿@using AjaxAplication.Models
+@model List<TodoItem>
+
+<p>items partial view</p>
+<p id="loquito"></p>
+@foreach (var item in Model) 
+{
+    <p>@item.Description</p>
+}

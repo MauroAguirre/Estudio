@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="program.js" ></script>		
+		
+	</head>
+	<body>
+		<h1>Super Sistema</h1>
+		<div id="menu">
+			<input type="button" id="btnInicio" value="Inicio" />
+			<input type="button" id="btnClientes" value="Clientes" />			
+		</div>
+		<div id="contenido">
+		
+			<div id="Inicio">
+				<h2>Bienvenidos</h2>
+			</div>
+			
+			<div id="Clientes">
+				<h2>Clientes</h2>
+				<form id="frmAltaClientes"> 
+						<input type="hidden" id="nroCliente" />
+						Nombre <input type="text" id="txtNombre" />
+						<br>
+						R.U.T <input type="text" id="txtRut" />
+						<br>
+						<div id="ingreso">
+							<input type="button" id="btnAdd" value="Agregar" />
+						</div>
+						<div id="editar">
+							<input type="button" id="btnConfEditar" value="Confirmar" />
+							<input type="button" id="btnCancelar" value="Cancelar" />
+						</div>
+				</form>
+				
+				<table style="border: 1px solid black">
+					<thead >
+							<tr style="border: 1px solid black">
+								<td style="border: 1px solid black">Operaciones</td>
+								<td style="border: 1px solid black">Num.</td>
+								<td style="border: 1px solid black">Nombre</td>
+								<td style="border: 1px solid black">R.U.T</td>
+								<td style="border: 1px solid black">Ingreso</td>
+							</tr>
+					</thead>
+					<tbody id="datosCliente">
+							
+					</tbody>
+					
+				<table>
+				
+			</div>
+		</div>
+	</body>
+</html>

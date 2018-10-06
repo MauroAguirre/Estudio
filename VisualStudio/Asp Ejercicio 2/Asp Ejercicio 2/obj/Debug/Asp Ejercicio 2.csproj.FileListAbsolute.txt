@@ -1,0 +1,8 @@
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\bin\Asp Ejercicio 2.dll.config
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\bin\Asp Ejercicio 2.dll
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\bin\Asp Ejercicio 2.pdb
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\obj\Debug\Asp Ejercicio 2.csprojResolveAssemblyReference.cache
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\obj\Debug\Asp Ejercicio 2.dll
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\obj\Debug\Asp Ejercicio 2.pdb
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\bin\Dominio.dll
+G:\VisualStudio\Asp Ejercicio 2\Asp Ejercicio 2\bin\Dominio.pdb

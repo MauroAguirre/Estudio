@@ -1,0 +1,10 @@
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\ProbandoORM primero codigo de DB.exe.config
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\ProbandoORM primero codigo de DB.exe
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\ProbandoORM primero codigo de DB.pdb
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\obj\Debug\ProbandoORM primero codigo de DB.csprojResolveAssemblyReference.cache
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\obj\Debug\ProbandoORM primero codigo de DB.exe
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\obj\Debug\ProbandoORM primero codigo de DB.pdb
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\EntityFramework.dll
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\EntityFramework.SqlServer.dll
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\EntityFramework.xml
+G:\Estudio\VisualStudio\ProbandoORM primero codigo de DB\ProbandoORM primero codigo de DB\bin\Debug\EntityFramework.SqlServer.xml

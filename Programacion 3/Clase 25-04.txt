@@ -1,0 +1,7 @@
+ORM (object relational mapping)
+
+remplazamos DAL por framework
+
+ado.net entity data model
+
+metadata=res://*/MegaAgenda.csdl|res://*/MegaAgenda.ssdl|res://*/MegaAgenda.msl;provider=System.Data.SqlClient;provider connection string="data source=localhost;initial catalog=MegaAgenda;integrated security=True;pooling=False;MultipleActiveResultSets=True;App=EntityFramework"

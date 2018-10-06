@@ -1,0 +1,37 @@
+tecnicas de recuperacion
+
+actualizacion diferida:
+	no se actualiza fisicamente la base de datos hasta que no haya alcanzado su punto de confirmacion
+
+actualizacion inmediata
+	hace rolback los comit que esten despues de donde se halla caido el sistema
+
+Seguridad 
+*Autentificacion 
+	window
+	sql server
+
+//Entidades login ->Servidores		Usuarios ->base de datos
+
+*Permisos->(grupos)Roles -> Prestablecidos
+	 ->Individuales  -> Creados
+
+
+/////////////
+Base de datos distribuidas
+	Se crean varias bases de datos por temas de seguridad, geograficos,
+	diferencia entre los motores de datos, etc
+
+	*Replicas:
+	*Fragmentaciones	(tipo horizontal o vertical)
+	*Mezcla
+servidores
+distribuidor publicador y subcriptor.
+
+subcriptor:*incercion(recibe la copia)
+	   *extracciones(extrae la copia)
+el subcriptor trabaja de forma local
+
+publicador:*Instantanea: saca un registro y lo envia cuando quiere
+	   *Transaccional: envia cuando se termina de hacer ciertas operaciones
+

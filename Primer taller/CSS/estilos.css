@@ -1,0 +1,20 @@
+body{background:#FFC; font-family:Trebuchet MS}
+#verdeclaro{
+	background: green;
+}
+nav li{
+	display:inline;
+	<!-- display puede tener tambien block y none-->
+}
+p{font-size:12px;text-indent:30px}
+a{color:white; padding:5px}
+nav{background-color:#360}
+h1,h2{color:green}
+.verde{color:green}
+hr{border:1px solid green}
+table{border:green 1px solid}
+td{border-top:green 1px solid}
+figcaption{font-size:10px}
+caption{font-size:14px; text-align:left}
+blocknote{font-size:14px;text-indent:30px}
+div{background-color:#360}

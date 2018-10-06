@@ -1,0 +1,22 @@
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+G:\VisualStudio\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\VisualStudio\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\VisualStudio\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\VisualStudio\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\VisualStudio\Cliente, clases\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+G:\VisualStudio\Cliente, clases\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+G:\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\Estudio\VisualStudio\Cliente, clases\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

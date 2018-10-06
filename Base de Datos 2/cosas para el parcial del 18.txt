@@ -1,0 +1,258 @@
+Temas para el parcial
+	create	BD
+	alter	tablas
+	drop	restricciones
+	vistar 
+	procedimientos
+	funciones
+	triggers
+	control de errores
+	transacciones
+
+Ejemplos
+
+	Crear base de datos
+
+create database Optica;
+
+	Usar base da datos
+
+use Optica;
+
+	Crear tablas
+
+create table Montura(idMontura int primary key,Marca varchar(45),Precio int,nombre varchar(45));
+create table Color(idColor int primary key,descripcionColor varchar(45));
+create table Stock(idMontura int foreign key references Montura(idMontura),idColor int foreign key references Color(idColor),primary key(idMontura,idColor));
+create table Venta(fecha date,idMontura int foreign key references Montura(idMontura),idColor int foreign key references Color(idColor),cantVendidos int,precio int,primary key(fecha,idMontura,idColor));
+
+	Eliminar tablas, columnas
+
+drop table Stock;
+drop table Venta;
+drop table Color;
+drop table Montura;
+
+alter table Color drop column descripcionColor;
+
+	Modificar tablas, agregar restricciones , agregar columna, modificar columna
+
+alter table Montura add constraint valorPrecio check(Precio>1000 and Precio<100000);
+alter table Color add constraint tipoColor check(descripcionColor in('rojo','amarillo','verde','negro','blanco'));
+
+alter table Stock add Cantidad int;
+
+alter table Color modify (descripcionColor not null);
+
+	Insertar valores
+
+insert into Montura(idMontura,Marca,Precio,nombre)values(1,'123 AB',3000,'Pedro');
+insert into Montura(idMontura,Marca,Precio,nombre)values(2,'123 AB',30000,'Raul');
+insert into Montura(idMontura,Marca,Precio,nombre)values(3,'333 DB',7000,'Tito');
+insert into Color(IdColor,descripcionColor)values(1,'rojo');
+insert into Color(IdColor,descripcionColor)values(2,'amarillo');
+insert into Color(IdColor,descripcionColor)values(3,'verde');
+insert into Stock(idMontura,idColor,Cantidad)values(1,1,10);
+insert into Stock(idMontura,idColor,Cantidad)values(1,2,15);
+insert into Stock(idMontura,idColor,Cantidad)values(2,2,25);
+insert into Stock(idMontura,idColor,Cantidad)values(3,3,40);
+insert into Venta(fecha,idMontura,idColor,cantVendidos,precio)values('20180618 10:34:09 AM',1,1,3,9000);
+insert into Venta(fecha,idMontura,idColor,cantVendidos,precio)values('20180816 10:34:09 AM',3,3,2,14000);
+
+	Eliminar valores
+
+delete Venta where idMontura = 1;
+delete Venta where idMontura = 3;
+delete Stock where idMontura = 1 and idColor = 1;
+delete Stock where idMontura = 1 and idColor = 2;
+delete Stock where idMontura = 2 and idColor = 2;
+delete Stock where idMontura = 3 and idColor = 3;
+delete Montura where idMontura = 1;
+delete Montura where idMontura = 2;
+delete Montura where idMontura = 3;
+delete Color where idColor = 1;
+delete Color where idColor = 2;
+delete Color where idColor = 3;
+
+	Modificar valores
+
+update Montura set Marca = '123 BB' where idMontura = 2;
+
+	Crear vista,llamarla
+
+create view vista1 as select Montura.idMontura,Montura.nombre from Montura inner join (select idMontura from Stock inner join (select * from Color where descripcionColor = 'rojo') as tablita1 on tablita1.idColor = Stock.idColor) as tablita2 on Montura.idMontura = tablita2.idMontura;
+select * from vista1;
+
+	Crear procedimientos
+
+create procedure LimpiarMonturas @precio int as
+begin
+	delete from Montura where nombre = 'error' and Precio < @precio;
+end
+
+create procedure DescuentoDia @fec date as
+begin
+	update Venta set precio -= precio *0.1 where fecha = @fec;
+end
+
+create procedure BorrarMontura @idMontura int as
+begin 
+	delete from Venta where idMontura = @idMontura;
+	delete from Stock where idMontura = @idMontura;
+	delete from Montura where idMontura = @idMontura;
+end
+
+create procedure listadoMonturas @fec date, @nom varchar(45) as
+begin
+	select * from (select Montura.idMontura,Montura.Marca,Montura.Precio,Montura.nombre from Montura where nombre = @nom and Precio>10000)as pepe inner join (select * from Venta where fecha = @fec) as tabla on pepe.idMontura = tabla.idMontura;
+end
+
+alter procedure AgregarCiudad as
+begin
+	begin try begin tran
+	insert into Ciudades(nomciud,habitantes,tipo,intendente,alcalde,Cantidad_obras)values('Pepe',3000,'chica','dsadas','dsada32',3)
+	insert into Ciudades(nomciud,habitantes,tipo,intendente,alcalde,Cantidad_obras)values('Pepe',3000,'chica','2d22','dsds33',3)
+	commit tran
+	end try
+	begin catch
+	rollback tran
+	declare @res varchar(10)
+	set @res = 'maaaal'
+	select @res
+	end catch
+end
+exec AgregarCiudad
+
+
+
+
+select * from Obras inner join 
+(select * from Maquinas inner join
+(select Empleados.ci, Empleados.nombre, Empleados.sueldo, Trabajan.codobr, Trabajan.matriculaMaq from Empleados inner join Trabajan on Empleados.ci=Trabajan.ci)as todoesto 
+on Maquinas.matricula=todoesto.matriculaMaq) as todoesto2
+on Obras.codobr=todoesto2.codobr
+where nomciud='Demacia'
+
+
+where codobr in (select Obras.codobr from Obras where nomciud='Demacia')
+create procedure CantidadMonturas @num int output as
+begin
+	set @num = (select count(*) from Montura);
+end
+	LLamar procedimientos, y procedimientos con output
+
+exec LimpiarMonturas 10600;
+exec DescuentoDia  '20180816 10:34:09 AM';
+exec BorrarMontura 1;
+exec listadoMonturas '20180816 10:34:09 AM','Pedro';
+
+declare @numerin int;
+exec CantidadMonturas @numerin output;
+select @numerin;
+
+	Crear funcion que retorna int y funcion que retorna tabla
+
+create function CantidadMonturasId(@idMontura int) returns int as
+begin
+	return (select count(*) from Montura where idMontura = @idMontura);
+end
+
+Create FUNCTION Datos_por_ciudad() returns @tabla table(tipo char(10),cantidad int) as 
+begin 
+	insert into @tabla ("tipo","cantidad")values('obras',(select count(*) from Obras));
+	insert into @tabla ("tipo","cantidad")values('Maquinas',(select count(*) from Maquinas));
+	insert into @tabla ("tipo","cantidad")values('Empleados',(select count(*) from Empleados));
+	return;
+end
+
+	LLamar funcion
+
+select dbo.CantidadMonturasId(1);
+
+select * from dbo.Datos_por_ciudad();
+
+	Crear triggers (El control de error se hace con el RAISERROR)
+
+create trigger ci_bien on Empleados instead of insert as 
+	begin
+	if((select ci from inserted) < 8)
+	begin
+		RAISERROR('ci muy chica',14,1);	
+	end
+	else
+	begin
+		insert into Empleados(ci,nombre,sueldo)values((select ci from inserted),(select nombre from inserted),(select sueldo from inserted));
+	end
+	end
+
+create trigger Agregar_obras on Obras after insert as
+	begin
+		update Ciudades set Cantidad_obras+=1 where nomciud = (select nomciud from inserted); 
+	end
+
+create trigger Borrar_obras on Obras after delete as
+	begin
+		update Ciudades set Cantidad_obras-=1 where nomciud = (select nomciud from deleted); 
+	end
+
+create trigger Actualizar_obras on Obras after update as
+begin
+	update Ciudades set Cantidad_obras+=1 where nomciud = (select nomciud from inserted); 
+	update Ciudades set Cantidad_obras-=1 where nomciud = (select nomciud from deleted); 
+end
+
+	Cursores
+
+create function NombresEmpleados() returns varchar(200) as
+begin
+	declare @resultado varchar(200)
+	set @resultado = ''
+	Declare @nombre varchar(45)
+	Declare curNomEmp cursor for Select nombre from Empleados
+	Open curNomEmp
+	Fetch next from curNomEmp into @nombre
+	While @@fetch_status = 0
+	Begin
+		set @resultado += ' '+@nombre
+		Fetch next from curNomEmp into @nombre
+	End
+	Close curNomEmp
+	Deallocate curNomEmp
+	return @resultado
+end
+select dbo.NombresEmpleados();
+
+create function NombresEmpleadosSueldo() returns varchar(400) as
+begin
+	declare @resultado varchar(400)
+	set @resultado = ''
+	Declare @nombre varchar(45)
+	declare @sueldo int
+	Declare curNomEmp cursor for Select nombre,sueldo from Empleados
+	Open curNomEmp
+	Fetch next from curNomEmp into @nombre,@sueldo
+	While @@fetch_status = 0
+	Begin
+		set @resultado += ' '+@nombre+' '+Cast(@sueldo as varchar(45))
+		Fetch next from curNomEmp into @nombre,@sueldo
+	End
+	Close curNomEmp
+	Deallocate curNomEmp
+	return @resultado
+end
+select dbo.NombresEmpleadosSueldo();
+
+	Transacciones
+
+BEGIN TRY BEGIN TRAN 
+ /*emails (emsilsidr varchar primarykey)*/
+insert into `emails`(`emailsdir`)VALUES('eehe@gmail.com');
+insert into `emails`(`emailsdir`)VALUES('sushi@gmail.com'); 
+insert into `emails`(`emailsdir`)VALUES('eehe@gmail.com');
+COMMIT TRAN 
+END TRY 
+
+BEGIN CATCH 
+	ROLLBACK TRAN 
+	select @@ERROR 
+END CATCH

@@ -1,0 +1,187 @@
+	Dia de clases
+	
+viernes
+martes y jueves
+martes, jueves y viernes
+martes y jueves
+
+florencia barrios
+flobarrios18@hotmail.com
+
+	Programacion orientada a objetos
+	
+*Metodologia
+	Orientacion a objetos: Es una tecnica para el modelado de sistemas.
+	Describe o modela un sistema como un conjunto de objetos relacionados que interactuan entre si.
+	
+	Los objetos que interactuan dentro de un sistema estan organizados en clases.
+
+*Para crear un sistema de software hay que desifrar el problema y sus necesidades.
+	Para desarollar una aplicacion es necesario tener una descripcion detallada de la solucion.
+	(A esto se le llama abstraccion)
+	
+Para esto necesitamos un Analisis -> investigacion del problema
+						 Diseño -> solucion logica
+						 Construccion -> codigo
+
+El analisis y el diseño orientado a objetos consiste con definir el dominio del problema y su solucion dentro de la persectiva de objetos.
+Dado un problema generico se deben identificar y describir los elementos principales que intervienen en su concepcion.
+
+UML (unified modeling lenguaje)
+	Lenguaje de modelado de sistemas.
+	Esta basado en diagramas graficos para construir, documentar, visualizar y especificar un sistema de software.
+	Herramienta que permite modelar para generar diseños que capturen sus ideas de forma convencional y facil de comprender para comunicarlas.
+	
+Fases Desarrollo	 |		Diagrama
+-----------------------------------------------
+analisis			 |		casos de uso
+					 |		diagrama de clase
+					 |		diagrama de actividad y colaboracion
+-----------------------------------------------
+diseño				 |		diagramas de clase
+					 |		diagrama de secuencia y componentes
+-----------------------------------------------
+implementacion		 |		diagrama de clase
+					 |		diagrama de componentes y despliege
+
+	Ventajas
+
+*Estandar aceptado mundialmente
+*Soporta todo el ciclo de vida de un software
+*Soporta la representacion de distintos tipos de sistemas incluyendo los informaticos
+*Es legible por usuarios y desarrolladores
+*Lenguaje visual de modelacion simple y expresivo
+*Puede abarcar con precision y de manera completa el modelo del sistema
+*Muestra el modelo estatico y dinamico del sistema
+
+Conceptos
+
+*Clase
+	Abstraccion de la realidad donde se representan las caracteristicas y comportamiento de un elemento de dicha realidad
+*Atributo
+	Define las caracteristicas de la clase
+*Metodo
+	Define el comportamiento de la clase
+*Relaciones entre clases
+	Las clases se pueden interrelacionar entre dos o mas clases por medio de:
+		Asociacion: dos objetos estan asociados cuando una "usa" servicios u operaciones brindados por el otro. Ej: una persona vive en una casa.
+		Agregacion: define un objeto en terminos del otro: "tiene un...". Ej: un automovil tiene una radio.
+		Composicion: describe una relacion "contiene", indica que un objeto no puede existir sin contener a otro. Ej: un automovil contiene un motor.
+		Herencia: define una nueva clase en terminos de otra clase ya existente. Ej: un automovil es un vehiculo.
+		
+Ejercicio	video club
+
+	Ir a un video club y alquilar una pelicula. Se registra el dia, mes y año cuando se alquilo y los dias de alquiler.
+	Ademas se registra el funcinario del video club que realizas el alquier.
+	
+Segunda clase
+
+Objetos: una instancia de una clase
+	*Por ejemplo la clase persona define cuale sson los atributos y metodos que toda persona debe tener.
+	*Cuando creamos una instancia de la clase Persona estamos generando una persona en particular y colocandole valores a cada uno de sus atributos.
+	
+Identidad
+	*Cada objeto es unico. incluso dos objetos con los mismos datos (clonados).
+	*Son dos diferentes. Aunque generalmente cada objeto es identificable a traves de un atributo.
+	
+Comportamiento
+	*El conjunto de operaciones a las que puede responder un objeto determina su compotamiento.
+	
+Estado
+	*Los atributos de cada objeto en un momento dado tienen un valor determinado que puede ser modificado durante su ciclo de vida.
+
+Como se utilizan los objetos?
+	*Se crea un ojeto: se instancia una clase utilizando el operador New.
+	Persona pepe = new Persona();
+	*Se cargan valores a algunos de sus variables (o a todas)
+
+Mecanismo
+	*El mecanismo en orientacion a objetos es encontrar el agente apropiado y darle el mensaje con mi requerimiento.
+	*Es responsabilidad del que recibe el mensaje si lo acepta lleva a cabo algun algoritmo.
+	*La accion comienza con el envio de un mensaje a un objeto, el mensaje es el pedido de accion mas informaciones adicionales.
+	*Como el receptor lleva adelante el mensaje no lo sabemo, esta encapsulado en el mecanismo.
+	
+				dame tu nombre
+				   ------>
+	(Objeto emisor)	mensaje	(objeto receptor)			   
+				   <------
+					nombre
+					
+Ejercicio 
+	Se desea modelar la biblioteca de una universidad
+	Se hace referencia al sistema de retirar libros, teniendo en cuenta que la universidad
+	cuenta con varios tipos de perfiles de usuarios (estudiantes, funcionarios, docentes, etc) y
+	distintos tipos de materiales(libros, revistas, softwares, etc) en diferentes formatos(impreso, digital).
+	Representa esta realidad generando un diagrama de clases utilizando notacion UML.
+	
+Contructores
+
+*Sistema noseque que se emplea con cada clase y se ejecuta al crear el objeto
+con la palabra new
+*se utiliza para dejar el objeto en su estado inicial, es decir, inicializar los valores de sus atributos.
+Para que los objetos recivan cuantos tengan valores por objetos en los atributos.
+->Se puede tener en la misma clase constructores con parametros o sin parametros.
+*Su objetivo es permitir que en el momento de creacion de el objeto podamos inicializar cada uno de los valores que van a tener sus atributos.
+->En una misma clase pueden coexistir mas de un constructor, deben diferenciarsre en las cantidad de paramentos que reciben pero tener el mismo nombre,
+se lo denomina como sobrecarga de metodos o sobrecarga de constructores.
+
+Visualisacion
+
+*Permite identificar la visibilidad de un objeto noseque con respecto a otras clases.
+*Permite definir dentro del codigo de una clase que cosas estan definidas para uso exclusivo dentro de la propia clase o que cosas se pueden acceder desde
+afuera de la clase.
+2 tipos de visibilidad basica:
+	Private: solo desde la misma clase.
+	Public: para cualquier clase.
+	
+Se representa en un diagrama de clases una clase o metodo privado con un - y publico con un +
+Privado:
+	->Estos metodos o atributos no se pueden usar para colaborar entre objetos.
+	->En general los atributos siempre se definen como privados, no es necesario que otras clases conoscan los nombres de las variables donde
+	se guardan los valores (encapsulamiento).
+Publica:
+	->Los metodos o atributos se pueden usar para colaborar entre objetos.
+	->Los metodos que siempre deben estar definidos como publicos son los constructores.
+	->Expecpcion patron singleton: Colocan el constructor en privado para usar otro metodo para la construccion del objeto.
+
+Controladora
+	Ejemplo: el canal de televisio tiene que conoceer cuales son los programas que se emiten y cuales son los contstructores que trabajan con el canal.
+	->La clase canal se debe crear para contener este objetos y tiene como responsabilidad resolver los problemas que se plantean en el entorno.
+	Se le otorga la responsabilidad de manejo de los eventos a la clase controladora.
+	->El sistema global
+	->La empresa encargada general
+	
+metodos del ejercicio 3
+
+ReporteLocalesGraves(){
+	list<local> locales = new list<local>();
+	int cantidad;
+	foreach(local l in locales)
+	{
+		cantidad=0;
+		foreach(denuncia d in denuncias)
+		{
+			if(d.local.rut == l.rut)
+			{
+				foreach(notificacion n in d.denuncias)
+				{
+					if(n.calificacion =< 2)
+						cantidad++;
+				}
+			{
+		}
+		if(cantidad =<0)
+			locales.add(cantidad);
+	}
+	return locales;
+}
+NotificacionesPorInspector(inspector i)
+{
+	list<notificacion> notificacionesAux = new list<notificacion>();
+	foreach(notificacion n in notificaciones)
+	{
+		if(i.ci == n.inspector.ci)
+			notificacionesAux.add(n);
+	}
+	return notificacionesAux();
+}

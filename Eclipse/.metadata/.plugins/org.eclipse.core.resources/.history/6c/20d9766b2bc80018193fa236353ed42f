@@ -1,0 +1,9 @@
+package Algoritmo2;
+
+public class Stack {
+	private String[] stack;
+	
+	public Stack() {
+		stack = new String[10];
+	}
+}

@@ -1,0 +1,43 @@
+temas
+	nodejs
+	mongo
+
+get
+post
+put
+delete
+si se pueden hacer las cuatros cosas se llama restfull
+
+usaremos atom y nodejs descargar recomendada por la mayoria y mongodb
+en el cmd poner
+	node -v
+
+mongod --storageEngine=mmapv1 --dbpath C:\data\db
+
+https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-windows
+
+Step 1
+Download the mongodb
+
+Step 2
+Follow normal setup instructions
+enter image description here
+
+enter image description here
+
+enter image description here
+
+enter image description here
+
+enter image description here
+
+enter image description here
+
+Step 3
+Create the following folder
+C:\data\db
+
+Step 4
+cd to C:\Program Files\MongoDB\Server\3.2\bin>
+enter command mongod
+by default, mongodb server will start at port 27017
