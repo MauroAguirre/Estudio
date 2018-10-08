@@ -32,3 +32,15 @@ G:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.dll
 G:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.pdb
 G:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
 D:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\Dominio.dll.config
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\Dominio.dll
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\Dominio.pdb
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\EntityFramework.dll
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\EntityFramework.xml
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.dll
+E:\Estudio\VisualStudio\Obligatorio Programacion 3\Dominio\obj\Debug\Dominio.pdb
