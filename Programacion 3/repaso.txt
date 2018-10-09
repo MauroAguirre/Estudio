@@ -7,6 +7,7 @@ https://msdn.microsoft.com/es-es/library/bb738708(v=vs.110).aspx
 Install-Package EntityFramework
 enable-migrations
 add-migration nombre
+update-database
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 (localdb)\v11.0

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL
+namespace Dominio
 {
-    class CompraController
+    public class FacturaCompra : Factura
     {
+        private Proveedor proveedor;
     }
 }

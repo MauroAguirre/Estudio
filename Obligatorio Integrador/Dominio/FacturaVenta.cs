@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL
+namespace Dominio
 {
-    public class ArticuloController
+    public class FacturaVenta : Factura
     {
     }
 }

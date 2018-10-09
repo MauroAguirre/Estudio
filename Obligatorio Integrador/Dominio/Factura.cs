@@ -7,12 +7,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    public class Proveedor
+    public class Factura
     {
         [Key]
-        public string rut { get; set; }
-        public string nombre { get; set; }
-        public string descripcion { get; set; }
-        public List<Contacto> contactos { get; set; }
+        public int id { get; set; }
+        public List<ArticuloProveedor> articuloProveedores { get; set; }
+        public DateTime fecha { get; set; }
     }
 }

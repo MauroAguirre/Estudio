@@ -41,9 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArticuloController.cs" />
-    <Compile Include="CompraController.cs" />
+    <Compile Include="ArticuloProveedorController.cs" />
+    <Compile Include="ComunicacionController.cs" />
+    <Compile Include="ContactoController.cs" />
+    <Compile Include="FacturaCompraController.cs" />
+    <Compile Include="FacturaVentaController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorController.cs" />
+    <Compile Include="StockController.cs" />
+    <Compile Include="UsuarioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

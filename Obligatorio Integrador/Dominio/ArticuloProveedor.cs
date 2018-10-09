@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    class ArticuloProveedor
+    public class ArticuloProveedor
     {
-        private int costo {get;set;}
-        private DateTime fecha { get; set; }
-        private Proveedor proveedor { get; set; }
-        private Articulo articulo { get; set; }
+        [Key]
+        public int id { get; set; }
+        public int costo {get;set;}
+        public DateTime fecha { get; set; }
+        public Proveedor proveedor { get; set; }
+        public Articulo articulo { get; set; }
     }
 }

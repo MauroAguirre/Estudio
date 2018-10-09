@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    class Contacto
+    public class Contacto
     {
-        private string nombre { get; set; }
-        private int telefono { get; set; }
+        [Key]
+        public string nombre { get; set; }
+        public int telefono { get; set; }
     }
 }

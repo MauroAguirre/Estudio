@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio
+namespace DAL
 {
-    class Compra
+    public class UsuarioService
     {
-        private DateTime fecha { get; set; }
-        private ArticuloProveedor articulos {get;set;}
     }
 }

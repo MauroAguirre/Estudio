@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    class Usuario
+    public class Usuario
     {
-        private string mail { get; set; }
-        private string contra { get; set; }
+        [Key]
+        public string mail { get; set; }
+        public string contra { get; set; }
     }
 }

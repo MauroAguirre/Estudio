@@ -7,12 +7,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    public class Articulo
+    public class Comunicacion
     {
         [Key]
         public int id { get; set; }
-        public string descripcion { get; set; }
-        public Boolean iva { get; set; }
-        public int miniStock { get; set; }
+        public DateTime fecha { get; set; }
+        public string comentario { get; set; }
+        public Proveedor proveedor { get; set; }
+        public Contacto contacto { get; set; }
     }
 }
