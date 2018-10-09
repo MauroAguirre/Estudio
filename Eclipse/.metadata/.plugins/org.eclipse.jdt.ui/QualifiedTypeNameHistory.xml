@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.MainWindow"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observable"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
+<fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+</qualifiedTypeNameHistroy>
