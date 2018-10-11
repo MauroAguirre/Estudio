@@ -6,4 +6,12 @@
 <fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Jeringa.Jeringa"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Jeringa.models.TestModel"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Annotation"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Jeringa.JeringaInyector"/>
 </qualifiedTypeNameHistroy>
