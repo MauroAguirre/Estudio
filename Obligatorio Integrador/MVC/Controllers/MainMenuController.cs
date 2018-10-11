@@ -13,5 +13,13 @@ namespace MVC.Controllers
         {
             return View();
         }
+        public ActionResult Usuarios()
+        {
+            return Json(Url.Action("Index", "Users"));
+        }
+        public ActionResult Salir()
+        {
+            return Json(Url.Action("Index", "Login"));
+        }
     }
 }

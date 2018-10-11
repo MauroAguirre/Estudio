@@ -8,5 +8,6 @@ namespace Dominio
 {
     public class FacturaVenta : Factura
     {
+        private string descripcion { get; set; }
     }
 }
