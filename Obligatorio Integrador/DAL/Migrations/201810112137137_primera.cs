@@ -3,7 +3,7 @@ namespace DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class inicial : DbMigration
+    public partial class primera : DbMigration
     {
         public override void Up()
         {
@@ -97,19 +97,6 @@ namespace DAL.Migrations
                 .PrimaryKey(t => t.id);
             
             CreateTable(
-                "dbo.Stocks",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        cambio = c.Int(nullable: false),
-                        fecha = c.String(),
-                        articulo_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.Articuloes", t => t.articulo_id)
-                .Index(t => t.articulo_id);
-            
-            CreateTable(
                 "dbo.Usuarios",
                 c => new
                     {
@@ -122,7 +109,6 @@ namespace DAL.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.Stocks", "articulo_id", "dbo.Articuloes");
             DropForeignKey("dbo.ArticuloProveedors", "FacturaVenta_id", "dbo.FacturaVentas");
             DropForeignKey("dbo.ArticuloProveedors", "FacturaCompra_id", "dbo.FacturaCompras");
             DropForeignKey("dbo.Comunicacions", "proveedor_rut", "dbo.Proveedors");
@@ -130,7 +116,6 @@ namespace DAL.Migrations
             DropForeignKey("dbo.ArticuloProveedors", "proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.Contactoes", "Proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.ArticuloProveedors", "articulo_id", "dbo.Articuloes");
-            DropIndex("dbo.Stocks", new[] { "articulo_id" });
             DropIndex("dbo.Comunicacions", new[] { "proveedor_rut" });
             DropIndex("dbo.Comunicacions", new[] { "contacto_nombre" });
             DropIndex("dbo.Contactoes", new[] { "Proveedor_rut" });
@@ -139,7 +124,6 @@ namespace DAL.Migrations
             DropIndex("dbo.ArticuloProveedors", new[] { "proveedor_rut" });
             DropIndex("dbo.ArticuloProveedors", new[] { "articulo_id" });
             DropTable("dbo.Usuarios");
-            DropTable("dbo.Stocks");
             DropTable("dbo.FacturaVentas");
             DropTable("dbo.FacturaCompras");
             DropTable("dbo.Comunicacions");

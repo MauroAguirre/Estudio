@@ -1,7 +1,15 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MenuPrincipal.js")"></script>
 }
 
-<h2>Index</h2>
-
+<h2>Menu principal</h2>
+<form>
+    <input type="button" value="Usuarios" onclick="Usuarios()" />
+    <input type="button" value="Productos" onclick="Salir()" />
+    <input type="button" value="Proveedores" onclick="Salir()" />
+    <input type="button" value="Productos del proveedor" onclick="Salir()" />
+    <input type="button" value="Factura" />
+    <input type="button" value="Registro" />
+    <input type="button" value="Salir" onclick="Salir()" />
+</form>

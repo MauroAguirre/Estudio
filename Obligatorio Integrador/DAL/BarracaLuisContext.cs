@@ -14,7 +14,6 @@ namespace DAL
         public virtual DbSet<Proveedor> proveedores { get; set; }
         public virtual DbSet<ArticuloProveedor> articuloProveedores { get; set; }
         public virtual DbSet<Comunicacion> comunicaciones { get; set; }
-        public virtual DbSet<Stock> stock { get; set; }
         public virtual DbSet<FacturaCompra> facturaCompras { get; set; }
         public virtual DbSet<FacturaVenta> facturasVentas { get; set; }
         public virtual DbSet<Contacto> contactos { get; set; }

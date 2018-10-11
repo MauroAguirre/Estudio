@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    public class FacturaVenta : Factura
+    class LineaFactura
     {
-        private string descripcion { get; set; }
+        public int cantidad { get; set; }
+        public ArticuloProveedor articuloProveedor { get; set; }
     }
 }
