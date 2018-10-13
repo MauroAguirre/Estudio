@@ -4,8 +4,6 @@
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observable"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
 <fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.Jeringa"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.models.TestModel"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
@@ -14,4 +12,7 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.JeringaInyector"/>
+<fullyQualifiedTypeName name="Algoritmo2.Pilas_Colas.Queue"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>
