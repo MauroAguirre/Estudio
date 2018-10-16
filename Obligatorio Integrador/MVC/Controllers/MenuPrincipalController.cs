@@ -6,20 +6,23 @@ using System.Web.Mvc;
 
 namespace MVC.Controllers
 {
-    public class MainMenuController : Controller
+    public class MenuPrincipalController : Controller
     {
-        // GET: MainMenu
         public ActionResult Index()
         {
             return View();
         }
         public ActionResult Usuarios()
         {
-            return Json(Url.Action("Index", "Users"));
+            return Json(Url.Action("Index", "MenuUsuario"));
+        }
+        public ActionResult Articulos()
+        {
+            return Json(Url.Action("Index", "MenuArticulo"));
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "Login"));
+            return Json(Url.Action("Index", "MenuLogin"));
         }
     }
 }

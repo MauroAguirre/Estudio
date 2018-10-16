@@ -12,7 +12,8 @@ namespace Dominio
         [Key]
         public int id { get; set; }
         public string descripcion { get; set; }
-        public Boolean iva { get; set; }
+        public int iva { get; set; }
         public int miniStock { get; set; }
+        public int precioVenta { get; set; }
     }
 }

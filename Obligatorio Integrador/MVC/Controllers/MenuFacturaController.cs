@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace MVC.Controllers
 {
-    public class LoginController : Controller
+    public class MenuFacturaController : Controller
     {
-        // GET: Login
+        // GET: Factura
         public ActionResult Index()
         {
             return View();

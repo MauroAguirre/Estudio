@@ -3,28 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using BLL;
 using Dominio;
+using BLL;
 
 namespace MVC.Controllers
 {
-    public class UsersController : Controller
+    public class MenuLoginController : Controller
     {
         UsuarioController uc = new UsuarioController();
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult AgregarUsuario(Usuario u)
+        public ActionResult Ingresar(Usuario u)
         {
-            if (uc.AgregarUsuario(u))
-                return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            if (uc.Verificar(u))
+            {
+                return Json(Url.Action("Index", "MenuPrincipal"));
+            }
             else
                 return Json(new { success = false }, JsonRequestBehavior.AllowGet);
-        }
-        public ActionResult Salir()
-        {
-            return Json(Url.Action("Index", "MainMenu"));
         }
     }
 }

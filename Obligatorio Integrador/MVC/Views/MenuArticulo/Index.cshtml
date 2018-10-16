@@ -1,0 +1,53 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Articulo.js")"></script>
+}
+<h2>Articulos</h2>
+<table class="table">
+    <tr>
+        <td><label>descripcion</label></td>
+        <td><input type="text" id="txtDescripcion" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label>Iva</label></td>
+        <td>
+            <form>
+                <input id="rdoIva1" type="radio" value="10" name="iva" class="radio" checked="checked"/>
+                <label>10%</label>
+                <input id="rdoIva2" type="radio" value="21" name="iva" class="radio" />
+                <label>21%</label>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Minimo de stock</label></td>
+        <td><input type="number" id="numMiniStock" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label>Precio venta</label></td>
+        <td><input type="number" id="numPrecioVenta" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Registrar" onclick="Agregar()" class="btn btn-default" /></td>
+        <td><label id="lblRes"></label></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Salir" onclick="Salir()" class="btn btn-default" /></td>
+    </tr>
+</table>
+<h2>Lista de articulos</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Descripcion</label></td>
+            <td><label>Iva</label></td>
+            <td><label>Minimo de stock</label></td>
+            <td><label>Precio venta</label></td>
+            <td><label>Modificar</label></td>
+            <td><label>Borrar</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyArticulos"></tbody>
+</table>
+

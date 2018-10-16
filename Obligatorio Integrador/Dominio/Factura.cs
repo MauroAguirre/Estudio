@@ -11,7 +11,7 @@ namespace Dominio
     {
         [Key]
         public int id { get; set; }
-        public List<ArticuloProveedor> articuloProveedores { get; set; }
+        public List<LineaFactura> LineaFacturas { get; set; }
         public DateTime fecha { get; set; }
     }
 }

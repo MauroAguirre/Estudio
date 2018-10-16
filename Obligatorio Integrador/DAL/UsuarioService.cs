@@ -9,14 +9,14 @@ namespace DAL
 {
     public class UsuarioService
     {
-        public void AgregarUsuario(Usuario u) {
+        public void Agregar(Usuario usuario) {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                db.usuarios.Add(u);
+                db.usuarios.Add(usuario);
                 db.SaveChanges();
             }
         }
-        public List<Usuario> ListaUsuarios() {
+        public List<Usuario> Lista() {
             List<Usuario> usuarios = new List<Usuario>();
             using (BarracaLuisContext db = new BarracaLuisContext()) {
                 foreach (var u in db.usuarios) {
@@ -24,6 +24,34 @@ namespace DAL
                 }
             }
             return usuarios;
+        }
+        public void Modificar(Usuario usuario)
+        {
+            using (BarracaLuisContext db = new BarracaLuisContext())
+            {
+                foreach (var u in db.usuarios)
+                {
+                    if (u.mail == usuario.mail)
+                    {
+                        u.contra = usuario.contra;
+                        break;
+                    }
+                }
+                db.SaveChanges();
+            }
+        }
+        public void Borrar(String mail) {
+            using (BarracaLuisContext db = new BarracaLuisContext())
+            {      
+                foreach (var u in db.usuarios)
+                {
+                    if (u.mail == mail) {
+                        db.usuarios.Remove(u);
+                        break;
+                    }
+                }
+                db.SaveChanges();
+            }
         }
     }
 }

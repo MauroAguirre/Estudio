@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class LineaFactura
+    public class LineaFactura
     {
+        [Key]
+        public int id { get; set; }
         public int cantidad { get; set; }
         public ArticuloProveedor articuloProveedor { get; set; }
+        public List<Factura> factura { get; set; }
     }
 }

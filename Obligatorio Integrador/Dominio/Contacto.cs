@@ -12,5 +12,7 @@ namespace Dominio
         [Key]
         public string nombre { get; set; }
         public int telefono { get; set; }
+        //[ForeignKey("Standar")]
+        public List<Proveedor> proveedor { get; set; }
     }
 }

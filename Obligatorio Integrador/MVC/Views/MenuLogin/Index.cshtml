@@ -1,0 +1,19 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Login.js")"></script>
+}
+<h2>Login</h2>
+<table class="table">
+    <tr>
+        <td><label>Mail</label></td>
+        <td><input type="text" id="txtMail" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label>Contraseña</label></td>
+        <td><input type="text" id="txtContra" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Ingresar" onclick="Ingresar()" class="btn btn-default" /></td>
+        <td><label id="lblRes">Ingrese un usuario</label></td>
+    </tr>
+</table>
