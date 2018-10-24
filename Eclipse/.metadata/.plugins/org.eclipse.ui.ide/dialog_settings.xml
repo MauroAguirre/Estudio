@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\Estudio\Obligatorio Integrador"/>
 		<item value="E:\Estudio\Eclipse\Jeringa"/>
 		<item value="E:\Estudio\Eclipse\Practico1-master"/>
 		<item value="E:\Obligatorio-IDS-DDA"/>

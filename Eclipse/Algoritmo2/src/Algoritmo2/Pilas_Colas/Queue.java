@@ -69,7 +69,4 @@ public class Queue {
 		}
 		queue[9]=null;
 	}
-	public void eliminarPasajero(String pasajero) {
-		for()
-	}
 }
