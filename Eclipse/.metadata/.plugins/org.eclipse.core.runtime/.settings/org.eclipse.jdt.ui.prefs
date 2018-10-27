@@ -6,6 +6,7 @@ content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
 editor_folding_enabled=false
+markOccurrences=false
 org.eclipse.jdt.internal.ui.navigator.layout=1
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=14

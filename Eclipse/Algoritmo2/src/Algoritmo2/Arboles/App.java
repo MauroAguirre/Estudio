@@ -40,26 +40,73 @@ public class App {
 	 * 
 	 * Peso: Es el numero de nodos del arol sin contar la raiz.
 	 * 
+	 * 
+	 * preorden enorden( izquierda derecha) posorden (izquierda derecha raiz)
+	 * 
+	 * Recorrido preorden
+	 * 
+	 * Existen varias formas de recorrer un arbol listando los nodos del mismo, generando una lista de nodos. Dado un nodo
+	 * n con hojas n1,n2.... el listado preorden del nodo se puede definir: preorde(n) = (n,preorde(n1),preorden(n1),...preorden(n))
+	 * 
+	 * Arbol binario equilibrado
+	 * 
+	 * Es un AB en el que todos sus nodos se cumple la siguiente propiedad:
+	 * altura(subIzquierdo) - altura(subDerecho) | <= 1
+	 * 
+	 * el valor absoluto de la resta entre las alturas de sus subarboles izquierdo y subarboles derecho es menor o igual a 1
+	 * 
+	 * Arbol binario completo
+	 * 
+	 * Es un arbol en que todos los nodos tienen dos hijos y todas las hojas estan en el mismo nivel
+	 * 
+	 * Arbol binario de busqueda (ABB)
+	 * 
+	 * =>Es un arbol binario ordenado (sus elementos son ordenados)
+	 * Esta organizado de tal forma que para cada nodo, todos los elementos menores se ubican en el subarbol izquierdo y los elementos
+	 * mayores a el en el subarbol derecho.
 	 */
 	public static void main(String[] args) {
+		String res;
 		ArbolB arbolito = new ArbolB();
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
-		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
-		arbolito.agregarIzq( "dsad");
-		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
-		System.out.println("peso: "+arbolito.peso());
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));		
+		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
 		
-		arbolito.agregarIzq( "222");
-		arbolito.agregarIzq( "hgf65");
+		arbolito.agregarIzq( "2");
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
-		arbolito.agregarIzq( "bgbgb");
-		arbolito.agregarDer("cvf");
+		
+		arbolito.agregarIzq("4");
+		arbolito.agregarIzq("40");
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
+		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
+		
+		arbolito.agregarIzq("6");
+		arbolito.agregarDer("8");
+		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
+		System.out.println("peso: "+arbolito.peso());
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
+		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
+		
+		arbolito.agregarDer("9");
+		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
+		System.out.println("peso: "+arbolito.peso());
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
 	}
 
