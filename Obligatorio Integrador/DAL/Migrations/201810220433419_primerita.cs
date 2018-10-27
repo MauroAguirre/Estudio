@@ -3,7 +3,7 @@ namespace DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class primera : DbMigration
+    public partial class primerita : DbMigration
     {
         public override void Up()
         {
@@ -51,8 +51,11 @@ namespace DAL.Migrations
                     {
                         nombre = c.String(nullable: false, maxLength: 128),
                         telefono = c.Int(nullable: false),
+                        proveedor_rut = c.String(maxLength: 128),
                     })
-                .PrimaryKey(t => t.nombre);
+                .PrimaryKey(t => t.nombre)
+                .ForeignKey("dbo.Proveedors", t => t.proveedor_rut)
+                .Index(t => t.proveedor_rut);
             
             CreateTable(
                 "dbo.Comunicacions",
@@ -76,7 +79,6 @@ namespace DAL.Migrations
                     {
                         id = c.Int(nullable: false, identity: true),
                         fecha = c.DateTime(nullable: false),
-                        Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.id);
             
@@ -87,10 +89,13 @@ namespace DAL.Migrations
                         id = c.Int(nullable: false, identity: true),
                         cantidad = c.Int(nullable: false),
                         articuloProveedor_id = c.Int(),
+                        factura_id = c.Int(),
                     })
                 .PrimaryKey(t => t.id)
                 .ForeignKey("dbo.ArticuloProveedors", t => t.articuloProveedor_id)
-                .Index(t => t.articuloProveedor_id);
+                .ForeignKey("dbo.Facturas", t => t.factura_id)
+                .Index(t => t.articuloProveedor_id)
+                .Index(t => t.factura_id);
             
             CreateTable(
                 "dbo.Usuarios",
@@ -102,55 +107,54 @@ namespace DAL.Migrations
                 .PrimaryKey(t => t.mail);
             
             CreateTable(
-                "dbo.ContactoProveedors",
+                "dbo.facturaCompras",
                 c => new
                     {
-                        Contacto_nombre = c.String(nullable: false, maxLength: 128),
-                        Proveedor_rut = c.String(nullable: false, maxLength: 128),
+                        id = c.Int(nullable: false),
+                        proveedor_rut = c.String(maxLength: 128),
                     })
-                .PrimaryKey(t => new { t.Contacto_nombre, t.Proveedor_rut })
-                .ForeignKey("dbo.Contactoes", t => t.Contacto_nombre, cascadeDelete: true)
-                .ForeignKey("dbo.Proveedors", t => t.Proveedor_rut, cascadeDelete: true)
-                .Index(t => t.Contacto_nombre)
-                .Index(t => t.Proveedor_rut);
+                .PrimaryKey(t => t.id)
+                .ForeignKey("dbo.Facturas", t => t.id)
+                .ForeignKey("dbo.Proveedors", t => t.proveedor_rut)
+                .Index(t => t.id)
+                .Index(t => t.proveedor_rut);
             
             CreateTable(
-                "dbo.FacturaLineaFacturas",
+                "dbo.facturaVentas",
                 c => new
                     {
-                        Factura_id = c.Int(nullable: false),
-                        LineaFactura_id = c.Int(nullable: false),
+                        id = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => new { t.Factura_id, t.LineaFactura_id })
-                .ForeignKey("dbo.Facturas", t => t.Factura_id, cascadeDelete: true)
-                .ForeignKey("dbo.LineaFacturas", t => t.LineaFactura_id, cascadeDelete: true)
-                .Index(t => t.Factura_id)
-                .Index(t => t.LineaFactura_id);
+                .PrimaryKey(t => t.id)
+                .ForeignKey("dbo.Facturas", t => t.id)
+                .Index(t => t.id);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.FacturaLineaFacturas", "LineaFactura_id", "dbo.LineaFacturas");
-            DropForeignKey("dbo.FacturaLineaFacturas", "Factura_id", "dbo.Facturas");
+            DropForeignKey("dbo.facturaVentas", "id", "dbo.Facturas");
+            DropForeignKey("dbo.facturaCompras", "proveedor_rut", "dbo.Proveedors");
+            DropForeignKey("dbo.facturaCompras", "id", "dbo.Facturas");
+            DropForeignKey("dbo.LineaFacturas", "factura_id", "dbo.Facturas");
             DropForeignKey("dbo.LineaFacturas", "articuloProveedor_id", "dbo.ArticuloProveedors");
             DropForeignKey("dbo.Comunicacions", "proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.Comunicacions", "contacto_nombre", "dbo.Contactoes");
             DropForeignKey("dbo.ArticuloProveedors", "proveedor_rut", "dbo.Proveedors");
-            DropForeignKey("dbo.ContactoProveedors", "Proveedor_rut", "dbo.Proveedors");
-            DropForeignKey("dbo.ContactoProveedors", "Contacto_nombre", "dbo.Contactoes");
+            DropForeignKey("dbo.Contactoes", "proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.ArticuloProveedors", "articulo_id", "dbo.Articuloes");
-            DropIndex("dbo.FacturaLineaFacturas", new[] { "LineaFactura_id" });
-            DropIndex("dbo.FacturaLineaFacturas", new[] { "Factura_id" });
-            DropIndex("dbo.ContactoProveedors", new[] { "Proveedor_rut" });
-            DropIndex("dbo.ContactoProveedors", new[] { "Contacto_nombre" });
+            DropIndex("dbo.facturaVentas", new[] { "id" });
+            DropIndex("dbo.facturaCompras", new[] { "proveedor_rut" });
+            DropIndex("dbo.facturaCompras", new[] { "id" });
+            DropIndex("dbo.LineaFacturas", new[] { "factura_id" });
             DropIndex("dbo.LineaFacturas", new[] { "articuloProveedor_id" });
             DropIndex("dbo.Comunicacions", new[] { "proveedor_rut" });
             DropIndex("dbo.Comunicacions", new[] { "contacto_nombre" });
+            DropIndex("dbo.Contactoes", new[] { "proveedor_rut" });
             DropIndex("dbo.ArticuloProveedors", new[] { "proveedor_rut" });
             DropIndex("dbo.ArticuloProveedors", new[] { "articulo_id" });
-            DropTable("dbo.FacturaLineaFacturas");
-            DropTable("dbo.ContactoProveedors");
+            DropTable("dbo.facturaVentas");
+            DropTable("dbo.facturaCompras");
             DropTable("dbo.Usuarios");
             DropTable("dbo.LineaFacturas");
             DropTable("dbo.Facturas");

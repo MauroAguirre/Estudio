@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
-    public class Factura
+    public abstract class Factura
     {
         [Key]
         public int id { get; set; }

@@ -9,13 +9,15 @@ namespace DAL
 {
     public class ArticuloService
     {
-        public void Agregar(Articulo articulo)
+        public Articulo Agregar(Articulo articulo)
         {
+            Articulo nuevo = new Articulo();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                db.articulos.Add(articulo);
+                nuevo = db.articulos.Add(articulo);
                 db.SaveChanges();
             }
+            return nuevo;
         }
         public List<Articulo> Lista()
         {
@@ -40,7 +42,7 @@ namespace DAL
                         a.iva = articulo.iva;
                         a.descripcion = articulo.descripcion;
                         a.miniStock = articulo.miniStock;
-                        a.precioVenta = a.precioVenta;
+                        a.precioVenta = articulo.precioVenta;
                         break;
                     }
                 }

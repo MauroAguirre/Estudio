@@ -11,12 +11,11 @@ namespace BLL
     public class ArticuloController
     {
         ArticuloService us = new ArticuloService();
-        public Boolean Agregar(Articulo articulo)
+        public Articulo Agregar(Articulo articulo)
         {
             if (articulo.descripcion == null || articulo.descripcion == null || articulo.miniStock <0 || articulo.precioVenta <-1)
-                return false;
-            us.Agregar(articulo);
-            return true;
+                return null;
+            return us.Agregar(articulo);
         }
         public List<Articulo> Lista()
         {

@@ -4,7 +4,7 @@
 function Listar() {
     $.ajax({
         type: 'GET',
-        url: '/MenuArticulo/ListaArticulos',
+        url: '/MenuArticulo/Lista',
         data: null,
         encode: true
     }).done((data) => {
@@ -27,13 +27,14 @@ function Agregar() {
     };
     $.ajax({
         type: 'POST',
-        url: '/MenuArticulo/AgregarArticulo',
+        url: '/MenuArticulo/Agregar',
         data: articulo,
         encode: true
     }).done((data) => {
         if (data.success) {
+            var nuevo = data.data;
             $("#lblRes").html("Articulo Agregado");
-            $("#tbyArticulos").append('<tr id=' + articulos[i].id + '><td>' + articulos[i].id + '</td><td>' + articulos[i].descripcion + '</td><td>' + articulos[i].iva + '</td><td>' + articulos[i].miniStock + '</td><td>' + articulos[i].precioVenta + '</td><td><input type="button" value="Modificar" onclick="Modificar(\'' + articulos[i].id + '\')" class="btn btn-default"></td><td><input type="button" value="Borrar" onclick="Borrar(\'' + articulos[i].id + '\')" class="btn btn-default"></td></tr>');
+            $("#tbyArticulos").append('<tr id=' + nuevo.id + '><td>' + nuevo.id + '</td><td>' + nuevo.descripcion + '</td><td>' + nuevo.iva + '</td><td>' + nuevo.miniStock + '</td><td>' + nuevo.precioVenta + '</td><td><input type="button" value="Modificar" onclick="Modificar(\'' + nuevo.id + '\')" class="btn btn-default"></td><td><input type="button" value="Borrar" onclick="Borrar(\'' + nuevo.id + '\')" class="btn btn-default"></td></tr>');
             $('#txtDescripcion').val("");
             $('#numMiniStock').val("");
             $('#numPrecioVenta').val("");
@@ -97,7 +98,7 @@ function Modificar(id) {
             $("#lblRes").html("Articulo modificado");
             var idd = "#" + articulo.id;
             $(idd).html("");
-            $("#tbyArticulos").append('<td>' + articulo.id + '</td><td>' + articulo.descripcion + '</td><td>' + articulo.iva + '</td><td>' + articulo.miniStock + '</td><td>' + articulo.precioVenta + '</td><td><input type="button" value="Modificar" onclick="Modificar(\'' + articulo.id + '\')" class="btn btn-default"></td><td><input type="button" value="Borrar" onclick="Borrar(\'' + articulo.id + '\')" class="btn btn-default"></td>');
+            $(idd).append('<td>' + articulo.id + '</td><td>' + articulo.descripcion + '</td><td>' + articulo.iva + '</td><td>' + articulo.miniStock + '</td><td>' + articulo.precioVenta + '</td><td><input type="button" value="Modificar" onclick="Modificar(\'' + articulo.id + '\')" class="btn btn-default"></td><td><input type="button" value="Borrar" onclick="Borrar(\'' + articulo.id + '\')" class="btn btn-default"></td>');
             $('#txtDescripcion').val("");
             $('#numMiniStock').val("");
             $('#numPrecioVenta').val("");

@@ -20,6 +20,10 @@ namespace MVC.Controllers
         {
             return Json(Url.Action("Index", "MenuArticulo"));
         }
+        public ActionResult Proveedores()
+        {
+            return Json(Url.Action("Index", "MenuProveedores"));
+        }
         public ActionResult Salir()
         {
             return Json(Url.Action("Index", "MenuLogin"));

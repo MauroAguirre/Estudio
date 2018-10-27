@@ -14,17 +14,18 @@ namespace DAL
         public virtual DbSet<Proveedor> proveedores { get; set; }
         public virtual DbSet<ArticuloProveedor> articuloProveedores { get; set; }
         public virtual DbSet<Comunicacion> comunicaciones { get; set; }
+        public virtual DbSet<Factura> facturas { get; set; }
         public virtual DbSet<FacturaCompra> facturaCompras { get; set; }
         public virtual DbSet<FacturaVenta> facturasVentas { get; set; }
+        public virtual DbSet<LineaFactura> lineafacturas { get; set; }
         public virtual DbSet<Contacto> contactos { get; set; }
         public virtual DbSet<Usuario> usuarios { get; set; }
 
-        /*
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<FacturaCompra>().ToTable("facturaCompras");
             modelBuilder.Entity<FacturaVenta>().ToTable("facturaVentas");
-        }*/
+        }
     }
 }

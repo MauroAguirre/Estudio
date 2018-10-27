@@ -8,29 +8,29 @@ using Dominio;
 
 namespace MVC.Controllers
 {
-    public class MenuArticuloController : Controller
+    public class MenuProveedorController : Controller
     {
-        ArticuloController ac = new ArticuloController();
+        ProveedorController pc = new ProveedorController();
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Agregar(Articulo a)
+        public ActionResult Agregar(Proveedor p)
         {
-            Articulo nuevo = ac.Agregar(a);
-            if (nuevo  != null)
-                return Json(new { success = true ,data = nuevo}, JsonRequestBehavior.AllowGet);
+            Proveedor nuevo = pc.Agregar(p);
+            if (nuevo != null)
+                return Json(new { success = true, data = nuevo }, JsonRequestBehavior.AllowGet);
             else
                 return Json(new { success = false }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Modificar(Articulo a)
+        public ActionResult Modificar(Proveedor p)
         {
-            ac.Modificar(a);
+            pc.Modificar(p);
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Borrar(Articulo a)
+        public ActionResult Borrar(Proveedor p)
         {
-            ac.Borrar(a.id);
+            pc.Borrar(p.rut);
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Salir()
@@ -39,7 +39,7 @@ namespace MVC.Controllers
         }
         public ActionResult Lista()
         {
-            return Json(new { success = true, data = ac.Lista() }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = true, data = pc.Lista() }, JsonRequestBehavior.AllowGet);
         }
     }
 }

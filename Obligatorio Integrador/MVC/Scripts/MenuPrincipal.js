@@ -28,3 +28,13 @@ function Articulos() {
         window.location.href = data;
     });
 }
+function Proveedores() {
+    $.ajax({
+        type: 'POST',
+        url: '/MenuPrincipal/Proveedores',
+        data: null,
+        encode: true
+    }).done((data) => {
+        window.location.href = data;
+    });
+}

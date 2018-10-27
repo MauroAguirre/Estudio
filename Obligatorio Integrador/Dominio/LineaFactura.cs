@@ -13,6 +13,6 @@ namespace Dominio
         public int id { get; set; }
         public int cantidad { get; set; }
         public ArticuloProveedor articuloProveedor { get; set; }
-        public List<Factura> factura { get; set; }
+        public Factura factura { get; set; }
     }
 }

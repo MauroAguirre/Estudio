@@ -158,6 +158,7 @@
     <Compile Include="Controllers\MenuFacturaController.cs" />
     <Compile Include="Controllers\MenuLoginController.cs" />
     <Compile Include="Controllers\MenuPrincipalController.cs" />
+    <Compile Include="Controllers\MenuProveedorController.cs" />
     <Compile Include="Controllers\MenuUsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,6 +193,7 @@
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\MenuPrincipal.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Proveedor.js" />
     <Content Include="Scripts\Usuario.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -209,6 +211,7 @@
     <Content Include="Views\MenuFactura\Index.cshtml" />
     <Content Include="Views\MenuPrincipal\Index.cshtml" />
     <Content Include="Views\MenuArticulo\Index.cshtml" />
+    <Content Include="Views\MenuProveedor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,6 +8,6 @@ namespace Dominio
 {
     public class FacturaCompra : Factura
     {
-        private Proveedor proveedor;
+        public Proveedor proveedor { get; set; }
     }
 }
