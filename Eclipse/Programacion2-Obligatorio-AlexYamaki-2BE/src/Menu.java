@@ -19,7 +19,7 @@ public class Menu {
 					break;
 					
 				case "1":
-					System.out.println("proximamente");
+					ListaCompleta();
 					break;
 				
 				case "2":
@@ -46,7 +46,7 @@ public class Menu {
 							break;
 						
 						case "2":
-							//ModificarProducto();
+							ModificarProducto();
 							break;
 					}
 					break;
@@ -60,12 +60,13 @@ public class Menu {
 							AltaProveedor();
 							break;
 						case "2":
-							//ModificarProveedor();
+							ModificarProveedor();
 							break;
 					}
 					break;
 				case "5":
 					System.out.println("Ha seleccionado Realizar venta");
+					
 					break;
 				
 				case "6":
@@ -90,7 +91,7 @@ public class Menu {
 					System.out.println("Error");
 			}
 			
-			System.out.println("\nIngrese algo para continuar");
+			System.out.println("\nPresione una tecla para continuar");
 			entrada.next();
 		}while( !chau);
 			System.out.println("saliendo...");
@@ -164,7 +165,6 @@ public class Menu {
 			Statement comando = conn.createStatement();
 	           comando.executeUpdate("insert into clientes(ci, nombre, apellido, calle, numPuerta, localidad) values "
 	           		+ "(" + nc.getCedula() + ",'" + nc.getNombre() + "','" + nc.getApellido() + "','" + nc.getCalle() + "'," + nc.getNroPuerta() + ",'" + nc.getLocalidad() + "')");
-			
 	           System.out.println("Se ingresaron los datos a la base de datos");
 			
 			
@@ -250,13 +250,13 @@ public class Menu {
 			String res;
 			boolean ok=false;
 			do {
-				System.out.println("Elige al cliente que quieras modificar");
+				System.out.println("Elige al cliente que quieras modificar, ingresando su cedula");
 				res=entrada.next();
 				if(EsEntero(res)) {
 					if(Integer.parseInt(res)>0){
 						ok=true;
 						
-						//
+						
 						
 						Cliente nc = new Cliente();
 						nc.setCedula(Integer.parseInt(res));
@@ -428,35 +428,117 @@ public class Menu {
 		}
 	}
 	
-	/*
+	
+	//creamos la cantidad de productos que hay en la base de datos
+	public static int CantidadProductos() {
+		int cantidad = 0;;
+		try{
+			
+			System.out.println("Estoy intentando conectar a la base de datos");
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+			System.out.println("Conexion exitosa");
+			
+			//creamos la consulta
+			Statement comando = conn.createStatement();
+			ResultSet lista = comando.executeQuery("select * from productos");
+			if (lista.last())
+				cantidad = lista.getRow();
+            
+			conn.close();
+			
+		}catch (Exception e) {
+			System.out.println("Error");
+		}
+		return cantidad;
+	}
+	
+	
+	
 	//creamos la opcion de modificar productos
 	public static void ModificarProducto() {
-		
-		ListadoProducto(ListaProductos);
-		String res;
-		boolean ok=false;
-		do {
-			System.out.println("Elige al cliente que quieras modificar");
-			res=entrada.next();
-			if(EsEntero(res)) {
-				if(Integer.parseInt(res)>0 && Integer.parseInt(res) < ListaProductos.size()+1){
+		if(CantidadProductos()==0)
+			System.out.println("No hay Productos");
+		else 
+		{
+			ListadoProducto();
+			String res;
+			boolean ok=false;
+			do {
+				System.out.println("Elige el producto que quieras modificar, ingresando su id");
+				res=entrada.next();
+				if(EsEntero(res)) {
+				if(Integer.parseInt(res)>0){
 					ok=true;
-					ListaProductos.set(Integer.parseInt(res)-1, AltaProducto());
+					
+					Producto prod = new Producto();
+					prod.setId(Integer.parseInt(res));
+					String respuesta;
+					ok=false;
+					
+					System.out.println("Ingrese una descripcion");
+					prod.setDescripcion(entrada.next());
+					
+					System.out.println("Ingrese una marca");
+					prod.setMarca(entrada.next());
+					
+					
+					ok=false;
+					do {	
+						System.out.println("Ingrese un Stock o cantidad");
+						respuesta=entrada.next();
+						if(EsEntero(respuesta)) {
+							ok=true;
+							prod.setCantidad(Integer.parseInt(respuesta));
+					
+						}
+					}while(!ok);
+				
+					
+					try{
+						
+						System.out.println("Estoy intentando conectar a la base de datos");
+						Class.forName("com.mysql.jdbc.Driver");
+						
+						Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+						System.out.println("Conexion exitosa");
+						
+						//creamos la consulta
+						Statement comando = conn.createStatement();
+				           comando.executeUpdate("update productos set descripcion = "+"'"+prod.getDescripcion() +"'"+", marca = "+"'"+prod.getMarca()+"'"+
+				        		   ", cantidad = "+"'"+prod.getCantidad()+"'"+" where id = "+prod.getId()+";");
+						
+				           System.out.println("Se ingresaron los datos a la base de datos");
+						
+						
+						conn.close();
+						
+					}catch (Exception e) {
+						System.out.println("Error");
+					}
+					
+					
+					
+					
 				}
-			}
-		}while(!ok);
-		
-	}
-	*/
+				
+				
+				}
+			}while(!ok);
+			
+		}
+	}	
+	
 	//creamos el Alta Proveedor
 	public static void AltaProveedor() {
-		Proveedor np = new Proveedor();
+		Proveedor np =new Proveedor();
+		
+		System.out.println("Ingrese un Rut");
+		np.setRut(entrada.nextInt());
 		
 		System.out.println("Ingrese una razon social");
-		np.setRazonSocial(entrada.next());
-		
-		System.out.println("Ingrese un rut");
-		np.setRut(entrada.nextInt());
+		np.setRazonSocial(entrada.nextInt());
 		
 		System.out.println("Ingrese una calle");
 		np.setCalle(entrada.next());
@@ -501,6 +583,31 @@ public class Menu {
 		
 	}
 	
+	public static int CantidadProveedores() {
+		int cantidad = 0;;
+		try{
+			
+			System.out.println("Estoy intentando conectar a la base de datos");
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+			System.out.println("Conexion exitosa");
+			
+			//creamos la consulta
+			Statement comando = conn.createStatement();
+			ResultSet lista = comando.executeQuery("select * from proveedores");
+			if (lista.last())
+				cantidad = lista.getRow();
+            
+			conn.close();
+			
+		}catch (Exception e) {
+			System.out.println("Error");
+		}
+		return cantidad;
+	}
+	
+	
 	
 	//creamos el listado del proveedor
 	public static void ListadoProveedor() {
@@ -528,29 +635,140 @@ public class Menu {
 		}catch (Exception e) {
 			System.out.println("Error");
 		}
+	
 	}
 	
-	/*
 	//creamos la opcion de modificar el proveedor
 	public static void ModificarProveedor() {
 		
-		ListadoProveedor(ListaProveedor);
-		String res;
-		boolean ok=false;
-		do {
-			System.out.println("Elige al proveedor que quieras modificar");
-			res=entrada.next();
-			if(EsEntero(res)) {
-				if(Integer.parseInt(res)>0 && Integer.parseInt(res) < ListaProveedor.size()+1){
-					ok=true;
-					ListaProveedor.set(Integer.parseInt(res)-1, AltaProveedor());
+		if(CantidadProveedores()==0)
+			System.out.println("No hay clientes");
+		else 
+		{
+			ListadoProveedor();
+			String res;
+			boolean ok=false;
+			do {
+				System.out.println("Elige al proveedor que quieras modificar, ingresando su Rut");
+				res=entrada.next();
+				if(EsEntero(res)) {
+					if(Integer.parseInt(res)>0){
+						ok=true;
+						
+						
+						
+						Proveedor np = new Proveedor();
+						np.setRut(Integer.parseInt(res));
+						String respuesta;
+						ok=false;
+						
+						do {
+							
+							System.out.println("Ingrese una razon social");
+							respuesta=entrada.next();
+							if(EsEntero(respuesta)) {
+								ok=true;
+								np.setRazonSocial(Integer.parseInt(respuesta));
+							}
+							
+							
+						}while(!ok);
+						
+						System.out.println("Ingrese una calle");
+						np.setCalle(entrada.next());
+						
+						ok=false;
+						do {
+							
+							System.out.println("Ingrese numero de puerta");
+							respuesta=entrada.next();
+							if(EsEntero(respuesta)) {
+								ok=true;
+								np.setNroPuerta(Integer.parseInt(respuesta));
+							}
+							
+							
+						}while(!ok);
+						
+						System.out.println("Ingrese su localidad");
+						np.setLocalidad(entrada.next());
+						
+						System.out.println("Ingrese su correo");
+						np.setCorreo(entrada.next());
+						
+						System.out.println("Ingrese un nombre de Contacto");
+						np.setNombreContacto(entrada.next());
+						
+						ok=false;
+						do {
+							
+							System.out.println("Ingrese un telefono");
+							respuesta=entrada.next();
+							if(EsEntero(respuesta)) {
+								ok=true;
+								np.setTelefonos(Integer.parseInt(respuesta));
+							}
+							
+							
+						}while(!ok);
+						
+						try{
+							
+							System.out.println("Estoy intentando conectar a la base de datos");
+							Class.forName("com.mysql.jdbc.Driver");
+							
+							Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+							System.out.println("Conexion exitosa");
+							
+							//creamos la consulta
+							Statement comando = conn.createStatement();
+					           comando.executeUpdate("update proveedores set Rut = "+"'"+np.getRut() +"'"+", razonSocial = "+"'"+np.getRazonSocial()+"'"+
+					        		   ", calle = "+"'"+np.getCalle()+ "'"+", numPuerta = "+np.getNroPuerta()+ ", localidad = "+"'"+np.getLocalidad()+"'"+","
+					        		    + "mail = "+"'"+np.getCorreo()+"'"+", nomContacto = "+"'"+np.getNombreContacto()+"'"+ "where Rut = "+np.getRut()+";");
+					           comando.executeUpdate("update telefonosPro set numero = "+"'"+np.getTelefonos()+"'"+"where rutProveedor ="+np.getRut()+";");
+					           
+					           System.out.println("Se ingresaron los datos a la base de datos");
+							
+							
+							conn.close();
+							
+						}catch (Exception e) {
+							System.out.println("Error");
+						}
+						
+						//
+						
+					}
 				}
-			}
-		}while(!ok);
+			}while(!ok);
+		}
 		
 	}
+	
+	 public static void ListaCompleta() {
+		System.out.println("Lista de Clientes");
+		ListadoCliente();
+		System.out.println("---------------------------------------------------------------------------------------------------------"+"\n");
+		System.out.println("Lista de Productos");
+		ListadoProducto();
+		System.out.println("---------------------------------------------------------------------------------------------------------"+"\n");
+		System.out.println("Lista de Proveedores");
+		ListadoProveedor();
+	}
+	
+	public static void realizarVenta() {
+		
+	}
+	
+		
+		
+			
+			
 
-*/
+	
+}
 
-}	
 
+		
+				
+				

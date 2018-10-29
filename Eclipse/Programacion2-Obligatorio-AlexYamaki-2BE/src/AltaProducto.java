@@ -11,6 +11,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class AltaProducto extends JFrame {
 
@@ -39,6 +43,7 @@ public class AltaProducto extends JFrame {
 	 * Create the frame.
 	 */
 	public AltaProducto() {
+		setTitle("AltaProducto");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -47,11 +52,11 @@ public class AltaProducto extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblId = new JLabel("ID:");
-		lblId.setBounds(47, 100, 46, 14);
+		lblId.setBounds(23, 100, 46, 14);
 		contentPane.add(lblId);
 		
 		JLabel lblDescripcion = new JLabel("Descripcion:");
-		lblDescripcion.setBounds(47, 150, 64, 14);
+		lblDescripcion.setBounds(23, 150, 64, 14);
 		contentPane.add(lblDescripcion);
 		
 		JLabel lblMarca = new JLabel("Marca:");
@@ -63,12 +68,12 @@ public class AltaProducto extends JFrame {
 		contentPane.add(lblCantidad);
 		
 		txtId = new JTextField();
-		txtId.setBounds(89, 97, 86, 20);
+		txtId.setBounds(97, 97, 86, 20);
 		contentPane.add(txtId);
 		txtId.setColumns(10);
 		
 		txtDescripcion = new JTextField();
-		txtDescripcion.setBounds(115, 147, 86, 20);
+		txtDescripcion.setBounds(97, 147, 86, 20);
 		contentPane.add(txtDescripcion);
 		txtDescripcion.setColumns(10);
 		
@@ -86,7 +91,56 @@ public class AltaProducto extends JFrame {
 		lblAltaProducto.setBounds(171, 35, 72, 14);
 		contentPane.add(lblAltaProducto);
 		
+		try{
+			
+			System.out.println("Estoy intentando conectar a la base de datos");
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+			System.out.println("Conexion exitosa");
+			
+			//creamos la consulta
+			Statement comando = conn.createStatement();
+            ResultSet lista = comando.executeQuery("select * from productos");
+			
+            while (lista.next()) 
+    		{ 
+    		    System.out.println("ID: "+lista.getString("id")+" - Descripcion: "+lista.getString("descripcion")+" - Marca: "+lista.getString("marca")+
+    		    		" - Cantidad: "+lista.getString("cantidad")); 
+    		}
+            
+			conn.close();
+			
+		}catch (Exception e) {
+			System.out.println("Error");
+		}
+		
 		JButton btnIngresar = new JButton("Ingresar");
+		btnIngresar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try{
+					
+					System.out.println("Estoy intentando conectar a la base de datos");
+					Class.forName("com.mysql.jdbc.Driver");
+					
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/obligatorio_db","root", "");
+					System.out.println("Conexion exitosa");
+					
+					//creamos la consulta
+					Statement comando = conn.createStatement();
+			        comando.executeUpdate("insert into productos(id, descripcion, marca, cantidad) values "
+			           		+ "(" + txtId.getText() + ",'" + txtDescripcion.getText() + "','" + txtMarca.getText() + "','" + txtCantidad.getText() + "')");
+					
+			        System.out.println("Se ingresaron los datos a la base de datos");
+					
+					
+					conn.close();
+					
+				}catch (Exception c) {
+					System.out.println("Error");
+				}
+			}
+		});
 		btnIngresar.setBounds(89, 208, 89, 23);
 		contentPane.add(btnIngresar);
 		
@@ -94,7 +148,7 @@ public class AltaProducto extends JFrame {
 		btnSalir.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnSalir.addActionListener(new ActionListener() {

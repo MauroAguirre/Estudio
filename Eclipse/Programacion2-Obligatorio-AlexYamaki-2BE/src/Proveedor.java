@@ -1,7 +1,7 @@
 
 public class Proveedor {
 	
-	private String razonSocial;
+	private int razonSocial;
 	private int Rut;
 	private String calle;
 	private int nroPuerta;
@@ -12,7 +12,7 @@ public class Proveedor {
 	
 	
 	public Proveedor(String raz, int rut, String calle, int nro, String local, int tel, String correo, String nomC) {
-		this.razonSocial=raz;
+		this.razonSocial=razonSocial;
 		this.Rut=rut;
 		this.calle=calle;
 		this.nroPuerta=nro;
@@ -27,7 +27,7 @@ public class Proveedor {
 	}
 	
 	
-	public String getRazonSocial() {
+	public int getRazonSocial() {
 		return this.razonSocial;
 	}
 	
@@ -61,7 +61,7 @@ public class Proveedor {
 	
 	
 	
-	public void setRazonSocial(String raz) {
+	public void setRazonSocial(int raz) {
 		this.razonSocial=raz;
 	}
 	
@@ -94,7 +94,9 @@ public class Proveedor {
 	}
 	
 	public String toString() {
-		return "Razon social: "+this.razonSocial+" - Rut: +"+this.Rut;
+		return "Razon social: "+this.razonSocial+" - Rut: +"+this.Rut+ " - Calle: "+this.calle+ " - numPuerta: +"+this.nroPuerta+
+				" - Localidad: "+this.localidad+" - Mail: "+this.correo+
+				" - Telefono: "+this.telefonos+" - NomContacto:"+this.nomContacto;
 	}
 	
 }
