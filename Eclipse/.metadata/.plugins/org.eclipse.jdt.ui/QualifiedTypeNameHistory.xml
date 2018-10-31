@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.MainWindow"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observable"/>
-<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
 <fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.Jeringa"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.models.TestModel"/>
@@ -20,4 +19,7 @@
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotification"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.LoginPanel"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
 </qualifiedTypeNameHistroy>
