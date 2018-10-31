@@ -154,6 +154,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MenuContactoController.cs" />
     <Compile Include="Controllers\MenuArticuloController.cs" />
     <Compile Include="Controllers\MenuFacturaController.cs" />
     <Compile Include="Controllers\MenuLoginController.cs" />
@@ -181,6 +182,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Contacto.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -212,6 +214,7 @@
     <Content Include="Views\MenuPrincipal\Index.cshtml" />
     <Content Include="Views\MenuArticulo\Index.cshtml" />
     <Content Include="Views\MenuProveedor\Index.cshtml" />
+    <Content Include="Views\MenuContacto\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

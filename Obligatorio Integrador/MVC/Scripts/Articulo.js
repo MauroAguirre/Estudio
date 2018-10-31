@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
-    Listar();
+    Lista();
 });
-function Listar() {
+function Lista() {
     $.ajax({
         type: 'GET',
         url: '/MenuArticulo/Lista',
