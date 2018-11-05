@@ -15,6 +15,7 @@ namespace DAL
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
                 nuevo = db.articulos.Add(articulo);
+                db.registro.Add(new Registro() { articulo=nuevo,cambio=0,fecha=DateTime.Today});
                 db.SaveChanges();
             }
             return nuevo;
@@ -24,10 +25,10 @@ namespace DAL
             List<Articulo> articulos = new List<Articulo>();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var a in db.articulos)
-                {
-                    articulos.Add(new Articulo() { id=a.id,descripcion=a.descripcion ,iva=a.iva,miniStock=a.miniStock,precioVenta=a.precioVenta});
-                }
+                var query = from a in db.articulos
+                            where a.activo == true
+                            select a;
+                articulos = query.ToList();
             }
             return articulos;
         }
@@ -53,14 +54,7 @@ namespace DAL
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var a in db.articulos)
-                {
-                    if (a.id == id)
-                    {
-                        db.articulos.Remove(a);
-                        break;
-                    }
-                }
+                db.articulos.Find(id).activo = false;
                 db.SaveChanges();
             }
         }

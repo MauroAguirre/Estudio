@@ -2,13 +2,16 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
+h1 {
+    text-align:center;
+    color:white;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    margin-top:15px;
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */

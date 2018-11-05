@@ -56,6 +56,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -154,16 +155,21 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MenuArticuloProveedorController.cs" />
+    <Compile Include="Controllers\MenuCompraController.cs" />
     <Compile Include="Controllers\MenuContactoController.cs" />
     <Compile Include="Controllers\MenuArticuloController.cs" />
-    <Compile Include="Controllers\MenuFacturaController.cs" />
     <Compile Include="Controllers\MenuLoginController.cs" />
     <Compile Include="Controllers\MenuPrincipalController.cs" />
     <Compile Include="Controllers\MenuProveedorController.cs" />
+    <Compile Include="Controllers\MenuRegistroController.cs" />
     <Compile Include="Controllers\MenuUsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ArticuloProv.cs" />
+    <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\ContactoProv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,12 +182,14 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\Articulo.js" />
+    <Content Include="Scripts\ArticuloProveedor.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Compra.js" />
     <Content Include="Scripts\Contacto.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -196,6 +204,7 @@
     <Content Include="Scripts\MenuPrincipal.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Proveedor.js" />
+    <Content Include="Scripts\Registro.js" />
     <Content Include="Scripts\Usuario.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -210,15 +219,16 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\MenuLogin\Index.cshtml" />
     <Content Include="Views\MenuUsuario\Index.cshtml" />
-    <Content Include="Views\MenuFactura\Index.cshtml" />
     <Content Include="Views\MenuPrincipal\Index.cshtml" />
     <Content Include="Views\MenuArticulo\Index.cshtml" />
     <Content Include="Views\MenuProveedor\Index.cshtml" />
     <Content Include="Views\MenuContacto\Index.cshtml" />
+    <Content Include="Views\MenuArticuloProveedor\Index.cshtml" />
+    <Content Include="Views\MenuCompra\Index.cshtml" />
+    <Content Include="Views\MenuRegistro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

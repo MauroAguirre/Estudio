@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,15 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Articulo.cs" />
+    <Compile Include="ArtProbFec.cs" />
     <Compile Include="Comunicacion.cs" />
     <Compile Include="Contacto.cs" />
     <Compile Include="ArticuloProveedor.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="FacturaCompra.cs" />
     <Compile Include="FacturaVenta.cs" />
+    <Compile Include="LineaFac.cs" />
     <Compile Include="LineaFactura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
+    <Compile Include="Registro.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>

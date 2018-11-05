@@ -19,6 +19,7 @@ function Agregar() {
     if ($("#rdoIva1").is(":checked"))
         iva = 10;
     let articulo = {
+        'activo': true,
         'id': null,
         'descripcion': $('#txtDescripcion').val(),
         'iva': iva,
@@ -82,6 +83,7 @@ function Modificar(id) {
     if ($("#rdoIva1").is(":checked"))
         iva = 10;
     let articulo = {
+        'activo': true,
         'id': id,
         'descripcion': $('#txtDescripcion').val(),
         'iva': iva,

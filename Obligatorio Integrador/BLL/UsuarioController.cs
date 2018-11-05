@@ -13,8 +13,43 @@ namespace BLL
         UsuarioService us = new UsuarioService();
         public Boolean Agregar(Usuario usuario)
         {
+            string ultimaParte = "";
+            Boolean correcto = false;
             List<Usuario> usuarios = us.Lista();
-            foreach (Usuario u in usuarios) {
+            //si algun parametro viene en null error
+            if (usuario.mail == null || usuario.contra == null)
+            {
+                return false;
+            }
+            //tiene que terminar en @gmail.com (10+1) o @hotmail.com (12+1) por lo tanto tiene que tener que ser mayor al siguiente tamaño
+            if (usuario.mail.Length < 11)
+                return false;
+            //si el mail es chico solo hau que verificar que termine en @gmail.com
+            if (usuario.mail.Length < 13)
+            {
+                for (int i = usuario.mail.Length - 10; i < usuario.mail.Length; i++)
+                    ultimaParte += usuario.mail.ElementAt(i);
+                if (ultimaParte != "gmail.com")
+                    return false;
+            }
+            // si el mail es mas grande hay que verificar que termine en @gmail.com o @hotmail.com
+            else
+            {
+                for (int i = usuario.mail.Length - 10; i < usuario.mail.Length; i++)
+                    ultimaParte += usuario.mail.ElementAt(i);
+                if (ultimaParte == "@gmail.com")
+                    correcto = true;
+                ultimaParte = "";
+                for (int i = usuario.mail.Length - 12; i < usuario.mail.Length; i++)
+                    ultimaParte += usuario.mail.ElementAt(i);
+                if (ultimaParte == "@hotmail.com")
+                    correcto = true;
+                if (!correcto)
+                    return false;
+            }
+            // buscamos si se repite el mail
+            foreach (Usuario u in usuarios)
+            {
                 if (usuario.mail == u.mail)
                     return false;
             }
@@ -25,18 +60,28 @@ namespace BLL
         {
             return us.Lista();
         }
-        public void Modificar(Usuario usuario)
+        public Boolean Modificar(Usuario usuario)
         {
+            if (usuario.contra == null)
+                return false;
+            if (usuario.contra == "")
+                return false;
             us.Modificar(usuario);
+            return true;
         }
         public void Borrar(string mail)
         {
             us.Borrar(mail);
         }
-        public Boolean Verificar(Usuario usuario)
+        public Boolean Verificar_login(Usuario usuario)
         {
-            if (usuario.mail == "235690" && usuario.contra == "235690")
+            if (usuario.mail == null || usuario.contra == null)
+                return false;
+            if (usuario.mail == "mauro@gmail.com" && usuario.contra == "123")
+            {
+                us.Datos_de_prueba();
                 return true;
+            }
             List<Usuario> usuarios = us.Lista();
             foreach (Usuario u in usuarios)
             {

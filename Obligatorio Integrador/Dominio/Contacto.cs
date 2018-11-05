@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
 
 namespace Dominio
 {
@@ -12,7 +13,6 @@ namespace Dominio
         [Key]
         public string nombre { get; set; }
         public int telefono { get; set; }
-        //[ForeignKey("Standar")]
         public Proveedor proveedor { get; set; }
     }
 }

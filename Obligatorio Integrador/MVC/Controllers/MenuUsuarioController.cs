@@ -24,8 +24,10 @@ namespace MVC.Controllers
         }
         public ActionResult Modificar(Usuario u)
         {
-            uc.Modificar(u);
-            return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            if (uc.Modificar(u))
+                return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            else
+                return Json(new { success = false }, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Borrar(Usuario u)
         {

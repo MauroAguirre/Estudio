@@ -13,7 +13,9 @@ namespace BLL
         ArticuloService us = new ArticuloService();
         public Articulo Agregar(Articulo articulo)
         {
-            if (articulo.descripcion == null || articulo.descripcion == null || articulo.miniStock <0 || articulo.precioVenta <-1)
+            if (articulo.descripcion == null || articulo.miniStock <1 || articulo.precioVenta <1)
+                return null;
+            if (articulo.descripcion == "")
                 return null;
             return us.Agregar(articulo);
         }
@@ -21,9 +23,14 @@ namespace BLL
         {
             return us.Lista();
         }
-        public void Modificar(Articulo articulo)
+        public bool Modificar(Articulo articulo)
         {
+            if (articulo.descripcion == null || articulo.miniStock < 1 || articulo.precioVenta < 1)
+                return false;
+            if (articulo.descripcion == "")
+                return false;
             us.Modificar(articulo);
+            return true;
         }
         public void Borrar(int id)
         {

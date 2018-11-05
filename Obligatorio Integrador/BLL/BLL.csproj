@@ -46,8 +46,10 @@
     <Compile Include="ContactoController.cs" />
     <Compile Include="FacturaCompraController.cs" />
     <Compile Include="FacturaVentaController.cs" />
+    <Compile Include="LineaFacturaController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorController.cs" />
+    <Compile Include="RegistroController.cs" />
     <Compile Include="UsuarioController.cs" />
   </ItemGroup>
   <ItemGroup>

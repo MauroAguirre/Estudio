@@ -11,21 +11,23 @@ namespace BLL
     public class ContactoController
     {
         ContactoService cs = new ContactoService();
-        public Contacto Agregar(Contacto contacto)
+        public Contacto Agregar(string p, string n,int t)
         {
-            if (contacto.nombre != null)
+            if (p == null || n==null)
                 return null;
-            return cs.Agregar(contacto);
+            if (cs.Lista(p).Count == 4)
+                return null;
+            return cs.Agregar(p,n,t);
         }
-        public List<Contacto> Lista()
+        public List<Contacto> Lista(string rut)
         {
-            return cs.Lista();
+            return cs.Lista(rut);
         }
-        public void Modificar(Contacto contacto)
+        public void Modificar(string rut, string nombre,int telefono)
         {
-            cs.Modificar(contacto);
+            cs.Modificar(rut,nombre,telefono);
         }
-        public void Borrar(String rut, String nombre)
+        public void Borrar(string rut, string nombre)
         {
             cs.Borrar(rut,nombre);
         }

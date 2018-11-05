@@ -25,8 +25,10 @@ namespace MVC.Controllers
         }
         public ActionResult Modificar(Articulo a)
         {
-            ac.Modificar(a);
-            return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            if (ac.Modificar(a))
+                return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            else
+                return Json(new { success = false }, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Borrar(Articulo a)
         {

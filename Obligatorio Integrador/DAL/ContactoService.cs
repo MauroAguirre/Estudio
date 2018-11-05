@@ -9,37 +9,50 @@ namespace DAL
 {
     public class ContactoService
     {
-        public Contacto Agregar(Contacto contacto)
+        public Contacto Agregar(string p, string n, int t)
         {
             Contacto nuevo = new Contacto();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                nuevo = db.contactos.Add(nuevo);
+                var prov = db.proveedores.Find(p);
+                Contacto contacto = new Contacto() { nombre = n, telefono = t, proveedor = prov };
+                nuevo = db.contactos.Add(new Contacto() { nombre = n, telefono = t, proveedor = prov });
+                prov.contactos.Add(nuevo);
                 db.SaveChanges();
             }
             return nuevo;
         }
-        public List<Contacto> Lista()
+        public List<Contacto> Lista(string rut)
         {
             List<Contacto> contactos = new List<Contacto>();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var c in db.contactos)
-                {
-                    contactos.Add(new Contacto() {nombre=c.nombre,telefono=c.telefono,proveedor=c.proveedor});
-                }
+                if (rut == null)
+                    rut = db.proveedores.Find("123").rut;
+                else
+                    rut = db.proveedores.Find(rut).rut;
+
+                var query = from d in db.contactos
+                             where d.proveedor.rut == rut
+                             select d;
+                contactos = query.ToList();
+
             }
             return contactos;
         }
-        public void Modificar(Contacto contacto)
+        public void Modificar(string rut, string nombre, int telefono)
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var c in db.contactos)
+                var query = from c in db.contactos
+                            where c.proveedor.rut == rut
+                            select c;
+                List<Contacto> contactos = query.ToList();
+                foreach (var c in contactos)
                 {
-                    if (c.proveedor == contacto.proveedor && c.nombre == c.nombre)
+                    if (c.nombre == nombre)
                     {
-                        c.telefono = contacto.telefono;
+                        c.telefono = telefono;
                         break;
                     }
                 }
@@ -50,14 +63,19 @@ namespace DAL
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var c in db.contactos)
+                var query = from c in db.contactos
+                            where c.proveedor.rut == rut
+                            select c;
+                List<Contacto> contactos = query.ToList();
+                foreach (var c in contactos)
                 {
-                    if (c.proveedor.rut == rut && c.nombre == nombre)
+                    if (c.nombre == nombre)
                     {
                         db.contactos.Remove(c);
                         break;
                     }
                 }
+
                 db.SaveChanges();
             }
         }

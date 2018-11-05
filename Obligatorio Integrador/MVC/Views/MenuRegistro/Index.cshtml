@@ -1,0 +1,30 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Registro.js")"></script>
+}
+<h2>Registro</h2>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>
+<h3>Cambios del stock</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Articulo</label></td>
+            <td><label>Fecha</label></td>
+            <td><label>Cambio</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyRegistros"></tbody>
+</table>
+<h3>Stock general</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Articulo</label></td>
+            <td><label>Stock</label></td>
+            <td><label>Estado</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyStock"></tbody>
+</table>

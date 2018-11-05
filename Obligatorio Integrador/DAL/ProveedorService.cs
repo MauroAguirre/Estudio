@@ -24,10 +24,10 @@ namespace DAL
             List<Proveedor> proveedores = new List<Proveedor>();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var p in db.proveedores)
-                {
-                    proveedores.Add(new Proveedor() {rut=p.rut,descripcion=p.descripcion,nombre=p.nombre,contactos=p.contactos });
-                }
+                var query = from p in db.proveedores
+                            where p.activo == true
+                            select p;
+                proveedores = query.ToList();
             }
             return proveedores;
         }
@@ -51,14 +51,7 @@ namespace DAL
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                foreach (var p in db.proveedores)
-                {
-                    if (p.rut==rut)
-                    {
-                        db.proveedores.Remove(p);
-                        break;
-                    }
-                }
+                db.proveedores.Find(rut).activo = false;
                 db.SaveChanges();
             }
         }

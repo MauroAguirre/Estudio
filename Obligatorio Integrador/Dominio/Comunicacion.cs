@@ -13,7 +13,6 @@ namespace Dominio
         public int id { get; set; }
         public DateTime fecha { get; set; }
         public string comentario { get; set; }
-        public Proveedor proveedor { get; set; }
         public Contacto contacto { get; set; }
     }
 }

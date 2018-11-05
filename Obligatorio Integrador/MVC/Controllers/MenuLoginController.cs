@@ -17,7 +17,7 @@ namespace MVC.Controllers
         }
         public ActionResult Ingresar(Usuario u)
         {
-            if (uc.Verificar(u))
+            if (uc.Verificar_login(u))
             {
                 return Json(Url.Action("Index", "MenuPrincipal"));
             }

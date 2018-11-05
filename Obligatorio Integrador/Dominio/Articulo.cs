@@ -15,5 +15,6 @@ namespace Dominio
         public int iva { get; set; }
         public int miniStock { get; set; }
         public int precioVenta { get; set; }
+        public Boolean activo { get; set; }
     }
 }

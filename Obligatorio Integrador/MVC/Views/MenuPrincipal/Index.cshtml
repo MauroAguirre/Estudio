@@ -5,11 +5,14 @@
 
 <h2>Menu principal</h2>
 <form>
-    <input type="button" value="Usuarios" onclick="Usuarios()" />
-    <input type="button" value="Articulos" onclick="Articulos()" />
-    <input type="button" value="Proveedores" onclick="Proveedores()" />
-    <input type="button" value="Articulos del proveedor" onclick="Salir()" />
-    <input type="button" value="Factura" />
-    <input type="button" value="Registro" />
-    <input type="button" value="Salir" onclick="Salir()" />
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Usuarios()">Usuarios</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Articulos()">Articulos</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Proveedores()">Proveedores</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Contactos()">Contactos</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="ArticulosProveedor()">Articulos de un proveedor</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Compras()">Factura de compras</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Factura de ventas</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Registros()">Registro</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>
+    <label id="lblRes">@ViewBag.res</label>
 </form>

@@ -22,7 +22,23 @@ namespace MVC.Controllers
         }
         public ActionResult Proveedores()
         {
-            return Json(Url.Action("Index", "MenuProveedores"));
+            return Json(Url.Action("Index", "MenuProveedor"));
+        }
+        public ActionResult Contactos()
+        {
+            return Json(Url.Action("Index", "MenuContacto"));
+        }
+        public ActionResult ArticulosProveedor()
+        {
+            return Json(Url.Action("Index", "MenuArticuloProveedor"));
+        }
+        public ActionResult Compras()
+        {
+            return Json(Url.Action("Index", "MenuCompra"));
+        }
+        public ActionResult Registros()
+        {
+            return Json(Url.Action("Index", "MenuRegistro"));
         }
         public ActionResult Salir()
         {

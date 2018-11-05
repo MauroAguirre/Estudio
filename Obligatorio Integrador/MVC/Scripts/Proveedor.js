@@ -16,6 +16,7 @@ function Listar() {
 }
 function Agregar() {
     let proveedor = {
+        'activo': true,
         'rut': $('#txtRut').val(),
         'nombre': $('#txtNombre').val(),
         'descripcion': $('#txtDescripcion').val()
@@ -72,6 +73,7 @@ function Salir() {
 }
 function Modificar(rut) {
     let proveedor = {
+        'activo': true,
         'rut': rut,
         'nombre': $('#txtNombre').val(),
         'descripcion': $('#txtDescripcion').val()
