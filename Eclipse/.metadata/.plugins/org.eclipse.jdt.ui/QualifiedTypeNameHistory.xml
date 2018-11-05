@@ -16,10 +16,15 @@
 <fullyQualifiedTypeName name="Algoritmo2.Arboles.NodoB"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotification"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
-<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.LoginPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotificationType"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.LoginPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotification"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.MainPanel"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.Controller.LoginController"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotificationAction"/>
 </qualifiedTypeNameHistroy>
