@@ -51,11 +51,12 @@ namespace DAL.Migrations
                 "dbo.Contactoes",
                 c => new
                     {
-                        nombre = c.String(nullable: false, maxLength: 128),
+                        id = c.Int(nullable: false, identity: true),
+                        nombre = c.String(),
                         telefono = c.Int(nullable: false),
                         proveedor_rut = c.String(maxLength: 128),
                     })
-                .PrimaryKey(t => t.nombre)
+                .PrimaryKey(t => t.id)
                 .ForeignKey("dbo.Proveedors", t => t.proveedor_rut)
                 .Index(t => t.proveedor_rut);
             
@@ -66,11 +67,12 @@ namespace DAL.Migrations
                         id = c.Int(nullable: false, identity: true),
                         fecha = c.DateTime(nullable: false),
                         comentario = c.String(),
-                        contacto_nombre = c.String(maxLength: 128),
+                        tipo = c.String(),
+                        contacto_id = c.Int(),
                     })
                 .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.Contactoes", t => t.contacto_nombre)
-                .Index(t => t.contacto_nombre);
+                .ForeignKey("dbo.Contactoes", t => t.contacto_id)
+                .Index(t => t.contacto_id);
             
             CreateTable(
                 "dbo.Facturas",
@@ -87,13 +89,13 @@ namespace DAL.Migrations
                     {
                         id = c.Int(nullable: false, identity: true),
                         cantidad = c.Int(nullable: false),
-                        articuloProveedor_id = c.Int(),
+                        articulo_id = c.Int(),
                         factura_id = c.Int(),
                     })
                 .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.ArticuloProveedors", t => t.articuloProveedor_id)
+                .ForeignKey("dbo.Articuloes", t => t.articulo_id)
                 .ForeignKey("dbo.Facturas", t => t.factura_id)
-                .Index(t => t.articuloProveedor_id)
+                .Index(t => t.articulo_id)
                 .Index(t => t.factura_id);
             
             CreateTable(
@@ -151,8 +153,8 @@ namespace DAL.Migrations
             DropForeignKey("dbo.facturaCompras", "id", "dbo.Facturas");
             DropForeignKey("dbo.Registroes", "articulo_id", "dbo.Articuloes");
             DropForeignKey("dbo.LineaFacturas", "factura_id", "dbo.Facturas");
-            DropForeignKey("dbo.LineaFacturas", "articuloProveedor_id", "dbo.ArticuloProveedors");
-            DropForeignKey("dbo.Comunicacions", "contacto_nombre", "dbo.Contactoes");
+            DropForeignKey("dbo.LineaFacturas", "articulo_id", "dbo.Articuloes");
+            DropForeignKey("dbo.Comunicacions", "contacto_id", "dbo.Contactoes");
             DropForeignKey("dbo.ArticuloProveedors", "proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.Contactoes", "proveedor_rut", "dbo.Proveedors");
             DropForeignKey("dbo.ArticuloProveedors", "articulo_id", "dbo.Articuloes");
@@ -161,8 +163,8 @@ namespace DAL.Migrations
             DropIndex("dbo.facturaCompras", new[] { "id" });
             DropIndex("dbo.Registroes", new[] { "articulo_id" });
             DropIndex("dbo.LineaFacturas", new[] { "factura_id" });
-            DropIndex("dbo.LineaFacturas", new[] { "articuloProveedor_id" });
-            DropIndex("dbo.Comunicacions", new[] { "contacto_nombre" });
+            DropIndex("dbo.LineaFacturas", new[] { "articulo_id" });
+            DropIndex("dbo.Comunicacions", new[] { "contacto_id" });
             DropIndex("dbo.Contactoes", new[] { "proveedor_rut" });
             DropIndex("dbo.ArticuloProveedors", new[] { "proveedor_rut" });
             DropIndex("dbo.ArticuloProveedors", new[] { "articulo_id" });

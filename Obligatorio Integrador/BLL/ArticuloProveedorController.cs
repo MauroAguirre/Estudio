@@ -25,29 +25,34 @@ namespace BLL
         {
             Boolean esta = false; ;
             List<ArticuloProveedor> lista = aps.Lista(rut);
-            List<ArtProbFec> comparar = new List<ArtProbFec>();
+            //
+            List<Articulo> articuloCom = new List<Articulo>();
+            List<DateTime> fechasCom = new List<DateTime>();
             foreach (ArticuloProveedor ap in lista)
             {
                 esta = false;
-                foreach (ArtProbFec c in comparar)
+                for (int i = 0; i < articuloCom.Count; i++)
                 {
-                    if (c.articulo == ap.articulo)
+                    if (articuloCom.ElementAt(i) == ap.articulo)
                     {
-                        if (c.fecha < ap.fecha)
-                            c.fecha = ap.fecha;
+                        if (fechasCom.ElementAt(i) < ap.fecha)
+                            fechasCom[i] = ap.fecha;
                         esta = true;
                         break;
-                    }                    
+                    }
                 }
                 if (!esta)
-                    comparar.Add(new ArtProbFec() { articulo=ap.articulo,fecha = ap.fecha});
+                {
+                    articuloCom.Add(ap.articulo);
+                    fechasCom.Add(ap.fecha);
+                }
             }
             List<ArticuloProveedor> paraRemover = new List<ArticuloProveedor>();
             foreach (ArticuloProveedor ap in lista)
             {
-                foreach (ArtProbFec c in comparar)
+                for (int i = 0; i < articuloCom.Count; i++)
                 {
-                    if (ap.articulo == c.articulo && ap.fecha != c.fecha)
+                    if (ap.articulo == articuloCom.ElementAt(i) && ap.fecha != fechasCom.ElementAt(i))
                         paraRemover.Add(ap);
                 }
             }

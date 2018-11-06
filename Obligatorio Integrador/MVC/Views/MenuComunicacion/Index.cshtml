@@ -1,0 +1,57 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Comunicacion.js")"></script>
+}
+<h2>Registro de comunicaciones</h2>
+<table class="table">
+    <tr>
+        <td><label>Proveedor</label></td>
+        <td>
+            <select id="slcProveedores"></select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Contacto</label></td>
+        <td>
+            <select id="slcContactos"></select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>tipo</label></td>
+        <td>
+            <select id="slcTipos">
+                <option value="telefonico">telefonico</option>
+                <option value="whatsapp">whatsapp</option>
+                <option value="mail">mail</option>
+                <option value="personal">personal</option>
+                <option value="otro">otro</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Comentario</label></td>
+        <td><input type="text" id="txtComentario" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Registrar" onclick="Agregar()" class="btn btn-default" /></td>
+        <td><label id="lblRes"></label></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Salir" onclick="Salir()" class="btn btn-default" /></td>
+        <td></td>
+    </tr>
+</table>
+<h2>Lista de comunicaciones</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Proveedor</label></td>
+            <td><label>Contacto</label></td>
+            <td><label>Fecha</label></td>
+            <td><label>Tipo</label></td>
+            <td><label>Comentario</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyComunaciones"></tbody>
+</table>

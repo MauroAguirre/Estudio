@@ -48,6 +48,16 @@ function Contactos() {
         window.location.href = data;
     });
 }
+function Comunicaciones() {
+    $.ajax({
+        type: 'POST',
+        url: '/MenuPrincipal/Comunicaciones',
+        data: null,
+        encode: true
+    }).done((data) => {
+        window.location.href = data;
+    });
+}
 function ArticulosProveedor() {
     $.ajax({
         type: 'POST',

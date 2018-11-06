@@ -15,5 +15,9 @@ namespace BLL
         {
             return rs.Lista();
         }
+        public int Stock_Producto(int id)
+        {
+            return rs.Stock_Producto(id);
+        }
     }
 }

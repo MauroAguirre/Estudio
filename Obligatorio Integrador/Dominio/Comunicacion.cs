@@ -14,5 +14,6 @@ namespace Dominio
         public DateTime fecha { get; set; }
         public string comentario { get; set; }
         public Contacto contacto { get; set; }
+        public string tipo { get; set; }
     }
 }

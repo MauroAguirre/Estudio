@@ -15,9 +15,9 @@ namespace BLL
         {
             return fcs.Agregar(fecha,rut);
         }
-        public List<FacturaCompra> Lista()
+        public List<FacturaCompra> Lista(string rut)
         {
-            return fcs.Lista();
+            return fcs.Lista(rut);
         }
     }
 }

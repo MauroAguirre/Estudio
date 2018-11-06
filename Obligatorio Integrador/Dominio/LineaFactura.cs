@@ -12,7 +12,7 @@ namespace Dominio
         [Key]
         public int id { get; set; }
         public int cantidad { get; set; }
-        public ArticuloProveedor articuloProveedor { get; set; }
+        public Articulo articulo { get; set; }
         public Factura factura { get; set; }
     }
 }

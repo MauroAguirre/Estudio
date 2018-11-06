@@ -11,9 +11,9 @@ namespace BLL
     public class LineaFacturaController
     {
         LineaFacturaService lfs = new LineaFacturaService();
-        public List<LineaFactura> AgregarLista(List<MVC.Models.LineaFac> lineas)
+        public LineaFactura Agregar(int cantidad, int factura, int articulo, Boolean compra)
         {
-            return lfs.AgregarLista(lineas);
+            return lfs.Agregar(cantidad, factura, articulo, compra);
         }
     }
 }

@@ -34,9 +34,11 @@ namespace DAL
 
                 var query = from d in db.contactos
                              where d.proveedor.rut == rut
-                             select d;
-                contactos = query.ToList();
-
+                             select new { d.id,d.nombre,d.telefono,d.proveedor};
+                foreach (var d in query.ToList())
+                {
+                    contactos.Add(new Contacto() { id = d.id, nombre = d.nombre, telefono = d.telefono,proveedor=d.proveedor});
+                }
             }
             return contactos;
         }

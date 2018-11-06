@@ -26,7 +26,7 @@ namespace MVC.Controllers
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "MenuLogin"));
+            return Json(Url.Action("Index", "MenuPrincipal"));
         }
         public ActionResult ListarArticulosProveedor(ArticuloProv articuloProv)
         {
@@ -46,7 +46,7 @@ namespace MVC.Controllers
                 List<LineaFac> lineaFacs = (List<LineaFac>)Session["lineaFacs"];
                 foreach (LineaFac linea in lineaFacs)
                 {
-                    if (linea.articuloProveedor == lineaFac.articuloProveedor)
+                    if (linea.articulo == lineaFac.articulo)
                     {
                         linea.cantidad = lineaFac.cantidad;
                         return Json(new { success = true, data = lineaFac, modificar = true }, JsonRequestBehavior.AllowGet);
@@ -57,20 +57,40 @@ namespace MVC.Controllers
                 return Json(new { success = true, data = lineaFac,modificar=false }, JsonRequestBehavior.AllowGet);
             } 
         }
+        public ActionResult Borrar_lineafacturaespera(LineaFac lineaFac)
+        {
+            List<LineaFac> lineaFacs = (List<LineaFac>)Session["lineaFacs"];
+            foreach (LineaFac linea in lineaFacs)
+            {
+                if (linea.articulo == lineaFac.articulo)
+                {
+                    lineaFacs.Remove(linea);
+                    break;
+                }
+            }
+            return Json(new { success = true, data = lineaFac, modificar = true }, JsonRequestBehavior.AllowGet);
+        }
         public ActionResult AgregarCompra(Compra c)
         {
-            FacturaCompra fac = fcc.Agregar(c.fecha,c.proveedor);
             List<LineaFac> lineaFacs = (List<LineaFac>)Session["lineaFacs"];
+            if(lineaFacs.Count==0)
+                return Json(new { success = false }, JsonRequestBehavior.AllowGet);
+            FacturaCompra fac = fcc.Agregar(DateTime.Today, c.proveedor);
             foreach (LineaFac li in lineaFacs)
             {
-                li.factura = fac.id;
+                lfc.Agregar(li.cantidad, fac.id, li.articulo, true);
             }
-            var dsds = lfc.AgregarLista(lineaFacs);
-            return Json(new { success = true, data = fac }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = true, data = fac,fecha=fac.fecha.ToString().Substring(0, 10) }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult ListaFacturaCompra()
+        public ActionResult ListaFacturaCompra(Compra c)
         {
-            return Json(new { sucess = true, data = fcc.Lista() }, JsonRequestBehavior.AllowGet);
+            List<FacturaCompra> lista = fcc.Lista(c.proveedor);
+            List<string> fechas = new List<string>();
+            foreach (FacturaCompra fac in lista)
+            {
+                fechas.Add(fac.fecha.ToString().Substring(0, 10));
+            }
+            return Json(new { sucess = true, data = lista,fechas }, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -28,6 +28,10 @@ namespace MVC.Controllers
         {
             return Json(Url.Action("Index", "MenuContacto"));
         }
+        public ActionResult Comunicaciones()
+        {
+            return Json(Url.Action("Index", "MenuComunicacion"));
+        }
         public ActionResult ArticulosProveedor()
         {
             return Json(Url.Action("Index", "MenuArticuloProveedor"));

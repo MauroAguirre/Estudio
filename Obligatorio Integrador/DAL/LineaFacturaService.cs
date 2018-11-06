@@ -9,36 +9,23 @@ namespace DAL
 {
     public class LineaFacturaService
     {
-        public List<LineaFactura> AgregarLista(List<MVC.Models.LineaFac> lineas)
+        public LineaFactura Agregar(int cantidad, int factura,int articulo,Boolean compra)
         {
-            List<LineaFactura> lineasNuevas = new List<LineaFactura>();
+            LineaFactura nueva = new LineaFactura();
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-
-                var artPto = db.articuloProveedores.Find(lineas.ElementAt(0).articuloProveedor);
-
-                var pro = db.proveedores.Find(artPto.articulo);
-
-
-
-
-                var fac = db.facturaCompras.Find(lineas.ElementAt(0).factura);
-                foreach (MVC.Models.LineaFac li in lineas)
-                {
-                    var articuloPro = db.articuloProveedores.Find(li.articuloProveedor);
-                    lineasNuevas.Add(db.lineafacturas.Add(new LineaFactura() {articuloProveedor = articuloPro,cantidad=li.cantidad,factura=fac }));
-                    var articulo = from a in db.articuloProveedores
-                                   where a.id == articuloPro.id
-                                   select new { articulo =a.articulo };
-                    var lista = articulo.ToList();
-                    foreach (var a in lista)
-                    {
-                        db.registro.Add(new Registro() { articulo = a.articulo,cambio=li.cantidad,fecha=DateTime.Today });
-                    }
-                }
+                Factura fac = db.facturaCompras.Find(factura);
+                Articulo art = db.articulos.Find(articulo);
+                nueva = db.lineafacturas.Add(new LineaFactura() { articulo=art,cantidad=cantidad,factura=fac});
+                int cambio = 0;
+                if (compra)
+                    cambio += cantidad;
+                else
+                    cambio -= cantidad;
+                db.registro.Add(new Registro() {articulo=art,cambio=cambio,fecha=fac.fecha });
                 db.SaveChanges();
             }
-            return lineasNuevas;
+            return nueva;
         }
     }
 }

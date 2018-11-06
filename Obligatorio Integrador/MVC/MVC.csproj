@@ -157,6 +157,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\MenuArticuloProveedorController.cs" />
     <Compile Include="Controllers\MenuCompraController.cs" />
+    <Compile Include="Controllers\MenuComunicacionController.cs" />
     <Compile Include="Controllers\MenuContactoController.cs" />
     <Compile Include="Controllers\MenuArticuloController.cs" />
     <Compile Include="Controllers\MenuLoginController.cs" />
@@ -164,12 +165,16 @@
     <Compile Include="Controllers\MenuProveedorController.cs" />
     <Compile Include="Controllers\MenuRegistroController.cs" />
     <Compile Include="Controllers\MenuUsuarioController.cs" />
+    <Compile Include="Controllers\MenuVentaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ArticuloProv.cs" />
+    <Compile Include="Models\ArticuloStock.cs" />
     <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\Comunication.cs" />
     <Compile Include="Models\ContactoProv.cs" />
+    <Compile Include="Models\LineaFac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +195,7 @@
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Compra.js" />
+    <Content Include="Scripts\Comunicacion.js" />
     <Content Include="Scripts\Contacto.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -206,6 +212,7 @@
     <Content Include="Scripts\Proveedor.js" />
     <Content Include="Scripts\Registro.js" />
     <Content Include="Scripts\Usuario.js" />
+    <Content Include="Scripts\Venta.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -226,6 +233,8 @@
     <Content Include="Views\MenuArticuloProveedor\Index.cshtml" />
     <Content Include="Views\MenuCompra\Index.cshtml" />
     <Content Include="Views\MenuRegistro\Index.cshtml" />
+    <Content Include="Views\MenuComunicacion\Index.cshtml" />
+    <Content Include="Views\MenuVenta\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
