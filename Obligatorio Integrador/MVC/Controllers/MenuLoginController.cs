@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Dominio;
+using Common;
 using BLL;
 
 namespace MVC.Controllers
 {
     public class MenuLoginController : Controller
     {
-        UsuarioController uc = new UsuarioController();
-        public ActionResult Index()
+        UsuarioController uc = UsuarioController.Instancia();
+        public ActionResult MenuLogin()
         {
             return View();
         }
@@ -19,7 +19,8 @@ namespace MVC.Controllers
         {
             if (uc.Verificar_login(u))
             {
-                return Json(Url.Action("Index", "MenuPrincipal"));
+                Session["conectado"] = "conectado";
+                return Json(new { url = Url.Action("MenuPrincipal", "MenuPrincipal"), success = true});
             }
             else
                 return Json(new { success = false }, JsonRequestBehavior.AllowGet);

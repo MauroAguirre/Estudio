@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class ProveedorService
     {
+        private static ProveedorService instancia;
+        public static ProveedorService Instancia()
+        {
+            if (instancia == null)
+                instancia = new ProveedorService();
+            return instancia;
+        }
         public Proveedor Agregar(Proveedor proveedor)
         {
             Proveedor nuevo = new Proveedor();

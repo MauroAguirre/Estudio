@@ -1,0 +1,30 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/ListadoPrecioArticuloProveedor.js")"></script>
+}
+<h2>Listado de precios de un articulo de un proveedor</h2>
+<table class="table table-bordered">
+    <tr>
+        <td><label>Proveedor</label></td>
+        <td><select id="slcProveedores" class="form-control"></select></td>
+    </tr>
+    <tr>
+        <td><label>Articulo</label></td>
+        <td><select id="slcArticulos" class="form-control"></select></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>
+        </td>
+    </tr>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Precio</label></td>
+            <td><label>Fecha</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyPrecios"></tbody>
+</table>

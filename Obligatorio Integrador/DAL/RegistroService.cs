@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class RegistroService
     {
+        private static RegistroService instancia;
+        public static RegistroService Instancia()
+        {
+            if (instancia == null)
+                instancia = new RegistroService();
+            return instancia;
+        }
         public List<Registro> Lista()
         {
             List<Registro> registros = new List<Registro>();

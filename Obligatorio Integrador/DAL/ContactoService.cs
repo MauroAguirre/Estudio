@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class ContactoService
     {
+        private static ContactoService instancia;
+        public static ContactoService Instancia()
+        {
+            if (instancia == null)
+                instancia = new ContactoService();
+            return instancia;
+        }
         public Contacto Agregar(string p, string n, int t)
         {
             Contacto nuevo = new Contacto();
@@ -42,42 +49,22 @@ namespace DAL
             }
             return contactos;
         }
-        public void Modificar(string rut, string nombre, int telefono)
+        public void Modificar(int id, string nombre, int telefono)
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                var query = from c in db.contactos
-                            where c.proveedor.rut == rut
-                            select c;
-                List<Contacto> contactos = query.ToList();
-                foreach (var c in contactos)
-                {
-                    if (c.nombre == nombre)
-                    {
-                        c.telefono = telefono;
-                        break;
-                    }
-                }
+                Contacto a = db.contactos.Find(id);
+                a.nombre = nombre;
+                a.telefono = telefono;
                 db.SaveChanges();
             }
         }
-        public void Borrar(string rut, string nombre)
+        public void Borrar(int id)
         {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
-                var query = from c in db.contactos
-                            where c.proveedor.rut == rut
-                            select c;
-                List<Contacto> contactos = query.ToList();
-                foreach (var c in contactos)
-                {
-                    if (c.nombre == nombre)
-                    {
-                        db.contactos.Remove(c);
-                        break;
-                    }
-                }
-
+                Contacto c = db.contactos.Find(id);
+                db.contactos.Remove(c);
                 db.SaveChanges();
             }
         }

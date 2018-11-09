@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using Dominio;
+using Common;
 
 namespace BLL
 {
     public class UsuarioController
     {
-        UsuarioService us = new UsuarioService();
+        private static UsuarioController instancia;
+        public static UsuarioController Instancia()
+        {
+            if (instancia == null)
+                instancia = new UsuarioController();
+            return instancia;
+        }
+        UsuarioService us = UsuarioService.Instancia();
         public Boolean Agregar(Usuario usuario)
         {
             string ultimaParte = "";

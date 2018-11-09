@@ -1,0 +1,30 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Imprimir.js")"></script>
+}
+<h2>Factura</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Fecha</label></td>
+            <td><label>Total</label></td>
+            <td><label id="lblExtra"></label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyFactura"></tbody>
+</table>
+<h2>Lineas de la factura</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Articulo</label></td>
+            <td><label>Cantidad</label></td>
+            <td><label>Precio</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyLineas"></tbody>
+</table>
+<a href='javascript:window.print(); void 0;'>Imprimir</a>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>

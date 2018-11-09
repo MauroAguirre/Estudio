@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     ListarProveedores();
     ListarArticulos();
-    ListarArticulosProveedor();
 });
 $("#slcProveedores").change(function () {
     ListarArticulosProveedor();
@@ -43,6 +42,7 @@ function ListarProveedores() {
         for (i = 0; i < Object.keys(proveedores).length; i++) {
             $("#slcProveedores").append('<option id=' + proveedores[i].rut + '>' + proveedores[i].nombre + '</option>');
         }
+        ListarArticulosProveedor();
     });
 }
 function ListarArticulos() {

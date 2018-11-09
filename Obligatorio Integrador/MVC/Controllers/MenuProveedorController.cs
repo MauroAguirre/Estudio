@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL;
-using Dominio;
+using Common;
 
 namespace MVC.Controllers
 {
     public class MenuProveedorController : Controller
     {
-        ProveedorController pc = new ProveedorController();
-        public ActionResult Index()
+        ProveedorController pc = ProveedorController.Instancia();
+        public ActionResult MenuProveedor()
         {
+            if (Session["conectado"] == null)
+                return RedirectToAction("MenuLogin", "MenuLogin");
             return View();
         }
         public ActionResult Agregar(Proveedor p)
@@ -35,7 +37,7 @@ namespace MVC.Controllers
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "MenuPrincipal"));
+            return Json(Url.Action("MenuPrincipal", "MenuPrincipal"));
         }
         public ActionResult Lista()
         {

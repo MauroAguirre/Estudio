@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL;
-using Dominio;
+using Common;
 
 namespace MVC.Controllers
 {
     public class MenuArticuloController : Controller
     {
-        ArticuloController ac = new ArticuloController();
-        public ActionResult Index()
+        ArticuloController ac = ArticuloController.Instancia();
+        public ActionResult MenuArticulo()
         {
+            if (Session["conectado"] == null)
+                return RedirectToAction("MenuLogin", "MenuLogin");
             return View();
         }
         public ActionResult Agregar(Articulo a)
@@ -37,7 +39,7 @@ namespace MVC.Controllers
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "MenuPrincipal"));
+            return Json(Url.Action("MenuPrincipal", "MenuPrincipal"));
         }
         public ActionResult Lista()
         {

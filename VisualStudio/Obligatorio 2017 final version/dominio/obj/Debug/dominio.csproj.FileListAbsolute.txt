@@ -40,8 +40,3 @@ J:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.csprojR
 J:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 J:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.dll
 J:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.pdb
-G:\VisualStudio\Obligatorio 2017 final version\dominio\bin\Debug\dominio.dll
-G:\VisualStudio\Obligatorio 2017 final version\dominio\bin\Debug\dominio.pdb
-G:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.csprojResolveAssemblyReference.cache
-G:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.dll
-G:\VisualStudio\Obligatorio 2017 final version\dominio\obj\Debug\dominio.pdb

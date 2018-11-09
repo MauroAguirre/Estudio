@@ -4,18 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using Dominio;
+using Common;
 
 namespace BLL
 {
     public class ArticuloProveedorController
     {
-        ArticuloProveedorService aps = new ArticuloProveedorService();
+        private static ArticuloProveedorController instancia;
+        public static ArticuloProveedorController Instancia()
+        {
+            if (instancia == null)
+                instancia = new ArticuloProveedorController();
+            return instancia;
+        }
+        ArticuloProveedorService aps = ArticuloProveedorService.Instancia();
         public ArticuloProveedor Agregar(String rut, int id, int precio,DateTime fecha)
         {
             if (precio < 1)
                 return null;
             return aps.Agregar(rut, id, precio,fecha);
+        }
+        public List<ArticuloProveedor> PorArticuloProveedor(int id,string rut)
+        {
+            return aps.PorArticuloProveedor(id,rut);
         }
         public List<ArticuloProveedor> Lista(String rut)
         {

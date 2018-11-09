@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 using DAL;
 
 namespace BLL
 {
     public class ContactoController
     {
-        ContactoService cs = new ContactoService();
+        private static ContactoController instancia;
+        public static ContactoController Instancia()
+        {
+            if (instancia == null)
+                instancia = new ContactoController();
+            return instancia;
+        }
+        ContactoService cs = ContactoService.Instancia();
         public Contacto Agregar(string p, string n,int t)
         {
             if (p == null || n==null)
@@ -23,13 +30,13 @@ namespace BLL
         {
             return cs.Lista(rut);
         }
-        public void Modificar(string rut, string nombre,int telefono)
+        public void Modificar(int id, string nombre,int telefono)
         {
-            cs.Modificar(rut,nombre,telefono);
+            cs.Modificar(id,nombre,telefono);
         }
-        public void Borrar(string rut, string nombre)
+        public void Borrar(int id)
         {
-            cs.Borrar(rut,nombre);
+            cs.Borrar(id);
         }
     }
 }

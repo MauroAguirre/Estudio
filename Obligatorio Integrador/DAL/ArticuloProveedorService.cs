@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class ArticuloProveedorService
     {
+        private static ArticuloProveedorService instancia;
+        public static ArticuloProveedorService Instancia()
+        {
+            if (instancia == null)
+                instancia = new ArticuloProveedorService();
+            return instancia;
+        }
         public ArticuloProveedor Agregar(String rut,int id,int costo,DateTime fecha)
         {
             ArticuloProveedor nuevo = new ArticuloProveedor();
@@ -20,6 +27,22 @@ namespace DAL
                 db.SaveChanges();
             }
             return nuevo;
+        }
+        public List<ArticuloProveedor> PorArticuloProveedor(int id,string rut)
+        {
+            List<ArticuloProveedor> articulosProv = new List<ArticuloProveedor>();
+            using (BarracaLuisContext db = new BarracaLuisContext())
+            {
+                var query = from a in db.articuloProveedores
+                            where a.articulo.id == id
+                            where a.proveedor.rut == rut
+                            select new {a.articulo,a.costo,a.fecha,a.id,a.proveedor };
+                foreach (var a in query.ToList())
+                {
+                    articulosProv.Add(new ArticuloProveedor() {articulo=a.articulo,costo=a.costo,fecha=a.fecha,id=a.id,proveedor=a.proveedor });
+                }
+            }
+            return articulosProv;
         }
         public List<ArticuloProveedor> Lista(String rut)
         {

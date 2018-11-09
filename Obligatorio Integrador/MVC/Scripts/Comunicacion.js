@@ -66,10 +66,16 @@ function Agregar() {
         data: comunication,
         encode: true
     }).done((data) => {
-        var comunicacion = data.data;
-        var fecha = data.fecha;
-        $("#lblRes").html("Comunicacion agregada");
-        $("#tbyComunaciones").append('<tr><td>' + comunicacion.id + '</td><td>' + comunicacion.contacto.proveedor.nombre + '</td><td>' + comunicacion.contacto.nombre + '</td><td>' + fecha + '</td><td>' + comunicacion.tipo + '</td><td>' + comunicacion.comentario + '</td></tr>');
+        if (data.success) {
+            var comunicacion = data.data;
+            var fecha = data.fecha;
+            $("#lblRes").html("Comunicacion agregada");
+            $("#tbyComunaciones").append('<tr><td>' + comunicacion.id + '</td><td>' + comunicacion.contacto.proveedor.nombre + '</td><td>' + comunicacion.contacto.nombre + '</td><td>' + fecha + '</td><td>' + comunicacion.tipo + '</td><td>' + comunicacion.comentario + '</td></tr>');
+
+        }
+        else
+            $("#lblRes").html("No hay contacto");
+
     });
 }
 function Salir() {
