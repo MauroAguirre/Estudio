@@ -1,0 +1,63 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/Venta.js")"></script>
+}
+<h2>Factura de venta</h2>
+<table class="table">
+    <tr>
+        <td><label>Descripcion</label></td>
+        <td><input type="text" id="txtDescripcion" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label>Total de factura</label></td>
+        <td><label id="lblTotal">0</label></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Agregar Venta" onclick="AgregarVenta()" class="btn btn-default" /></td>
+        <td><label id="lblRes"></label></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Salir" onclick="Salir()" class="btn btn-default" /></td>
+        <td></td>
+    </tr>
+</table>
+<h2>Lista de articulos para agregar</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Articulo</label></td>
+            <td><label>Costo</label></td>
+            <td><label>Cantidad en el stock</label></td>
+            <td><label>Cantidad mini del articulo</label></td>
+            <td><label>Cantidad para vender</label></td>
+            <td><label>Agregar y Modificar</label></td>
+            <td><label>Borrar</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyArticulos"></tbody>
+</table>
+<h2>Linea de facturas elegidas</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Articulo</label></td>
+            <td><label>Cantidad de unidades</label></td>
+            <td><label>Precio</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyLineasFacturasParaAgregar"></tbody>
+</table>
+<h2>Lista de facturas de venta</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Descripcion</label></td>
+            <td><label>Fecha</label></td>
+            <td><label>Total</label></td>
+            <td><label>Imprimir</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyVentas"></tbody>
+</table>
+

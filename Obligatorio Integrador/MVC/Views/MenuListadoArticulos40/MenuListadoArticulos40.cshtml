@@ -1,0 +1,19 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/ListadoArticulos40.js")"></script>
+}
+<h2>Listado de articulos que estuvieron por debajo del 40% del stock requerido en el ultimo mes</h2>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Descripcion</label></td>
+            <td><label>Iva</label></td>
+            <td><label>Minimo de stock</label></td>
+            <td><label>Precio venta</label></td>
+            <td><label>Cantidad stock</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyArticulos"></tbody>
+</table>

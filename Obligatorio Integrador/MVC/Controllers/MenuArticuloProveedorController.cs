@@ -4,18 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL;
-using Dominio;
+using Common;
 using MVC.Models;
 
 namespace MVC.Controllers
 {
     public class MenuArticuloProveedorController : Controller
     {
-        BLL.ProveedorController pc = new BLL.ProveedorController();
-        BLL.ArticuloController ac = new BLL.ArticuloController();
-        BLL.ArticuloProveedorController apc = new BLL.ArticuloProveedorController();
-        public ActionResult Index()
+        ProveedorController pc = ProveedorController.Instancia();
+        ArticuloController ac = ArticuloController.Instancia();
+        ArticuloProveedorController apc = ArticuloProveedorController.Instancia();
+        public ActionResult MenuArticuloProveedor()
         {
+            if (Session["conectado"] == null)
+                return RedirectToAction("MenuLogin", "MenuLogin");
             return View();
         }
         public ActionResult Agregar(ArticuloProv articuloProv)
@@ -48,7 +50,7 @@ namespace MVC.Controllers
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "MenuPrincipal"));
+            return Json(Url.Action("MenuPrincipal", "MenuPrincipal"));
         }
     }
 }

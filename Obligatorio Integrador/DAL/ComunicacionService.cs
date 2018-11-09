@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class ComunicacionService
     {
+        private static ComunicacionService instancia;
+        public static ComunicacionService Instancia()
+        {
+            if (instancia == null)
+                instancia = new ComunicacionService();
+            return instancia;
+        }
         public Comunicacion Agregar(Comunicacion c,int id)
         {
             Comunicacion nueva = new Comunicacion();

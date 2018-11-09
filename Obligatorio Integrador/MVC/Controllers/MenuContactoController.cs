@@ -4,17 +4,19 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL;
-using Dominio;
+using Common;
 using MVC.Models;
 
 namespace MVC.Controllers
 {
     public class MenuContactoController : Controller
     {
-        BLL.ContactoController cc = new BLL.ContactoController();
-        BLL.ProveedorController pc = new BLL.ProveedorController();
-        public ActionResult Index()
+        ContactoController cc = ContactoController.Instancia();
+        ProveedorController pc = ProveedorController.Instancia();
+        public ActionResult MenuContacto()
         {
+            if (Session["conectado"] == null)
+                return RedirectToAction("MenuLogin", "MenuLogin");
             return View();
         }
         public ActionResult Agregar(ContactoProv contacto)
@@ -29,19 +31,19 @@ namespace MVC.Controllers
                 return Json(new { success = false }, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Modificar(ContactoProv c)
+        public ActionResult Modificar(Contacto c)
         {
-            cc.Modificar(c.proveedor,c.nombre,c.telefono);
+            cc.Modificar(c.id,c.nombre,c.telefono);
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Borrar(ContactoProv c)
+        public ActionResult Borrar(Contacto c)
         {
-            cc.Borrar(c.proveedor,c.nombre);
+            cc.Borrar(c.id);
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Salir()
         {
-            return Json(Url.Action("Index", "MenuPrincipal"));
+            return Json(Url.Action("MenuPrincipal", "MenuPrincipal"));
         }
         public ActionResult ListarProveedores()
         {

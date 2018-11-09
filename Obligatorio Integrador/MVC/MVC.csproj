@@ -155,11 +155,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MenuImprimirController.cs" />
+    <Compile Include="Controllers\MenuListadoArticuloBajosController.cs" />
     <Compile Include="Controllers\MenuArticuloProveedorController.cs" />
     <Compile Include="Controllers\MenuCompraController.cs" />
     <Compile Include="Controllers\MenuComunicacionController.cs" />
     <Compile Include="Controllers\MenuContactoController.cs" />
     <Compile Include="Controllers\MenuArticuloController.cs" />
+    <Compile Include="Controllers\MenuListadoArticulos40Controller.cs" />
+    <Compile Include="Controllers\MenuListadoPrecioArticuloProveedorController.cs" />
     <Compile Include="Controllers\MenuLoginController.cs" />
     <Compile Include="Controllers\MenuPrincipalController.cs" />
     <Compile Include="Controllers\MenuProveedorController.cs" />
@@ -171,11 +175,19 @@
     </Compile>
     <Compile Include="Models\ArticuloProv.cs" />
     <Compile Include="Models\ArticuloStock.cs" />
+    <Compile Include="Models\ArtStocEstado.cs" />
     <Compile Include="Models\Compra.cs" />
     <Compile Include="Models\Comunication.cs" />
     <Compile Include="Models\ContactoProv.cs" />
+    <Compile Include="Models\FacturaTipo.cs" />
     <Compile Include="Models\LineaFac.cs" />
+    <Compile Include="Models\Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -193,10 +205,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Compra.js" />
     <Content Include="Scripts\Comunicacion.js" />
     <Content Include="Scripts\Contacto.js" />
+    <Content Include="Scripts\Imprimir.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -206,14 +223,19 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\ListadoArticuloBajos.js" />
+    <Content Include="Scripts\ListadoArticulos40.js" />
     <Content Include="Scripts\Login.js" />
+    <Content Include="Scripts\ListadoPrecioArticuloProveedor.js" />
     <Content Include="Scripts\MenuPrincipal.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Proveedor.js" />
     <Content Include="Scripts\Registro.js" />
     <Content Include="Scripts\Usuario.js" />
     <Content Include="Scripts\Venta.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -224,17 +246,21 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\MenuLogin\Index.cshtml" />
-    <Content Include="Views\MenuUsuario\Index.cshtml" />
-    <Content Include="Views\MenuPrincipal\Index.cshtml" />
-    <Content Include="Views\MenuArticulo\Index.cshtml" />
-    <Content Include="Views\MenuProveedor\Index.cshtml" />
-    <Content Include="Views\MenuContacto\Index.cshtml" />
-    <Content Include="Views\MenuArticuloProveedor\Index.cshtml" />
-    <Content Include="Views\MenuCompra\Index.cshtml" />
-    <Content Include="Views\MenuRegistro\Index.cshtml" />
-    <Content Include="Views\MenuComunicacion\Index.cshtml" />
-    <Content Include="Views\MenuVenta\Index.cshtml" />
+    <Content Include="Views\MenuUsuario\MenuUsuario.cshtml" />
+    <Content Include="Views\MenuPrincipal\MenuPrincipal.cshtml" />
+    <Content Include="Views\MenuArticulo\MenuArticulo.cshtml" />
+    <Content Include="Views\MenuProveedor\MenuProveedor.cshtml" />
+    <Content Include="Views\MenuContacto\MenuContacto.cshtml" />
+    <Content Include="Views\MenuArticuloProveedor\MenuArticuloProveedor.cshtml" />
+    <Content Include="Views\MenuCompra\MenuCompra.cshtml" />
+    <Content Include="Views\MenuRegistro\MenuRegistro.cshtml" />
+    <Content Include="Views\MenuComunicacion\MenuComunicacion.cshtml" />
+    <Content Include="Views\MenuVenta\MenuVenta.cshtml" />
+    <Content Include="Views\MenuListadoArticuloBajos\MenuListadoArticuloBajos.cshtml" />
+    <Content Include="Views\MenuListadoPrecioArticuloProveedor\MenuListadoPrecioArticuloProveedor.cshtml" />
+    <Content Include="Views\MenuListadoArticulos40\MenuListadoArticulos40.cshtml" />
+    <Content Include="Views\MenuImprimir\MenuImprimir.cshtml" />
+    <Content Include="Views\MenuLogin\MenuLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,9 +283,9 @@
       <Project>{35429497-9f7f-4c1d-b7fd-512a8d9a6d1a}</Project>
       <Name>BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominio\Dominio.csproj">
-      <Project>{a781bf4c-3ada-47e4-9e98-0bbbdafc38b3}</Project>
-      <Name>Dominio</Name>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9571c9ae-3a04-4e53-b0dd-1598f92326b2}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

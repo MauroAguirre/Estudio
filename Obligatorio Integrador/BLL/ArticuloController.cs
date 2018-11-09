@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using Dominio;
+using Common;
 
 namespace BLL
 {
     public class ArticuloController
     {
-        ArticuloService us = new ArticuloService();
+        private static ArticuloController instancia;
+        public static ArticuloController Instancia()
+        {
+            if (instancia == null)
+                instancia = new ArticuloController();
+            return instancia;
+        }
+        ArticuloService us = ArticuloService.Instancia();
         public Articulo Agregar(Articulo articulo)
         {
             if (articulo.descripcion == null || articulo.miniStock <1 || articulo.precioVenta <1)
@@ -35,6 +42,14 @@ namespace BLL
         public void Borrar(int id)
         {
             us.Borrar(id);
+        }
+        public Articulo Buscar(int id)
+        {
+            return us.Buscar(id);
+        }
+        public List<Articulo> Articulos40()
+        {
+            return us.Articulos40();
         }
     }
 }

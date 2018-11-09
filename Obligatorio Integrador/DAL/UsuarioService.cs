@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 
 namespace DAL
 {
     public class UsuarioService
     {
+        private static UsuarioService instancia;
+        public static UsuarioService Instancia()
+        {
+            if (instancia == null)
+                instancia = new UsuarioService();
+            return instancia;
+        }
         public void Agregar(Usuario usuario) {
             using (BarracaLuisContext db = new BarracaLuisContext())
             {
@@ -87,6 +94,7 @@ namespace DAL
                     db.contactos.Add(new Contacto() { nombre = "Miguel", telefono = 099213412, proveedor = raul });
                     db.contactos.Add(new Contacto() { nombre = "Felix", telefono = 099884433, proveedor = raul });
                     Proveedor milton = db.proveedores.Add(new Proveedor() { activo = true, descripcion = "Pinturas Milton", nombre = "Milton", rut = "444" });
+                    db.contactos.Add(new Contacto() { nombre = "Tito", telefono = 097654341, proveedor = milton });
                     //articulos del proveedor raul
                     ArticuloProveedor artPro1 = db.articuloProveedores.Add(new ArticuloProveedor() { articulo = hierro, proveedor = raul, costo = 80, fecha = DateTime.Today.AddYears(-2).AddMonths(-30) });
                     ArticuloProveedor artPro2 = db.articuloProveedores.Add(new ArticuloProveedor() { articulo = malla, proveedor = raul, costo = 60, fecha = DateTime.Today.AddYears(-2).AddMonths(-27) });
@@ -98,29 +106,28 @@ namespace DAL
                     ArticuloProveedor artPro7 = db.articuloProveedores.Add(new ArticuloProveedor() { articulo = rodillo, proveedor = milton, costo = 20, fecha = DateTime.Today.AddYears(-2).AddMonths(-10) });
                     //agrego facturas de compras con el cambio en el registro y las linea de compra
 
-                    /*
-                    FacturaCompra fac1 = db.facturaCompras.Add(new FacturaCompra() { proveedor = frutifruti, fecha = DateTime.Today.AddYears(-1).AddDays(-30) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro1, cantidad = 100, factura = fac1 });
-                    db.registro.Add(new Registro() { articulo = fresa, cambio = 100, fecha = DateTime.Today.AddYears(-1).AddDays(-30)});
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro2, cantidad = 78, factura = fac1 });
-                    db.registro.Add(new Registro() { articulo = melon, cambio = 78, fecha = DateTime.Today.AddYears(-1).AddDays(-30)});
+                    FacturaCompra fac1 = db.facturaCompras.Add(new FacturaCompra() { fecha= DateTime.Today.AddMonths(-30),proveedor=milton });
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 40, factura = fac1, precio = 40*38, articulo= pincel });
+                    db.registro.Add(new Registro() { articulo = pincel, cambio = 40, fecha = DateTime.Today.AddMonths(-30) });
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 40, factura = fac1, precio = 40 * 20, articulo = rodillo });
+                    db.registro.Add(new Registro() { articulo = rodillo, cambio = 40, fecha = DateTime.Today.AddMonths(-30) });
 
-                    FacturaCompra fac2 = db.facturaCompras.Add(new FacturaCompra() { proveedor = frutifruti, fecha = DateTime.Today.AddYears(-1).AddDays(-28) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro3, cantidad = 67, factura = fac2 });
-                    db.registro.Add(new Registro() { articulo = sandia, cambio = 67, fecha = DateTime.Today.AddYears(-1).AddDays(-28) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro4, cantidad = 60, factura = fac2 });
-                    db.registro.Add(new Registro() { articulo = uva, cambio = 60, fecha = DateTime.Today.AddYears(-1).AddDays(-28) });
+                    FacturaCompra fac2 = db.facturaCompras.Add(new FacturaCompra() { fecha = DateTime.Today.AddMonths(-30), proveedor = milton });
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 80, factura = fac2, precio = 80 * 20, articulo = rodillo });
+                    db.registro.Add(new Registro() { articulo = rodillo, cambio = 80, fecha = DateTime.Today.AddMonths(-30) });
+                    
 
-                    FacturaCompra fac3 = db.facturaCompras.Add(new FacturaCompra() { proveedor = frutifruti, fecha = DateTime.Today.AddYears(-1).AddMonths(-6) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro1, cantidad = 30, factura = fac3 });
-                    db.registro.Add(new Registro() { articulo = fresa, cambio = 30, fecha = DateTime.Today.AddYears(-1).AddMonths(-6) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro2, cantidad = 38, factura = fac3 });
-                    db.registro.Add(new Registro() { articulo = melon, cambio = 38, fecha = DateTime.Today.AddYears(-1).AddMonths(-6) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro3, cantidad = 14, factura = fac3 });
-                    db.registro.Add(new Registro() { articulo = sandia, cambio = 14, fecha = DateTime.Today.AddYears(-1).AddMonths(-6) });
-                    db.lineafacturas.Add(new LineaFactura() { articuloProveedor = artPro4, cantidad = 120, factura = fac3 });
-                    db.registro.Add(new Registro() { articulo = uva, cambio = 120, fecha = DateTime.Today.AddYears(-1).AddMonths(-6) });*/
+                    FacturaCompra fac3 = db.facturaCompras.Add(new FacturaCompra() { fecha = DateTime.Today.AddMonths(-20), proveedor = milton });
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 100, factura = fac3, precio = 100 * 20, articulo = rodillo });
+                    db.registro.Add(new Registro() { articulo = rodillo, cambio = 100, fecha = DateTime.Today.AddMonths(-20) });
 
+                    FacturaVenta fac4 = db.facturasVentas.Add(new FacturaVenta() { fecha= DateTime.Today.AddMonths(-19),descripcion="Caceres"});
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 180, factura = fac3, precio = 180 * 40, articulo = rodillo });
+                    db.registro.Add(new Registro() { articulo = rodillo, cambio = -180, fecha = DateTime.Today.AddMonths(-19) });
+
+                    FacturaCompra fac5 = db.facturaCompras.Add(new FacturaCompra() { fecha = DateTime.Today.AddMonths(-10), proveedor = milton });
+                    db.lineafacturas.Add(new LineaFactura() { cantidad = 133, factura = fac5, precio = 133 * 20, articulo = rodillo });
+                    db.registro.Add(new Registro() { articulo = rodillo, cambio = 133, fecha = DateTime.Today.AddMonths(-10) });
                     //grabamos los cambios
                     db.SaveChanges();
                 }

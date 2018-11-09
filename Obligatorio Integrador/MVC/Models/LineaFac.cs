@@ -10,6 +10,7 @@ namespace MVC.Models
         public int id { get; set; }
         public int cantidad { get; set; }
         public int articulo { get; set; }
+        public int precio { get; set; }
         public int factura { get; set; }
     }
 }

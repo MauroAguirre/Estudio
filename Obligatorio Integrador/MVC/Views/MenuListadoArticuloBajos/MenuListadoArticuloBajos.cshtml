@@ -1,0 +1,18 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/ListadoArticuloBajos.js")"></script>
+}
+<h2>Listado de articulos en o por debajo del minimo</h2>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="Salir()">Salir</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Id</label></td>
+            <td><label>Descripcion</label></td>
+            <td><label>Precio venta</label></td>
+            <td><label>Minimo requerido</label></td>
+            <td><label>Stock</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyArticulos"></tbody>
+</table>

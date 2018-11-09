@@ -11,7 +11,7 @@
     }).done((data) => {
         window.location.href = data;
         if (data.success)
-            window.location.href = data;
+            window.location.href = data.url;
         else
             $("#lblRes").html("Error en los datos");
     });

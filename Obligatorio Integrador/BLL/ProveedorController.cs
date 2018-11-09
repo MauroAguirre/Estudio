@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
+using Common;
 using DAL;
 
 namespace BLL
 {
     public class ProveedorController
     {
-        ProveedorService ps = new ProveedorService();
+        private static ProveedorController instancia;
+        public static ProveedorController Instancia()
+        {
+            if (instancia == null)
+                instancia = new ProveedorController();
+            return instancia;
+        }
+        ProveedorService ps = ProveedorService.Instancia();
         public Proveedor Agregar(Proveedor proveedor)
         {
             List<Proveedor> proveedores = Lista();

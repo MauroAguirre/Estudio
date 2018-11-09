@@ -68,16 +68,6 @@ function Borrar(a) {
         }
     });
 }
-function Salir() {
-    $.ajax({
-        type: 'POST',
-        url: '/MenuUsuario/Salir',
-        data: null,
-        encode: true
-    }).done((data) => {
-        window.location.href = data;
-    });
-}
 function Modificar(id) {
     var iva = 21;
     if ($("#rdoIva1").is(":checked"))
@@ -108,5 +98,15 @@ function Modificar(id) {
         else {
             $("#lblRes").html("Error en los datos");
         }
+    });
+}
+function Salir() {
+    $.ajax({
+        type: 'POST',
+        url: '/MenuUsuario/Salir',
+        data: null,
+        encode: true
+    }).done((data) => {
+        window.location.href = data;
     });
 }
