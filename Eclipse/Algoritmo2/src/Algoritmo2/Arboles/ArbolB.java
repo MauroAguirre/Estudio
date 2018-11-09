@@ -97,6 +97,14 @@ public class ArbolB {
 		else
 			return cantNodos(raiz)-1;
 	}
+	public int altura2(NodoB n)
+	{
+		if(n==null)
+			return -1;
+		else {
+			return 1+Math.max(altura2(n.getNododer()),altura2(n.getNodoizq()));
+		}
+	}
 	public int altura(NodoB n) {
 		int altura = 0;
 		List<Integer> alturas = new ArrayList<Integer>();
@@ -127,6 +135,18 @@ public class ArbolB {
 						alturas.add(altura);
 				}
 			}
+		}
+	}
+	public boolean todosPares2(NodoB n)
+	{
+		if(n==null)
+			return true;
+		else {
+			if(Integer.parseInt(n.getDato())%2==0) {
+				return todosPares2(n.getNododer()) && todosPares2(n.getNodoizq());
+			}
+			else 
+				return false;
 		}
 	}
 	public boolean todosPares(NodoB n) {
@@ -190,6 +210,22 @@ public class ArbolB {
 							return true;
 						else
 							return false;
+					}
+					else 
+					{
+						if(a.getNododer()==null&&a.getNodoizq()!=null&&b.getNododer()==null&&b.getNodoizq()!=null)
+						{
+							return iguales(a.getNodoizq(),b.getNodoizq());
+						}
+						else 
+						{
+							if(a.getNododer()!=null&&a.getNodoizq()==null&&b.getNododer()!=null&&b.getNodoizq()==null) 
+							{
+								return iguales(a.getNododer(),b.getNododer());
+							}
+							else
+								return true;
+						}
 					}
 				}
 				else {

@@ -70,7 +70,8 @@ public class App {
 		ArbolB arbolito = new ArbolB();
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
-		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));		
+		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));	
+		System.out.println("altura2: "+arbolito.altura2(arbolito.getRaiz()));	
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
@@ -79,6 +80,7 @@ public class App {
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
 		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		System.out.println("altura2: "+arbolito.altura2(arbolito.getRaiz()));
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
@@ -88,6 +90,7 @@ public class App {
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
 		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		System.out.println("altura2: "+arbolito.altura2(arbolito.getRaiz()));
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
@@ -97,6 +100,7 @@ public class App {
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
 		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		System.out.println("altura2: "+arbolito.altura2(arbolito.getRaiz()));
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
@@ -105,6 +109,7 @@ public class App {
 		System.out.println("nodos: "+arbolito.cantNodos(arbolito.getRaiz()));
 		System.out.println("peso: "+arbolito.peso());
 		System.out.println("altura: "+arbolito.altura(arbolito.getRaiz()));
+		System.out.println("altura2: "+arbolito.altura2(arbolito.getRaiz()));
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");

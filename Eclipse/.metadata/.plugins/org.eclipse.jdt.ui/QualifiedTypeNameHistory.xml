@@ -27,4 +27,10 @@
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.MainPanel"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.Controller.LoginController"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotificationAction"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
