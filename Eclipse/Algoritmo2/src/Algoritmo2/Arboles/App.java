@@ -113,6 +113,33 @@ public class App {
 		res = (arbolito.todosPares(arbolito.getRaiz()))?"Son todos pares":"No son todos pares";
 		System.out.println(res);
 		System.out.println("hojas: "+arbolito.cantHojas(arbolito.getRaiz())+"\n");
+		
+		ArbolB dos = new ArbolB();
+		arbolito.clon(arbolito.getRaiz(), dos, true);
+		System.out.println("nodos: "+dos.cantNodos(dos.getRaiz()));
+		System.out.println("peso: "+dos.peso());
+		System.out.println("altura: "+dos.altura(dos.getRaiz()));
+		System.out.println("altura2: "+dos.altura2(dos.getRaiz()));
+		res = (dos.todosPares(dos.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
+		System.out.println("hojas: "+dos.cantHojas(dos.getRaiz())+"\n");
+		
+		arbolito.ver(arbolito.getRaiz());
+		System.out.println();
+		dos.ver(dos.getRaiz());
+		System.out.println();
+		ArbolB tres = new ArbolB();
+		dos.espejo(dos.getRaiz(), tres, true);
+		tres.ver(tres.getRaiz());
+		
+		System.out.println();
+		System.out.println("nodos: "+tres.cantNodos(tres.getRaiz()));
+		System.out.println("peso: "+tres.peso());
+		System.out.println("altura: "+tres.altura(tres.getRaiz()));
+		System.out.println("altura2: "+tres.altura2(tres.getRaiz()));
+		res = (tres.todosPares(tres.getRaiz()))?"Son todos pares":"No son todos pares";
+		System.out.println(res);
+		System.out.println("hojas: "+tres.cantHojas(tres.getRaiz())+"\n");
 	}
 
 }

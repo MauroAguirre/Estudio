@@ -234,4 +234,89 @@ public class ArbolB {
 			}
 		}
 	}
+	public void clon(NodoB n,ArbolB a,Boolean primera) {
+		if(primera) {
+			a.agregarDer(n.getDato());
+			clon(n,a,false);
+		}
+		else {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				a.agregarIzq(n.getNodoizq().getDato());
+				a.agregarDer(n.getNododer().getDato());
+				clon(n.getNododer(),a,primera);
+				clon(n.getNodoizq(),a,primera);
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					a.agregarDer(n.getNododer().getDato());
+					clon(n.getNododer(),a,primera);
+				}
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						a.agregarIzq(n.getNodoizq().getDato());
+						clon(n.getNodoizq(),a,primera);
+					}
+				}
+			}
+		}
+	}
+	public void espejo(NodoB n,ArbolB a,Boolean primera) {
+		if(primera) {
+			a.agregarDer(n.getDato());
+			espejo(n,a,false);
+		}
+		else {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				a.agregarDer(n.getNodoizq().getDato());
+				a.agregarIzq(n.getNododer().getDato());
+				espejo(n.getNododer(),a,primera);
+				espejo(n.getNodoizq(),a,primera);
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					a.agregarIzq(n.getNododer().getDato());
+					espejo(n.getNododer(),a,primera);
+				}
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						a.agregarDer(n.getNodoizq().getDato());
+						espejo(n.getNodoizq(),a,primera);
+					}
+				}
+			}
+		}
+	}
+	public void ver(NodoB n) {
+		if(n!=null) {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				System.out.println(n.getDato());
+				ver(n.getNododer());
+				ver(n.getNodoizq());
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					System.out.println(n.getDato());
+					ver(n.getNododer());
+				}	
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						System.out.println(n.getDato());
+						ver(n.getNodoizq()); 
+					}
+					else
+						System.out.println(n.getDato());
+				}
+			}
+		}
+	}
+	public Boolean equilibrado(NodoB n) {
+		List<Integer> alturas = new ArrayList<Integer>();
+		buscaAlturas(n,alturas,0);
+		int altura = alturas.get(0);
+		for(int i=1;i<alturas.size();i++) {
+			if(altura != alturas.get(i))
+				return false;
+		}
+		return true;
+	}
 }

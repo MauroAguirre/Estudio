@@ -1,0 +1,17 @@
+niveles de prueba
+katalon
+prueba de caja blanca 
+prueba de caja negra
+contexto de calidad esquema hoja 65
+testcafe
+
+
+
+no ingresar datos,
+ingresar letra,
+ingresar cero,
+ingresar un numero muy alto,
+ingresar un numero negativo,
+ingresar valores para llegar a escaleno,
+ingresar valores para llegar a quilatero,
+ingresar valores para llegar a isoceles,
