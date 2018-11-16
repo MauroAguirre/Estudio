@@ -1,4 +1,4 @@
-package Algoritmo2.Arboles;
+package Algoritmo2.Arboles.Principio;
 
 import java.util.ArrayList;
 import java.util.List;
