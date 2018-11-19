@@ -1,4 +1,4 @@
-package Algoritmo2.Arboles;
+package Algoritmo2.Arboles.Principio;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,6 +97,14 @@ public class ArbolB {
 		else
 			return cantNodos(raiz)-1;
 	}
+	public int altura2(NodoB n)
+	{
+		if(n==null)
+			return -1;
+		else {
+			return 1+Math.max(altura2(n.getNododer()),altura2(n.getNodoizq()));
+		}
+	}
 	public int altura(NodoB n) {
 		int altura = 0;
 		List<Integer> alturas = new ArrayList<Integer>();
@@ -127,6 +135,18 @@ public class ArbolB {
 						alturas.add(altura);
 				}
 			}
+		}
+	}
+	public boolean todosPares2(NodoB n)
+	{
+		if(n==null)
+			return true;
+		else {
+			if(Integer.parseInt(n.getDato())%2==0) {
+				return todosPares2(n.getNododer()) && todosPares2(n.getNodoizq());
+			}
+			else 
+				return false;
 		}
 	}
 	public boolean todosPares(NodoB n) {
@@ -191,11 +211,112 @@ public class ArbolB {
 						else
 							return false;
 					}
+					else 
+					{
+						if(a.getNododer()==null&&a.getNodoizq()!=null&&b.getNododer()==null&&b.getNodoizq()!=null)
+						{
+							return iguales(a.getNodoizq(),b.getNodoizq());
+						}
+						else 
+						{
+							if(a.getNododer()!=null&&a.getNodoizq()==null&&b.getNododer()!=null&&b.getNodoizq()==null) 
+							{
+								return iguales(a.getNododer(),b.getNododer());
+							}
+							else
+								return true;
+						}
+					}
 				}
 				else {
 					return false;
 				}
 			}
 		}
+	}
+	public void clon(NodoB n,ArbolB a,Boolean primera) {
+		if(primera) {
+			a.agregarDer(n.getDato());
+			clon(n,a,false);
+		}
+		else {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				a.agregarIzq(n.getNodoizq().getDato());
+				a.agregarDer(n.getNododer().getDato());
+				clon(n.getNododer(),a,primera);
+				clon(n.getNodoizq(),a,primera);
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					a.agregarDer(n.getNododer().getDato());
+					clon(n.getNododer(),a,primera);
+				}
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						a.agregarIzq(n.getNodoizq().getDato());
+						clon(n.getNodoizq(),a,primera);
+					}
+				}
+			}
+		}
+	}
+	public void espejo(NodoB n,ArbolB a,Boolean primera) {
+		if(primera) {
+			a.agregarDer(n.getDato());
+			espejo(n,a,false);
+		}
+		else {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				a.agregarDer(n.getNodoizq().getDato());
+				a.agregarIzq(n.getNododer().getDato());
+				espejo(n.getNododer(),a,primera);
+				espejo(n.getNodoizq(),a,primera);
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					a.agregarIzq(n.getNododer().getDato());
+					espejo(n.getNododer(),a,primera);
+				}
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						a.agregarDer(n.getNodoizq().getDato());
+						espejo(n.getNodoizq(),a,primera);
+					}
+				}
+			}
+		}
+	}
+	public void ver(NodoB n) {
+		if(n!=null) {
+			if(n.getNododer()!=null&&n.getNodoizq()!=null) {
+				System.out.println(n.getDato());
+				ver(n.getNododer());
+				ver(n.getNodoizq());
+			}
+			else {
+				if(n.getNododer()!=null&&n.getNodoizq()==null) {
+					System.out.println(n.getDato());
+					ver(n.getNododer());
+				}	
+				else {
+					if(n.getNododer()==null&&n.getNodoizq()!=null) {
+						System.out.println(n.getDato());
+						ver(n.getNodoizq()); 
+					}
+					else
+						System.out.println(n.getDato());
+				}
+			}
+		}
+	}
+	public Boolean equilibrado(NodoB n) {
+		List<Integer> alturas = new ArrayList<Integer>();
+		buscaAlturas(n,alturas,0);
+		int altura = alturas.get(0);
+		for(int i=1;i<alturas.size();i++) {
+			if(altura != alturas.get(i))
+				return false;
+		}
+		return true;
 	}
 }

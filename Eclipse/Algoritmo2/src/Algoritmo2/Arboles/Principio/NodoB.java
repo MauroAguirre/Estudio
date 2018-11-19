@@ -1,4 +1,4 @@
-package Algoritmo2.Arboles;
+package Algoritmo2.Arboles.Principio;
 
 public class NodoB {
 	private String dato;

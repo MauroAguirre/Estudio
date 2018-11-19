@@ -14,10 +14,8 @@
 <fullyQualifiedTypeName name="Algoritmo2.Pilas_Colas.Queue"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="Algoritmo2.Arboles.NodoB"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotificationType"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
@@ -27,4 +25,23 @@
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.ui.Panel.MainPanel"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Client.Controller.LoginController"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Notifications.GameNotificationAction"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.UsuarioModel"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.RegistroModel"/>
+<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
 </qualifiedTypeNameHistroy>
