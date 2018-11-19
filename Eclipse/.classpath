@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Algoritmo2/src"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-client/src/main/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-client/src/test/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-common/src/main/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-common/src/test/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-domain/src/main/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-domain/src/test/java"/>
+	<classpathentry kind="src" path="ceidda-generala-ce96178cab66/generala-server/src/main/java"/>
+	<classpathentry kind="src" path="Jeringa/src/main/java"/>
+	<classpathentry kind="src" path="Jeringa/src/test/java"/>
+	<classpathentry kind="src" path="observer-distribuido/client/src/main/java"/>
+	<classpathentry kind="src" path="observer-distribuido/common/src/main/java"/>
+	<classpathentry kind="src" path="observer-distribuido/server/src/main/java"/>
+	<classpathentry kind="src" path="observer-distribuido/server/src/test/java"/>
+	<classpathentry kind="src" path="observer/src/main/java"/>
+	<classpathentry kind="src" path="observer/src/test/java"/>
+	<classpathentry kind="src" path="Practico1-master/src"/>
+	<classpathentry kind="src" path="Programacion2-Obligatorio-AlexYamaki-2BE/src"/>
+	<classpathentry kind="src" path="singleton-threadsafe/src/main/java"/>
+	<classpathentry kind="src" path="singleton-threadsafe/src/test/java"/>
+	<classpathentry kind="src" path="yyy/src/main/java"/>
+	<classpathentry kind="src" path="yyy/src/test/java"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
