@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+	<persistence-unit name="jpaDS">
+		<class>uy.edu.cei.generala.domain.UserModel</class>
+		<class>uy.edu.cei.generala.domain.Address</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/DDA2" />
+			<property name="javax.persistence.jdbc.user" value="dda" />
+			<property name="javax.persistence.jdbc.password" value="password" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.cache.use_second_level_cache" value="false" />
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+		</properties>
+	</persistence-unit>
+</persistence>
