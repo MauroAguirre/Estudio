@@ -1,0 +1,54 @@
+niveles de prueba
+katalon
+prueba de caja blanca 
+prueba de caja negra
+contexto de calidad esquema hoja 65
+testcafe
+estimacion elementos que influyen pagina 14
+formas de estimar pagina 16 (ventajas y desventajas de cada uno)
+	*estimacion descomposicion ej spring
+	*estimacion por juicio experto
+	*estimacion por analogia
+	*estimacion parametrica (useless)
+
+Temas parcial es el 11/12/
+
+Tipos de pruebas
+	pruebas unitarias
+	pruebas de integracion
+	pruebas de sistema
+	pruebas de aceptacion
+	pruebas de regrecion
+	pruebas de carga
+(que son y ejemplos de como aplicarlas)
+
+Tecnicas de pruebas
+	*pruebas de caja blanca
+	*pruebas de caja negra
+(definicion)
+
+Tipos de estimaciones (formas de estimar)
+(descripcion de cada una)
+
+Casos de uso (ejemplo descripcion de caso de uso y diagrama
+de actor)
+
+Elementos que influyen en la estimacion de un proyecto
+
+Diagrama de dominio
+
+
+
+
+
+
+no ingresar datos,
+ingresar letra,
+ingresar cero,
+ingresar un numero muy alto,
+ingresar un numero negativo,
+ingresar valores para llegar a escaleno,
+ingresar valores para llegar a quilatero,
+ingresar valores para llegar a isoceles,
+
+
