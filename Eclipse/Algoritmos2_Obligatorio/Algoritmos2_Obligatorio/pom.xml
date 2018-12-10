@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>uy.edu.cei</groupId>
-  <artifactId>Obligatorio_Algoritmos2</artifactId>
+  <artifactId>Algoritmos2_Obligatorio</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Obligatorio_Algoritmos2</name>
+  <name>Algoritmos2_Obligatorio</name>
   <url>http://maven.apache.org</url>
 
   <properties>

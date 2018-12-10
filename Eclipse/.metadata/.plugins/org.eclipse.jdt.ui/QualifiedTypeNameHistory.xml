@@ -46,4 +46,6 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
 <fullyQualifiedTypeName name="java.rmi.Remote"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.NodoB"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolB"/>
 </qualifiedTypeNameHistroy>

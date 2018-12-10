@@ -1,4 +1,4 @@
-package uy.edu.cei.Obligatorio_Algoritmos2.Dominio;
+package uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio;
 
 public class NodoB {
 	private char dato;
@@ -28,5 +28,10 @@ public class NodoB {
 		this.dato = dato;
 		this.nodoDer = null;
 		this.nodoIzq = null;
+	}
+	public NodoB(char dato,NodoB izq,NodoB der) {
+		this.dato = dato;
+		this.nodoDer = der;
+		this.nodoIzq = izq;
 	}
 }
