@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Jeringa.JeringaInyector"/>
 <fullyQualifiedTypeName name="Algoritmo2.Pilas_Colas.Queue"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="Algoritmo2.Arboles.NodoB"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Common.Observer"/>
@@ -35,11 +34,9 @@
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.RegistroModel"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.UsuarioModel"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Server.JPAService"/>
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
@@ -48,4 +45,8 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.NodoB"/>
 <fullyQualifiedTypeName name="uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolB"/>
+<fullyQualifiedTypeName name="uy.edu.cei.Obligatorio.Domain.RealModel"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>
