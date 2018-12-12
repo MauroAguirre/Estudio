@@ -1,4 +1,4 @@
-package uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio;
+package uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolBinario;
 
 public class NodoB {
 	private char dato;

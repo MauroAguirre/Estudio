@@ -1,4 +1,7 @@
-package uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio;
+package uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolBinario;
+
+import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ListaDoblementeEncadenada.ListaDE;
+import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ListaDoblementeEncadenada.NodoDE;
 
 public class ArbolB {
 	private NodoB raiz;
@@ -208,10 +211,12 @@ public class ArbolB {
 	}
 	public void imprimirLinea(int num,int espacios) {
 		if(num!=0) {
-			ArbolB a = new ArbolB(raiz.getNodoDer());
-			ArbolB b = new ArbolB(raiz.getNodoIzq());
-			b.imprimirLinea(num-1,espacios);
-			a.imprimirLinea(num-1,espacios);
+			if(raiz!=null) {
+				ArbolB a = new ArbolB(raiz.getNodoDer());
+				ArbolB b = new ArbolB(raiz.getNodoIzq());
+				b.imprimirLinea(num-1,espacios);
+				a.imprimirLinea(num-1,espacios);
+			}
 		}
 		else {
 			if(raiz!=null) {
@@ -222,9 +227,36 @@ public class ArbolB {
 			}
 		}
 	}
-	public void ejercicio2(char[] pre,char[] ino) {
-		
+	//preorden raiz izquierdo derecho
+	//inorden izquierdo raiz derecho
+	//postorden izquierdo derecho raiz
+	public void ejercicio2B(ListaDE ino, ListaDE pre) {
+		if(pre.tamanio()!=0) {
+			
+			char raizEncontrada = ino.buscarRaiz(pre.darLetras());
+			if(raizEncontrada=='0')
+				System.out.println("la mierda");
+			this.raiz = new NodoB(raizEncontrada);
+			ArbolB izq = new ArbolB();
+			ArbolB der = new ArbolB();
+			
+			
+			izq.ejercicio2B(ino, pre.darHasta(raizEncontrada));
+			der.ejercicio2B(ino, pre.darDesde(raizEncontrada));
+			raiz.setNodoDer(der.raiz);
+			raiz.setNodoIzq(izq.raiz);
+		}
 	}
+	public void mostrarPostOrden() {
+		if(raiz!=null) {
+			ArbolB izq = new ArbolB(raiz.getNodoIzq());
+			ArbolB der = new ArbolB(raiz.getNodoDer());
+			izq.mostrarPostOrden();
+			der.mostrarPostOrden();
+			System.out.print(raiz.getDato()+" ");
+		}
+	}
+	
 	public boolean ejercicio3(char[] camino,int lugar) {
 		if(lugar<camino.length) {
 			if(raiz!=null) {

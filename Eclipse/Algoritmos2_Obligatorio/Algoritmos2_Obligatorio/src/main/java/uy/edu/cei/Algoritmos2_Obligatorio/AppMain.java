@@ -1,7 +1,8 @@
 package uy.edu.cei.Algoritmos2_Obligatorio;
 
-import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolB;
-import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.NodoB;
+import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolBinario.ArbolB;
+import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ArbolBinario.NodoB;
+import uy.edu.cei.Algoritmos2_Obligatorio.Dom‌inio.ListaDoblementeEncadenada.ListaDE;
 
 /**
  * Hello world!
@@ -26,5 +27,26 @@ public class AppMain
         	System.out.println("Pertenece el camino");
         else
         	System.out.println("No pertenece el camino");
+        char[] letras1 = {'G','E','A','I','B','M','C','L','D','F','K','J','H'};//pre orden
+        char[] letras2 = {'I','A','B','E','G','L','D','C','F','M','K','H','J'};//inorder
+        ListaDE lista1 = new ListaDE(letras1);
+        ListaDE lista2 = new ListaDE(letras2);
+        lista1.mostrar();
+        lista2.mostrar();
+        ListaDE hasta = lista2.darHasta('G');
+        ListaDE desde = lista2.darDesde('G');
+        hasta.mostrar();
+        desde.mostrar();
+        
+        System.out.println(lista1.buscarRaiz(hasta.darLetras()));
+        
+        ArbolB nuevo = new ArbolB();
+        nuevo.ejercicio2B(lista1, lista2);
+        nuevo.ejercicio2A(0);
+        nuevo.mostrarPostOrden();
+        //ListaDE opa = lista1.darMientrasSea(letra, inorden) 
+        
+        
+        //arbol.ejercicio2B(lista1, lista2);
     }
 }
