@@ -209,7 +209,7 @@ public class ArbolB {
 			ejercicio2A(num+1);
 		}
 	}
-	public void imprimirLinea(int num,int espacios) {
+	private void imprimirLinea(int num,int espacios) {
 		if(num!=0) {
 			if(raiz!=null) {
 				ArbolB a = new ArbolB(raiz.getNodoDer());
@@ -235,7 +235,7 @@ public class ArbolB {
 			
 			char raizEncontrada = ino.buscarRaiz(pre.darLetras());
 			if(raizEncontrada=='0')
-				System.out.println("la mierda");
+				System.out.println("Error");
 			this.raiz = new NodoB(raizEncontrada);
 			ArbolB izq = new ArbolB();
 			ArbolB der = new ArbolB();
