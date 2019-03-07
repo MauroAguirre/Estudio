@@ -1,0 +1,6 @@
+singleton
+factory
+template
+composite
+fayade fachada
+observer
