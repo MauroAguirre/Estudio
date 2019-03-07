@@ -12,12 +12,6 @@
 <item elementID="=Domain/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Server/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1544480866665_3" label="Obligatorio" name="Obligatorio">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Obligatorio" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Server" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Client" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Common" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Domain" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1544480866665_3" label="Obligatorio" name="Obligatorio"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1539038698213_2" label="Window Working Set" name="Aggregate for window 1539038698213"/>
 </workingSetManager>

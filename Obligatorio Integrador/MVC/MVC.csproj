@@ -155,6 +155,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MenuDefensaController.cs" />
     <Compile Include="Controllers\MenuImprimirController.cs" />
     <Compile Include="Controllers\MenuListadoArticuloBajosController.cs" />
     <Compile Include="Controllers\MenuArticuloProveedorController.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Models\ContactoProv.cs" />
     <Compile Include="Models\FacturaTipo.cs" />
     <Compile Include="Models\LineaFac.cs" />
+    <Compile Include="Models\ProveedorContactos.cs" />
     <Compile Include="Models\Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -227,6 +229,7 @@
     <Content Include="Scripts\ListadoArticulos40.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\ListadoPrecioArticuloProveedor.js" />
+    <Content Include="Scripts\MenuDefensa.js" />
     <Content Include="Scripts\MenuPrincipal.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Proveedor.js" />
@@ -261,6 +264,7 @@
     <Content Include="Views\MenuListadoArticulos40\MenuListadoArticulos40.cshtml" />
     <Content Include="Views\MenuImprimir\MenuImprimir.cshtml" />
     <Content Include="Views\MenuLogin\MenuLogin.cshtml" />
+    <Content Include="Views\MenuDefensa\MenuDefensa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

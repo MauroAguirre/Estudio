@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class primera : IMigrationMetadata
+    public sealed partial class fdsd : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(primera));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(fdsd));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811070837528_primera"; }
+            get { return "201812140904446_fdsd"; }
         }
         
         string IMigrationMetadata.Source

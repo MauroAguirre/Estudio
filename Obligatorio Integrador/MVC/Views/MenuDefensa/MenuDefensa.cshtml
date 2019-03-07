@@ -1,0 +1,38 @@
+﻿@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/MenuDefensa.js")"></script>
+}
+<h2>MenuDefensa</h2>
+<h2>Lista de Proveedores</h2>
+<table class="table">
+    <tr>
+        <td><label>Articulo</label></td>
+        <td>
+            <select id="slcArticulos"></select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Buscar" onclick="Buscar()" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Salir" onclick="Salir()" />
+        </td>
+    </tr>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><label>Nombre Comercial</label></td>
+            <td><label>Rut</label></td>
+            <td><label>Descripcion</label></td>
+            <td><label>Contacto 1</label></td>
+            <td><label>Contacto 2</label></td>
+            <td><label>Contacto 3</label></td>
+            <td><label>Contacto 4</label></td>
+        </tr>
+    </thead>
+    <tbody id="tbyProveedores"></tbody>
+</table>

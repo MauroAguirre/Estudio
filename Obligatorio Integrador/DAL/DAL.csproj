@@ -55,9 +55,9 @@
     <Compile Include="FacturaCompraService.cs" />
     <Compile Include="FacturaVentaService.cs" />
     <Compile Include="LineaFacturaService.cs" />
-    <Compile Include="Migrations\201811070837528_primera.cs" />
-    <Compile Include="Migrations\201811070837528_primera.Designer.cs">
-      <DependentUpon>201811070837528_primera.cs</DependentUpon>
+    <Compile Include="Migrations\201812140904446_fdsd.cs" />
+    <Compile Include="Migrations\201812140904446_fdsd.Designer.cs">
+      <DependentUpon>201812140904446_fdsd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,15 +70,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811070837528_primera.resx">
-      <DependentUpon>201811070837528_primera.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{9571c9ae-3a04-4e53-b0dd-1598f92326b2}</Project>
       <Name>Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812140904446_fdsd.resx">
+      <DependentUpon>201812140904446_fdsd.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

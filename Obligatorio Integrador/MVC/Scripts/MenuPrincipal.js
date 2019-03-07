@@ -128,3 +128,13 @@ function PrecioArticuloProveedor() {
         window.location.href = data;
     });
 }
+function Defensa() {
+    $.ajax({
+        type: 'POST',
+        url: '/MenuPrincipal/Defensa',
+        data: null,
+        encode: true
+    }).done((data) => {
+        window.location.href = data;
+    });
+}

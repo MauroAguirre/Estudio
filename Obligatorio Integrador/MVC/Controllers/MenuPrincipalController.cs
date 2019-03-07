@@ -62,6 +62,10 @@ namespace MVC.Controllers
         {
             return Json(Url.Action("MenuListadoPrecioArticuloProveedor", "MenuListadoPrecioArticuloProveedor"));
         }
+        public ActionResult Defensa()
+        {
+            return Json(Url.Action("MenuDefensa", "MenuDefensa"));
+        }
         public ActionResult Salir()
         {
             Session["conectado"] = null;

@@ -38,6 +38,24 @@ namespace DAL
             }
             return proveedores;
         }
+        public List<Proveedor> ProveedoresDeArticulos(int id)
+        {
+            List<Proveedor> proveedores = new List<Proveedor>();
+            using (BarracaLuisContext db = new BarracaLuisContext())
+            {
+                var query = from p in db.articuloProveedores
+                            where p.articulo.id == id
+                            select new { p.proveedor ,p.proveedor.contactos};
+                //query = query.ToList();
+                foreach (var a in query.ToList())
+                {
+                    Proveedor pro = a.proveedor;
+                    pro.contactos = a.contactos;
+                    proveedores.Add(pro);
+                }
+            }
+            return proveedores;
+        }
         public void Modificar(Proveedor proveedor)
         {
             using (BarracaLuisContext db = new BarracaLuisContext())

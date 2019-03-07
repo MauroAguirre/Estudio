@@ -36,6 +36,10 @@ namespace BLL
         {
             return ps.Lista();
         }
+        public List<Proveedor> ProveedoresDeArticulos(int id)
+        {
+            return ps.ProveedoresDeArticulos(id);
+        }
         public Boolean Modificar(Proveedor proveedor)
         {
             if (proveedor.descripcion == null || proveedor.nombre == null)
