@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="17f652f9-a15e-4929-9af8-7fb82aa3cc69">
+  <Table name="Categoria" />
+  <Table name="Atraccion" />
+</Dependencies>

@@ -1,0 +1,484 @@
+spec_i([ web,5,'Responsive Recent Links','RwdRecentLinks',0,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [ 'Formcaption','Formpgmname','Place.' ] ]).
+ 
+lac_i(2,[ [ 'Place.' ] ]).
+ 
+ 
+lits_i('Recents',5,10).
+ 
+cls_i([ 5,10 ],[ 5,16 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','…TrRL‘‚¸ˆF·|cJzK')).
+rule_i(0,datastore(1,'CC_USER_ID',uJjLBaz8dD7rSDrK)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Idb044a318d003042937e963463dd07681')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uÜHdTô@arÌBJÔDêGr[Ú<Tk')).
+rule_i(0,datastore(1,'USER_ID',uJjLBaz8dD7rSDrK)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Idb044a318d003042937e963463dd07681')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','RwdRecentLinks')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('URLAccess','No')).
+rule_i(0,prop('WEB_COMP','Yes')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(8,'Web'))).
+rule_i(0,prop('ObjDesc','Responsive Recent Links')).
+rule_i(0,prop('ObjName','RwdRecentLinks')).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Formcaption','Formpgmname' ],[])).
+rule_i(0,parmio([ [ 'Formcaption',in ],[ 'Formpgmname',in ] ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',15 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',14 ]).
+attri_i('Placecaption',[ 'PlaceCaption',svchar,255,0,'',0,'Place Caption','',13 ]).
+attri_i('Recentlinksitem',[ 'RecentLinksItem',o('LinkList.LinkItem'),0,0,'',0,'Recent Links Item','',12 ]).
+attri_i('Recentlinksitems',[ 'RecentLinksItems',o(objectcollection('LinkList.LinkItem')),0,0,'',0,'Recent Links Items','',11 ]).
+attri_i('Request',[ 'Request',o(httprequest),4,0,'',0,'HTTP Request','',10 ]).
+attri_i('I',[ i,int,5,0,'ZZZZ9',0,'Index','',9 ]).
+attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',8 ]).
+attri_i('Formpgmname',[ 'FormPgmName',svchar,256,0,'',0,'Form Pgm Name','',7 ]).
+attri_i('Formcaption',[ 'FormCaption',char,100,0,'',0,'Form Caption','',6 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+enum_value_i(2,35,'8','Size','"Size"',[ none ]).
+ 
+enum_value_info_i(2,35,'GeneXus\RecentLinksOptions').
+ 
+enum_type_i(2,35,int,4,0).
+ 
+dom_info_i(36,[ 'GeneXus\ObjectName' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,9).
+b_group_i(2,3,lit,0,10,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t([ t('Recenttext',3,1,7),t('Click',3,1,18) ],29,1,18) ]).
+b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t([ t('Maintable',3,2,5),t('Class',3,2,15) ],29,2,15),t(=,10,1,21),t('"RecentLinksMainTable"',3,2,23) ]).
+b_line_i(3,2,2,cmd,1,[ t('',107,1,0),t([ t('Maintable',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"RecentLinksMainTable RecentLinksMainTableExpanded"',3,1,0) ]).
+b_line_i(4,2,2,cmd,1,[ t('',110,1,0) ]).
+b_line_i(5,2,2,cmd,1,[ t('',107,1,0),t([ t('Maintable',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"RecentLinksMainTable"',3,1,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',111,1,0) ]).
+b_line_i(7,2,2,cmd,1,[ t('',147,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',146,1,0),t([ t('Links',3,9,7),t('Load',3,9,13) ],29,9,13) ]).
+b_line_i(11,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitems',23,11,2),t('fromxml(',1,11,20) ],31,11,2),t([ t('Session',23,11,29),t('get(',1,11,38) ],31,11,38),t('"RecentLinks"',3,11,43),t(')',4,1,57),t(')',4,1,58) ]).
+b_line_i(14,2,3,cmd,1,[ t('',107,1,0),t('I',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(15,2,3,cmd,1,[ t('',114,1,0),t('I',23,1,11),t(<=,10,1,14),t([ t('Recentlinksitems',23,15,17),t('Count',3,15,35) ],29,15,35) ]).
+b_line_i(16,2,3,cmd,1,[ t('',107,1,0),t('Recentlinksitem',23,1,0),t(=,10,1,0),t([ t('Recentlinksitems',23,1,0),t('item(',1,1,0) ],31,1,0),t('I',23,1,0),t(')',4,1,0) ]).
+b_line_i(17,2,3,cmd,1,[ t('',109,1,0),t('trim(',1,1,6),t([ t('Recentlinksitem',23,17,12),t('Caption',3,17,29) ],29,17,29),t(')',4,1,36),t(=,10,1,38),t('trim(',1,1,40),t('Formcaption',23,1,46),t(')',4,1,58) ]).
+b_line_i(18,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitems',23,18,4),t('remove(',1,18,22) ],31,18,4),t('I',23,1,30),t(')',4,1,32) ]).
+b_line_i(19,2,3,cmd,1,[ t('',110,1,0) ]).
+b_line_i(20,2,3,cmd,1,[ t('',107,1,0),t('I',23,1,0),t(=,10,1,0),t('I',23,1,0),t(+,5,1,0),t('1',3,1,0) ]).
+b_line_i(21,2,3,cmd,1,[ t('',111,1,0) ]).
+b_line_i(22,2,3,cmd,1,[ t('',115,1,0) ]).
+b_line_i(25,2,3,cmd,1,[ t('',114,1,0),t([ t('Recentlinksitems',23,25,11),t('Count',3,25,29) ],29,25,29),t(>,10,1,35),t([ 35,'Size' ],44,25,37),t(-,5,1,61),t('1',3,1,63) ]).
+b_line_i(26,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitems',23,26,3),t('remove(',1,26,21) ],31,26,3),t('1',3,1,29),t(')',4,1,30) ]).
+b_line_i(27,2,3,cmd,1,[ t('',115,1,0) ]).
+b_line_i(30,2,3,cmd,1,[ t('',107,1,0),t('Recentlinksitem',23,1,0),t(=,10,1,0),t([ 'LinkList.LinkItem',[ t('(',0,30,24),t(')',4,30,25) ],n ],46,1,0) ]).
+b_line_i(31,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitem',23,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('trim(',1,1,0),t('Formcaption',23,1,0),t(')',4,1,0) ]).
+b_line_i(32,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitem',23,1,0),t('Url',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Request',23,1,0),t('Scriptname',3,1,0) ],29,1,0),t(+,5,1,0),t('"?"',3,1,0),t(+,5,1,0),t([ t('Request',23,1,0),t('Querystring',3,1,0) ],29,1,0) ]).
+b_line_i(33,2,3,cmd,1,[ t('',107,1,0),t([ t('Recentlinksitems',23,33,2),t('add(',1,33,20) ],31,33,2),t('Recentlinksitem',23,1,25),t(')',4,1,41) ]).
+b_line_i(35,2,3,cmd,1,[ t('',107,1,0),t([ t('Session',23,35,2),t('set(',1,35,11) ],31,35,2),t('"RecentLinks"',3,35,16),t(',',7,1,30),t([ t('Recentlinksitems',23,35,32),t('toxml(',1,35,50) ],31,35,50),t(')',4,1,57),t(')',4,1,58) ]).
+b_line_i([ 38,0 ],2,3,cmd,1,[ t('',107,1,0),t('I',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(38,2,3,cmd,1,[ t('',114,1,0),t('I',23,1,6),t(<=,10,1,2),t([ t('Recentlinksitems',23,38,16),t('Count',3,38,34) ],29,38,34) ]).
+b_line_i(39,2,3,cmd,1,[ t('',107,1,0),t('Recentlinksitem',23,1,0),t(=,10,1,0),t([ t('Recentlinksitems',23,1,0),t('item(',1,1,0) ],31,1,0),t('I',23,1,0),t(')',4,1,0) ]).
+b_line_i(40,2,3,cmd,1,[ t('',107,1,0),t('Placecaption',23,1,0),t(=,10,1,0),t([ t('Recentlinksitem',23,1,0),t('Caption',3,1,0) ],29,1,0) ]).
+b_line_i(41,2,3,cmd,1,[ t('',109,1,0),t('(',0,1,6),t('len(',1,41,21),t('Placecaption',23,1,7),t(')',4,1,29),t(>,10,1,30),t('20',3,1,32),t(')',4,1,34) ]).
+b_line_i(42,2,3,cmd,1,[ t('',107,1,0),t('Placecaption',23,1,0),t(=,10,1,0),t('format(',1,1,0),t('"%1..."',3,1,0),t(',',7,1,0),t('substr(',1,1,0),t('Placecaption',23,1,0),t(',',7,1,0),t('1',3,1,0),t(',',7,1,0),t('18',3,1,0),t(')',4,1,0),t(')',4,1,0) ]).
+b_line_i(43,2,3,cmd,1,[ t('',111,1,0) ]).
+b_line_i(44,2,3,cmd,1,[ t('',107,1,0),t([ t('Place',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('Placecaption',23,1,0) ]).
+b_line_i(45,2,3,cmd,1,[ t('',109,1,0),t('(',0,1,6),t('I',23,1,7),t(<,10,1,10),t([ t('Recentlinksitems',23,45,12),t('Count',3,45,30) ],29,45,30),t(')',4,1,35) ]).
+b_line_i(46,2,3,cmd,1,[ t('',107,1,0),t([ t('Place',3,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t([ t('Recentlinksitem',23,1,0),t('Url',3,1,0) ],29,1,0),t(')',4,1,0) ]).
+b_line_i(47,2,3,cmd,1,[ t('',110,1,0) ]).
+b_line_i(48,2,3,cmd,1,[ t('',107,1,0),t([ t('Place',3,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('""',3,1,0) ]).
+b_line_i(49,2,3,cmd,1,[ t('',111,1,0) ]).
+b_line_i(51,2,3,cmd,1,[ t('',107,0,0),t([ t('Links',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
+b_line_i([ 52,0 ],2,3,cmd,1,[ t('',107,1,0),t('I',23,1,0),t(=,10,1,0),t('I',23,1,0),t(+,5,1,0),t('1',3,1,0) ]).
+b_line_i(52,2,3,cmd,1,[ t('',115,1,0) ]).
+b_line_i(53,2,3,cmd,1,[ t('',147,1,0) ]).
+ 
+sf_break_i(8,2).
+ 
+ 
+ 
+has_load_i(2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,div(2)).
+ 
+html_sub_i(2,3,html_i(0,div(3))).
+html_sub_i(3,4,html_i(0,div(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,t('Recents',3))).
+html_sub_i(4,7,html_i(1,div(7))).
+html_sub_i(7,8,html_i(0,s(8))).
+html_sub_i(8,9,html_i(0,div(9))).
+html_sub_i(9,10,html_i(0,div(10))).
+html_sub_i(10,11,html_i(0,div(11))).
+html_sub_i(11,12,html_i(0,t('Place.',3))).
+ 
+html_tags_i(1,'Class','form-horizontal Form').
+html_tags_i(2,'data-abstract-form','').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',d,[ str ]).
+html_comp_i(2,'Id','',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Class','RecentLinksMainTable',v,[ str ]).
+html_comp_i(3,'Id','Maintable',v,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Semanticcontent',div,d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Valign',top,d,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Class',row,v,[ str ]).
+html_comp_i(4,'Id','',d,[ str ]).
+html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Semanticcontent',div,d,[ str ]).
+html_comp_i(4,'Align',left,d,[ str ]).
+html_comp_i(4,'Valign',top,d,[ str ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','col-xs-12 col-sm-2 col-md-1',v,[ str ]).
+html_comp_i(5,'Id','',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Caption','Recents',d,[ str ]).
+html_comp_i(6,'Id','Recenttext',v,[ str ]).
+html_comp_i(6,'Class','RecentsTitle',v,[ str ]).
+html_comp_i(6,'Event','',d,[ str ]).
+html_comp_i(6,'Returnonclick',0,d,[ bool ]).
+html_comp_i(6,'Gxformat',0,d,[ num ]).
+html_comp_i(6,'Title','',d,[ str ]).
+html_comp_i(6,'Fill',-1,d,[ bool ]).
+html_comp_i(6,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Class','col-xs-12 col-sm-10 col-md-11',v,[ str ]).
+html_comp_i(7,'Id','',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Semanticcontent',div,d,[ str ]).
+html_comp_i(7,'Align',left,d,[ str ]).
+html_comp_i(7,'Valign',top,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Controlname','Links',v,[ str ]).
+html_comp_i(8,'Renderingmode','Responsive',v,[ str ]).
+html_comp_i(8,'Class','RecentLinksGrid',v,[ str ]).
+html_comp_i(8,'Iddataselector','',d,[ str ]).
+html_comp_i(8,'Controlorder','',d,[ str ]).
+html_comp_i(8,'Controlwhere','',d,[ str ]).
+html_comp_i(8,'Controlunique','',d,[ str ]).
+html_comp_i(8,'Allowdrop',0,d,[ bool ]).
+html_comp_i(8,'Allowdrag',0,d,[ bool ]).
+html_comp_i(8,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(8,'Title','',d,[ str ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Backgroundgx','',d,[ str ]).
+html_comp_i(8,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(8,'Gxwidth',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Gxheight',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Rules',none,d,[ str ]).
+html_comp_i(8,'Cellpadding','1',d,[ str ]).
+html_comp_i(8,'Cellspacing','2',d,[ str ]).
+html_comp_i(8,'Border','0',d,[ str ]).
+html_comp_i(8,'Sflrender','',d,[ str ]).
+html_comp_i(8,'Maxcols',1,d,[ num ]).
+html_comp_i(8,'Multi_columns_xs',1,v,[ num ]).
+html_comp_i(8,'Multi_columns_sm',0,v,[ num ]).
+html_comp_i(8,'Multi_columns_md',0,v,[ num ]).
+html_comp_i(8,'Multi_columns_lg',0,v,[ num ]).
+html_comp_i(8,'Prop_emptydatasettext','',d,[ str ]).
+html_comp_i(8,'Maxrows',0,v,[ num ]).
+html_comp_i(8,'Backcolorstyle',0,d,[ num ]).
+html_comp_i(8,'Linesbackcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(8,'Allowcollapsing',0,d,[ bool ]).
+html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(9,'Class','RecentLinksTable',v,[ str ]).
+html_comp_i(9,'Id','Linkstable',v,[ str ]).
+html_comp_i(9,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Semanticcontent',div,d,[ str ]).
+html_comp_i(9,'Align',left,d,[ str ]).
+html_comp_i(9,'Valign',top,d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Class',row,v,[ str ]).
+html_comp_i(10,'Id','',d,[ str ]).
+html_comp_i(10,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Semanticcontent',div,d,[ str ]).
+html_comp_i(10,'Align',left,d,[ str ]).
+html_comp_i(10,'Valign',top,d,[ str ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Class','col-xs-12',v,[ str ]).
+html_comp_i(11,'Id','',d,[ str ]).
+html_comp_i(11,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Semanticcontent',div,d,[ str ]).
+html_comp_i(11,'Align',left,d,[ str ]).
+html_comp_i(11,'Valign',top,d,[ str ]).
+html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(12,'Caption','Place.',d,[ str ]).
+html_comp_i(12,'Id','Place',v,[ str ]).
+html_comp_i(12,'Class','RecentLinkItem',v,[ str ]).
+html_comp_i(12,'Event','',d,[ str ]).
+html_comp_i(12,'Returnonclick',0,d,[ bool ]).
+html_comp_i(12,'Gxformat',0,d,[ num ]).
+html_comp_i(12,'Title','',d,[ str ]).
+html_comp_i(12,'Fill',-1,d,[ bool ]).
+html_comp_i(12,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(12,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(12,'Font',font('Arial',9,[]),d,[ font ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(6,1,t('Recents',3),[ ctlname('Recenttext') ]).
+lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(12,8,s(t('Place.',3),8),[ ctlname('Place') ]).
+lit_i(11,8,div(11),[ ctlname('') ]).
+lit_i(10,8,div(10),[ ctlname('') ]).
+lit_i(9,8,div(9),[ ctlname('Linkstable') ]).
+lit_i(8,1,s(8),[ ctlname('Links'),el([]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(7,1,div(7),[ ctlname('') ]).
+lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(3,1,div(3),[ ctlname('Maintable') ]).
+lit_i(2,1,div(2),[ ctlname('') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+var_prop_i(2,'Formpgmname',idBasedOn,36,v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,41,0 ],name,'LinkList').
+struct_dt_i([ 26,41,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,41,0 ],'ObjName','LinkList').
+struct_dt_i([ 26,41,0 ],'ObjDesc','Link List').
+struct_dt_i([ 26,41,0 ],'ExternalName','LinkList').
+struct_dt_i([ 26,41,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,41,0 ],collection,'True').
+struct_dt_i([ 26,41,0 ],datatype,[ 26,41,67 ]).
+struct_dt_i([ 26,41,67 ],name,'LinkItem').
+struct_dt_i([ 26,41,67 ],namespace,'GeneXus.LinkList').
+struct_dt_i([ 26,41,0 ],fullname,'LinkList').
+struct_dt_i([ 26,41,67 ],fullname,'LinkList.LinkItem').
+ 
+struct_dt_elem_i([ 26,41,67 ],1,name,'Caption').
+struct_dt_elem_i([ 26,41,67 ],1,camelname,'Caption').
+struct_dt_elem_i([ 26,41,67 ],1,length,255).
+struct_dt_elem_i([ 26,41,67 ],1,decimals,0).
+struct_dt_elem_i([ 26,41,67 ],1,type,[ 13,255,0 ]).
+struct_dt_elem_i([ 26,41,67 ],1,pic,'').
+struct_dt_elem_i([ 26,41,67 ],1,collection,'False').
+struct_dt_elem_i([ 26,41,67 ],1,'ExternalName','Caption').
+struct_dt_elem_i([ 26,41,67 ],1,'ExternalNamespace','Ejercicio1103').
+struct_dt_elem_i([ 26,41,67 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,41,67 ],1,'XmlName','').
+struct_dt_elem_i([ 26,41,67 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,41,67 ],1,soaptype,'').
+struct_dt_elem_i([ 26,41,67 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,41,67 ],1,'JsonName','').
+struct_dt_elem_i([ 26,41,67 ],2,name,'Url').
+struct_dt_elem_i([ 26,41,67 ],2,camelname,'URL').
+struct_dt_elem_i([ 26,41,67 ],2,basedon,15).
+struct_dt_elem_i([ 26,41,67 ],2,length,1000).
+struct_dt_elem_i([ 26,41,67 ],2,decimals,0).
+struct_dt_elem_i([ 26,41,67 ],2,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,41,67 ],2,pic,'').
+struct_dt_elem_i([ 26,41,67 ],2,collection,'False').
+struct_dt_elem_i([ 26,41,67 ],2,'ExternalName','URL').
+struct_dt_elem_i([ 26,41,67 ],2,'ExternalNamespace','Ejercicio1103').
+struct_dt_elem_i([ 26,41,67 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,41,67 ],2,'XmlName','').
+struct_dt_elem_i([ 26,41,67 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,41,67 ],2,soaptype,'').
+struct_dt_elem_i([ 26,41,67 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,41,67 ],2,'JsonName','').
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,[ t('Recenttext',3,1,7),t('Click',3,1,18) ],1,7,[ [ [ t('Maintable',3),t('Class',3) ] ],[ [ t('Maintable',3),t('Class',3) ] ] ]).
+sub_info_i(146,[ t('Links',3,9,7),t('Load',3,9,13) ],9,53,[ [ 'Session','Formcaption',[ t('Request',23),t('Querystring',3) ],[ t('Request',23),t('Scriptname',3) ] ],[ 'Session',[ t('Place',3),t('Caption',3) ],[ t('Place',3),t('Link',3) ] ] ]).
+ 
+ 
+pgm_callprotocol_i(web,5,'RWDRECENTLINKS','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,28 @@
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+  <Charset>UTF-8</Charset>
+  <Path>file:///E:/Genexus/</Path>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Cliente</ObjName>
+    <ObjDesc>Cliente</ObjDesc>
+    <ObjLink>cliente.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Departamento</ObjName>
+    <ObjDesc>Departamento</ObjDesc>
+    <ObjLink>departamento.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Categoria</ObjName>
+    <ObjDesc>Categoria</ObjDesc>
+    <ObjLink>categoria.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Atraccion</ObjName>
+    <ObjDesc>Atraccion</ObjDesc>
+    <ObjLink>atraccion.aspx</ObjLink>
+  </Object>
+</Objects>

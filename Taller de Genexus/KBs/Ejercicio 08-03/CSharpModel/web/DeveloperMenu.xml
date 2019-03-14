@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="prgs.xsl"?>
+<Objects>
+   <Charset>UTF-8</Charset>
+   <Path>file:///E:/Genexus/</Path>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Cliente</ObjName>
+      <ObjDesc>Cliente</ObjDesc>
+      <ObjLink>cliente.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Factura</ObjName>
+      <ObjDesc>Factura</ObjDesc>
+      <ObjLink>factura.aspx</ObjLink>
+   </Object>
+</Objects>

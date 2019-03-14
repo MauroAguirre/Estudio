@@ -1,0 +1,14 @@
+CREATE TABLE [GXA0001] ([FacturaNumero]  smallint NOT NULL , [FacturaFecha]  datetime NOT NULL , [ClienteId]  smallint NOT NULL )
+INSERT INTO [GXA0001] ([FacturaNumero], [FacturaFecha], [ClienteId]) SELECT [FacturaNumero], [FacturaFecha], [ClienteId] FROM [Cliente] T1
+DROP TABLE [Cliente]
+sp_rename '[GXA0001]', 'Cliente'
+ALTER TABLE [Cliente] ADD PRIMARY KEY([FacturaNumero])
+CREATE NONCLUSTERED INDEX [ICLIENTE] ON [Cliente] ([ClienteId] )
+
+sp_rename '[Cliente]', 'Cliente1'
+ALTER TABLE [Cliente1] DROP COLUMN [FacturaFecha], [FacturaNumero]
+
+ALTER TABLE [FacturaArticulo] ADD CONSTRAINT [IFACTURAARTICULO1] FOREIGN KEY ([FacturaNumero]) REFERENCES [Cliente] ([FacturaNumero])
+
+ALTER TABLE [Cliente] ADD CONSTRAINT [ICLIENTE] FOREIGN KEY ([ClienteId]) REFERENCES [Cliente1] ([ClienteId])
+

@@ -1,0 +1,627 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>1</ObjId>
+<ObjName>Cliente</ObjName>
+<ObjDesc>Cliente</ObjDesc>
+<ObjPgmName>Cliente</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>1</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Token>.</Token>
+<Token>Visible</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gxbscreen</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>0</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>today(</Token>
+<Token>)</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ClienteNombre</AttriName>
+<Description>Cliente Nombre</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClienteApellido</AttriName>
+<Description>Cliente Apellido</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>ClienteEmail</AttriName>
+<Description>Cliente Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>ClienteDireccion</AttriName>
+<Description>Cliente Direccion</Description></Attribute>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>ClienteObservacion</AttriName>
+<Description>Cliente Observacion</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>ClienteEdad</AttriName>
+<Description>Cliente Edad</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>and</Token>
+<Token>null1(</Token>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gxbscreen</VarName></Variable>
+<Token>=</Token>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Fecha de ingreso debe ser mayor a actual&quot;</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable></Condition></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>2</TableId>
+<TableName>Departamento</TableName>
+<Description>Departamento</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>2</TableId>
+<TableName>Departamento</TableName>
+<Description>Departamento</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute></AttributeTo>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>DepartamentoDescripcion</AttriName>
+<Description>Departamento Descripcion</Description></Attribute></Into></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>ClienteEdadFormula</AttriName>
+<Description>Cliente Edad Formula</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>ClienteEdad</AttriName>
+<Description>Cliente Edad</Description></Attribute>
+<Token>*</Token>
+<Token>2</Token></FormulaExpression></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Cliente Email does not match the specified pattern&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>ClienteEmail</AttriName>
+<Description>Cliente Email</Description></Attribute>
+<Token>.</Token>
+<Token>ismatch(</Token>
+<Sp></Sp>
+<Token>&quot;^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$&quot;</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>&quot;El campo apellido esta en blanco&quot;</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClienteApellido</AttriName>
+<Description>Cliente Apellido</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Ingrese el nombre del cliente&quot;</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ClienteNombre</AttriName>
+<Description>Cliente Nombre</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ClienteNombre</AttriName>
+<Description>Cliente Nombre</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClienteApellido</AttriName>
+<Description>Cliente Apellido</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>ClienteEmail</AttriName>
+<Description>Cliente Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>ClienteDireccion</AttriName>
+<Description>Cliente Direccion</Description></Attribute>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>ClienteObservacion</AttriName>
+<Description>Cliente Observacion</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>ClienteEdad</AttriName>
+<Description>Cliente Edad</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ClienteNombre</AttriName>
+<Description>Cliente Nombre</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClienteApellido</AttriName>
+<Description>Cliente Apellido</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>ClienteEmail</AttriName>
+<Description>Cliente Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>ClienteDireccion</AttriName>
+<Description>Cliente Direccion</Description></Attribute>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>ClienteObservacion</AttriName>
+<Description>Cliente Observacion</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>ClienteFechaIngreso</AttriName>
+<Description>Cliente Fecha Ingreso</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>ClienteEdad</AttriName>
+<Description>Cliente Edad</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>6</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></AttributeFrom></JoinCondition>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ClienteTelefonoId</AttriName>
+<Description>Cliente Telefono Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ClienteTelefonoId</AttriName>
+<Description>Cliente Telefono Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>ClienteTelefonoNumero</AttriName>
+<Description>Cliente Telefono Numero</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ClienteTelefonoDescripcion</AttriName>
+<Description>Cliente Telefono Descripcion</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>+</Token>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ClienteTelefonoId</AttriName>
+<Description>Cliente Telefono Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ClienteUltimoTelefonoId</AttriName>
+<Description>Cliente Ultimo Telefono Id</Description></Attribute>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>and</Token>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gxbscreen</VarName></Variable>
+<Token>=</Token>
+<Token>1</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneWithModeRules>
+<Rules></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ClienteTelefonoId</AttriName>
+<Description>Cliente Telefono Id</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>ClienteTelefonoNumero</AttriName>
+<Description>Cliente Telefono Numero</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ClienteTelefonoDescripcion</AttriName>
+<Description>Cliente Telefono Descripcion</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>ClienteTelefonoNumero</AttriName>
+<Description>Cliente Telefono Numero</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ClienteTelefonoDescripcion</AttriName>
+<Description>Cliente Telefono Descripcion</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>6</TableId>
+<TableName>ClienteTelefono</TableName>
+<Description>Telefono</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>12</ObjId>
+<ObjName>Gx0061</ObjName>
+<ObjPgmName>Gx0061</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ClienteTelefonoId</AttriName>
+<Description>Cliente Telefono Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>2</TableId>
+<TableName>Departamento</TableName>
+<Description>Departamento</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>Gx0020</ObjName>
+<ObjPgmName>Gx0020</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>DepartamentoCodigo</AttriName>
+<Description>Departamento Codigo</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>1</TableId>
+<TableName>Cliente</TableName>
+<Description>Cliente</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>Gx0010</ObjName>
+<ObjPgmName>Gx0010</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ClienteCi</AttriName>
+<Description>Cliente Ci</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

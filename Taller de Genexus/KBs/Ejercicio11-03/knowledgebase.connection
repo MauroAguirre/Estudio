@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_Ejercicio11-03</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>DESKTOP-K35EAMP\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>E:\Estudio\Taller de Genexus\KBs\Ejercicio11-03</Directory>
+	<DataFile>GX_KB_Ejercicio11-03.mdf</DataFile>
+	<LogFile>GX_KB_Ejercicio11-03_log.ldf</LogFile>
+	<HostName>DESKTOP-K35EAMP</HostName>
+</ConnectionInformation>

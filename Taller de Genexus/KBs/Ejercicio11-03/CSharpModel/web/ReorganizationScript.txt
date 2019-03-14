@@ -1,0 +1,20 @@
+CREATE TABLE [GXA0003] ([EstudianteNumero]  smallint NOT NULL , [EstudiantePersonaId]  smallint NOT NULL )
+Run conversion program for table Estudiante
+DROP TABLE [Estudiante]
+sp_rename '[GXA0003]', 'Estudiante'
+ALTER TABLE [Estudiante] ADD PRIMARY KEY([EstudianteNumero])
+INSERT INTO [Persona] ([PersonaId], [PersonaNombre]) SELECT TOP 1 convert(int, 0), '' FROM [Estudiante] WHERE NOT EXISTS (SELECT 1 FROM [Persona] WHERE PersonaId=convert(int, 0))
+CREATE NONCLUSTERED INDEX [IESTUDIANTE1] ON [Estudiante] ([EstudiantePersonaId] )
+
+CREATE TABLE [Funcionario] ([FuncionarioNinos]  smallint NOT NULL , [FuncionarioPersonaId]  smallint NOT NULL , PRIMARY KEY([FuncionarioNinos]))
+CREATE NONCLUSTERED INDEX [IFUNCIONARIO1] ON [Funcionario] ([FuncionarioPersonaId] )
+
+CREATE TABLE [Profesor] ([ProfesorNumero]  smallint NOT NULL , [ProfesorPersonaId]  smallint NOT NULL , PRIMARY KEY([ProfesorNumero]))
+CREATE NONCLUSTERED INDEX [IPROFESOR1] ON [Profesor] ([ProfesorPersonaId] )
+
+ALTER TABLE [Profesor] ADD CONSTRAINT [IPROFESOR1] FOREIGN KEY ([ProfesorPersonaId]) REFERENCES [Persona] ([PersonaId])
+
+ALTER TABLE [Funcionario] ADD CONSTRAINT [IFUNCIONARIO1] FOREIGN KEY ([FuncionarioPersonaId]) REFERENCES [Persona] ([PersonaId])
+
+ALTER TABLE [Estudiante] ADD CONSTRAINT [IESTUDIANTE1] FOREIGN KEY ([EstudiantePersonaId]) REFERENCES [Persona] ([PersonaId])
+

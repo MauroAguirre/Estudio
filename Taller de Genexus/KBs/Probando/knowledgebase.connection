@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_Probando</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>DESKTOP-K35EAMP\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>E:\Estudio\Taller de Genexus\KBs\Probando</Directory>
+	<DataFile>GX_KB_Probando.mdf</DataFile>
+	<LogFile>GX_KB_Probando_log.ldf</LogFile>
+	<HostName>DESKTOP-K35EAMP</HostName>
+</ConnectionInformation>

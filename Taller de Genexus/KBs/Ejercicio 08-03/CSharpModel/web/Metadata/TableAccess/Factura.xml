@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="7aad691b-3447-4945-9588-e7a57772c661">
+  <Table name="Cliente" />
+  <Table name="FacturaArticulo" />
+</Dependencies>

@@ -1,0 +1,12 @@
+lng_i(1,[ 'English','English',eng ]).
+ 
+lng_prop_i(1,'ISOLangCode','EN',v).
+lng_prop_i(1,'ISOCountryCode','US',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','ENG',v).
+lng_prop_i(1,'LangTimeFormat','12',v).
+lng_prop_i(1,'LangDecimalPoint','.',v).
+lng_prop_i(1,'FullyQualifiedName','English',d).
+ 
+ 

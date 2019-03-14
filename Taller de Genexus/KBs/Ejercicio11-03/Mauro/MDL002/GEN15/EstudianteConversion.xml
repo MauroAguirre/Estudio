@@ -1,0 +1,207 @@
+
+<ReorgSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Table>
+<TableId>3</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>Estudiante needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>EstudianteNumero</AttriName>
+<Description>Estudiante Numero</Description>
+<TakesValueFrom>
+<Table>
+<TableId>3</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>EstudianteNumero</AttriName>
+<Description>Estudiante Numero</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudiantePersonaId</AttriName>
+<Description>Estudiante Persona Id</Description>
+<TakesValueFrom>
+<FromValue>
+<Token>0</Token></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>ni</AttriChangeType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PersonaEstudianteId</AttriName>
+<Description>Persona Estudiante Id</Description>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>del</AttriChangeType></Attribute></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>3</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>EstudianteNumero</AttriName>
+<Description>Estudiante Numero</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IESTUDIANTE</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>EstudianteNumero</AttriName>
+<Description>Estudiante Numero</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index></Indices>
+<NewIndices>
+<Index>
+<IndexName>IESTUDIANTE1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudiantePersonaId</AttriName>
+<Description>Estudiante Persona Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></NewIndices>
+<IndicesToDelete>
+<Index>
+<IndexName>IESTUDIANTE1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PersonaEstudianteId</AttriName>
+<Description>Persona Estudiante Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></IndicesToDelete></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>new</ChangeType>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudiantePersonaId</AttriName>
+<Description>Estudiante Persona Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>rmv</ChangeType>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PersonaEstudianteId</AttriName>
+<Description>Persona Estudiante Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>CREATE TABLE [GXA0003] ([EstudianteNumero]  smallint NOT NULL , [EstudiantePersonaId]  smallint NOT NULL ) </Statement>
+<Statement>Run conversion program for table Estudiante</Statement>
+<Statement>DROP TABLE [Estudiante]</Statement>
+<Statement>CALL sp_rename('[GXA0003]', 'Estudiante')</Statement>
+<Statement>ALTER TABLE [Estudiante] ADD PRIMARY KEY([EstudianteNumero])</Statement>
+<Statement>INSERT INTO [Persona] ([PersonaId], [PersonaNombre]) SELECT TOP 1 convert(int, 0), '' FROM [Estudiante] WHERE NOT EXISTS (SELECT 1 FROM [Persona] WHERE PersonaId=convert(int, 0))</Statement>
+<Statement>CREATE NONCLUSTERED INDEX [IESTUDIANTE1] ON [Estudiante] ([EstudiantePersonaId] )</Statement>
+<Statement>ALTER TABLE [Estudiante] ADD CONSTRAINT [IESTUDIANTE1] FOREIGN KEY ([EstudiantePersonaId]) REFERENCES [Persona] ([PersonaId])</Statement></Statements>
+<NeedReorganizationProgram>True</NeedReorganizationProgram>
+<Warnings>
+<Warning>
+<MsgCode>rgz0007</MsgCode>
+<Message>
+<Token>Attribute </Token>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudiantePersonaId</AttriName>
+<Description>Estudiante Persona Id</Description></Attribute>
+<Token> does not allow nulls and does not have an Initial Value. An empty default value will be used.</Token></Message></Warning>
+<Warning>
+<MsgCode>rgo0002</MsgCode>
+<Message>
+<Token>Table '</Token>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description></Table>
+<Token>' is referenced by table '</Token>
+<Table>
+<TableId>3</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<Token>' and at least one attribute in its foreign key (</Token>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudiantePersonaId</AttriName>
+<Description>Estudiante Persona Id</Description></Attribute>
+<Token>) does not allow nulls. A default record will be added if table '</Token>
+<Table>
+<TableId>3</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<Token>' has records and a record with default values does not exist in table '</Token>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description></Table>
+<Token>'.</Token></Message></Warning></Warnings>
+<Errors></Errors></ReorgSpec>

@@ -1,0 +1,19 @@
+20190311.224820
+P00023
+P00056
+P00056
+P00056
+P00045
+P00056
+P00056
+P00012
+P00067
+ CREATE TABLE [GXA0001] ([FacturaNumero]  smallint NOT NULL , [FacturaFecha]  datetime NOT NULL , [ClienteId]  smallint NOT NULL )  
+ INSERT INTO [GXA0001] ([FacturaNumero], [FacturaFecha], [ClienteId]) SELECT [FacturaNumero], [FacturaFecha], [ClienteId] FROM [Cliente] T1 
+ DROP TABLE [Cliente1] 
+ALTER TABLE [FacturaArticulo] DROP CONSTRAINT IFACTURAARTICULO1
+sp_rename
+P00067
+ ALTER TABLE [Cliente1] DROP COLUMN [FacturaFecha], [FacturaNumero] 
+ DROP TABLE [Cliente] 
+sp_rename

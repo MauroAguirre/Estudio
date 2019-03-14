@@ -1,0 +1,34 @@
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+  <Charset>UTF-8</Charset>
+  <Path>file:///E:/Genexus/</Path>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Producto</ObjName>
+    <ObjDesc>Producto</ObjDesc>
+    <ObjLink>producto.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Persona</ObjName>
+    <ObjDesc>Persona</ObjDesc>
+    <ObjLink>persona.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Estudiante</ObjName>
+    <ObjDesc>Estudiante</ObjDesc>
+    <ObjLink>estudiante.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Profesor</ObjName>
+    <ObjDesc>Profesor</ObjDesc>
+    <ObjLink>profesor.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>Funcionario</ObjName>
+    <ObjDesc>Funcionario</ObjDesc>
+    <ObjLink>funcionario.aspx</ObjLink>
+  </Object>
+</Objects>

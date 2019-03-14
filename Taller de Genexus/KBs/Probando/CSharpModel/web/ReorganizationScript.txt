@@ -1,0 +1,3 @@
+ALTER TABLE [Cliente] ADD [ClienteEdad]  smallint NOT NULL CONSTRAINT ClienteEdadCliente_DEFAULT DEFAULT convert(int, 0)
+ALTER TABLE [Cliente] DROP CONSTRAINT ClienteEdadCliente_DEFAULT
+

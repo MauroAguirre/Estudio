@@ -1,0 +1,97 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>10</ObjId>
+<ObjName>RPT_Personas</ObjName>
+<ObjDesc>RPT_Personas</ObjDesc>
+<ObjPgmName>RPT_Personas</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0038</MsgCode>
+<Message>
+<Token>There is no index for order </Token>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>PersonaNombre</AttriName>
+<Description>Persona Nombre</Description></Attribute>
+<Token>; poor performance may be noticed</Token>
+<Token> in group starting at line </Token>
+<Token>2</Token>
+<Token></Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>File</Device></OutputDevices>
+<Main>Yes</Main>
+<CallProtocol>HTTP</CallProtocol>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>6</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>PersonaNombre</AttriName>
+<Description>Persona Nombre</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>PersonaId</AttriName>
+<Description>Persona Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;</Token>
+<Sp></Sp>
+<Token>2</Token></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Persona</TableName>
+<Description>Persona</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>PersonaId</AttriName>
+<Description>Persona Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>PersonaId</AttriName>
+<Description>Persona Id</Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>PersonaNombre</AttriName>
+<Description>Persona Nombre</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

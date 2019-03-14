@@ -1,0 +1,18 @@
+<Objects>
+  <Object>
+    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
+    <Id>1</Id>
+    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+  </Object>
+  <Object>
+    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
+    <Id>2</Id>
+    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+  </Object>
+  <Recent>
+    <RecentKBObjectsList>
+      <MaximumItems>10</MaximumItems>
+      <RecentKBObjects />
+    </RecentKBObjectsList>
+  </Recent>
+</Objects>
