@@ -1,4 +1,4 @@
-spec_i([ proc,0,'Stub for RPT_Personas','RPT_Personas',80,eng,'15_0_12-126726' ]).
+spec_i([ proc,11,'Is Authorized','IsAuthorized',78,eng,'15_0_12-126726' ]).
  
  
  
@@ -15,6 +15,7 @@ spec_i([ proc,0,'Stub for RPT_Personas','RPT_Personas',80,eng,'15_0_12-126726' ]
  
  
  
+default_i(e('Output',2,2,'''FIL''')).
  
 rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
 rule_i(0,datastore(1,'LOCK_RETRY','10')).
@@ -69,10 +70,47 @@ rule_i(0,datastore(1,'HelpKeyword','20')).
 rule_i(0,datastore(1,'DBMS',12)).
 rule_i(0,datastore(1,'NAME','Default')).
 rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','IsAuthorized')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Security'))).
+rule_i(0,prop('ObjDesc','Is Authorized')).
+rule_i(0,prop('ObjName','IsAuthorized')).
 rule_i(0,maingen(15)).
-rule_i(0,parm([],[])).
-rule_i(0,parmio([])).
-rule_i(0,stub(proc)).
+rule_i(0,parm([ 'Gxobject','Authorized' ],[])).
+rule_i(0,parmio([ [ 'Gxobject',in ],[ 'Authorized',out ] ])).
+rule_i(0,output('FIL')).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
  
@@ -84,8 +122,11 @@ v_i(f,o,1,'Err').
  
  
  
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',12 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',11 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',10 ]).
+attri_i('Authorized',[ 'Authorized',boolean,4,0,'',0,'Authorized','',9 ]).
+attri_i('Gxobject',[ 'GxObject',svchar,256,0,'',0,'Gx Object','',8 ]).
  
  
  
@@ -113,13 +154,15 @@ attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
  
  
  
+dom_info_i(36,[ 'GeneXus\ObjectName' ]).
  
  
 break_i(1,rpt,0,[],[ [],[],[] ]).
  
 b_group_i(1,1,lit,0,1,0).
  
-b_line_i(1,1,1,cmd,1,[ t('',163,1,0),t('ARPT_Personas',3,1,0),t(15,3,1,0),t('',3,1,0),t(',',7,1,0),t(')',4,1,0) ]).
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',107,0,0),t('Authorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
  
  
  
@@ -130,6 +173,9 @@ page_layout_i([ 66,0,6 ]).
  
  
  
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
  
  
  
@@ -145,6 +191,21 @@ page_layout_i([ 66,0,6 ]).
  
  
  
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(13,12).
+ 
+ 
+ 
+ 
+var_prop_i(2,'Gxobject',idBasedOn,36,v).
  
  
  
@@ -153,32 +214,18 @@ page_layout_i([ 66,0,6 ]).
  
  
  
-calling_main_i(1,10).
  
  
  
  
  
+pgm_callprotocol_i(proc,11,'ISAUTHORIZED','INTERNAL').
  
  
  
  
- 
- 
- 
- 
- 
- 
- 
-pgm_parm_i(proc,10,'ARPT_PERSONAS',[],[]).
- 
-pgm_callprotocol_i(proc,0,'RPT_PERSONAS','INTERNAL').
-pgm_callprotocol_i(proc,10,'ARPT_PERSONAS','HTTP').
- 
- 
-pgm_main_info_i(proc,10,'RPT_PERSONAS',[ 15,'ARPT_PERSONAS','RPT_Personas','','','','HTTP' ]).
- 
- 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  
  
  

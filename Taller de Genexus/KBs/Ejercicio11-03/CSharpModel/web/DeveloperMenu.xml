@@ -17,12 +17,6 @@
    </Object>
    <Object>
       <ObjCls>0</ObjCls>
-      <ObjName>Estudiante</ObjName>
-      <ObjDesc>Estudiante</ObjDesc>
-      <ObjLink>estudiante.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>0</ObjCls>
       <ObjName>Profesor</ObjName>
       <ObjDesc>Profesor</ObjDesc>
       <ObjLink>profesor.aspx</ObjLink>
@@ -34,9 +28,15 @@
       <ObjLink>funcionario.aspx</ObjLink>
    </Object>
    <Object>
-      <ObjCls>1</ObjCls>
-      <ObjName>RPT_Personas</ObjName>
-      <ObjDesc>RPT_Personas</ObjDesc>
-      <ObjLink>arpt_personas.aspx</ObjLink>
+      <ObjCls>13</ObjCls>
+      <ObjName>Home</ObjName>
+      <ObjDesc>Home</ObjDesc>
+      <ObjLink>home.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWEstudiante</ObjName>
+      <ObjDesc>Estudiantes</ObjDesc>
+      <ObjLink>wwestudiante.aspx</ObjLink>
    </Object>
 </Objects>

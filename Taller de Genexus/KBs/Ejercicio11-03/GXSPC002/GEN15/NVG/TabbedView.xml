@@ -1,0 +1,54 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>14</ObjId>
+<ObjName>TabbedView</ObjName>
+<ObjDesc>Tabbed View</ObjDesc>
+<ObjPgmName>TabbedView</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Tabs</VarId>
+<VarName>&amp;Tabs</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Tabcode</VarId>
+<VarName>&amp;TabCode</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>Historymanager.Urlchanged</EventName></Event>
+<Event>
+<EventName>Refresh</EventName></Event>
+<Event>
+<EventName>'INIT'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'DRAW TABS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'FINDTABINDEX'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'SCROLLTABS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'LOADITEM'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

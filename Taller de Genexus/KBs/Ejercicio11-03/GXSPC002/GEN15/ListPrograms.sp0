@@ -1,0 +1,333 @@
+spec_i([ proc,12,'List Programs','ListPrograms',78,eng,'15_0_12-126726' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','…TrRL‘‚¸ˆF·|cJzK')).
+rule_i(0,datastore(1,'CC_USER_ID',uJjLBaz8dD7rSDrK)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Idb044a318d003042937e963463dd07681')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uÜHdTô@arÌBJÔDêGr[Ú<Tk')).
+rule_i(0,datastore(1,'USER_ID',uJjLBaz8dD7rSDrK)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Idb044a318d003042937e963463dd07681')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ListPrograms')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Web'))).
+rule_i(0,prop('ObjDesc','List Programs')).
+rule_i(0,prop('ObjName','ListPrograms')).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Programnames' ],[])).
+rule_i(0,parmio([ [ 'Programnames',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',15 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',14 ]).
+attri_i('Link',[ link,svchar,1000,0,'',0,link,'',13 ]).
+attri_i('Description',[ description,svchar,256,0,'',0,description,'',12 ]).
+attri_i('Name',[ name,svchar,256,0,'',0,name,'',11 ]).
+attri_i('Programname',[ 'ProgramName',o('ProgramNames.ProgramName'),0,0,'',0,'Program Name','',10 ]).
+attri_i('Programnames',[ 'ProgramNames',o(objectcollection('ProgramNames.ProgramName')),0,0,'',0,'Program Names','',9 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
+ 
+ 
+ 
+ 
+ 
+function_i(1,'Isauthorized',yes,udp,o(1,'IsAuthorized'),[],11,'Isauthorized',[ [ t('Name',23) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(36,[ 'GeneXus\ObjectName' ]).
+dom_info_i(15,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,9).
+b_group_i(1,2,lit,0,10,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,1,1,cmd,0,[ t('',107,0,0),t('Programnames',23,0,0),t(=,10,0,0),t([ 'ProgramNames',[ t('(',0,2,20),t(')',4,2,21) ],n ],46,0,0) ]).
+b_line_i(3,1,1,cmd,0,[]).
+b_line_i(4,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWEstudiante"',3,0,0) ]).
+b_line_i(5,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Estudiantes"',3,0,0) ]).
+b_line_i(6,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWEstudiante'),28,0,0),t(')',4,0,0) ]).
+b_line_i(7,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,7,4) ]).
+b_line_i(8,1,1,cmd,0,[]).
+b_line_i(9,1,1,cmd,0,[ t('',143,0,0),t('''ADDPROGRAM''',3,9,5) ]).
+b_line_i(10,1,2,cmd,0,[ t('',107,0,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(11,1,2,cmd,0,[ t('',107,0,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(11,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
+b_line_i(12,1,2,cmd,0,[ t('',109,0,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
+b_line_i(13,1,2,cmd,0,[ t('',107,0,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'ProgramNames.ProgramName',[ t('(',0,13,131),t(')',4,13,132) ],n ],46,0,0) ]).
+b_line_i(14,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
+b_line_i(15,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
+b_line_i(16,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
+b_line_i(17,1,2,cmd,0,[ t('',107,0,0),t([ t('Programnames',23,17,3),t('add(',1,17,17) ],31,17,3),t('Programname',23,0,22),t(')',4,0,34) ]).
+b_line_i(18,1,2,cmd,0,[ t('',111,0,0) ]).
+b_line_i(19,1,2,cmd,0,[ t('',144,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(13,12).
+ 
+ 
+ 
+ 
+var_prop_i(2,'Name',idBasedOn,36,v).
+var_prop_i(2,'Description',idBasedOn,36,v).
+var_prop_i(2,'Link',idBasedOn,15,v).
+var_prop_i(2,'Link','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(2,'Link','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,43,0 ],name,'ProgramNames').
+struct_dt_i([ 26,43,0 ],namespace,'Ejercicio1103').
+struct_dt_i([ 26,43,0 ],'ObjName','ProgramNames').
+struct_dt_i([ 26,43,0 ],'ObjDesc','Program Names').
+struct_dt_i([ 26,43,0 ],'ExternalName','ProgramNames').
+struct_dt_i([ 26,43,0 ],'ExternalNamespace','Ejercicio1103').
+struct_dt_i([ 26,43,0 ],collection,'True').
+struct_dt_i([ 26,43,0 ],datatype,[ 26,43,70 ]).
+struct_dt_i([ 26,43,70 ],name,'ProgramName').
+struct_dt_i([ 26,43,70 ],namespace,'Ejercicio1103.ProgramNames').
+struct_dt_i([ 26,43,0 ],fullname,'ProgramNames').
+struct_dt_i([ 26,43,70 ],fullname,'ProgramNames.ProgramName').
+struct_dt_i([ 26,43,0 ],modified,yes).
+struct_dt_i([ 26,43,70 ],modified,yes).
+ 
+struct_dt_elem_i([ 26,43,70 ],1,name,'Name').
+struct_dt_elem_i([ 26,43,70 ],1,camelname,'Name').
+struct_dt_elem_i([ 26,43,70 ],1,basedon,36).
+struct_dt_elem_i([ 26,43,70 ],1,length,256).
+struct_dt_elem_i([ 26,43,70 ],1,decimals,0).
+struct_dt_elem_i([ 26,43,70 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,43,70 ],1,pic,'').
+struct_dt_elem_i([ 26,43,70 ],1,collection,'False').
+struct_dt_elem_i([ 26,43,70 ],1,'ExternalName','Name').
+struct_dt_elem_i([ 26,43,70 ],1,'ExternalNamespace','Ejercicio1103').
+struct_dt_elem_i([ 26,43,70 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,43,70 ],1,'XmlName','').
+struct_dt_elem_i([ 26,43,70 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,43,70 ],1,soaptype,'').
+struct_dt_elem_i([ 26,43,70 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,43,70 ],1,'JsonName','').
+struct_dt_elem_i([ 26,43,70 ],2,name,'Description').
+struct_dt_elem_i([ 26,43,70 ],2,camelname,'Description').
+struct_dt_elem_i([ 26,43,70 ],2,length,255).
+struct_dt_elem_i([ 26,43,70 ],2,decimals,0).
+struct_dt_elem_i([ 26,43,70 ],2,type,[ 13,255,0 ]).
+struct_dt_elem_i([ 26,43,70 ],2,pic,'').
+struct_dt_elem_i([ 26,43,70 ],2,collection,'False').
+struct_dt_elem_i([ 26,43,70 ],2,'ExternalName','Description').
+struct_dt_elem_i([ 26,43,70 ],2,'ExternalNamespace','Ejercicio1103').
+struct_dt_elem_i([ 26,43,70 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,43,70 ],2,'XmlName','').
+struct_dt_elem_i([ 26,43,70 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,43,70 ],2,soaptype,'').
+struct_dt_elem_i([ 26,43,70 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,43,70 ],2,'JsonName','').
+struct_dt_elem_i([ 26,43,70 ],3,name,'Link').
+struct_dt_elem_i([ 26,43,70 ],3,camelname,'Link').
+struct_dt_elem_i([ 26,43,70 ],3,basedon,15).
+struct_dt_elem_i([ 26,43,70 ],3,length,1000).
+struct_dt_elem_i([ 26,43,70 ],3,decimals,0).
+struct_dt_elem_i([ 26,43,70 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,43,70 ],3,pic,'').
+struct_dt_elem_i([ 26,43,70 ],3,collection,'False').
+struct_dt_elem_i([ 26,43,70 ],3,'ExternalName','Link').
+struct_dt_elem_i([ 26,43,70 ],3,'ExternalNamespace','Ejercicio1103').
+struct_dt_elem_i([ 26,43,70 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,43,70 ],3,'XmlName','').
+struct_dt_elem_i([ 26,43,70 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,43,70 ],3,soaptype,'').
+struct_dt_elem_i([ 26,43,70 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,43,70 ],3,'JsonName','').
+struct_dt_elem_i([ 26,43,70 ],3,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,11,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
+pgm_parm_i(web,16,'WWESTUDIANTE',[],[]).
+ 
+pgm_callprotocol_i(proc,12,'LISTPROGRAMS','INTERNAL').
+pgm_callprotocol_i(proc,11,'ISAUTHORIZED','INTERNAL').
+pgm_callprotocol_i(web,16,'WWESTUDIANTE','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

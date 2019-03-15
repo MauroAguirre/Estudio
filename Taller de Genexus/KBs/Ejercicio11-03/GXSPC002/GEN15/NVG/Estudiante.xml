@@ -16,7 +16,17 @@
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
 <FormClass>HTML</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Estudiantenumero</VarId>
+<VarName>&amp;EstudianteNumero</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
@@ -117,24 +127,5 @@
 <AttriId>20</AttriId>
 <AttriName>EstudiantePersonaId</AttriName>
 <Description>Estudiante Persona Id</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt>
-<Prompt>
-<Table>
-<TableId>3</TableId>
-<TableName>Estudiante</TableName>
-<Description>Estudiante</Description></Table>
-<Object>
-<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
-<ObjCls>13</ObjCls>
-<ObjId>9</ObjId>
-<ObjName>Gx0030</ObjName>
-<ObjPgmName>Gx0030</ObjPgmName>
-<ObjClsName>Web Panel</ObjClsName></Object>
-<InputParameters></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>11</AttriId>
-<AttriName>EstudianteNumero</AttriName>
-<Description>Estudiante Numero</Description></Attribute></OutputParameters>
 <PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

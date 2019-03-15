@@ -2,7 +2,7 @@
                File: RPT_Personas
         Description: RPT_Personas
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/11/2019 22:6:10.17
+       Generated on: 3/14/2019 21:6:14.35
        Program type: Main program
           Main DBMS: SQL Server
 */
@@ -50,6 +50,10 @@ namespace GeneXus.Programs {
          {
             entryPointCalled = false;
             gxfirstwebparm = GetNextPar( );
+            if ( ! entryPointCalled )
+            {
+               AV8PersonaNombre = gxfirstwebparm;
+            }
          }
          if ( GxWebError == 0 )
          {
@@ -81,19 +85,32 @@ namespace GeneXus.Programs {
       {
       }
 
-      public void execute( )
+      public void execute( ref String aP0_PersonaNombre )
       {
+         this.AV8PersonaNombre = aP0_PersonaNombre;
          initialize();
          executePrivate();
+         aP0_PersonaNombre=this.AV8PersonaNombre;
       }
 
-      public void executeSubmit( )
+      public String executeUdp( )
+      {
+         this.AV8PersonaNombre = aP0_PersonaNombre;
+         initialize();
+         executePrivate();
+         aP0_PersonaNombre=this.AV8PersonaNombre;
+         return AV8PersonaNombre ;
+      }
+
+      public void executeSubmit( ref String aP0_PersonaNombre )
       {
          arpt_personas objarpt_personas;
          objarpt_personas = new arpt_personas();
+         objarpt_personas.AV8PersonaNombre = aP0_PersonaNombre;
          objarpt_personas.context.SetSubmitInitialConfig(context);
          objarpt_personas.initialize();
          ThreadPool.QueueUserWorkItem( PropagateCulture(new WaitCallback( executePrivateCatch )),objarpt_personas);
+         aP0_PersonaNombre=this.AV8PersonaNombre;
       }
 
       void executePrivateCatch( object stateInfo )
@@ -290,10 +307,12 @@ namespace GeneXus.Programs {
       private int Gx_OldLine ;
       private String GXKey ;
       private String gxfirstwebparm ;
+      private String AV8PersonaNombre ;
       private String scmdbuf ;
       private String A10PersonaNombre ;
       private bool entryPointCalled ;
       private IGxDataStore dsDefault ;
+      private String aP0_PersonaNombre ;
       private IDataStoreProvider pr_default ;
       private short[] P000A2_A9PersonaId ;
       private String[] P000A2_A10PersonaNombre ;

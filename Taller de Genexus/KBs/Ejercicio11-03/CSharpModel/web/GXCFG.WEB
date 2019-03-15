@@ -47,7 +47,7 @@
       <add  key="IE_COMPATIBILITY_VIEW" value="EmulateIE7"/>
       <add  key="DocumentType" value="HTML5"/>
       <add  key="SMART_CACHING" value="0"/>
-      <add  key="CACHE_INVALIDATION_TOKEN" value="20193112261046"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="20193142164745"/>
    </appSettings>
    <languages >
       <English  code="eng" time_fmt="12" decimal_point="." thousand_sep="," date_fmt="MDY" culture="en-US"/>

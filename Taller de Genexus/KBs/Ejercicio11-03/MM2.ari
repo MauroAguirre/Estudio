@@ -1,12 +1,9 @@
  
  
  
+pgm_main_i(web,12,'HOME',[ 15,'HOME','Home','','','','' ]).
 pgm_main_i(proc,10,'RPT_PERSONAS',[ 15,'ARPT_PERSONAS','RPT_Personas','','','','HTTP' ]).
  
-pgm_prop_i(proc,10,'ARPT_PERSONAS','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,10,'RPT_PERSONAS','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,10,'ARPT_PERSONAS','HTTP_PROTOCOL','Secure').
-pgm_prop_i(proc,10,'RPT_PERSONAS','HTTP_PROTOCOL','Secure').
 pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
 pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
 pgm_prop_i(web,2,'RECENTLINKS','HTTP_PROTOCOL','Secure').
@@ -28,9 +25,23 @@ pgm_prop_i(trn,2,'PERSONA','HTTP_PROTOCOL','Secure').
 pgm_prop_i(trn,5,'FUNCIONARIO','HTTP_PROTOCOL','Secure').
 pgm_prop_i(web,10,'GX0050','HTTP_PROTOCOL','Secure').
 pgm_prop_i(trn,4,'PROFESOR','HTTP_PROTOCOL','Secure').
-pgm_prop_i(trn,3,'ESTUDIANTE','HTTP_PROTOCOL','Secure').
 pgm_prop_i(web,9,'GX0030','HTTP_PROTOCOL','Secure').
 pgm_prop_i(web,11,'GX0040','HTTP_PROTOCOL','Secure').
+pgm_prop_i(trn,3,'ESTUDIANTE','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,14,'TABBEDVIEW','WEB_COMP','Yes').
+pgm_prop_i(web,14,'TABBEDVIEW','URLAccess','No').
+pgm_prop_i(web,14,'TABBEDVIEW','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,12,'HOME','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,15,'VIEWESTUDIANTE','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,16,'WWESTUDIANTE','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,13,'NOTAUTHORIZED','HTTP_PROTOCOL','Secure').
+pgm_prop_i(web,17,'ESTUDIANTEGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,17,'ESTUDIANTEGENERAL','URLAccess','No').
+pgm_prop_i(web,17,'ESTUDIANTEGENERAL','HTTP_PROTOCOL','Secure').
+pgm_prop_i(proc,10,'ARPT_PERSONAS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,10,'RPT_PERSONAS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,10,'ARPT_PERSONAS','HTTP_PROTOCOL','Secure').
+pgm_prop_i(proc,10,'RPT_PERSONAS','HTTP_PROTOCOL','Secure').
  
 model_wrkinfo_i([ '.Net Environment','CSharpModel' ]).
  

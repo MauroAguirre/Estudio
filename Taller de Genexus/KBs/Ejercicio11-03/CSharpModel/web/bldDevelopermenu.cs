@@ -55,6 +55,13 @@ public class bldDevelopermenu : GxBaseBuilder
       sc.Add( @"gx0030", "dll");
       sc.Add( @"gx0050", "dll");
       sc.Add( @"gx0040", "dll");
+      sc.Add( @"home", "dll");
+      sc.Add( @"home", "dll");
+      sc.Add( @"notauthorized", "dll");
+      sc.Add( @"tabbedview", "dll");
+      sc.Add( @"viewestudiante", "dll");
+      sc.Add( @"wwestudiante", "dll");
+      sc.Add( @"estudiantegeneral", "dll");
       sc.Add( @"producto", "dll");
       sc.Add( @"persona", "dll");
       sc.Add( @"estudiante", "dll");
@@ -87,6 +94,8 @@ public class bldDevelopermenu : GxBaseBuilder
          if (checkTime(obj, cs_path + @"\GxModelInfoProvider.cs" ))
             return true;
          if (checkTime(obj, cs_path + @"\genexus.programs.sdt.rsp" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINPage.cs" ))
             return true;
       }
       if ( obj == @"bin\messages.eng.dll" )

@@ -124,6 +124,8 @@ rule_i(0,prop('ObjDesc','RPT_Personas')).
 rule_i(0,prop('ObjName','RPT_Personas')).
 rule_i(0,maingen(15)).
 rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,parm([ 'Personanombre' ],[])).
+rule_i(0,parmio([ [ 'Personanombre',inout ] ])).
 rule_i(0,output_file(t('LasPeople',3),t('PDF',3))).
 rule_i(0,output('FIL')).
  
@@ -144,13 +146,14 @@ v_i(t,o,3,10).
  
  
  
-attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',7 ]).
-attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',6 ]).
-attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',5 ]).
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',14 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',13 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',12 ]).
 attri_i(9,[ 'PersonaId',int,4,0,'ZZZ9',0,'Persona Id','',0 ]).
 attri_i(10,[ 'PersonaNombre',char,20,0,'',0,'Persona Nombre','',0 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',10 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',9 ]).
+attri_i('Personanombre',[ 'PersonaNombre',char,20,0,'',0,'Persona Nombre','',8 ]).
  
 table_i(2,[ 'Persona',[ 9,10 ],'Persona','Persona' ]).
  
@@ -273,6 +276,7 @@ att_prop_i(2,9,'FullName','PersonaId',v).
 tbl_att_prop_i(2,2,9,'AllowNulls',n).
 tbl_att_prop_i(2,2,10,'AllowNulls',n).
  
+var_prop_i(2,'Personanombre',idBasedOn,'',v).
  
  
  

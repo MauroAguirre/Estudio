@@ -22,7 +22,7 @@ called_tree_i(1,0,1,10).
 ij_object_dependency(rpt_personas,[],[],[],0).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'String aP0_PersonaNombre' ],[ [ 'PersonaNombre',inout ] ]).
  
  
  

@@ -25,7 +25,7 @@ ij_main_object(arpt_personas,'RPT_Personas','','""','HTTP').
 ij_object_dependency(arpt_personas,[],[],[],10).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'String aP0_PersonaNombre' ],[ [ 'Personanombre',inout ] ]).
  
  
  

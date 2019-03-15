@@ -33,7 +33,12 @@
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
 <FormClass>Graphic</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Personanombre</VarId>
+<VarName>&amp;PersonaNombre</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelNumber>2</LevelNumber>

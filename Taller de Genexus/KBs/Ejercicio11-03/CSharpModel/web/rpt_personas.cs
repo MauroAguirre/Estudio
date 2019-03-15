@@ -2,7 +2,7 @@
                File: RPT_Personas
         Description: Stub for RPT_Personas
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/11/2019 22:6:10.33
+       Generated on: 3/14/2019 21:6:14.68
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -57,19 +57,32 @@ namespace GeneXus.Programs {
       {
       }
 
-      public void execute( )
+      public void execute( ref String aP0_PersonaNombre )
       {
+         this.AV2PersonaNombre = aP0_PersonaNombre;
          initialize();
          executePrivate();
+         aP0_PersonaNombre=this.AV2PersonaNombre;
       }
 
-      public void executeSubmit( )
+      public String executeUdp( )
+      {
+         this.AV2PersonaNombre = aP0_PersonaNombre;
+         initialize();
+         executePrivate();
+         aP0_PersonaNombre=this.AV2PersonaNombre;
+         return AV2PersonaNombre ;
+      }
+
+      public void executeSubmit( ref String aP0_PersonaNombre )
       {
          rpt_personas objrpt_personas;
          objrpt_personas = new rpt_personas();
+         objrpt_personas.AV2PersonaNombre = aP0_PersonaNombre;
          objrpt_personas.context.SetSubmitInitialConfig(context);
          objrpt_personas.initialize();
          ThreadPool.QueueUserWorkItem( PropagateCulture(new WaitCallback( executePrivateCatch )),objrpt_personas);
+         aP0_PersonaNombre=this.AV2PersonaNombre;
       }
 
       void executePrivateCatch( object stateInfo )
@@ -89,8 +102,12 @@ namespace GeneXus.Programs {
       {
          /* GeneXus formulas */
          /* Output device settings */
-         args = new Object[] {} ;
+         args = new Object[] {(String)AV2PersonaNombre} ;
          ClassLoader.Execute("arpt_personas","GeneXus.Programs","arpt_personas", new Object[] {context }, "execute", args);
+         if ( ( args != null ) && ( args.Length == 1 ) )
+         {
+            AV2PersonaNombre = (String)(args[0]) ;
+         }
          this.cleanup();
       }
 
@@ -113,7 +130,9 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
+      private String AV2PersonaNombre ;
       private IGxDataStore dsDefault ;
+      private String aP0_PersonaNombre ;
       private Object[] args ;
    }
 

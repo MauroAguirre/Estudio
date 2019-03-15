@@ -3,9 +3,11 @@ current_obj_i(2,trn,3).
 current_guid('cd1f9728-d6a7-4915-9eca-b57ea3af2209').
  
  
+called_tree_i(0,3,1,11).
 called_tree_i(0,3,13,4).
 called_tree_i(0,3,13,8).
-called_tree_i(0,3,13,9).
+called_tree_i(0,3,13,13).
+called_tree_i(0,3,13,16).
  
  
  
@@ -25,10 +27,12 @@ called_tree_i(0,3,13,9).
 ij_object_dependency(estudiante,[],[],[],3).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'String aP0_Gx_mode','short aP1_EstudianteNumero' ],[ [ 'Mode',in ],[ 'Estudiantenumero',in ] ]).
  
  
  
  
  
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

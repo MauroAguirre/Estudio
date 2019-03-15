@@ -67,6 +67,8 @@ public class bldarpt_personas : GxBaseBuilder
             return true;
          if (checkTime(obj, cs_path + @"\genexus.programs.sdt.rsp" ))
             return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINPage.cs" ))
+            return true;
       }
       if ( obj == @"bin\messages.eng.dll" )
       {
