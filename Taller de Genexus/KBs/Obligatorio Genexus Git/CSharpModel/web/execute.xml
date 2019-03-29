@@ -1,0 +1,52 @@
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+  <Charset>UTF-8</Charset>
+  <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus15Trial/</Path>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>Home</ObjName>
+    <ObjDesc>Home</ObjDesc>
+    <ObjLink>home.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWActividad</ObjName>
+    <ObjDesc>Actividads</ObjDesc>
+    <ObjLink>wwactividad.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWCarne</ObjName>
+    <ObjDesc>Carnes</ObjDesc>
+    <ObjLink>wwcarne.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWClase</ObjName>
+    <ObjDesc>Clases</ObjDesc>
+    <ObjLink>wwclase.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWProfesor</ObjName>
+    <ObjDesc>Profesors</ObjDesc>
+    <ObjLink>wwprofesor.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWSocio</ObjName>
+    <ObjDesc>Socios</ObjDesc>
+    <ObjLink>wwsocio.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>IngresarCliente</ObjName>
+    <ObjDesc>Ingresar Cliente</ObjDesc>
+    <ObjLink>ingresarcliente.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>Inicio</ObjName>
+    <ObjDesc>Inicio</ObjDesc>
+    <ObjLink>inicio.aspx</ObjLink>
+  </Object>
+</Objects>

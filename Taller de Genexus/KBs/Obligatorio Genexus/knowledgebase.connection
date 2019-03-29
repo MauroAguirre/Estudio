@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_Obligatorio Genexus</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>DESKTOP-IG7F1RQ\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>E:\Estudio\Taller de Genexus\KBs\Obligatorio Genexus</Directory>
+	<DataFile>GX_KB_Obligatorio Genexus.mdf</DataFile>
+	<LogFile>GX_KB_Obligatorio Genexus_log.ldf</LogFile>
+	<HostName>DESKTOP-IG7F1RQ</HostName>
+</ConnectionInformation>

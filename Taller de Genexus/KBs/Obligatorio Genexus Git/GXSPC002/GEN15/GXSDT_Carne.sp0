@@ -1,0 +1,57 @@
+ 
+spec_i([ sdt,[ 0,3,0 ],'Carne','Carne',0,eng,'15_0_12-126726' ]).
+ 
+struct_dt_i([ 0,3,0 ],name,'Carne').
+struct_dt_i([ 0,3,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],significantName,'Carne').
+struct_dt_i([ 0,3,0 ],'ObjName','Carne').
+struct_dt_i([ 0,3,0 ],'ObjDesc','Carne').
+struct_dt_i([ 0,3,0 ],'ExternalName','Carne').
+struct_dt_i([ 0,3,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],key,[ 4 ]).
+struct_dt_i([ 0,3,0 ],lvl,5).
+struct_dt_i([ 0,3,0 ],fullname,'Carne').
+ 
+struct_dt_elem_i([ 0,3,0 ],1,name,'Carneid').
+struct_dt_elem_i([ 0,3,0 ],1,camelname,'CarneId').
+struct_dt_elem_i([ 0,3,0 ],1,basedon,66).
+struct_dt_elem_i([ 0,3,0 ],1,length,4).
+struct_dt_elem_i([ 0,3,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],1,sign,0).
+struct_dt_elem_i([ 0,3,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,3,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,3,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],1,attributeid,'4').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalName','CarneId').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,3,0 ],2,name,'Carnefechaingreso').
+struct_dt_elem_i([ 0,3,0 ],2,camelname,'CarneFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,length,8).
+struct_dt_elem_i([ 0,3,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],2,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],2,pic,'99/99/99').
+struct_dt_elem_i([ 0,3,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],2,attributeid,'22').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalName','CarneFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,3,0 ],3,name,'Socioid').
+struct_dt_elem_i([ 0,3,0 ],3,camelname,'SocioId').
+struct_dt_elem_i([ 0,3,0 ],3,length,4).
+struct_dt_elem_i([ 0,3,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],3,sign,0).
+struct_dt_elem_i([ 0,3,0 ],3,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,3,0 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,3,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],3,attributeid,'5').
+struct_dt_elem_i([ 0,3,0 ],3,'ExternalName','SocioId').
+struct_dt_elem_i([ 0,3,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').

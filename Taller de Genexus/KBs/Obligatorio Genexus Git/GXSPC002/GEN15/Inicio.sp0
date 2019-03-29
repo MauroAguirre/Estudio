@@ -1,0 +1,381 @@
+spec_i([ web,31,'Inicio','Inicio',0,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Inicio')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Inicio')).
+rule_i(0,prop('ObjName','Inicio')).
+rule_i(0,maingen(15)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,rule([ a(22,[ '''clase''','''clase''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Profesores''','''Profesores''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Carne''','''Carne''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Actividad''','''Actividad''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Socio''','''Socio''','' ]) ],[],[],[])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,5).
+b_group_i(2,3,lit,0,6,9).
+b_group_i(2,4,lit,0,10,13).
+b_group_i(2,5,lit,0,14,17).
+b_group_i(2,6,lit,0,18,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('''clase''',3,1,7) ]).
+b_line_i(2,2,2,cmd,1,[ t('',104,1,0),t(o(13,'WWClase'),28,1,2) ]).
+b_line_i(3,2,2,cmd,1,[ t('',147,1,0) ]).
+b_line_i(5,2,2,cmd,1,[ t('',146,1,0),t('''Profesores''',3,5,7) ]).
+b_line_i(6,2,3,cmd,1,[ t('',104,1,0),t(o(13,'WWProfesor'),28,1,2) ]).
+b_line_i(7,2,3,cmd,1,[ t('',147,1,0) ]).
+b_line_i(9,2,3,cmd,1,[ t('',146,1,0),t('''Carne''',3,9,7) ]).
+b_line_i(10,2,4,cmd,1,[ t('',104,1,0),t(o(13,'WWCarne'),28,1,2) ]).
+b_line_i(11,2,4,cmd,1,[ t('',147,1,0) ]).
+b_line_i(13,2,4,cmd,1,[ t('',146,1,0),t('''Actividad''',3,13,7) ]).
+b_line_i(14,2,5,cmd,1,[ t('',104,1,0),t(o(13,'WWActividad'),28,1,2) ]).
+b_line_i(15,2,5,cmd,1,[ t('',147,1,0) ]).
+b_line_i(17,2,5,cmd,1,[ t('',146,1,0),t('''Socio''',3,17,7) ]).
+b_line_i(18,2,6,cmd,1,[ t('',104,1,0),t(o(13,'WWSocio'),28,1,2) ]).
+b_line_i(19,2,6,cmd,1,[ t('',147,1,0) ]).
+b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,html('<p></p>')).
+html_i(3,table(3)).
+ 
+html_sub_i(3,0,html_i(0,html('<tbody>'))).
+html_sub_i(3,4,html_i(1,row(4))).
+html_sub_i(4,5,html_i(0,cell(5))).
+html_sub_i(5,6,html_i(0,button('''Profesores'''))).
+html_sub_i(4,7,html_i(1,cell(7))).
+html_sub_i(7,8,html_i(0,button('''clase'''))).
+html_sub_i(4,9,html_i(2,cell(9))).
+html_sub_i(9,10,html_i(0,button('''Carne'''))).
+html_sub_i(3,11,html_i(2,row(11))).
+html_sub_i(11,12,html_i(0,cell(12))).
+html_sub_i(12,13,html_i(0,button('''Actividad'''))).
+html_sub_i(11,14,html_i(1,cell(14))).
+html_sub_i(14,15,html_i(0,button('''Socio'''))).
+html_sub_i(11,16,html_i(2,cell(16))).
+html_sub_i(3,17,html_i(3,row(17))).
+html_sub_i(17,18,html_i(0,cell(18))).
+html_sub_i(17,19,html_i(1,cell(19))).
+html_sub_i(17,20,html_i(2,cell(20))).
+html_sub_i(3,0,html_i(4,html('</tbody>'))).
+ 
+html_tags_i(1,'Class','Form').
+ 
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Id','Table1',v,[ str ]).
+html_comp_i(3,'Class','Table',v,[ str ]).
+html_comp_i(3,'Title','',d,[ str ]).
+html_comp_i(3,'Header','',d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Backgroundgx','',d,[ str ]).
+html_comp_i(3,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Border','0',d,[ str ]).
+html_comp_i(3,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Cellpadding','1',d,[ str ]).
+html_comp_i(3,'Cellspacing','2',d,[ str ]).
+html_comp_i(3,'Height',measure(50,'%'),v,[ measure ]).
+html_comp_i(3,'Width',measure(50,'%'),v,[ measure ]).
+html_comp_i(3,'Rules',none,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Controlname','Button1',v,[ str ]).
+html_comp_i(6,'Class','Button',d,[ str ]).
+html_comp_i(6,'Event','''Profesores''',v,[ str ]).
+html_comp_i(6,'Caption','Profesores',d,[ str ]).
+html_comp_i(6,'Title','Profesores',d,[ str ]).
+html_comp_i(6,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(6,'Border','2',d,[ str ]).
+html_comp_i(6,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Controlname','Button2',v,[ str ]).
+html_comp_i(8,'Class','Button',d,[ str ]).
+html_comp_i(8,'Event','''clase''',v,[ str ]).
+html_comp_i(8,'Caption','Clase',d,[ str ]).
+html_comp_i(8,'Title','Clase',d,[ str ]).
+html_comp_i(8,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(8,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(8,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(8,'Border','2',d,[ str ]).
+html_comp_i(8,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(8,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Controlname','Button3',v,[ str ]).
+html_comp_i(10,'Class','Button',d,[ str ]).
+html_comp_i(10,'Event','''Carne''',v,[ str ]).
+html_comp_i(10,'Caption','Carne',d,[ str ]).
+html_comp_i(10,'Title','Carne',d,[ str ]).
+html_comp_i(10,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(10,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(10,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(10,'Border','2',d,[ str ]).
+html_comp_i(10,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(10,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(12,'Height',measure(136,px),v,[ measure ]).
+html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(13,'Controlname','Button4',v,[ str ]).
+html_comp_i(13,'Class','Button',d,[ str ]).
+html_comp_i(13,'Event','''Actividad''',v,[ str ]).
+html_comp_i(13,'Caption','Actividad',d,[ str ]).
+html_comp_i(13,'Title','Actividad',d,[ str ]).
+html_comp_i(13,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(13,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(13,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(13,'Border','2',d,[ str ]).
+html_comp_i(13,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(13,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(15,'Controlname','Button5',v,[ str ]).
+html_comp_i(15,'Class','Button',d,[ str ]).
+html_comp_i(15,'Event','''Socio''',v,[ str ]).
+html_comp_i(15,'Caption','Socio',d,[ str ]).
+html_comp_i(15,'Title','Socio',d,[ str ]).
+html_comp_i(15,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(15,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(15,'Border','2',d,[ str ]).
+html_comp_i(15,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(15,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(18,'Height',measure(74,px),v,[ measure ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(6,1,button('''Profesores'''),[ ctlname('Button1'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(8,1,button('''clase'''),[ ctlname('Button2'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(10,1,button('''Carne'''),[ ctlname('Button3'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(13,1,button('''Actividad'''),[ ctlname('Button4'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(15,1,button('''Socio'''),[ ctlname('Button5'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(3,1,table(3),[ ctlname('Table1') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'''clase''',1,3,[ [],[] ]).
+sub_info_i(146,'''Profesores''',5,7,[ [],[] ]).
+sub_info_i(146,'''Carne''',9,11,[ [],[] ]).
+sub_info_i(146,'''Actividad''',13,15,[ [],[] ]).
+sub_info_i(146,'''Socio''',17,19,[ [],[] ]).
+ 
+pgm_parm_i(web,25,'WWSOCIO',[],[]).
+pgm_parm_i(web,10,'WWACTIVIDAD',[],[]).
+pgm_parm_i(web,15,'WWCARNE',[],[]).
+pgm_parm_i(web,21,'WWPROFESOR',[],[]).
+pgm_parm_i(web,18,'WWCLASE',[],[]).
+ 
+pgm_callprotocol_i(web,31,'INICIO','INTERNAL').
+pgm_callprotocol_i(web,25,'WWSOCIO','INTERNAL').
+pgm_callprotocol_i(web,10,'WWACTIVIDAD','INTERNAL').
+pgm_callprotocol_i(web,15,'WWCARNE','INTERNAL').
+pgm_callprotocol_i(web,21,'WWPROFESOR','INTERNAL').
+pgm_callprotocol_i(web,18,'WWCLASE','INTERNAL').
+ 
+ 
+pgm_main_info_i(web,31,'INICIO',[ 15,'INICIO','Inicio','','','','' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Optimize>true</Optimize>
+		<OutputPath>bin</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>0</WarningLevel>
+		<ProjectGuid>{Guid}</ProjectGuid>
+		<AssemblyName>{AssemblyName}</AssemblyName>
+		<OutputType>{OutputType}</OutputType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="GxClasses">
+			<HintPath>.\bin\GxClasses.dll</HintPath>
+		</Reference>
+		<Reference Include="GxExcelI">
+			<HintPath>.\bin\GxExcelI.dll</HintPath>
+		</Reference>
+		<Reference Include="GxMail">
+			<HintPath>.\bin\GxMail.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ServiceModel.Web" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System" />
+		<Reference Include="System.Web" />
+		<Reference Include="System.Web.Services" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Runtime.Serialization.dll" />
+		<Reference Include="System.ServiceModel.dll" />
+	</ItemGroup>
+	<ItemGroup>
+		{CompileItems}
+	</ItemGroup>
+	<ItemGroup>
+		{CommonProjectReference}
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+		<ItemGroup>
+			<ResourceFiles Include="messages.*.txt"/>
+		</ItemGroup>
+	<Target Name="BeforeBuild" Inputs="@(ResourceFiles)" Outputs="@(ResourceFiles -> '$(OutputPath)\%(Filename).dll')">
+		<GenerateResource  Sources="@(ResourceFiles)" OutputResources="@(ResourceFiles->'%(Filename).resources')">
+			<Output TaskParameter="OutputResources" ItemName="Resources"/>
+		</GenerateResource>
+		<Message  Importance="High" Text="Building @(Resources->'$(OutputPath)%(Filename).dll')" />
+
+		<AL EmbedResources="%(Resources.Identity)"  OutputAssembly="@(Resources->'$(OutputPath)\%(Filename).dll')"/>
+	</Target>
+	<Target Name="AfterBuild">
+		<ItemGroup>
+			<ConfigFiles Include="client.exe.config"/>
+		</ItemGroup>
+		<Copy SourceFiles="@(ConfigFiles)" DestinationFiles="@(ConfigFiles->'$(OutputPath)%(Filename)%(Extension)')"   />
+	</Target>
+	<Target Name="Info">
+		<Message Text="Configuration is $(Configuration)" />
+		<Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+	</Target>
+</Project>

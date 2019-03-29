@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="a9422294-5c2a-44c0-9327-02c8b7748197">
+  <Table name="Actividad1" />
+  <Table name="Profesor" />
+  <Table name="Clase" />
+</Dependencies>

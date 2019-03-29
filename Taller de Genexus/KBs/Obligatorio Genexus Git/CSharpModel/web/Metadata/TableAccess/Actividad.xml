@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="d3d6c998-0b94-46aa-8eb1-0c8788a07e61">
+  <Table name="Actividad1" />
+  <Table name="ActividadSocioEnActividad" />
+  <Table name="Profesor" />
+  <Table name="Socio" />
+</Dependencies>

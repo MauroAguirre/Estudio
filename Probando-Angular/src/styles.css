@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: wheat;
+    margin:5% 5% 5% 5% auto;
+    font-family: fantasy;
+}
+#sidebar{
+    background-color: blue;
+    height: 6%;
+    width: 6%;
+}
+

@@ -1,0 +1,95 @@
+
+<ReorgSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Table>
+<TableId>6</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>Clase is new</ReorgMsg>
+<ReorgAction>*</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>ICLASE</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>ICLASE1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>3</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>CREATE TABLE [Clase] ([ClaseId]  smallint NOT NULL , [ProfesorId]  smallint NOT NULL , PRIMARY KEY([ClaseId])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [ICLASE1] ON [Clase] ([ProfesorId] )</Statement>
+<Statement>ALTER TABLE [Clase] ADD CONSTRAINT [ICLASE1] FOREIGN KEY ([ProfesorId]) REFERENCES [Profesor] ([ProfesorId])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings></Warnings>
+<Errors></Errors></ReorgSpec>

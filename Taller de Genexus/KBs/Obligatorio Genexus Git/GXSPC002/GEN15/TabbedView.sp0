@@ -1,0 +1,553 @@
+spec_i([ web,9,'Tabbed View','TabbedView',0,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [ 'Tabs','Tabcode' ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+lits_i('Tabs',5,10).
+ 
+cls_i([ 5,10 ],[ 5,13 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','TabbedView')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','No')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('URLAccess','No')).
+rule_i(0,prop('WEB_COMP','Yes')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(8,'Web'))).
+rule_i(0,prop('ObjDesc','Tabbed View')).
+rule_i(0,prop('ObjName','TabbedView')).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Tabs','Tabcode' ],[])).
+rule_i(0,parmio([ [ 'Tabs',in ],[ 'Tabcode',in ] ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',25 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',24 ]).
+attri_i('Urlchangedevent',[ 'URLChangedEvent',boolean,4,0,'',0,'URLChanged Event','',23 ]).
+attri_i('Urlhash',[ 'URLHash',char,20,0,'',0,'URLHash','',22 ]).
+attri_i('Webcomponenturl',[ 'WebComponentUrl',svchar,1000,0,'',0,'Web Component Url','',21 ]).
+attri_i('Tabtemplate',[ 'TabTemplate',char,20,0,'',0,'Tab Template','',20 ]).
+attri_i('Tabsmarkup',[ 'TabsMarkup',char,20,0,'',0,'Tabs Markup','',19 ]).
+attri_i('Tabs',[ 'Tabs',o(objectcollection('TabOptions.TabOptionsItem')),0,0,'',0,'Tabs','',18 ]).
+attri_i('Tabrightcls',[ 'TabRightCls',char,20,0,'',0,'Tab Right Cls','',17 ]).
+attri_i('Tableftcls',[ 'TabLeftCls',char,20,0,'',0,'Tab Left Cls','',16 ]).
+attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',15 ]).
+attri_i('Tab',[ 'Tab',o('TabOptions.TabOptionsItem'),0,0,'',0,'Tab','',14 ]).
+attri_i('Selectedtab',[ 'SelectedTab',int,4,0,'ZZZ9',0,'Selected Tab','',13 ]).
+attri_i('Onclicktemplate',[ 'OnClickTemplate',char,20,0,'',0,'On Click Template','',12 ]).
+attri_i('Lasttab',[ 'LastTab',int,4,0,'ZZZ9',0,'Last Tab','',11 ]).
+attri_i('Isselectedtab',[ 'IsSelectedTab',boolean,4,0,'',0,'Is Selected Tab','',10 ]).
+attri_i('Isfirsttab',[ 'IsFirstTab',boolean,4,0,'',0,'Is First Tab','',9 ]).
+attri_i('Index',[ 'Index',int,4,0,'ZZZ9',0,'Index','',8 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',7 ]).
+attri_i('Found',[ 'Found',boolean,4,0,'',0,'Found','',6 ]).
+attri_i('Firsttab',[ 'FirstTab',int,4,0,'ZZZ9',0,'First Tab','',5 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(65,[ 'TabCode' ]).
+dom_info_i(15,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,5).
+b_group_i(2,3,lit,0,6,10).
+b_group_i(2,4,lit,0,11,16).
+b_group_i(2,5,lit,0,17,28).
+b_group_i(2,6,lit,0,29,42).
+b_group_i(2,7,lit,0,43,59).
+b_group_i(2,8,lit,0,60,67).
+b_group_i(2,9,lit,0,68,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(2,2,2,cmd,1,[ t('',145,1,0),t('''INIT''',3,2,12) ]).
+b_line_i(3,2,2,cmd,1,[ t('',147,1,0) ]).
+b_line_i(5,2,2,cmd,1,[ t('',146,1,0),t([ t('Historymanager',3,5,7),t('Urlchanged',3,5,22) ],29,5,22) ]).
+b_line_i(6,2,3,cmd,1,[ t('',145,1,0),t('''DRAW TABS''',3,6,12) ]).
+b_line_i(7,2,3,cmd,1,[ t('',107,1,0),t('Urlchangedevent',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(8,2,3,cmd,1,[ t('',147,1,0) ]).
+b_line_i(10,2,3,cmd,1,[ t('',146,1,0),t('Refresh',3,10,7) ]).
+b_line_i(11,2,4,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,12),t('Urlchangedevent',23,1,18) ]).
+b_line_i(12,2,4,cmd,1,[ t('',145,1,0),t('''DRAW TABS''',3,12,20) ]).
+b_line_i(13,2,4,cmd,1,[ t('',111,1,0) ]).
+b_line_i(14,2,4,cmd,1,[ t('',147,1,0) ]).
+b_line_i(16,2,4,cmd,1,[ t('',143,1,0),t('''INIT''',3,16,5) ]).
+b_line_i(17,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('''<li class="%1">''',3,1,0) ]).
+b_line_i(18,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''<a id="%2Tab" %3%7 class="%4">''',3,1,0) ]).
+b_line_i(19,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''<span class="%5">''',3,1,0) ]).
+b_line_i(20,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''<span class="TabBackground">''',3,1,0) ]).
+b_line_i(21,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''<span class="TabText">%6</span>''',3,1,0) ]).
+b_line_i(22,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''</span>''',3,1,0) ]).
+b_line_i(23,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''</span>''',3,1,0) ]).
+b_line_i(24,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''</a>''',3,1,0) ]).
+b_line_i(25,2,5,cmd,1,[ t('',107,1,0),t('Tabtemplate',23,1,0),t(=,10,1,0),t('Tabtemplate',23,1,0),t(+,5,1,0),t('''</li>''',3,1,0) ]).
+b_line_i(26,2,5,cmd,1,[ t('',144,1,0) ]).
+b_line_i(28,2,5,cmd,1,[ t('',143,1,0),t('''DRAW TABS''',3,28,5) ]).
+b_line_i(29,2,6,cmd,1,[ t('',145,1,0),t('''FINDTABINDEX''',3,29,12) ]).
+b_line_i(31,2,6,cmd,1,[ t('',145,1,0),t('''SCROLLTABS''',3,31,12) ]).
+b_line_i(32,2,6,cmd,1,[ t('',107,1,0),t('Isfirsttab',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(33,2,6,cmd,1,[ t('',107,1,0),t('Tabsmarkup',23,1,0),t(=,10,1,0),t('""',3,1,0) ]).
+b_line_i([ 34,0 ],2,6,cmd,1,[ t('',107,1,0),t('Index',23,1,0),t(=,10,1,0),t('Firsttab',23,1,0) ]).
+b_line_i(34,2,6,cmd,1,[ t('',114,1,0),t('Index',23,1,13),t(<=,10,1,9),t('Lasttab',23,1,35) ]).
+b_line_i(35,2,6,cmd,1,[ t('',107,1,0),t('Tab',23,1,0),t(=,10,1,0),t([ t('Tabs',23,1,0),t('item(',1,1,0) ],31,1,0),t('Index',23,1,0),t(')',4,1,0) ]).
+b_line_i(36,2,6,cmd,1,[ t('',145,1,0),t('''LOADITEM''',3,36,20) ]).
+b_line_i(37,2,6,cmd,1,[ t('',107,1,0),t('Isfirsttab',23,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i([ 38,0 ],2,6,cmd,1,[ t('',107,1,0),t('Index',23,1,0),t(=,10,1,0),t('Index',23,1,0),t(+,5,1,0),t('1',3,1,0) ]).
+b_line_i(38,2,6,cmd,1,[ t('',115,1,0) ]).
+b_line_i(39,2,6,cmd,1,[ t('',107,1,0),t([ t('Tabs',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('format(',1,1,0),t('''<ul class="Tabs">%1</ul>''',3,1,0),t(',',7,1,0),t('Tabsmarkup',23,1,0),t(')',4,1,0) ]).
+b_line_i(40,2,6,cmd,1,[ t('',144,1,0) ]).
+b_line_i(42,2,6,cmd,1,[ t('',143,1,0),t('''FINDTABINDEX''',3,42,5) ]).
+b_line_i(45,2,7,cmd,1,[ t('',107,1,0),t('Found',23,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i([ 46,0 ],2,7,cmd,1,[ t('',107,1,0),t('Index',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(46,2,7,cmd,1,[ t('',114,1,0),t('Index',23,1,13),t(<=,10,1,9),t([ t('Tabs',23,46,27),t('Count',3,46,33) ],29,46,33) ]).
+b_line_i(47,2,7,cmd,1,[ t('',109,1,0),t('(',0,1,20),t([ t('Historymanager',3,47,21),t('Hash',3,47,36) ],29,47,36),t(=,10,1,41),t('""',3,47,43),t('.AND.',9,1,46),t('(',0,1,52),t([ t('Tabs',23,47,53),[ t('item(',1,0,59),t('Index',23,0,65),t(')',4,0,71) ],t('Code',3,47,73) ],29,47,73),t(=,10,1,78),t('Tabcode',23,1,80),t(')',4,1,88),t(')',4,1,89),t('.OR.',9,1,91),t('(',0,1,96),t([ t('Tabs',23,47,97),[ t('item(',1,0,103),t('Index',23,0,109),t(')',4,0,115) ],t('Code',3,47,117) ],29,47,117),t(=,10,1,122),t([ t('Historymanager',3,47,124),t('Hash',3,47,139) ],29,47,139),t(')',4,1,143) ]).
+b_line_i(48,2,7,cmd,1,[ t('',107,1,0),t('Selectedtab',23,1,0),t(=,10,1,0),t('Index',23,1,0) ]).
+b_line_i(49,2,7,cmd,1,[ t('',107,1,0),t('Found',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(50,2,7,cmd,1,[ t('',140,1,0) ]).
+b_line_i(51,2,7,cmd,1,[ t('',111,1,0) ]).
+b_line_i([ 52,0 ],2,7,cmd,1,[ t('',107,1,0),t('Index',23,1,0),t(=,10,1,0),t('Index',23,1,0),t(+,5,1,0),t('1',3,1,0) ]).
+b_line_i(52,2,7,cmd,1,[ t('',115,1,0) ]).
+b_line_i(54,2,7,cmd,1,[ t('',109,1,0),t('(',0,1,12),t('.NOT.',8,1,13),t('Found',23,1,19),t('.AND.',9,1,26),t([ t('Tabs',23,54,32),t('Count',3,54,38) ],29,54,38),t(>,10,1,44),t('0',3,1,46),t(')',4,1,47) ]).
+b_line_i(55,2,7,cmd,1,[ t('',107,1,0),t('Selectedtab',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(56,2,7,cmd,1,[ t('',111,1,0) ]).
+b_line_i(57,2,7,cmd,1,[ t('',144,1,0) ]).
+b_line_i(59,2,7,cmd,1,[ t('',143,1,0),t('''SCROLLTABS''',3,59,5) ]).
+b_line_i(61,2,8,cmd,1,[ t('',107,1,0),t('Firsttab',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(62,2,8,cmd,1,[ t('',107,1,0),t('Lasttab',23,1,0),t(=,10,1,0),t([ t('Tabs',23,1,0),t('Count',3,1,0) ],29,1,0) ]).
+b_line_i(63,2,8,cmd,1,[ t('',107,1,0),t([ t('Tabprevious',3,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('0',3,1,0) ]).
+b_line_i(64,2,8,cmd,1,[ t('',107,1,0),t([ t('Tabnext',3,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('0',3,1,0) ]).
+b_line_i(65,2,8,cmd,1,[ t('',144,1,0) ]).
+b_line_i(67,2,8,cmd,1,[ t('',143,1,0),t('''LOADITEM''',3,67,5) ]).
+b_line_i(68,2,9,cmd,1,[ t('',107,1,0),t('Tableftcls',23,1,0),t(=,10,1,0),t('"TabLeft"',3,1,0) ]).
+b_line_i(69,2,9,cmd,1,[ t('',109,1,0),t('Index',23,1,12),t(=,10,1,19),t('Firsttab',23,1,21) ]).
+b_line_i(70,2,9,cmd,1,[ t('',107,1,0),t('Tableftcls',23,1,0),t(=,10,1,0),t('"TabFirst"',3,1,0) ]).
+b_line_i(71,2,9,cmd,1,[ t('',111,1,0) ]).
+b_line_i(73,2,9,cmd,1,[ t('',107,1,0),t('Tabrightcls',23,1,0),t(=,10,1,0),t('"TabRight"',3,1,0) ]).
+b_line_i(74,2,9,cmd,1,[ t('',109,1,0),t('Index',23,1,12),t(=,10,1,19),t('Lasttab',23,1,21) ]).
+b_line_i(75,2,9,cmd,1,[ t('',107,1,0),t('Tabrightcls',23,1,0),t(=,10,1,0),t('"TabLast"',3,1,0) ]).
+b_line_i(76,2,9,cmd,1,[ t('',111,1,0) ]).
+b_line_i(78,2,9,cmd,1,[ t('',109,1,0),t('Index',23,1,12),t(=,10,1,19),t('Selectedtab',23,1,21) ]).
+b_line_i(79,2,9,cmd,1,[ t('',107,1,0),t('Tabsmarkup',23,1,0),t(=,10,1,0),t('Tabsmarkup',23,1,0),t(+,5,1,0),t('format(',1,1,0),t('Tabtemplate',23,1,0),t(',',7,1,0),t('"Tab TabSelected"',3,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Code',3,1,0) ],29,1,0),t(',',7,1,0),t('""',3,1,0),t(',',7,1,0),t('Tableftcls',23,1,0),t(',',7,1,0),t('Tabrightcls',23,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Description',3,1,0) ],29,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(80,2,9,cmd,1,[ t('',107,1,0),t('Webcomponenturl',23,1,0),t(=,10,1,0),t([ t('Tab',23,1,0),t('Webcomponent',3,1,0) ],29,1,0) ]).
+b_line_i(81,2,9,cmd,1,[ t('',107,1,0),t([ t('Component',3,1,0),t('Object',3,1,0) ],29,1,0),t(=,10,1,0),t('createfromurl(',1,1,0),t('Webcomponenturl',23,1,0),t(')',4,1,0) ]).
+b_line_i(82,2,9,cmd,1,[ t('',110,1,0) ]).
+b_line_i(83,2,9,cmd,1,[ t('',107,1,0),t('Onclicktemplate',23,1,0),t(=,10,1,0),t(''' onclick="return HistoryManager.AddHistoryPoint(''',3,1,0),t(+,5,1,0),t('"''%1''"',3,1,0),t(+,5,1,0),t(''', false, event)"''',3,1,0) ]).
+b_line_i(84,2,9,cmd,1,[ t('',107,1,0),t('Tabsmarkup',23,1,0),t(=,10,1,0),t('Tabsmarkup',23,1,0),t(+,5,1,0),t('format(',1,1,0),t('Tabtemplate',23,1,0),t(',',7,1,0),t('"Tab"',3,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Code',3,1,0) ],29,1,0),t(',',7,1,0),t('format(',1,1,0),t('''href="%1"''',3,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Link',3,1,0) ],29,1,0),t(')',4,1,0),t(',',7,1,0),t('Tableftcls',23,1,0),t(',',7,1,0),t('Tabrightcls',23,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Description',3,1,0) ],29,1,0),t(',',7,1,0),t('format(',1,1,0),t('Onclicktemplate',23,1,0),t(',',7,1,0),t([ t('Tab',23,1,0),t('Code',3,1,0) ],29,1,0),t(')',4,1,0),t(')',4,1,0) ]).
+b_line_i(85,2,9,cmd,1,[ t('',111,1,0) ]).
+b_line_i(86,2,9,cmd,1,[ t('',144,1,0) ]).
+b_line_i(1000,2,9,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,9,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,9,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,table(2)).
+html_i(15,usercontrol(15)).
+ 
+html_sub_i(2,0,html_i(0,html('<tbody>'))).
+html_sub_i(2,3,html_i(1,row(3))).
+html_sub_i(3,4,html_i(0,cell(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,t('Tabs',3))).
+html_sub_i(5,7,html_i(1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-46'))).
+html_sub_i(5,8,html_i(2,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-47'))).
+html_sub_i(2,9,html_i(2,row(9))).
+html_sub_i(9,10,html_i(0,cell(10))).
+html_sub_i(10,11,html_i(0,table(11))).
+html_sub_i(11,0,html_i(0,html('<tbody>'))).
+html_sub_i(11,12,html_i(1,row(12))).
+html_sub_i(12,13,html_i(0,cell(13))).
+html_sub_i(13,14,html_i(0,comp(webcomp))).
+html_sub_i(11,0,html_i(2,html('</tbody>'))).
+html_sub_i(2,0,html_i(3,html('</tbody>'))).
+ 
+html_tags_i(1,'Class','Form').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Id','Table1',v,[ str ]).
+html_comp_i(2,'Class','ViewTable',v,[ str ]).
+html_comp_i(2,'Title','',d,[ str ]).
+html_comp_i(2,'Header','',d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Backgroundgx','',d,[ str ]).
+html_comp_i(2,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Border','0',d,[ str ]).
+html_comp_i(2,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Cellpadding','0',v,[ str ]).
+html_comp_i(2,'Cellspacing','0',v,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Rules',none,v,[ str ]).
+html_comp_i(3,'Valign',bottom,v,[ str ]).
+html_comp_i(4,'Valign',bottom,v,[ str ]).
+html_comp_i(4,'Height',measure(40,px),v,[ measure ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','TabContainer',v,[ str ]).
+html_comp_i(5,'Id','Tabcontainer',v,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Caption','Tabs',d,[ str ]).
+html_comp_i(6,'Id','Tabs',v,[ str ]).
+html_comp_i(6,'Class','',v,[ str ]).
+html_comp_i(6,'Event','',d,[ str ]).
+html_comp_i(6,'Returnonclick',0,d,[ bool ]).
+html_comp_i(6,'Gxformat',1,v,[ num ]).
+html_comp_i(6,'Title','',d,[ str ]).
+html_comp_i(6,'Fill',-1,d,[ bool ]).
+html_comp_i(6,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Font','',d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Id','Tabprevious',v,[ str ]).
+html_comp_i(7,'Class','TabPagingPrevious',v,[ str ]).
+html_comp_i(7,src,i(98,'23d403d6-d1e5-4c79-aab4-f073de218b70'),v,[ image ]).
+html_comp_i(7,lowsrc,'',d,[ str ]).
+html_comp_i(7,'Returnonclick',0,d,[ bool ]).
+html_comp_i(7,'Eventgx','',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Border','0',d,[ str ]).
+html_comp_i(7,'Alt','',d,[ str ]).
+html_comp_i(7,'Title','Previous Tab',v,[ str ]).
+html_comp_i(7,'Hspace',0,v,[ num ]).
+html_comp_i(7,'Vspace',0,d,[ num ]).
+html_comp_i(7,'Align',left,d,[ str ]).
+html_comp_i(7,'Usemap','',d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Id','Tabnext',v,[ str ]).
+html_comp_i(8,'Class','TabPagingNext',v,[ str ]).
+html_comp_i(8,src,i(98,'f12b6130-24bd-4bf1-be14-7f0779ca7d89'),v,[ image ]).
+html_comp_i(8,lowsrc,'',d,[ str ]).
+html_comp_i(8,'Returnonclick',0,d,[ bool ]).
+html_comp_i(8,'Eventgx','',d,[ str ]).
+html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Border','0',d,[ str ]).
+html_comp_i(8,'Alt','',d,[ str ]).
+html_comp_i(8,'Title','Next Tab',v,[ str ]).
+html_comp_i(8,'Hspace',0,v,[ num ]).
+html_comp_i(8,'Vspace',0,d,[ num ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Usemap','',d,[ str ]).
+html_comp_i(10,'Valign',top,v,[ str ]).
+html_comp_i(10,'Height',measure(39,px),v,[ measure ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Id','Table2',v,[ str ]).
+html_comp_i(11,'Class','TableBorder',v,[ str ]).
+html_comp_i(11,'Title','',d,[ str ]).
+html_comp_i(11,'Header','',d,[ str ]).
+html_comp_i(11,'Align',left,d,[ str ]).
+html_comp_i(11,'Backgroundgx','',d,[ str ]).
+html_comp_i(11,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Border','0',d,[ str ]).
+html_comp_i(11,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Cellpadding','0',v,[ str ]).
+html_comp_i(11,'Cellspacing','0',v,[ str ]).
+html_comp_i(11,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Rules',none,v,[ str ]).
+html_comp_i(13,'Valign',top,v,[ str ]).
+html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(14,'Controlname','Component',v,[ str ]).
+html_comp_i(14,'Params',[],d,[ params ]).
+html_comp_i(15,'Usercontroltype','HistoryManager',d,[ str ]).
+html_comp_i(15,'Constructorname','HistoryManager',d,[ str ]).
+html_comp_i(15,'Showmethodname',start,d,[ str ]).
+html_comp_i(15,'Controlname','HistoryManager',v,[ str ]).
+html_comp_i(15,'Visible',-1,d,[ bool ]).
+html_comp_i(15,'Csssupportfiles',[],d,[ params ]).
+html_comp_i(15,'Jssupportfiles',[],d,[ params ]).
+html_comp_i(15,'Csssharedsupportfiles',[],d,[ params ]).
+html_comp_i(15,'Jssharedsupportfiles',[ [ t('''Shared/HistoryManager\HistoryManager.js''',3) ],[ t('''Shared/HistoryManager\rsh\json2005.js''',3) ],[ t('''Shared/HistoryManager\rsh\rsh.js''',3) ],[ t('''Shared/HistoryManager\HistoryManagerCreate.js''',3) ] ],d,[ params ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(6,1,t('Tabs',3),[ ctlname('Tabs') ]).
+lit_i(7,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-46'),[ ctlname('Tabprevious') ]).
+lit_i(8,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-47'),[ ctlname('Tabnext') ]).
+lit_i(5,1,div(5),[ ctlname('Tabcontainer') ]).
+lit_i(14,1,comp(webcomp),[ ctlname('Component'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(11,1,table(11),[ ctlname('Table2') ]).
+lit_i(2,1,table(2),[ ctlname('Table1') ]).
+lit_i(15,1,usercontrol(15),[ ctlname('Historymanager'),ctrltype(historymanager),el([]),containers([]) ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+var_prop_i(2,'Tabcode',idBasedOn,65,v).
+var_prop_i(2,'Webcomponenturl',idBasedOn,15,v).
+var_prop_i(2,'Webcomponenturl','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(2,'Webcomponenturl','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,44,0 ],name,'TabOptions').
+struct_dt_i([ 26,44,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 26,44,0 ],'ObjName','TabOptions').
+struct_dt_i([ 26,44,0 ],'ObjDesc','Tab Options').
+struct_dt_i([ 26,44,0 ],'ExternalName','TabOptions').
+struct_dt_i([ 26,44,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 26,44,0 ],collection,'True').
+struct_dt_i([ 26,44,0 ],datatype,[ 26,44,71 ]).
+struct_dt_i([ 26,44,71 ],name,'TabOptionsItem').
+struct_dt_i([ 26,44,71 ],namespace,'ObligatorioGenexusGit.TabOptions').
+struct_dt_i([ 26,44,0 ],fullname,'TabOptions').
+struct_dt_i([ 26,44,71 ],fullname,'TabOptions.TabOptionsItem').
+struct_dt_i([ 26,44,0 ],modified,yes).
+struct_dt_i([ 26,44,71 ],modified,yes).
+ 
+struct_dt_elem_i([ 26,44,71 ],1,name,'Code').
+struct_dt_elem_i([ 26,44,71 ],1,camelname,'Code').
+struct_dt_elem_i([ 26,44,71 ],1,basedon,65).
+struct_dt_elem_i([ 26,44,71 ],1,length,50).
+struct_dt_elem_i([ 26,44,71 ],1,decimals,0).
+struct_dt_elem_i([ 26,44,71 ],1,type,[ 5,50,0 ]).
+struct_dt_elem_i([ 26,44,71 ],1,pic,'').
+struct_dt_elem_i([ 26,44,71 ],1,collection,'False').
+struct_dt_elem_i([ 26,44,71 ],1,'ExternalName','Code').
+struct_dt_elem_i([ 26,44,71 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,44,71 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,44,71 ],1,'XmlName','').
+struct_dt_elem_i([ 26,44,71 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,44,71 ],1,soaptype,'').
+struct_dt_elem_i([ 26,44,71 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,44,71 ],1,'JsonName','').
+struct_dt_elem_i([ 26,44,71 ],2,name,'Description').
+struct_dt_elem_i([ 26,44,71 ],2,camelname,'Description').
+struct_dt_elem_i([ 26,44,71 ],2,length,255).
+struct_dt_elem_i([ 26,44,71 ],2,decimals,0).
+struct_dt_elem_i([ 26,44,71 ],2,type,[ 13,255,0 ]).
+struct_dt_elem_i([ 26,44,71 ],2,pic,'').
+struct_dt_elem_i([ 26,44,71 ],2,collection,'False').
+struct_dt_elem_i([ 26,44,71 ],2,'ExternalName','Description').
+struct_dt_elem_i([ 26,44,71 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,44,71 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,44,71 ],2,'XmlName','').
+struct_dt_elem_i([ 26,44,71 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,44,71 ],2,soaptype,'').
+struct_dt_elem_i([ 26,44,71 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,44,71 ],2,'JsonName','').
+struct_dt_elem_i([ 26,44,71 ],3,name,'Link').
+struct_dt_elem_i([ 26,44,71 ],3,camelname,'Link').
+struct_dt_elem_i([ 26,44,71 ],3,basedon,15).
+struct_dt_elem_i([ 26,44,71 ],3,length,1000).
+struct_dt_elem_i([ 26,44,71 ],3,decimals,0).
+struct_dt_elem_i([ 26,44,71 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,44,71 ],3,pic,'').
+struct_dt_elem_i([ 26,44,71 ],3,collection,'False').
+struct_dt_elem_i([ 26,44,71 ],3,'ExternalName','Link').
+struct_dt_elem_i([ 26,44,71 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,44,71 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,44,71 ],3,'XmlName','').
+struct_dt_elem_i([ 26,44,71 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,44,71 ],3,soaptype,'').
+struct_dt_elem_i([ 26,44,71 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,44,71 ],3,'JsonName','').
+struct_dt_elem_i([ 26,44,71 ],4,name,'Webcomponent').
+struct_dt_elem_i([ 26,44,71 ],4,camelname,'WebComponent').
+struct_dt_elem_i([ 26,44,71 ],4,basedon,15).
+struct_dt_elem_i([ 26,44,71 ],4,length,1000).
+struct_dt_elem_i([ 26,44,71 ],4,decimals,0).
+struct_dt_elem_i([ 26,44,71 ],4,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,44,71 ],4,pic,'').
+struct_dt_elem_i([ 26,44,71 ],4,collection,'False').
+struct_dt_elem_i([ 26,44,71 ],4,'ExternalName','WebComponent').
+struct_dt_elem_i([ 26,44,71 ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,44,71 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,44,71 ],4,'XmlName','').
+struct_dt_elem_i([ 26,44,71 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,44,71 ],4,soaptype,'').
+struct_dt_elem_i([ 26,44,71 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,44,71 ],4,'JsonName','').
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,3,[ [],[ 'Tabtemplate' ] ]).
+sub_info_i(146,[ t('Historymanager',3,5,7),t('Urlchanged',3,5,22) ],5,8,[ [ 'Firsttab','Lasttab','Tabs','Tabcode',[ t('Historymanager',3),t('Hash',3) ],'Index','Selectedtab','Tab','Tabsmarkup','Tabtemplate' ],[ 'Urlchangedevent','Tabsmarkup','Index','Tab',[ t('Tabs',3),t('Caption',3) ],'Selectedtab','Firsttab','Lasttab',[ t('Tabprevious',3),t('Visible',3) ],[ t('Tabnext',3),t('Visible',3) ],[ t('Component',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Refresh',10,14,[ [ 'Urlchangedevent','Firsttab','Lasttab','Tabs','Tabcode',[ t('Historymanager',3),t('Hash',3) ],'Index','Selectedtab','Tab','Tabsmarkup','Tabtemplate' ],[ 'Tabsmarkup','Index','Tab',[ t('Tabs',3),t('Caption',3) ],'Selectedtab','Firsttab','Lasttab',[ t('Tabprevious',3),t('Visible',3) ],[ t('Tabnext',3),t('Visible',3) ],[ t('Component',3),t('Object',3) ] ] ]).
+ 
+ 
+pgm_callprotocol_i(web,9,'TABBEDVIEW','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

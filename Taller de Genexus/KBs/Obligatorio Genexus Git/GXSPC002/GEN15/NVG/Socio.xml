@@ -1,0 +1,168 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Socio</ObjName>
+<ObjDesc>Socio</ObjDesc>
+<ObjPgmName>Socio</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Socioid</VarId>
+<VarName>&amp;SocioId</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>4</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>SocioDireccion</AttriName>
+<Description>Socio Direccion</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>SocioTipo</AttriName>
+<Description>Socio Tipo</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>SocioFoto</AttriName>
+<Description>Socio Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>SocioFoto.Uri  </AttriName>
+<Description></Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>SocioDireccion</AttriName>
+<Description>Socio Direccion</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>SocioTipo</AttriName>
+<Description>Socio Tipo</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>SocioFoto</AttriName>
+<Description>Socio Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>SocioFoto.Uri  </AttriName>
+<Description></Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>5</TableId>
+<TableName>Carne</TableName>
+<Description>Carne</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>2</TableId>
+<TableName>ActividadSocioEnActividad</TableName>
+<Description>Socio En Actividad</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

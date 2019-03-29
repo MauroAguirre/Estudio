@@ -1,0 +1,3 @@
+/*!   GeneXus C# 15_0_12-126726 on 3/22/2019 19:1:31.44
+*/
+gx.evt.autoSkip=!1;gx.define("ingresarcliente",!1,function(){this.ServerClass="ingresarcliente";this.PackageName="GeneXus.Programs";this.setObjectType("web");this.hasEnterEvent=!1;this.skipOnEnter=!1;this.autoRefresh=!0;this.fullAjax=!0;this.supportAjaxEvents=!0;this.ajaxSecurityToken=!0;this.SetStandaloneVars=function(){};this.e120u2_client=function(){return this.executeServerEvent("ENTER",!0,null,!1,!1)};this.e130u2_client=function(){return this.executeServerEvent("CANCEL",!0,null,!1,!1)};this.GXValidFnc=[];var n=this.GXValidFnc;this.GXLastCtrlId=0;this.Events={e120u2_client:["ENTER",!0],e130u2_client:["CANCEL",!0]};this.EvtParms.REFRESH=[[],[]];this.Initialize()});gx.createParentObj(ingresarcliente)

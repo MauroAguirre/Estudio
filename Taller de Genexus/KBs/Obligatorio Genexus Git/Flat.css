@@ -1,0 +1,3463 @@
+﻿/* [gx-css-import ignore - start] */
+.BaseRBtn{
+	display:inline-block;
+}
+.BaseRBtn span, .RoundedBtn input{
+	display:block;
+	float: left;
+}
+.BaseRBtn .BtnLeft{
+	background: transparent no-repeat scroll 0 0;
+}
+.BaseRBtn .BtnRight{
+	background: transparent no-repeat scroll right 0;
+}
+.BaseRBtn .BtnBackground{
+	overflow:hidden;
+	background: transparent repeat-x scroll;
+}
+.BaseRBtn .BtnText{
+	border: 0px;
+	background: transparent;
+	margin:0;
+	white-space:nowrap;
+	width:auto;
+	overflow:visible;
+}
+/* [gx-css-import ignore - end] */
+.GridRow
+{
+	border-style: none;
+	border-width: 0px;
+}
+.Tab,.WWTab
+{
+	border-style: none;
+	border-width: 0px;
+}
+.TabPage,.WWTabPage,.WWTabPageSelected,.WWTabPageHovered,.WWFirstTabPage
+{
+	border-style: none;
+	border-width: 0px;
+}
+.ErrorViewerLine
+{
+	border-style: none;
+	border-width: 0px;
+}
+.Flex
+{
+	border-style: none;
+	border-width: 0px;
+}
+.TableRow,.BackgroundColorRow,.WWPagingFooterRow
+{
+	border-style: none;
+	border-width: 0px;
+}
+.TableCell,.WWPagingFooterCell
+{
+	border-style: none;
+	border-width: 0px;
+}
+.Popup,.Form .gx-popup.gx-popup-default
+{
+	border-style: none;
+	border-width: 0px;
+}
+/* [gx-css-import ignore - start] */
+
+.NavigationStyle #gx-column-targets {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 15vh - 10vh);
+	table-layout: fixed;
+}
+
+.NavigationStyle .gx-call-target {
+	overflow: auto;
+}
+
+.NavigationStyle .gx-center-target {
+	display: table-cell;
+}
+
+.NavigationStyle .gx-call-target.top {
+	height: 15vh;
+}
+
+.NavigationStyle .gx-call-target.right {
+	display: table-cell;
+	width: 400px;
+}
+
+.NavigationStyle .gx-call-target.bottom {
+	height: 10vh;
+}
+
+.NavigationStyle .gx-call-target.left {
+	display: table-cell;
+	width: 400px;
+}
+
+
+.ResponsiveSlide #gx-column-targets {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 15vh - 10vh);
+	table-layout: fixed;
+}
+
+.ResponsiveSlide .gx-call-target {
+	overflow: auto;
+}
+
+.ResponsiveSlide .gx-center-target {
+	display: table-cell;
+}
+
+.ResponsiveSlide .gx-call-target.top {
+	height: 15vh;
+}
+
+.ResponsiveSlide .gx-call-target.right {
+	display: table-cell;
+	width: 400px;
+}
+
+.ResponsiveSlide .gx-call-target.bottom {
+	height: 10vh;
+}
+
+.ResponsiveSlide .gx-call-target.left {
+	display: table-cell;
+	width: 400px;
+}
+
+
+.Form #gx-column-targets {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 15vh - 10vh);
+	table-layout: fixed;
+}
+
+.Form .gx-call-target {
+	overflow: auto;
+}
+
+.Form .gx-center-target {
+	display: table-cell;
+}
+
+.Form .gx-call-target.top {
+	height: 15vh;
+}
+
+.Form .gx-call-target.right {
+	display: table-cell;
+	width: 400px;
+}
+
+.Form .gx-call-target.bottom {
+	height: 10vh;
+}
+
+.Form .gx-call-target.left {
+	display: table-cell;
+	width: 400px;
+}
+
+/* [gx-css-import ignore - end] */
+/* [gx-css-import ignore - start] */
+
+.ResponsiveSlide #gx-column-targets {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 15vh - 10vh);
+	table-layout: fixed;
+}
+
+.ResponsiveSlide .gx-call-target {
+	overflow: auto;
+}
+
+.ResponsiveSlide .gx-center-target {
+	display: table-cell;
+}
+
+.ResponsiveSlide .gx-call-target.top {
+	height: 15vh;
+}
+
+.ResponsiveSlide .gx-call-target.right {
+	display: table-cell;
+	width: 400px;
+}
+
+.ResponsiveSlide .gx-call-target.bottom {
+	height: 10vh;
+}
+
+.ResponsiveSlide .gx-call-target.left {
+	display: table-cell;
+	width: 400px;
+}
+
+
+.Form #gx-column-targets {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 15vh - 10vh);
+	table-layout: fixed;
+}
+
+.Form .gx-call-target {
+	overflow: auto;
+}
+
+.Form .gx-center-target {
+	display: table-cell;
+}
+
+.Form .gx-call-target.top {
+	height: 15vh;
+}
+
+.Form .gx-call-target.right {
+	display: table-cell;
+	width: 400px;
+}
+
+.Form .gx-call-target.bottom {
+	height: 10vh;
+}
+
+.Form .gx-call-target.left {
+	display: table-cell;
+	width: 400px;
+}
+
+/* [gx-css-import ignore - end] */
+.ActionGroupItem,.SelectedMainMenuItem,.SelectedSubMenuItem,.MainMenuItem,.MainMenuItemHovered,.SubMenuItem
+{
+	border-style: none;
+	border-width: 0px;
+}
+.ActionGroup,.MainMenu,.Submenu,.Confirm,.WWViewActions
+{
+	border-style: none;
+	border-width: 0px;
+}
+.GridPageController .slick-dots li button:before
+{
+	content: '\2022';
+}
+.GridPageController .slick-dots li.slick-active button:before
+{
+	color: black;
+}
+.GridPageController .slick-prev:before
+{
+	content: '\2190';
+}
+.GridPageController .slick-next:before
+{
+	content: '\2192';
+}
+.gx-switch-Switch .on
+{
+	background-color: #5cb85c !important;
+	color: #fff !important;
+}
+.gx-switch-Switch .off
+{
+	background-color: #eee !important;
+	color: #000 !important;
+}
+BODY
+{
+	height: inherit;
+}
+HTML
+{
+	height: 100%;
+}
+.CalendarCombo 
+{
+	background-color: Menu;
+	border-bottom-color: ButtonHighlight;
+	border-left-color: ButtonHighlight;
+	border-right-color: ButtonHighlight;
+	border-top-color: ButtonHighlight;
+	border-style: solid;
+	border-width: 1px;
+	left: 0px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	position: absolute;
+	top: 0px;
+	width: 4em;
+	display: none;
+	cursor: default;
+	font-size: 10px;
+	color: MenuText;
+}
+.CalendarCombo  .label 
+{
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	text-align: center;
+}
+.CalendarCombo  .label-IEfix 
+{
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	width: 4em;
+	text-align: center;
+}
+.CalendarCombo  .active 
+{
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-right-color: #000;
+	border-top-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+.CalendarCombo  .hilite 
+{
+	background-color: Highlight;
+	color: HighlightText;
+}
+DIV.suggestions
+{
+	background-color: white;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 2px 2px 5px #a1a1a1;
+	position: absolute;
+	-moz-box-sizing: border-box;
+	font-size: 14px;
+}
+DIV.suggestions DIV
+{
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 14px;
+	padding-top: 7px;
+	cursor: default;
+}
+DIV.suggestions DIV.current
+{
+	background-color: #efefef;
+}
+.ComponentTrigger 
+{
+	margin-left: 4px;
+	cursor: pointer;
+}
+.dojoDialog 
+{
+	background-color: #eee;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-right-color: #999;
+	border-top-color: #999;
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+}
+#gx_ajax_notification
+{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: absolute;
+	top: 21px;
+	z-index: 999;
+	height: 20px;
+	width: 100%;
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+.RowDeleted 
+{
+	text-decoration: line-through;
+	opacity:.7;
+}
+.dp_container 
+{
+	position: relative;
+}
+UL.Tabs
+{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	list-style-type: none;
+}
+UL.Tabs LI.Tab
+{
+	float: left;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+UL.Tabs LI.Tab A
+{
+	display: block;
+	text-decoration: none;
+}
+UL.Tabs LI.Tab SPAN
+{
+	display: block;
+}
+UL.Tabs LI.Tab SPAN.TabBackground
+{
+	overflow: hidden;
+}
+UL.Tabs LI.Tab SPAN.TabText
+{
+	white-space: nowrap;
+}
+DIV.gx-multimedia-upload
+{
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	border-right-color: #ccc;
+	border-top-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	height: 72px;
+	width: 128px;
+	display: block;
+	text-align: center;
+	line-height:68px;
+}
+DIV.gx-multimedia-upload INPUT.BtnEnter
+{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download
+{
+	display: block;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download SPAN
+{
+	display: block;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download IMG
+{
+	display: none;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download SPAN.gx-video-placeholder
+{
+	opacity:1;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download SPAN.gx-audio-placeholder
+{
+	opacity:1;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-download SPAN.gx-download-placeholder
+{
+	opacity:1;
+}
+DIV.gx-multimedia-upload *
+{
+	text-align: left;
+	line-height:normal;
+}
+DIV.gx-multimedia-upload DIV.fields-ct
+{
+	background-color: white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding-left: 5px;
+	height: 100%;
+	display: none;
+	white-space: nowrap;
+}
+DIV.gx-multimedia-upload A.action
+{
+	background-color: #666;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+	font-family: "Open Sans Semibold";
+	font-size: 13px;
+	color: white;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	line-height:15px;
+	-ms-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-in-out;
+}
+DIV.gx-multimedia-upload A.change-action
+{
+	background-color: #9ccf70;
+	background-image: url(MultimediaEdit.png);
+	background-position: 4px center;
+	background-repeat: no-repeat;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 8px;
+	padding-top: 6px;
+	right: 26px;
+}
+DIV.gx-multimedia-upload A.clear-action
+{
+	background-color: #f56a67;
+	background-image: url(MultimediaClear.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 14px;
+	padding-left: 13px;
+	padding-right: 12px;
+	padding-top: 13px;
+	right: 0px;
+}
+DIV.gx-multimedia-upload A.action:focus
+{
+	text-decoration: underline;
+	opacity:.9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+DIV.gx-multimedia-upload INPUT.field
+{
+	display: none;
+}
+DIV.gx-multimedia-upload INPUT.field-selected
+{
+	display: block;
+}
+DIV.gx-multimedia-upload LABEL.option
+{
+	cursor: pointer;
+}
+DIV.gx-multimedia-upload LABEL.option INPUT
+{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 3px;
+	margin-top: 0px;
+	cursor: pointer;
+}
+DIV.gx-multimedia-upload INPUT.Button
+{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+DIV.gx-multimedia-upload IMG
+{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	height: auto;
+	max-height: 68px;
+	max-width: 124px;
+	vertical-align: middle;
+}
+DIV.gx-multimedia-upload A SPAN
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 124px;
+	color: transparent;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty
+{
+	display: block;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty SPAN.gx-download-placeholder
+{
+	opacity:1;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty SPAN
+{
+	display: block;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty IMG
+{
+	display: none;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty SPAN.gx-image-placeholder
+{
+	background-image: url(PlaceHolderImage.png);
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty SPAN.gx-video-placeholder
+{
+	background-image: url(PlaceHolderVideo.png);
+	opacity:1;
+}
+DIV.gx-multimedia-upload A.gx-multimedia-empty SPAN.gx-audio-placeholder
+{
+	background-image: url(PlaceHolderAudio.png);
+	opacity:1;
+}
+DIV.gx-multimedia-upload INPUT.BtnEnter
+{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+DIV.gx-multimedia-upload:hover A.action
+{
+	display: block;
+	text-decoration: none;
+	opacity:.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+DIV.gx-multimedia-upload:hover A.action:hover
+{
+	text-decoration: none;
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+DIV.gx-multimedia-upload:hover A.action:focus
+{
+	text-decoration: none;
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+A:not([href]) SPAN.gx-download-placeholder
+{
+	opacity:.5;
+}
+A:not([href]) SPAN.gx-video-placeholder
+{
+	opacity:.5;
+}
+A:not([href]) SPAN.gx-audio-placeholder
+{
+	opacity:.5;
+}
+DIV.gx-mask
+{
+	background-color: black;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	animation: entermask 1s;
+	-webkit-animation: entermask 1s;
+	-ms-filter:"alpha(opacity=20)";
+	opacity:.20;
+}
+DIV.gx-unmask
+{
+	background-color: transparent;
+	animation: leavemask .3s;
+	-webkit-animation: leavemask .3s;
+}
+BODY.gx-masked DIV.gx-mask
+{
+	bottom: 0px;
+	position: fixed;
+}
+.gx-masked-relative 
+{
+	position: relative;
+}
+.GXProgressBar  .progress-bar-title 
+{
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+}
+.CallTarget,.ResponsiveSlide .gx-call-target.top,.Form .gx-call-target.top,.ResponsiveSlide .gx-call-target.right,.Form .gx-call-target.right,.ResponsiveSlide .gx-call-target.bottom,.Form .gx-call-target.bottom,.ResponsiveSlide .gx-call-target.left,.Form .gx-call-target.left
+{
+	background-color: white;
+	border-style: none;
+	border-width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.GridColumn,.ActionColumn,.WWColumn,.WWSecondaryColumn,.WWTextActionColumn,.WWActionColumn,.WWOptionalColumn,.OptionalColumn
+{
+	border-style: none;
+	border-width: 0px;
+}
+.ActionColumn
+{
+	width: 36px;
+}
+.WWColumn,.WWSecondaryColumn,.WWTextActionColumn,.WWActionColumn,.WWOptionalColumn
+{
+	overflow: hidden;
+	padding-bottom: 9px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 9px;
+	white-space: normal;
+	width: 100%;
+	text-overflow: ellipsis;
+}
+.WWActionColumn
+{
+	width: 52px !important;
+}
+.WWOptionalColumn
+{
+	visibility: visible;
+}
+.Hyperlink
+{
+	border-style: none;
+	border-width: 0px;
+}
+.Form
+{
+	background-color: #eaeaea;
+	font-family: 'Open Sans Regular', Arial;
+	font-size: 14px;
+	color: #a1a1a1;
+	background-color: #eaeaea !important;
+}
+
+/* [gx-css-import ignore - start] */
+div.gx-content-placeholder > div.gx-ct-body.Form-fx, div.gxwebcomponent > div.gxwebcomponent-body.Form-fx, body.Form-fx
+{
+	transition-property: transform, opacity;
+	-moz-transition-property: transform, opacity;
+	-ms-transition-property: transform, opacity;
+	-o-transition-property: transform, opacity;
+	-webkit-transition-property: transform, opacity;
+	transition-timing-function: cubic-bezier(0, 1, 1, 0.69);
+	-moz-transition-timing-function: cubic-bezier(0, 1, 1, 0.69);
+	-ms-transition-timing-function: cubic-bezier(0, 1, 1, 0.69);
+	-o-transition-timing-function: cubic-bezier(0, 1, 1, 0.69);
+	-webkit-transition-timing-function: cubic-bezier(0, 1, 1, 0.69);
+	transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+}
+
+div.gx-content-placeholder > div.gx-ct-body.Form-fx.enter-fx-duration, div.gxwebcomponent > div.gxwebcomponent-body.Form-fx.enter-fx-duration, body.Form-fx.enter-fx-duration
+{
+	transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+}
+
+div.gx-content-placeholder > div.gx-ct-body.Form-fx.leave-fx-duration, div.gxwebcomponent > div.gxwebcomponent-body.Form-fx.leave-fx-duration, body.Form-fx.leave-fx-duration
+{
+	transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+}
+
+div.gx-content-placeholder.transitioning, div.gxwebcomponent.transitioning
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.Form-fx.entering
+{
+	opacity: 0.1;
+	position: absolute;
+}
+
+.Form-fx.leaving
+{
+	opacity: 0.1;
+	position: absolute;
+}
+
+/* [gx-css-import ignore - end] */
+.Attribute,.BlobContentAttribute,.ReadonlyBlobContentAttribute,.BlobInputAttribute,.AttributeDragging,.AttributeAcceptDrag,.AttributeNoAcceptDrag,.DownloadAttribute,.ReadonlyDownloadAttribute,.AttSubTitle,.BlobInputAttSubTitle,.BlobContentAttSubTitle,.ReadonlyBlobContentAttSubTitle,.ReadonlyAttSubTitle,.IME_Active,.BlobContentIME_Active,.ReadonlyBlobContentIME_Active,.BlobInputIME_Active,.ReadonlyIME_Active,.IME_Inactive,.BlobContentIME_Inactive,.ReadonlyBlobContentIME_Inactive,.BlobInputIME_Inactive,.ReadonlyIME_Inactive,.IME_Disabled,.BlobContentIME_Disabled,.ReadonlyBlobContentIME_Disabled,.BlobInputIME_Disabled,.ReadonlyIME_Disabled,.CheckboxLabel,.BlobContentCheckboxLabel,.ReadonlyBlobContentCheckboxLabel,.BlobInputCheckboxLabel,.ReadonlyCheckboxLabel,.CheckBox,.BlobContentCheckBox,.ReadonlyBlobContentCheckBox,.BlobInputCheckBox,.ReadonlyCheckBox,.DescriptionAttribute,.BlobContentDescriptionAttribute,.ReadonlyBlobContentDescriptionAttribute,.BlobInputDescriptionAttribute,.ReadonlyDescriptionAttribute,.LoginAttribute,.BlobContentLoginAttribute,.ReadonlyBlobContentLoginAttribute,.BlobInputLoginAttribute,.ReadonlyLoginAttribute,.LoginComboAttribute,.BlobContentLoginComboAttribute,.ReadonlyBlobContentLoginComboAttribute,.BlobInputLoginComboAttribute,.ReadonlyLoginComboAttribute,.RegistrationAttribute,.BlobContentRegistrationAttribute,.ReadonlyBlobContentRegistrationAttribute,.BlobInputRegistrationAttribute,.ReadonlyRegistrationAttribute,.RequiredAttribute,.BlobContentRequiredAttribute,.ReadonlyBlobContentRequiredAttribute,.BlobInputRequiredAttribute,.ReadonlyRequiredAttribute,.InactiveAttribute,.BlobContentInactiveAttribute,.ReadonlyBlobContentInactiveAttribute,.BlobInputInactiveAttribute,.ReadonlyInactiveAttribute,.ComboAttribute,.BlobContentComboAttribute,.ReadonlyBlobContentComboAttribute,.BlobInputComboAttribute,.ReadonlyComboAttribute,.SubtitleAttribute,.BlobContentSubtitleAttribute,.ReadonlyBlobContentSubtitleAttribute,.BlobInputSubtitleAttribute,.ReadonlySubtitleAttribute,.URLAttribute,.BlobContentURLAttribute,.ReadonlyBlobContentURLAttribute,.BlobInputURLAttribute,.ReadonlyURLAttribute,.TextAttribute,.BlobContentTextAttribute,.ReadonlyBlobContentTextAttribute,.BlobInputTextAttribute,.ReadonlyTextAttribute,.VideoAttribute,.ReadonlyVideoAttribute,.AudioAttribute,.ReadonlyAudioAttribute,.ErrorAttribute,.WarningAttribute,.ImageAttribute,.ResponsiveImageAttribute,.BlobContentResponsiveImageAttribute,.ReadonlyBlobContentResponsiveImageAttribute,.BlobInputResponsiveImageAttribute,.ReadonlyResponsiveImageAttribute,.ProfileImageAttribute,.BlobContentProfileImageAttribute,.ReadonlyBlobContentProfileImageAttribute,.BlobInputProfileImageAttribute,.ReadonlyProfileImageAttribute,.SmallProfileImageAttribute,.BlobContentSmallProfileImageAttribute,.ReadonlyBlobContentSmallProfileImageAttribute,.BlobInputSmallProfileImageAttribute,.ReadonlySmallProfileImageAttribute,.ReadonlyImageAttribute,.ActionAttribute,.BlobContentActionAttribute,.ReadonlyBlobContentActionAttribute,.UpdateAttribute,.BlobContentUpdateAttribute,.ReadonlyBlobContentUpdateAttribute,.BlobInputUpdateAttribute,.ReadonlyUpdateAttribute,.DeleteAttribute,.BlobContentDeleteAttribute,.ReadonlyBlobContentDeleteAttribute,.BlobInputDeleteAttribute,.ReadonlyDeleteAttribute,.DisplayAttribute,.BlobContentDisplayAttribute,.ReadonlyBlobContentDisplayAttribute,.BlobInputDisplayAttribute,.ReadonlyDisplayAttribute,.DisabledActionAttribute,.BlobContentDisabledActionAttribute,.ReadonlyBlobContentDisabledActionAttribute,.BlobInputDisabledActionAttribute,.ReadonlyDisabledActionAttribute,.BlobInputActionAttribute,.ReadonlyActionAttribute,.SelectionAttribute,.BlobContentSelectionAttribute,.ReadonlyBlobContentSelectionAttribute,.BlobInputSelectionAttribute,.ReadonlySelectionAttribute,.ReadonlyAttribute,.ReadonlyMedio,.BlobContentReadonlyMedio,.ReadonlyBlobContentReadonlyMedio,.BlobInputReadonlyMedio,.ReadonlyReadonlyMedio,.FilterAttribute,.BlobContentFilterAttribute,.ReadonlyBlobContentFilterAttribute,.BlobInputFilterAttribute,.FilterComboAttribute,.BlobContentFilterComboAttribute,.ReadonlyBlobContentFilterComboAttribute,.BlobInputFilterComboAttribute,.ReadonlyFilterComboAttribute,.FilterSearchAttribute,.BlobContentFilterSearchAttribute,.ReadonlyBlobContentFilterSearchAttribute,.BlobInputFilterSearchAttribute,.ReadonlyFilterSearchAttribute,.FilterSearchAttributeFocus,.BlobContentFilterSearchAttributeFocus,.ReadonlyBlobContentFilterSearchAttributeFocus,.BlobInputFilterSearchAttributeFocus,.ReadonlyFilterSearchAttributeFocus,.DateFilterSearchAttribute,.BlobContentDateFilterSearchAttribute,.ReadonlyBlobContentDateFilterSearchAttribute,.BlobInputDateFilterSearchAttribute,.ReadonlyDateFilterSearchAttribute,.FilterPanel,.BlobContentFilterPanel,.ReadonlyBlobContentFilterPanel,.BlobInputFilterPanel,.ReadonlyFilterPanel,.ReadonlyFilterAttribute
+{
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+	color: #444;
+	height: 36px;
+	width: auto;
+	max-width: 100%;
+}
+.ReadonlyBlobContentAttribute
+{
+	color: #a1a1a1;
+}
+.ReadonlyDownloadAttribute
+{
+	border-style: none;
+	border-width: 0px;
+}
+.ReadonlyAttSubTitle
+{
+	color: #a1a1a1;
+}
+.ReadonlyCheckBox
+{
+	color: #a1a1a1;
+}
+.ReadonlyBlobContentDescriptionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyDescriptionAttribute
+{
+	border-width: 0px;
+	font-family: "Open Sans Bold";
+}
+.VideoAttribute,.ReadonlyVideoAttribute
+{
+	width: 300px;
+}
+.ReadonlyVideoAttribute
+{
+	border-width: 0px;
+}
+.AudioAttribute,.ReadonlyAudioAttribute
+{
+	width: 300px;
+}
+.ReadonlyAudioAttribute
+{
+	border-width: 0px;
+}
+.ErrorAttribute
+{
+	border-bottom-color: #f56a67;
+	border-left-color: #f56a67;
+	border-right-color: #f56a67;
+	border-top-color: #f56a67;
+	border-style: solid;
+	border-width: 1px;
+}
+.WarningAttribute
+{
+	border-bottom-color: #fdae45;
+	border-left-color: #fdae45;
+	border-right-color: #fdae45;
+	border-top-color: #fdae45;
+	border-style: solid;
+	border-width: 1px;
+}
+.ImageAttribute,.ResponsiveImageAttribute,.BlobContentResponsiveImageAttribute,.ReadonlyBlobContentResponsiveImageAttribute,.BlobInputResponsiveImageAttribute,.ReadonlyResponsiveImageAttribute,.ProfileImageAttribute,.BlobContentProfileImageAttribute,.ReadonlyBlobContentProfileImageAttribute,.BlobInputProfileImageAttribute,.ReadonlyProfileImageAttribute,.SmallProfileImageAttribute,.BlobContentSmallProfileImageAttribute,.ReadonlyBlobContentSmallProfileImageAttribute,.BlobInputSmallProfileImageAttribute,.ReadonlySmallProfileImageAttribute,.ReadonlyImageAttribute,.ActionAttribute,.BlobContentActionAttribute,.ReadonlyBlobContentActionAttribute,.UpdateAttribute,.BlobContentUpdateAttribute,.ReadonlyBlobContentUpdateAttribute,.BlobInputUpdateAttribute,.ReadonlyUpdateAttribute,.DeleteAttribute,.BlobContentDeleteAttribute,.ReadonlyBlobContentDeleteAttribute,.BlobInputDeleteAttribute,.ReadonlyDeleteAttribute,.DisplayAttribute,.BlobContentDisplayAttribute,.ReadonlyBlobContentDisplayAttribute,.BlobInputDisplayAttribute,.ReadonlyDisplayAttribute,.DisabledActionAttribute,.BlobContentDisabledActionAttribute,.ReadonlyBlobContentDisabledActionAttribute,.BlobInputDisabledActionAttribute,.ReadonlyDisabledActionAttribute,.BlobInputActionAttribute,.ReadonlyActionAttribute,.SelectionAttribute,.BlobContentSelectionAttribute,.ReadonlyBlobContentSelectionAttribute,.BlobInputSelectionAttribute,.ReadonlySelectionAttribute
+{
+	height: auto;
+	max-width: none;
+}
+.ReadonlyBlobContentResponsiveImageAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyResponsiveImageAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyImageAttribute
+{
+	border-width: 0px;
+	max-height: 68px;
+	max-width: 124px;
+}
+.ActionAttribute,.BlobContentActionAttribute,.ReadonlyBlobContentActionAttribute,.UpdateAttribute,.BlobContentUpdateAttribute,.ReadonlyBlobContentUpdateAttribute,.BlobInputUpdateAttribute,.ReadonlyUpdateAttribute,.DeleteAttribute,.BlobContentDeleteAttribute,.ReadonlyBlobContentDeleteAttribute,.BlobInputDeleteAttribute,.ReadonlyDeleteAttribute,.DisplayAttribute,.BlobContentDisplayAttribute,.ReadonlyBlobContentDisplayAttribute,.BlobInputDisplayAttribute,.ReadonlyDisplayAttribute,.DisabledActionAttribute,.BlobContentDisabledActionAttribute,.ReadonlyBlobContentDisabledActionAttribute,.BlobInputDisabledActionAttribute,.ReadonlyDisabledActionAttribute,.BlobInputActionAttribute,.ReadonlyActionAttribute,.SelectionAttribute,.BlobContentSelectionAttribute,.ReadonlyBlobContentSelectionAttribute,.BlobInputSelectionAttribute,.ReadonlySelectionAttribute
+{
+	margin-bottom: -6px;
+	margin-left: -6px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 7px;
+	display: block;
+	background-color: #ececec;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.ReadonlyBlobContentActionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyBlobContentUpdateAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyUpdateAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyBlobContentDeleteAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyDeleteAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyBlobContentDisplayAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyDisplayAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyBlobContentDisabledActionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyDisabledActionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyActionAttribute
+{
+	border-width: 0px;
+}
+.SelectionAttribute,.BlobContentSelectionAttribute,.ReadonlyBlobContentSelectionAttribute,.BlobInputSelectionAttribute,.ReadonlySelectionAttribute
+{
+	background-color: transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.ReadonlyBlobContentSelectionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlySelectionAttribute
+{
+	border-width: 0px;
+}
+.ReadonlyAttribute,.ReadonlyMedio,.BlobContentReadonlyMedio,.ReadonlyBlobContentReadonlyMedio,.BlobInputReadonlyMedio,.ReadonlyReadonlyMedio
+{
+	color: #a1a1a1;
+}
+.FilterAttribute,.BlobContentFilterAttribute,.ReadonlyBlobContentFilterAttribute,.BlobInputFilterAttribute,.FilterComboAttribute,.BlobContentFilterComboAttribute,.ReadonlyBlobContentFilterComboAttribute,.BlobInputFilterComboAttribute,.ReadonlyFilterComboAttribute,.FilterSearchAttribute,.BlobContentFilterSearchAttribute,.ReadonlyBlobContentFilterSearchAttribute,.BlobInputFilterSearchAttribute,.ReadonlyFilterSearchAttribute,.FilterSearchAttributeFocus,.BlobContentFilterSearchAttributeFocus,.ReadonlyBlobContentFilterSearchAttributeFocus,.BlobInputFilterSearchAttributeFocus,.ReadonlyFilterSearchAttributeFocus,.DateFilterSearchAttribute,.BlobContentDateFilterSearchAttribute,.ReadonlyBlobContentDateFilterSearchAttribute,.BlobInputDateFilterSearchAttribute,.ReadonlyDateFilterSearchAttribute,.FilterPanel,.BlobContentFilterPanel,.ReadonlyBlobContentFilterPanel,.BlobInputFilterPanel,.ReadonlyFilterPanel,.ReadonlyFilterAttribute
+{
+	background-position: 14px center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 0px 0px;
+	padding-bottom: 17px;
+	padding-left: 42px;
+	padding-right: 10px;
+	padding-top: 17px;
+	background-image: url(SearchIcon.gif);
+	border-style: none;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size: 18px;
+	width: 100%;
+	height: 63px !important;
+}
+.BlobContentFilterAttribute,.ReadonlyBlobContentFilterAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentFilterAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+	border-width: 0px;
+}
+.BlobInputFilterAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.FilterComboAttribute,.BlobContentFilterComboAttribute,.ReadonlyBlobContentFilterComboAttribute,.BlobInputFilterComboAttribute,.ReadonlyFilterComboAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobContentFilterComboAttribute,.ReadonlyBlobContentFilterComboAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentFilterComboAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobInputFilterComboAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyFilterComboAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.FilterSearchAttribute,.BlobContentFilterSearchAttribute,.ReadonlyBlobContentFilterSearchAttribute,.BlobInputFilterSearchAttribute,.ReadonlyFilterSearchAttribute,.FilterSearchAttributeFocus,.BlobContentFilterSearchAttributeFocus,.ReadonlyBlobContentFilterSearchAttributeFocus,.BlobInputFilterSearchAttributeFocus,.ReadonlyFilterSearchAttributeFocus,.DateFilterSearchAttribute,.BlobContentDateFilterSearchAttribute,.ReadonlyBlobContentDateFilterSearchAttribute,.BlobInputDateFilterSearchAttribute,.ReadonlyDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobContentFilterSearchAttribute,.ReadonlyBlobContentFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobInputFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.FilterSearchAttributeFocus,.BlobContentFilterSearchAttributeFocus,.ReadonlyBlobContentFilterSearchAttributeFocus,.BlobInputFilterSearchAttributeFocus,.ReadonlyFilterSearchAttributeFocus
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobContentFilterSearchAttributeFocus,.ReadonlyBlobContentFilterSearchAttributeFocus
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentFilterSearchAttributeFocus
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobInputFilterSearchAttributeFocus
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyFilterSearchAttributeFocus
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.DateFilterSearchAttribute,.BlobContentDateFilterSearchAttribute,.ReadonlyBlobContentDateFilterSearchAttribute,.BlobInputDateFilterSearchAttribute,.ReadonlyDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobContentDateFilterSearchAttribute,.ReadonlyBlobContentDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobInputDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyDateFilterSearchAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.FilterPanel,.BlobContentFilterPanel,.ReadonlyBlobContentFilterPanel,.BlobInputFilterPanel,.ReadonlyFilterPanel
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobContentFilterPanel,.ReadonlyBlobContentFilterPanel
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyBlobContentFilterPanel
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.BlobInputFilterPanel
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyFilterPanel
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ReadonlyFilterAttribute
+{
+	box-shadow: 0px 0px 0px 0px;
+	border-width: 0px;
+	color: #a1a1a1;
+}
+.Button,.SpecialButtons,.BtnCancel,.BtnCheck,.BtnGet,.BtnHelp,.BtnRefresh,.BtnSelect,.SpecialButtonsDisabled,.BtnLogin,.BtnBack,.HideFiltersButton,.ShowFiltersButton,.BtnEnterHovered,.BtnCancelHovered,.BtnDeleteDisabled,.BtnEnter,.BtnFirst,.BtnLast,.BtnNext,.BtnPrevious,.BtnDelete,.BtnToggle,.BtnToggleActive,.ButtonDragging,.ButtonAcceptDrag,.ButtonNoAcceptDrag,.ActionButtons,.ActionButtonsHovered,.ButtonDisabled,.ButtonGAM,.MainMenuButton
+{
+	margin-right: 5px;
+	background-color: white;
+	border-bottom-color: #dbdcde;
+	border-left-color: #dbdcde;
+	border-right-color: #dbdcde;
+	border-top-color: #dbdcde;
+	font-weight: bold;
+	color: #444;
+	text-transform: uppercase;
+}
+
+.BtnEnter
+{
+	background-color: #9ccf70;
+	border-width: 0px;
+	color: white;
+}
+
+.BtnFirst
+{
+	margin-right: 0px;
+}
+
+.BtnLast
+{
+	margin-right: 0px;
+}
+
+.BtnNext
+{
+	margin-right: 0px;
+}
+
+.BtnPrevious
+{
+	margin-right: 0px;
+}
+
+.BtnDelete
+{
+	background-color: #f56a67;
+	border-width: 0px;
+	color: white;
+}
+
+.BtnToggle,.BtnToggleActive
+{
+	margin-left: -15px;
+	margin-right: 15px;
+	margin-top: -6px;
+	padding-bottom: 11px;
+	padding-left: 5px;
+	padding-right: 12px;
+	padding-top: 3px;
+	font-size: 24px;
+	letter-spacing: -7px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.BtnToggleActive
+{
+	background-color: #eaeaea;
+	border-bottom-color: #a1a1a1;
+	border-left-color: #a1a1a1;
+	border-right-color: #a1a1a1;
+	border-top-color: #a1a1a1;
+}
+
+.Grid,.GridDragging,.GridNoAcceptDrag,.GridNoData,.Grid[data-gx-grid-nodata],.GridDragging[data-gx-grid-nodata],.GridNoAcceptDrag[data-gx-grid-nodata],.GridNoData[data-gx-grid-nodata],.GridAcceptDrag[data-gx-grid-nodata],.WorkWith[data-gx-grid-nodata],.PromptGrid[data-gx-grid-nodata],.ViewGrid[data-gx-grid-nodata],.FreeStyleGrid[data-gx-grid-nodata],.VerticalTabGrid[data-gx-grid-nodata],.RecentLinksGrid[data-gx-grid-nodata],.TrnSublevelGrid[data-gx-grid-nodata],.GridAcceptDrag,.WorkWith,.PromptGrid,.ViewGrid
+{
+	background-color: #fff;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	width: 100%;
+}
+
+.Grid>thead>tr, .Grid>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.Grid[data-bkgstyle='none']>thead>tr, .Grid[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.Grid[data-bkgstyle='header']>thead>tr, .Grid[data-bkgstyle='header']>tfoot>tr, .Grid[data-bkgstyle='report']>thead>tr, .Grid[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+}
+
+.GridDragging>thead>tr, .GridDragging>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.GridDragging[data-bkgstyle='none']>thead>tr, .GridDragging[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.GridDragging[data-bkgstyle='header']>thead>tr, .GridDragging[data-bkgstyle='header']>tfoot>tr, .GridDragging[data-bkgstyle='report']>thead>tr, .GridDragging[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+}
+
+.GridNoAcceptDrag>thead>tr, .GridNoAcceptDrag>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.GridNoAcceptDrag[data-bkgstyle='none']>thead>tr, .GridNoAcceptDrag[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.GridNoAcceptDrag[data-bkgstyle='header']>thead>tr, .GridNoAcceptDrag[data-bkgstyle='header']>tfoot>tr, .GridNoAcceptDrag[data-bkgstyle='report']>thead>tr, .GridNoAcceptDrag[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+}
+
+.GridNoData,.Grid[data-gx-grid-nodata],.GridDragging[data-gx-grid-nodata],.GridNoAcceptDrag[data-gx-grid-nodata],.GridNoData[data-gx-grid-nodata],.GridAcceptDrag[data-gx-grid-nodata],.WorkWith[data-gx-grid-nodata],.PromptGrid[data-gx-grid-nodata],.ViewGrid[data-gx-grid-nodata],.FreeStyleGrid[data-gx-grid-nodata],.VerticalTabGrid[data-gx-grid-nodata],.RecentLinksGrid[data-gx-grid-nodata],.TrnSublevelGrid[data-gx-grid-nodata]
+{
+	background-color: lightgray;
+	min-height: 4em;
+}
+
+.GridNoData>thead>tr, .GridNoData>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.GridNoData[data-bkgstyle='none']>thead>tr, .GridNoData[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.GridNoData[data-bkgstyle='header']>thead>tr, .GridNoData[data-bkgstyle='header']>tfoot>tr, .GridNoData[data-bkgstyle='report']>thead>tr, .GridNoData[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+}
+
+.GridAcceptDrag>thead>tr, .GridAcceptDrag>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.GridAcceptDrag[data-bkgstyle='none']>thead>tr, .GridAcceptDrag[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.GridAcceptDrag[data-bkgstyle='header']>thead>tr, .GridAcceptDrag[data-bkgstyle='header']>tfoot>tr, .GridAcceptDrag[data-bkgstyle='report']>thead>tr, .GridAcceptDrag[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+}
+
+.WorkWith,.PromptGrid,.ViewGrid
+{
+	table-layout: fixed;
+}
+
+.WorkWith>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.WorkWith>thead>tr, .WorkWith>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+	table-layout: fixed;
+}
+
+.WorkWith[data-bkgstyle='none']>thead>tr, .WorkWith[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.WorkWith[data-bkgstyle='none']>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.WorkWith[data-bkgstyle='uniform']>tbody>tr:nth-child(odd), .WorkWith[data-bkgstyle='uniform']>tbody>tr:nth-child(even), .WorkWith[data-bkgstyle='uniform']>thead>tr, .WorkWith[data-bkgstyle='uniform']>tfoot>tr
+{
+	table-layout: fixed;
+}
+
+.WorkWith[data-bkgstyle='header']>tbody>tr:nth-child(odd), .WorkWith[data-bkgstyle='header']>tbody>tr:nth-child(even), .WorkWith[data-bkgstyle='report']>tbody>tr:nth-child(odd)
+{
+	table-layout: fixed;
+}
+
+.WorkWith[data-bkgstyle='report']>tbody>tr:nth-child(even)
+{
+	table-layout: fixed;
+}
+
+.WorkWith[data-bkgstyle='header']>thead>tr, .WorkWith[data-bkgstyle='header']>tfoot>tr, .WorkWith[data-bkgstyle='report']>thead>tr, .WorkWith[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+	table-layout: fixed;
+}
+
+.PromptGrid>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.PromptGrid>thead>tr, .PromptGrid>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+	table-layout: fixed;
+}
+
+.PromptGrid[data-bkgstyle='none']>thead>tr, .PromptGrid[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.PromptGrid[data-bkgstyle='none']>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.PromptGrid[data-bkgstyle='uniform']>tbody>tr:nth-child(odd), .PromptGrid[data-bkgstyle='uniform']>tbody>tr:nth-child(even), .PromptGrid[data-bkgstyle='uniform']>thead>tr, .PromptGrid[data-bkgstyle='uniform']>tfoot>tr
+{
+	table-layout: fixed;
+}
+
+.PromptGrid[data-bkgstyle='header']>tbody>tr:nth-child(odd), .PromptGrid[data-bkgstyle='header']>tbody>tr:nth-child(even), .PromptGrid[data-bkgstyle='report']>tbody>tr:nth-child(odd)
+{
+	table-layout: fixed;
+}
+
+.PromptGrid[data-bkgstyle='report']>tbody>tr:nth-child(even)
+{
+	table-layout: fixed;
+}
+
+.PromptGrid[data-bkgstyle='header']>thead>tr, .PromptGrid[data-bkgstyle='header']>tfoot>tr, .PromptGrid[data-bkgstyle='report']>thead>tr, .PromptGrid[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+	table-layout: fixed;
+}
+
+.ViewGrid>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.ViewGrid>thead>tr, .ViewGrid>tfoot>tr
+{
+	font-size: 13px;
+	font-weight: normal;
+	table-layout: fixed;
+}
+
+.ViewGrid[data-bkgstyle='none']>thead>tr, .ViewGrid[data-bkgstyle='none']>tfoot>tr
+{
+	background-color: transparent;}
+
+.ViewGrid[data-bkgstyle='none']>tbody>tr
+{
+	table-layout: fixed;
+}
+
+.ViewGrid[data-bkgstyle='uniform']>tbody>tr:nth-child(odd), .ViewGrid[data-bkgstyle='uniform']>tbody>tr:nth-child(even), .ViewGrid[data-bkgstyle='uniform']>thead>tr, .ViewGrid[data-bkgstyle='uniform']>tfoot>tr
+{
+	table-layout: fixed;
+}
+
+.ViewGrid[data-bkgstyle='header']>tbody>tr:nth-child(odd), .ViewGrid[data-bkgstyle='header']>tbody>tr:nth-child(even), .ViewGrid[data-bkgstyle='report']>tbody>tr:nth-child(odd)
+{
+	table-layout: fixed;
+}
+
+.ViewGrid[data-bkgstyle='report']>tbody>tr:nth-child(even)
+{
+	table-layout: fixed;
+}
+
+.ViewGrid[data-bkgstyle='header']>thead>tr, .ViewGrid[data-bkgstyle='header']>tfoot>tr, .ViewGrid[data-bkgstyle='report']>thead>tr, .ViewGrid[data-bkgstyle='report']>tfoot>tr
+{
+	background-color: #f9f9f9;
+	table-layout: fixed;
+}
+
+.PagingButtons,.PagingButtonsFirst,.PagingButtonsLast,.PagingButtonsNext,.PagingButtonsPrevious
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	border-right-color: #ccc;
+	border-top-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	padding-bottom: 16px !important;
+	 padding-left: 26px !important;
+}
+.PagingButtons:before,.PagingButtonsFirst:before,.PagingButtonsLast:before,.PagingButtonsNext:before,.PagingButtonsPrevious:before
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+}
+
+.PagingButtons:after,.PagingButtonsFirst:after,.PagingButtonsLast:after,.PagingButtonsNext:after,.PagingButtonsPrevious:after
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+}
+
+.PagingButtonsFirst
+{
+	background-image: url(PageFirst.png);
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.PagingButtonsLast
+{
+	background-image: url(PageLast.png);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding-bottom: 16px !important;
+	 padding-left: 26px !important;
+	 border-left-width: 0;
+}
+.PagingButtonsLast:before
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PagingButtonsLast:after
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PagingButtonsNext
+{
+	background-image: url(PageNext.png);
+	padding-bottom: 16px !important;
+	 padding-left: 26px !important;
+	 border-left-width: 0;
+}
+.PagingButtonsNext:before
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PagingButtonsNext:after
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PagingButtonsPrevious
+{
+	background-image: url(PagePrevious.png);
+	padding-bottom: 16px !important;
+	 padding-left: 26px !important;
+	 border-left-width: 0;
+}
+.PagingButtonsPrevious:before
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PagingButtonsPrevious:after
+{
+	padding-bottom: 16px !important;
+	padding-left: 26px !important;
+	border-left-width: 0;
+}
+
+.PoweredBy
+{
+	float: right;
+	margin-top: 20px;
+}
+.PoweredBy:before
+{
+	float: right;
+}
+
+.PoweredBy:after
+{
+	float: right;
+}
+
+.LevelTable
+{
+	border-bottom: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+	border-right-color: #ccc;
+	border-top-color: #ccc;
+	border-style: solid;
+}
+.BodyContainer,.LoginContainer
+{
+	margin-top: 42px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.HeaderContainer,.ThinHeaderContainer,.RecentLinksContainer
+{
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-bottom: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	background-color: #58a449;
+}
+.RecentLinksContainer
+{
+	background-color: #fff;
+}
+.FormContainer,.TabsFormContainer
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	background-color: #fff;
+}
+.AdvancedContainerItem,.AdvancedContainerItemExpanded
+{
+	overflow: hidden;
+	padding-bottom: 20px;
+	background-color: white;
+	border-bottom-color: #efefef;
+	max-height: 55px;
+	border-bottom-width: 1px;
+	 border-bottom-style: solid;
+	 -moz-transition: max-height 0.5s ease-in-out 0s;
+	 -webkit-transition: max-height 0.5s ease-in-out 0s;
+	 -ms-transition: max-height 0.5s ease-in-out 0s;
+	 transition: max-height 0.5s ease-in-out 0s;
+}
+.AdvancedContainerItemExpanded
+{
+	max-height: 500px;
+}
+.AdvancedContainer,.AdvancedContainerVisible
+{
+	background-color: #fff;
+	 -moz-transition: left 0.5s ease-in-out 0s;
+	 -webkit-transition: left 0.5s ease-in-out 0s;
+	 -ms-transition: left 0.5s ease-in-out 0s;
+	 transition: left 0.5s ease-in-out 0s;
+}
+.OrdersTable
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.WWAdvancedContainer
+{
+	margin-left: -45px;
+	background-color: #fff;
+}
+.PromptContainer
+{
+	margin-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.PromptMainTable
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.MainContainer
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.GridTabMainTable
+{
+	overflow: hidden;
+	position: relative;
+}
+.GridNewRow:before,.GridNewRowWhite:before,.Grid>tfoot .gx_newrow:before,.GridDragging>tfoot .gx_newrow:before,.GridNoAcceptDrag>tfoot .gx_newrow:before,.GridNoData>tfoot .gx_newrow:before,.Grid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.GridDragging[data-gx-grid-nodata]>tfoot .gx_newrow:before,.GridNoAcceptDrag[data-gx-grid-nodata]>tfoot .gx_newrow:before,.GridNoData[data-gx-grid-nodata]>tfoot .gx_newrow:before,.GridAcceptDrag[data-gx-grid-nodata]>tfoot .gx_newrow:before,.WorkWith[data-gx-grid-nodata]>tfoot .gx_newrow:before,.PromptGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.ViewGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.FreeStyleGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.VerticalTabGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.RecentLinksGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.TrnSublevelGrid[data-gx-grid-nodata]>tfoot .gx_newrow:before,.GridAcceptDrag>tfoot .gx_newrow:before,.WorkWith>tfoot .gx_newrow:before,.PromptGrid>tfoot .gx_newrow:before,.ViewGrid>tfoot .gx_newrow:before,.FreeStyleGridFooter>.gx_newrow:before,.VerticalTabGridFooter>.gx_newrow:before,.RecentLinksGridFooter>.gx_newrow:before,.TrnSublevelGridFooter>.gx_newrow:before
+{
+	content: '[';
+}
+
+.GridNewRow:after,.GridNewRowWhite:after,.Grid>tfoot .gx_newrow:after,.GridDragging>tfoot .gx_newrow:after,.GridNoAcceptDrag>tfoot .gx_newrow:after,.GridNoData>tfoot .gx_newrow:after,.Grid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.GridDragging[data-gx-grid-nodata]>tfoot .gx_newrow:after,.GridNoAcceptDrag[data-gx-grid-nodata]>tfoot .gx_newrow:after,.GridNoData[data-gx-grid-nodata]>tfoot .gx_newrow:after,.GridAcceptDrag[data-gx-grid-nodata]>tfoot .gx_newrow:after,.WorkWith[data-gx-grid-nodata]>tfoot .gx_newrow:after,.PromptGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.ViewGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.FreeStyleGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.VerticalTabGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.RecentLinksGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.TrnSublevelGrid[data-gx-grid-nodata]>tfoot .gx_newrow:after,.GridAcceptDrag>tfoot .gx_newrow:after,.WorkWith>tfoot .gx_newrow:after,.PromptGrid>tfoot .gx_newrow:after,.ViewGrid>tfoot .gx_newrow:after,.FreeStyleGridFooter>.gx_newrow:after,.VerticalTabGridFooter>.gx_newrow:after,.RecentLinksGridFooter>.gx_newrow:after,.TrnSublevelGridFooter>.gx_newrow:after
+{
+	content: ']';
+}
+
+.GridLoadingText,.Grid+div.gx-grid-loading,.GridDragging+div.gx-grid-loading,.GridNoAcceptDrag+div.gx-grid-loading,.GridNoData+div.gx-grid-loading,.Grid[data-gx-grid-nodata]+div.gx-grid-loading,.GridDragging[data-gx-grid-nodata]+div.gx-grid-loading,.GridNoAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading,.GridNoData[data-gx-grid-nodata]+div.gx-grid-loading,.GridAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading,.WorkWith[data-gx-grid-nodata]+div.gx-grid-loading,.PromptGrid[data-gx-grid-nodata]+div.gx-grid-loading,.ViewGrid[data-gx-grid-nodata]+div.gx-grid-loading,.FreeStyleGrid[data-gx-grid-nodata]+div.gx-grid-loading,.VerticalTabGrid[data-gx-grid-nodata]+div.gx-grid-loading,.RecentLinksGrid[data-gx-grid-nodata]+div.gx-grid-loading,.TrnSublevelGrid[data-gx-grid-nodata]+div.gx-grid-loading,.GridAcceptDrag+div.gx-grid-loading,.WorkWith+div.gx-grid-loading,.PromptGrid+div.gx-grid-loading,.ViewGrid+div.gx-grid-loading,.FreeStyleGrid+div.gx-grid-loading,.VerticalTabGrid+div.gx-grid-loading,.RecentLinksGrid+div.gx-grid-loading,.TrnSublevelGrid+div.gx-grid-loading
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	background-color: rgba(0,0,255,0.3);
+	font-size: 1.5em;
+	color: white;
+	min-height: 2em;
+	width: 30%;
+	text-align: center;
+}
+.GridLoadingText:before,.Grid+div.gx-grid-loading:before,.GridDragging+div.gx-grid-loading:before,.GridNoAcceptDrag+div.gx-grid-loading:before,.GridNoData+div.gx-grid-loading:before,.Grid[data-gx-grid-nodata]+div.gx-grid-loading:before,.GridDragging[data-gx-grid-nodata]+div.gx-grid-loading:before,.GridNoAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading:before,.GridNoData[data-gx-grid-nodata]+div.gx-grid-loading:before,.GridAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading:before,.WorkWith[data-gx-grid-nodata]+div.gx-grid-loading:before,.PromptGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.ViewGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.FreeStyleGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.VerticalTabGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.RecentLinksGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.TrnSublevelGrid[data-gx-grid-nodata]+div.gx-grid-loading:before,.GridAcceptDrag+div.gx-grid-loading:before,.WorkWith+div.gx-grid-loading:before,.PromptGrid+div.gx-grid-loading:before,.ViewGrid+div.gx-grid-loading:before,.FreeStyleGrid+div.gx-grid-loading:before,.VerticalTabGrid+div.gx-grid-loading:before,.RecentLinksGrid+div.gx-grid-loading:before,.TrnSublevelGrid+div.gx-grid-loading:before
+{
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+}
+
+.GridLoadingText:after,.Grid+div.gx-grid-loading:after,.GridDragging+div.gx-grid-loading:after,.GridNoAcceptDrag+div.gx-grid-loading:after,.GridNoData+div.gx-grid-loading:after,.Grid[data-gx-grid-nodata]+div.gx-grid-loading:after,.GridDragging[data-gx-grid-nodata]+div.gx-grid-loading:after,.GridNoAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading:after,.GridNoData[data-gx-grid-nodata]+div.gx-grid-loading:after,.GridAcceptDrag[data-gx-grid-nodata]+div.gx-grid-loading:after,.WorkWith[data-gx-grid-nodata]+div.gx-grid-loading:after,.PromptGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.ViewGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.FreeStyleGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.VerticalTabGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.RecentLinksGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.TrnSublevelGrid[data-gx-grid-nodata]+div.gx-grid-loading:after,.GridAcceptDrag+div.gx-grid-loading:after,.WorkWith+div.gx-grid-loading:after,.PromptGrid+div.gx-grid-loading:after,.ViewGrid+div.gx-grid-loading:after,.FreeStyleGrid+div.gx-grid-loading:after,.VerticalTabGrid+div.gx-grid-loading:after,.RecentLinksGrid+div.gx-grid-loading:after,.TrnSublevelGrid+div.gx-grid-loading:after
+{
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+}
+
+.TableHeaderText,.Grid>caption,.GridDragging>caption,.GridNoAcceptDrag>caption,.GridNoData>caption,.Grid[data-gx-grid-nodata]>caption,.GridDragging[data-gx-grid-nodata]>caption,.GridNoAcceptDrag[data-gx-grid-nodata]>caption,.GridNoData[data-gx-grid-nodata]>caption,.GridAcceptDrag[data-gx-grid-nodata]>caption,.WorkWith[data-gx-grid-nodata]>caption,.PromptGrid[data-gx-grid-nodata]>caption,.ViewGrid[data-gx-grid-nodata]>caption,.FreeStyleGrid[data-gx-grid-nodata]>caption,.VerticalTabGrid[data-gx-grid-nodata]>caption,.RecentLinksGrid[data-gx-grid-nodata]>caption,.TrnSublevelGrid[data-gx-grid-nodata]>caption,.GridAcceptDrag>caption,.WorkWith>caption,.PromptGrid>caption,.ViewGrid>caption,.Table>caption,.TableDragging>caption,.TableAcceptDrag>caption,.TableNoAcceptDrag>caption,.TableGrid>caption,.TableTop>caption,.TableTopSearch>caption,.TableContent>caption,.TableLeftMenu>caption,.TableTopMenu>caption,.ViewTable>caption,.TableHorizontalLine>caption,.header_pink_line>caption,.HorizontalSpace>caption,.TableBottom>caption,.Table80>caption,.TableButtons>caption,.Table960>caption,.TableGreyFooter>caption,.TableBlackFooter>caption,.TableBlackHeader>caption,.TableLogin>caption,.SmallTableLogin>caption,.LargeTableLogin>caption,.td5>caption,.td100>caption,.ToolbarMain>caption,.TableBorder100x100>caption,.HorizantalSpace>caption,.TableHeaderRight>caption,.TableLogo>caption,.FiltersContainer>caption,.FiltersContainerItem>caption,.FilterContainerItemSearch>caption,.NegativeMarginTop10>caption,.Table193x216>caption,.Table193x216Collapsed>caption,.ActionsContainer>caption,.ActionsContainerItem>caption,.ActionsContainerVisible>caption,.Table100x100>caption,.TableBorder>caption,.RecentLinksTable>caption,.Table95>caption,.Container>caption,.ContainerFluid>caption,.RecentLinksMainTable>caption,.RecentLinksMainTableExpanded>caption,.LevelTable>caption,.BodyContainer>caption,.LoginContainer>caption,.HeaderContainer>caption,.ThinHeaderContainer>caption,.RecentLinksContainer>caption,.FormContainer>caption,.TabsFormContainer>caption,.AdvancedContainerItem>caption,.AdvancedContainerItemExpanded>caption,.AdvancedContainer>caption,.AdvancedContainerVisible>caption,.OrdersTable>caption,.WWAdvancedContainer>caption,.PromptContainer>caption,.PromptMainTable>caption,.MainContainer>caption,.GridTabMainTable>caption
+{
+	display: none;
+	font-size: 1.4em;
+}
+.TableHeaderText:before,.Grid>caption:before,.GridDragging>caption:before,.GridNoAcceptDrag>caption:before,.GridNoData>caption:before,.Grid[data-gx-grid-nodata]>caption:before,.GridDragging[data-gx-grid-nodata]>caption:before,.GridNoAcceptDrag[data-gx-grid-nodata]>caption:before,.GridNoData[data-gx-grid-nodata]>caption:before,.GridAcceptDrag[data-gx-grid-nodata]>caption:before,.WorkWith[data-gx-grid-nodata]>caption:before,.PromptGrid[data-gx-grid-nodata]>caption:before,.ViewGrid[data-gx-grid-nodata]>caption:before,.FreeStyleGrid[data-gx-grid-nodata]>caption:before,.VerticalTabGrid[data-gx-grid-nodata]>caption:before,.RecentLinksGrid[data-gx-grid-nodata]>caption:before,.TrnSublevelGrid[data-gx-grid-nodata]>caption:before,.GridAcceptDrag>caption:before,.WorkWith>caption:before,.PromptGrid>caption:before,.ViewGrid>caption:before,.Table>caption:before,.TableDragging>caption:before,.TableAcceptDrag>caption:before,.TableNoAcceptDrag>caption:before,.TableGrid>caption:before,.TableTop>caption:before,.TableTopSearch>caption:before,.TableContent>caption:before,.TableLeftMenu>caption:before,.TableTopMenu>caption:before,.ViewTable>caption:before,.TableHorizontalLine>caption:before,.header_pink_line>caption:before,.HorizontalSpace>caption:before,.TableBottom>caption:before,.Table80>caption:before,.TableButtons>caption:before,.Table960>caption:before,.TableGreyFooter>caption:before,.TableBlackFooter>caption:before,.TableBlackHeader>caption:before,.TableLogin>caption:before,.SmallTableLogin>caption:before,.LargeTableLogin>caption:before,.td5>caption:before,.td100>caption:before,.ToolbarMain>caption:before,.TableBorder100x100>caption:before,.HorizantalSpace>caption:before,.TableHeaderRight>caption:before,.TableLogo>caption:before,.FiltersContainer>caption:before,.FiltersContainerItem>caption:before,.FilterContainerItemSearch>caption:before,.NegativeMarginTop10>caption:before,.Table193x216>caption:before,.Table193x216Collapsed>caption:before,.ActionsContainer>caption:before,.ActionsContainerItem>caption:before,.ActionsContainerVisible>caption:before,.Table100x100>caption:before,.TableBorder>caption:before,.RecentLinksTable>caption:before,.Table95>caption:before,.Container>caption:before,.ContainerFluid>caption:before,.RecentLinksMainTable>caption:before,.RecentLinksMainTableExpanded>caption:before,.LevelTable>caption:before,.BodyContainer>caption:before,.LoginContainer>caption:before,.HeaderContainer>caption:before,.ThinHeaderContainer>caption:before,.RecentLinksContainer>caption:before,.FormContainer>caption:before,.TabsFormContainer>caption:before,.AdvancedContainerItem>caption:before,.AdvancedContainerItemExpanded>caption:before,.AdvancedContainer>caption:before,.AdvancedContainerVisible>caption:before,.OrdersTable>caption:before,.WWAdvancedContainer>caption:before,.PromptContainer>caption:before,.PromptMainTable>caption:before,.MainContainer>caption:before,.GridTabMainTable>caption:before
+{
+	display: none;
+	font-size: 1.4em;
+}
+
+.TableHeaderText:after,.Grid>caption:after,.GridDragging>caption:after,.GridNoAcceptDrag>caption:after,.GridNoData>caption:after,.Grid[data-gx-grid-nodata]>caption:after,.GridDragging[data-gx-grid-nodata]>caption:after,.GridNoAcceptDrag[data-gx-grid-nodata]>caption:after,.GridNoData[data-gx-grid-nodata]>caption:after,.GridAcceptDrag[data-gx-grid-nodata]>caption:after,.WorkWith[data-gx-grid-nodata]>caption:after,.PromptGrid[data-gx-grid-nodata]>caption:after,.ViewGrid[data-gx-grid-nodata]>caption:after,.FreeStyleGrid[data-gx-grid-nodata]>caption:after,.VerticalTabGrid[data-gx-grid-nodata]>caption:after,.RecentLinksGrid[data-gx-grid-nodata]>caption:after,.TrnSublevelGrid[data-gx-grid-nodata]>caption:after,.GridAcceptDrag>caption:after,.WorkWith>caption:after,.PromptGrid>caption:after,.ViewGrid>caption:after,.Table>caption:after,.TableDragging>caption:after,.TableAcceptDrag>caption:after,.TableNoAcceptDrag>caption:after,.TableGrid>caption:after,.TableTop>caption:after,.TableTopSearch>caption:after,.TableContent>caption:after,.TableLeftMenu>caption:after,.TableTopMenu>caption:after,.ViewTable>caption:after,.TableHorizontalLine>caption:after,.header_pink_line>caption:after,.HorizontalSpace>caption:after,.TableBottom>caption:after,.Table80>caption:after,.TableButtons>caption:after,.Table960>caption:after,.TableGreyFooter>caption:after,.TableBlackFooter>caption:after,.TableBlackHeader>caption:after,.TableLogin>caption:after,.SmallTableLogin>caption:after,.LargeTableLogin>caption:after,.td5>caption:after,.td100>caption:after,.ToolbarMain>caption:after,.TableBorder100x100>caption:after,.HorizantalSpace>caption:after,.TableHeaderRight>caption:after,.TableLogo>caption:after,.FiltersContainer>caption:after,.FiltersContainerItem>caption:after,.FilterContainerItemSearch>caption:after,.NegativeMarginTop10>caption:after,.Table193x216>caption:after,.Table193x216Collapsed>caption:after,.ActionsContainer>caption:after,.ActionsContainerItem>caption:after,.ActionsContainerVisible>caption:after,.Table100x100>caption:after,.TableBorder>caption:after,.RecentLinksTable>caption:after,.Table95>caption:after,.Container>caption:after,.ContainerFluid>caption:after,.RecentLinksMainTable>caption:after,.RecentLinksMainTableExpanded>caption:after,.LevelTable>caption:after,.BodyContainer>caption:after,.LoginContainer>caption:after,.HeaderContainer>caption:after,.ThinHeaderContainer>caption:after,.RecentLinksContainer>caption:after,.FormContainer>caption:after,.TabsFormContainer>caption:after,.AdvancedContainerItem>caption:after,.AdvancedContainerItemExpanded>caption:after,.AdvancedContainer>caption:after,.AdvancedContainerVisible>caption:after,.OrdersTable>caption:after,.WWAdvancedContainer>caption:after,.PromptContainer>caption:after,.PromptMainTable>caption:after,.MainContainer>caption:after,.GridTabMainTable>caption:after
+{
+	display: none;
+	font-size: 1.4em;
+}
+
+.GridNoDataText,.Grid+.gx-text-gridnodata,.GridDragging+.gx-text-gridnodata,.GridNoAcceptDrag+.gx-text-gridnodata,.GridNoData+.gx-text-gridnodata,.Grid[data-gx-grid-nodata]+.gx-text-gridnodata,.GridDragging[data-gx-grid-nodata]+.gx-text-gridnodata,.GridNoAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata,.GridNoData[data-gx-grid-nodata]+.gx-text-gridnodata,.GridAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata,.WorkWith[data-gx-grid-nodata]+.gx-text-gridnodata,.PromptGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.ViewGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.FreeStyleGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.VerticalTabGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.RecentLinksGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.TrnSublevelGrid[data-gx-grid-nodata]+.gx-text-gridnodata,.GridAcceptDrag+.gx-text-gridnodata,.WorkWith+.gx-text-gridnodata,.PromptGrid+.gx-text-gridnodata,.ViewGrid+.gx-text-gridnodata,.FreeStyleGrid+.gx-text-gridnodata,.VerticalTabGrid+.gx-text-gridnodata,.RecentLinksGrid+.gx-text-gridnodata,.TrnSublevelGrid+.gx-text-gridnodata
+{
+	margin-top: -1em;
+	display: block;
+	font-size: 1.5em;
+	color: gray;
+	text-align: center;
+	vertical-align: middle;
+}
+.GridNoDataText:before,.Grid+.gx-text-gridnodata:before,.GridDragging+.gx-text-gridnodata:before,.GridNoAcceptDrag+.gx-text-gridnodata:before,.GridNoData+.gx-text-gridnodata:before,.Grid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.GridDragging[data-gx-grid-nodata]+.gx-text-gridnodata:before,.GridNoAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata:before,.GridNoData[data-gx-grid-nodata]+.gx-text-gridnodata:before,.GridAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata:before,.WorkWith[data-gx-grid-nodata]+.gx-text-gridnodata:before,.PromptGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.ViewGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.FreeStyleGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.VerticalTabGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.RecentLinksGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.TrnSublevelGrid[data-gx-grid-nodata]+.gx-text-gridnodata:before,.GridAcceptDrag+.gx-text-gridnodata:before,.WorkWith+.gx-text-gridnodata:before,.PromptGrid+.gx-text-gridnodata:before,.ViewGrid+.gx-text-gridnodata:before,.FreeStyleGrid+.gx-text-gridnodata:before,.VerticalTabGrid+.gx-text-gridnodata:before,.RecentLinksGrid+.gx-text-gridnodata:before,.TrnSublevelGrid+.gx-text-gridnodata:before
+{
+	display: block;
+	font-size: 1.5em;
+	color: gray;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.GridNoDataText:after,.Grid+.gx-text-gridnodata:after,.GridDragging+.gx-text-gridnodata:after,.GridNoAcceptDrag+.gx-text-gridnodata:after,.GridNoData+.gx-text-gridnodata:after,.Grid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.GridDragging[data-gx-grid-nodata]+.gx-text-gridnodata:after,.GridNoAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata:after,.GridNoData[data-gx-grid-nodata]+.gx-text-gridnodata:after,.GridAcceptDrag[data-gx-grid-nodata]+.gx-text-gridnodata:after,.WorkWith[data-gx-grid-nodata]+.gx-text-gridnodata:after,.PromptGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.ViewGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.FreeStyleGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.VerticalTabGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.RecentLinksGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.TrnSublevelGrid[data-gx-grid-nodata]+.gx-text-gridnodata:after,.GridAcceptDrag+.gx-text-gridnodata:after,.WorkWith+.gx-text-gridnodata:after,.PromptGrid+.gx-text-gridnodata:after,.ViewGrid+.gx-text-gridnodata:after,.FreeStyleGrid+.gx-text-gridnodata:after,.VerticalTabGrid+.gx-text-gridnodata:after,.RecentLinksGrid+.gx-text-gridnodata:after,.TrnSublevelGrid+.gx-text-gridnodata:after
+{
+	display: block;
+	font-size: 1.5em;
+	color: gray;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.Label,.RequiredLabel,.gx-label.AttributeLabel,.gx-label.BlobContentAttributeLabel,.gx-label.ReadonlyBlobContentAttributeLabel,.gx-label.BlobInputAttributeLabel,.gx-label.AttributeDraggingLabel,.gx-label.AttributeAcceptDragLabel,.gx-label.AttributeNoAcceptDragLabel,.gx-label.DownloadAttributeLabel,.gx-label.ReadonlyDownloadAttributeLabel,.gx-label.AttSubTitleLabel,.gx-label.BlobInputAttSubTitleLabel,.gx-label.BlobContentAttSubTitleLabel,.gx-label.ReadonlyBlobContentAttSubTitleLabel,.gx-label.ReadonlyAttSubTitleLabel,.gx-label.IME_ActiveLabel,.gx-label.BlobContentIME_ActiveLabel,.gx-label.ReadonlyBlobContentIME_ActiveLabel,.gx-label.BlobInputIME_ActiveLabel,.gx-label.ReadonlyIME_ActiveLabel,.gx-label.IME_InactiveLabel,.gx-label.BlobContentIME_InactiveLabel,.gx-label.ReadonlyBlobContentIME_InactiveLabel,.gx-label.BlobInputIME_InactiveLabel,.gx-label.ReadonlyIME_InactiveLabel,.gx-label.IME_DisabledLabel,.gx-label.BlobContentIME_DisabledLabel,.gx-label.ReadonlyBlobContentIME_DisabledLabel,.gx-label.BlobInputIME_DisabledLabel,.gx-label.ReadonlyIME_DisabledLabel,.gx-label.CheckboxLabelLabel,.gx-label.BlobContentCheckboxLabelLabel,.gx-label.ReadonlyBlobContentCheckboxLabelLabel,.gx-label.BlobInputCheckboxLabelLabel,.gx-label.ReadonlyCheckboxLabelLabel,.gx-label.CheckBoxLabel,.gx-label.BlobContentCheckBoxLabel,.gx-label.ReadonlyBlobContentCheckBoxLabel,.gx-label.BlobInputCheckBoxLabel,.gx-label.ReadonlyCheckBoxLabel,.gx-label.DescriptionAttributeLabel,.gx-label.BlobContentDescriptionAttributeLabel,.gx-label.ReadonlyBlobContentDescriptionAttributeLabel,.gx-label.BlobInputDescriptionAttributeLabel,.gx-label.ReadonlyDescriptionAttributeLabel,.gx-label.LoginAttributeLabel,.gx-label.BlobContentLoginAttributeLabel,.gx-label.ReadonlyBlobContentLoginAttributeLabel,.gx-label.BlobInputLoginAttributeLabel,.gx-label.ReadonlyLoginAttributeLabel,.gx-label.LoginComboAttributeLabel,.gx-label.BlobContentLoginComboAttributeLabel,.gx-label.ReadonlyBlobContentLoginComboAttributeLabel,.gx-label.BlobInputLoginComboAttributeLabel,.gx-label.ReadonlyLoginComboAttributeLabel,.gx-label.RegistrationAttributeLabel,.gx-label.BlobContentRegistrationAttributeLabel,.gx-label.ReadonlyBlobContentRegistrationAttributeLabel,.gx-label.BlobInputRegistrationAttributeLabel,.gx-label.ReadonlyRegistrationAttributeLabel,.gx-label.RequiredAttributeLabel,.gx-label.BlobContentRequiredAttributeLabel,.gx-label.ReadonlyBlobContentRequiredAttributeLabel,.gx-label.BlobInputRequiredAttributeLabel,.gx-label.ReadonlyRequiredAttributeLabel,.gx-label.InactiveAttributeLabel,.gx-label.BlobContentInactiveAttributeLabel,.gx-label.ReadonlyBlobContentInactiveAttributeLabel,.gx-label.BlobInputInactiveAttributeLabel,.gx-label.ReadonlyInactiveAttributeLabel,.gx-label.ComboAttributeLabel,.gx-label.BlobContentComboAttributeLabel,.gx-label.ReadonlyBlobContentComboAttributeLabel,.gx-label.BlobInputComboAttributeLabel,.gx-label.ReadonlyComboAttributeLabel,.gx-label.SubtitleAttributeLabel,.gx-label.BlobContentSubtitleAttributeLabel,.gx-label.ReadonlyBlobContentSubtitleAttributeLabel,.gx-label.BlobInputSubtitleAttributeLabel,.gx-label.ReadonlySubtitleAttributeLabel,.gx-label.URLAttributeLabel,.gx-label.BlobContentURLAttributeLabel,.gx-label.ReadonlyBlobContentURLAttributeLabel,.gx-label.BlobInputURLAttributeLabel,.gx-label.ReadonlyURLAttributeLabel,.gx-label.TextAttributeLabel,.gx-label.BlobContentTextAttributeLabel,.gx-label.ReadonlyBlobContentTextAttributeLabel,.gx-label.BlobInputTextAttributeLabel,.gx-label.ReadonlyTextAttributeLabel,.gx-label.TextActionAttributeLabel,.gx-label.BlobContentTextActionAttributeLabel,.gx-label.ReadonlyBlobContentTextActionAttributeLabel,.gx-label.BlobInputTextActionAttributeLabel,.gx-label.ReadonlyTextActionAttributeLabel,.gx-label.VideoAttributeLabel,.gx-label.ReadonlyVideoAttributeLabel,.gx-label.AudioAttributeLabel,.gx-label.ReadonlyAudioAttributeLabel,.gx-label.ErrorAttributeLabel,.gx-label.WarningAttributeLabel,.gx-label.ImageAttributeLabel,.gx-label.ResponsiveImageAttributeLabel,.gx-label.BlobContentResponsiveImageAttributeLabel,.gx-label.ReadonlyBlobContentResponsiveImageAttributeLabel,.gx-label.BlobInputResponsiveImageAttributeLabel,.gx-label.ReadonlyResponsiveImageAttributeLabel,.gx-label.ProfileImageAttributeLabel,.gx-label.BlobContentProfileImageAttributeLabel,.gx-label.ReadonlyBlobContentProfileImageAttributeLabel,.gx-label.BlobInputProfileImageAttributeLabel,.gx-label.ReadonlyProfileImageAttributeLabel,.gx-label.SmallProfileImageAttributeLabel,.gx-label.BlobContentSmallProfileImageAttributeLabel,.gx-label.ReadonlyBlobContentSmallProfileImageAttributeLabel,.gx-label.BlobInputSmallProfileImageAttributeLabel,.gx-label.ReadonlySmallProfileImageAttributeLabel,.gx-label.ReadonlyImageAttributeLabel,.gx-label.ActionAttributeLabel,.gx-label.BlobContentActionAttributeLabel,.gx-label.ReadonlyBlobContentActionAttributeLabel,.gx-label.UpdateAttributeLabel,.gx-label.BlobContentUpdateAttributeLabel,.gx-label.ReadonlyBlobContentUpdateAttributeLabel,.gx-label.BlobInputUpdateAttributeLabel,.gx-label.ReadonlyUpdateAttributeLabel,.gx-label.DeleteAttributeLabel,.gx-label.BlobContentDeleteAttributeLabel,.gx-label.ReadonlyBlobContentDeleteAttributeLabel,.gx-label.BlobInputDeleteAttributeLabel,.gx-label.ReadonlyDeleteAttributeLabel,.gx-label.DisplayAttributeLabel,.gx-label.BlobContentDisplayAttributeLabel,.gx-label.ReadonlyBlobContentDisplayAttributeLabel,.gx-label.BlobInputDisplayAttributeLabel,.gx-label.ReadonlyDisplayAttributeLabel,.gx-label.DisabledActionAttributeLabel,.gx-label.BlobContentDisabledActionAttributeLabel,.gx-label.ReadonlyBlobContentDisabledActionAttributeLabel,.gx-label.BlobInputDisabledActionAttributeLabel,.gx-label.ReadonlyDisabledActionAttributeLabel,.gx-label.BlobInputActionAttributeLabel,.gx-label.ReadonlyActionAttributeLabel,.gx-label.SelectionAttributeLabel,.gx-label.BlobContentSelectionAttributeLabel,.gx-label.ReadonlyBlobContentSelectionAttributeLabel,.gx-label.BlobInputSelectionAttributeLabel,.gx-label.ReadonlySelectionAttributeLabel,.gx-label.ReadonlyAttributeLabel,.gx-label.ReadonlyMedioLabel,.gx-label.BlobContentReadonlyMedioLabel,.gx-label.ReadonlyBlobContentReadonlyMedioLabel,.gx-label.BlobInputReadonlyMedioLabel,.gx-label.ReadonlyReadonlyMedioLabel,.gx-label.FilterAttributeLabel,.gx-label.BlobContentFilterAttributeLabel,.gx-label.ReadonlyBlobContentFilterAttributeLabel,.gx-label.BlobInputFilterAttributeLabel,.gx-label.FilterComboAttributeLabel,.gx-label.BlobContentFilterComboAttributeLabel,.gx-label.ReadonlyBlobContentFilterComboAttributeLabel,.gx-label.BlobInputFilterComboAttributeLabel,.gx-label.ReadonlyFilterComboAttributeLabel,.gx-label.FilterSearchAttributeLabel,.gx-label.BlobContentFilterSearchAttributeLabel,.gx-label.ReadonlyBlobContentFilterSearchAttributeLabel,.gx-label.BlobInputFilterSearchAttributeLabel,.gx-label.ReadonlyFilterSearchAttributeLabel,.gx-label.FilterSearchAttributeFocusLabel,.gx-label.BlobContentFilterSearchAttributeFocusLabel,.gx-label.ReadonlyBlobContentFilterSearchAttributeFocusLabel,.gx-label.BlobInputFilterSearchAttributeFocusLabel,.gx-label.ReadonlyFilterSearchAttributeFocusLabel,.gx-label.DateFilterSearchAttributeLabel,.gx-label.BlobContentDateFilterSearchAttributeLabel,.gx-label.ReadonlyBlobContentDateFilterSearchAttributeLabel,.gx-label.BlobInputDateFilterSearchAttributeLabel,.gx-label.ReadonlyDateFilterSearchAttributeLabel,.gx-label.FilterPanelLabel,.gx-label.BlobContentFilterPanelLabel,.gx-label.ReadonlyBlobContentFilterPanelLabel,.gx-label.BlobInputFilterPanelLabel,.gx-label.ReadonlyFilterPanelLabel,.gx-label.ReadonlyFilterAttributeLabel
+{
+	color: #444;
+}
+.Label:before,.RequiredLabel:before,.gx-label.AttributeLabel:before,.gx-label.BlobContentAttributeLabel:before,.gx-label.ReadonlyBlobContentAttributeLabel:before,.gx-label.BlobInputAttributeLabel:before,.gx-label.AttributeDraggingLabel:before,.gx-label.AttributeAcceptDragLabel:before,.gx-label.AttributeNoAcceptDragLabel:before,.gx-label.DownloadAttributeLabel:before,.gx-label.ReadonlyDownloadAttributeLabel:before,.gx-label.AttSubTitleLabel:before,.gx-label.BlobInputAttSubTitleLabel:before,.gx-label.BlobContentAttSubTitleLabel:before,.gx-label.ReadonlyBlobContentAttSubTitleLabel:before,.gx-label.ReadonlyAttSubTitleLabel:before,.gx-label.IME_ActiveLabel:before,.gx-label.BlobContentIME_ActiveLabel:before,.gx-label.ReadonlyBlobContentIME_ActiveLabel:before,.gx-label.BlobInputIME_ActiveLabel:before,.gx-label.ReadonlyIME_ActiveLabel:before,.gx-label.IME_InactiveLabel:before,.gx-label.BlobContentIME_InactiveLabel:before,.gx-label.ReadonlyBlobContentIME_InactiveLabel:before,.gx-label.BlobInputIME_InactiveLabel:before,.gx-label.ReadonlyIME_InactiveLabel:before,.gx-label.IME_DisabledLabel:before,.gx-label.BlobContentIME_DisabledLabel:before,.gx-label.ReadonlyBlobContentIME_DisabledLabel:before,.gx-label.BlobInputIME_DisabledLabel:before,.gx-label.ReadonlyIME_DisabledLabel:before,.gx-label.CheckboxLabelLabel:before,.gx-label.BlobContentCheckboxLabelLabel:before,.gx-label.ReadonlyBlobContentCheckboxLabelLabel:before,.gx-label.BlobInputCheckboxLabelLabel:before,.gx-label.ReadonlyCheckboxLabelLabel:before,.gx-label.CheckBoxLabel:before,.gx-label.BlobContentCheckBoxLabel:before,.gx-label.ReadonlyBlobContentCheckBoxLabel:before,.gx-label.BlobInputCheckBoxLabel:before,.gx-label.ReadonlyCheckBoxLabel:before,.gx-label.DescriptionAttributeLabel:before,.gx-label.BlobContentDescriptionAttributeLabel:before,.gx-label.ReadonlyBlobContentDescriptionAttributeLabel:before,.gx-label.BlobInputDescriptionAttributeLabel:before,.gx-label.ReadonlyDescriptionAttributeLabel:before,.gx-label.LoginAttributeLabel:before,.gx-label.BlobContentLoginAttributeLabel:before,.gx-label.ReadonlyBlobContentLoginAttributeLabel:before,.gx-label.BlobInputLoginAttributeLabel:before,.gx-label.ReadonlyLoginAttributeLabel:before,.gx-label.LoginComboAttributeLabel:before,.gx-label.BlobContentLoginComboAttributeLabel:before,.gx-label.ReadonlyBlobContentLoginComboAttributeLabel:before,.gx-label.BlobInputLoginComboAttributeLabel:before,.gx-label.ReadonlyLoginComboAttributeLabel:before,.gx-label.RegistrationAttributeLabel:before,.gx-label.BlobContentRegistrationAttributeLabel:before,.gx-label.ReadonlyBlobContentRegistrationAttributeLabel:before,.gx-label.BlobInputRegistrationAttributeLabel:before,.gx-label.ReadonlyRegistrationAttributeLabel:before,.gx-label.RequiredAttributeLabel:before,.gx-label.BlobContentRequiredAttributeLabel:before,.gx-label.ReadonlyBlobContentRequiredAttributeLabel:before,.gx-label.BlobInputRequiredAttributeLabel:before,.gx-label.ReadonlyRequiredAttributeLabel:before,.gx-label.InactiveAttributeLabel:before,.gx-label.BlobContentInactiveAttributeLabel:before,.gx-label.ReadonlyBlobContentInactiveAttributeLabel:before,.gx-label.BlobInputInactiveAttributeLabel:before,.gx-label.ReadonlyInactiveAttributeLabel:before,.gx-label.ComboAttributeLabel:before,.gx-label.BlobContentComboAttributeLabel:before,.gx-label.ReadonlyBlobContentComboAttributeLabel:before,.gx-label.BlobInputComboAttributeLabel:before,.gx-label.ReadonlyComboAttributeLabel:before,.gx-label.SubtitleAttributeLabel:before,.gx-label.BlobContentSubtitleAttributeLabel:before,.gx-label.ReadonlyBlobContentSubtitleAttributeLabel:before,.gx-label.BlobInputSubtitleAttributeLabel:before,.gx-label.ReadonlySubtitleAttributeLabel:before,.gx-label.URLAttributeLabel:before,.gx-label.BlobContentURLAttributeLabel:before,.gx-label.ReadonlyBlobContentURLAttributeLabel:before,.gx-label.BlobInputURLAttributeLabel:before,.gx-label.ReadonlyURLAttributeLabel:before,.gx-label.TextAttributeLabel:before,.gx-label.BlobContentTextAttributeLabel:before,.gx-label.ReadonlyBlobContentTextAttributeLabel:before,.gx-label.BlobInputTextAttributeLabel:before,.gx-label.ReadonlyTextAttributeLabel:before,.gx-label.TextActionAttributeLabel:before,.gx-label.BlobContentTextActionAttributeLabel:before,.gx-label.ReadonlyBlobContentTextActionAttributeLabel:before,.gx-label.BlobInputTextActionAttributeLabel:before,.gx-label.ReadonlyTextActionAttributeLabel:before,.gx-label.VideoAttributeLabel:before,.gx-label.ReadonlyVideoAttributeLabel:before,.gx-label.AudioAttributeLabel:before,.gx-label.ReadonlyAudioAttributeLabel:before,.gx-label.ErrorAttributeLabel:before,.gx-label.WarningAttributeLabel:before,.gx-label.ImageAttributeLabel:before,.gx-label.ResponsiveImageAttributeLabel:before,.gx-label.BlobContentResponsiveImageAttributeLabel:before,.gx-label.ReadonlyBlobContentResponsiveImageAttributeLabel:before,.gx-label.BlobInputResponsiveImageAttributeLabel:before,.gx-label.ReadonlyResponsiveImageAttributeLabel:before,.gx-label.ProfileImageAttributeLabel:before,.gx-label.BlobContentProfileImageAttributeLabel:before,.gx-label.ReadonlyBlobContentProfileImageAttributeLabel:before,.gx-label.BlobInputProfileImageAttributeLabel:before,.gx-label.ReadonlyProfileImageAttributeLabel:before,.gx-label.SmallProfileImageAttributeLabel:before,.gx-label.BlobContentSmallProfileImageAttributeLabel:before,.gx-label.ReadonlyBlobContentSmallProfileImageAttributeLabel:before,.gx-label.BlobInputSmallProfileImageAttributeLabel:before,.gx-label.ReadonlySmallProfileImageAttributeLabel:before,.gx-label.ReadonlyImageAttributeLabel:before,.gx-label.ActionAttributeLabel:before,.gx-label.BlobContentActionAttributeLabel:before,.gx-label.ReadonlyBlobContentActionAttributeLabel:before,.gx-label.UpdateAttributeLabel:before,.gx-label.BlobContentUpdateAttributeLabel:before,.gx-label.ReadonlyBlobContentUpdateAttributeLabel:before,.gx-label.BlobInputUpdateAttributeLabel:before,.gx-label.ReadonlyUpdateAttributeLabel:before,.gx-label.DeleteAttributeLabel:before,.gx-label.BlobContentDeleteAttributeLabel:before,.gx-label.ReadonlyBlobContentDeleteAttributeLabel:before,.gx-label.BlobInputDeleteAttributeLabel:before,.gx-label.ReadonlyDeleteAttributeLabel:before,.gx-label.DisplayAttributeLabel:before,.gx-label.BlobContentDisplayAttributeLabel:before,.gx-label.ReadonlyBlobContentDisplayAttributeLabel:before,.gx-label.BlobInputDisplayAttributeLabel:before,.gx-label.ReadonlyDisplayAttributeLabel:before,.gx-label.DisabledActionAttributeLabel:before,.gx-label.BlobContentDisabledActionAttributeLabel:before,.gx-label.ReadonlyBlobContentDisabledActionAttributeLabel:before,.gx-label.BlobInputDisabledActionAttributeLabel:before,.gx-label.ReadonlyDisabledActionAttributeLabel:before,.gx-label.BlobInputActionAttributeLabel:before,.gx-label.ReadonlyActionAttributeLabel:before,.gx-label.SelectionAttributeLabel:before,.gx-label.BlobContentSelectionAttributeLabel:before,.gx-label.ReadonlyBlobContentSelectionAttributeLabel:before,.gx-label.BlobInputSelectionAttributeLabel:before,.gx-label.ReadonlySelectionAttributeLabel:before,.gx-label.ReadonlyAttributeLabel:before,.gx-label.ReadonlyMedioLabel:before,.gx-label.BlobContentReadonlyMedioLabel:before,.gx-label.ReadonlyBlobContentReadonlyMedioLabel:before,.gx-label.BlobInputReadonlyMedioLabel:before,.gx-label.ReadonlyReadonlyMedioLabel:before,.gx-label.FilterAttributeLabel:before,.gx-label.BlobContentFilterAttributeLabel:before,.gx-label.ReadonlyBlobContentFilterAttributeLabel:before,.gx-label.BlobInputFilterAttributeLabel:before,.gx-label.FilterComboAttributeLabel:before,.gx-label.BlobContentFilterComboAttributeLabel:before,.gx-label.ReadonlyBlobContentFilterComboAttributeLabel:before,.gx-label.BlobInputFilterComboAttributeLabel:before,.gx-label.ReadonlyFilterComboAttributeLabel:before,.gx-label.FilterSearchAttributeLabel:before,.gx-label.BlobContentFilterSearchAttributeLabel:before,.gx-label.ReadonlyBlobContentFilterSearchAttributeLabel:before,.gx-label.BlobInputFilterSearchAttributeLabel:before,.gx-label.ReadonlyFilterSearchAttributeLabel:before,.gx-label.FilterSearchAttributeFocusLabel:before,.gx-label.BlobContentFilterSearchAttributeFocusLabel:before,.gx-label.ReadonlyBlobContentFilterSearchAttributeFocusLabel:before,.gx-label.BlobInputFilterSearchAttributeFocusLabel:before,.gx-label.ReadonlyFilterSearchAttributeFocusLabel:before,.gx-label.DateFilterSearchAttributeLabel:before,.gx-label.BlobContentDateFilterSearchAttributeLabel:before,.gx-label.ReadonlyBlobContentDateFilterSearchAttributeLabel:before,.gx-label.BlobInputDateFilterSearchAttributeLabel:before,.gx-label.ReadonlyDateFilterSearchAttributeLabel:before,.gx-label.FilterPanelLabel:before,.gx-label.BlobContentFilterPanelLabel:before,.gx-label.ReadonlyBlobContentFilterPanelLabel:before,.gx-label.BlobInputFilterPanelLabel:before,.gx-label.ReadonlyFilterPanelLabel:before,.gx-label.ReadonlyFilterAttributeLabel:before
+{
+	color: #444;
+}
+
+.Label:after,.RequiredLabel:after,.gx-label.AttributeLabel:after,.gx-label.BlobContentAttributeLabel:after,.gx-label.ReadonlyBlobContentAttributeLabel:after,.gx-label.BlobInputAttributeLabel:after,.gx-label.AttributeDraggingLabel:after,.gx-label.AttributeAcceptDragLabel:after,.gx-label.AttributeNoAcceptDragLabel:after,.gx-label.DownloadAttributeLabel:after,.gx-label.ReadonlyDownloadAttributeLabel:after,.gx-label.AttSubTitleLabel:after,.gx-label.BlobInputAttSubTitleLabel:after,.gx-label.BlobContentAttSubTitleLabel:after,.gx-label.ReadonlyBlobContentAttSubTitleLabel:after,.gx-label.ReadonlyAttSubTitleLabel:after,.gx-label.IME_ActiveLabel:after,.gx-label.BlobContentIME_ActiveLabel:after,.gx-label.ReadonlyBlobContentIME_ActiveLabel:after,.gx-label.BlobInputIME_ActiveLabel:after,.gx-label.ReadonlyIME_ActiveLabel:after,.gx-label.IME_InactiveLabel:after,.gx-label.BlobContentIME_InactiveLabel:after,.gx-label.ReadonlyBlobContentIME_InactiveLabel:after,.gx-label.BlobInputIME_InactiveLabel:after,.gx-label.ReadonlyIME_InactiveLabel:after,.gx-label.IME_DisabledLabel:after,.gx-label.BlobContentIME_DisabledLabel:after,.gx-label.ReadonlyBlobContentIME_DisabledLabel:after,.gx-label.BlobInputIME_DisabledLabel:after,.gx-label.ReadonlyIME_DisabledLabel:after,.gx-label.CheckboxLabelLabel:after,.gx-label.BlobContentCheckboxLabelLabel:after,.gx-label.ReadonlyBlobContentCheckboxLabelLabel:after,.gx-label.BlobInputCheckboxLabelLabel:after,.gx-label.ReadonlyCheckboxLabelLabel:after,.gx-label.CheckBoxLabel:after,.gx-label.BlobContentCheckBoxLabel:after,.gx-label.ReadonlyBlobContentCheckBoxLabel:after,.gx-label.BlobInputCheckBoxLabel:after,.gx-label.ReadonlyCheckBoxLabel:after,.gx-label.DescriptionAttributeLabel:after,.gx-label.BlobContentDescriptionAttributeLabel:after,.gx-label.ReadonlyBlobContentDescriptionAttributeLabel:after,.gx-label.BlobInputDescriptionAttributeLabel:after,.gx-label.ReadonlyDescriptionAttributeLabel:after,.gx-label.LoginAttributeLabel:after,.gx-label.BlobContentLoginAttributeLabel:after,.gx-label.ReadonlyBlobContentLoginAttributeLabel:after,.gx-label.BlobInputLoginAttributeLabel:after,.gx-label.ReadonlyLoginAttributeLabel:after,.gx-label.LoginComboAttributeLabel:after,.gx-label.BlobContentLoginComboAttributeLabel:after,.gx-label.ReadonlyBlobContentLoginComboAttributeLabel:after,.gx-label.BlobInputLoginComboAttributeLabel:after,.gx-label.ReadonlyLoginComboAttributeLabel:after,.gx-label.RegistrationAttributeLabel:after,.gx-label.BlobContentRegistrationAttributeLabel:after,.gx-label.ReadonlyBlobContentRegistrationAttributeLabel:after,.gx-label.BlobInputRegistrationAttributeLabel:after,.gx-label.ReadonlyRegistrationAttributeLabel:after,.gx-label.RequiredAttributeLabel:after,.gx-label.BlobContentRequiredAttributeLabel:after,.gx-label.ReadonlyBlobContentRequiredAttributeLabel:after,.gx-label.BlobInputRequiredAttributeLabel:after,.gx-label.ReadonlyRequiredAttributeLabel:after,.gx-label.InactiveAttributeLabel:after,.gx-label.BlobContentInactiveAttributeLabel:after,.gx-label.ReadonlyBlobContentInactiveAttributeLabel:after,.gx-label.BlobInputInactiveAttributeLabel:after,.gx-label.ReadonlyInactiveAttributeLabel:after,.gx-label.ComboAttributeLabel:after,.gx-label.BlobContentComboAttributeLabel:after,.gx-label.ReadonlyBlobContentComboAttributeLabel:after,.gx-label.BlobInputComboAttributeLabel:after,.gx-label.ReadonlyComboAttributeLabel:after,.gx-label.SubtitleAttributeLabel:after,.gx-label.BlobContentSubtitleAttributeLabel:after,.gx-label.ReadonlyBlobContentSubtitleAttributeLabel:after,.gx-label.BlobInputSubtitleAttributeLabel:after,.gx-label.ReadonlySubtitleAttributeLabel:after,.gx-label.URLAttributeLabel:after,.gx-label.BlobContentURLAttributeLabel:after,.gx-label.ReadonlyBlobContentURLAttributeLabel:after,.gx-label.BlobInputURLAttributeLabel:after,.gx-label.ReadonlyURLAttributeLabel:after,.gx-label.TextAttributeLabel:after,.gx-label.BlobContentTextAttributeLabel:after,.gx-label.ReadonlyBlobContentTextAttributeLabel:after,.gx-label.BlobInputTextAttributeLabel:after,.gx-label.ReadonlyTextAttributeLabel:after,.gx-label.TextActionAttributeLabel:after,.gx-label.BlobContentTextActionAttributeLabel:after,.gx-label.ReadonlyBlobContentTextActionAttributeLabel:after,.gx-label.BlobInputTextActionAttributeLabel:after,.gx-label.ReadonlyTextActionAttributeLabel:after,.gx-label.VideoAttributeLabel:after,.gx-label.ReadonlyVideoAttributeLabel:after,.gx-label.AudioAttributeLabel:after,.gx-label.ReadonlyAudioAttributeLabel:after,.gx-label.ErrorAttributeLabel:after,.gx-label.WarningAttributeLabel:after,.gx-label.ImageAttributeLabel:after,.gx-label.ResponsiveImageAttributeLabel:after,.gx-label.BlobContentResponsiveImageAttributeLabel:after,.gx-label.ReadonlyBlobContentResponsiveImageAttributeLabel:after,.gx-label.BlobInputResponsiveImageAttributeLabel:after,.gx-label.ReadonlyResponsiveImageAttributeLabel:after,.gx-label.ProfileImageAttributeLabel:after,.gx-label.BlobContentProfileImageAttributeLabel:after,.gx-label.ReadonlyBlobContentProfileImageAttributeLabel:after,.gx-label.BlobInputProfileImageAttributeLabel:after,.gx-label.ReadonlyProfileImageAttributeLabel:after,.gx-label.SmallProfileImageAttributeLabel:after,.gx-label.BlobContentSmallProfileImageAttributeLabel:after,.gx-label.ReadonlyBlobContentSmallProfileImageAttributeLabel:after,.gx-label.BlobInputSmallProfileImageAttributeLabel:after,.gx-label.ReadonlySmallProfileImageAttributeLabel:after,.gx-label.ReadonlyImageAttributeLabel:after,.gx-label.ActionAttributeLabel:after,.gx-label.BlobContentActionAttributeLabel:after,.gx-label.ReadonlyBlobContentActionAttributeLabel:after,.gx-label.UpdateAttributeLabel:after,.gx-label.BlobContentUpdateAttributeLabel:after,.gx-label.ReadonlyBlobContentUpdateAttributeLabel:after,.gx-label.BlobInputUpdateAttributeLabel:after,.gx-label.ReadonlyUpdateAttributeLabel:after,.gx-label.DeleteAttributeLabel:after,.gx-label.BlobContentDeleteAttributeLabel:after,.gx-label.ReadonlyBlobContentDeleteAttributeLabel:after,.gx-label.BlobInputDeleteAttributeLabel:after,.gx-label.ReadonlyDeleteAttributeLabel:after,.gx-label.DisplayAttributeLabel:after,.gx-label.BlobContentDisplayAttributeLabel:after,.gx-label.ReadonlyBlobContentDisplayAttributeLabel:after,.gx-label.BlobInputDisplayAttributeLabel:after,.gx-label.ReadonlyDisplayAttributeLabel:after,.gx-label.DisabledActionAttributeLabel:after,.gx-label.BlobContentDisabledActionAttributeLabel:after,.gx-label.ReadonlyBlobContentDisabledActionAttributeLabel:after,.gx-label.BlobInputDisabledActionAttributeLabel:after,.gx-label.ReadonlyDisabledActionAttributeLabel:after,.gx-label.BlobInputActionAttributeLabel:after,.gx-label.ReadonlyActionAttributeLabel:after,.gx-label.SelectionAttributeLabel:after,.gx-label.BlobContentSelectionAttributeLabel:after,.gx-label.ReadonlyBlobContentSelectionAttributeLabel:after,.gx-label.BlobInputSelectionAttributeLabel:after,.gx-label.ReadonlySelectionAttributeLabel:after,.gx-label.ReadonlyAttributeLabel:after,.gx-label.ReadonlyMedioLabel:after,.gx-label.BlobContentReadonlyMedioLabel:after,.gx-label.ReadonlyBlobContentReadonlyMedioLabel:after,.gx-label.BlobInputReadonlyMedioLabel:after,.gx-label.ReadonlyReadonlyMedioLabel:after,.gx-label.FilterAttributeLabel:after,.gx-label.BlobContentFilterAttributeLabel:after,.gx-label.ReadonlyBlobContentFilterAttributeLabel:after,.gx-label.BlobInputFilterAttributeLabel:after,.gx-label.FilterComboAttributeLabel:after,.gx-label.BlobContentFilterComboAttributeLabel:after,.gx-label.ReadonlyBlobContentFilterComboAttributeLabel:after,.gx-label.BlobInputFilterComboAttributeLabel:after,.gx-label.ReadonlyFilterComboAttributeLabel:after,.gx-label.FilterSearchAttributeLabel:after,.gx-label.BlobContentFilterSearchAttributeLabel:after,.gx-label.ReadonlyBlobContentFilterSearchAttributeLabel:after,.gx-label.BlobInputFilterSearchAttributeLabel:after,.gx-label.ReadonlyFilterSearchAttributeLabel:after,.gx-label.FilterSearchAttributeFocusLabel:after,.gx-label.BlobContentFilterSearchAttributeFocusLabel:after,.gx-label.ReadonlyBlobContentFilterSearchAttributeFocusLabel:after,.gx-label.BlobInputFilterSearchAttributeFocusLabel:after,.gx-label.ReadonlyFilterSearchAttributeFocusLabel:after,.gx-label.DateFilterSearchAttributeLabel:after,.gx-label.BlobContentDateFilterSearchAttributeLabel:after,.gx-label.ReadonlyBlobContentDateFilterSearchAttributeLabel:after,.gx-label.BlobInputDateFilterSearchAttributeLabel:after,.gx-label.ReadonlyDateFilterSearchAttributeLabel:after,.gx-label.FilterPanelLabel:after,.gx-label.BlobContentFilterPanelLabel:after,.gx-label.ReadonlyBlobContentFilterPanelLabel:after,.gx-label.BlobInputFilterPanelLabel:after,.gx-label.ReadonlyFilterPanelLabel:after,.gx-label.ReadonlyFilterAttributeLabel:after
+{
+	color: #444;
+}
+
+.RecentLinkItem
+{
+	margin-right: 3px;
+	white-space: nowrap;
+	color: #ccc;
+}
+.RecentLinkItem:before
+{
+	white-space: nowrap;
+	color: #ccc;
+}
+
+.RecentLinkItem:after
+{
+	white-space: nowrap;
+	color: #ccc;
+}
+
+.TextBlockHeader,.TextBlockHeaderLinkClass
+{
+	margin-left: 30px;
+	display: block;
+	font-size: 40px;
+	color: #fff;
+}
+.TextBlockHeader:before,.TextBlockHeaderLinkClass:before
+{
+	display: block;
+	font-size: 40px;
+	color: #fff;
+}
+
+.TextBlockHeader:after,.TextBlockHeaderLinkClass:after
+{
+	display: block;
+	font-size: 40px;
+	color: #fff;
+}
+
+.RecentsTitle
+{
+	margin-left: 30px;
+	display: block;
+	font-weight: bold;
+}
+.RecentsTitle:before
+{
+	display: block;
+	font-weight: bold;
+}
+
+.RecentsTitle:after
+{
+	display: block;
+	font-weight: bold;
+}
+
+.Title,.BigTitle,.SeparateBigTitle,.SubTitle
+{
+	margin-bottom: 10px;
+	display: inline-block;
+	font-family: "Open Sans Semibold";
+	font-size: 23px;
+}
+.Title:before,.BigTitle:before,.SeparateBigTitle:before,.SubTitle:before
+{
+	display: inline-block;
+	font-family: "Open Sans Semibold";
+	font-size: 23px;
+}
+
+.Title:after,.BigTitle:after,.SeparateBigTitle:after,.SubTitle:after
+{
+	display: inline-block;
+	font-family: "Open Sans Semibold";
+	font-size: 23px;
+}
+
+.SubTitle
+{
+	display: block;
+	font-family: "Open Sans Regular";
+}
+.SubTitle:before
+{
+	display: block;
+	font-family: "Open Sans Regular";
+}
+
+.SubTitle:after
+{
+	display: block;
+	font-family: "Open Sans Regular";
+}
+
+.WWAdvancedLabel,.WWOrderByLabel,.WWFilterLabel,.WWDateFilterLabel
+{
+	background-position: 9px center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	font-size: 16px;
+	color: #444;
+	text-overflow: ellipsis;
+	display: block !important;
+}
+.WWAdvancedLabel:before,.WWOrderByLabel:before,.WWFilterLabel:before,.WWDateFilterLabel:before
+{
+	background-position: 9px center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	font-size: 16px;
+	color: #444;
+	text-overflow: ellipsis;
+	display: block !important;
+}
+
+.WWAdvancedLabel:after,.WWOrderByLabel:after,.WWFilterLabel:after,.WWDateFilterLabel:after
+{
+	background-position: 9px center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	font-size: 16px;
+	color: #444;
+	text-overflow: ellipsis;
+	display: block !important;
+}
+
+.WWOrderByLabel
+{
+	background-image: url(OrderBy.png);
+}
+.WWFilterLabel,.WWDateFilterLabel
+{
+	background-image: url(GenericFilter.png);
+}
+.WWDateFilterLabel
+{
+	background-image: url(calendar.png);
+}
+.WWOrderItem,.WWLinkOrderItem,.WWOrderItemHover,.WWOrderItemSelected
+{
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	display: inline-block;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	max-width: 100%;
+}
+.WWOrderItem:before,.WWLinkOrderItem:before,.WWOrderItemHover:before,.WWOrderItemSelected:before
+{
+	display: inline-block;
+}
+
+.WWOrderItem:after,.WWLinkOrderItem:after,.WWOrderItemHover:after,.WWOrderItemSelected:after
+{
+	display: inline-block;
+}
+
+.WWOrderItemSelected
+{
+	background-color: #9ccf70;
+	border-bottom-color: #9ccf70;
+	border-left-color: #9ccf70;
+	border-right-color: #9ccf70;
+	border-top-color: #9ccf70;
+	color: white;
+}
+.WWOrderItemSelected:before
+{
+	color: white;
+}
+
+.WWOrderItemSelected:after
+{
+	color: white;
+}
+
+.RecentLinksGrid
+{
+	margin-left: 15px;
+}
+
+.TrnSublevelGrid
+{
+	width: 100%;
+}
+
+.Messages,.ErrorMessages,.WarningMessages
+{
+	background-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 5px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	white-space: nowrap;
+	font-family: inherit;
+	color: white;
+}
+.ErrorMessages
+{
+	background-color: #f56a67;
+	border-width: 0px;
+}
+.WarningMessages
+{
+	background-color: #fdae45;
+	border-width: 0px;
+}
+.WWActionsCell,.ViewActionsCell,.ViewActionsBackCell,.ViewGridActionsCell
+{
+	padding-right: 23px;
+	text-align: right;
+}
+.ViewActionsCell,.ViewActionsBackCell,.ViewGridActionsCell
+{
+	margin-bottom: 10px;
+	padding-right: 40px;
+	padding-top: 15px;
+	border-bottom: 1px solid #efefef;
+}
+.ViewGridActionsCell
+{
+	border-bottom: 0px;
+}
+.WWFiltersCell,.WWFiltersCellCollapsed
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.OrdersCell
+{
+	text-align: center;
+}
+.WWAdvancedBarCell,.ViewAdvancedBarCell,.PromptAdvancedBarCell
+{
+	background-color: white;
+	margin-top: -42px;
+	padding-right: 0px;
+}
+.ViewAdvancedBarCell
+{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+.PromptAdvancedBarCell
+{
+	margin-top: 0px;
+	padding-left: 0px;
+}
+.WWGridCell,.WWGridCellExpanded,.ViewGridCell,.ViewGridCellAdvanced
+{
+	background-color: #eaeaea;
+}
+.ViewGridCell,.ViewGridCellAdvanced
+{
+	background-color: transparent;
+}
+.ViewGridCellAdvanced
+{
+	padding-left: 0px;
+	border-left: 1px solid #EAEAEA;
+}
+.ToggleCell
+{
+	text-align: right;
+}
+.VerticalCenteredCell
+{
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.EmbeddedPage
+{
+	border-style: none;
+	border-width: 0px;
+}
+.ErrorViewerBullet div 
+{
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-bottom: 1px;
+	padding-left: 30px;
+	padding-top: 1px;
+	display: block;
+	list-style-position: inside;
+}
+.GeoLocOption 
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	position: relative;
+	top: 2px;
+	display: block;
+	cursor: pointer;
+}
+.PopupHeader 
+{
+	background-color: #fff;
+	height: 54px !important;
+}
+.PopupHeaderButton 
+{
+	background-image: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: absolute;
+	right: 5px;
+	top: 6px;
+	height: auto;
+	width: auto;
+	display: inline;
+	cursor: pointer;
+}
+.PopupContent 
+{
+	left: 0 !important;
+	 top: 50px !important;
+	 width: 100% !important;
+	 box-sizing: content-box;
+}
+.PopupBorder 
+{
+	background-color: #fff;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding-bottom: 28px !important;
+	 -webkit-box-sizing: content-box !important;
+	 -moz-box-sizing: content-box !important;
+	 box-sizing: content-box !important;
+}
+.PopupShadow 
+{
+	display: none;
+	-webkit-box-sizing: content-box !important;
+	 -moz-box-sizing: content-box !important;
+	 box-sizing: content-box !important;
+}
+.WorkWith  .WorkWithTitle 
+{
+	border-style: none;
+	padding-bottom: 9px;
+	padding-top: 9px;
+}
+.WorkWith  .WorkWithFooter 
+{
+	background-color: #eaeaea;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 40px;
+	vertical-align: top;
+}
+.WorkWith  TR:hover .UpdateAttribute:hover 
+{
+	background-color: #9ccf70;
+}
+.WorkWith  TR:hover .DeleteAttribute:hover 
+{
+	background-color: #f56a67;
+}
+.WorkWith  TR:hover .UpdateAttribute 
+{
+	background-color: #d9d9d9;
+}
+.WorkWith  TR:hover .DeleteAttribute 
+{
+	background-color: #d9d9d9;
+}
+.WorkWith  TR:hover .DisplayAttribute:hover 
+{
+	background-color: #50a0e5;
+}
+.WorkWith  TR:hover .DisplayAttribute 
+{
+	background-color: #d9d9d9;
+}
+.WorkWith  TR:hover .ActionAttribute 
+{
+	background-color: #d9d9d9;
+}
+.WorkWith  TR:hover .ActionAttribute:hover 
+{
+	background-color: #50a0e5;
+}
+.WorkWith  TR
+{
+	border-top: 1px solid #efefef;
+}
+.WorkWith  TR .WWActionColumn  A:focus
+{
+	outline: none;
+}
+.WorkWith  TR A:focus .UpdateAttribute 
+{
+	background-color: #9ccf70;
+}
+.WorkWith  TR A:focus .DeleteAttribute 
+{
+	background-color: #f56a67;
+}
+.BtnEnter:hover 
+{
+	background-color: #58a449;
+	border-width: 0px;
+}
+.BtnEnter:focus 
+{
+	background-color: #58a449;
+	border-width: 0px;
+}
+.WWFiltersCell  DIV.calendar
+{
+	position:static !important;
+}
+.WWFiltersCell  DIV.calendar TABLE
+{
+	width: 100%;
+	max-width: 320px;
+}
+.input-group  .form-control:focus + span.input-group-btn > a.btn 
+{
+	border-bottom-color: #50a0e5;
+	border-left-color: #50a0e5;
+	border-right-color: #50a0e5;
+	border-top-color: #50a0e5;
+	border-style: solid;
+	border-width: 1px;
+	outline: 0 none;
+	 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.input-group  .form-control + span.input-group-btn > a.btn 
+{
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.input-group  .FilterAttribute + span.input-group-btn > A.btn 
+{
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	padding-bottom: 18px;
+	padding-top: 18px;
+}
+.input-group  .FilterAttribute:focus + span.input-group-btn > a.btn 
+{
+	border-color: transparent !important;
+	 box-shadow: 0 0 0 0 !important;
+}
+.input-group  A.btn
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.input-group  A.btn-default:hover
+{
+	background-color: white;
+}
+.input-group  A.btn-default:focus
+{
+	background-color: white;
+}
+.input-group  .form-control 
+{
+	width: auto;
+	max-width: 100%;
+}
+.input-group  .FilterAttribute 
+{
+	width: 100%;
+}
+.input-group  .FilterAttribute + span.input-group-btn 
+{
+	width: 1%;
+}
+.WWColumn  .form-control-static 
+{
+	overflow: hidden;
+	min-height: 0px;
+	text-overflow: ellipsis;
+}
+.WWOrderItem  A
+{
+	overflow: hidden;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	max-width: 100%;
+	display: block;
+	white-space: nowrap;
+	text-decoration: none;
+	color: inherit;
+	text-overflow: ellipsis;
+}
+.WWOrderItem  A:hover
+{
+	text-decoration: none;
+	color: inherit;
+}
+.WWOrderItem  A:focus
+{
+	text-decoration: none;
+	color: inherit;
+}
+.WWAdvancedLabel  A
+{
+	overflow: hidden;
+	padding-bottom: 15px;
+	padding-left: 45px;
+	padding-right: 10px;
+	padding-top: 16px;
+	display: block;
+	white-space: nowrap;
+	text-decoration: none;
+	color: inherit;
+	text-overflow: ellipsis;
+	outline: none;
+}
+.WWAdvancedLabel  A STRONG
+{
+	color: #9ccf70;
+}
+.WWAdvancedLabel  A STRONG:before
+{
+	padding-right: 4px;
+	font-weight: normal;
+	color: #444;
+	content: ':';
+}
+.WWAdvancedLabel  A:hover
+{
+	color: inherit;
+}
+.WWAdvancedLabel  A:focus
+{
+	color: inherit;
+}
+.WWOrderItemSelected:hover 
+{
+	color: white;
+}
+.WWOrderItemSelected:hover  A:hover
+{
+	color: white;
+}
+.WWOrderItem:hover 
+{
+	border-bottom-color: #9ccf70;
+	border-left-color: #9ccf70;
+	border-right-color: #9ccf70;
+	border-top-color: #9ccf70;
+	color: #9ccf70;
+}
+.Label:after 
+{
+	content: ":";
+}
+.tab-content 
+{
+	background-color: #fff;
+}
+.BtnTextBlock  A
+{
+	background-color: transparent;
+	text-decoration: none;
+	color: inherit;
+}
+.BtnTextBlock  A:focus
+{
+	color: inherit;
+}
+.BtnTextBlock  A:hover
+{
+	color: inherit;
+}
+.RecentLinksGrid > tbody > tr > td:last-child 
+{
+	display: block;
+}
+.RecentLinksGrid > tbody > tr > td:last-child  *.RecentLinkItem:after
+{
+	content: '';
+}
+.RecentsTitle  A
+{
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+.RecentsTitle  A:focus
+{
+	text-decoration: none;
+	color: inherit;
+}
+.RecentsTitle  A:hover
+{
+	text-decoration: none;
+	color: inherit;
+}
+.form-control:focus 
+{
+	border-bottom-color: #50a0e5;
+	border-left-color: #50a0e5;
+	border-right-color: #50a0e5;
+	border-top-color: #50a0e5;
+}
+.PopupTitle 
+{
+	min-height: 40px;
+	width: 100%;
+	display: block;
+	cursor: move;
+	font-size: 23px;
+	color: #9ccf70;
+	padding-top: 10px !important;
+	 padding-left: 20px !important;
+	 ;
+}
+.TextBlockHeader  A
+{
+	text-decoration: none;
+	color: inherit;
+}
+.TextBlockHeader  A:focus
+{
+	text-decoration: none;
+	color: inherit;
+}
+.TextBlockHeader  A:hover
+{
+	text-decoration: none;
+	color: inherit;
+}
+.PopupBorder > div:last-child 
+{
+	margin-top: 20px !important;
+}
+.PromptGrid  .PromptGridTitle 
+{
+	border-style: none;
+	padding-bottom: 9px;
+	padding-top: 9px;
+}
+.PromptGrid  .PromptGridFooter 
+{
+	height: 40px;
+	vertical-align: top;
+}
+.PopupHeaderButton:after 
+{
+	cursor: pointer;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 33px;
+	color: #9ccf70;
+	text-align: center;
+	content: "×";
+	 line-height: 36px;
+	 opacity: .6;
+	 ;
+}
+.PopupHeaderButton:hover:after 
+{
+	color: #9ccf70;
+	opacity: 1;
+}
+.GridFooter 
+{
+	background-color: #eaeaea;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 40px;
+	vertical-align: top;
+}
+.GridTitle 
+{
+	border-style: none;
+	padding-bottom: 9px;
+	padding-top: 9px;
+}
+.FilterAttribute:focus 
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.ErrorViewerBullet  .gx-warning-message 
+{
+	background-image: url(WarningIcon.png);
+	color: #fdae45;
+}
+.ErrorViewerBullet  .gx-error-message 
+{
+	background-image: url(ErrorIcon.png);
+	color: #f56a67;
+}
+.form-control-static 
+{
+	height: auto;
+	min-height: 36px;
+}
+.control-label 
+{
+	height: 36px;
+}
+BODY.gx-form-disabled
+{
+	backface-visibility: inherit !important;
+	 -webkit-backface-visibility: inherit !important;
+	 -moz-backface-visibility: inherit !important;
+	 -ms-backface-visibility: inherit !important;
+	 -o-backface-visibility: inherit !important;
+	 transform-style: inherit !important;
+	 -webkit-transform-style: inherit !important;
+	 -moz-style: inherit !important;
+	 -ms-transform-style: inherit !important;
+	 -o-transform-style: inherit !important;
+}
+BODY.gx-form-disabled DIV.gx-content-placeholder
+{
+	perspective: inherit !important;
+	 -webkit-perspective: inherit !important;
+	 -moz-perspective: inherit !important;
+	 -ms-perspective: inherit !important;
+	 -o-perspective: inherit !important;
+}
+BODY.gx-form-disabled DIV.gx-ct-body
+{
+	backface-visibility: inherit !important;
+	 -webkit-backface-visibility: inherit !important;
+	 -moz-backface-visibility: inherit !important;
+	 -ms-backface-visibility: inherit !important;
+	 -o-backface-visibility: inherit !important;
+	 transform-style: inherit !important;
+	 -webkit-transform-style: inherit !important;
+	 -moz-style: inherit !important;
+	 -ms-transform-style: inherit !important;
+	 -o-transform-style: inherit !important;
+}
+BODY.gx-form-disabled DIV.gxwebcomponent-body
+{
+	backface-visibility: inherit !important;
+	 -webkit-backface-visibility: inherit !important;
+	 -moz-backface-visibility: inherit !important;
+	 -ms-backface-visibility: inherit !important;
+	 -o-backface-visibility: inherit !important;
+	 transform-style: inherit !important;
+	 -webkit-transform-style: inherit !important;
+	 -moz-style: inherit !important;
+	 -ms-transform-style: inherit !important;
+	 -o-transform-style: inherit !important;
+}
+DIV.calendar .calendar-nav 
+{
+	font-weight: normal;
+}
+DIV.calendar .calendarbutton 
+{
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+DIV.calendar .calendarcombo 
+{
+	background-color: #efefef;
+}
+DIV.calendar .calendarcombo  .label 
+{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	color: #a1a1a1;
+}
+DIV.calendar TABLE
+{
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	font-family: "Open Sans Regular";
+	font-size: 13px;
+	color: #a1a1a1;
+	border-collapse: collapse;
+	 table-layout: fixed;
+}
+DIV.calendar TABLE THEAD .calendartitle 
+{
+	font-family: "Open Sans Semibold";
+	font-size: 14px;
+	font-weight: normal;
+	color: #444;
+}
+DIV.calendar TABLE THEAD .name 
+{
+	overflow: hidden;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	font-family: "Open Sans Extrabold";
+	font-weight: normal;
+	color: #a1a1a1;
+	line-height: 28px;
+}
+DIV.calendar TABLE THEAD .daynames 
+{
+	background-color: #eaeaea;
+	border-top: 1px solid #EFEFEF;
+}
+DIV.calendar TABLE THEAD TR:first-child
+{
+	background-color: transparent;
+}
+DIV.calendar TABLE THEAD TR.headrow
+{
+	background-color: transparent;
+}
+DIV.calendar TABLE TBODY
+{
+	background-color: #eaeaea;
+}
+DIV.calendar TABLE TBODY .day 
+{
+	background-color: transparent;
+	background-image: none;
+	border-width: 0px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	text-align: center;
+}
+DIV.calendar TABLE TBODY TD.selected
+{
+	background-color: #9ccf70;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+}
+DIV.calendar TD.time .hour 
+{
+	background-color: white;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+}
+DIV.calendar TD.time .minute 
+{
+	background-color: white;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+}
+DIV.calendar TD.time .ampm 
+{
+	background-color: white;
+	border-bottom-color: #efefef;
+	border-left-color: #efefef;
+	border-right-color: #efefef;
+	border-top-color: #efefef;
+	border-style: solid;
+	border-width: 1px;
+	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+}
+A
+{
+	text-decoration: underline;
+	color: #50a0e5;
+}
+A:hover
+{
+	text-decoration: none;
+	color: #50a0e5;
+}
+A:focus
+{
+	text-decoration: none;
+	color: #50a0e5;
+}
+UL.nav-tabs
+{
+	background-color: #f9f9f9;
+	border-bottom-color: #efefef;
+}
+UL.nav-tabs LI A
+{
+	border-left-color: #fff;
+	border-right-color: #efefef;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #a1a1a1;
+	border-top-width: 0;
+}
+UL.nav-tabs LI.active A
+{
+	border-left-color: #fff;
+	border-right-color: #efefef;
+	cursor: default;
+	color: #9ccf70;
+	border-top-width: 0;
+}
+UL.nav-tabs LI.active A:focus
+{
+	border-left-color: #fff;
+	border-right-color: #efefef;
+	color: #9ccf70;
+	border-top-width: 0;
+}
+UL.nav-tabs LI.active A:hover
+{
+	border-left-color: #fff;
+	border-right-color: #efefef;
+	color: #9ccf70;
+	border-top-width: 0;
+}
+UL.nav-tabs LI:last-child A
+{
+	border-top-right-radius: 4px;
+	border-right-width: 0;
+}
+UL.nav-tabs LI.active:last-child A
+{
+	border-right-width: 1px;
+}
+UL.nav-tabs LI:first-child A
+{
+	border-top-left-radius: 4px;
+}
+*.RecentLinkItem:after
+{
+	padding-left: 5px;
+	content: '—';
+}
+.ViewGridCell  .FilterAttribute 
+{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	margin-top: -1px;
+	border-top: 1px solid #EAEAEA;
+}
+.ViewGridCellAdvanced  .FilterAttribute 
+{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	margin-top: -1px;
+	border-top: 1px solid #EAEAEA;
+}
+.ViewGridCellAdvanced  .BtnToggle 
+{
+	margin-right: 8px;
+	margin-top: 0px;
+}
+.ViewAdvancedBarCell  .AdvancedContainer 
+{
+	left: -215px;
+	top: 0px;
+}
+.ViewAdvancedBarCell  .AdvancedContainerVisible 
+{
+	left: 15px;
+}
+DIV.gx-action-group
+{
+	margin-bottom: 15px;
+}
+.input-group-btn 
+{
+	width: auto;
+}
+HTML.ie10 .WWColumn 
+{
+	width: auto;
+}
+HTML.ie10 .WWOptionalColumn 
+{
+	width: auto;
+}
+TD.gx-attribute .form-control 
+{
+	display: inline-block;
+}
+@font-face
+{
+	font-family: 'Open Sans Regular';
+	src: url('OpenSans-Regular.woff');
+	font-weight: 400;
+}
+@font-face
+{
+	font-family: 'Open Sans Semibold';
+	src: url('OpenSans-Semibold.woff');
+	font-weight: 600;
+}
+@font-face
+{
+	font-family: 'Open Sans Bold';
+	src: url('OpenSans-Bold.woff');
+	font-weight: 700;
+}
+@font-face
+{
+	font-family: 'Open Sans Extrabold';
+	src: url('OpenSans-Extrabold.woff');
+	font-weight: 800;
+}
+
+@media (max-width: 767px) /*ExtraSmall*/
+{
+	.WWActionColumn
+	{
+		width: 38px !important;
+	}
+	.WWOptionalColumn
+	{
+		display: none;
+	}
+	.OptionalColumn
+	{
+		display: none;
+	}
+	.Attribute
+	{
+		width: 100%;
+	}
+	.GridAcceptDrag>thead>tr, .GridAcceptDrag>tfoot>tr
+	{
+		font-size: 13px;
+		font-weight: normal;
+	}
+
+	.WorkWith>tbody>tr
+	{
+		table-layout: fixed;
+	}
+
+	.WorkWith>thead>tr, .WorkWith>tfoot>tr
+	{
+		font-size: 13px;
+		font-weight: normal;
+		table-layout: fixed;
+	}
+
+	.PoweredBy
+	{
+		display: none;
+	}
+	.PoweredBy:before
+	{
+		display: none;
+	}
+
+	.PoweredBy:after
+	{
+		display: none;
+	}
+
+	.Container
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.RecentLinksMainTable
+	{
+		overflow: hidden;
+		max-height: 20px;
+		-moz-transition: max-height 0.5s ease-in-out 0s;
+		 -webkit-transition: max-height 0.5s ease-in-out 0s;
+		 -ms-transition: max-height 0.5s ease-in-out 0s;
+		 transition: max-height 0.5s ease-in-out 0s;
+	}
+	.RecentLinksMainTableExpanded
+	{
+		max-height: 500px;
+	}
+	.BodyContainer
+	{
+		margin-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.HeaderContainer
+	{
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 5px;
+	}
+	.RecentLinksContainer
+	{
+		padding-bottom: 2px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 2px;
+	}
+	.FormContainer
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.AdvancedContainer
+	{
+		bottom: 0px;
+		left: -265px;
+		position: absolute;
+		top: -15px;
+		width: 230px;
+	}
+	.AdvancedContainerVisible
+	{
+		box-shadow: 2px 1px 2px 0px rgba(0,0,0,0.15);
+		left: -15px;
+	}
+	.WWAdvancedContainer
+	{
+		margin-left: 0px;
+	}
+	.RecentLinkItem
+	{
+		margin-top: 5px;
+		display: block;
+	}
+	.RecentLinkItem:before
+	{
+		display: block;
+	}
+
+	.RecentLinkItem:after
+	{
+		display: block;
+	}
+
+	.TextBlockHeader
+	{
+		margin-left: 0px;
+		font-size: 30px;
+	}
+	.TextBlockHeader:before
+	{
+		font-size: 30px;
+	}
+
+	.TextBlockHeader:after
+	{
+		font-size: 30px;
+	}
+
+	.RecentsTitle
+	{
+		margin-left: 0px;
+	}
+	.RecentLinksGrid
+	{
+		margin-left: 0px;
+	}
+
+	.WWActionsCell
+	{
+		padding-left: 30px;
+		text-align: left;
+	}
+	.ViewActionsCell
+	{
+		margin-bottom: 0px;
+		padding-left: 30px;
+		text-align: left;
+	}
+	.WWAdvancedBarCell
+	{
+		bottom: 0px;
+		margin-top: 0px;
+		padding-left: 0px;
+		position: absolute;
+		top: 0px;
+		z-index: 1;
+	}
+	.ViewAdvancedBarCell
+	{
+		bottom: 0px;
+		position: absolute;
+		top: 0px;
+		z-index: 1;
+	}
+	.PromptAdvancedBarCell
+	{
+		bottom: 0px;
+		margin-top: 10px;
+		position: absolute;
+		top: 0px;
+		z-index: 1;
+	}
+	.ViewGridCellAdvanced
+	{
+		padding-left: 15px;
+	}
+	.input-group  .form-control 
+	{
+		width: 100%;
+	}
+	.RecentLinksGrid > tbody > tr > td 
+	{
+		display: block;
+	}
+	*.RecentLinkItem:after
+	{
+		display: none;
+	}
+	.input-group-btn 
+	{
+		width: 1%;
+	}
+}
+/* [gx-css-import ignore - start] */
+
+@keyframes entermask
+{
+  from {background-color: transparent;}
+  to {background-color: black;}
+}
+
+@keyframes leavemask
+{
+  from {background-color: black;}
+  to {background-color: transparent;}
+}
+div[data-align='center'] > div[data-align-outer] {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+div[data-align='right'] > div[data-align-outer] {
+	display: table;
+	margin-left: auto;
+}
+div[data-valign='middle'] > div[data-align-outer] {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+div[data-valign='middle'] > div[data-align-outer] > div[data-align-inner] {
+	display: table-cell;
+	vertical-align: middle;
+}
+div[data-valign='bottom'] > div[data-align-outer] {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+div[data-valign='bottom'] > div[data-align-outer] > div[data-align-inner] {
+	display: table-cell;
+	vertical-align: bottom;
+}
+td[data-cell-valign='top'] {	
+	vertical-align: top;
+}
+td[data-cell-valign='middle'] {	
+	vertical-align: middle;
+}
+td[data-cell-valign='bottom'] {	
+	vertical-align: bottom;
+}
+div[data-cell-valign='middle'] {
+	display: table-cell;
+	vertical-align: middle;
+}
+div[data-cell-valign='bottom'] {
+	display: table-cell;
+	vertical-align: bottom;
+}
+div[data-align='center'] > div[data-align-outer] {
+	width: auto;
+}
+div[data-align='right'] > div[data-align-outer] {
+	width: auto;
+}
+div[data-align][data-align-image] > div[data-align-outer] {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	height: 100%;
+}
+div[data-align][data-align-image] > div[data-align-outer] > div[data-align-inner] {
+	height: 100%;
+}
+div[data-valign][data-align-image] > div[data-align-outer] > div[data-align-inner] {
+	display: block;
+	height: 100%;
+}
+div[data-align='center'][data-align-image] img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+div[data-align='right'][data-align-image] img {
+	margin-left: auto;
+	display: block;
+}
+div[data-align='center']:not([data-valign])[data-align-image] img {
+	background-position: center top;
+}
+div[data-align='center'][data-valign='middle'][data-align-image] img {
+	background-position: center center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+div[data-valign][data-align-image] div[data-align-inner] {
+	position:relative;
+}
+div[data-valign][data-align-image] img {
+	position: absolute;
+	margin: auto;
+}
+div[data-align='center'][data-valign='bottom'][data-align-image] img {
+	background-position: center bottom;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+div[data-align='right']:not([data-valign])[data-align-image] img {
+	background-position: right top;
+}
+div[data-align='right'][data-valign='middle'][data-align-image] img {
+	background-position: right center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+div[data-align='right'][data-valign='bottom'][data-align-image] img {
+	background-position: right bottom;
+	right: 0;
+	bottom: 0;
+}
+div:not([data-align])[data-valign='middle'][data-align-image] img {
+	background-position: left center;
+	top: 0;
+	bottom: 0;
+}
+div:not([data-align])[data-valign='bottom'][data-align-image] img {
+	background-position: left bottom;
+	bottom: 0;
+}
+div[data-align='center']>div>div>div.gx-attribute>p.form-control-static {
+	text-align: center;
+}
+div[data-align='right']>div>div>div.gx-attribute>p.form-control-static {
+	text-align: right;
+}
+
+[data-gx-flex] {
+  display: flex;
+}
+
+.gxlivepreview-hidesubelements {
+	visibility:hidden;
+}
+.gx-responsive-grid .gx-remove-row {
+  position: absolute;
+  z-index: 1;
+}
+
+.gx-responsive-grid .gx-remove-row-right {
+  right: 10px;
+}
+
+.gx-responsive-grid .gx-remove-row-top {
+  top: 0;
+}
+
+.gx-responsive-grid .gx-remove-row-bottom {
+	bottom: 0;
+}
+
+[data-gxgridid] > [data-gx-flex] > [data-gxrow] > .gx-remove-row + div, [data-gxgridid] > [data-gx-flex] > [data-gxrow] > .gx-remove-row + table {
+    margin: 15px;
+}
+
+[data-gxgridid] > [data-gx-flex] > [data-gxrow] {
+    position: relative;
+}
+
+.gx-responsive-grid > [data-gx-flex] > [data-gxrow] > .gx-remove-row-right {
+    right: 0;
+}
+
+.gx-popup-frame-mask{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+form[tabindex="-1"]{
+	outline:none;
+}
+
+.gx-navbar .gx-attribute, .gx-action-group .gx-attribute,  .gx-action-group .gx-button {
+    display: inline-block;
+}
+
+.gx-action-group .gx-form-group {
+    display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.gx-radio-button-vertical, .gx-radio-button-vertical label{
+    display:block;
+	line-height: 25px;
+}
+
+label.gx-radio-label.disabled.active{	
+    box-shadow: inset 0 0px 7px rgba(0,0,0,.280);
+}
+
+.gx-prompt.gx-disabled {
+	display:none;
+}
+
+.input-group input.form-control.gx-invisible + span > a.gx-image-link, .input-group input.form-control[disabled] + span > a.gx-image-link {
+	display:none;
+}
+
+div.gxwebcomponent > div.gx-mask {
+	position: absolute;
+}
+
+html.gx-blocking, html.gx-blocking body {
+	overflow: hidden;
+}
+
+.gx-call-target.empty {
+	display: none !important;
+}
+
+.gx-sr-only{
+	display:none !important;
+}
+[data-gx-sr-only]{
+	display:none !important;
+}
+.gx-grid [data-gx-grid-nodata]+.GridNoDataText
+{
+	display:block;
+}
+.gx-grid .GridNoDataText
+{
+	display:none;
+}
+  TD.gx-attribute .form-control {
+    display: inline-block;
+    width: 100%;
+  }
+  
+.gx-infinite-scrolling-container table, .gx-infinite-scrolling-container thead  {
+	overflow-x: hidden;
+	display: block;
+	width:100%;  
+}
+
+.gx-infinite-scrolling-container > table {
+  width:100%;  
+}
+
+.gx-infinite-scrolling-element {
+	overflow-x:hidden;
+	overflow-y:auto;
+	scroll-behavior:smooth;
+	-webkit-overflow-scrolling:touch;
+}
+
+.gx-grid .gx-grid-fixed-height {
+	overflow-y:scroll;
+	display:inline-block;
+}
+
+.gx-grid-fixed-header-ie7 > table > thead > tr {
+	display: block;
+	position: absolute;
+}
+.gx-grid-fixed-header-ie7 {	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.gx-grid-fixed-header-ie7 > table > tbody {
+	height: auto;
+}
+.gx-grid-fixed-header-ie7 > table {
+	width:auto;
+}
+
+table > .gx-infinite-scrolling-element {
+	width:100%;
+	display:block;
+}
+
+.gx-tbldsp-container {
+	display:table;
+}
+.gx-tbldsp-container > div {
+	display:table-cell;
+}
+[data-gx-evt], [data-gx-evt-control] {
+	cursor: pointer;
+}
+.gx-disabled[data-gx-evt], .gx-disabled[data-gx-evt-control] {
+	cursor: auto;
+}
+
+/* Start Responsive Popups required Styling */
+.gx-responsive-popup.gx-popup {
+	position:fixed;	
+	z-index:1500;	
+	margin-top: 0px;
+}
+
+.gx-responsive-popup .gx-popup-content > iframe {
+	border:none;
+}
+
+.gx-responsive-popup div.gx-popup-pdf {
+	overflow:hidden;
+}
+
+body.gx-popup-opened {
+	overflow:hidden;
+}
+
+div[data-gx-dynitem-container] {
+	display: inline;
+}
+
+li[data-gx-dynitem-hook] {
+	display: none;
+}
+
+.input-group input[data-gx-password-reveal] {
+	width: 100%;
+}
+
+input[data-gx-password-reveal] + .gx-pwd-reveal-btn {
+	display: table-cell;
+}
+
+.gx-pwd-reveal-btn {
+	display: none;
+}
+
+input[data-gx-password-reveal]::-ms-reveal {
+    display: none;
+}
+
+.gxwebcomponent-loading {
+	opacity: 0;
+}
+
+body:not(.gx-show-input-spinner) input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body:not(.gx-show-input-spinner) input[type=number]::-webkit-inner-spin-button, 
+body:not(.gx-show-input-spinner) input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 736px) {	
+	/* Just in case for compatibility reasons.*/
+	.gx-responsive-popup .gx-popup-header {
+		float:none;
+		width:auto;
+	}
+	
+	.gx-popup-opened, .gx-popup-opened form {		
+		overflow:hidden;		
+	}
+	
+	.gx-responsive-popup .gx-popup-content{		
+		overflow:hidden;
+	}
+	
+	.gx-responsive-popup .gx-popup-content iframe{		
+		overflow:auto;
+	}
+	.gx-responsive-popup .gx-popup-resize {   
+		position: absolute;
+		bottom: 2px;
+		right: 2px;
+	}
+	.gx-responsive-popup.gx-popup-initial .gx-popup-content iframe{   
+		max-height:calc(100vh - 80px); /* 80px harcoded for Header Popup Height. Not good. Flexbox instead? */		
+		max-width: 100vw;
+	}
+	.gx-responsive-popup.gx-popup-centered {   
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		left:50% !important;
+		top:50% !important;
+	}
+	
+	.gx-responsive-popup.gx-popup-horizontal-center {   
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		left:50%;		
+	}
+}
+@media (max-width: 736px) /*Small and ExtraSmall*/
+{
+	.gx-responsive-popup .gx-popup-header {		
+		height:40px;		
+	}
+	.gx-responsive-popup.gx-popup {				
+		top:0;
+		left:0;
+		height:100vh;
+		width:100vw;	
+	}
+	.gx-responsive-popup .gx-popup-content{		
+		height:calc(100% - 40px); /* 40px harcoded for Header Popup Height. Not good. Flexbox instead? */
+		width:100%;
+		overflow:auto;
+		-webkit-overflow-scrolling: touch;		
+	}
+	.gx-responsive-popup .gx-popup-content > iframe {
+		width:100vw !important;				
+	}	
+	.gx-responsive-popup .gx-popup-resize
+	{
+		display:none;
+	}
+	
+	body.gx-popup-opened {		
+		position:fixed;
+	}
+
+	.gx-popup-document 
+	{
+		width:100vw !important;
+	}
+}
+
+.gx-multimedia-ro img:not([src=""]) {
+	background-image: none;
+}
+
+.gx-multimedia-ro img:not([src=""]) + * {
+	display: none;
+}
+
+
+/* [gx-css-import ignore - end] */

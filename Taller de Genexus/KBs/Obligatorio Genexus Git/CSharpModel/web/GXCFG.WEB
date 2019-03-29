@@ -1,0 +1,108 @@
+<configuration>
+   <configSections>
+      <section  name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" requirePermission="false"/>
+      <sectionGroup  name="languages" type="System.Configuration.NameValueSectionHandler">
+         <section  name="English" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+      </sectionGroup>
+   </configSections>
+   <appSettings>
+      <add  key="AppMainNamespace" value="GeneXus.Programs"/>
+      <add  key="DataStore1" value="Default"/>
+      <add  key="DataStore-Count" value="1"/>
+      <add  key="Connection-Default-DBMS" value="sqlserver"/>
+      <add  key="Connection-Default-Port" value=""/>
+      <add  key="Connection-Default-LockTimeout" value="0"/>
+      <add  key="Connection-Default-LockRetryCount" value="10"/>
+      <add  key="Connection-Default-Datasource" value="G36afozhLBpM+8gxb0s7w0u3Kfm908N2nF9DEhY+C1s="/>
+      <add  key="Connection-Default-User" value="e77NI8G6D8crzbX3H7HrcwQeJPjCSjKM4XJeNHRvSkR="/>
+      <add  key="Connection-Default-Password" value="e77NI8G6D8crzbX3H7HrcwQeJPjCSjKM4XJeNHRvSkR="/>
+      <add  key="Connection-Default-DB" value="Id3352cbb60a570b1e1b044e9784b1e1ba"/>
+      <add  key="Connection-Default-Schema" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-Default-Opts" value=";Integrated Security=no;"/>
+      <add  key="Connection-Default-TrnInt" value="1"/>
+      <add  key="DateFormat" value="MDY"/>
+      <add  key="YearLimit" value="1940"/>
+      <add  key="TimeAmPmFormat" value="12"/>
+      <add  key="VER_STAMP" value="20190322.214730"/>
+      <add  key="CS_BLOB_PATH" value="PublicTempStorage"/>
+      <add  key="TMPMEDIA_DIR" value="PrivateTempStorage"/>
+      <add  key="PRINT_LAYOUT_METADATA_DIR" value="LayoutMetadata"/>
+      <add  key="StorageTimeZone" value="1"/>
+      <add  key="LOGIN_AS_USERID" value="0"/>
+      <add  key="LANGUAGE" value="eng"/>
+      <add  key="LANG_NAME" value="English"/>
+      <add  key="DECIMAL_POINT" value="."/>
+      <add  key="DATE_FMT" value="MDY"/>
+      <add  key="CTOD_DATE_FMT" value="L"/>
+      <add  key="Culture" value="en-US"/>
+      <add  key="Theme" value="Carmine"/>
+      <add  key="EnableIntegratedSecurity" value="0"/>
+      <add  key="MAX_CURSOR" value="100"/>
+      <add  key="ISOLATION_LEVEL" value="CR"/>
+      <add  key="STATIC_CONTENT" value=""/>
+      <add  key="GX_BUILD_NUMBER" value="126726"/>
+      <add  key="CACHE_CONTENT_EXPIRATION" value="36"/>
+      <add  key="ENABLE_MANAGEMENT" value="0"/>
+      <add  key="COMPRESS_HTML" value="1"/>
+      <add  key="IE_COMPATIBILITY_VIEW" value="EmulateIE7"/>
+      <add  key="DocumentType" value="HTML5"/>
+      <add  key="SMART_CACHING" value="0"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="20193221935272"/>
+   </appSettings>
+   <languages >
+      <English  code="eng" time_fmt="12" decimal_point="." thousand_sep="," date_fmt="MDY" culture="en-US"/>
+   </languages>
+   <log4net  configSource="log.config"/>
+   <system.web>
+      <trace  enabled="false"/>
+      <customErrors  mode="Off"/>
+      <httpRuntime  requestValidationMode="2.0" targetFramework="4.6"/>
+      <compilation  optimizeCompilations="true">
+         <assemblies>
+         </assemblies>
+      </compilation>
+   </system.web>
+   <system.serviceModel>
+      <serviceHostingEnvironment  aspNetCompatibilityEnabled="true"/>
+   </system.serviceModel>
+   <system.webServer>
+      <staticContent>
+         <remove  fileExtension=".json"/>
+         <remove  fileExtension=".woff"/>
+         <remove  fileExtension=".woff2"/>
+         <remove  fileExtension=".tmp"/>
+         <remove  fileExtension=".otf"/>
+         <mimeMap  fileExtension=".json" mimeType="application/json"/>
+         <mimeMap  fileExtension=".woff" mimeType="font/woff"/>
+         <mimeMap  fileExtension=".woff2" mimeType="font/woff2"/>
+         <mimeMap  fileExtension=".tmp" mimeType="image/jpeg"/>
+         <mimeMap  fileExtension=".otf" mimeType="font/opentype"/>
+      </staticContent>
+      <handlers>
+         <add  name="GeneXus WebSocket Handler" verb="*" path="gxwebsocket.svc" type="GeneXus.Http.WSHttpHandler,gxwebsocket"/>
+         <add  name="GeneXus.HttpHandlerFactory.HandlerFactory" verb="*" path="*.aspx" type="GeneXus.HttpHandlerFactory.HandlerFactory,gxclasses"/>
+         <remove  name="WebDAV"/>
+      </handlers>
+      <modules>
+         <add  name="GXStaticContentCache" type="GeneXus.Http.HttpModules.GXStaticCacheModule,gxclasses"/>
+      </modules>
+      <validation  validateIntegratedModeConfiguration="false"/>
+      <urlCompression  doStaticCompression="true"/>
+      <security>
+         <requestFiltering>
+            <hiddenSegments>
+               <add  segment="PrivateTempStorage"/>
+               <add  segment="private"/>
+            </hiddenSegments>
+         </requestFiltering>
+      </security>
+   </system.webServer>
+   <location  path="PublicTempStorage">
+      <system.webServer>
+         <handlers>
+            <clear />
+            <add  name="StaticFile" path="*" verb="*" modules="StaticFileModule,DefaultDocumentModule,DirectoryListingModule" resourceType="Either" requireAccess="Read"/>
+         </handlers>
+      </system.webServer>
+   </location>
+</configuration>

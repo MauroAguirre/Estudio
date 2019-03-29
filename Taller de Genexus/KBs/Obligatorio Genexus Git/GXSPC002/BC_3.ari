@@ -1,0 +1,4 @@
+bc_dt_elem_i([ 0,3,0 ],'Carneid',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Carnefechaingreso',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Socioid',allownulls,no).
+ 
