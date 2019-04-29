@@ -2,7 +2,7 @@
                File: reorg
         Description: Table Manager
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 18:59:44.71
+       Generated on: 4/12/2019 20:37:52.56
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -176,6 +176,156 @@ namespace GeneXus.Programs {
          /* Load data into tables. */
       }
 
+      public void CreateCarnet( )
+      {
+         String cmdBuffer = "" ;
+         /* Indices for table Carnet */
+         try
+         {
+            cmdBuffer=" CREATE TABLE [Carnet] ([CarnetId]  smallint NOT NULL , [CarnetFechaIngreso]  datetime NOT NULL , PRIMARY KEY([CarnetId]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch ( Exception ex )
+         {
+            try
+            {
+               DropTableConstraints( "[Carnet]") ;
+               cmdBuffer=" DROP TABLE [Carnet] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch ( Exception sqlex1 )
+            {
+               try
+               {
+                  DropTableConstraints( "[Carnet]") ;
+                  cmdBuffer=" DROP VIEW [Carnet] "
+                  ;
+                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                  RGZ.ExecuteStmt() ;
+                  RGZ.Drop();
+               }
+               catch ( Exception sqlex2 )
+               {
+                  try
+                  {
+                     DropTableConstraints( "[Carnet]") ;
+                     cmdBuffer=" DROP FUNCTION [Carnet] "
+                     ;
+                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+                     RGZ.ExecuteStmt() ;
+                     RGZ.Drop();
+                  }
+                  catch ( Exception sqlex3 )
+                  {
+                  }
+               }
+            }
+            cmdBuffer=" CREATE TABLE [Carnet] ([CarnetId]  smallint NOT NULL , [CarnetFechaIngreso]  datetime NOT NULL , PRIMARY KEY([CarnetId]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+      }
+
+      public void CreateClaseSocios( )
+      {
+         String cmdBuffer = "" ;
+         /* Indices for table ClaseSocios */
+         try
+         {
+            cmdBuffer=" CREATE TABLE [ClaseSocios] ([ClaseId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ClaseId], [SocioId]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch ( Exception ex )
+         {
+            try
+            {
+               DropTableConstraints( "[ClaseSocios]") ;
+               cmdBuffer=" DROP TABLE [ClaseSocios] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch ( Exception sqlex1 )
+            {
+               try
+               {
+                  DropTableConstraints( "[ClaseSocios]") ;
+                  cmdBuffer=" DROP VIEW [ClaseSocios] "
+                  ;
+                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                  RGZ.ExecuteStmt() ;
+                  RGZ.Drop();
+               }
+               catch ( Exception sqlex2 )
+               {
+                  try
+                  {
+                     DropTableConstraints( "[ClaseSocios]") ;
+                     cmdBuffer=" DROP FUNCTION [ClaseSocios] "
+                     ;
+                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+                     RGZ.ExecuteStmt() ;
+                     RGZ.Drop();
+                  }
+                  catch ( Exception sqlex3 )
+                  {
+                  }
+               }
+            }
+            cmdBuffer=" CREATE TABLE [ClaseSocios] ([ClaseId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ClaseId], [SocioId]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         try
+         {
+            cmdBuffer=" CREATE NONCLUSTERED INDEX [ICLASESOCIOS1] ON [ClaseSocios] ([SocioId] ) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch ( Exception ex )
+         {
+            cmdBuffer=" DROP INDEX [ICLASESOCIOS1] ON [ClaseSocios] "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+            cmdBuffer=" CREATE NONCLUSTERED INDEX [ICLASESOCIOS1] ON [ClaseSocios] ([SocioId] ) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+      }
+
       public void CreateClase( )
       {
          String cmdBuffer = "" ;
@@ -255,156 +405,6 @@ namespace GeneXus.Programs {
             RGZ.ExecuteStmt() ;
             RGZ.Drop();
             cmdBuffer=" CREATE NONCLUSTERED INDEX [ICLASE1] ON [Clase] ([ProfesorId] ) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-      }
-
-      public void CreateCarne( )
-      {
-         String cmdBuffer = "" ;
-         /* Indices for table Carne */
-         try
-         {
-            cmdBuffer=" CREATE TABLE [Carne] ([CarneId]  smallint NOT NULL  IDENTITY(1,1), [CarneFechaIngreso]  datetime NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([CarneId]))  "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         catch ( Exception ex )
-         {
-            try
-            {
-               DropTableConstraints( "[Carne]") ;
-               cmdBuffer=" DROP TABLE [Carne] "
-               ;
-               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-               RGZ.ExecuteStmt() ;
-               RGZ.Drop();
-            }
-            catch ( Exception sqlex1 )
-            {
-               try
-               {
-                  DropTableConstraints( "[Carne]") ;
-                  cmdBuffer=" DROP VIEW [Carne] "
-                  ;
-                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-                  RGZ.ExecuteStmt() ;
-                  RGZ.Drop();
-               }
-               catch ( Exception sqlex2 )
-               {
-                  try
-                  {
-                     DropTableConstraints( "[Carne]") ;
-                     cmdBuffer=" DROP FUNCTION [Carne] "
-                     ;
-                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
-                     RGZ.ExecuteStmt() ;
-                     RGZ.Drop();
-                  }
-                  catch ( Exception sqlex3 )
-                  {
-                  }
-               }
-            }
-            cmdBuffer=" CREATE TABLE [Carne] ([CarneId]  smallint NOT NULL  IDENTITY(1,1), [CarneFechaIngreso]  datetime NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([CarneId]))  "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         try
-         {
-            cmdBuffer=" CREATE UNIQUE NONCLUSTERED INDEX [UCARNE] ON [Carne] ([SocioId] ) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         catch ( Exception ex )
-         {
-            cmdBuffer=" DROP INDEX [UCARNE] ON [Carne] "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-            cmdBuffer=" CREATE UNIQUE NONCLUSTERED INDEX [UCARNE] ON [Carne] ([SocioId] ) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-      }
-
-      public void CreateSocio( )
-      {
-         String cmdBuffer = "" ;
-         /* Indices for table Socio */
-         try
-         {
-            cmdBuffer=" CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioTipo]  char(20) NOT NULL , [SocioReconocido]  char(20) NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , PRIMARY KEY([SocioId]))  "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         catch ( Exception ex )
-         {
-            try
-            {
-               DropTableConstraints( "[Socio]") ;
-               cmdBuffer=" DROP TABLE [Socio] "
-               ;
-               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-               RGZ.ExecuteStmt() ;
-               RGZ.Drop();
-            }
-            catch ( Exception sqlex1 )
-            {
-               try
-               {
-                  DropTableConstraints( "[Socio]") ;
-                  cmdBuffer=" DROP VIEW [Socio] "
-                  ;
-                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-                  RGZ.ExecuteStmt() ;
-                  RGZ.Drop();
-               }
-               catch ( Exception sqlex2 )
-               {
-                  try
-                  {
-                     DropTableConstraints( "[Socio]") ;
-                     cmdBuffer=" DROP FUNCTION [Socio] "
-                     ;
-                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
-                     RGZ.ExecuteStmt() ;
-                     RGZ.Drop();
-                  }
-                  catch ( Exception sqlex3 )
-                  {
-                  }
-               }
-            }
-            cmdBuffer=" CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioTipo]  char(20) NOT NULL , [SocioReconocido]  char(20) NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , PRIMARY KEY([SocioId]))  "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -500,13 +500,13 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void CreateActividadSocioEnActividad( )
+      public void CreateSocio( )
       {
          String cmdBuffer = "" ;
-         /* Indices for table ActividadSocioEnActividad */
+         /* Indices for table Socio */
          try
          {
-            cmdBuffer=" CREATE TABLE [ActividadSocioEnActividad] ([ActividadId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ActividadId], [SocioId]))  "
+            cmdBuffer=" CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioReconocido]  BIT NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , [SocioTipoCuota]  char(20) NOT NULL , [CarnetId]  smallint NOT NULL , PRIMARY KEY([SocioId]))  "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -517,8 +517,8 @@ namespace GeneXus.Programs {
          {
             try
             {
-               DropTableConstraints( "[ActividadSocioEnActividad]") ;
-               cmdBuffer=" DROP TABLE [ActividadSocioEnActividad] "
+               DropTableConstraints( "[Socio]") ;
+               cmdBuffer=" DROP TABLE [Socio] "
                ;
                RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
                RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -529,8 +529,8 @@ namespace GeneXus.Programs {
             {
                try
                {
-                  DropTableConstraints( "[ActividadSocioEnActividad]") ;
-                  cmdBuffer=" DROP VIEW [ActividadSocioEnActividad] "
+                  DropTableConstraints( "[Socio]") ;
+                  cmdBuffer=" DROP VIEW [Socio] "
                   ;
                   RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
                   RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -541,8 +541,8 @@ namespace GeneXus.Programs {
                {
                   try
                   {
-                     DropTableConstraints( "[ActividadSocioEnActividad]") ;
-                     cmdBuffer=" DROP FUNCTION [ActividadSocioEnActividad] "
+                     DropTableConstraints( "[Socio]") ;
+                     cmdBuffer=" DROP FUNCTION [Socio] "
                      ;
                      RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
                      RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
@@ -554,7 +554,7 @@ namespace GeneXus.Programs {
                   }
                }
             }
-            cmdBuffer=" CREATE TABLE [ActividadSocioEnActividad] ([ActividadId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ActividadId], [SocioId]))  "
+            cmdBuffer=" CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioReconocido]  BIT NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , [SocioTipoCuota]  char(20) NOT NULL , [CarnetId]  smallint NOT NULL , PRIMARY KEY([SocioId]))  "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -563,7 +563,7 @@ namespace GeneXus.Programs {
          }
          try
          {
-            cmdBuffer=" CREATE NONCLUSTERED INDEX [IACTIVIDADSOCIOENACTIVIDAD1] ON [ActividadSocioEnActividad] ([SocioId] ) "
+            cmdBuffer=" CREATE NONCLUSTERED INDEX [ISOCIO1] ON [Socio] ([CarnetId] ) "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -572,13 +572,13 @@ namespace GeneXus.Programs {
          }
          catch ( Exception ex )
          {
-            cmdBuffer=" DROP INDEX [IACTIVIDADSOCIOENACTIVIDAD1] ON [ActividadSocioEnActividad] "
+            cmdBuffer=" DROP INDEX [ISOCIO1] ON [Socio] "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
             RGZ.ExecuteStmt() ;
             RGZ.Drop();
-            cmdBuffer=" CREATE NONCLUSTERED INDEX [IACTIVIDADSOCIOENACTIVIDAD1] ON [ActividadSocioEnActividad] ([SocioId] ) "
+            cmdBuffer=" CREATE NONCLUSTERED INDEX [ISOCIO1] ON [Socio] ([CarnetId] ) "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -593,7 +593,7 @@ namespace GeneXus.Programs {
          /* Indices for table Actividad1 */
          try
          {
-            cmdBuffer=" CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , [ActividadTipo]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))  "
+            cmdBuffer=" CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))  "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -641,7 +641,7 @@ namespace GeneXus.Programs {
                   }
                }
             }
-            cmdBuffer=" CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , [ActividadTipo]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))  "
+            cmdBuffer=" CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))  "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -650,12 +650,12 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void RIActividadSocioEnActividadActividad1( )
+      public void RISocioCarnet( )
       {
          String cmdBuffer ;
          try
          {
-            cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD2] FOREIGN KEY ([ActividadId]) REFERENCES [Actividad1] ([ActividadId]) "
+            cmdBuffer=" ALTER TABLE [Socio] ADD CONSTRAINT [ISOCIO1] FOREIGN KEY ([CarnetId]) REFERENCES [Carnet] ([CarnetId]) "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -666,7 +666,7 @@ namespace GeneXus.Programs {
          {
             try
             {
-               cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] DROP CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD2] "
+               cmdBuffer=" ALTER TABLE [Socio] DROP CONSTRAINT [ISOCIO1] "
                ;
                RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
                RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
@@ -676,42 +676,7 @@ namespace GeneXus.Programs {
             catch ( Exception sqlex1 )
             {
             }
-            cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD2] FOREIGN KEY ([ActividadId]) REFERENCES [Actividad1] ([ActividadId]) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-      }
-
-      public void RIActividadSocioEnActividadSocio( )
-      {
-         String cmdBuffer ;
-         try
-         {
-            cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         catch ( Exception ex )
-         {
-            try
-            {
-               cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] DROP CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD1] "
-               ;
-               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-               RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
-               RGZ.ExecuteStmt() ;
-               RGZ.Drop();
-            }
-            catch ( Exception sqlex1 )
-            {
-            }
-            cmdBuffer=" ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
+            cmdBuffer=" ALTER TABLE [Socio] ADD CONSTRAINT [ISOCIO1] FOREIGN KEY ([CarnetId]) REFERENCES [Carnet] ([CarnetId]) "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -755,41 +720,6 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void RICarneSocio( )
-      {
-         String cmdBuffer ;
-         try
-         {
-            cmdBuffer=" ALTER TABLE [Carne] ADD CONSTRAINT [ICARNE1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-         catch ( Exception ex )
-         {
-            try
-            {
-               cmdBuffer=" ALTER TABLE [Carne] DROP CONSTRAINT [ICARNE1] "
-               ;
-               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-               RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
-               RGZ.ExecuteStmt() ;
-               RGZ.Drop();
-            }
-            catch ( Exception sqlex1 )
-            {
-            }
-            cmdBuffer=" ALTER TABLE [Carne] ADD CONSTRAINT [ICARNE1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
-            ;
-            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-            RGZ.ExecuteStmt() ;
-            RGZ.Drop();
-         }
-      }
-
       public void RIClaseProfesor( )
       {
          String cmdBuffer ;
@@ -817,6 +747,76 @@ namespace GeneXus.Programs {
             {
             }
             cmdBuffer=" ALTER TABLE [Clase] ADD CONSTRAINT [ICLASE1] FOREIGN KEY ([ProfesorId]) REFERENCES [Profesor] ([ProfesorId]) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+      }
+
+      public void RIClaseSociosClase( )
+      {
+         String cmdBuffer ;
+         try
+         {
+            cmdBuffer=" ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS2] FOREIGN KEY ([ClaseId]) REFERENCES [Clase] ([ClaseId]) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch ( Exception ex )
+         {
+            try
+            {
+               cmdBuffer=" ALTER TABLE [ClaseSocios] DROP CONSTRAINT [ICLASESOCIOS2] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch ( Exception sqlex1 )
+            {
+            }
+            cmdBuffer=" ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS2] FOREIGN KEY ([ClaseId]) REFERENCES [Clase] ([ClaseId]) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+      }
+
+      public void RIClaseSociosSocio( )
+      {
+         String cmdBuffer ;
+         try
+         {
+            cmdBuffer=" ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch ( Exception ex )
+         {
+            try
+            {
+               cmdBuffer=" ALTER TABLE [ClaseSocios] DROP CONSTRAINT [ICLASESOCIOS1] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch ( Exception sqlex1 )
+            {
+            }
+            cmdBuffer=" ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId]) "
             ;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
@@ -867,76 +867,26 @@ namespace GeneXus.Programs {
             }
             pr_default.close(1);
          }
-         if ( tableexist("Clase",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Clase"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Carne",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Carne"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Socio",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Socio"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Profesor",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Profesor"}) ) ;
-            return false ;
-         }
-         if ( tableexist("ActividadSocioEnActividad",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"ActividadSocioEnActividad"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Actividad1",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Actividad1"}) ) ;
-            return false ;
-         }
          return true ;
-      }
-
-      private bool tableexist( String sTableName ,
-                               String sMySchemaName )
-      {
-         bool result ;
-         result = false;
-         /* Using cursor P00034 */
-         pr_default.execute(2, new Object[] {sTableName, sMySchemaName});
-         while ( (pr_default.getStatus(2) != 101) )
-         {
-            tablename = P00034_Atablename[0];
-            ntablename = P00034_ntablename[0];
-            schemaname = P00034_Aschemaname[0];
-            nschemaname = P00034_nschemaname[0];
-            result = true;
-            pr_default.readNext(2);
-         }
-         pr_default.close(2);
-         return result ;
       }
 
       private void ExecuteOnlyTablesReorganization( )
       {
-         ReorgExecute.RegisterBlockForSubmit( 1 ,  "CreateClase" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 2 ,  "CreateCarne" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 3 ,  "CreateSocio" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 1 ,  "CreateCarnet" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 2 ,  "CreateClaseSocios" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 3 ,  "CreateClase" , new Object[]{ });
          ReorgExecute.RegisterBlockForSubmit( 4 ,  "CreateProfesor" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 5 ,  "CreateActividadSocioEnActividad" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 5 ,  "CreateSocio" , new Object[]{ });
          ReorgExecute.RegisterBlockForSubmit( 6 ,  "CreateActividad1" , new Object[]{ });
       }
 
       private void ExecuteOnlyRisReorganization( )
       {
-         ReorgExecute.RegisterBlockForSubmit( 7 ,  "RIActividadSocioEnActividadActividad1" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 8 ,  "RIActividadSocioEnActividadSocio" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 9 ,  "RIProfesorActividad1" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 10 ,  "RICarneSocio" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 11 ,  "RIClaseProfesor" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 7 ,  "RISocioCarnet" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 8 ,  "RIProfesorActividad1" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 9 ,  "RIClaseProfesor" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 10 ,  "RIClaseSociosClase" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 11 ,  "RIClaseSociosSocio" , new Object[]{ });
       }
 
       private void ExecuteTablesReorganization( )
@@ -954,36 +904,36 @@ namespace GeneXus.Programs {
 
       private void SetPrecedencetables( )
       {
-         GXReorganization.SetMsg( 1 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Clase", ""}) );
+         GXReorganization.SetMsg( 1 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Carnet", ""}) );
+         GXReorganization.SetMsg( 2 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"ClaseSocios", ""}) );
+         ReorgExecute.RegisterPrecedence( "CreateClaseSocios" ,  "CreateClase" );
+         ReorgExecute.RegisterPrecedence( "CreateClaseSocios" ,  "CreateSocio" );
+         GXReorganization.SetMsg( 3 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Clase", ""}) );
          ReorgExecute.RegisterPrecedence( "CreateClase" ,  "CreateProfesor" );
-         GXReorganization.SetMsg( 2 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Carne", ""}) );
-         ReorgExecute.RegisterPrecedence( "CreateCarne" ,  "CreateSocio" );
-         GXReorganization.SetMsg( 3 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Socio", ""}) );
          GXReorganization.SetMsg( 4 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Profesor", ""}) );
          ReorgExecute.RegisterPrecedence( "CreateProfesor" ,  "CreateActividad1" );
-         GXReorganization.SetMsg( 5 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"ActividadSocioEnActividad", ""}) );
-         ReorgExecute.RegisterPrecedence( "CreateActividadSocioEnActividad" ,  "CreateActividad1" );
-         ReorgExecute.RegisterPrecedence( "CreateActividadSocioEnActividad" ,  "CreateSocio" );
+         GXReorganization.SetMsg( 5 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Socio", ""}) );
+         ReorgExecute.RegisterPrecedence( "CreateSocio" ,  "CreateCarnet" );
          GXReorganization.SetMsg( 6 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Actividad1", ""}) );
       }
 
       private void SetPrecedenceris( )
       {
-         GXReorganization.SetMsg( 7 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IACTIVIDADSOCIOENACTIVIDAD2]"}) );
-         ReorgExecute.RegisterPrecedence( "RIActividadSocioEnActividadActividad1" ,  "CreateActividadSocioEnActividad" );
-         ReorgExecute.RegisterPrecedence( "RIActividadSocioEnActividadActividad1" ,  "CreateActividad1" );
-         GXReorganization.SetMsg( 8 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IACTIVIDADSOCIOENACTIVIDAD1]"}) );
-         ReorgExecute.RegisterPrecedence( "RIActividadSocioEnActividadSocio" ,  "CreateActividadSocioEnActividad" );
-         ReorgExecute.RegisterPrecedence( "RIActividadSocioEnActividadSocio" ,  "CreateSocio" );
-         GXReorganization.SetMsg( 9 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROFESOR1]"}) );
+         GXReorganization.SetMsg( 7 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISOCIO1]"}) );
+         ReorgExecute.RegisterPrecedence( "RISocioCarnet" ,  "CreateSocio" );
+         ReorgExecute.RegisterPrecedence( "RISocioCarnet" ,  "CreateCarnet" );
+         GXReorganization.SetMsg( 8 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROFESOR1]"}) );
          ReorgExecute.RegisterPrecedence( "RIProfesorActividad1" ,  "CreateProfesor" );
          ReorgExecute.RegisterPrecedence( "RIProfesorActividad1" ,  "CreateActividad1" );
-         GXReorganization.SetMsg( 10 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICARNE1]"}) );
-         ReorgExecute.RegisterPrecedence( "RICarneSocio" ,  "CreateCarne" );
-         ReorgExecute.RegisterPrecedence( "RICarneSocio" ,  "CreateSocio" );
-         GXReorganization.SetMsg( 11 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICLASE1]"}) );
+         GXReorganization.SetMsg( 9 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICLASE1]"}) );
          ReorgExecute.RegisterPrecedence( "RIClaseProfesor" ,  "CreateClase" );
          ReorgExecute.RegisterPrecedence( "RIClaseProfesor" ,  "CreateProfesor" );
+         GXReorganization.SetMsg( 10 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICLASESOCIOS2]"}) );
+         ReorgExecute.RegisterPrecedence( "RIClaseSociosClase" ,  "CreateClaseSocios" );
+         ReorgExecute.RegisterPrecedence( "RIClaseSociosClase" ,  "CreateClase" );
+         GXReorganization.SetMsg( 11 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICLASESOCIOS1]"}) );
+         ReorgExecute.RegisterPrecedence( "RIClaseSociosSocio" ,  "CreateClaseSocios" );
+         ReorgExecute.RegisterPrecedence( "RIClaseSociosSocio" ,  "CreateSocio" );
       }
 
       private void ExecuteReorganization( )
@@ -1004,24 +954,24 @@ namespace GeneXus.Programs {
       public void DropTableConstraints( String sTableName )
       {
          String cmdBuffer ;
-         /* Using cursor P00045 */
-         pr_default.execute(3, new Object[] {sTableName});
-         while ( (pr_default.getStatus(3) != 101) )
+         /* Using cursor P00034 */
+         pr_default.execute(2, new Object[] {sTableName});
+         while ( (pr_default.getStatus(2) != 101) )
          {
-            constid = P00045_Aconstid[0];
-            nconstid = P00045_nconstid[0];
-            fkeyid = P00045_Afkeyid[0];
-            nfkeyid = P00045_nfkeyid[0];
-            rkeyid = P00045_Arkeyid[0];
-            nrkeyid = P00045_nrkeyid[0];
+            constid = P00034_Aconstid[0];
+            nconstid = P00034_nconstid[0];
+            fkeyid = P00034_Afkeyid[0];
+            nfkeyid = P00034_nfkeyid[0];
+            rkeyid = P00034_Arkeyid[0];
+            nrkeyid = P00034_nrkeyid[0];
             cmdBuffer = "ALTER TABLE " + "[" + fkeyid + "] DROP CONSTRAINT " + constid;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
             RGZ.ExecuteStmt() ;
             RGZ.Drop();
-            pr_default.readNext(3);
+            pr_default.readNext(2);
          }
-         pr_default.close(3);
+         pr_default.close(2);
       }
 
       public void UtilsCleanup( )
@@ -1053,25 +1003,16 @@ namespace GeneXus.Programs {
          P00023_AsSchemaVar = new String[] {""} ;
          P00023_nsSchemaVar = new bool[] {false} ;
          sTableName = "";
-         sMySchemaName = "";
-         tablename = "";
-         ntablename = false;
-         schemaname = "";
-         nschemaname = false;
-         P00034_Atablename = new String[] {""} ;
-         P00034_ntablename = new bool[] {false} ;
-         P00034_Aschemaname = new String[] {""} ;
-         P00034_nschemaname = new bool[] {false} ;
          constid = "";
          nconstid = false;
          fkeyid = "";
          nfkeyid = false;
-         P00045_Aconstid = new String[] {""} ;
-         P00045_nconstid = new bool[] {false} ;
-         P00045_Afkeyid = new String[] {""} ;
-         P00045_nfkeyid = new bool[] {false} ;
-         P00045_Arkeyid = new int[1] ;
-         P00045_nrkeyid = new bool[] {false} ;
+         P00034_Aconstid = new String[] {""} ;
+         P00034_nconstid = new bool[] {false} ;
+         P00034_Afkeyid = new String[] {""} ;
+         P00034_nfkeyid = new bool[] {false} ;
+         P00034_Arkeyid = new int[1] ;
+         P00034_nrkeyid = new bool[] {false} ;
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.reorg__default(),
             new Object[][] {
                 new Object[] {
@@ -1081,10 +1022,7 @@ namespace GeneXus.Programs {
                P00023_AsSchemaVar
                }
                , new Object[] {
-               P00034_Atablename, P00034_Aschemaname
-               }
-               , new Object[] {
-               P00045_Aconstid, P00045_Afkeyid, P00045_Arkeyid
+               P00034_Aconstid, P00034_Afkeyid, P00034_Arkeyid
                }
             }
          );
@@ -1103,15 +1041,10 @@ namespace GeneXus.Programs {
       protected String sSchemaVar ;
       protected String scmdbuf ;
       protected String sTableName ;
-      protected String sMySchemaName ;
       protected bool nsSchemaVar ;
-      protected bool ntablename ;
-      protected bool nschemaname ;
       protected bool nconstid ;
       protected bool nfkeyid ;
       protected bool nrkeyid ;
-      protected String tablename ;
-      protected String schemaname ;
       protected String constid ;
       protected String fkeyid ;
       protected GeneXus.Utils.GxStringCollection defaultUsers ;
@@ -1123,16 +1056,12 @@ namespace GeneXus.Programs {
       protected bool[] P00012_nsSchemaVar ;
       protected String[] P00023_AsSchemaVar ;
       protected bool[] P00023_nsSchemaVar ;
-      protected String[] P00034_Atablename ;
-      protected bool[] P00034_ntablename ;
-      protected String[] P00034_Aschemaname ;
-      protected bool[] P00034_nschemaname ;
-      protected String[] P00045_Aconstid ;
-      protected bool[] P00045_nconstid ;
-      protected String[] P00045_Afkeyid ;
-      protected bool[] P00045_nfkeyid ;
-      protected int[] P00045_Arkeyid ;
-      protected bool[] P00045_nrkeyid ;
+      protected String[] P00034_Aconstid ;
+      protected bool[] P00034_nconstid ;
+      protected String[] P00034_Afkeyid ;
+      protected bool[] P00034_nfkeyid ;
+      protected int[] P00034_Arkeyid ;
+      protected bool[] P00034_nrkeyid ;
    }
 
    public class reorg__default : DataStoreHelperBase, IDataStoreHelper
@@ -1144,7 +1073,6 @@ namespace GeneXus.Programs {
           new ForEachCursor(def[0])
          ,new ForEachCursor(def[1])
          ,new ForEachCursor(def[2])
-         ,new ForEachCursor(def[3])
        };
     }
 
@@ -1161,18 +1089,12 @@ namespace GeneXus.Programs {
           } ;
           Object[] prmP00034 ;
           prmP00034 = new Object[] {
-          new Object[] {"@sTableName",SqlDbType.Char,255,0} ,
-          new Object[] {"@sMySchemaName",SqlDbType.Char,255,0}
-          } ;
-          Object[] prmP00045 ;
-          prmP00045 = new Object[] {
           new Object[] {"@sTableName",SqlDbType.Char,255,0}
           } ;
           def= new CursorDef[] {
               new CursorDef("P00012", "SELECT SCHEMA_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00012,100,0,true,false )
              ,new CursorDef("P00023", "SELECT USER_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00023,100,0,true,false )
-             ,new CursorDef("P00034", "SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE (TABLE_NAME = @sTableName) AND (TABLE_SCHEMA = @sMySchemaName) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100,0,true,false )
-             ,new CursorDef("P00045", "SELECT OBJECT_NAME(object_id), OBJECT_NAME(parent_object_id), referenced_object_id FROM sys.foreign_keys WHERE referenced_object_id = OBJECT_ID(RTRIM(LTRIM(@sTableName))) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00045,100,0,true,false )
+             ,new CursorDef("P00034", "SELECT OBJECT_NAME(object_id), OBJECT_NAME(parent_object_id), referenced_object_id FROM sys.foreign_keys WHERE referenced_object_id = OBJECT_ID(RTRIM(LTRIM(@sTableName))) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100,0,true,false )
           };
        }
     }
@@ -1192,10 +1114,6 @@ namespace GeneXus.Programs {
              case 2 :
                 ((String[]) buf[0])[0] = rslt.getVarchar(1) ;
                 ((String[]) buf[1])[0] = rslt.getVarchar(2) ;
-                return;
-             case 3 :
-                ((String[]) buf[0])[0] = rslt.getVarchar(1) ;
-                ((String[]) buf[1])[0] = rslt.getVarchar(2) ;
                 ((int[]) buf[2])[0] = rslt.getInt(3) ;
                 return;
        }
@@ -1208,10 +1126,6 @@ namespace GeneXus.Programs {
        switch ( cursor )
        {
              case 2 :
-                stmt.SetParameter(1, (String)parms[0]);
-                stmt.SetParameter(2, (String)parms[1]);
-                return;
-             case 3 :
                 stmt.SetParameter(1, (String)parms[0]);
                 return;
        }

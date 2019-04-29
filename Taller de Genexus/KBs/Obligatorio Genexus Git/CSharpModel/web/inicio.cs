@@ -2,7 +2,7 @@
                File: Inicio
         Description: Inicio
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:36.18
+       Generated on: 4/12/2019 21:17:4.61
        Program type: Main program
           Main DBMS: SQL Server
 */
@@ -216,7 +216,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221913619", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194122117462", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -227,7 +227,7 @@ namespace GeneXus.Programs {
          {
             disableOutput();
          }
-         FormProcess = " data-HasEnter=\"false\" data-Skiponenter=\"false\"";
+         FormProcess = ((nGXWrapped==0) ? " data-HasEnter=\"false\" data-Skiponenter=\"false\"" : "");
          context.WriteHtmlText( "<body ") ;
          bodyStyle = "" + "background-color:" + context.BuildHTMLColor( Form.Backcolor) + ";color:" + context.BuildHTMLColor( Form.Textcolor) + ";";
          if ( nGXWrapped == 0 )
@@ -241,12 +241,15 @@ namespace GeneXus.Programs {
          context.WriteHtmlText( " "+"class=\"Form\""+" "+ "style='"+bodyStyle+"'") ;
          context.WriteHtmlText( FormProcess+">") ;
          context.skipLines(1);
-         context.WriteHtmlTextNl( "<form id=\"MAINFORM\" autocomplete=\"off\" name=\"MAINFORM\" method=\"post\" tabindex=-1  class=\"Form\" data-gx-class=\"Form\" novalidate action=\""+formatLink("inicio.aspx") +"\">") ;
-         GxWebStd.gx_hidden_field( context, "_EventName", "");
-         GxWebStd.gx_hidden_field( context, "_EventGridId", "");
-         GxWebStd.gx_hidden_field( context, "_EventRowId", "");
-         context.WriteHtmlText( "<input type=\"submit\" style=\"display:none\">") ;
-         context.httpAjaxContext.ajax_rsp_assign_prop("", false, "FORM", "Class", "Form", true);
+         if ( nGXWrapped != 1 )
+         {
+            context.WriteHtmlTextNl( "<form id=\"MAINFORM\" autocomplete=\"off\" name=\"MAINFORM\" method=\"post\" tabindex=-1  class=\"Form\" data-gx-class=\"Form\" novalidate action=\""+formatLink("inicio.aspx") +"\">") ;
+            GxWebStd.gx_hidden_field( context, "_EventName", "");
+            GxWebStd.gx_hidden_field( context, "_EventGridId", "");
+            GxWebStd.gx_hidden_field( context, "_EventRowId", "");
+            context.WriteHtmlText( "<input type=\"submit\" style=\"display:none\">") ;
+            context.httpAjaxContext.ajax_rsp_assign_prop("", false, "FORM", "Class", "Form", true);
+         }
          toggleJsOutput = isJsOutputEnabled( );
          if ( context.isSpaRequest( ) )
          {
@@ -279,7 +282,10 @@ namespace GeneXus.Programs {
          {
             disableOutput();
          }
-         context.WriteHtmlTextNl( "</form>") ;
+         if ( nGXWrapped != 1 )
+         {
+            context.WriteHtmlTextNl( "</form>") ;
+         }
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -344,20 +350,14 @@ namespace GeneXus.Programs {
                RenderHtmlOpenForm( ) ;
             }
             GxWebStd.gx_msg_list( context, "", context.GX_msglist.DisplayMode, "", "", "", "false");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, divSection1_Internalname, 1, 576, "px", 363, "px", "Section", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<p>") ;
+            /* Text block */
+            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, "El club deportivo los invita a formar parte de sus actividades variadas en compañia de nuestros profesores. Cuenta con varias actividades al aire libre como también en nuestras instalaciones. Con nuestra amplia trayectoria podemos asegurar sus objetivos.", "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, "HLP_Inicio.htm");
+            context.WriteHtmlText( "</p>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "<p></p>") ;
-            wb_table1_3_0V2( true) ;
-         }
-         else
-         {
-            wb_table1_3_0V2( false) ;
-         }
-         return  ;
-      }
-
-      protected void wb_table1_3_0V2e( bool wbgen )
-      {
-         if ( wbgen )
-         {
          }
          wbLoad = true;
       }
@@ -586,71 +586,6 @@ namespace GeneXus.Programs {
          /* Load Routine */
       }
 
-      protected void wb_table1_3_0V2( bool wbgen )
-      {
-         if ( wbgen )
-         {
-            /* Table start */
-            sStyleString = "";
-            sStyleString = sStyleString + " height: " + StringUtil.LTrim( StringUtil.Str( (decimal)(50), 10, 0)) + "%" + ";";
-            sStyleString = sStyleString + " width: " + StringUtil.LTrim( StringUtil.Str( (decimal)(50), 10, 0)) + "%" + ";";
-            GxWebStd.gx_table_start( context, tblTable1_Internalname, tblTable1_Internalname, "", "Table", 0, "", "", 1, 2, sStyleString, "", "", 0);
-            context.WriteHtmlText( "<tbody>") ;
-            context.WriteHtmlText( "<tr>") ;
-            context.WriteHtmlText( "<td>") ;
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 6,'',false,'',0)\"";
-            ClassString = "Button";
-            StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton1_Internalname, "", "Profesores", bttButton1_Jsonclick, 7, "Profesores", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e120v1_client"+"'", TempTags, "", 2, "HLP_Inicio.htm");
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 8,'',false,'',0)\"";
-            ClassString = "Button";
-            StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton2_Internalname, "", "Clase", bttButton2_Jsonclick, 7, "Clase", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e130v1_client"+"'", TempTags, "", 2, "HLP_Inicio.htm");
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 10,'',false,'',0)\"";
-            ClassString = "Button";
-            StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton3_Internalname, "", "Carne", bttButton3_Jsonclick, 7, "Carne", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e140v1_client"+"'", TempTags, "", 2, "HLP_Inicio.htm");
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "</tr>") ;
-            context.WriteHtmlText( "<tr>") ;
-            context.WriteHtmlText( "<td style=\""+CSSHelper.Prettify( "height:136px")+"\">") ;
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 13,'',false,'',0)\"";
-            ClassString = "Button";
-            StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton4_Internalname, "", "Actividad", bttButton4_Jsonclick, 7, "Actividad", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e150v1_client"+"'", TempTags, "", 2, "HLP_Inicio.htm");
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 15,'',false,'',0)\"";
-            ClassString = "Button";
-            StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton5_Internalname, "", "Socio", bttButton5_Jsonclick, 7, "Socio", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e160v1_client"+"'", TempTags, "", 2, "HLP_Inicio.htm");
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "</tr>") ;
-            context.WriteHtmlText( "<tr>") ;
-            context.WriteHtmlText( "<td style=\""+CSSHelper.Prettify( "height:74px")+"\">") ;
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "<td>") ;
-            context.WriteHtmlText( "</td>") ;
-            context.WriteHtmlText( "</tr>") ;
-            context.WriteHtmlText( "</tbody>") ;
-            /* End of table */
-            context.WriteHtmlText( "</table>") ;
-            wb_table1_3_0V2e( true) ;
-         }
-         else
-         {
-            wb_table1_3_0V2e( false) ;
-         }
-      }
-
       public override void setparameters( Object[] obj )
       {
          createObjects();
@@ -690,7 +625,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221913626", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194122117466", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -705,8 +640,11 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("inicio.js", "?20193221913626", false);
+         if ( nGXWrapped != 1 )
+         {
+            context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
+            context.AddJavascriptSource("inicio.js", "?20194122117466", false);
+         }
          /* End function include_jscripts */
       }
 
@@ -717,12 +655,8 @@ namespace GeneXus.Programs {
 
       protected void init_default_properties( )
       {
-         bttButton1_Internalname = "BUTTON1";
-         bttButton2_Internalname = "BUTTON2";
-         bttButton3_Internalname = "BUTTON3";
-         bttButton4_Internalname = "BUTTON4";
-         bttButton5_Internalname = "BUTTON5";
-         tblTable1_Internalname = "TABLE1";
+         lblTextblock1_Internalname = "TEXTBLOCK1";
+         divSection1_Internalname = "SECTION1";
          Form.Internalname = "FORM";
       }
 
@@ -754,16 +688,6 @@ namespace GeneXus.Programs {
       {
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("'CLASE'","{handler:'E130V1',iparms:[]");
-         setEventMetadata("'CLASE'",",oparms:[]}");
-         setEventMetadata("'PROFESORES'","{handler:'E120V1',iparms:[]");
-         setEventMetadata("'PROFESORES'",",oparms:[]}");
-         setEventMetadata("'CARNE'","{handler:'E140V1',iparms:[]");
-         setEventMetadata("'CARNE'",",oparms:[]}");
-         setEventMetadata("'ACTIVIDAD'","{handler:'E150V1',iparms:[]");
-         setEventMetadata("'ACTIVIDAD'",",oparms:[]}");
-         setEventMetadata("'SOCIO'","{handler:'E160V1',iparms:[]");
-         setEventMetadata("'SOCIO'",",oparms:[]}");
          return  ;
       }
 
@@ -792,19 +716,11 @@ namespace GeneXus.Programs {
          GX_FocusControl = "";
          Form = new GXWebForm();
          sPrefix = "";
+         lblTextblock1_Jsonclick = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
-         sStyleString = "";
-         TempTags = "";
-         ClassString = "";
-         StyleString = "";
-         bttButton1_Jsonclick = "";
-         bttButton2_Jsonclick = "";
-         bttButton3_Jsonclick = "";
-         bttButton4_Jsonclick = "";
-         bttButton5_Jsonclick = "";
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
          /* GeneXus formulas. */
@@ -815,11 +731,11 @@ namespace GeneXus.Programs {
       private short GxWebError ;
       private short initialized ;
       private short gxajaxcallmode ;
+      private short nGXWrapped ;
       private short wbEnd ;
       private short wbStart ;
       private short nDonePA ;
       private short gxcookieaux ;
-      private short nGXWrapped ;
       private int idxLst ;
       private String gxfirstwebparm ;
       private String gxfirstwebparm_bkp ;
@@ -829,25 +745,13 @@ namespace GeneXus.Programs {
       private String GXKey ;
       private String GX_FocusControl ;
       private String sPrefix ;
+      private String divSection1_Internalname ;
+      private String lblTextblock1_Internalname ;
+      private String lblTextblock1_Jsonclick ;
       private String sEvt ;
       private String EvtGridId ;
       private String EvtRowId ;
       private String sEvtType ;
-      private String sStyleString ;
-      private String tblTable1_Internalname ;
-      private String TempTags ;
-      private String ClassString ;
-      private String StyleString ;
-      private String bttButton1_Internalname ;
-      private String bttButton1_Jsonclick ;
-      private String bttButton2_Internalname ;
-      private String bttButton2_Jsonclick ;
-      private String bttButton3_Internalname ;
-      private String bttButton3_Jsonclick ;
-      private String bttButton4_Internalname ;
-      private String bttButton4_Jsonclick ;
-      private String bttButton5_Internalname ;
-      private String bttButton5_Jsonclick ;
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
       private bool wbLoad ;

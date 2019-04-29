@@ -1,0 +1,9 @@
+bc_dt_elem_i([ 0,2,0 ],'Profesorid',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Profesornombre',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Profesordireccion',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Profesorfoto',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Actividadid',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Actividaddescripcion',readonly,yes).
+bc_dt_elem_i([ 0,2,0 ],'Actividaddescripcion',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Profesorfoto_gxi',allownulls,no).
+ 

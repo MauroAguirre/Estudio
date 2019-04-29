@@ -3,8 +3,8 @@ spec_i([ web,20,'View Clase','ViewClase',0,eng,'15_0_12-126726' ]).
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 6,[ [ 6,many ] ],[],[],[ [ [ 6 ],[ 3 ] ] ],[ [ [ 6 ],[] ] ],[ 3 ],'ICLASE',[ 6,[ [ [],'Claseid',3 ] ] ],[] ]).
-level_i(3,[ 6,[ [ 6,many ] ],[],[],[ [ [ 6 ],[ 3 ] ] ],[ [ [ 6 ],[] ] ],[ 3 ],'ICLASE',[ 6,[ [ [],'Claseid',3 ] ] ],[] ]).
+level_i(2,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 3 ] ] ],[ [ [ 12 ],[] ] ],[ 3 ],'ICLASE',[ 12,[ [ [],'Claseid',3 ] ] ],[] ]).
+level_i(3,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 3 ] ] ],[ [ [ 12 ],[] ] ],[ 3 ],'ICLASE',[ 12,[ [ [],'Claseid',3 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -17,8 +17,8 @@ lwi_i(3,[ [] ]).
 level_option_i(3,usr_condition,y).
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 6,3 ] ] ]).
-ta_i(3,[ [ [ 6,3 ] ] ]).
+ta_i(2,[ [ [ 12,3 ] ] ]).
+ta_i(3,[ [ [ 12,3 ] ] ]).
  
 las_i(2,[ [ 'Claseid','Tabcode',3 ] ]).
 las_i(3,[ [ 'Claseid','Tabcode',3 ] ]).
@@ -30,6 +30,7 @@ lac_i(3,[ [] ]).
 lits_i('Clase Information',5,10).
 lits_i('Clases',5,10).
 lits_i('General',5,10).
+lits_i('Socios',5,10).
  
 cls_i([ 0,0 ],[ 5,26 ]).
  
@@ -134,8 +135,8 @@ rule_i(0,parmio([ [ 'Claseid',in ],[ 'Tabcode',in ] ])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ViewClase"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,3,t,6,[],[ [ [ [],'Claseid',3 ] ],'ICLASE',[] ]).
-a_i(4,2,t,6,[],[ [ [ [],'Claseid',3 ] ],'ICLASE',[] ]).
+a_i(3,3,t,12,[],[ [ [ [],'Claseid',3 ] ],'ICLASE',[] ]).
+a_i(4,2,t,12,[],[ [ [ [],'Claseid',3 ] ],'ICLASE',[] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
@@ -165,9 +166,9 @@ attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code'
 attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(6,[ 'Clase',[ 3 ],'Clase','Clase' ]).
+table_i(12,[ 'Clase',[ 3 ],'Clase','Clase' ]).
  
-index_i(6,[ 'ICLASE',u,[ 3 ],'IClase' ]).
+index_i(12,[ 'ICLASE',u,[ 3 ],'IClase' ]).
  
  
  
@@ -244,7 +245,10 @@ b_line_i(32,2,5,cmd,8,[ t('',143,8,0),t('''LOAD TAB''',3,32,5) ]).
 b_line_i(33,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,33,68) ]).
 b_line_i(34,2,6,cmd,8,[ t('',107,8,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ClaseGeneral'),28,8,0),t(',',7,8,0),t('Claseid',23,8,0),t(')',4,8,0) ]).
 b_line_i(35,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(36,2,6,cmd,8,[ t('',144,8,0) ]).
+b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Socios"',3,36,42) ]).
+b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Socioswc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ClaseSociosWC'),28,8,0),t(',',7,8,0),t('Claseid',23,8,0),t(')',4,8,0) ]).
+b_line_i(38,2,6,cmd,8,[ t('',111,8,0) ]).
+b_line_i(39,2,6,cmd,8,[ t('',144,8,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
@@ -293,6 +297,15 @@ html_sub_i(26,27,html_i(0,div(27))).
 html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
+html_sub_i(22,31,html_i(2,container(31))).
+html_sub_i(31,32,html_i(0,t('Socios',3))).
+html_sub_i(31,33,html_i(1,div(33))).
+html_sub_i(33,0,html_i(0,html('Socios'))).
+html_sub_i(22,34,html_i(3,container(34))).
+html_sub_i(34,35,html_i(0,div(35))).
+html_sub_i(35,36,html_i(0,div(36))).
+html_sub_i(36,37,html_i(0,div(37))).
+html_sub_i(37,38,html_i(0,comp(webcomp))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
@@ -300,6 +313,8 @@ html_tags_i(17,'data-gx-att','att:3').
 html_tags_i(19,'data-gx-att','att:3').
 html_tags_i(25,style,'display:none;').
 html_tags_i(30,'Object','').
+html_tags_i(33,style,'display:none;').
+html_tags_i(38,'Object','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
@@ -496,7 +511,7 @@ html_comp_i(22,'Usercontroltype','Tab',d,[ str ]).
 html_comp_i(22,'Constructorname','Tab',d,[ str ]).
 html_comp_i(22,'Showmethodname',show,d,[ str ]).
 html_comp_i(22,'Controlname','Tab',v,[ str ]).
-html_comp_i(22,'Pagecount',1,v,[ num ]).
+html_comp_i(22,'Pagecount',2,v,[ num ]).
 html_comp_i(22,'Class','WWTab',v,[ str ]).
 html_comp_i(22,'Historymanagement',-1,v,[ bool ]).
 html_comp_i(22,'Visible',-1,d,[ bool ]).
@@ -553,6 +568,55 @@ html_comp_i(29,'Valign',top,d,[ str ]).
 html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
+html_comp_i(31,'Containerid',title2,v,[ str ]).
+html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(32,'Caption','Socios',d,[ str ]).
+html_comp_i(32,'Id','Socios_title',v,[ str ]).
+html_comp_i(32,'Class','TextBlock',d,[ str ]).
+html_comp_i(32,'Event','',d,[ str ]).
+html_comp_i(32,'Returnonclick',0,d,[ bool ]).
+html_comp_i(32,'Gxformat',0,v,[ num ]).
+html_comp_i(32,'Title','',d,[ str ]).
+html_comp_i(32,'Fill',-1,d,[ bool ]).
+html_comp_i(32,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(32,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(32,'Font','',d,[ str ]).
+html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(33,'Class','Section',d,[ str ]).
+html_comp_i(33,'Id','',d,[ str ]).
+html_comp_i(33,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(33,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(33,'Semanticcontent',div,d,[ str ]).
+html_comp_i(33,'Align',left,d,[ str ]).
+html_comp_i(33,'Valign',top,d,[ str ]).
+html_comp_i(34,'Containerid',panel2,v,[ str ]).
+html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(35,'Class','TabsFormContainer',v,[ str ]).
+html_comp_i(35,'Id','Tablesocios',v,[ str ]).
+html_comp_i(35,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(35,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(35,'Semanticcontent',div,d,[ str ]).
+html_comp_i(35,'Align',left,d,[ str ]).
+html_comp_i(35,'Valign',top,d,[ str ]).
+html_comp_i(36,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(36,'Class',row,v,[ str ]).
+html_comp_i(36,'Id','',d,[ str ]).
+html_comp_i(36,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(36,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(36,'Semanticcontent',div,d,[ str ]).
+html_comp_i(36,'Align',left,d,[ str ]).
+html_comp_i(36,'Valign',top,d,[ str ]).
+html_comp_i(37,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(37,'Class','col-xs-12',v,[ str ]).
+html_comp_i(37,'Id','',d,[ str ]).
+html_comp_i(37,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(37,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(37,'Semanticcontent',div,d,[ str ]).
+html_comp_i(37,'Align',left,d,[ str ]).
+html_comp_i(37,'Valign',top,d,[ str ]).
+html_comp_i(38,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(38,'Controlname','Socioswc',v,[ str ]).
+html_comp_i(38,'Params',[],v,[ params ]).
  
  
  
@@ -582,7 +646,13 @@ lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26) ]) ]).
+lit_i(32,1,t('Socios',3),[ ctlname('Socios_title') ]).
+lit_i(33,1,div(33),[ ctlname('') ]).
+lit_i(38,1,comp(webcomp),[ ctlname('Socioswc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(37,1,div(37),[ ctlname('') ]).
+lit_i(36,1,div(36),[ ctlname('') ]).
+lit_i(35,1,div(35),[ ctlname('Tablesocios') ]).
+lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26),container(31),container(34) ]) ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
@@ -608,7 +678,7 @@ att_prop_i(2,3,'AttValidationFailedMsg','',d).
 att_prop_i(2,3,'FullName','ClaseId',v).
  
  
-tbl_att_prop_i(2,6,3,'AllowNulls',n).
+tbl_att_prop_i(2,12,3,'AllowNulls',n).
  
 var_prop_i(2,'Tabcode',idBasedOn,65,v).
 var_prop_i(2,'Selectedtabcode',idBasedOn,65,v).
@@ -699,16 +769,18 @@ struct_dt_elem_i([ 26,44,71 ],4,'JsonName','').
  
  
  
-sub_info_i(146,'Start',1,24,[ [ 'Pgmname',3,'Claseid','Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Claseid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,24,[ [ 'Pgmname',3,'Claseid','Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Socioswc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Claseid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Socioswc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(web,43,'CLASESOCIOSWC',[ [ int,4,0,0 ] ],[ [ 'ClaseId',in,[] ] ]).
 pgm_parm_i(web,19,'CLASEGENERAL',[ [ int,4,0,0 ] ],[ [ 'ClaseId',in,[] ] ]).
 pgm_parm_i(web,18,'WWCLASE',[],[]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,20,'VIEWCLASE','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
+pgm_callprotocol_i(web,43,'CLASESOCIOSWC','INTERNAL').
 pgm_callprotocol_i(web,19,'CLASEGENERAL','INTERNAL').
 pgm_callprotocol_i(web,18,'WWCLASE','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').

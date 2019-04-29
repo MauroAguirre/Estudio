@@ -12,13 +12,13 @@
    <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWActividad</ObjName>
-      <ObjDesc>Actividads</ObjDesc>
+      <ObjDesc>Actividades</ObjDesc>
       <ObjLink>wwactividad.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWCarne</ObjName>
-      <ObjDesc>Carnes</ObjDesc>
+      <ObjDesc>Carne</ObjDesc>
       <ObjLink>wwcarne.aspx</ObjLink>
    </Object>
    <Object>
@@ -30,7 +30,7 @@
    <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWProfesor</ObjName>
-      <ObjDesc>Profesors</ObjDesc>
+      <ObjDesc>Profesores</ObjDesc>
       <ObjLink>wwprofesor.aspx</ObjLink>
    </Object>
    <Object>

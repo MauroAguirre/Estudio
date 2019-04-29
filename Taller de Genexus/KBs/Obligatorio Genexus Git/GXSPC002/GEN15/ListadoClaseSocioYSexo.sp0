@@ -1,0 +1,425 @@
+spec_i([ proc,23,'Listado Clase Socio YSexo','ListadoClaseSocioYSexo',78,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,2,[ 3 ],[]).
+ 
+level_i(2,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 3 ] ] ],[ [ [ 12 ],[] ] ],[ 3 ],'ICLASE',[],[] ]).
+level_i(3,[ 13,[ [ 13,many ],[ 4,one ] ],[],[],[ [ [ 13,4 ],[ 3,18,33,19,20,5 ] ] ],[ [ [ 13,4 ],[] ] ],[ 3 ],'ICLASESOCIOS',[ 13,[ [ [],3,3 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[ [ 4,[ [ 13,5,5 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 12,3 ] ] ]).
+ta_i(3,[ [ [ 13,3 ],[ 4,18 ],[ 4,33 ],[ 4,19 ],[ 4,20 ],[ 13,5 ] ] ]).
+ 
+las_i(2,[ [ 3 ] ]).
+las_i(3,[ [ 3,18,33,19,20,5 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ListadoClaseSocioYSexo')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Listados'))).
+rule_i(0,prop('ObjDesc','Listado Clase Socio YSexo')).
+rule_i(0,prop('ObjName','ListadoClaseSocioYSexo')).
+rule_i(0,maingen(15)).
+rule_i(0,output_file(t('SociosDeClase.pdf',3),t(pdf,3))).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(3,3,t,13,[],[ [ [ [],3,3 ] ],'ICLASESOCIOS',[] ]).
+a_i(4,3,r,4,[],[ [ [ 13,5,5 ] ],'ISOCIO',[] ]).
+a_i(5,2,t,12,[],[ [],'ICLASE',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,[]).
+v_i(f,o,2,'Err').
+v_i(t,i,3,3).
+v_i(t,o,3,5).
+v_i(r,i,4,5).
+v_i(r,o,4,18).
+v_i(r,o,4,33).
+v_i(r,o,4,19).
+v_i(r,o,4,20).
+v_i(t,i,5,[]).
+v_i(t,o,5,3).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',18 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',17 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',16 ]).
+attri_i(3,[ 'ClaseId',int,4,0,'ZZZ9',0,'Clase Id','',0 ]).
+attri_i(18,[ 'SocioDireccion',svchar,1024,0,'',0,'Socio Direccion','',0 ]).
+attri_i(33,[ 'SocioTipoCuota',char,20,0,'',0,'Socio Tipo Cuota','',0 ]).
+attri_i(19,[ 'SocioSexo',char,20,0,'',0,'Socio Sexo','',0 ]).
+attri_i(20,[ 'SocioEdad',int,4,0,'ZZZ9',0,'Socio Edad','',0 ]).
+attri_i(5,[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',12 ]).
+attri_i('Otros',[ 'Otros',int,4,0,'ZZZ9',0,'Otros','',11 ]).
+attri_i('Mujeres',[ 'Mujeres',int,4,0,'ZZZ9',0,'Mujeres','',10 ]).
+attri_i('Hombres',[ 'Hombres',int,4,0,'ZZZ9',0,'Hombres','',9 ]).
+ 
+table_i(4,[ 'Socio',[ 5,18,19,20,33 ],'Socio','Socio' ]).
+table_i(13,[ 'ClaseSocios',[ 3,5 ],'Socios','ClaseSocios' ]).
+table_i(12,[ 'Clase',[ 3 ],'Clase','Clase' ]).
+ 
+index_i(13,[ 'ICLASESOCIOS',u,[ 3,5 ],'IClaseSocios' ]).
+index_i(4,[ 'ISOCIO',u,[ 5 ],'ISocio' ]).
+index_i(12,[ 'ICLASE',u,[ 3 ],'IClase' ]).
+ 
+ 
+ 
+function_i(2,'Otros',yes,udp,o(1,'CantidadSexo'),[ 3 ],5,'Otros',[ [ t(3,2),t(',',7),t([ 69,'Otro' ],44) ] ]).
+function_i(2,'Mujeres',yes,udp,o(1,'CantidadSexo'),[ 3 ],4,'Mujeres',[ [ t(3,2),t(',',7),t([ 69,'Mujer' ],44) ] ]).
+function_i(2,'Hombres',yes,udp,o(1,'CantidadSexo'),[ 3 ],3,'Hombres',[ [ t(3,2),t(',',7),t([ 69,'Hombre' ],44) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,17,'ProfesorFoto_GXI',[ svchar,2048,0,0 ]).
+add_att_i(bits,2,40001,21,'SocioFoto_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+start_i(3,0,0,[ [ [ 3,2,3,= ] ],many ]).
+ 
+end_i(3,0,0,[ [ [ t(3,2),t(=,10),t(3,23) ] ] ]).
+ 
+ 
+ 
+ 
+enumerated_i(2,19,69).
+enumerated_i(2,33,68).
+ 
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
+ 
+enum_value_info_i(2,69,'Sexo').
+enum_value_info_i(2,68,'TipoCuota').
+ 
+enum_type_i(2,69,char,20,0).
+enum_type_i(2,68,char,20,0).
+ 
+dom_info_i(69,[ 'Sexo' ]).
+dom_info_i(68,[ 'TipoCuota' ]).
+dom_info_i(26,[ 'GeneXus\Address' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [ 5,20,19,33,18 ],[],[] ]).
+break_i(2,nvg,1,[],[ [ 3 ],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,6).
+b_group_i(1,2,nvg,2,2,2).
+b_group_i(2,1,lit,0,8,14).
+b_group_i(2,2,nvg,3,7,7).
+b_group_i(3,1,lit,0,18,24).
+b_group_i(2,3,lit,0,25,22).
+b_group_i(1,3,lit,0,26,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,pb,0,[ t('Titulo',29,0,7) ]).
+b_line_i([ 1,0 ],1,1,line,0,[ t(' ',3,0,0) ]).
+b_line_i([ 1,2 ],1,1,line,2,[ t('Listado de socio en clases',3,2,40) ]).
+b_line_i([ 1,4 ],1,1,line,4,[ t('Clase Id',3,4,25),t('Hombre',3,4,44),t('Mujeres',3,4,63),t('Otros',3,4,82) ]).
+b_line_i([ 1,5 ],1,1,line,5,[ t(' ',3,5,0) ]).
+b_line_i(2,2,1,cmd,8,[ t('',121,2,0),t(table,3,2,10),t(12,3,2,10) ]).
+b_line_i(3,2,1,cmd,8,[ t('',107,8,0),t('Hombres',23,8,0),t(=,10,8,0),t('udp(',1,8,0),t('Hombres',3,8,0),t(3,3,8,0),t(3,2,8,0),t(',',7,8,0),t([ 69,'Hombre' ],44,8,0),t(')',4,8,0) ]).
+b_line_i(4,2,1,cmd,8,[ t('',107,8,0),t('Mujeres',23,8,0),t(=,10,8,0),t('udp(',1,8,0),t('Mujeres',3,8,0),t(4,3,8,0),t(3,2,8,0),t(',',7,8,0),t([ 69,'Mujer' ],44,8,0),t(')',4,8,0) ]).
+b_line_i(5,2,1,cmd,8,[ t('',107,8,0),t('Otros',23,8,0),t(=,10,8,0),t('udp(',1,8,0),t('Otros',3,8,0),t(5,3,8,0),t(3,2,8,0),t(',',7,8,0),t([ 69,'Otro' ],44,8,0),t(')',4,8,0) ]).
+b_line_i(6,2,1,pb,8,[ t('Clase',29,8,8) ]).
+b_line_i([ 6,0 ],2,1,line,8,[ t(' ',3,0,0) ]).
+b_line_i([ 6,2 ],2,1,line,10,[ t(3,2,2,25),t('Hombres',23,2,44),t('Mujeres',23,2,64),t('Otros',23,2,82) ]).
+b_line_i([ 6,4 ],2,1,line,12,[ t('Id',3,4,14),t('Edad',3,4,26),t('Sexo',3,4,40),t('Tipo de cuota',3,4,61),t('Direccion',3,4,79) ]).
+b_line_i([ 6,5 ],2,1,line,13,[ t(' ',3,5,0) ]).
+b_line_i(7,3,1,cmd,18,[ t('',121,7,0),t(table,3,7,11),t(13,3,7,11) ]).
+b_line_i(8,3,1,pb,18,[ t('Socio',29,18,9) ]).
+b_line_i([ 8,0 ],3,1,line,18,[ t(' ',3,0,0) ]).
+b_line_i([ 8,2 ],3,1,line,20,[ t(5,2,2,11),t(20,2,2,23),t(19,2,2,38),t(33,2,2,58),t(18,2,2,77) ]).
+b_line_i([ 8,5 ],3,1,line,23,[ t(' ',3,5,0) ]).
+b_line_i(9,3,1,cmd,24,[ t('',128,24,0) ]).
+b_line_i(10,2,3,cmd,22,[ t('',128,22,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,t('Listado de socio en clases',3),[ font('Microsoft Sans Serif',8,[]),rect(283,33,414,47),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(3,1,rect(3),[ rect(275,50,417,50),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(1),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
+lit_i(9,1,t('Clase Id',3),[ font('Microsoft Sans Serif',8,[]),rect(175,67,216,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel3'),gxcolor([]) ]).
+lit_i(16,1,t('Hombre',3),[ font('Microsoft Sans Serif',8,[]),rect(308,67,348,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel8'),gxcolor([]) ]).
+lit_i(17,1,t('Mujeres',3),[ font('Microsoft Sans Serif',8,[]),rect(442,67,482,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel9'),gxcolor([]) ]).
+lit_i(18,1,t('Otros',3),[ font('Microsoft Sans Serif',8,[]),rect(575,67,602,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel10'),gxcolor([]) ]).
+lit_i(1,1,window,[ title('Text'),rect(0,0,827,100),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Titulo'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(4,6,t(3,2),[ font('Microsoft Sans Serif',8,[]),rect(175,33,208,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('3'),ctrltype(edit,4),ispwd(0),gxcolor([]) ]).
+lit_i(8,6,t('Id',3),[ font('Microsoft Sans Serif',8,[]),rect(100,67,110,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel2'),gxcolor([]) ]).
+lit_i(10,6,t('Edad',3),[ font('Microsoft Sans Serif',8,[]),rect(183,67,210,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel4'),gxcolor([]) ]).
+lit_i(11,6,t('Sexo',3),[ font('Microsoft Sans Serif',8,[]),rect(283,67,309,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel5'),gxcolor([]) ]).
+lit_i(12,6,t('Tipo de cuota',3),[ font('Microsoft Sans Serif',8,[]),rect(433,67,503,81),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
+lit_i(15,6,t('Direccion',3),[ font('Microsoft Sans Serif',8,[]),rect(558,67,625,81),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).
+lit_i(19,6,t('Hombres',23),[ font('Microsoft Sans Serif',8,[]),rect(308,33,366,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('&hombres'),ctrltype(edit,19),ispwd(0),gxcolor([]) ]).
+lit_i(20,6,t('Mujeres',23),[ font('Microsoft Sans Serif',8,[]),rect(450,33,500,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('&mujeres'),ctrltype(edit,20),ispwd(0),gxcolor([]) ]).
+lit_i(21,6,t('Otros',23),[ font('Microsoft Sans Serif',8,[]),rect(575,33,608,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('&otros'),ctrltype(edit,21),ispwd(0),gxcolor([]) ]).
+lit_i(2,6,window,[ title('Text'),rect(0,0,827,100),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Clase'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(5,8,t(5,2),[ font('Microsoft Sans Serif',8,[]),rect(83,33,133,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('5'),ctrltype(edit,5),ispwd(0),gxcolor([]) ]).
+lit_i(6,8,t(20,2),[ font('Microsoft Sans Serif',8,[]),rect(167,33,225,48),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('20'),ctrltype(edit,6),ispwd(0),gxcolor([]) ]).
+lit_i(7,8,t(19,2),[ font('Microsoft Sans Serif',8,[]),rect(267,33,334,48),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('19'),ctrltype(edit,7),ispwd(0),gxcolor([]) ]).
+lit_i(13,8,t(33,2),[ font('Microsoft Sans Serif',8,[]),rect(408,33,513,48),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('33'),ctrltype(edit,13),ispwd(0),gxcolor([]) ]).
+lit_i(14,8,t(18,2),[ font('Microsoft Sans Serif',8,[]),rect(542,33,809,66),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('18'),ctrltype(edit,14),ispwd(0),gxcolor([]) ]).
+lit_i(1,8,window,[ title('Text'),rect(0,0,827,100),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Socio'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ctrl_info_i(6,19,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(6,20,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(6,21,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ 
+ 
+calling_main_i(13,8).
+ 
+att_prop_i(2,5,'ExternalName','SocioId',d).
+att_prop_i(2,5,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,5,'EmptyAsNull','Yes',d).
+att_prop_i(2,5,idBasedOn,'',d).
+att_prop_i(2,5,'AUTONUMBER','0',d).
+att_prop_i(2,5,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,5,'AttRegEx','',d).
+att_prop_i(2,5,'AttValidationFailedMsg','',d).
+att_prop_i(2,5,'FullName','SocioId',v).
+att_prop_i(2,20,'ExternalName','SocioEdad',d).
+att_prop_i(2,20,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,20,'EmptyAsNull','Yes',d).
+att_prop_i(2,20,idBasedOn,'',d).
+att_prop_i(2,20,'AUTONUMBER','0',d).
+att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,20,'AttRegEx','',d).
+att_prop_i(2,20,'AttValidationFailedMsg','',d).
+att_prop_i(2,20,'FullName','SocioEdad',v).
+att_prop_i(2,19,'ExternalName','SocioSexo',d).
+att_prop_i(2,19,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,19,'EmptyAsNull','Yes',d).
+att_prop_i(2,19,idBasedOn,69,v).
+att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,19,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,19,'AttRegEx','',d).
+att_prop_i(2,19,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(2,19,'FullName','SocioSexo',v).
+att_prop_i(2,33,'ExternalName','SocioTipoCuota',d).
+att_prop_i(2,33,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,33,'EmptyAsNull','Yes',d).
+att_prop_i(2,33,idBasedOn,68,v).
+att_prop_i(2,33,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,33,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,33,'AttRegEx','',d).
+att_prop_i(2,33,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(2,33,'FullName','SocioTipoCuota',v).
+att_prop_i(2,18,'ExternalName','SocioDireccion',d).
+att_prop_i(2,18,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,18,'EmptyAsNull','Yes',d).
+att_prop_i(2,18,idBasedOn,26,v).
+att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,18,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,18,'AttRegEx','',d).
+att_prop_i(2,18,'AttValidationFailedMsg','',d).
+att_prop_i(2,18,'FullName','SocioDireccion',v).
+att_prop_i(2,3,'ExternalName','ClaseId',d).
+att_prop_i(2,3,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,3,'EmptyAsNull','Yes',d).
+att_prop_i(2,3,idBasedOn,'',d).
+att_prop_i(2,3,'AUTONUMBER','0',d).
+att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,3,'AttRegEx','',d).
+att_prop_i(2,3,'AttValidationFailedMsg','',d).
+att_prop_i(2,3,'FullName','ClaseId',v).
+ 
+tbl_prop_i(2,13,'AllDirSuper',[ [ 4,[ 5 ] ],[ 12,[ 3 ] ] ],v).
+tbl_prop_i(2,4,'DirSubor',[ [ 13,[ 5 ] ] ],v).
+tbl_prop_i(2,12,'DirSubor',[ [ 13,[ 3 ] ] ],v).
+tbl_prop_i(2,13,'DirSuper',[ [ 4,[ 5 ] ],[ 12,[ 3 ] ] ],v).
+ 
+tbl_att_prop_i(2,13,3,'AllowNulls',n).
+tbl_att_prop_i(2,13,5,'AllowNulls',n).
+tbl_att_prop_i(2,4,5,'AllowNulls',n).
+tbl_att_prop_i(2,4,18,'AllowNulls',n).
+tbl_att_prop_i(2,4,19,'AllowNulls',n).
+tbl_att_prop_i(2,4,20,'AllowNulls',n).
+tbl_att_prop_i(2,4,33,'AllowNulls',n).
+tbl_att_prop_i(2,12,3,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,28,'CANTIDADSEXO',[ [ int,4,0,0 ],[ char,20,0,0 ],[ int,4,0,0 ] ],[ [ id,in,[] ],[ sexo,inout,[] ],[ cantidad,out,[] ] ]).
+ 
+pgm_callprotocol_i(proc,23,'LISTADOCLASESOCIOYSEXO','HTTP').
+pgm_callprotocol_i(proc,28,'CANTIDADSEXO','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

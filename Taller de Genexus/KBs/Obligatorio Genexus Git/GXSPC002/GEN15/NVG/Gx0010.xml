@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Actividad</ObjDesc>
 <ObjPgmName>Gx0010</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -31,8 +31,6 @@
 <EventName>Lblactividadidfilter.Click</EventName></Event>
 <Event>
 <EventName>Lblactividaddescripcionfilter.Click</EventName></Event>
-<Event>
-<EventName>Lblactividadtipofilter.Click</EventName></Event>
 <Event>
 <EventName>Load</EventName>
 <LoadMethod>Auto</LoadMethod>
@@ -90,27 +88,6 @@
 <Variable>
 <VarId>Cactividaddescripcion</VarId>
 <VarName>&amp;cActividadDescripcion</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
-<AttriId>14</AttriId>
-<AttriName>ActividadTipo</AttriName>
-<Description>Actividad Tipo</Description></Attribute>
-<Sp></Sp>
-<Token>like</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cactividadtipo</VarId>
-<VarName>&amp;cActividadTipo</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cactividadtipo</VarId>
-<VarName>&amp;cActividadTipo</VarName></Variable>
 <Token>.</Token>
 <Token>isempty(</Token>
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>

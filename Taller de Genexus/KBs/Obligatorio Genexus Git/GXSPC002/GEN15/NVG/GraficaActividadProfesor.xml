@@ -1,0 +1,80 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>56</ObjId>
+<ObjName>GraficaActividadProfesor</ObjName>
+<ObjDesc>Grafica Actividad Profesor</ObjDesc>
+<ObjPgmName>GraficaActividadProfesor</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>'LOADGOOGLECHARTDATA'</EventName>
+<EventType>Subrutine</EventType>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>7</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IACTIVIDAD1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>ActividadDescripcion</AttriName>
+<Description>Actividad Descripcion</Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Event>
+<Event>
+<EventName>Googlecharts1.Select</EventName></Event>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="b00fc696-7ca8-427d-8629-401173652e70">
+  <Table name="Actividad1" />
+  <Table name="Profesor" />
+  <Table name="Clase" />
+  <Table name="Socio" />
+  <Table name="Carnet" />
+  <Table name="ClaseSocios" />
+</Dependencies>

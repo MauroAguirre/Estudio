@@ -46,7 +46,7 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table></BaseTable>
 <Order>
@@ -88,7 +88,7 @@
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description>
 <RecordsToRead>many</RecordsToRead>

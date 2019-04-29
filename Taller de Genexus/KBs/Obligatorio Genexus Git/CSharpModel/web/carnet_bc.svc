@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.carnet_bc_services,carnet_bc" %>

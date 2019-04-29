@@ -2,7 +2,7 @@
                File: ActividadSocioEnActividadWC
         Description: Actividad Socio En Actividad WC
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:0:43.31
+       Generated on: 4/12/2019 6:18:41.4
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -76,6 +76,7 @@ namespace GeneXus.Programs {
 
       protected override void createObjects( )
       {
+         cmbSocioSexo = new GXCombobox();
       }
 
       protected void INITWEB( )
@@ -290,7 +291,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221904335", false);
+         context.AddJavascriptSource("gxcfg.js", "?2019412618418", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -383,7 +384,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("actividadsocioenactividadwc.js", "?20193221904337", false);
+            context.AddJavascriptSource("actividadsocioenactividadwc.js", "?2019412618419", false);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -558,10 +559,10 @@ namespace GeneXus.Programs {
                GridContainer.AddObjectProperty("InMasterPage", "false");
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
                GridColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( (decimal)(A5SocioId), 4, 0, ".", "")));
+               GridColumn.AddObjectProperty("Link", StringUtil.RTrim( edtSocioId_Link));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
                GridColumn.AddObjectProperty("Value", A18SocioDireccion);
-               GridColumn.AddObjectProperty("Link", StringUtil.RTrim( edtSocioDireccion_Link));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
                GridColumn.AddObjectProperty("Value", context.convertURL( A21SocioFoto));
@@ -811,7 +812,9 @@ namespace GeneXus.Programs {
                               context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, edtSocioFoto_Internalname, "SrcSet", context.GetImageSrcSet( A21SocioFoto), true);
                               A20SocioEdad = (short)(context.localUtil.CToN( cgiGet( edtSocioEdad_Internalname), ".", ","));
                               A24SocioReconocido = cgiGet( edtSocioReconocido_Internalname);
-                              A19SocioSexo = cgiGet( edtSocioSexo_Internalname);
+                              cmbSocioSexo.Name = cmbSocioSexo_Internalname;
+                              cmbSocioSexo.CurrentValue = cgiGet( cmbSocioSexo_Internalname);
+                              A19SocioSexo = cgiGet( cmbSocioSexo_Internalname);
                               sEvtType = StringUtil.Right( sEvt, 1);
                               if ( StringUtil.StrCmp(sEvtType, ".") == 0 )
                               {
@@ -1290,7 +1293,7 @@ namespace GeneXus.Programs {
       private void E120C2( )
       {
          /* Grid_Load Routine */
-         edtSocioDireccion_Link = formatLink("viewsocio.aspx") + "?" + UrlEncode("" +A5SocioId) + "," + UrlEncode(StringUtil.RTrim(""));
+         edtSocioId_Link = formatLink("viewsocio.aspx") + "?" + UrlEncode("" +A5SocioId) + "," + UrlEncode(StringUtil.RTrim(""));
          /* Load Method */
          if ( wbStart != -1 )
          {
@@ -1516,7 +1519,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221904375", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194126184139", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1533,7 +1536,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("actividadsocioenactividadwc.js", "?20193221904376", false);
+            context.AddJavascriptSource("actividadsocioenactividadwc.js", "?20194126184139", false);
          }
          /* End function include_jscripts */
       }
@@ -1545,7 +1548,7 @@ namespace GeneXus.Programs {
          edtSocioFoto_Internalname = sPrefix+"SOCIOFOTO_"+sGXsfl_12_idx;
          edtSocioEdad_Internalname = sPrefix+"SOCIOEDAD_"+sGXsfl_12_idx;
          edtSocioReconocido_Internalname = sPrefix+"SOCIORECONOCIDO_"+sGXsfl_12_idx;
-         edtSocioSexo_Internalname = sPrefix+"SOCIOSEXO_"+sGXsfl_12_idx;
+         cmbSocioSexo_Internalname = sPrefix+"SOCIOSEXO_"+sGXsfl_12_idx;
       }
 
       protected void SubsflControlProps_fel_122( )
@@ -1555,7 +1558,7 @@ namespace GeneXus.Programs {
          edtSocioFoto_Internalname = sPrefix+"SOCIOFOTO_"+sGXsfl_12_fel_idx;
          edtSocioEdad_Internalname = sPrefix+"SOCIOEDAD_"+sGXsfl_12_fel_idx;
          edtSocioReconocido_Internalname = sPrefix+"SOCIORECONOCIDO_"+sGXsfl_12_fel_idx;
-         edtSocioSexo_Internalname = sPrefix+"SOCIOSEXO_"+sGXsfl_12_fel_idx;
+         cmbSocioSexo_Internalname = sPrefix+"SOCIOSEXO_"+sGXsfl_12_fel_idx;
       }
 
       protected void sendrow_122( )
@@ -1628,7 +1631,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtSocioId_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A5SocioId), 4, 0, ".", "")),context.localUtil.Format( (decimal)(A5SocioId), "ZZZ9"),(String)"",(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtSocioId_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"number",(String)"1",(short)0,(String)"px",(short)17,(String)"px",(short)4,(short)0,(short)0,(short)12,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtSocioId_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A5SocioId), 4, 0, ".", "")),context.localUtil.Format( (decimal)(A5SocioId), "ZZZ9"),(String)"",(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(String)edtSocioId_Link,(String)"",(String)"",(String)"",(String)edtSocioId_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"number",(String)"1",(short)0,(String)"px",(short)17,(String)"px",(short)4,(short)0,(short)0,(short)12,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1636,7 +1639,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtSocioDireccion_Internalname,(String)A18SocioDireccion,(String)"",(String)"",(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(String)edtSocioDireccion_Link,(String)"",(String)"",(String)"",(String)edtSocioDireccion_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)1024,(short)0,(short)0,(short)12,(short)1,(short)-1,(short)0,(bool)true,(String)"GeneXus\\Address",(String)"left",(bool)true});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtSocioDireccion_Internalname,(String)A18SocioDireccion,(String)"",(String)"",(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'","http://maps.google.com/maps?q="+GXUtil.UrlEncode( A18SocioDireccion),(String)"_blank",(String)"",(String)"",(String)edtSocioDireccion_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)1024,(short)0,(short)0,(short)12,(short)1,(short)-1,(short)0,(bool)true,(String)"GeneXus\\Address",(String)"left",(bool)true});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1669,9 +1672,20 @@ namespace GeneXus.Programs {
             {
                context.WriteHtmlText( "<td valign=\"middle\" align=\""+"left"+"\""+" style=\""+""+"\">") ;
             }
-            /* Single line edit */
-            ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtSocioSexo_Internalname,StringUtil.RTrim( A19SocioSexo),(String)"",(String)"",(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtSocioSexo_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)12,(short)1,(short)-1,(short)-1,(bool)true,(String)"",(String)"left",(bool)true});
+            GXCCtl = "SOCIOSEXO_" + sGXsfl_12_idx;
+            cmbSocioSexo.Name = GXCCtl;
+            cmbSocioSexo.WebTags = "";
+            cmbSocioSexo.addItem("Hombre", "H", 0);
+            cmbSocioSexo.addItem("Mujer", "M", 0);
+            cmbSocioSexo.addItem("Otro", "O", 0);
+            if ( cmbSocioSexo.ItemCount > 0 )
+            {
+               A19SocioSexo = cmbSocioSexo.getValidValue(A19SocioSexo);
+            }
+            /* ComboBox */
+            GridRow.AddColumnProperties("combobox", 2, isAjaxCallMode( ), new Object[] {(GXCombobox)cmbSocioSexo,(String)cmbSocioSexo_Internalname,StringUtil.RTrim( A19SocioSexo),(short)1,(String)cmbSocioSexo_Jsonclick,(short)0,(String)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(String)"char",(String)"",(short)-1,(short)0,(short)1,(short)0,(short)0,(String)"px",(short)0,(String)"px",(String)"",(String)"Attribute",(String)"WWColumn WWOptionalColumn",(String)"",(String)"",(String)"",(bool)true});
+            cmbSocioSexo.CurrentValue = StringUtil.RTrim( A19SocioSexo);
+            context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, cmbSocioSexo_Internalname, "Values", (String)(cmbSocioSexo.ToJavascriptSource()), !bGXsfl_12_Refreshing);
             send_integrity_lvl_hashes0C2( ) ;
             GridContainer.AddRow(GridRow);
             nGXsfl_12_idx = (short)(((subGrid_Islastpage==1)&&(nGXsfl_12_idx+1>subGrid_Recordsperpage( )) ? 1 : nGXsfl_12_idx+1));
@@ -1683,6 +1697,15 @@ namespace GeneXus.Programs {
 
       protected void init_web_controls( )
       {
+         GXCCtl = "SOCIOSEXO_" + sGXsfl_12_idx;
+         cmbSocioSexo.Name = GXCCtl;
+         cmbSocioSexo.WebTags = "";
+         cmbSocioSexo.addItem("Hombre", "H", 0);
+         cmbSocioSexo.addItem("Mujer", "M", 0);
+         cmbSocioSexo.addItem("Otro", "O", 0);
+         if ( cmbSocioSexo.ItemCount > 0 )
+         {
+         }
          /* End function init_web_controls */
       }
 
@@ -1693,7 +1716,7 @@ namespace GeneXus.Programs {
          edtSocioFoto_Internalname = sPrefix+"SOCIOFOTO";
          edtSocioEdad_Internalname = sPrefix+"SOCIOEDAD";
          edtSocioReconocido_Internalname = sPrefix+"SOCIORECONOCIDO";
-         edtSocioSexo_Internalname = sPrefix+"SOCIOSEXO";
+         cmbSocioSexo_Internalname = sPrefix+"SOCIOSEXO";
          divGridtable_Internalname = sPrefix+"GRIDTABLE";
          divGridcell_Internalname = sPrefix+"GRIDCELL";
          edtActividadId_Internalname = sPrefix+"ACTIVIDADID";
@@ -1716,7 +1739,7 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
-         edtSocioSexo_Jsonclick = "";
+         cmbSocioSexo_Jsonclick = "";
          edtSocioReconocido_Jsonclick = "";
          edtSocioEdad_Jsonclick = "";
          edtSocioDireccion_Jsonclick = "";
@@ -1726,7 +1749,7 @@ namespace GeneXus.Programs {
          edtActividadId_Visible = 1;
          subGrid_Allowcollapsing = 0;
          subGrid_Allowselection = 0;
-         edtSocioDireccion_Link = "";
+         edtSocioId_Link = "";
          subGrid_Header = "";
          subGrid_Class = "ViewGrid";
          subGrid_Backcolorstyle = 0;
@@ -1751,7 +1774,7 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV6ActividadId',fld:'vACTIVIDADID',pic:'ZZZ9'},{av:'sPrefix'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("GRID.LOAD","{handler:'E120C2',iparms:[{av:'A5SocioId',fld:'SOCIOID',pic:'ZZZ9'}]");
-         setEventMetadata("GRID.LOAD",",oparms:[{av:'edtSocioDireccion_Link',ctrl:'SOCIODIRECCION',prop:'Link'}]}");
+         setEventMetadata("GRID.LOAD",",oparms:[{av:'edtSocioId_Link',ctrl:'SOCIOID',prop:'Link'}]}");
          setEventMetadata("GRID_FIRSTPAGE","{handler:'subgrid_firstpage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV6ActividadId',fld:'vACTIVIDADID',pic:'ZZZ9'},{av:'sPrefix'}]");
          setEventMetadata("GRID_FIRSTPAGE",",oparms:[]}");
          setEventMetadata("GRID_PREVPAGE","{handler:'subgrid_previouspage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV6ActividadId',fld:'vACTIVIDADID',pic:'ZZZ9'},{av:'sPrefix'}]");
@@ -1825,6 +1848,7 @@ namespace GeneXus.Programs {
          sCtrlAV6ActividadId = "";
          ROClassString = "";
          sImgUrl = "";
+         GXCCtl = "";
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.actividadsocioenactividadwc__default(),
             new Object[][] {
                 new Object[] {
@@ -1905,7 +1929,7 @@ namespace GeneXus.Programs {
       private String subGrid_Class ;
       private String subGrid_Linesclass ;
       private String subGrid_Header ;
-      private String edtSocioDireccion_Link ;
+      private String edtSocioId_Link ;
       private String A24SocioReconocido ;
       private String A19SocioSexo ;
       private String edtActividadId_Internalname ;
@@ -1920,7 +1944,7 @@ namespace GeneXus.Programs {
       private String edtSocioFoto_Internalname ;
       private String edtSocioEdad_Internalname ;
       private String edtSocioReconocido_Internalname ;
-      private String edtSocioSexo_Internalname ;
+      private String cmbSocioSexo_Internalname ;
       private String scmdbuf ;
       private String sCtrlAV6ActividadId ;
       private String sGXsfl_12_fel_idx="0001" ;
@@ -1930,7 +1954,8 @@ namespace GeneXus.Programs {
       private String sImgUrl ;
       private String edtSocioEdad_Jsonclick ;
       private String edtSocioReconocido_Jsonclick ;
-      private String edtSocioSexo_Jsonclick ;
+      private String GXCCtl ;
+      private String cmbSocioSexo_Jsonclick ;
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
       private bool wbLoad ;
@@ -1948,6 +1973,7 @@ namespace GeneXus.Programs {
       private GXWebColumn GridColumn ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
+      private GXCombobox cmbSocioSexo ;
       private IDataStoreProvider pr_default ;
       private short[] H000C2_A1ActividadId ;
       private String[] H000C2_A19SocioSexo ;

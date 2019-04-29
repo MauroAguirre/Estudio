@@ -42,6 +42,19 @@ public class bldDevelopermenu : GxBaseBuilder
    public override TargetCollection GetRuntimeBuildList( )
    {
       TargetCollection sc = new TargetCollection() ;
+      sc.Add( @"listadosociomonto", "dll");
+      sc.Add( @"listadoprofesoractividad", "dll");
+      sc.Add( @"listadoclasesocioysexo", "dll");
+      sc.Add( @"listadoclasessegunactividad", "dll");
+      sc.Add( @"listadosociodeclase", "dll");
+      sc.Add( @"listadosociospremiados", "dll");
+      sc.Add( @"listadossocioparapremiar", "dll");
+      sc.Add( @"anotificationsregistrationhandler", "dll");
+      sc.Add( @"anotificationsregistrationhandler", "dll");
+      sc.Add( @"gxaftereventreplicator", "dll");
+      sc.Add( @"gxaftereventreplicator", "dll");
+      sc.Add( @"gxonpendingeventfailed", "dll");
+      sc.Add( @"gxonpendingeventfailed", "dll");
       sc.Add( @"appmasterpage", "dll");
       sc.Add( @"recentlinks", "dll");
       sc.Add( @"promptmasterpage", "dll");
@@ -54,12 +67,11 @@ public class bldDevelopermenu : GxBaseBuilder
       sc.Add( @"tabbedview", "dll");
       sc.Add( @"wwactividad", "dll");
       sc.Add( @"actividadgeneral", "dll");
-      sc.Add( @"actividadsocioenactividadwc", "dll");
       sc.Add( @"actividadprofesorwc", "dll");
       sc.Add( @"viewactividad", "dll");
-      sc.Add( @"wwcarne", "dll");
-      sc.Add( @"carnegeneral", "dll");
-      sc.Add( @"viewcarne", "dll");
+      sc.Add( @"wwcarnet", "dll");
+      sc.Add( @"carnetgeneral", "dll");
+      sc.Add( @"viewcarnet", "dll");
       sc.Add( @"wwclase", "dll");
       sc.Add( @"clasegeneral", "dll");
       sc.Add( @"viewclase", "dll");
@@ -69,21 +81,32 @@ public class bldDevelopermenu : GxBaseBuilder
       sc.Add( @"viewprofesor", "dll");
       sc.Add( @"wwsocio", "dll");
       sc.Add( @"sociogeneral", "dll");
-      sc.Add( @"sociosocioenactividadwc", "dll");
-      sc.Add( @"sociocarnewc", "dll");
       sc.Add( @"viewsocio", "dll");
-      sc.Add( @"ingresarcliente", "dll");
       sc.Add( @"inicio", "dll");
       sc.Add( @"inicio", "dll");
       sc.Add( @"gx0010", "dll");
-      sc.Add( @"gx0021", "dll");
       sc.Add( @"gx0040", "dll");
-      sc.Add( @"gx0030", "dll");
+      sc.Add( @"gx00b0", "dll");
+      sc.Add( @"debugmenu", "dll");
+      sc.Add( @"clasesocioswc", "dll");
+      sc.Add( @"sociosocioswc", "dll");
+      sc.Add( @"gx00d1", "dll");
+      sc.Add( @"sociocarnetwc", "dll");
+      sc.Add( @"gx00e0", "dll");
+      sc.Add( @"carnetsociowc", "dll");
+      sc.Add( @"actividadesclasessocios", "dll");
+      sc.Add( @"gridactividadprofesor", "dll");
+      sc.Add( @"graficaactividadprofesor", "dll");
       sc.Add( @"actividad", "dll");
+      sc.Add( @"actividad_bc", "dll");
       sc.Add( @"profesor", "dll");
-      sc.Add( @"carne", "dll");
+      sc.Add( @"profesor_bc", "dll");
+      sc.Add( @"carnet", "dll");
+      sc.Add( @"carnet_bc", "dll");
       sc.Add( @"clase", "dll");
+      sc.Add( @"clase_bc", "dll");
       sc.Add( @"socio", "dll");
+      sc.Add( @"socio_bc", "dll");
       return sc ;
    }
 
@@ -114,7 +137,27 @@ public class bldDevelopermenu : GxBaseBuilder
             return true;
          if (checkTime(obj, cs_path + @"\type_SdtCarne.cs" ))
             return true;
+         if (checkTime(obj, cs_path + @"\type_SdtCarnet.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtActividad.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtActividad_SocioEnActividad.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtClase.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtClase_Socios.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtProfesor.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtSocio.cs" ))
+            return true;
          if (checkTime(obj, cs_path + @"\GXDOMAINPage.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINTipoCuota.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINSexo.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINGoogleChartType.cs" ))
             return true;
       }
       if ( obj == @"bin\messages.eng.dll" )

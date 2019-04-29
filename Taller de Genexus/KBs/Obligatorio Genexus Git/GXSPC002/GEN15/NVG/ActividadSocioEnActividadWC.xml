@@ -9,7 +9,7 @@
 <ObjDesc>Actividad Socio En Actividad WC</ObjDesc>
 <ObjPgmName>ActividadSocioEnActividadWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

@@ -2,7 +2,7 @@
                File: Profesor
         Description: Profesor
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:0.45
+       Generated on: 4/12/2019 21:1:41.94
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -30,6 +30,7 @@ using GeneXus.Http.Client;
 using System.Xml.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
+using System.ServiceModel.Web;
 using System.Runtime.Serialization;
 namespace GeneXus.Programs {
    public class profesor : GXDataArea, System.Web.SessionState.IRequiresSessionState
@@ -62,6 +63,22 @@ namespace GeneXus.Programs {
                return  ;
             }
             dyncall( GetNextPar( )) ;
+            return  ;
+         }
+         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxAggSel3"+"_"+"PROFESORID") == 0 )
+         {
+            AV7ProfesorId = (short)(NumberUtil.Val( GetNextPar( ), "."));
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV7ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(AV7ProfesorId), 4, 0)));
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vPROFESORID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV7ProfesorId), "ZZZ9"), context));
+            Gx_BScreen = (short)(NumberUtil.Val( GetNextPar( ), "."));
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_BScreen", StringUtil.Str( (decimal)(Gx_BScreen), 1, 0));
+            setAjaxCallMode();
+            if ( ! IsValidAjaxCall( true) )
+            {
+               GxWebError = 1;
+               return  ;
+            }
+            GX3ASAPROFESORID0211( AV7ProfesorId, Gx_BScreen) ;
             return  ;
          }
          else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_10") == 0 )
@@ -454,22 +471,6 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtActividadTipo_Internalname+"\"", "", "div");
-            /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtActividadTipo_Internalname, "Actividad Tipo", "col-sm-3 AttributeLabel", 1, true);
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-            /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtActividadTipo_Internalname, StringUtil.RTrim( A14ActividadTipo), StringUtil.RTrim( context.localUtil.Format( A14ActividadTipo, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtActividadTipo_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtActividadTipo_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_Profesor.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -481,21 +482,21 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-action-group Confirm", "left", "top", " "+"data-gx-actiongroup-type=\"toolbar\""+" ", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 69,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 64,'',false,'',0)\"";
             ClassString = "BtnEnter";
             StyleString = "";
             GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", "Confirm", bttBtn_enter_Jsonclick, 5, "Confirm", "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Profesor.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 71,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 66,'',false,'',0)\"";
             ClassString = "BtnCancel";
             StyleString = "";
             GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, bttBtn_cancel_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Profesor.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 73,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 68,'',false,'',0)\"";
             ClassString = "BtnDelete";
             StyleString = "";
             GxWebStd.gx_button_ctrl( context, bttBtn_delete_Internalname, "", "Delete", bttBtn_delete_Jsonclick, 5, "Delete", "", StyleString, ClassString, bttBtn_delete_Visible, bttBtn_delete_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EDELETE."+"'", TempTags, "", context.GetButtonType( ), "HLP_Profesor.htm");
@@ -584,8 +585,6 @@ namespace GeneXus.Programs {
                }
                A13ActividadDescripcion = cgiGet( edtActividadDescripcion_Internalname);
                context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-               A14ActividadTipo = cgiGet( edtActividadTipo_Internalname);
-               context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
                /* Read saved values. */
                Z2ProfesorId = (short)(context.localUtil.CToN( cgiGet( "Z2ProfesorId"), ".", ","));
                Z15ProfesorNombre = cgiGet( "Z15ProfesorNombre");
@@ -596,9 +595,10 @@ namespace GeneXus.Programs {
                Gx_mode = cgiGet( "Mode");
                N1ActividadId = (short)(context.localUtil.CToN( cgiGet( "N1ActividadId"), ".", ","));
                AV7ProfesorId = (short)(context.localUtil.CToN( cgiGet( "vPROFESORID"), ".", ","));
+               Gx_BScreen = (short)(context.localUtil.CToN( cgiGet( "vGXBSCREEN"), ".", ","));
                AV11Insert_ActividadId = (short)(context.localUtil.CToN( cgiGet( "vINSERT_ACTIVIDADID"), ".", ","));
                A40000ProfesorFoto_GXI = cgiGet( "PROFESORFOTO_GXI");
-               AV13Pgmname = cgiGet( "vPGMNAME");
+               AV15Pgmname = cgiGet( "vPGMNAME");
                Gx_mode = cgiGet( "vMODE");
                /* Read subfile selected row values. */
                /* Read hidden variables. */
@@ -635,6 +635,21 @@ namespace GeneXus.Programs {
                   A2ProfesorId = (short)(NumberUtil.Val( GetNextPar( ), "."));
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
                   getEqualNoModal( ) ;
+                  if ( ! (0==AV7ProfesorId) )
+                  {
+                     A2ProfesorId = AV7ProfesorId;
+                     context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+                  }
+                  else
+                  {
+                     if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )  && (0==A2ProfesorId) && ( Gx_BScreen == 0 ) )
+                     {
+                        GXt_int1 = A2ProfesorId;
+                        new ultimoidprofesor(context ).execute( out  GXt_int1) ;
+                        A2ProfesorId = GXt_int1;
+                        context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+                     }
+                  }
                   Gx_mode = "DSP";
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
@@ -645,11 +660,26 @@ namespace GeneXus.Programs {
                {
                   if ( StringUtil.StrCmp(Gx_mode, "DSP") == 0 )
                   {
-                     sMode3 = Gx_mode;
+                     sMode11 = Gx_mode;
                      Gx_mode = "UPD";
                      context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
                      context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-                     Gx_mode = sMode3;
+                     if ( ! (0==AV7ProfesorId) )
+                     {
+                        A2ProfesorId = AV7ProfesorId;
+                        context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+                     }
+                     else
+                     {
+                        if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )  && (0==A2ProfesorId) && ( Gx_BScreen == 0 ) )
+                        {
+                           GXt_int1 = A2ProfesorId;
+                           new ultimoidprofesor(context ).execute( out  GXt_int1) ;
+                           A2ProfesorId = GXt_int1;
+                           context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+                        }
+                     }
+                     Gx_mode = sMode11;
                      context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
                      context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
                   }
@@ -657,7 +687,7 @@ namespace GeneXus.Programs {
                   if ( StringUtil.StrCmp(Gx_mode, "INS") != 0 )
                   {
                      getByPrimaryKey( ) ;
-                     if ( RcdFound3 == 1 )
+                     if ( RcdFound11 == 1 )
                      {
                         if ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 )
                         {
@@ -749,7 +779,7 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )  )
             {
                /* Clear variables for new insertion. */
-               InitAll023( ) ;
+               InitAll0211( ) ;
                standaloneNotModal( ) ;
                standaloneModal( ) ;
             }
@@ -789,7 +819,7 @@ namespace GeneXus.Programs {
                bttBtn_enter_Visible = 0;
                context.httpAjaxContext.ajax_rsp_assign_prop("", false, bttBtn_enter_Internalname, "Visible", StringUtil.LTrim( StringUtil.Str( (decimal)(bttBtn_enter_Visible), 5, 0)), true);
             }
-            DisableAttributes023( ) ;
+            DisableAttributes0211( ) ;
          }
       }
 
@@ -810,17 +840,17 @@ namespace GeneXus.Programs {
 
       protected void CONFIRM_020( )
       {
-         BeforeValidate023( ) ;
+         BeforeValidate0211( ) ;
          if ( AnyError == 0 )
          {
             if ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 )
             {
-               OnDeleteControls023( ) ;
+               OnDeleteControls0211( ) ;
             }
             else
             {
-               CheckExtendedTable023( ) ;
-               CloseExtendedTableCursors023( ) ;
+               CheckExtendedTable0211( ) ;
+               CloseExtendedTableCursors0211( ) ;
             }
          }
          if ( AnyError == 0 )
@@ -837,28 +867,28 @@ namespace GeneXus.Programs {
       protected void E11022( )
       {
          /* Start Routine */
-         if ( ! new isauthorized(context).executeUdp(  AV13Pgmname) )
+         if ( ! new isauthorized(context).executeUdp(  AV15Pgmname) )
          {
-            CallWebObject(formatLink("notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV13Pgmname)));
+            CallWebObject(formatLink("notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV15Pgmname)));
             context.wjLocDisableFrm = 1;
          }
          AV9TrnContext.FromXml(AV10WebSession.Get("TrnContext"), null, "TransactionContext", "ObligatorioGenexusGit");
          AV11Insert_ActividadId = 0;
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV11Insert_ActividadId", StringUtil.LTrim( StringUtil.Str( (decimal)(AV11Insert_ActividadId), 4, 0)));
-         if ( ( StringUtil.StrCmp(AV9TrnContext.gxTpr_Transactionname, AV13Pgmname) == 0 ) && ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) )
+         if ( ( StringUtil.StrCmp(AV9TrnContext.gxTpr_Transactionname, AV15Pgmname) == 0 ) && ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) )
          {
-            AV14GXV1 = 1;
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV14GXV1", StringUtil.LTrim( StringUtil.Str( (decimal)(AV14GXV1), 8, 0)));
-            while ( AV14GXV1 <= AV9TrnContext.gxTpr_Attributes.Count )
+            AV16GXV1 = 1;
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV16GXV1", StringUtil.LTrim( StringUtil.Str( (decimal)(AV16GXV1), 8, 0)));
+            while ( AV16GXV1 <= AV9TrnContext.gxTpr_Attributes.Count )
             {
-               AV12TrnContextAtt = ((SdtTransactionContext_Attribute)AV9TrnContext.gxTpr_Attributes.Item(AV14GXV1));
+               AV12TrnContextAtt = ((SdtTransactionContext_Attribute)AV9TrnContext.gxTpr_Attributes.Item(AV16GXV1));
                if ( StringUtil.StrCmp(AV12TrnContextAtt.gxTpr_Attributename, "ActividadId") == 0 )
                {
                   AV11Insert_ActividadId = (short)(NumberUtil.Val( AV12TrnContextAtt.gxTpr_Attributevalue, "."));
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV11Insert_ActividadId", StringUtil.LTrim( StringUtil.Str( (decimal)(AV11Insert_ActividadId), 4, 0)));
                }
-               AV14GXV1 = (int)(AV14GXV1+1);
-               context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV14GXV1", StringUtil.LTrim( StringUtil.Str( (decimal)(AV14GXV1), 8, 0)));
+               AV16GXV1 = (int)(AV16GXV1+1);
+               context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV16GXV1", StringUtil.LTrim( StringUtil.Str( (decimal)(AV16GXV1), 8, 0)));
             }
          }
       }
@@ -879,7 +909,7 @@ namespace GeneXus.Programs {
          if (true) return;
       }
 
-      protected void ZM023( short GX_JID )
+      protected void ZM0211( short GX_JID )
       {
          if ( ( GX_JID == 9 ) || ( GX_JID == 0 ) )
          {
@@ -905,20 +935,16 @@ namespace GeneXus.Programs {
             Z40000ProfesorFoto_GXI = A40000ProfesorFoto_GXI;
             Z1ActividadId = A1ActividadId;
             Z13ActividadDescripcion = A13ActividadDescripcion;
-            Z14ActividadTipo = A14ActividadTipo;
          }
       }
 
       protected void standaloneNotModal( )
       {
+         Gx_BScreen = 0;
+         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_BScreen", StringUtil.Str( (decimal)(Gx_BScreen), 1, 0));
          imgprompt_1_Link = ((StringUtil.StrCmp(Gx_mode, "DSP")==0) ? "" : "javascript:"+"gx.popup.openPrompt('"+"gx0010.aspx"+"',["+"{Ctrl:gx.dom.el('"+"ACTIVIDADID"+"'), id:'"+"ACTIVIDADID"+"'"+",IOType:'out'}"+"],"+"null"+","+"'', false"+","+"false"+");");
          bttBtn_delete_Enabled = 0;
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, bttBtn_delete_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(bttBtn_delete_Enabled), 5, 0)), true);
-         if ( ! (0==AV7ProfesorId) )
-         {
-            A2ProfesorId = AV7ProfesorId;
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
-         }
          if ( ! (0==AV7ProfesorId) )
          {
             edtProfesorId_Enabled = 0;
@@ -963,27 +989,40 @@ namespace GeneXus.Programs {
             bttBtn_enter_Enabled = 1;
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, bttBtn_enter_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(bttBtn_enter_Enabled), 5, 0)), true);
          }
+         if ( ! (0==AV7ProfesorId) )
+         {
+            A2ProfesorId = AV7ProfesorId;
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+         }
+         else
+         {
+            if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )  && (0==A2ProfesorId) && ( Gx_BScreen == 0 ) )
+            {
+               GXt_int1 = A2ProfesorId;
+               new ultimoidprofesor(context ).execute( out  GXt_int1) ;
+               A2ProfesorId = GXt_int1;
+               context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+            }
+         }
          if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) && ( Gx_BScreen == 0 ) )
          {
-            AV13Pgmname = "Profesor";
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV13Pgmname", AV13Pgmname);
+            AV15Pgmname = "Profesor";
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV15Pgmname", AV15Pgmname);
             /* Using cursor T00024 */
             pr_default.execute(2, new Object[] {A1ActividadId});
             A13ActividadDescripcion = T00024_A13ActividadDescripcion[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-            A14ActividadTipo = T00024_A14ActividadTipo[0];
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
             pr_default.close(2);
          }
       }
 
-      protected void Load023( )
+      protected void Load0211( )
       {
          /* Using cursor T00025 */
          pr_default.execute(3, new Object[] {A2ProfesorId});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            RcdFound3 = 1;
+            RcdFound11 = 1;
             A15ProfesorNombre = T00025_A15ProfesorNombre[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A15ProfesorNombre", A15ProfesorNombre);
             A16ProfesorDireccion = T00025_A16ProfesorDireccion[0];
@@ -993,32 +1032,31 @@ namespace GeneXus.Programs {
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "SrcSet", context.GetImageSrcSet( A17ProfesorFoto), true);
             A13ActividadDescripcion = T00025_A13ActividadDescripcion[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-            A14ActividadTipo = T00025_A14ActividadTipo[0];
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
             A1ActividadId = T00025_A1ActividadId[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A1ActividadId", StringUtil.LTrim( StringUtil.Str( (decimal)(A1ActividadId), 4, 0)));
             A17ProfesorFoto = T00025_A17ProfesorFoto[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A17ProfesorFoto", A17ProfesorFoto);
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( A17ProfesorFoto)) ? A40000ProfesorFoto_GXI : context.convertURL( context.PathToRelativeUrl( A17ProfesorFoto))), true);
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "SrcSet", context.GetImageSrcSet( A17ProfesorFoto), true);
-            ZM023( -9) ;
+            ZM0211( -9) ;
          }
          pr_default.close(3);
-         OnLoadActions023( ) ;
+         OnLoadActions0211( ) ;
       }
 
-      protected void OnLoadActions023( )
+      protected void OnLoadActions0211( )
       {
-         AV13Pgmname = "Profesor";
-         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV13Pgmname", AV13Pgmname);
+         AV15Pgmname = "Profesor";
+         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV15Pgmname", AV15Pgmname);
       }
 
-      protected void CheckExtendedTable023( )
+      protected void CheckExtendedTable0211( )
       {
          Gx_BScreen = 1;
+         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_BScreen", StringUtil.Str( (decimal)(Gx_BScreen), 1, 0));
          standaloneModal( ) ;
-         AV13Pgmname = "Profesor";
-         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV13Pgmname", AV13Pgmname);
+         AV15Pgmname = "Profesor";
+         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV15Pgmname", AV15Pgmname);
          /* Using cursor T00024 */
          pr_default.execute(2, new Object[] {A1ActividadId});
          if ( (pr_default.getStatus(2) == 101) )
@@ -1030,12 +1068,10 @@ namespace GeneXus.Programs {
          }
          A13ActividadDescripcion = T00024_A13ActividadDescripcion[0];
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-         A14ActividadTipo = T00024_A14ActividadTipo[0];
-         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
          pr_default.close(2);
       }
 
-      protected void CloseExtendedTableCursors023( )
+      protected void CloseExtendedTableCursors0211( )
       {
          pr_default.close(2);
       }
@@ -1057,11 +1093,9 @@ namespace GeneXus.Programs {
          }
          A13ActividadDescripcion = T00026_A13ActividadDescripcion[0];
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-         A14ActividadTipo = T00026_A14ActividadTipo[0];
-         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
          GxWebStd.set_html_headers( context, 0, "", "");
          context.GX_webresponse.AddString("[[");
-         context.GX_webresponse.AddString("\""+GXUtil.EncodeJSConstant( StringUtil.RTrim( A13ActividadDescripcion))+"\""+","+"\""+GXUtil.EncodeJSConstant( StringUtil.RTrim( A14ActividadTipo))+"\"");
+         context.GX_webresponse.AddString("\""+GXUtil.EncodeJSConstant( StringUtil.RTrim( A13ActividadDescripcion))+"\"");
          context.GX_webresponse.AddString("]");
          if ( (pr_default.getStatus(4) == 101) )
          {
@@ -1072,17 +1106,17 @@ namespace GeneXus.Programs {
          pr_default.close(4);
       }
 
-      protected void GetKey023( )
+      protected void GetKey0211( )
       {
          /* Using cursor T00027 */
          pr_default.execute(5, new Object[] {A2ProfesorId});
          if ( (pr_default.getStatus(5) != 101) )
          {
-            RcdFound3 = 1;
+            RcdFound11 = 1;
          }
          else
          {
-            RcdFound3 = 0;
+            RcdFound11 = 0;
          }
          pr_default.close(5);
       }
@@ -1093,8 +1127,8 @@ namespace GeneXus.Programs {
          pr_default.execute(1, new Object[] {A2ProfesorId});
          if ( (pr_default.getStatus(1) != 101) )
          {
-            ZM023( 9) ;
-            RcdFound3 = 1;
+            ZM0211( 9) ;
+            RcdFound11 = 1;
             A2ProfesorId = T00023_A2ProfesorId[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
             A15ProfesorNombre = T00023_A15ProfesorNombre[0];
@@ -1111,30 +1145,30 @@ namespace GeneXus.Programs {
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( A17ProfesorFoto)) ? A40000ProfesorFoto_GXI : context.convertURL( context.PathToRelativeUrl( A17ProfesorFoto))), true);
             context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "SrcSet", context.GetImageSrcSet( A17ProfesorFoto), true);
             Z2ProfesorId = A2ProfesorId;
-            sMode3 = Gx_mode;
+            sMode11 = Gx_mode;
             Gx_mode = "DSP";
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-            Load023( ) ;
+            Load0211( ) ;
             if ( AnyError == 1 )
             {
-               RcdFound3 = 0;
-               InitializeNonKey023( ) ;
+               RcdFound11 = 0;
+               InitializeNonKey0211( ) ;
             }
-            Gx_mode = sMode3;
+            Gx_mode = sMode11;
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
          }
          else
          {
-            RcdFound3 = 0;
-            InitializeNonKey023( ) ;
-            sMode3 = Gx_mode;
+            RcdFound11 = 0;
+            InitializeNonKey0211( ) ;
+            sMode11 = Gx_mode;
             Gx_mode = "DSP";
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
             standaloneModal( ) ;
-            Gx_mode = sMode3;
+            Gx_mode = sMode11;
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
          }
@@ -1143,8 +1177,8 @@ namespace GeneXus.Programs {
 
       protected void getEqualNoModal( )
       {
-         GetKey023( ) ;
-         if ( RcdFound3 == 0 )
+         GetKey0211( ) ;
+         if ( RcdFound11 == 0 )
          {
          }
          else
@@ -1155,7 +1189,7 @@ namespace GeneXus.Programs {
 
       protected void move_next( )
       {
-         RcdFound3 = 0;
+         RcdFound11 = 0;
          /* Using cursor T00028 */
          pr_default.execute(6, new Object[] {A2ProfesorId});
          if ( (pr_default.getStatus(6) != 101) )
@@ -1168,7 +1202,7 @@ namespace GeneXus.Programs {
             {
                A2ProfesorId = T00028_A2ProfesorId[0];
                context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
-               RcdFound3 = 1;
+               RcdFound11 = 1;
             }
          }
          pr_default.close(6);
@@ -1176,7 +1210,7 @@ namespace GeneXus.Programs {
 
       protected void move_previous( )
       {
-         RcdFound3 = 0;
+         RcdFound11 = 0;
          /* Using cursor T00029 */
          pr_default.execute(7, new Object[] {A2ProfesorId});
          if ( (pr_default.getStatus(7) != 101) )
@@ -1189,7 +1223,7 @@ namespace GeneXus.Programs {
             {
                A2ProfesorId = T00029_A2ProfesorId[0];
                context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
-               RcdFound3 = 1;
+               RcdFound11 = 1;
             }
          }
          pr_default.close(7);
@@ -1198,13 +1232,13 @@ namespace GeneXus.Programs {
       protected void btn_enter( )
       {
          nKeyPressed = 1;
-         GetKey023( ) ;
+         GetKey0211( ) ;
          if ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )
          {
             /* Insert record */
             GX_FocusControl = edtProfesorId_Internalname;
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "GX_FocusControl", GX_FocusControl);
-            Insert023( ) ;
+            Insert0211( ) ;
             if ( AnyError == 1 )
             {
                GX_FocusControl = "";
@@ -1213,7 +1247,7 @@ namespace GeneXus.Programs {
          }
          else
          {
-            if ( RcdFound3 == 1 )
+            if ( RcdFound11 == 1 )
             {
                if ( A2ProfesorId != Z2ProfesorId )
                {
@@ -1234,7 +1268,7 @@ namespace GeneXus.Programs {
                else
                {
                   /* Update record */
-                  Update023( ) ;
+                  Update0211( ) ;
                   GX_FocusControl = edtProfesorId_Internalname;
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "GX_FocusControl", GX_FocusControl);
                }
@@ -1246,7 +1280,7 @@ namespace GeneXus.Programs {
                   /* Insert record */
                   GX_FocusControl = edtProfesorId_Internalname;
                   context.httpAjaxContext.ajax_rsp_assign_attri("", false, "GX_FocusControl", GX_FocusControl);
-                  Insert023( ) ;
+                  Insert0211( ) ;
                   if ( AnyError == 1 )
                   {
                      GX_FocusControl = "";
@@ -1267,7 +1301,7 @@ namespace GeneXus.Programs {
                      /* Insert record */
                      GX_FocusControl = edtProfesorId_Internalname;
                      context.httpAjaxContext.ajax_rsp_assign_attri("", false, "GX_FocusControl", GX_FocusControl);
-                     Insert023( ) ;
+                     Insert0211( ) ;
                      if ( AnyError == 1 )
                      {
                         GX_FocusControl = "";
@@ -1278,7 +1312,7 @@ namespace GeneXus.Programs {
             }
          }
          AfterTrn( ) ;
-         if ( ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
+         if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
          {
             if ( AnyError == 0 )
             {
@@ -1310,7 +1344,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void CheckOptimisticConcurrency023( )
+      protected void CheckOptimisticConcurrency0211( )
       {
          if ( StringUtil.StrCmp(Gx_mode, "INS") != 0 )
          {
@@ -1349,23 +1383,23 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void Insert023( )
+      protected void Insert0211( )
       {
-         BeforeValidate023( ) ;
+         BeforeValidate0211( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable023( ) ;
+            CheckExtendedTable0211( ) ;
          }
          if ( AnyError == 0 )
          {
-            ZM023( 0) ;
-            CheckOptimisticConcurrency023( ) ;
+            ZM0211( 0) ;
+            CheckOptimisticConcurrency0211( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm023( ) ;
+               AfterConfirm0211( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeInsert023( ) ;
+                  BeforeInsert0211( ) ;
                   if ( AnyError == 0 )
                   {
                      /* Using cursor T000210 */
@@ -1383,9 +1417,13 @@ namespace GeneXus.Programs {
                         /* End of After( Insert) rules */
                         if ( AnyError == 0 )
                         {
-                           /* Save values for previous() function. */
-                           GX_msglist.addItem(context.GetMessage( "GXM_sucadded", ""), "SuccessfullyAdded", 0, "", true);
-                           ResetCaption020( ) ;
+                           if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
+                           {
+                              if ( AnyError == 0 )
+                              {
+                                 context.nUserReturn = 1;
+                              }
+                           }
                         }
                      }
                   }
@@ -1398,29 +1436,29 @@ namespace GeneXus.Programs {
             }
             else
             {
-               Load023( ) ;
+               Load0211( ) ;
             }
-            EndLevel023( ) ;
+            EndLevel0211( ) ;
          }
-         CloseExtendedTableCursors023( ) ;
+         CloseExtendedTableCursors0211( ) ;
       }
 
-      protected void Update023( )
+      protected void Update0211( )
       {
-         BeforeValidate023( ) ;
+         BeforeValidate0211( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable023( ) ;
+            CheckExtendedTable0211( ) ;
          }
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency023( ) ;
+            CheckOptimisticConcurrency0211( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm023( ) ;
+               AfterConfirm0211( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeUpdate023( ) ;
+                  BeforeUpdate0211( ) ;
                   if ( AnyError == 0 )
                   {
                      /* Using cursor T000211 */
@@ -1432,14 +1470,14 @@ namespace GeneXus.Programs {
                         GX_msglist.addItem(context.GetMessage( "GXM_lock", new   object[]  {"Profesor"}), "RecordIsLocked", 1, "");
                         AnyError = 1;
                      }
-                     DeferredUpdate023( ) ;
+                     DeferredUpdate0211( ) ;
                      if ( AnyError == 0 )
                      {
                         /* Start of After( update) rules */
                         /* End of After( update) rules */
                         if ( AnyError == 0 )
                         {
-                           if ( ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
+                           if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
                            {
                               if ( AnyError == 0 )
                               {
@@ -1456,12 +1494,12 @@ namespace GeneXus.Programs {
                   }
                }
             }
-            EndLevel023( ) ;
+            EndLevel0211( ) ;
          }
-         CloseExtendedTableCursors023( ) ;
+         CloseExtendedTableCursors0211( ) ;
       }
 
-      protected void DeferredUpdate023( )
+      protected void DeferredUpdate0211( )
       {
          if ( AnyError == 0 )
          {
@@ -1474,18 +1512,18 @@ namespace GeneXus.Programs {
 
       protected void delete( )
       {
-         BeforeValidate023( ) ;
+         BeforeValidate0211( ) ;
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency023( ) ;
+            CheckOptimisticConcurrency0211( ) ;
          }
          if ( AnyError == 0 )
          {
-            OnDeleteControls023( ) ;
-            AfterConfirm023( ) ;
+            OnDeleteControls0211( ) ;
+            AfterConfirm0211( ) ;
             if ( AnyError == 0 )
             {
-               BeforeDelete023( ) ;
+               BeforeDelete0211( ) ;
                if ( AnyError == 0 )
                {
                   /* No cascading delete specified. */
@@ -1499,7 +1537,7 @@ namespace GeneXus.Programs {
                      /* End of After( delete) rules */
                      if ( AnyError == 0 )
                      {
-                        if ( ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
+                        if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "UPD") == 0 ) || ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) )
                         {
                            if ( AnyError == 0 )
                            {
@@ -1516,30 +1554,28 @@ namespace GeneXus.Programs {
                }
             }
          }
-         sMode3 = Gx_mode;
+         sMode11 = Gx_mode;
          Gx_mode = "DLT";
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-         EndLevel023( ) ;
-         Gx_mode = sMode3;
+         EndLevel0211( ) ;
+         Gx_mode = sMode11;
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "Gx_mode", Gx_mode);
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
       }
 
-      protected void OnDeleteControls023( )
+      protected void OnDeleteControls0211( )
       {
          standaloneModal( ) ;
          if ( AnyError == 0 )
          {
             /* Delete mode formulas */
-            AV13Pgmname = "Profesor";
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV13Pgmname", AV13Pgmname);
+            AV15Pgmname = "Profesor";
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "AV15Pgmname", AV15Pgmname);
             /* Using cursor T000214 */
             pr_default.execute(12, new Object[] {A1ActividadId});
             A13ActividadDescripcion = T000214_A13ActividadDescripcion[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-            A14ActividadTipo = T000214_A14ActividadTipo[0];
-            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
             pr_default.close(12);
          }
          if ( AnyError == 0 )
@@ -1555,7 +1591,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void EndLevel023( )
+      protected void EndLevel0211( )
       {
          if ( StringUtil.StrCmp(Gx_mode, "INS") != 0 )
          {
@@ -1563,7 +1599,7 @@ namespace GeneXus.Programs {
          }
          if ( AnyError == 0 )
          {
-            BeforeComplete023( ) ;
+            BeforeComplete0211( ) ;
          }
          if ( AnyError == 0 )
          {
@@ -1592,70 +1628,70 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void ScanStart023( )
+      public void ScanStart0211( )
       {
          /* Scan By routine */
          /* Using cursor T000216 */
          pr_default.execute(14);
-         RcdFound3 = 0;
+         RcdFound11 = 0;
          if ( (pr_default.getStatus(14) != 101) )
          {
-            RcdFound3 = 1;
+            RcdFound11 = 1;
             A2ProfesorId = T000216_A2ProfesorId[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
          }
          /* Load Subordinate Levels */
       }
 
-      protected void ScanNext023( )
+      protected void ScanNext0211( )
       {
          /* Scan next routine */
          pr_default.readNext(14);
-         RcdFound3 = 0;
+         RcdFound11 = 0;
          if ( (pr_default.getStatus(14) != 101) )
          {
-            RcdFound3 = 1;
+            RcdFound11 = 1;
             A2ProfesorId = T000216_A2ProfesorId[0];
             context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
          }
       }
 
-      protected void ScanEnd023( )
+      protected void ScanEnd0211( )
       {
          pr_default.close(14);
       }
 
-      protected void AfterConfirm023( )
+      protected void AfterConfirm0211( )
       {
          /* After Confirm Rules */
       }
 
-      protected void BeforeInsert023( )
+      protected void BeforeInsert0211( )
       {
          /* Before Insert Rules */
       }
 
-      protected void BeforeUpdate023( )
+      protected void BeforeUpdate0211( )
       {
          /* Before Update Rules */
       }
 
-      protected void BeforeDelete023( )
+      protected void BeforeDelete0211( )
       {
          /* Before Delete Rules */
       }
 
-      protected void BeforeComplete023( )
+      protected void BeforeComplete0211( )
       {
          /* Before Complete Rules */
       }
 
-      protected void BeforeValidate023( )
+      protected void BeforeValidate0211( )
       {
          /* Before Validate Rules */
       }
 
-      protected void DisableAttributes023( )
+      protected void DisableAttributes0211( )
       {
          edtProfesorId_Enabled = 0;
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, edtProfesorId_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(edtProfesorId_Enabled), 5, 0)), true);
@@ -1669,11 +1705,9 @@ namespace GeneXus.Programs {
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, edtActividadId_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(edtActividadId_Enabled), 5, 0)), true);
          edtActividadDescripcion_Enabled = 0;
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, edtActividadDescripcion_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(edtActividadDescripcion_Enabled), 5, 0)), true);
-         edtActividadTipo_Enabled = 0;
-         context.httpAjaxContext.ajax_rsp_assign_prop("", false, edtActividadTipo_Internalname, "Enabled", StringUtil.LTrim( StringUtil.Str( (decimal)(edtActividadTipo_Enabled), 5, 0)), true);
       }
 
-      protected void send_integrity_lvl_hashes023( )
+      protected void send_integrity_lvl_hashes0211( )
       {
       }
 
@@ -1717,7 +1751,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?2019322191244", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194122114294", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1787,9 +1821,10 @@ namespace GeneXus.Programs {
          }
          GxWebStd.gx_hidden_field( context, "vPROFESORID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV7ProfesorId), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "gxhash_vPROFESORID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV7ProfesorId), "ZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "vGXBSCREEN", StringUtil.LTrim( StringUtil.NToC( (decimal)(Gx_BScreen), 1, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "vINSERT_ACTIVIDADID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV11Insert_ActividadId), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "PROFESORFOTO_GXI", A40000ProfesorFoto_GXI);
-         GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV13Pgmname));
+         GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV15Pgmname));
          GxWebStd.gx_hidden_field( context, "vMODE", StringUtil.RTrim( Gx_mode));
          GxWebStd.gx_hidden_field( context, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
          GXCCtlgxBlob = "PROFESORFOTO" + "_gxBlob";
@@ -1863,7 +1898,7 @@ namespace GeneXus.Programs {
          return "Profesor" ;
       }
 
-      protected void InitializeNonKey023( )
+      protected void InitializeNonKey0211( )
       {
          A1ActividadId = 0;
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A1ActividadId", StringUtil.LTrim( StringUtil.Str( (decimal)(A1ActividadId), 4, 0)));
@@ -1880,18 +1915,16 @@ namespace GeneXus.Programs {
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, imgProfesorFoto_Internalname, "SrcSet", context.GetImageSrcSet( A17ProfesorFoto), true);
          A13ActividadDescripcion = "";
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A13ActividadDescripcion", A13ActividadDescripcion);
-         A14ActividadTipo = "";
-         context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A14ActividadTipo", A14ActividadTipo);
          Z15ProfesorNombre = "";
          Z16ProfesorDireccion = "";
          Z1ActividadId = 0;
       }
 
-      protected void InitAll023( )
+      protected void InitAll0211( )
       {
-         A2ProfesorId = 0;
+         A2ProfesorId = new ultimoidprofesor(context).executeUdp( );
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
-         InitializeNonKey023( ) ;
+         InitializeNonKey0211( ) ;
       }
 
       protected void StandaloneModalInsert( )
@@ -1909,7 +1942,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2019322191253", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2019412211431", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1925,7 +1958,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("profesor.js", "?2019322191253", false);
+         context.AddJavascriptSource("profesor.js", "?2019412211431", false);
          /* End function include_jscripts */
       }
 
@@ -1945,7 +1978,6 @@ namespace GeneXus.Programs {
          imgProfesorFoto_Internalname = "PROFESORFOTO";
          edtActividadId_Internalname = "ACTIVIDADID";
          edtActividadDescripcion_Internalname = "ACTIVIDADDESCRIPCION";
-         edtActividadTipo_Internalname = "ACTIVIDADTIPO";
          divFormcontainer_Internalname = "FORMCONTAINER";
          bttBtn_enter_Internalname = "BTN_ENTER";
          bttBtn_cancel_Internalname = "BTN_CANCEL";
@@ -1973,8 +2005,6 @@ namespace GeneXus.Programs {
          bttBtn_cancel_Visible = 1;
          bttBtn_enter_Enabled = 1;
          bttBtn_enter_Visible = 1;
-         edtActividadTipo_Jsonclick = "";
-         edtActividadTipo_Enabled = 0;
          edtActividadDescripcion_Jsonclick = "";
          edtActividadDescripcion_Enabled = 0;
          imgprompt_1_Visible = 1;
@@ -2004,18 +2034,46 @@ namespace GeneXus.Programs {
          /* End function dynload_actions */
       }
 
+      protected void GX3ASAPROFESORID0211( short AV7ProfesorId ,
+                                           short Gx_BScreen )
+      {
+         if ( ! (0==AV7ProfesorId) )
+         {
+            A2ProfesorId = AV7ProfesorId;
+            context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+         }
+         else
+         {
+            if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )  && (0==A2ProfesorId) && ( Gx_BScreen == 0 ) )
+            {
+               GXt_int1 = A2ProfesorId;
+               new ultimoidprofesor(context ).execute( out  GXt_int1) ;
+               A2ProfesorId = GXt_int1;
+               context.httpAjaxContext.ajax_rsp_assign_attri("", false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
+            }
+         }
+         GxWebStd.set_html_headers( context, 0, "", "");
+         context.GX_webresponse.AddString("[[");
+         context.GX_webresponse.AddString("\""+GXUtil.EncodeJSConstant( StringUtil.LTrim( StringUtil.NToC( (decimal)(A2ProfesorId), 4, 0, ".", "")))+"\"");
+         context.GX_webresponse.AddString("]");
+         if ( true )
+         {
+            context.GX_webresponse.AddString(",");
+            context.GX_webresponse.AddString("101");
+         }
+         context.GX_webresponse.AddString("]");
+      }
+
       protected void init_web_controls( )
       {
          /* End function init_web_controls */
       }
 
       public void Valid_Actividadid( short GX_Parm1 ,
-                                     String GX_Parm2 ,
-                                     String GX_Parm3 )
+                                     String GX_Parm2 )
       {
          A1ActividadId = GX_Parm1;
          A13ActividadDescripcion = GX_Parm2;
-         A14ActividadTipo = GX_Parm3;
          /* Using cursor T000214 */
          pr_default.execute(12, new Object[] {A1ActividadId});
          if ( (pr_default.getStatus(12) == 101) )
@@ -2025,16 +2083,13 @@ namespace GeneXus.Programs {
             GX_FocusControl = edtActividadId_Internalname;
          }
          A13ActividadDescripcion = T000214_A13ActividadDescripcion[0];
-         A14ActividadTipo = T000214_A14ActividadTipo[0];
          pr_default.close(12);
          dynload_actions( ) ;
          if ( AnyError == 1 )
          {
             A13ActividadDescripcion = "";
-            A14ActividadTipo = "";
          }
          isValidOutput.Add(StringUtil.RTrim( A13ActividadDescripcion));
-         isValidOutput.Add(StringUtil.RTrim( A14ActividadTipo));
          isValidOutput.Add(context.GX_msglist.ToJavascriptSource());
          isValidOutput.Add(context.httpAjaxContext.ajax_rsp_get_hiddens( ));
          context.GX_webresponse.AddString(isValidOutput.ToJSonString());
@@ -2102,14 +2157,13 @@ namespace GeneXus.Programs {
          A40000ProfesorFoto_GXI = "";
          sImgUrl = "";
          A13ActividadDescripcion = "";
-         A14ActividadTipo = "";
          bttBtn_enter_Jsonclick = "";
          bttBtn_cancel_Jsonclick = "";
          bttBtn_delete_Jsonclick = "";
-         AV13Pgmname = "";
+         AV15Pgmname = "";
          forbiddenHiddens = "";
          hsh = "";
-         sMode3 = "";
+         sMode11 = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
@@ -2120,19 +2174,15 @@ namespace GeneXus.Programs {
          Z17ProfesorFoto = "";
          Z40000ProfesorFoto_GXI = "";
          Z13ActividadDescripcion = "";
-         Z14ActividadTipo = "";
          T00024_A13ActividadDescripcion = new String[] {""} ;
-         T00024_A14ActividadTipo = new String[] {""} ;
          T00025_A2ProfesorId = new short[1] ;
          T00025_A15ProfesorNombre = new String[] {""} ;
          T00025_A16ProfesorDireccion = new String[] {""} ;
          T00025_A40000ProfesorFoto_GXI = new String[] {""} ;
          T00025_A13ActividadDescripcion = new String[] {""} ;
-         T00025_A14ActividadTipo = new String[] {""} ;
          T00025_A1ActividadId = new short[1] ;
          T00025_A17ProfesorFoto = new String[] {""} ;
          T00026_A13ActividadDescripcion = new String[] {""} ;
-         T00026_A14ActividadTipo = new String[] {""} ;
          T00027_A2ProfesorId = new short[1] ;
          T00023_A2ProfesorId = new short[1] ;
          T00023_A15ProfesorNombre = new String[] {""} ;
@@ -2149,7 +2199,6 @@ namespace GeneXus.Programs {
          T00022_A1ActividadId = new short[1] ;
          T00022_A17ProfesorFoto = new String[] {""} ;
          T000214_A13ActividadDescripcion = new String[] {""} ;
-         T000214_A14ActividadTipo = new String[] {""} ;
          T000215_A3ClaseId = new short[1] ;
          T000216_A2ProfesorId = new short[1] ;
          sDynURL = "";
@@ -2166,13 +2215,13 @@ namespace GeneXus.Programs {
                T00023_A2ProfesorId, T00023_A15ProfesorNombre, T00023_A16ProfesorDireccion, T00023_A40000ProfesorFoto_GXI, T00023_A1ActividadId, T00023_A17ProfesorFoto
                }
                , new Object[] {
-               T00024_A13ActividadDescripcion, T00024_A14ActividadTipo
+               T00024_A13ActividadDescripcion
                }
                , new Object[] {
-               T00025_A2ProfesorId, T00025_A15ProfesorNombre, T00025_A16ProfesorDireccion, T00025_A40000ProfesorFoto_GXI, T00025_A13ActividadDescripcion, T00025_A14ActividadTipo, T00025_A1ActividadId, T00025_A17ProfesorFoto
+               T00025_A2ProfesorId, T00025_A15ProfesorNombre, T00025_A16ProfesorDireccion, T00025_A40000ProfesorFoto_GXI, T00025_A13ActividadDescripcion, T00025_A1ActividadId, T00025_A17ProfesorFoto
                }
                , new Object[] {
-               T00026_A13ActividadDescripcion, T00026_A14ActividadTipo
+               T00026_A13ActividadDescripcion
                }
                , new Object[] {
                T00027_A2ProfesorId
@@ -2192,7 +2241,7 @@ namespace GeneXus.Programs {
                , new Object[] {
                }
                , new Object[] {
-               T000214_A13ActividadDescripcion, T000214_A14ActividadTipo
+               T000214_A13ActividadDescripcion
                }
                , new Object[] {
                T000215_A3ClaseId
@@ -2202,7 +2251,9 @@ namespace GeneXus.Programs {
                }
             }
          );
-         AV13Pgmname = "Profesor";
+         AV15Pgmname = "Profesor";
+         Z2ProfesorId = new ultimoidprofesor(context).executeUdp( );
+         A2ProfesorId = new ultimoidprofesor(context).executeUdp( );
       }
 
       private short wcpOAV7ProfesorId ;
@@ -2210,8 +2261,9 @@ namespace GeneXus.Programs {
       private short Z1ActividadId ;
       private short N1ActividadId ;
       private short GxWebError ;
-      private short A1ActividadId ;
       private short AV7ProfesorId ;
+      private short Gx_BScreen ;
+      private short A1ActividadId ;
       private short gxcookieaux ;
       private short IsConfirmed ;
       private short IsModified ;
@@ -2220,10 +2272,10 @@ namespace GeneXus.Programs {
       private short initialized ;
       private short A2ProfesorId ;
       private short AV11Insert_ActividadId ;
-      private short RcdFound3 ;
+      private short RcdFound11 ;
       private short GX_JID ;
-      private short Gx_BScreen ;
       private short gxajaxcallmode ;
+      private short GXt_int1 ;
       private short wbTemp ;
       private int trnEnded ;
       private int bttBtn_first_Visible ;
@@ -2238,13 +2290,12 @@ namespace GeneXus.Programs {
       private int edtActividadId_Enabled ;
       private int imgprompt_1_Visible ;
       private int edtActividadDescripcion_Enabled ;
-      private int edtActividadTipo_Enabled ;
       private int bttBtn_enter_Visible ;
       private int bttBtn_enter_Enabled ;
       private int bttBtn_cancel_Visible ;
       private int bttBtn_delete_Visible ;
       private int bttBtn_delete_Enabled ;
-      private int AV14GXV1 ;
+      private int AV16GXV1 ;
       private int idxLst ;
       private String sPrefix ;
       private String wcpOGx_mode ;
@@ -2291,25 +2342,21 @@ namespace GeneXus.Programs {
       private String edtActividadDescripcion_Internalname ;
       private String A13ActividadDescripcion ;
       private String edtActividadDescripcion_Jsonclick ;
-      private String edtActividadTipo_Internalname ;
-      private String A14ActividadTipo ;
-      private String edtActividadTipo_Jsonclick ;
       private String bttBtn_enter_Internalname ;
       private String bttBtn_enter_Jsonclick ;
       private String bttBtn_cancel_Internalname ;
       private String bttBtn_cancel_Jsonclick ;
       private String bttBtn_delete_Internalname ;
       private String bttBtn_delete_Jsonclick ;
-      private String AV13Pgmname ;
+      private String AV15Pgmname ;
       private String forbiddenHiddens ;
       private String hsh ;
-      private String sMode3 ;
+      private String sMode11 ;
       private String sEvt ;
       private String EvtGridId ;
       private String EvtRowId ;
       private String sEvtType ;
       private String Z13ActividadDescripcion ;
-      private String Z14ActividadTipo ;
       private String sDynURL ;
       private String FormProcess ;
       private String bodyStyle ;
@@ -2330,17 +2377,14 @@ namespace GeneXus.Programs {
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
       private String[] T00024_A13ActividadDescripcion ;
-      private String[] T00024_A14ActividadTipo ;
       private short[] T00025_A2ProfesorId ;
       private String[] T00025_A15ProfesorNombre ;
       private String[] T00025_A16ProfesorDireccion ;
       private String[] T00025_A40000ProfesorFoto_GXI ;
       private String[] T00025_A13ActividadDescripcion ;
-      private String[] T00025_A14ActividadTipo ;
       private short[] T00025_A1ActividadId ;
       private String[] T00025_A17ProfesorFoto ;
       private String[] T00026_A13ActividadDescripcion ;
-      private String[] T00026_A14ActividadTipo ;
       private short[] T00027_A2ProfesorId ;
       private short[] T00023_A2ProfesorId ;
       private String[] T00023_A15ProfesorNombre ;
@@ -2357,7 +2401,6 @@ namespace GeneXus.Programs {
       private short[] T00022_A1ActividadId ;
       private String[] T00022_A17ProfesorFoto ;
       private String[] T000214_A13ActividadDescripcion ;
-      private String[] T000214_A14ActividadTipo ;
       private short[] T000215_A3ClaseId ;
       private short[] T000216_A2ProfesorId ;
       private GXWebForm Form ;
@@ -2466,9 +2509,9 @@ namespace GeneXus.Programs {
           def= new CursorDef[] {
               new CursorDef("T00022", "SELECT [ProfesorId], [ProfesorNombre], [ProfesorDireccion], [ProfesorFoto_GXI], [ActividadId], [ProfesorFoto] FROM [Profesor] WITH (UPDLOCK) WHERE [ProfesorId] = @ProfesorId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00022,1,0,true,false )
              ,new CursorDef("T00023", "SELECT [ProfesorId], [ProfesorNombre], [ProfesorDireccion], [ProfesorFoto_GXI], [ActividadId], [ProfesorFoto] FROM [Profesor] WITH (NOLOCK) WHERE [ProfesorId] = @ProfesorId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00023,1,0,true,false )
-             ,new CursorDef("T00024", "SELECT [ActividadDescripcion], [ActividadTipo] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00024,1,0,true,false )
-             ,new CursorDef("T00025", "SELECT TM1.[ProfesorId], TM1.[ProfesorNombre], TM1.[ProfesorDireccion], TM1.[ProfesorFoto_GXI], T2.[ActividadDescripcion], T2.[ActividadTipo], TM1.[ActividadId], TM1.[ProfesorFoto] FROM ([Profesor] TM1 WITH (NOLOCK) INNER JOIN [Actividad1] T2 WITH (NOLOCK) ON T2.[ActividadId] = TM1.[ActividadId]) WHERE TM1.[ProfesorId] = @ProfesorId ORDER BY TM1.[ProfesorId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00025,100,0,true,false )
-             ,new CursorDef("T00026", "SELECT [ActividadDescripcion], [ActividadTipo] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00026,1,0,true,false )
+             ,new CursorDef("T00024", "SELECT [ActividadDescripcion] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00024,1,0,true,false )
+             ,new CursorDef("T00025", "SELECT TM1.[ProfesorId], TM1.[ProfesorNombre], TM1.[ProfesorDireccion], TM1.[ProfesorFoto_GXI], T2.[ActividadDescripcion], TM1.[ActividadId], TM1.[ProfesorFoto] FROM ([Profesor] TM1 WITH (NOLOCK) INNER JOIN [Actividad1] T2 WITH (NOLOCK) ON T2.[ActividadId] = TM1.[ActividadId]) WHERE TM1.[ProfesorId] = @ProfesorId ORDER BY TM1.[ProfesorId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00025,100,0,true,false )
+             ,new CursorDef("T00026", "SELECT [ActividadDescripcion] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00026,1,0,true,false )
              ,new CursorDef("T00027", "SELECT [ProfesorId] FROM [Profesor] WITH (NOLOCK) WHERE [ProfesorId] = @ProfesorId  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00027,1,0,true,false )
              ,new CursorDef("T00028", "SELECT TOP 1 [ProfesorId] FROM [Profesor] WITH (NOLOCK) WHERE ( [ProfesorId] > @ProfesorId) ORDER BY [ProfesorId]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00028,1,0,true,true )
              ,new CursorDef("T00029", "SELECT TOP 1 [ProfesorId] FROM [Profesor] WITH (NOLOCK) WHERE ( [ProfesorId] < @ProfesorId) ORDER BY [ProfesorId] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00029,1,0,true,true )
@@ -2476,7 +2519,7 @@ namespace GeneXus.Programs {
              ,new CursorDef("T000211", "UPDATE [Profesor] SET [ProfesorNombre]=@ProfesorNombre, [ProfesorDireccion]=@ProfesorDireccion, [ActividadId]=@ActividadId  WHERE [ProfesorId] = @ProfesorId", GxErrorMask.GX_NOMASK,prmT000211)
              ,new CursorDef("T000212", "UPDATE [Profesor] SET [ProfesorFoto]=@ProfesorFoto, [ProfesorFoto_GXI]=@ProfesorFoto_GXI  WHERE [ProfesorId] = @ProfesorId", GxErrorMask.GX_NOMASK,prmT000212)
              ,new CursorDef("T000213", "DELETE FROM [Profesor]  WHERE [ProfesorId] = @ProfesorId", GxErrorMask.GX_NOMASK,prmT000213)
-             ,new CursorDef("T000214", "SELECT [ActividadDescripcion], [ActividadTipo] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000214,1,0,true,false )
+             ,new CursorDef("T000214", "SELECT [ActividadDescripcion] FROM [Actividad1] WITH (NOLOCK) WHERE [ActividadId] = @ActividadId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000214,1,0,true,false )
              ,new CursorDef("T000215", "SELECT TOP 1 [ClaseId] FROM [Clase] WITH (NOLOCK) WHERE [ProfesorId] = @ProfesorId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000215,1,0,true,true )
              ,new CursorDef("T000216", "SELECT [ProfesorId] FROM [Profesor] WITH (NOLOCK) ORDER BY [ProfesorId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000216,100,0,true,false )
           };
@@ -2507,7 +2550,6 @@ namespace GeneXus.Programs {
                 return;
              case 2 :
                 ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
                 return;
              case 3 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
@@ -2515,13 +2557,11 @@ namespace GeneXus.Programs {
                 ((String[]) buf[2])[0] = rslt.getVarchar(3) ;
                 ((String[]) buf[3])[0] = rslt.getMultimediaUri(4) ;
                 ((String[]) buf[4])[0] = rslt.getString(5, 20) ;
-                ((String[]) buf[5])[0] = rslt.getString(6, 20) ;
-                ((short[]) buf[6])[0] = rslt.getShort(7) ;
-                ((String[]) buf[7])[0] = rslt.getMultimediaFile(8, rslt.getVarchar(4)) ;
+                ((short[]) buf[5])[0] = rslt.getShort(6) ;
+                ((String[]) buf[6])[0] = rslt.getMultimediaFile(7, rslt.getVarchar(4)) ;
                 return;
              case 4 :
                 ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
                 return;
              case 5 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
@@ -2534,7 +2574,6 @@ namespace GeneXus.Programs {
                 return;
              case 12 :
                 ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
                 return;
              case 13 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;

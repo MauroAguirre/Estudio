@@ -9,7 +9,7 @@
 <ObjDesc>Actividad General</ObjDesc>
 <ObjPgmName>ActividadGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -23,7 +23,22 @@
 <AttriId>1</AttriId>
 <AttriName>ActividadId</AttriName>
 <Description>Actividad Id</Description></Attribute></Parameter></Parameters>
-<StandAloneRules></StandAloneRules>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>ActividadCantidadProfesores</AttriName>
+<Description>Actividad Cantidad Profesores</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>CantidadDeProfesEnActividad</Token>
+<Token>(</Token>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Token>)</Token></FormulaExpression></Action></StandAloneRules>
 <Event>
 <EventName>Start</EventName>
 <CALL>

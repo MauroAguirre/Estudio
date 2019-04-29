@@ -28,7 +28,7 @@ lac_i(3,[ [] ]).
  
  
 lits_i('Carne Information',5,10).
-lits_i('Carnes',5,10).
+lits_i('Carne',5,10).
 lits_i('General',5,10).
  
 cls_i([ 0,0 ],[ 5,26 ]).
@@ -276,7 +276,7 @@ html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,9,html_i(0,t('Carne Information',3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Carnes',3))).
+html_sub_i(10,11,html_i(0,t('Carne',3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -382,7 +382,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Carnes',d,[ str ]).
+html_comp_i(11,'Caption','Carne',d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -567,7 +567,7 @@ html_comp_i(30,'Params',[],v,[ params ]).
  
 lit_i(9,1,t('Carne Information',3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Carnes',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t('Carne',3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).

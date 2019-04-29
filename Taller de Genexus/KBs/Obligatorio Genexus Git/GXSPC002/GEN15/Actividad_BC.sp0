@@ -1,0 +1,604 @@
+spec_i([ trn,1,'Actividad','Actividad_BC',[],eng,'15_0_12-126726' ]).
+ 
+struct_i(1,0,[ 'Websession' ],[]).
+ 
+level_i(1,[ 1,[ [ 1,many ] ],[ 1 ],[],[],[],[ 1 ],'IACTIVIDAD1',[ 1,[] ],[] ]).
+ 
+tw_i(1,[]).
+ 
+lwi_i(1,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(1,[ [ [ 1,1 ],[ 1,13 ] ] ]).
+ 
+las_i(1,[ [ 'Websession',1,'GxBScreen',35,13 ] ]).
+ 
+lac_i(1,[ [ 1,13 ] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+default_i(e(1,4,3,[ t('udp(',1),t(o(1,'UltimoIdActividad'),28),t(')',4) ])).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PKSupFKs',[])).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Actividad')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewActividad'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
+rule_i(0,prop('MTIER_OPT','Yes')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('BEEPONERROR','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('DLT_BUTTON','')).
+rule_i(0,prop('CNF_BUTTON','')).
+rule_i(0,prop('UPD_BUTTON','')).
+rule_i(0,prop('ADD_BUTTON','')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_LAST','UMPV')).
+rule_i(0,prop('KEY_FIRST','UMPV')).
+rule_i(0,prop('KEY_SELECT','UMPV')).
+rule_i(0,prop('KEY_DISPLAY','UMPV')).
+rule_i(0,prop('KEY_DELETE','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_UPDATE','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_RETRIEVE','UMPV')).
+rule_i(0,prop('KEY_NEXT','UMPV')).
+rule_i(0,prop('KEY_PREVIOUS','UMPV')).
+rule_i(0,prop('KEY_INSERT','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_PROMPT','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_CHECK','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebFormDefaults','0')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('FIELD_TO_FIELD','UMPV')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('IsDwhTrn','0')).
+rule_i(0,prop(idDynTrnUpdatePolicy,idDynTrnUpdatePolicy_UPDATABLE)).
+rule_i(0,prop(idIsDynTrn,'0')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop('WEBSERVICE_PROTOCOL','REST')).
+rule_i(0,prop(idISBCWEBSERVICE,'-1')).
+rule_i(0,prop('ExternalNamespace','ObligatorioGenexusGit')).
+rule_i(0,prop('ExternalName','Actividad')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop(idISBUSINESSCOMPONENT,'-1')).
+rule_i(0,prop('Folder',o(8,'Transacciones'))).
+rule_i(0,prop('ObjDesc','Actividad')).
+rule_i(0,prop('ObjName','Actividad')).
+rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+ 
+a_i(1,1,f,35,[],[ [],[ t('udp(',1),t(35,3),t(0,3),t(1,2),t(')',4) ] ]).
+a_i(2,1,f,1,[],[ [ insert ],[ t('udp(',1),t(1,3),t(0,3),t(')',4),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(1,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
+a_i(3,1,t,1,[],[ [ [ [],1,1 ] ],'IACTIVIDAD1',[] ]).
+a_i(4,1,f,'GxBScreen',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,1).
+v_i(f,o,1,35).
+v_i(f,i,2,'GxBScreen').
+v_i(f,o,2,1).
+v_i(t,i,3,1).
+v_i(t,o,3,13).
+v_i(f,i,4,[]).
+v_i(f,o,4,'GxBScreen').
+ 
+act_info_i(2,[ [ 1 ] ]).
+ 
+ 
+tbl_to_delete_i(1,[ 11,[ [ 1,1,1 ] ],c,'IPROFESOR1',[ [ 11,1 ] ],[ 2 ],'' ]).
+ 
+ 
+ 
+attri_i(2,[ 'ProfesorId',int,4,0,'ZZZ9',0,'Profesor Id','',0 ]).
+attri_i(13,[ 'ActividadDescripcion',char,20,0,'',0,'Actividad Descripcion','',0 ]).
+attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
+attri_i(35,[ 'ActividadCantidadProfesores',int,4,0,'ZZZ9',0,'Actividad Cantidad Profesores','',0 ]).
+attri_i('GxBScreen',[ 'Gx_BScreen',int,1,0,'',0,'','',11 ]).
+attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
+attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
+attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',9 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
+attri_i('Actividadid',[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',7 ]).
+attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
+ 
+table_i(11,[ 'Profesor',[ 2,1 ],'Profesor','Profesor' ]).
+table_i(1,[ 'Actividad1',[ 1,13 ],'Actividad','Actividad1' ]).
+ 
+index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
+index_i(11,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
+index_i(11,[ 'IPROFESOR1',d,[ 1 ],'IProfesor1' ]).
+ 
+ 
+ 
+function_i(1,1,yes,udp,o(1,'UltimoIdActividad'),[],0,1,[ [] ]).
+function_i(1,35,yes,udp,o(1,'CantidadDeProfesEnActividad'),[ 1 ],0,35,[ [ t(1,2) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,17,'ProfesorFoto_GXI',[ svchar,2048,0,0 ]).
+ 
+upd_i(1,1,i,[ [ 1,13 ],[],'IACTIVIDAD1',[ [ [],1,1 ] ] ]).
+upd_i(1,1,u,[ [ 13 ],[],'IACTIVIDAD1',[] ]).
+upd_i(1,1,d,[ [],[],'IACTIVIDAD1',[] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(26,[ 'GeneXus\Address' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,14).
+b_group_i(2,3,lit,0,15,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(12,2,2,cmd,1,[ t('',147,1,0) ]).
+b_line_i(14,2,2,cmd,1,[ t('',146,1,0),t('After Trn',3,14,7) ]).
+b_line_i(25,2,3,cmd,1,[ t('',147,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(13,8).
+ 
+att_prop_i(2,1,'HORIZONTAL_DESCRIPTION','Actividad Id',d).
+att_prop_i(2,1,'ExternalName','ActividadId',d).
+att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,'',d).
+att_prop_i(2,1,'AUTONUMBER','0',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'FullName','ActividadId',v).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Actividad Descripcion',d).
+att_prop_i(2,13,'ExternalName','ActividadDescripcion',d).
+att_prop_i(2,13,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,idBasedOn,'',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'FullName','ActividadDescripcion',v).
+att_prop_i(2,35,'HORIZONTAL_DESCRIPTION','Actividad Cantidad Profesores',d).
+att_prop_i(2,35,'ExternalName','ActividadCantidadProfesores',d).
+att_prop_i(2,35,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,35,idBasedOn,'',d).
+att_prop_i(2,35,'FullName','ActividadCantidadProfesores',v).
+att_prop_i(2,2,'HORIZONTAL_DESCRIPTION','Profesor Id',d).
+att_prop_i(2,2,'ExternalName','ProfesorId',d).
+att_prop_i(2,2,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,'',d).
+att_prop_i(2,2,'AUTONUMBER','0',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'FullName','ProfesorId',v).
+ 
+tbl_prop_i(2,11,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 11,[ 1 ] ] ],v).
+tbl_prop_i(2,11,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+ 
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,13,'AllowNulls',n).
+tbl_att_prop_i(2,11,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,1,'AllowNulls',n).
+ 
+var_prop_i(2,'Actividadid',idBasedOn,'',v).
+ 
+i_tbl_best_trn(1,[ 1,1,'Actividad','Actividad',[ 35 ] ]).
+i_tbl_best_trn(11,[ 2,1,'Profesor','Profesor',[] ]).
+ 
+ 
+ 
+trn_level_i(1,[ [ 1,13,35 ],'Actividad','Actividad','Actividad','',13 ]).
+ 
+struct_dt_i([ 26,45,0 ],name,'TransactionContext').
+struct_dt_i([ 26,45,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 26,45,0 ],'ObjName','TransactionContext').
+struct_dt_i([ 26,45,0 ],'ObjDesc','Transaction Context').
+struct_dt_i([ 26,45,0 ],'ExternalName','TransactionContext').
+struct_dt_i([ 26,45,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 26,45,73 ],name,'Attribute').
+struct_dt_i([ 26,45,73 ],namespace,'ObligatorioGenexusGit.TransactionContext').
+struct_dt_i([ 0,1,0 ],name,'Actividad').
+struct_dt_i([ 0,1,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,1,0 ],significantName,'Actividad').
+struct_dt_i([ 0,1,0 ],'ObjName','Actividad').
+struct_dt_i([ 0,1,0 ],'ObjDesc','Actividad').
+struct_dt_i([ 0,1,0 ],'ExternalName','Actividad').
+struct_dt_i([ 0,1,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,1,0 ],key,[ 1 ]).
+struct_dt_i([ 0,1,0 ],lvl,1).
+struct_dt_i([ 26,8,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,8,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,8,0 ],'ObjName','Messages').
+struct_dt_i([ 26,8,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,8,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,8,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,8,0 ],collection,'True').
+struct_dt_i([ 26,8,0 ],datatype,[ 26,8,25 ]).
+struct_dt_i([ 26,8,0 ],isexternal,'True').
+struct_dt_i([ 26,8,25 ],name,'Message').
+struct_dt_i([ 26,8,25 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 26,45,0 ],fullname,'TransactionContext').
+struct_dt_i([ 26,45,73 ],fullname,'TransactionContext.Attribute').
+struct_dt_i([ 0,1,0 ],fullname,'Actividad').
+struct_dt_i([ 26,8,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,8,25 ],fullname,'GeneXus\Common\Messages.Message').
+ 
+struct_dt_elem_i([ 26,45,0 ],1,name,'Callerobject').
+struct_dt_elem_i([ 26,45,0 ],1,camelname,'CallerObject').
+struct_dt_elem_i([ 26,45,0 ],1,basedon,36).
+struct_dt_elem_i([ 26,45,0 ],1,length,256).
+struct_dt_elem_i([ 26,45,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,45,0 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,45,0 ],1,pic,'').
+struct_dt_elem_i([ 26,45,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,45,0 ],1,'ExternalName','CallerObject').
+struct_dt_elem_i([ 26,45,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,45,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,45,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,45,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],2,name,'Callerondelete').
+struct_dt_elem_i([ 26,45,0 ],2,camelname,'CallerOnDelete').
+struct_dt_elem_i([ 26,45,0 ],2,length,4).
+struct_dt_elem_i([ 26,45,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,45,0 ],2,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 26,45,0 ],2,pic,'').
+struct_dt_elem_i([ 26,45,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,45,0 ],2,'ExternalName','CallerOnDelete').
+struct_dt_elem_i([ 26,45,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,45,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,45,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,45,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],3,name,'Callerurl').
+struct_dt_elem_i([ 26,45,0 ],3,camelname,'CallerURL').
+struct_dt_elem_i([ 26,45,0 ],3,basedon,15).
+struct_dt_elem_i([ 26,45,0 ],3,length,1000).
+struct_dt_elem_i([ 26,45,0 ],3,decimals,0).
+struct_dt_elem_i([ 26,45,0 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,45,0 ],3,pic,'').
+struct_dt_elem_i([ 26,45,0 ],3,collection,'False').
+struct_dt_elem_i([ 26,45,0 ],3,'ExternalName','CallerURL').
+struct_dt_elem_i([ 26,45,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,0 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,45,0 ],3,'XmlName','').
+struct_dt_elem_i([ 26,45,0 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,0 ],3,soaptype,'').
+struct_dt_elem_i([ 26,45,0 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,0 ],3,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],4,name,'Transactionname').
+struct_dt_elem_i([ 26,45,0 ],4,camelname,'TransactionName').
+struct_dt_elem_i([ 26,45,0 ],4,basedon,36).
+struct_dt_elem_i([ 26,45,0 ],4,length,256).
+struct_dt_elem_i([ 26,45,0 ],4,decimals,0).
+struct_dt_elem_i([ 26,45,0 ],4,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,45,0 ],4,pic,'').
+struct_dt_elem_i([ 26,45,0 ],4,collection,'False').
+struct_dt_elem_i([ 26,45,0 ],4,'ExternalName','TransactionName').
+struct_dt_elem_i([ 26,45,0 ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,0 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,45,0 ],4,'XmlName','').
+struct_dt_elem_i([ 26,45,0 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,0 ],4,soaptype,'').
+struct_dt_elem_i([ 26,45,0 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,0 ],4,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],5,name,'Attributes').
+struct_dt_elem_i([ 26,45,0 ],5,camelname,'Attributes').
+struct_dt_elem_i([ 26,45,0 ],5,type,[ [ 26,45,73 ],0,0 ]).
+struct_dt_elem_i([ 26,45,0 ],5,pic,'').
+struct_dt_elem_i([ 26,45,0 ],5,collection,'True').
+struct_dt_elem_i([ 26,45,0 ],5,'ObjName','Attributes').
+struct_dt_elem_i([ 26,45,0 ],5,'ObjDesc','Attributes').
+struct_dt_elem_i([ 26,45,0 ],5,'CollectionItemName','Attribute').
+struct_dt_elem_i([ 26,45,0 ],5,'XmlName','').
+struct_dt_elem_i([ 26,45,0 ],5,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,45,0 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,0 ],5,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,45,0 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,0 ],5,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],5,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,45,73 ],1,name,'Attributename').
+struct_dt_elem_i([ 26,45,73 ],1,camelname,'AttributeName').
+struct_dt_elem_i([ 26,45,73 ],1,length,128).
+struct_dt_elem_i([ 26,45,73 ],1,decimals,0).
+struct_dt_elem_i([ 26,45,73 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,45,73 ],1,pic,'').
+struct_dt_elem_i([ 26,45,73 ],1,collection,'False').
+struct_dt_elem_i([ 26,45,73 ],1,'ExternalName','AttributeName').
+struct_dt_elem_i([ 26,45,73 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,73 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,45,73 ],1,'XmlName','').
+struct_dt_elem_i([ 26,45,73 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,73 ],1,soaptype,'').
+struct_dt_elem_i([ 26,45,73 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,73 ],1,'JsonName','').
+struct_dt_elem_i([ 26,45,73 ],2,name,'Attributevalue').
+struct_dt_elem_i([ 26,45,73 ],2,camelname,'AttributeValue').
+struct_dt_elem_i([ 26,45,73 ],2,length,1000).
+struct_dt_elem_i([ 26,45,73 ],2,decimals,0).
+struct_dt_elem_i([ 26,45,73 ],2,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,45,73 ],2,pic,'').
+struct_dt_elem_i([ 26,45,73 ],2,collection,'False').
+struct_dt_elem_i([ 26,45,73 ],2,'ExternalName','AttributeValue').
+struct_dt_elem_i([ 26,45,73 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,45,73 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,45,73 ],2,'XmlName','').
+struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
+struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
+struct_dt_elem_i([ 0,1,0 ],1,name,'Actividadid').
+struct_dt_elem_i([ 0,1,0 ],1,camelname,'ActividadId').
+struct_dt_elem_i([ 0,1,0 ],1,length,4).
+struct_dt_elem_i([ 0,1,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],1,sign,0).
+struct_dt_elem_i([ 0,1,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,1,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,1,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],1,attributeid,'1').
+struct_dt_elem_i([ 0,1,0 ],1,'ExternalName','ActividadId').
+struct_dt_elem_i([ 0,1,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,1,0 ],2,name,'Actividaddescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,camelname,'ActividadDescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,length,20).
+struct_dt_elem_i([ 0,1,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],2,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,1,0 ],2,pic,'').
+struct_dt_elem_i([ 0,1,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],2,attributeid,'13').
+struct_dt_elem_i([ 0,1,0 ],2,'ExternalName','ActividadDescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,1,0 ],3,name,'Actividadcantidadprofesores').
+struct_dt_elem_i([ 0,1,0 ],3,camelname,'ActividadCantidadProfesores').
+struct_dt_elem_i([ 0,1,0 ],3,length,4).
+struct_dt_elem_i([ 0,1,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],3,sign,0).
+struct_dt_elem_i([ 0,1,0 ],3,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,1,0 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,1,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],3,attributeid,'35').
+struct_dt_elem_i([ 0,1,0 ],3,'ExternalName','ActividadCantidadProfesores').
+struct_dt_elem_i([ 0,1,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],1,name,'Id').
+struct_dt_elem_i([ 26,8,25 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,8,25 ],1,length,128).
+struct_dt_elem_i([ 26,8,25 ],1,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,8,25 ],1,pic,'').
+struct_dt_elem_i([ 26,8,25 ],1,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,8,25 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],1,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],1,'JsonName','').
+struct_dt_elem_i([ 26,8,25 ],2,name,'Type').
+struct_dt_elem_i([ 26,8,25 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,8,25 ],2,basedon,33).
+struct_dt_elem_i([ 26,8,25 ],2,length,2).
+struct_dt_elem_i([ 26,8,25 ],2,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],2,sign,0).
+struct_dt_elem_i([ 26,8,25 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,8,25 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,8,25 ],2,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,8,25 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],2,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],2,'JsonName','').
+struct_dt_elem_i([ 26,8,25 ],3,name,'Description').
+struct_dt_elem_i([ 26,8,25 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,8,25 ],3,length,256).
+struct_dt_elem_i([ 26,8,25 ],3,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,8,25 ],3,pic,'').
+struct_dt_elem_i([ 26,8,25 ],3,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,8,25 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],3,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],3,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,12,[ [],[] ]).
+sub_info_i(146,'After Trn',14,25,[ [],[] ]).
+ 
+pgm_parm_i(proc,18,'ULTIMOIDACTIVIDAD',[ [ int,4,0,0 ] ],[ [ 'Id',out,[] ] ]).
+pgm_parm_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ id,in,[] ],[ cantidad,out,[] ] ]).
+ 
+pgm_callprotocol_i(trn,1,'ACTIVIDAD_BC','INTERNAL').
+pgm_callprotocol_i(proc,18,'ULTIMOIDACTIVIDAD','INTERNAL').
+pgm_callprotocol_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

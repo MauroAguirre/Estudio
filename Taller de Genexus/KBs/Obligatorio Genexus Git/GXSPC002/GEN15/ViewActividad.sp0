@@ -28,9 +28,8 @@ lac_i(3,[ [] ]).
  
  
 lits_i('Actividad Information',5,10).
-lits_i('Actividads',5,10).
+lits_i('Actividades',5,10).
 lits_i('General',5,10).
-lits_i('Socio En Actividad',5,10).
 lits_i('Profesor',5,10).
  
 cls_i([ 0,0 ],[ 5,30 ]).
@@ -248,13 +247,10 @@ b_line_i(32,2,5,cmd,8,[ t('',143,8,0),t('''LOAD TAB''',3,32,5) ]).
 b_line_i(33,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,33,68) ]).
 b_line_i(34,2,6,cmd,8,[ t('',107,8,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ActividadGeneral'),28,8,0),t(',',7,8,0),t('Actividadid',23,8,0),t(')',4,8,0) ]).
 b_line_i(35,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"SocioEnActividad"',3,36,42) ]).
-b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Socioenactividadwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ActividadSocioEnActividadWC'),28,8,0),t(',',7,8,0),t('Actividadid',23,8,0),t(')',4,8,0) ]).
+b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Profesor"',3,36,42) ]).
+b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Profesorwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ActividadProfesorWC'),28,8,0),t(',',7,8,0),t('Actividadid',23,8,0),t(')',4,8,0) ]).
 b_line_i(38,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(39,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Profesor"',3,39,42) ]).
-b_line_i(40,2,6,cmd,8,[ t('',107,8,0),t([ t('Profesorwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'ActividadProfesorWC'),28,8,0),t(',',7,8,0),t('Actividadid',23,8,0),t(')',4,8,0) ]).
-b_line_i(41,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(42,2,6,cmd,8,[ t('',144,8,0) ]).
+b_line_i(39,2,6,cmd,8,[ t('',144,8,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
@@ -282,7 +278,7 @@ html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,9,html_i(0,t('Actividad Information',3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Actividads',3))).
+html_sub_i(10,11,html_i(0,t('Actividades',3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -304,23 +300,14 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
 html_sub_i(22,31,html_i(2,container(31))).
-html_sub_i(31,32,html_i(0,t('Socio En Actividad',3))).
+html_sub_i(31,32,html_i(0,t('Profesor',3))).
 html_sub_i(31,33,html_i(1,div(33))).
-html_sub_i(33,0,html_i(0,html('SocioEnActividad'))).
+html_sub_i(33,0,html_i(0,html('Profesor'))).
 html_sub_i(22,34,html_i(3,container(34))).
 html_sub_i(34,35,html_i(0,div(35))).
 html_sub_i(35,36,html_i(0,div(36))).
 html_sub_i(36,37,html_i(0,div(37))).
 html_sub_i(37,38,html_i(0,comp(webcomp))).
-html_sub_i(22,39,html_i(4,container(39))).
-html_sub_i(39,40,html_i(0,t('Profesor',3))).
-html_sub_i(39,41,html_i(1,div(41))).
-html_sub_i(41,0,html_i(0,html('Profesor'))).
-html_sub_i(22,42,html_i(5,container(42))).
-html_sub_i(42,43,html_i(0,div(43))).
-html_sub_i(43,44,html_i(0,div(44))).
-html_sub_i(44,45,html_i(0,div(45))).
-html_sub_i(45,46,html_i(0,comp(webcomp))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
@@ -330,8 +317,6 @@ html_tags_i(25,style,'display:none;').
 html_tags_i(30,'Object','').
 html_tags_i(33,style,'display:none;').
 html_tags_i(38,'Object','').
-html_tags_i(41,style,'display:none;').
-html_tags_i(46,'Object','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
@@ -410,7 +395,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Actividads',d,[ str ]).
+html_comp_i(11,'Caption','Actividades',d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -531,7 +516,7 @@ html_comp_i(22,'Usercontroltype','Tab',d,[ str ]).
 html_comp_i(22,'Constructorname','Tab',d,[ str ]).
 html_comp_i(22,'Showmethodname',show,d,[ str ]).
 html_comp_i(22,'Controlname','Tab',v,[ str ]).
-html_comp_i(22,'Pagecount',3,v,[ num ]).
+html_comp_i(22,'Pagecount',2,v,[ num ]).
 html_comp_i(22,'Class','WWTab',v,[ str ]).
 html_comp_i(22,'Historymanagement',-1,v,[ bool ]).
 html_comp_i(22,'Visible',-1,d,[ bool ]).
@@ -590,8 +575,8 @@ html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
 html_comp_i(31,'Containerid',title2,v,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Socio En Actividad',d,[ str ]).
-html_comp_i(32,'Id','Socioenactividad_title',v,[ str ]).
+html_comp_i(32,'Caption','Profesor',d,[ str ]).
+html_comp_i(32,'Id','Profesor_title',v,[ str ]).
 html_comp_i(32,'Class','TextBlock',d,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
@@ -612,7 +597,7 @@ html_comp_i(33,'Valign',top,d,[ str ]).
 html_comp_i(34,'Containerid',panel2,v,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(35,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(35,'Id','Tablesocioenactividad',v,[ str ]).
+html_comp_i(35,'Id','Tableprofesor',v,[ str ]).
 html_comp_i(35,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Semanticcontent',div,d,[ str ]).
@@ -635,57 +620,8 @@ html_comp_i(37,'Semanticcontent',div,d,[ str ]).
 html_comp_i(37,'Align',left,d,[ str ]).
 html_comp_i(37,'Valign',top,d,[ str ]).
 html_comp_i(38,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(38,'Controlname','Socioenactividadwc',v,[ str ]).
+html_comp_i(38,'Controlname','Profesorwc',v,[ str ]).
 html_comp_i(38,'Params',[],v,[ params ]).
-html_comp_i(39,'Containerid',title3,v,[ str ]).
-html_comp_i(40,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(40,'Caption','Profesor',d,[ str ]).
-html_comp_i(40,'Id','Profesor_title',v,[ str ]).
-html_comp_i(40,'Class','TextBlock',d,[ str ]).
-html_comp_i(40,'Event','',d,[ str ]).
-html_comp_i(40,'Returnonclick',0,d,[ bool ]).
-html_comp_i(40,'Gxformat',0,v,[ num ]).
-html_comp_i(40,'Title','',d,[ str ]).
-html_comp_i(40,'Fill',-1,d,[ bool ]).
-html_comp_i(40,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(40,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(40,'Font','',d,[ str ]).
-html_comp_i(41,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(41,'Class','Section',d,[ str ]).
-html_comp_i(41,'Id','',d,[ str ]).
-html_comp_i(41,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(41,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(41,'Semanticcontent',div,d,[ str ]).
-html_comp_i(41,'Align',left,d,[ str ]).
-html_comp_i(41,'Valign',top,d,[ str ]).
-html_comp_i(42,'Containerid',panel3,v,[ str ]).
-html_comp_i(43,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(43,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(43,'Id','Tableprofesor',v,[ str ]).
-html_comp_i(43,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(43,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(43,'Semanticcontent',div,d,[ str ]).
-html_comp_i(43,'Align',left,d,[ str ]).
-html_comp_i(43,'Valign',top,d,[ str ]).
-html_comp_i(44,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(44,'Class',row,v,[ str ]).
-html_comp_i(44,'Id','',d,[ str ]).
-html_comp_i(44,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(44,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(44,'Semanticcontent',div,d,[ str ]).
-html_comp_i(44,'Align',left,d,[ str ]).
-html_comp_i(44,'Valign',top,d,[ str ]).
-html_comp_i(45,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(45,'Class','col-xs-12',v,[ str ]).
-html_comp_i(45,'Id','',d,[ str ]).
-html_comp_i(45,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(45,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(45,'Semanticcontent',div,d,[ str ]).
-html_comp_i(45,'Align',left,d,[ str ]).
-html_comp_i(45,'Valign',top,d,[ str ]).
-html_comp_i(46,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(46,'Controlname','Profesorwc',v,[ str ]).
-html_comp_i(46,'Params',[],v,[ params ]).
  
  
  
@@ -695,7 +631,7 @@ html_comp_i(46,'Params',[],v,[ params ]).
  
 lit_i(9,1,t('Actividad Information',3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Actividads',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t('Actividades',3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
@@ -715,19 +651,13 @@ lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(32,1,t('Socio En Actividad',3),[ ctlname('Socioenactividad_title') ]).
+lit_i(32,1,t('Profesor',3),[ ctlname('Profesor_title') ]).
 lit_i(33,1,div(33),[ ctlname('') ]).
-lit_i(38,1,comp(webcomp),[ ctlname('Socioenactividadwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(38,1,comp(webcomp),[ ctlname('Profesorwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).
 lit_i(36,1,div(36),[ ctlname('') ]).
-lit_i(35,1,div(35),[ ctlname('Tablesocioenactividad') ]).
-lit_i(40,1,t('Profesor',3),[ ctlname('Profesor_title') ]).
-lit_i(41,1,div(41),[ ctlname('') ]).
-lit_i(46,1,comp(webcomp),[ ctlname('Profesorwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(45,1,div(45),[ ctlname('') ]).
-lit_i(44,1,div(44),[ ctlname('') ]).
-lit_i(43,1,div(43),[ ctlname('Tableprofesor') ]).
-lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26),container(31),container(34),container(39),container(42) ]) ]).
+lit_i(35,1,div(35),[ ctlname('Tableprofesor') ]).
+lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26),container(31),container(34) ]) ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
@@ -854,12 +784,11 @@ struct_dt_elem_i([ 26,44,71 ],4,'JsonName','').
  
  
  
-sub_info_i(146,'Start',1,24,[ [ 'Pgmname',1,'Actividadid',13,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Socioenactividadwc',3),t('Object',3) ],[ t('Profesorwc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Actividadid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Socioenactividadwc',3),t('Object',3) ],[ t('Profesorwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,24,[ [ 'Pgmname',1,'Actividadid',13,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Profesorwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Actividadid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Profesorwc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
 pgm_parm_i(web,13,'ACTIVIDADPROFESORWC',[ [ int,4,0,0 ] ],[ [ 'ActividadId',in,[] ] ]).
-pgm_parm_i(web,12,'ACTIVIDADSOCIOENACTIVIDADWC',[ [ int,4,0,0 ] ],[ [ 'ActividadId',in,[] ] ]).
 pgm_parm_i(web,11,'ACTIVIDADGENERAL',[ [ int,4,0,0 ] ],[ [ 'ActividadId',in,[] ] ]).
 pgm_parm_i(web,10,'WWACTIVIDAD',[],[]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
@@ -867,7 +796,6 @@ pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ '
 pgm_callprotocol_i(web,14,'VIEWACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
 pgm_callprotocol_i(web,13,'ACTIVIDADPROFESORWC','INTERNAL').
-pgm_callprotocol_i(web,12,'ACTIVIDADSOCIOENACTIVIDADWC','INTERNAL').
 pgm_callprotocol_i(web,11,'ACTIVIDADGENERAL','INTERNAL').
 pgm_callprotocol_i(web,10,'WWACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').

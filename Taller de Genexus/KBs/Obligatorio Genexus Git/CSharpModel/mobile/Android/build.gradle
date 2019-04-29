@@ -1,0 +1,16 @@
+apply from: 'ext.gradle'
+
+buildscript {
+    repositories {
+        maven { url 'file:///C:/Program%20Files%20(x86)/GeneXus/GeneXus15Trial/Android/m2Repository' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+subprojects {
+    repositories {
+        maven { url 'file:///C:/Program%20Files%20(x86)/GeneXus/GeneXus15Trial/Android/m2Repository' }
+    }
+}

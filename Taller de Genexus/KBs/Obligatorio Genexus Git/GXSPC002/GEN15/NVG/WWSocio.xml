@@ -6,24 +6,11 @@
 <ObjCls>13</ObjCls>
 <ObjId>25</ObjId>
 <ObjName>WWSocio</ObjName>
-<ObjDesc>Socios</ObjDesc>
+<ObjDesc>Work With Socio</ObjDesc>
 <ObjPgmName>WWSocio</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
-<Warnings>
-<Warning>
-<MsgCode>spc0038</MsgCode>
-<Message>
-<Token>There is no index for order </Token>
-<Attribute>
-<AttriId>18</AttriId>
-<AttriName>SocioDireccion</AttriName>
-<Description>Socio Direccion</Description></Attribute>
-<Token>; poor performance may be noticed</Token>
-<Token> in grid '</Token>
-<Token>Grid</Token>
-<Token>'</Token>
-<Token>.</Token></Message></Warning></Warnings>
+<Result>nogenreq</Result>
+<Warnings></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -61,10 +48,11 @@
 <Description>Socio</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>18</AttriId>
-<AttriName>SocioDireccion</AttriName>
-<Description>Socio Direccion</Description></Attribute></Order>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></Order>
 <Condition></Condition>
+<IndexName>ISOCIO</IndexName>
 <LevelOptions></LevelOptions>
 <Optimizations>
 <Optimization>
@@ -80,21 +68,21 @@
 <ConditionalConstraint>
 <Constraint>
 <Attribute>
-<AttriId>18</AttriId>
-<AttriName>SocioDireccion</AttriName>
-<Description>Socio Direccion</Description></Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute>
 <Sp></Sp>
-<Token>like</Token>
+<Token>&gt;=</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Sociodireccion</VarId>
-<VarName>&amp;SocioDireccion</VarName></Variable></Constraint>
+<VarId>Socioid</VarId>
+<VarName>&amp;SocioId</VarName></Variable></Constraint>
 <Condition>
 <Token>not</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Sociodireccion</VarId>
-<VarName>&amp;SocioDireccion</VarName></Variable>
+<VarId>Socioid</VarId>
+<VarName>&amp;SocioId</VarName></Variable>
 <Token>.</Token>
 <Token>isempty(</Token>
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>

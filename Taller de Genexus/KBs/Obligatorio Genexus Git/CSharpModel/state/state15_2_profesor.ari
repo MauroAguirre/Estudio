@@ -4,9 +4,11 @@ current_guid('a9422294-5c2a-44c0-9327-02c8b7748197').
  
  
 called_tree_i(0,2,1,10).
+called_tree_i(0,2,1,17).
 called_tree_i(0,2,13,4).
 called_tree_i(0,2,13,7).
 called_tree_i(0,2,13,21).
+called_tree_i(0,2,13,24).
 called_tree_i(0,2,13,32).
  
  
@@ -30,6 +32,7 @@ ij_object_dependency(profesor,[],[],[],2).
 obj_parms_i([ 'String aP0_Gx_mode','short aP1_ProfesorId' ],[ [ 'Mode',in ],[ 'Profesorid',in ] ]).
  
  
+has_silent_trn_i(profesor_bc).
  
  
  

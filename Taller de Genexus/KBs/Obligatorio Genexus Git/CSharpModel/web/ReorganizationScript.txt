@@ -1,25 +1,25 @@
+CREATE TABLE [Carnet] ([CarnetId]  smallint NOT NULL , [CarnetFechaIngreso]  datetime NOT NULL , PRIMARY KEY([CarnetId]))
+
+CREATE TABLE [ClaseSocios] ([ClaseId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ClaseId], [SocioId]))
+CREATE NONCLUSTERED INDEX [ICLASESOCIOS1] ON [ClaseSocios] ([SocioId] )
+
 CREATE TABLE [Clase] ([ClaseId]  smallint NOT NULL , [ProfesorId]  smallint NOT NULL , PRIMARY KEY([ClaseId]))
 CREATE NONCLUSTERED INDEX [ICLASE1] ON [Clase] ([ProfesorId] )
-
-CREATE TABLE [Carne] ([CarneId]  smallint NOT NULL  IDENTITY(1,1), [CarneFechaIngreso]  datetime NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([CarneId]))
-CREATE UNIQUE NONCLUSTERED INDEX [UCARNE] ON [Carne] ([SocioId] )
-
-CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioTipo]  char(20) NOT NULL , [SocioReconocido]  char(20) NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , PRIMARY KEY([SocioId]))
 
 CREATE TABLE [Profesor] ([ProfesorId]  smallint NOT NULL , [ProfesorNombre]  char(20) NOT NULL , [ProfesorDireccion]  varchar(1024) NOT NULL , [ProfesorFoto]  VARBINARY(MAX) NOT NULL , [ProfesorFoto_GXI]  varchar(2048) NULL , [ActividadId]  smallint NOT NULL , PRIMARY KEY([ProfesorId]))
 CREATE NONCLUSTERED INDEX [IPROFESOR1] ON [Profesor] ([ActividadId] )
 
-CREATE TABLE [ActividadSocioEnActividad] ([ActividadId]  smallint NOT NULL , [SocioId]  smallint NOT NULL , PRIMARY KEY([ActividadId], [SocioId]))
-CREATE NONCLUSTERED INDEX [IACTIVIDADSOCIOENACTIVIDAD1] ON [ActividadSocioEnActividad] ([SocioId] )
+CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioReconocido]  BIT NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NULL , [SocioTipoCuota]  char(20) NOT NULL , [CarnetId]  smallint NOT NULL , PRIMARY KEY([SocioId]))
+CREATE NONCLUSTERED INDEX [ISOCIO1] ON [Socio] ([CarnetId] )
 
-CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , [ActividadTipo]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))
+CREATE TABLE [Actividad1] ([ActividadId]  smallint NOT NULL , [ActividadDescripcion]  char(20) NOT NULL , PRIMARY KEY([ActividadId]))
 
-ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD2] FOREIGN KEY ([ActividadId]) REFERENCES [Actividad1] ([ActividadId])
-ALTER TABLE [ActividadSocioEnActividad] ADD CONSTRAINT [IACTIVIDADSOCIOENACTIVIDAD1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId])
+ALTER TABLE [Socio] ADD CONSTRAINT [ISOCIO1] FOREIGN KEY ([CarnetId]) REFERENCES [Carnet] ([CarnetId])
 
 ALTER TABLE [Profesor] ADD CONSTRAINT [IPROFESOR1] FOREIGN KEY ([ActividadId]) REFERENCES [Actividad1] ([ActividadId])
 
-ALTER TABLE [Carne] ADD CONSTRAINT [ICARNE1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId])
-
 ALTER TABLE [Clase] ADD CONSTRAINT [ICLASE1] FOREIGN KEY ([ProfesorId]) REFERENCES [Profesor] ([ProfesorId])
+
+ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS2] FOREIGN KEY ([ClaseId]) REFERENCES [Clase] ([ClaseId])
+ALTER TABLE [ClaseSocios] ADD CONSTRAINT [ICLASESOCIOS1] FOREIGN KEY ([SocioId]) REFERENCES [Socio] ([SocioId])
 

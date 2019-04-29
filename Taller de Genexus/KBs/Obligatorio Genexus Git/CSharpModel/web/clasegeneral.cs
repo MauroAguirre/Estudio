@@ -2,7 +2,7 @@
                File: ClaseGeneral
         Description: Clase General
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:14.97
+       Generated on: 4/12/2019 21:1:35.69
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -257,7 +257,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221911499", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194122113570", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -346,7 +346,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("clasegeneral.js", "?2019322191151", false);
+            context.AddJavascriptSource("clasegeneral.js", "?20194122113572", false);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -510,6 +510,22 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             GxWebStd.gx_single_line_edit( context, edtProfesorNombre_Internalname, StringUtil.RTrim( A15ProfesorNombre), StringUtil.RTrim( context.localUtil.Format( A15ProfesorNombre, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtProfesorNombre_Link, "", "", "", edtProfesorNombre_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtProfesorNombre_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_ClaseGeneral.htm");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtActividadDescripcion_Internalname+"\"", "", "div");
+            /* Attribute/Variable Label */
+            GxWebStd.gx_label_element( context, edtActividadDescripcion_Internalname, "Actividad Descripcion", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+            /* Single line edit */
+            GxWebStd.gx_single_line_edit( context, edtActividadDescripcion_Internalname, StringUtil.RTrim( A13ActividadDescripcion), StringUtil.RTrim( context.localUtil.Format( A13ActividadDescripcion, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtActividadDescripcion_Link, "", "", "", edtActividadDescripcion_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtActividadDescripcion_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_ClaseGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -794,6 +810,8 @@ namespace GeneXus.Programs {
             pr_default.execute(0, new Object[] {A3ClaseId});
             while ( (pr_default.getStatus(0) != 101) )
             {
+               A13ActividadDescripcion = H000J2_A13ActividadDescripcion[0];
+               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A13ActividadDescripcion", A13ActividadDescripcion);
                A15ProfesorNombre = H000J2_A15ProfesorNombre[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A15ProfesorNombre", A15ProfesorNombre);
                A2ProfesorId = H000J2_A2ProfesorId[0];
@@ -804,6 +822,8 @@ namespace GeneXus.Programs {
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A15ProfesorNombre", A15ProfesorNombre);
                A1ActividadId = H000J2_A1ActividadId[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A1ActividadId", StringUtil.LTrim( StringUtil.Str( (decimal)(A1ActividadId), 4, 0)));
+               A13ActividadDescripcion = H000J2_A13ActividadDescripcion[0];
+               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A13ActividadDescripcion", A13ActividadDescripcion);
                /* Execute user event: Load */
                E140J2 ();
                /* Exiting from a For First loop. */
@@ -841,6 +861,8 @@ namespace GeneXus.Programs {
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A2ProfesorId", StringUtil.LTrim( StringUtil.Str( (decimal)(A2ProfesorId), 4, 0)));
             A15ProfesorNombre = cgiGet( edtProfesorNombre_Internalname);
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A15ProfesorNombre", A15ProfesorNombre);
+            A13ActividadDescripcion = cgiGet( edtActividadDescripcion_Internalname);
+            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A13ActividadDescripcion", A13ActividadDescripcion);
             /* Read saved values. */
             wcpOA3ClaseId = (short)(context.localUtil.CToN( cgiGet( sPrefix+"wcpOA3ClaseId"), ".", ","));
             /* Read subfile selected row values. */
@@ -907,6 +929,8 @@ namespace GeneXus.Programs {
          /* Load Routine */
          edtProfesorNombre_Link = formatLink("viewprofesor.aspx") + "?" + UrlEncode("" +A2ProfesorId) + "," + UrlEncode(StringUtil.RTrim(""));
          context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, edtProfesorNombre_Internalname, "Link", edtProfesorNombre_Link, true);
+         edtActividadDescripcion_Link = formatLink("viewactividad.aspx") + "?" + UrlEncode("" +A1ActividadId) + "," + UrlEncode(StringUtil.RTrim(""));
+         context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, edtActividadDescripcion_Internalname, "Link", edtActividadDescripcion_Link, true);
       }
 
       protected void S112( )
@@ -1120,7 +1144,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221911532", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194122113599", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1135,7 +1159,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("clasegeneral.js", "?20193221911532", false);
+         context.AddJavascriptSource("clasegeneral.js", "?20194122113599", false);
          /* End function include_jscripts */
       }
 
@@ -1152,6 +1176,7 @@ namespace GeneXus.Programs {
          edtActividadId_Internalname = sPrefix+"ACTIVIDADID";
          edtProfesorId_Internalname = sPrefix+"PROFESORID";
          edtProfesorNombre_Internalname = sPrefix+"PROFESORNOMBRE";
+         edtActividadDescripcion_Internalname = sPrefix+"ACTIVIDADDESCRIPCION";
          divAttributestable_Internalname = sPrefix+"ATTRIBUTESTABLE";
          divMaintable_Internalname = sPrefix+"MAINTABLE";
          Form.Internalname = sPrefix+"FORM";
@@ -1171,6 +1196,9 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
+         edtActividadDescripcion_Jsonclick = "";
+         edtActividadDescripcion_Link = "";
+         edtActividadDescripcion_Enabled = 0;
          edtProfesorNombre_Jsonclick = "";
          edtProfesorNombre_Link = "";
          edtProfesorNombre_Enabled = 0;
@@ -1237,6 +1265,7 @@ namespace GeneXus.Programs {
          bttBtnupdate_Jsonclick = "";
          bttBtndelete_Jsonclick = "";
          A15ProfesorNombre = "";
+         A13ActividadDescripcion = "";
          Form = new GXWebForm();
          sXEvt = "";
          sEvt = "";
@@ -1245,6 +1274,7 @@ namespace GeneXus.Programs {
          sEvtType = "";
          scmdbuf = "";
          H000J2_A3ClaseId = new short[1] ;
+         H000J2_A13ActividadDescripcion = new String[] {""} ;
          H000J2_A15ProfesorNombre = new String[] {""} ;
          H000J2_A2ProfesorId = new short[1] ;
          H000J2_A1ActividadId = new short[1] ;
@@ -1259,7 +1289,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.clasegeneral__default(),
             new Object[][] {
                 new Object[] {
-               H000J2_A3ClaseId, H000J2_A15ProfesorNombre, H000J2_A2ProfesorId, H000J2_A1ActividadId
+               H000J2_A3ClaseId, H000J2_A13ActividadDescripcion, H000J2_A15ProfesorNombre, H000J2_A2ProfesorId, H000J2_A1ActividadId
                }
             }
          );
@@ -1289,6 +1319,7 @@ namespace GeneXus.Programs {
       private int edtActividadId_Enabled ;
       private int edtProfesorId_Enabled ;
       private int edtProfesorNombre_Enabled ;
+      private int edtActividadDescripcion_Enabled ;
       private int idxLst ;
       private String gxfirstwebparm ;
       private String gxfirstwebparm_bkp ;
@@ -1321,6 +1352,10 @@ namespace GeneXus.Programs {
       private String A15ProfesorNombre ;
       private String edtProfesorNombre_Link ;
       private String edtProfesorNombre_Jsonclick ;
+      private String edtActividadDescripcion_Internalname ;
+      private String A13ActividadDescripcion ;
+      private String edtActividadDescripcion_Link ;
+      private String edtActividadDescripcion_Jsonclick ;
       private String sXEvt ;
       private String sEvt ;
       private String EvtGridId ;
@@ -1340,6 +1375,7 @@ namespace GeneXus.Programs {
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
       private short[] H000J2_A3ClaseId ;
+      private String[] H000J2_A13ActividadDescripcion ;
       private String[] H000J2_A15ProfesorNombre ;
       private short[] H000J2_A2ProfesorId ;
       private short[] H000J2_A1ActividadId ;
@@ -1371,7 +1407,7 @@ namespace GeneXus.Programs {
           new Object[] {"@ClaseId",SqlDbType.SmallInt,4,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("H000J2", "SELECT T1.[ClaseId], T2.[ProfesorNombre], T1.[ProfesorId], T2.[ActividadId] FROM ([Clase] T1 WITH (NOLOCK) INNER JOIN [Profesor] T2 WITH (NOLOCK) ON T2.[ProfesorId] = T1.[ProfesorId]) WHERE T1.[ClaseId] = @ClaseId ORDER BY T1.[ClaseId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000J2,1,0,true,true )
+              new CursorDef("H000J2", "SELECT T1.[ClaseId], T3.[ActividadDescripcion], T2.[ProfesorNombre], T1.[ProfesorId], T2.[ActividadId] FROM (([Clase] T1 WITH (NOLOCK) INNER JOIN [Profesor] T2 WITH (NOLOCK) ON T2.[ProfesorId] = T1.[ProfesorId]) INNER JOIN [Actividad1] T3 WITH (NOLOCK) ON T3.[ActividadId] = T2.[ActividadId]) WHERE T1.[ClaseId] = @ClaseId ORDER BY T1.[ClaseId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000J2,1,0,true,true )
           };
        }
     }
@@ -1385,8 +1421,9 @@ namespace GeneXus.Programs {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
-                ((short[]) buf[2])[0] = rslt.getShort(3) ;
+                ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
                 ((short[]) buf[3])[0] = rslt.getShort(4) ;
+                ((short[]) buf[4])[0] = rslt.getShort(5) ;
                 return;
        }
     }

@@ -3,8 +3,8 @@ spec_i([ web,24,'View Profesor','ViewProfesor',0,eng,'15_0_12-126726' ]).
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 2,15 ] ] ],[ [ [ 3 ],[] ] ],[ 2 ],'IPROFESOR',[ 3,[ [ [],'Profesorid',2 ] ] ],[] ]).
-level_i(3,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 2,15 ] ] ],[ [ [ 3 ],[] ] ],[ 2 ],'IPROFESOR',[ 3,[ [ [],'Profesorid',2 ] ] ],[] ]).
+level_i(2,[ 11,[ [ 11,many ] ],[],[],[ [ [ 11 ],[ 2,15 ] ] ],[ [ [ 11 ],[] ] ],[ 2 ],'IPROFESOR',[ 11,[ [ [],'Profesorid',2 ] ] ],[] ]).
+level_i(3,[ 11,[ [ 11,many ] ],[],[],[ [ [ 11 ],[ 2,15 ] ] ],[ [ [ 11 ],[] ] ],[ 2 ],'IPROFESOR',[ 11,[ [ [],'Profesorid',2 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -17,8 +17,8 @@ lwi_i(3,[ [] ]).
 level_option_i(3,usr_condition,y).
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 3,2 ],[ 3,15 ] ] ]).
-ta_i(3,[ [ [ 3,2 ],[ 3,15 ] ] ]).
+ta_i(2,[ [ [ 11,2 ],[ 11,15 ] ] ]).
+ta_i(3,[ [ [ 11,2 ],[ 11,15 ] ] ]).
  
 las_i(2,[ [ 'Profesorid','Tabcode',2,15 ] ]).
 las_i(3,[ [ 'Profesorid','Tabcode',2,15 ] ]).
@@ -28,7 +28,7 @@ lac_i(3,[ [] ]).
  
  
 lits_i('Profesor Information',5,10).
-lits_i('Profesors',5,10).
+lits_i('Profesores',5,10).
 lits_i('General',5,10).
 lits_i('Clase',5,10).
  
@@ -135,8 +135,8 @@ rule_i(0,parmio([ [ 'Profesorid',in ],[ 'Tabcode',in ] ])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ViewProfesor"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,3,t,3,[],[ [ [ [],'Profesorid',2 ] ],'IPROFESOR',[] ]).
-a_i(4,2,t,3,[],[ [ [ [],'Profesorid',2 ] ],'IPROFESOR',[] ]).
+a_i(3,3,t,11,[],[ [ [ [],'Profesorid',2 ] ],'IPROFESOR',[] ]).
+a_i(4,2,t,11,[],[ [ [ [],'Profesorid',2 ] ],'IPROFESOR',[] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
@@ -169,9 +169,9 @@ attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code'
 attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(3,[ 'Profesor',[ 2,15 ],'Profesor','Profesor' ]).
+table_i(11,[ 'Profesor',[ 2,15 ],'Profesor','Profesor' ]).
  
-index_i(3,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
+index_i(11,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
  
  
  
@@ -280,7 +280,7 @@ html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,9,html_i(0,t('Profesor Information',3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Profesors',3))).
+html_sub_i(10,11,html_i(0,t('Profesores',3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -397,7 +397,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Profesors',d,[ str ]).
+html_comp_i(11,'Caption','Profesores',d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -633,7 +633,7 @@ html_comp_i(38,'Params',[],v,[ params ]).
  
 lit_i(9,1,t('Profesor Information',3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Profesors',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t('Profesores',3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
@@ -694,8 +694,8 @@ att_prop_i(2,2,'AttValidationFailedMsg','',d).
 att_prop_i(2,2,'FullName','ProfesorId',v).
  
  
-tbl_att_prop_i(2,3,2,'AllowNulls',n).
-tbl_att_prop_i(2,3,15,'AllowNulls',n).
+tbl_att_prop_i(2,11,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,15,'AllowNulls',n).
  
 var_prop_i(2,'Tabcode',idBasedOn,65,v).
 var_prop_i(2,'Selectedtabcode',idBasedOn,65,v).

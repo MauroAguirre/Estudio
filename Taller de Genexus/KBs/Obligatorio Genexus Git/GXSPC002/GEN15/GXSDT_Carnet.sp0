@@ -1,0 +1,45 @@
+ 
+spec_i([ sdt,[ 0,3,0 ],'Carnet','Carnet',0,eng,'15_0_12-126726' ]).
+ 
+struct_dt_i([ 0,3,0 ],name,'Carnet').
+struct_dt_i([ 0,3,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],significantName,'Carnet').
+struct_dt_i([ 0,3,0 ],'ObjName','Carnet').
+struct_dt_i([ 0,3,0 ],'ObjDesc','Carnet').
+struct_dt_i([ 0,3,0 ],'ExternalName','Carnet').
+struct_dt_i([ 0,3,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],key,[ 36 ]).
+struct_dt_i([ 0,3,0 ],lvl,14).
+struct_dt_i([ 0,3,0 ],fullname,'Carnet').
+ 
+struct_dt_elem_i([ 0,3,0 ],1,name,'Carnetid').
+struct_dt_elem_i([ 0,3,0 ],1,camelname,'CarnetId').
+struct_dt_elem_i([ 0,3,0 ],1,length,4).
+struct_dt_elem_i([ 0,3,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],1,sign,0).
+struct_dt_elem_i([ 0,3,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,3,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,3,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],1,attributeid,'36').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalName','CarnetId').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,3,0 ],2,name,'Carnetfechaingreso').
+struct_dt_elem_i([ 0,3,0 ],2,camelname,'CarnetFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,length,8).
+struct_dt_elem_i([ 0,3,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],2,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],2,pic,'99/99/99').
+struct_dt_elem_i([ 0,3,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],2,attributeid,'37').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalName','CarnetFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').

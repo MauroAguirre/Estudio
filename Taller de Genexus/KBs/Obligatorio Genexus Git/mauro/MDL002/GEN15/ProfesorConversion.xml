@@ -2,7 +2,7 @@
 <ReorgSpec>
 <SpecVersion>15_0_12-126726</SpecVersion>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table>
 <ReorgCls>c</ReorgCls>
@@ -95,7 +95,7 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>40001</AttriId>
+<AttriId>40000</AttriId>
 <AttriName>ProfesorFoto_GXI</AttriName>
 <Description>ProfesorFoto_GXI</Description>
 <TakesValueFrom></TakesValueFrom>

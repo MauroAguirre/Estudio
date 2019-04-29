@@ -2,7 +2,7 @@
                File: ViewCarne
         Description: View Carne
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:27.26
+       Generated on: 3/29/2019 11:16:48.45
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -232,7 +232,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221912730", false);
+         context.AddJavascriptSource("gxcfg.js", "?201932911164847", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -407,7 +407,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-4 ViewActionsBackCell", "Right", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, "Carnes", lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewCarne.htm");
+            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, "Carne", lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewCarne.htm");
             GxWebStd.gx_div_end( context, "Right", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -946,7 +946,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221912762", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?201932911164874", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -962,7 +962,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("viewcarne.js", "?20193221912762", false);
+         context.AddJavascriptSource("viewcarne.js", "?201932911164874", false);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false);

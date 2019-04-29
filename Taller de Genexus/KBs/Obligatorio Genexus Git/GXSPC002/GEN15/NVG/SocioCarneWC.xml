@@ -9,7 +9,7 @@
 <ObjDesc>Socio Carne WC</ObjDesc>
 <ObjPgmName>SocioCarneWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

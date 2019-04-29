@@ -18,7 +18,7 @@ las_i(2,[ [] ]).
 lac_i(2,[ [] ]).
  
  
-lits_i('Application Header',5,10).
+lits_i('Club noseque el mas mejor',5,10).
 lits_i('English',5,10).
 lits_i('',5,10).
 lits_i('Español',5,10).
@@ -30,7 +30,7 @@ lits_i('Third Option',5,10).
 lits_i('Fourth Option',5,10).
 lits_i('Footer Info',5,10).
  
-cls_i([ 5,10 ],[ 5,27 ]).
+cls_i([ 5,10 ],[ 5,34 ]).
  
  
  
@@ -209,7 +209,7 @@ html_sub_i(5,0,html_i(0,html('<tbody>'))).
 html_sub_i(5,6,html_i(1,row(6))).
 html_sub_i(6,7,html_i(0,cell(7))).
 html_sub_i(7,0,html_i(0,html('&nbsp; '))).
-html_sub_i(7,8,html_i(1,t('Application Header',3))).
+html_sub_i(7,8,html_i(1,t('Club noseque el mas mejor',3))).
 html_sub_i(6,9,html_i(1,cell(9))).
 html_sub_i(9,0,html_i(0,html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '))).
 html_sub_i(9,10,html_i(1,table(10))).
@@ -232,14 +232,16 @@ html_sub_i(22,0,html_i(0,html('<tbody>'))).
 html_sub_i(22,23,html_i(1,row(23))).
 html_sub_i(23,24,html_i(0,cell(24))).
 html_sub_i(24,25,html_i(0,t('First Option',3))).
-html_sub_i(24,0,html_i(1,html('&nbsp; '))).
+html_sub_i(24,0,html_i(1,html('&nbsp; 1'))).
 html_sub_i(23,26,html_i(1,cell(26))).
 html_sub_i(26,27,html_i(0,t('Second Option',3))).
+html_sub_i(26,0,html_i(1,html('2'))).
 html_sub_i(23,28,html_i(2,cell(28))).
 html_sub_i(28,29,html_i(0,t('Third Option',3))).
-html_sub_i(28,0,html_i(1,html('&nbsp; '))).
+html_sub_i(28,0,html_i(1,html('&nbsp; hola'))).
 html_sub_i(23,30,html_i(3,cell(30))).
 html_sub_i(30,31,html_i(0,t('Fourth Option',3))).
+html_sub_i(30,0,html_i(1,html(chau))).
 html_sub_i(22,0,html_i(2,html('</tbody>'))).
 html_sub_i(2,32,html_i(2,row(32))).
 html_sub_i(32,33,html_i(0,cell(33))).
@@ -300,7 +302,7 @@ html_comp_i(5,'Height',measure(63,px),v,[ measure ]).
 html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Rules',none,d,[ str ]).
 html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(8,'Caption','Application Header',d,[ str ]).
+html_comp_i(8,'Caption','Club noseque el mas mejor',d,[ str ]).
 html_comp_i(8,'Id','Applicationheader',v,[ str ]).
 html_comp_i(8,'Class','TextBlockHeader',v,[ str ]).
 html_comp_i(8,'Event','',d,[ str ]).
@@ -451,6 +453,7 @@ html_comp_i(31,'Fill',-1,d,[ bool ]).
 html_comp_i(31,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(31,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(31,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(33,'Height',measure(14,px),v,[ measure ]).
 html_comp_i(33,'Colspan',2,v,[ num ]).
 html_comp_i(34,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(34,'Controlname','Wcrecentlinks',v,[ str ]).
@@ -512,7 +515,7 @@ html_comp_i(50,'Font','',d,[ str ]).
  
  
  
-lit_i(8,1,t('Application Header',3),[ ctlname('Applicationheader') ]).
+lit_i(8,1,t('Club noseque el mas mejor',3),[ ctlname('Applicationheader') ]).
 lit_i(13,1,t('English',3),[ ctlname('English') ]).
 lit_i(15,1,t('',3),[ ctlname('Pipe') ]).
 lit_i(17,1,t('Español',3),[ ctlname('Spanish') ]).

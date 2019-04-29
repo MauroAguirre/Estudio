@@ -1,8 +1,8 @@
 /*
                File: WWActividad
-        Description: Actividads
+        Description: Actividades
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:25.91
+       Generated on: 4/12/2019 21:1:34.80
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -253,7 +253,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221912594", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194122113486", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -376,7 +376,7 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Actividads" ;
+         return "Actividades" ;
       }
 
       protected void WB0A0( )
@@ -407,7 +407,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-7 col-sm-2 col-sm-offset-1", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Actividads", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWActividad.htm");
+            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Actividades", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWActividad.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-5 col-sm-3 col-sm-push-6 WWActionsCell", "Right", "top", "", "", "div");
@@ -499,8 +499,8 @@ namespace GeneXus.Programs {
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"DescriptionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Descripcion") ;
                context.WriteHtmlTextNl( "</th>") ;
-               context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Tipo") ;
+               context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
+               context.SendWebValue( "Cantidad Profesores") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"TextActionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "") ;
@@ -538,7 +538,7 @@ namespace GeneXus.Programs {
                GridColumn.AddObjectProperty("Link", StringUtil.RTrim( edtActividadDescripcion_Link));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A14ActividadTipo));
+               GridColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( (decimal)(A35ActividadCantidadProfesores), 4, 0, ".", "")));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
                GridColumn.AddObjectProperty("Value", StringUtil.RTrim( AV14Update));
@@ -639,7 +639,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 15_0_12-126726", 0) ;
-            Form.Meta.addItem("description", "Actividads", 0) ;
+            Form.Meta.addItem("description", "Actividades", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -730,7 +730,7 @@ namespace GeneXus.Programs {
                               SubsflControlProps_252( ) ;
                               A1ActividadId = (short)(context.localUtil.CToN( cgiGet( edtActividadId_Internalname), ".", ","));
                               A13ActividadDescripcion = cgiGet( edtActividadDescripcion_Internalname);
-                              A14ActividadTipo = cgiGet( edtActividadTipo_Internalname);
+                              A35ActividadCantidadProfesores = (short)(context.localUtil.CToN( cgiGet( edtActividadCantidadProfesores_Internalname), ".", ","));
                               AV14Update = cgiGet( edtavUpdate_Internalname);
                               context.httpAjaxContext.ajax_rsp_assign_attri("", false, edtavUpdate_Internalname, AV14Update);
                               AV15Delete = cgiGet( edtavDelete_Internalname);
@@ -962,9 +962,11 @@ namespace GeneXus.Programs {
             SubsflControlProps_252( ) ;
             while ( ( (pr_default.getStatus(0) != 101) ) && ( ( ( subGrid_Rows == 0 ) || ( GRID_nCurrentRecord < subGrid_Recordsperpage( ) ) ) ) )
             {
-               A14ActividadTipo = H000A2_A14ActividadTipo[0];
                A13ActividadDescripcion = H000A2_A13ActividadDescripcion[0];
                A1ActividadId = H000A2_A1ActividadId[0];
+               GXt_int1 = A35ActividadCantidadProfesores;
+               new cantidaddeprofesenactividad(context ).execute(  A1ActividadId, out  GXt_int1) ;
+               A35ActividadCantidadProfesores = GXt_int1;
                E140A2 ();
                pr_default.readNext(0);
             }
@@ -1191,7 +1193,7 @@ namespace GeneXus.Programs {
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, edtavUpdate_Internalname, AV14Update);
          AV15Delete = "Delete";
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, edtavDelete_Internalname, AV15Delete);
-         Form.Caption = "Actividads";
+         Form.Caption = "Actividades";
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, "FORM", "Caption", Form.Caption, true);
          /* Execute user subroutine: 'PREPARETRANSACTION' */
          S112 ();
@@ -1342,7 +1344,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221912636", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194122113524", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1360,7 +1362,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-            context.AddJavascriptSource("wwactividad.js", "?20193221912636", false);
+            context.AddJavascriptSource("wwactividad.js", "?20194122113524", false);
          }
          /* End function include_jscripts */
       }
@@ -1369,7 +1371,7 @@ namespace GeneXus.Programs {
       {
          edtActividadId_Internalname = "ACTIVIDADID_"+sGXsfl_25_idx;
          edtActividadDescripcion_Internalname = "ACTIVIDADDESCRIPCION_"+sGXsfl_25_idx;
-         edtActividadTipo_Internalname = "ACTIVIDADTIPO_"+sGXsfl_25_idx;
+         edtActividadCantidadProfesores_Internalname = "ACTIVIDADCANTIDADPROFESORES_"+sGXsfl_25_idx;
          edtavUpdate_Internalname = "vUPDATE_"+sGXsfl_25_idx;
          edtavDelete_Internalname = "vDELETE_"+sGXsfl_25_idx;
       }
@@ -1378,7 +1380,7 @@ namespace GeneXus.Programs {
       {
          edtActividadId_Internalname = "ACTIVIDADID_"+sGXsfl_25_fel_idx;
          edtActividadDescripcion_Internalname = "ACTIVIDADDESCRIPCION_"+sGXsfl_25_fel_idx;
-         edtActividadTipo_Internalname = "ACTIVIDADTIPO_"+sGXsfl_25_fel_idx;
+         edtActividadCantidadProfesores_Internalname = "ACTIVIDADCANTIDADPROFESORES_"+sGXsfl_25_fel_idx;
          edtavUpdate_Internalname = "vUPDATE_"+sGXsfl_25_fel_idx;
          edtavDelete_Internalname = "vDELETE_"+sGXsfl_25_fel_idx;
       }
@@ -1465,11 +1467,11 @@ namespace GeneXus.Programs {
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
-               context.WriteHtmlText( "<td valign=\"middle\" align=\""+"left"+"\""+" style=\""+""+"\">") ;
+               context.WriteHtmlText( "<td valign=\"middle\" align=\""+"right"+"\""+" style=\""+""+"\">") ;
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtActividadTipo_Internalname,StringUtil.RTrim( A14ActividadTipo),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtActividadTipo_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"",(String)"left",(bool)true});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtActividadCantidadProfesores_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A35ActividadCantidadProfesores), 4, 0, ".", "")),context.localUtil.Format( (decimal)(A35ActividadCantidadProfesores), "ZZZ9"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtActividadCantidadProfesores_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"number",(String)"1",(short)0,(String)"px",(short)17,(String)"px",(short)4,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1508,7 +1510,7 @@ namespace GeneXus.Programs {
          divTabletop_Internalname = "TABLETOP";
          edtActividadId_Internalname = "ACTIVIDADID";
          edtActividadDescripcion_Internalname = "ACTIVIDADDESCRIPCION";
-         edtActividadTipo_Internalname = "ACTIVIDADTIPO";
+         edtActividadCantidadProfesores_Internalname = "ACTIVIDADCANTIDADPROFESORES";
          edtavUpdate_Internalname = "vUPDATE";
          edtavDelete_Internalname = "vDELETE";
          divGridtable_Internalname = "GRIDTABLE";
@@ -1528,7 +1530,7 @@ namespace GeneXus.Programs {
          init_default_properties( ) ;
          edtavDelete_Jsonclick = "";
          edtavUpdate_Jsonclick = "";
-         edtActividadTipo_Jsonclick = "";
+         edtActividadCantidadProfesores_Jsonclick = "";
          edtActividadDescripcion_Jsonclick = "";
          edtActividadId_Jsonclick = "";
          subGrid_Allowcollapsing = 0;
@@ -1547,7 +1549,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Actividads";
+         Form.Caption = "Actividades";
          subGrid_Rows = 10;
          context.GX_msglist.DisplayMode = 1;
          if ( context.isSpaRequest( ) )
@@ -1619,14 +1621,12 @@ namespace GeneXus.Programs {
          subGrid_Linesclass = "";
          GridColumn = new GXWebColumn();
          A13ActividadDescripcion = "";
-         A14ActividadTipo = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
          scmdbuf = "";
          lV13ActividadDescripcion = "";
-         H000A2_A14ActividadTipo = new String[] {""} ;
          H000A2_A13ActividadDescripcion = new String[] {""} ;
          H000A2_A1ActividadId = new short[1] ;
          H000A3_AGRID_nRecordCount = new long[1] ;
@@ -1642,7 +1642,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.wwactividad__default(),
             new Object[][] {
                 new Object[] {
-               H000A2_A14ActividadTipo, H000A2_A13ActividadDescripcion, H000A2_A1ActividadId
+               H000A2_A13ActividadDescripcion, H000A2_A1ActividadId
                }
                , new Object[] {
                H000A3_AGRID_nRecordCount
@@ -1670,12 +1670,14 @@ namespace GeneXus.Programs {
       private short subGrid_Backcolorstyle ;
       private short subGrid_Titlebackstyle ;
       private short A1ActividadId ;
+      private short A35ActividadCantidadProfesores ;
       private short subGrid_Allowselection ;
       private short subGrid_Allowhovering ;
       private short subGrid_Allowcollapsing ;
       private short subGrid_Collapsed ;
       private short nDonePA ;
       private short gxcookieaux ;
+      private short GXt_int1 ;
       private short subGrid_Backstyle ;
       private int subGrid_Rows ;
       private int edtavActividaddescripcion_Enabled ;
@@ -1728,7 +1730,6 @@ namespace GeneXus.Programs {
       private String subGrid_Header ;
       private String A13ActividadDescripcion ;
       private String edtActividadDescripcion_Link ;
-      private String A14ActividadTipo ;
       private String edtavUpdate_Link ;
       private String edtavDelete_Link ;
       private String sEvt ;
@@ -1737,7 +1738,7 @@ namespace GeneXus.Programs {
       private String sEvtType ;
       private String edtActividadId_Internalname ;
       private String edtActividadDescripcion_Internalname ;
-      private String edtActividadTipo_Internalname ;
+      private String edtActividadCantidadProfesores_Internalname ;
       private String edtavUpdate_Internalname ;
       private String edtavDelete_Internalname ;
       private String scmdbuf ;
@@ -1746,7 +1747,7 @@ namespace GeneXus.Programs {
       private String ROClassString ;
       private String edtActividadId_Jsonclick ;
       private String edtActividadDescripcion_Jsonclick ;
-      private String edtActividadTipo_Jsonclick ;
+      private String edtActividadCantidadProfesores_Jsonclick ;
       private String edtavUpdate_Jsonclick ;
       private String edtavDelete_Jsonclick ;
       private bool entryPointCalled ;
@@ -1764,7 +1765,6 @@ namespace GeneXus.Programs {
       private GXWebColumn GridColumn ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private String[] H000A2_A14ActividadTipo ;
       private String[] H000A2_A13ActividadDescripcion ;
       private short[] H000A2_A1ActividadId ;
       private long[] H000A3_AGRID_nRecordCount ;
@@ -1785,14 +1785,14 @@ namespace GeneXus.Programs {
       {
          String sWhereString = "" ;
          String scmdbuf ;
-         short[] GXv_int1 ;
-         GXv_int1 = new short [4] ;
-         Object[] GXv_Object2 ;
-         GXv_Object2 = new Object [2] ;
+         short[] GXv_int2 ;
+         GXv_int2 = new short [4] ;
+         Object[] GXv_Object3 ;
+         GXv_Object3 = new Object [2] ;
          String sSelectString ;
          String sFromString ;
          String sOrderString ;
-         sSelectString = " [ActividadTipo], [ActividadDescripcion], [ActividadId]";
+         sSelectString = " [ActividadDescripcion], [ActividadId]";
          sFromString = " FROM [Actividad1] WITH (NOLOCK)";
          sOrderString = "";
          if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV13ActividadDescripcion)) )
@@ -1808,7 +1808,7 @@ namespace GeneXus.Programs {
          }
          else
          {
-            GXv_int1[0] = 1;
+            GXv_int2[0] = 1;
          }
          if ( StringUtil.StrCmp("", sWhereString) != 0 )
          {
@@ -1816,9 +1816,9 @@ namespace GeneXus.Programs {
          }
          sOrderString = sOrderString + " ORDER BY [ActividadDescripcion]";
          scmdbuf = "SELECT " + sSelectString + sFromString + sWhereString + "" + sOrderString + " OFFSET " + "@GXPagingFrom2" + " ROWS FETCH NEXT CAST((SELECT CASE WHEN " + "@GXPagingTo2" + " > 0 THEN " + "@GXPagingTo2" + " ELSE 1e9 END) AS INTEGER) ROWS ONLY";
-         GXv_Object2[0] = scmdbuf;
-         GXv_Object2[1] = GXv_int1;
-         return GXv_Object2 ;
+         GXv_Object3[0] = scmdbuf;
+         GXv_Object3[1] = GXv_int2;
+         return GXv_Object3 ;
       }
 
       protected Object[] conditional_H000A3( IGxContext context ,
@@ -1827,10 +1827,10 @@ namespace GeneXus.Programs {
       {
          String sWhereString = "" ;
          String scmdbuf ;
-         short[] GXv_int3 ;
-         GXv_int3 = new short [1] ;
-         Object[] GXv_Object4 ;
-         GXv_Object4 = new Object [2] ;
+         short[] GXv_int4 ;
+         GXv_int4 = new short [1] ;
+         Object[] GXv_Object5 ;
+         GXv_Object5 = new Object [2] ;
          scmdbuf = "SELECT COUNT(*) FROM [Actividad1] WITH (NOLOCK)";
          if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV13ActividadDescripcion)) )
          {
@@ -1845,16 +1845,16 @@ namespace GeneXus.Programs {
          }
          else
          {
-            GXv_int3[0] = 1;
+            GXv_int4[0] = 1;
          }
          if ( StringUtil.StrCmp("", sWhereString) != 0 )
          {
             scmdbuf = scmdbuf + " WHERE" + sWhereString;
          }
          scmdbuf = scmdbuf + "";
-         GXv_Object4[0] = scmdbuf;
-         GXv_Object4[1] = GXv_int3;
-         return GXv_Object4 ;
+         GXv_Object5[0] = scmdbuf;
+         GXv_Object5[1] = GXv_int4;
+         return GXv_Object5 ;
       }
 
       public override Object [] getDynamicStatement( int cursor ,
@@ -1911,8 +1911,7 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
-                ((short[]) buf[2])[0] = rslt.getShort(3) ;
+                ((short[]) buf[1])[0] = rslt.getShort(2) ;
                 return;
              case 1 :
                 ((long[]) buf[0])[0] = rslt.getLong(1) ;

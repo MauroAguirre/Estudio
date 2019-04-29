@@ -2,7 +2,7 @@
                File: Gx0021
         Description: Selection List Socio En Actividad
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:19.54
+       Generated on: 4/12/2019 6:28:10.30
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -262,7 +262,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221911957", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194126281034", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1221,7 +1221,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2019322191202", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194126281075", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1237,7 +1237,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("gx0021.js", "?2019322191202", false);
+         context.AddJavascriptSource("gx0021.js", "?20194126281075", false);
          /* End function include_jscripts */
       }
 

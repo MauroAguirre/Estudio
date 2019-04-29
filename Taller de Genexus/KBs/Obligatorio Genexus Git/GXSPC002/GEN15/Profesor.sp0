@@ -1,21 +1,21 @@
 spec_i([ trn,2,'Profesor','Profesor',[],eng,'15_0_12-126726' ]).
  
-struct_i(3,0,[ 'Pgmname','Trncontext','Insert_actividadid','GXV1','Trncontextatt','Mode','Profesorid','Websession' ],[]).
+struct_i(11,0,[ 'Pgmname','Trncontext','Insert_actividadid','GXV1','Trncontextatt','Mode','Profesorid','Websession' ],[]).
  
-level_i(3,[ 3,[ [ 3,many ],[ 1,one ] ],[ 2 ],[],[],[],[ 2 ],'IPROFESOR',[ 3,[] ],[] ]).
+level_i(11,[ 11,[ [ 11,many ],[ 1,one ] ],[ 2 ],[],[],[],[ 2 ],'IPROFESOR',[ 11,[] ],[] ]).
  
-tw_i(3,[ [ 1,[ [ 3,1,1 ] ] ] ]).
+tw_i(11,[ [ 1,[ [ 11,1,1 ] ] ] ]).
  
-lwi_i(3,[ [] ]).
- 
- 
+lwi_i(11,[ [] ]).
  
  
-ta_i(3,[ [ [ 3,2 ],[ 3,15 ],[ 3,16 ],[ 3,17 ],[ 3,40000 ],[ 1,13 ],[ 1,14 ],[ 3,1 ] ] ]).
  
-las_i(3,[ [ 'Pgmname','Trncontext','Insert_actividadid','GXV1','Trncontextatt','Mode','Profesorid','Websession',2,1,15,16,17,40000,13,14 ] ]).
  
-lac_i(3,[ [ 2,15,16,17,1 ] ]).
+ta_i(11,[ [ [ 11,2 ],[ 11,15 ],[ 11,16 ],[ 11,17 ],[ 11,40000 ],[ 1,13 ],[ 11,1 ] ] ]).
+ 
+las_i(11,[ [ 'Pgmname','Trncontext','Insert_actividadid','GXV1','Trncontextatt','Mode','Profesorid','Websession',2,1,'GxBScreen',15,16,17,40000,13 ] ]).
+ 
+lac_i(11,[ [ 2,15,16,17,1 ] ]).
  
  
 lits_i('Profesor',5,10).
@@ -28,10 +28,10 @@ pos_i(16,[ 0,0,0 ]).
 pos_i(17,[ 0,0,0 ]).
 pos_i(1,[ 0,0,0 ]).
 pos_i(13,[ 0,0,0 ]).
-pos_i(14,[ 0,0,0 ]).
  
  
 default_i(e('Pgmname',2,2,'"Profesor"')).
+default_i(e(2,4,3,[ t('udp(',1),t(o(1,'UltimoIdProfesor'),28),t(')',4) ])).
  
 rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
 rule_i(0,datastore(1,'LOCK_RETRY','10')).
@@ -90,6 +90,8 @@ rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','Public')).
 rule_i(0,prop('FullyQualifiedName','Profesor')).
 rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewProfesor'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
 rule_i(0,prop('Hint_firstrows','UMPV')).
@@ -161,38 +163,47 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop('WEBSERVICE_PROTOCOL','REST')).
+rule_i(0,prop(idISBCWEBSERVICE,'-1')).
 rule_i(0,prop('ExternalNamespace','ObligatorioGenexusGit')).
 rule_i(0,prop('ExternalName','Profesor')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
-rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
-rule_i(0,prop(idBC,'0')).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop(idBC,'-1')).
+rule_i(0,prop('Folder',o(8,'Transacciones'))).
 rule_i(0,prop('ObjDesc','Profesor')).
 rule_i(0,prop('ObjName','Profesor')).
-rule_i(3,prompt([ 1,[ [ 3,1,1 ] ],[ 1 ],[ 1 ],[ t(o(13,'Gx0010'),28),t(1,2) ],[],n,[] ])).
-rule_i(3,rule([ a(23,[ [ 1 ],[ t(o(13,'Gx0010'),28),t(1,2) ] ]) ],[],[],[ 1 ])).
+rule_i(11,prompt([ 1,[ [ 11,1,1 ] ],[ 1 ],[ 1 ],[ t(o(13,'Gx0010'),28),t(1,2) ],[],n,[] ])).
+rule_i(11,rule([ a(23,[ [ 1 ],[ t(o(13,'Gx0010'),28),t(1,2) ] ]) ],[],[],[ 1 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
 rule_i(0,maingen(15)).
 rule_i(0,rule([ a(10,[ 'Mode','Profesorid' ]) ],[],[ insert,update,delete,display ],[])).
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Profesorid',in ] ])).
-rule_i(3,rule([ a(3,[ t(2,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4) ],[ insert,update,delete,display ],[ 2,'Profesorid' ])).
-rule_i(3,rule([ a(21,[ [ 2 ] ]) ],[],[ insert,update,delete,display ],[ 2 ])).
-rule_i(3,rule([ a(3,[ t(1,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4) ],[ insert,update,delete,display ],[ 1,'Mode','Insert_actividadid' ])).
-rule_i(3,rule([ a(19,[ [ 1 ],msg([ t('"No matching ''Actividad''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 1 ])).
+rule_i(11,rule([ a(3,[ t(2,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4) ],[ insert,update,delete,display ],[ 2,'Profesorid' ])).
+rule_i(11,rule([ a(21,[ [ 2 ] ]) ],[],[ insert,update,delete,display ],[ 2 ])).
+rule_i(11,rule([ a(3,[ t(1,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4) ],[ insert,update,delete,display ],[ 1,'Mode','Insert_actividadid' ])).
+rule_i(11,rule([ a(19,[ [ 1 ],msg([ t('"No matching ''Actividad''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 1 ])).
  
-a_i(3,3,f,2,[],[ [],[ t('Profesorid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4),t(';',18) ] ]).
-a_i(4,3,f,[ t(2,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
-a_i(5,3,f,1,[],[ [],[ t('Insert_actividadid',23),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4),t(';',18) ] ]).
-a_i(6,3,f,[ t(1,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
-a_i(7,3,b,3,[],[ [],[ a(3,[ t(2,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4) ] ]).
-a_i(8,3,b,6,[],[ [],[ a(3,[ t(1,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4) ] ]).
-a_i(9,3,t,3,[],[ [ [ [],2,2 ] ],'IPROFESOR',[] ]).
-a_i(10,3,r,1,[],[ [ [ 3,1,1 ] ],'IACTIVIDAD1',[] ]).
-a_i(11,3,f,'Pgmname',[],[ [],[ t('"Profesor"',3) ] ]).
+a_i(3,11,f,2,[],[ [ insert ],[ t('Profesorid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4),t(';',18),t('udp(',1),t(2,3),t(0,3),t(')',4),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(2,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
+a_i(4,11,f,[ t(2,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(5,11,f,1,[],[ [],[ t('Insert_actividadid',23),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4),t(';',18) ] ]).
+a_i(6,11,f,[ t(1,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(7,11,b,3,[],[ [],[ a(3,[ t(2,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Profesorid',23),t(')',4) ] ]).
+a_i(8,11,b,6,[],[ [],[ a(3,[ t(1,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_actividadid',23),t(')',4) ] ]).
+a_i(9,11,t,11,[],[ [ [ [],2,2 ] ],'IPROFESOR',[] ]).
+a_i(10,11,r,1,[],[ [ [ 11,1,1 ] ],'IACTIVIDAD1',[] ]).
+a_i(11,11,f,'Pgmname',[],[ [],[ t('"Profesor"',3) ] ]).
+a_i(12,11,f,'GxBScreen',[],[ [],[ t('0',3) ] ]).
  
 v_i(f,i,3,'Profesorid').
+v_i(f,i,3,'GxBScreen').
 v_i(f,o,3,2).
 v_i(f,i,4,'Profesorid').
 v_i(f,o,4,[ t(2,2),t('Enabled',3) ]).
@@ -212,21 +223,21 @@ v_i(t,o,9,40000).
 v_i(t,o,9,1).
 v_i(r,i,10,1).
 v_i(r,o,10,13).
-v_i(r,o,10,14).
 v_i(f,i,11,[]).
 v_i(f,o,11,'Pgmname').
+v_i(f,i,12,[]).
+v_i(f,o,12,'GxBScreen').
  
 act_info_i(3,[ [ 2 ] ]).
 act_info_i(5,[ [ 1 ] ]).
  
 ca_i(5,1).
  
-tbl_to_delete_i(3,[ 6,[ [ 3,2,2 ] ],c,'ICLASE1',[ [ 6,2 ] ],[ 3 ],'' ]).
+tbl_to_delete_i(11,[ 12,[ [ 11,2,2 ] ],c,'ICLASE1',[ [ 12,2 ] ],[ 3 ],'' ]).
  
  
  
 attri_i(3,[ 'ClaseId',int,4,0,'ZZZ9',0,'Clase Id','',0 ]).
-attri_i(14,[ 'ActividadTipo',char,20,0,'',0,'Actividad Tipo','',0 ]).
 attri_i(13,[ 'ActividadDescripcion',char,20,0,'',0,'Actividad Descripcion','',0 ]).
 attri_i(17,[ 'ProfesorFoto',bits,4,0,'',0,'Profesor Foto','',0 ]).
 attri_i(16,[ 'ProfesorDireccion',svchar,1024,0,'',0,'Profesor Direccion','',0 ]).
@@ -234,9 +245,11 @@ attri_i(15,[ 'ProfesorNombre',char,20,0,'',0,'Profesor Nombre','',0 ]).
 attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
 attri_i(2,[ 'ProfesorId',int,4,0,'ZZZ9',0,'Profesor Id','',0 ]).
 attri_i(40000,[ 'ProfesorFoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'','',14 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
+attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'','',16 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
+attri_i('GxBScreen',[ 'Gx_BScreen',int,1,0,'',0,'','',14 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
+attri_i('Actividadid',[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',13 ]).
 attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',12 ]).
 attri_i('Insert_actividadid',[ 'Insert_ActividadId',int,4,0,'ZZZ9',0,'Insert_Actividad Id','',11 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
@@ -245,17 +258,18 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Profesorid',[ 'ProfesorId',int,4,0,'ZZZ9',0,'Profesor Id','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(6,[ 'Clase',[ 3,2 ],'Clase','Clase' ]).
-table_i(1,[ 'Actividad1',[ 1,13,14 ],'Actividad','Actividad1' ]).
-table_i(3,[ 'Profesor',[ 2,15,16,17,40000,1 ],'Profesor','Profesor' ]).
+table_i(12,[ 'Clase',[ 3,2 ],'Clase','Clase' ]).
+table_i(1,[ 'Actividad1',[ 1,13 ],'Actividad','Actividad1' ]).
+table_i(11,[ 'Profesor',[ 2,15,16,17,40000,1 ],'Profesor','Profesor' ]).
  
-index_i(3,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
+index_i(11,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
 index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
-index_i(6,[ 'ICLASE',u,[ 3 ],'IClase' ]).
-index_i(6,[ 'ICLASE1',d,[ 2 ],'IClase1' ]).
+index_i(12,[ 'ICLASE',u,[ 3 ],'IClase' ]).
+index_i(12,[ 'ICLASE1',d,[ 2 ],'IClase1' ]).
  
  
  
+function_i(11,2,yes,udp,o(1,'UltimoIdProfesor'),[],0,2,[ [] ]).
  
  
  
@@ -267,9 +281,9 @@ index_i(6,[ 'ICLASE1',d,[ 2 ],'IClase1' ]).
  
 add_att_i(bits,2,40000,17,'ProfesorFoto_GXI',[ svchar,2048,0,0 ]).
  
-upd_i(3,3,i,[ [ 2,15,16,17,40000,1 ],[],'IPROFESOR',[ [ [],2,2 ] ] ]).
-upd_i(3,3,u,[ [ 15,16,17,40000,1 ],[],'IPROFESOR',[] ]).
-upd_i(3,3,d,[ [],[],'IPROFESOR',[] ]).
+upd_i(11,11,i,[ [ 2,15,16,17,40000,1 ],[],'IPROFESOR',[ [ [],2,2 ] ] ]).
+upd_i(11,11,u,[ [ 15,16,17,40000,1 ],[],'IPROFESOR',[] ]).
+upd_i(11,11,d,[ [],[],'IPROFESOR',[] ]).
  
  
  
@@ -394,20 +408,15 @@ html_sub_i(55,56,html_i(0,div(56))).
 html_sub_i(56,57,html_i(0,div(57))).
 html_sub_i(57,58,html_i(0,div(58))).
 html_sub_i(58,59,html_i(0,t(13,2))).
-html_sub_i(15,60,html_i(7,div(60))).
+html_sub_i(3,60,html_i(2,div(60))).
 html_sub_i(60,61,html_i(0,div(61))).
 html_sub_i(61,62,html_i(0,div(62))).
 html_sub_i(62,63,html_i(0,div(63))).
-html_sub_i(63,64,html_i(0,t(14,2))).
-html_sub_i(3,65,html_i(2,div(65))).
-html_sub_i(65,66,html_i(0,div(66))).
-html_sub_i(66,67,html_i(0,div(67))).
-html_sub_i(67,68,html_i(0,div(68))).
-html_sub_i(68,69,html_i(0,button('Enter'))).
-html_sub_i(67,70,html_i(1,div(70))).
-html_sub_i(70,71,html_i(0,button('Cancel'))).
-html_sub_i(67,72,html_i(2,div(72))).
-html_sub_i(72,73,html_i(0,button('Delete'))).
+html_sub_i(63,64,html_i(0,button('Enter'))).
+html_sub_i(62,65,html_i(1,div(65))).
+html_sub_i(65,66,html_i(0,button('Cancel'))).
+html_sub_i(62,67,html_i(2,div(67))).
+html_sub_i(67,68,html_i(0,button('Delete'))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
@@ -424,9 +433,7 @@ html_tags_i(52,'data-gx-att','att:1').
 html_tags_i(54,'data-gx-att','att:1').
 html_tags_i(57,'data-gx-att','att:13').
 html_tags_i(59,'data-gx-att','att:13').
-html_tags_i(62,'data-gx-att','att:14').
-html_tags_i(64,'data-gx-att','att:14').
-html_tags_i(67,'data-gx-actiongroup-type',toolbar).
+html_tags_i(62,'data-gx-actiongroup-type',toolbar).
  
 html_comp_i(12,'Backcolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -1060,15 +1067,15 @@ html_comp_i(60,'Semanticcontent',div,d,[ str ]).
 html_comp_i(60,'Align',left,d,[ str ]).
 html_comp_i(60,'Valign',top,d,[ str ]).
 html_comp_i(61,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(61,'Class','col-xs-12 FormCell',v,[ str ]).
+html_comp_i(61,'Class','col-xs-12',v,[ str ]).
 html_comp_i(61,'Id','',d,[ str ]).
 html_comp_i(61,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(61,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(61,'Semanticcontent',div,d,[ str ]).
-html_comp_i(61,'Align',left,d,[ str ]).
+html_comp_i(61,'Align','Center',v,[ str ]).
 html_comp_i(61,'Valign',top,d,[ str ]).
 html_comp_i(62,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(62,'Class','form-group gx-form-group',v,[ str ]).
+html_comp_i(62,'Class','gx-action-group Confirm',v,[ str ]).
 html_comp_i(62,'Id','',d,[ str ]).
 html_comp_i(62,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(62,'Width',measure(0,px),d,[ measure ]).
@@ -1076,7 +1083,7 @@ html_comp_i(62,'Semanticcontent',div,d,[ str ]).
 html_comp_i(62,'Align',left,d,[ str ]).
 html_comp_i(62,'Valign',top,d,[ str ]).
 html_comp_i(63,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(63,'Class','col-sm-9 gx-attribute',v,[ str ]).
+html_comp_i(63,'Class','gx-button',v,[ str ]).
 html_comp_i(63,'Id','',d,[ str ]).
 html_comp_i(63,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(63,'Width',measure(0,px),d,[ measure ]).
@@ -1084,40 +1091,19 @@ html_comp_i(63,'Semanticcontent',div,d,[ str ]).
 html_comp_i(63,'Align',left,d,[ str ]).
 html_comp_i(63,'Valign',top,d,[ str ]).
 html_comp_i(64,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(64,'Colcount',20,d,[ num ]).
-html_comp_i(64,'Attid',14,v,[ num ]).
-html_comp_i(64,'Class','Attribute',v,[ str ]).
-html_comp_i(64,'Controlname','Actividadtipo',d,[ str ]).
-html_comp_i(64,'Returnonclick',0,v,[ bool ]).
-html_comp_i(64,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
-html_comp_i(64,'Captionposition','Left',v,[ str ]).
-html_comp_i(64,'Captionvalue','Actividad Tipo',d,[ str ]).
-html_comp_i(64,'Layoutclass','col-sm-9',v,[ str ]).
-html_comp_i(64,'Controltype',2,d,[ num ]).
-html_comp_i(64,'Inputtype',0,d,[ num ]).
-html_comp_i(64,'Editautocomplete',0,d,[ num ]).
-html_comp_i(64,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(64,'Autocapitalization','FirstWord',d,[ str ]).
-html_comp_i(64,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(64,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(64,'Readonly',0,v,[ bool ]).
-html_comp_i(64,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(64,'Ispassword',0,d,[ bool ]).
-html_comp_i(64,'Autoresize',-1,d,[ bool ]).
-html_comp_i(64,'Gxwidth',measure(20,chr),d,[ measure ]).
-html_comp_i(64,'Gxheight',measure(1,row),d,[ measure ]).
-html_comp_i(64,'Ismultiline',0,d,[ bool ]).
-html_comp_i(64,'Maxtextnumberlines',0,d,[ num ]).
-html_comp_i(64,'Fill',-1,d,[ bool ]).
-html_comp_i(64,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(64,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(64,'Font',font('Arial',10,[]),d,[ font ]).
-html_comp_i(64,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(64,'Gxformat',0,d,[ num ]).
-html_comp_i(64,'Title','',d,[ str ]).
-html_comp_i(64,'Invitemsg','',v,[ str ]).
+html_comp_i(64,'Controlname','Btn_enter',v,[ str ]).
+html_comp_i(64,'Class','BtnEnter',v,[ str ]).
+html_comp_i(64,'Event','Enter',v,[ str ]).
+html_comp_i(64,'Caption','Confirm',d,[ str ]).
+html_comp_i(64,'Title','Confirm',d,[ str ]).
+html_comp_i(64,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(64,'Forecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(64,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(64,'Border','2',d,[ str ]).
+html_comp_i(64,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(64,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(65,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(65,'Class',row,v,[ str ]).
+html_comp_i(65,'Class','gx-button',v,[ str ]).
 html_comp_i(65,'Id','',d,[ str ]).
 html_comp_i(65,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(65,'Width',measure(0,px),d,[ measure ]).
@@ -1125,15 +1111,19 @@ html_comp_i(65,'Semanticcontent',div,d,[ str ]).
 html_comp_i(65,'Align',left,d,[ str ]).
 html_comp_i(65,'Valign',top,d,[ str ]).
 html_comp_i(66,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(66,'Class','col-xs-12',v,[ str ]).
-html_comp_i(66,'Id','',d,[ str ]).
-html_comp_i(66,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(66,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(66,'Semanticcontent',div,d,[ str ]).
-html_comp_i(66,'Align','Center',v,[ str ]).
-html_comp_i(66,'Valign',top,d,[ str ]).
+html_comp_i(66,'Controlname','Btn_cancel',v,[ str ]).
+html_comp_i(66,'Class','BtnCancel',v,[ str ]).
+html_comp_i(66,'Event','Cancel',v,[ str ]).
+html_comp_i(66,'Caption','Cancel',d,[ str ]).
+html_comp_i(66,'Title','Cancel',d,[ str ]).
+html_comp_i(66,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(66,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(66,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(66,'Border','2',d,[ str ]).
+html_comp_i(66,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(66,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(67,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(67,'Class','gx-action-group Confirm',v,[ str ]).
+html_comp_i(67,'Class','gx-button',v,[ str ]).
 html_comp_i(67,'Id','',d,[ str ]).
 html_comp_i(67,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(67,'Width',measure(0,px),d,[ measure ]).
@@ -1141,65 +1131,17 @@ html_comp_i(67,'Semanticcontent',div,d,[ str ]).
 html_comp_i(67,'Align',left,d,[ str ]).
 html_comp_i(67,'Valign',top,d,[ str ]).
 html_comp_i(68,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(68,'Class','gx-button',v,[ str ]).
-html_comp_i(68,'Id','',d,[ str ]).
-html_comp_i(68,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(68,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(68,'Semanticcontent',div,d,[ str ]).
-html_comp_i(68,'Align',left,d,[ str ]).
-html_comp_i(68,'Valign',top,d,[ str ]).
-html_comp_i(69,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(69,'Controlname','Btn_enter',v,[ str ]).
-html_comp_i(69,'Class','BtnEnter',v,[ str ]).
-html_comp_i(69,'Event','Enter',v,[ str ]).
-html_comp_i(69,'Caption','Confirm',d,[ str ]).
-html_comp_i(69,'Title','Confirm',d,[ str ]).
-html_comp_i(69,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(69,'Forecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(69,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(69,'Border','2',d,[ str ]).
-html_comp_i(69,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(69,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(70,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(70,'Class','gx-button',v,[ str ]).
-html_comp_i(70,'Id','',d,[ str ]).
-html_comp_i(70,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(70,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(70,'Semanticcontent',div,d,[ str ]).
-html_comp_i(70,'Align',left,d,[ str ]).
-html_comp_i(70,'Valign',top,d,[ str ]).
-html_comp_i(71,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(71,'Controlname','Btn_cancel',v,[ str ]).
-html_comp_i(71,'Class','BtnCancel',v,[ str ]).
-html_comp_i(71,'Event','Cancel',v,[ str ]).
-html_comp_i(71,'Caption','Cancel',d,[ str ]).
-html_comp_i(71,'Title','Cancel',d,[ str ]).
-html_comp_i(71,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(71,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(71,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(71,'Border','2',d,[ str ]).
-html_comp_i(71,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(71,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(72,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(72,'Class','gx-button',v,[ str ]).
-html_comp_i(72,'Id','',d,[ str ]).
-html_comp_i(72,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(72,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(72,'Semanticcontent',div,d,[ str ]).
-html_comp_i(72,'Align',left,d,[ str ]).
-html_comp_i(72,'Valign',top,d,[ str ]).
-html_comp_i(73,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(73,'Controlname','Btn_delete',v,[ str ]).
-html_comp_i(73,'Class','BtnDelete',v,[ str ]).
-html_comp_i(73,'Event','Delete',v,[ str ]).
-html_comp_i(73,'Caption','Delete',d,[ str ]).
-html_comp_i(73,'Title','Delete',d,[ str ]).
-html_comp_i(73,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(73,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(73,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(73,'Border','2',d,[ str ]).
-html_comp_i(73,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(73,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(68,'Controlname','Btn_delete',v,[ str ]).
+html_comp_i(68,'Class','BtnDelete',v,[ str ]).
+html_comp_i(68,'Event','Delete',v,[ str ]).
+html_comp_i(68,'Caption','Delete',d,[ str ]).
+html_comp_i(68,'Title','Delete',d,[ str ]).
+html_comp_i(68,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(68,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(68,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(68,'Border','2',d,[ str ]).
+html_comp_i(68,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(68,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
@@ -1260,23 +1202,18 @@ lit_i(58,1,div(58),[ ctlname('') ]).
 lit_i(57,1,div(57),[ ctlname('') ]).
 lit_i(56,1,div(56),[ ctlname('') ]).
 lit_i(55,1,div(55),[ ctlname('') ]).
-lit_i(64,1,t(14,2),[ ctlname(14),ctrltype(edit,64),pos(64),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(63,1,div(63),[ ctlname('') ]).
-lit_i(62,1,div(62),[ ctlname('') ]).
-lit_i(61,1,div(61),[ ctlname('') ]).
-lit_i(60,1,div(60),[ ctlname('') ]).
 lit_i(15,1,div(15),[ ctlname('Formcontainer') ]).
 lit_i(14,1,div(14),[ ctlname('') ]).
 lit_i(13,1,div(13),[ ctlname('') ]).
-lit_i(69,1,button('Enter'),[ ctlname('Btn_enter'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(68,1,div(68),[ ctlname('') ]).
-lit_i(71,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(70,1,div(70),[ ctlname('') ]).
-lit_i(73,1,button('Delete'),[ ctlname('Btn_delete'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(72,1,div(72),[ ctlname('') ]).
-lit_i(67,1,div(67),[ ctlname('') ]).
-lit_i(66,1,div(66),[ ctlname('') ]).
+lit_i(64,1,button('Enter'),[ ctlname('Btn_enter'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(63,1,div(63),[ ctlname('') ]).
+lit_i(66,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(65,1,div(65),[ ctlname('') ]).
+lit_i(68,1,button('Delete'),[ ctlname('Btn_delete'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(67,1,div(67),[ ctlname('') ]).
+lit_i(62,1,div(62),[ ctlname('') ]).
+lit_i(61,1,div(61),[ ctlname('') ]).
+lit_i(60,1,div(60),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
@@ -1288,7 +1225,9 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+calling_main_i(13,8).
  
+att_prop_i(2,2,'HORIZONTAL_DESCRIPTION','Profesor Id',d).
 att_prop_i(2,2,'ExternalName','ProfesorId',d).
 att_prop_i(2,2,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,2,'EmptyAsNull','Yes',d).
@@ -1298,6 +1237,7 @@ att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,2,'AttRegEx','',d).
 att_prop_i(2,2,'AttValidationFailedMsg','',d).
 att_prop_i(2,2,'FullName','ProfesorId',v).
+att_prop_i(2,15,'HORIZONTAL_DESCRIPTION','Profesor Nombre',d).
 att_prop_i(2,15,'ExternalName','ProfesorNombre',d).
 att_prop_i(2,15,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,15,'EmptyAsNull','Yes',d).
@@ -1307,6 +1247,7 @@ att_prop_i(2,15,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,15,'AttRegEx','',d).
 att_prop_i(2,15,'AttValidationFailedMsg','',d).
 att_prop_i(2,15,'FullName','ProfesorNombre',v).
+att_prop_i(2,16,'HORIZONTAL_DESCRIPTION','Profesor Direccion',d).
 att_prop_i(2,16,'ExternalName','ProfesorDireccion',d).
 att_prop_i(2,16,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,16,'EmptyAsNull','Yes',d).
@@ -1316,6 +1257,7 @@ att_prop_i(2,16,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,16,'AttRegEx','',d).
 att_prop_i(2,16,'AttValidationFailedMsg','',d).
 att_prop_i(2,16,'FullName','ProfesorDireccion',v).
+att_prop_i(2,17,'HORIZONTAL_DESCRIPTION','Profesor Foto',d).
 att_prop_i(2,17,'ExternalName','ProfesorFoto',d).
 att_prop_i(2,17,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,17,'EmptyAsNull','Yes',d).
@@ -1325,6 +1267,7 @@ att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,17,'AttRegEx','',d).
 att_prop_i(2,17,'AttValidationFailedMsg','',d).
 att_prop_i(2,17,'FullName','ProfesorFoto',v).
+att_prop_i(2,1,'HORIZONTAL_DESCRIPTION','Actividad Id',d).
 att_prop_i(2,1,'ExternalName','ActividadId',d).
 att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,1,'EmptyAsNull','Yes',d).
@@ -1334,6 +1277,7 @@ att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,1,'AttRegEx','',d).
 att_prop_i(2,1,'AttValidationFailedMsg','',d).
 att_prop_i(2,1,'FullName','ActividadId',v).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Actividad Descripcion',d).
 att_prop_i(2,13,'ExternalName','ActividadDescripcion',d).
 att_prop_i(2,13,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,13,'EmptyAsNull','Yes',d).
@@ -1343,15 +1287,7 @@ att_prop_i(2,13,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,13,'AttRegEx','',d).
 att_prop_i(2,13,'AttValidationFailedMsg','',d).
 att_prop_i(2,13,'FullName','ActividadDescripcion',v).
-att_prop_i(2,14,'ExternalName','ActividadTipo',d).
-att_prop_i(2,14,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,14,'EmptyAsNull','Yes',d).
-att_prop_i(2,14,idBasedOn,'',d).
-att_prop_i(2,14,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,14,'DB_NLS_SUPPORT','No',d).
-att_prop_i(2,14,'AttRegEx','',d).
-att_prop_i(2,14,'AttValidationFailedMsg','',d).
-att_prop_i(2,14,'FullName','ActividadTipo',v).
+att_prop_i(2,3,'HORIZONTAL_DESCRIPTION','Clase Id',d).
 att_prop_i(2,3,'ExternalName','ClaseId',d).
 att_prop_i(2,3,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,3,'EmptyAsNull','Yes',d).
@@ -1371,32 +1307,32 @@ att_prop_i(2,40000,'AttRegEx','',d).
 att_prop_i(2,40000,'AttValidationFailedMsg','',d).
 att_prop_i(2,40000,'FullName','',v).
  
-tbl_prop_i(2,6,'AllDirSuper',[ [ 3,[ 2 ] ] ],v).
-tbl_prop_i(2,3,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,1,'DirSubor',[ [ 3,[ 1 ] ] ],v).
-tbl_prop_i(2,3,'DirSubor',[ [ 6,[ 2 ] ] ],v).
-tbl_prop_i(2,6,'DirSuper',[ [ 3,[ 2 ] ] ],v).
-tbl_prop_i(2,3,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,12,'AllDirSuper',[ [ 11,[ 2 ] ] ],v).
+tbl_prop_i(2,11,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 11,[ 1 ] ] ],v).
+tbl_prop_i(2,11,'DirSubor',[ [ 12,[ 2 ] ] ],v).
+tbl_prop_i(2,12,'DirSuper',[ [ 11,[ 2 ] ] ],v).
+tbl_prop_i(2,11,'DirSuper',[ [ 1,[ 1 ] ] ],v).
  
-tbl_att_prop_i(2,3,2,'AllowNulls',n).
-tbl_att_prop_i(2,3,15,'AllowNulls',n).
-tbl_att_prop_i(2,3,16,'AllowNulls',n).
-tbl_att_prop_i(2,3,17,'AllowNulls',n).
-tbl_att_prop_i(2,3,40000,'AllowNulls',n).
-tbl_att_prop_i(2,3,1,'AllowNulls',n).
+tbl_att_prop_i(2,11,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,15,'AllowNulls',n).
+tbl_att_prop_i(2,11,16,'AllowNulls',n).
+tbl_att_prop_i(2,11,17,'AllowNulls',n).
+tbl_att_prop_i(2,11,40000,'AllowNulls',n).
+tbl_att_prop_i(2,11,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,13,'AllowNulls',n).
-tbl_att_prop_i(2,1,14,'AllowNulls',n).
-tbl_att_prop_i(2,6,3,'AllowNulls',n).
-tbl_att_prop_i(2,6,2,'AllowNulls',n).
+tbl_att_prop_i(2,12,3,'AllowNulls',n).
+tbl_att_prop_i(2,12,2,'AllowNulls',n).
  
 var_prop_i(2,'Profesorid',idBasedOn,'',v).
 var_prop_i(2,'Insert_actividadid',idBasedOn,'',v).
+var_prop_i(2,'Actividadid',idBasedOn,'',v).
  
  
  
  
-trn_level_i(3,[ [ 2,15,16,17,40000,1,13,14 ],'Profesor','Profesor','Profesor','',15 ]).
+trn_level_i(11,[ [ 2,15,16,17,40000,1,13 ],'Profesor','Profesor','Profesor','',15 ]).
  
 struct_dt_i([ 26,45,0 ],name,'TransactionContext').
 struct_dt_i([ 26,45,0 ],namespace,'ObligatorioGenexusGit').
@@ -1517,6 +1453,8 @@ struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
 struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
 struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
  
  
  
@@ -1525,14 +1463,17 @@ struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
 sub_info_i(146,'Start',1,23,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext','Insert_actividadid','GXV1','Trncontextatt' ] ]).
 sub_info_i(146,'After Trn',25,36,[ [ 'Mode','Trncontext' ],[] ]).
  
-pgm_parm_i(web,0,'GX0010',[ [ int,4,0,0 ] ],[ [ 'V1',out,[] ] ]).
+pgm_parm_i(web,32,'GX0010',[ [ int,4,0,0 ] ],[ [ pActividadId,out,[] ] ]).
 pgm_parm_i(web,21,'WWPROFESOR',[],[]).
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(proc,17,'ULTIMOIDPROFESOR',[ [ int,4,0,0 ] ],[ [ 'Id',out,[] ] ]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(trn,2,'PROFESOR','INTERNAL').
+pgm_callprotocol_i(web,32,'GX0010','INTERNAL').
 pgm_callprotocol_i(web,21,'WWPROFESOR','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
+pgm_callprotocol_i(proc,17,'ULTIMOIDPROFESOR','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').
  
  

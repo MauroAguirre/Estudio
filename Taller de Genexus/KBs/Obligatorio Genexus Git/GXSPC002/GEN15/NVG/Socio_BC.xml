@@ -1,0 +1,184 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Socio_BC</ObjName>
+<ObjDesc>Socio</ObjDesc>
+<ObjPgmName>Socio_BC</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0189</MsgCode>
+<Message>
+<Token>Rule '</Token>
+<Token>default( SocioMonto, 2500 ) </Token>
+<Token>' has no effect.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>4</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules>
+<ActionType>BusinessRule</ActionType>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>12</ObjId>
+<ObjName>IngresarCarneAuto</ObjName>
+<ObjPgmName>IngresarCarneAuto</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>SocioDireccion</AttriName>
+<Description>Socio Direccion</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>SocioTipoCuota</AttriName>
+<Description>Socio Tipo Cuota</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>SocioFoto</AttriName>
+<Description>Socio Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>SocioFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>SocioDireccion</AttriName>
+<Description>Socio Direccion</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>SocioTipoCuota</AttriName>
+<Description>Socio Tipo Cuota</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>SocioFoto</AttriName>
+<Description>Socio Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>SocioFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

@@ -2,7 +2,7 @@
                File: ProfesorClaseWC
         Description: Profesor Clase WC
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:10.89
+       Generated on: 4/12/2019 21:1:36.11
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -298,7 +298,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?2019322191110", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194122113614", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -391,7 +391,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("profesorclasewc.js", "?2019322191112", false);
+            context.AddJavascriptSource("profesorclasewc.js", "?20194122113614", false);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -1555,7 +1555,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221911144", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194122113644", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1572,7 +1572,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("profesorclasewc.js", "?20193221911144", false);
+            context.AddJavascriptSource("profesorclasewc.js", "?20194122113644", false);
          }
          /* End function include_jscripts */
       }

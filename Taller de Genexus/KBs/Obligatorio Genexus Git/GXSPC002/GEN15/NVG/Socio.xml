@@ -10,7 +10,13 @@
 <ObjPgmName>Socio</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings></Warnings>
+<Warnings>
+<Warning>
+<MsgCode>spc0189</MsgCode>
+<Message>
+<Token>Rule '</Token>
+<Token>default( SocioMonto, 2500 ) </Token>
+<Token>' has no effect.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -48,12 +54,34 @@
 <AttriId>5</AttriId>
 <AttriName>SocioId</AttriName>
 <Description>Socio Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas>
 <DynamicLoads></DynamicLoads>
-<Rules></Rules>
+<Rules>
+<ActionType>BusinessRule</ActionType>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>12</ObjId>
+<ObjName>IngresarCarneAuto</ObjName>
+<ObjPgmName>IngresarCarneAuto</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Rules>
 <AfterAttributeRules></AfterAttributeRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
@@ -81,9 +109,9 @@
 <AttriName>SocioEdad</AttriName>
 <Description>Socio Edad</Description></Attribute>
 <Attribute>
-<AttriId>23</AttriId>
-<AttriName>SocioTipo</AttriName>
-<Description>Socio Tipo</Description></Attribute>
+<AttriId>33</AttriId>
+<AttriName>SocioTipoCuota</AttriName>
+<Description>Socio Tipo Cuota</Description></Attribute>
 <Attribute>
 <AttriId>24</AttriId>
 <AttriName>SocioReconocido</AttriName>
@@ -95,7 +123,11 @@
 <Attribute>
 <AttriId>40000</AttriId>
 <AttriName>SocioFoto.Uri  </AttriName>
-<Description></Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>4</TableId>
@@ -116,9 +148,9 @@
 <AttriName>SocioEdad</AttriName>
 <Description>Socio Edad</Description></Attribute>
 <Attribute>
-<AttriId>23</AttriId>
-<AttriName>SocioTipo</AttriName>
-<Description>Socio Tipo</Description></Attribute>
+<AttriId>33</AttriId>
+<AttriName>SocioTipoCuota</AttriName>
+<Description>Socio Tipo Cuota</Description></Attribute>
 <Attribute>
 <AttriId>24</AttriId>
 <AttriName>SocioReconocido</AttriName>
@@ -130,7 +162,11 @@
 <Attribute>
 <AttriId>40000</AttriId>
 <AttriName>SocioFoto.Uri  </AttriName>
-<Description></Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>4</TableId>
@@ -143,19 +179,9 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>5</TableId>
-<TableName>Carne</TableName>
-<Description>Carne</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></KeyAttributes></Table>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description>
 <RecordsToRead>one</RecordsToRead>
 <KeyAttributes>
 <Attribute>
@@ -165,4 +191,24 @@
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>49</ObjId>
+<ObjName>Gx00E0</ObjName>
+<ObjPgmName>Gx00E0</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

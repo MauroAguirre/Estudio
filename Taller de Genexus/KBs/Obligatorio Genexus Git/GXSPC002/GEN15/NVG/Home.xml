@@ -9,7 +9,7 @@
 <ObjDesc>Home</ObjDesc>
 <ObjPgmName>Home</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Main>Yes</Main>

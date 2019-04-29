@@ -1,0 +1,6 @@
+{ 
+    "Resources" : [ { 
+        "IsDefault" : true,
+        "ResourceFile" : "Images_DEFAULT.json"
+    } ]
+}

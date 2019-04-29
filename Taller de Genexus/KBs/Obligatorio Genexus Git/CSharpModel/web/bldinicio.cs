@@ -69,7 +69,27 @@ public class bldinicio : GxBaseBuilder
             return true;
          if (checkTime(obj, cs_path + @"\type_SdtCarne.cs" ))
             return true;
+         if (checkTime(obj, cs_path + @"\type_SdtCarnet.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtActividad.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtActividad_SocioEnActividad.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtClase.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtClase_Socios.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtProfesor.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\type_SdtSocio.cs" ))
+            return true;
          if (checkTime(obj, cs_path + @"\GXDOMAINPage.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINTipoCuota.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINSexo.cs" ))
+            return true;
+         if (checkTime(obj, cs_path + @"\GXDOMAINGoogleChartType.cs" ))
             return true;
       }
       if ( obj == @"bin\messages.eng.dll" )

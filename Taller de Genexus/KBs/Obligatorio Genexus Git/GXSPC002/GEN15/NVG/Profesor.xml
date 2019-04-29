@@ -30,15 +30,15 @@
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
-<LevelNumber>3</LevelNumber>
+<LevelNumber>11</LevelNumber>
 <BaseTable>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table></BaseTable>
 <NavigationTree>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description>
 <Updated>Yes</Updated>
@@ -70,7 +70,7 @@
 <TablesToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table>
 <TableAction>insert</TableAction>
@@ -101,7 +101,7 @@
 <Description>Actividad Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table>
 <TableAction>update</TableAction>
@@ -128,7 +128,7 @@
 <Description>Actividad Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table>
 <TableAction>delete</TableAction>
@@ -138,7 +138,7 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description>
 <RecordsToRead>one</RecordsToRead>
@@ -156,8 +156,13 @@
 <TableId>1</TableId>
 <TableName>Actividad1</TableName>
 <Description>Actividad</Description></Table>
-<ProgramName>
-<Token>Gx0010</Token></ProgramName>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>32</ObjId>
+<ObjName>Gx0010</ObjName>
+<ObjPgmName>Gx0010</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
 <InputParameters></InputParameters>
 <OutputParameters>
 <Attribute>

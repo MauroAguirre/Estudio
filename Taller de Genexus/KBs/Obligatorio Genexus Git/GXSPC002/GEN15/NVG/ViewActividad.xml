@@ -9,7 +9,7 @@
 <ObjDesc>View Actividad</ObjDesc>
 <ObjPgmName>ViewActividad</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

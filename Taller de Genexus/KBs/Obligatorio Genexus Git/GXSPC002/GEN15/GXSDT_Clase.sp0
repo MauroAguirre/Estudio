@@ -1,0 +1,138 @@
+ 
+spec_i([ sdt,[ 0,4,0 ],'Clase','Clase',0,eng,'15_0_12-126726' ]).
+ 
+struct_dt_i([ 0,4,0 ],name,'Clase').
+struct_dt_i([ 0,4,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,4,0 ],significantName,'Clase').
+struct_dt_i([ 0,4,0 ],'ObjName','Clase').
+struct_dt_i([ 0,4,0 ],'ObjDesc','Clase').
+struct_dt_i([ 0,4,0 ],'ExternalName','Clase').
+struct_dt_i([ 0,4,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,4,0 ],key,[ 3 ]).
+struct_dt_i([ 0,4,0 ],lvl,12).
+struct_dt_i([ 0,4,[ 3,5 ] ],name,'Socios').
+struct_dt_i([ 0,4,[ 3,5 ] ],namespace,'ObligatorioGenexusGit.Clase').
+struct_dt_i([ 0,4,[ 3,5 ] ],lvl,13).
+struct_dt_i([ 0,4,0 ],fullname,'Clase').
+struct_dt_i([ 0,4,[ 3,5 ] ],fullname,'Clase.Socios').
+ 
+struct_dt_elem_i([ 0,4,0 ],1,name,'Claseid').
+struct_dt_elem_i([ 0,4,0 ],1,camelname,'ClaseId').
+struct_dt_elem_i([ 0,4,0 ],1,length,4).
+struct_dt_elem_i([ 0,4,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],1,sign,0).
+struct_dt_elem_i([ 0,4,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,4,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],1,attributeid,'3').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalName','ClaseId').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,0 ],2,name,'Actividadid').
+struct_dt_elem_i([ 0,4,0 ],2,camelname,'ActividadId').
+struct_dt_elem_i([ 0,4,0 ],2,length,4).
+struct_dt_elem_i([ 0,4,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],2,sign,0).
+struct_dt_elem_i([ 0,4,0 ],2,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,4,0 ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],2,attributeid,'1').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalName','ActividadId').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,0 ],3,name,'Actividaddescripcion').
+struct_dt_elem_i([ 0,4,0 ],3,camelname,'ActividadDescripcion').
+struct_dt_elem_i([ 0,4,0 ],3,length,20).
+struct_dt_elem_i([ 0,4,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],3,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,4,0 ],3,pic,'').
+struct_dt_elem_i([ 0,4,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],3,attributeid,'13').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalName','ActividadDescripcion').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,0 ],4,name,'Profesorid').
+struct_dt_elem_i([ 0,4,0 ],4,camelname,'ProfesorId').
+struct_dt_elem_i([ 0,4,0 ],4,length,4).
+struct_dt_elem_i([ 0,4,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],4,sign,0).
+struct_dt_elem_i([ 0,4,0 ],4,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,4,0 ],4,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],4,attributeid,'2').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalName','ProfesorId').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,0 ],5,name,'Profesornombre').
+struct_dt_elem_i([ 0,4,0 ],5,camelname,'ProfesorNombre').
+struct_dt_elem_i([ 0,4,0 ],5,length,20).
+struct_dt_elem_i([ 0,4,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],5,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,4,0 ],5,pic,'').
+struct_dt_elem_i([ 0,4,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],5,attributeid,'15').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalName','ProfesorNombre').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,0 ],6,name,'Socios').
+struct_dt_elem_i([ 0,4,0 ],6,camelname,'Socios').
+struct_dt_elem_i([ 0,4,0 ],6,type,[ [ 0,4,[ 3,5 ] ],0,0 ]).
+struct_dt_elem_i([ 0,4,0 ],6,pic,'').
+struct_dt_elem_i([ 0,4,0 ],6,collection,'True').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,name,'Socioid').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,camelname,'SocioId').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,length,4).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,decimals,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,sign,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,collection,'False').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,attributeid,'5').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,'ExternalName','SocioId').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,name,'Socioedad').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,camelname,'SocioEdad').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,length,4).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,decimals,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,sign,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,collection,'False').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,attributeid,'20').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,'ExternalName','SocioEdad').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,name,'Sociodireccion').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,camelname,'SocioDireccion').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,basedon,26).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,length,1024).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,decimals,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,type,[ 13,1024,0 ]).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,pic,'').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,collection,'False').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,attributeid,'18').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,'ExternalName','SocioDireccion').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,name,'Sociofoto').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,camelname,'SocioFoto').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,length,4).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,decimals,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,pic,'').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,collection,'False').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,attributeid,'21').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,'ExternalName','SocioFoto').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,name,'Sociofoto_gxi').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,camelname,'SocioFoto_GXI').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,collection,'False').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,isadd,'True').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,length,2048).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,decimals,0).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,4,[ 3,5 ] ],5,attributeid,'40000').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').

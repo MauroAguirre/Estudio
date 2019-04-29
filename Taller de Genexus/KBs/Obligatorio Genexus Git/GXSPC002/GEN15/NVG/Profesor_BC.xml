@@ -1,0 +1,143 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>2</ObjId>
+<ObjName>Profesor_BC</ObjName>
+<ObjDesc>Profesor</ObjDesc>
+<ObjPgmName>Profesor_BC</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>11</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProfesorNombre</AttriName>
+<Description>Profesor Nombre</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProfesorDireccion</AttriName>
+<Description>Profesor Direccion</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProfesorFoto</AttriName>
+<Description>Profesor Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>ProfesorFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProfesorNombre</AttriName>
+<Description>Profesor Nombre</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProfesorDireccion</AttriName>
+<Description>Profesor Direccion</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProfesorFoto</AttriName>
+<Description>Profesor Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>ProfesorFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>12</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

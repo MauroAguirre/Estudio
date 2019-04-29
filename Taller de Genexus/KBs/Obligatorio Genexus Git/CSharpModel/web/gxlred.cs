@@ -2,7 +2,7 @@
                File: GXLRED
         Description: Load redundancy procedure
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 18:59:45.97
+       Generated on: 4/12/2019 20:37:53.28
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -42,6 +42,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
+         context.SetDefaultTheme("Carmine");
       }
 
       public gxlred( IGxContext context )

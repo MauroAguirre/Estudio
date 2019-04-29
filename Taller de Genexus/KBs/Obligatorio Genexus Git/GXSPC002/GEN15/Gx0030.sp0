@@ -129,7 +129,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','-1')).
 rule_i(0,prop('MasterPage',o(13,'RwdPromptMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('Folder',o(8,'Transacciones'))).
 rule_i(0,prop('ObjDesc','Selection List Profesor')).
 rule_i(0,prop('ObjName','Gx0030')).
 rule_i(0,maingen(15)).

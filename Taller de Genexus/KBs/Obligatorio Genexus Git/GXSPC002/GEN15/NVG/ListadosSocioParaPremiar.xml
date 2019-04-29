@@ -1,0 +1,193 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>31</ObjId>
+<ObjName>ListadosSocioParaPremiar</ObjName>
+<ObjDesc>Listados Socio Para Premiar</ObjDesc>
+<ObjPgmName>ListadosSocioParaPremiar</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0043</MsgCode>
+<Message>
+<Token></Token>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Token> is not instantiated</Token>
+<Token> in group starting at line </Token>
+<Token>4</Token>
+<Token></Token>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0043</MsgCode>
+<Message>
+<Token></Token>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute>
+<Token> is not instantiated</Token>
+<Token> in group starting at line </Token>
+<Token>4</Token>
+<Token></Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>File</Device></OutputDevices>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>7</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ISOCIO</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Token>FALSE</Token></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>9</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICARNET</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>@CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>@CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>CarnetFechaIngreso</AttriName>
+<Description>Carnet Fecha Ingreso</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable>
+<Token>.</Token>
+<Token>addyears(</Token>
+<Sp></Sp>
+<Token>-10</Token>
+<Token>)</Token></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>CarnetFechaIngreso</AttriName>
+<Description>Carnet Fecha Ingreso</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

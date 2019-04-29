@@ -18,8 +18,9 @@ las_i(2,[ [] ]).
 lac_i(2,[ [] ]).
  
  
+lits_i('El club deportivo los invita a formar parte de sus actividades variadas en compañia de nuestros profesores. Cuenta con varias actividades al aire libre como también en nuestras instalaciones. Con nuestra amplia trayectoria podemos asegurar sus objetivos.',5,10).
  
-cls_i([ 25,80 ],[ 0,0 ]).
+cls_i([ 5,10 ],[ 5,263 ]).
  
  
  
@@ -114,7 +115,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('Folder',o(8,'Menus'))).
 rule_i(0,prop('ObjDesc','Inicio')).
 rule_i(0,prop('ObjName','Inicio')).
 rule_i(0,maingen(15)).
@@ -182,7 +183,7 @@ b_line_i(5,2,2,cmd,1,[ t('',146,1,0),t('''Profesores''',3,5,7) ]).
 b_line_i(6,2,3,cmd,1,[ t('',104,1,0),t(o(13,'WWProfesor'),28,1,2) ]).
 b_line_i(7,2,3,cmd,1,[ t('',147,1,0) ]).
 b_line_i(9,2,3,cmd,1,[ t('',146,1,0),t('''Carne''',3,9,7) ]).
-b_line_i(10,2,4,cmd,1,[ t('',104,1,0),t(o(13,'WWCarne'),28,1,2) ]).
+b_line_i(10,2,4,cmd,1,[ t('',104,1,0),t(o(13,'WWCarnet'),28,1,2) ]).
 b_line_i(11,2,4,cmd,1,[ t('',147,1,0) ]).
 b_line_i(13,2,4,cmd,1,[ t('',146,1,0),t('''Actividad''',3,13,7) ]).
 b_line_i(14,2,5,cmd,1,[ t('',104,1,0),t(o(13,'WWActividad'),28,1,2) ]).
@@ -207,108 +208,35 @@ b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
  
  
  
-html_i(2,html('<p></p>')).
-html_i(3,table(3)).
+html_i(2,div(2)).
+html_i(4,html('<p></p>')).
  
-html_sub_i(3,0,html_i(0,html('<tbody>'))).
-html_sub_i(3,4,html_i(1,row(4))).
-html_sub_i(4,5,html_i(0,cell(5))).
-html_sub_i(5,6,html_i(0,button('''Profesores'''))).
-html_sub_i(4,7,html_i(1,cell(7))).
-html_sub_i(7,8,html_i(0,button('''clase'''))).
-html_sub_i(4,9,html_i(2,cell(9))).
-html_sub_i(9,10,html_i(0,button('''Carne'''))).
-html_sub_i(3,11,html_i(2,row(11))).
-html_sub_i(11,12,html_i(0,cell(12))).
-html_sub_i(12,13,html_i(0,button('''Actividad'''))).
-html_sub_i(11,14,html_i(1,cell(14))).
-html_sub_i(14,15,html_i(0,button('''Socio'''))).
-html_sub_i(11,16,html_i(2,cell(16))).
-html_sub_i(3,17,html_i(3,row(17))).
-html_sub_i(17,18,html_i(0,cell(18))).
-html_sub_i(17,19,html_i(1,cell(19))).
-html_sub_i(17,20,html_i(2,cell(20))).
-html_sub_i(3,0,html_i(4,html('</tbody>'))).
+html_sub_i(2,0,html_i(0,html('<p>'))).
+html_sub_i(2,3,html_i(1,t('El club deportivo los invita a formar parte de sus actividades variadas en compañia de nuestros profesores. Cuenta con varias actividades al aire libre como también en nuestras instalaciones. Con nuestra amplia trayectoria podemos asegurar sus objetivos.',3))).
+html_sub_i(2,0,html_i(2,html('</p>'))).
  
 html_tags_i(1,'Class','Form').
  
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',v,[ str ]).
+html_comp_i(2,'Id','Section1',v,[ str ]).
+html_comp_i(2,'Height',measure(363,px),v,[ measure ]).
+html_comp_i(2,'Width',measure(576,px),v,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
 html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(3,'Id','Table1',v,[ str ]).
-html_comp_i(3,'Class','Table',v,[ str ]).
+html_comp_i(3,'Caption','El club deportivo los invita a formar parte de sus actividades variadas en compañia de nuestros profesores. Cuenta con varias actividades al aire libre como también en nuestras instalaciones. Con nuestra amplia trayectoria podemos asegurar sus objetivos.',d,[ str ]).
+html_comp_i(3,'Id','Textblock1',v,[ str ]).
+html_comp_i(3,'Class','TextBlock',d,[ str ]).
+html_comp_i(3,'Event','',d,[ str ]).
+html_comp_i(3,'Returnonclick',0,d,[ bool ]).
+html_comp_i(3,'Gxformat',0,d,[ num ]).
 html_comp_i(3,'Title','',d,[ str ]).
-html_comp_i(3,'Header','',d,[ str ]).
-html_comp_i(3,'Align',left,d,[ str ]).
-html_comp_i(3,'Backgroundgx','',d,[ str ]).
-html_comp_i(3,'Bgcolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(3,'Border','0',d,[ str ]).
-html_comp_i(3,'Bordercolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(3,'Cellpadding','1',d,[ str ]).
-html_comp_i(3,'Cellspacing','2',d,[ str ]).
-html_comp_i(3,'Height',measure(50,'%'),v,[ measure ]).
-html_comp_i(3,'Width',measure(50,'%'),v,[ measure ]).
-html_comp_i(3,'Rules',none,d,[ str ]).
-html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Controlname','Button1',v,[ str ]).
-html_comp_i(6,'Class','Button',d,[ str ]).
-html_comp_i(6,'Event','''Profesores''',v,[ str ]).
-html_comp_i(6,'Caption','Profesores',d,[ str ]).
-html_comp_i(6,'Title','Profesores',d,[ str ]).
-html_comp_i(6,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(6,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(6,'Border','2',d,[ str ]).
-html_comp_i(6,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(6,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(8,'Controlname','Button2',v,[ str ]).
-html_comp_i(8,'Class','Button',d,[ str ]).
-html_comp_i(8,'Event','''clase''',v,[ str ]).
-html_comp_i(8,'Caption','Clase',d,[ str ]).
-html_comp_i(8,'Title','Clase',d,[ str ]).
-html_comp_i(8,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(8,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(8,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(8,'Border','2',d,[ str ]).
-html_comp_i(8,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(8,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(10,'Controlname','Button3',v,[ str ]).
-html_comp_i(10,'Class','Button',d,[ str ]).
-html_comp_i(10,'Event','''Carne''',v,[ str ]).
-html_comp_i(10,'Caption','Carne',d,[ str ]).
-html_comp_i(10,'Title','Carne',d,[ str ]).
-html_comp_i(10,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(10,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(10,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(10,'Border','2',d,[ str ]).
-html_comp_i(10,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(10,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(12,'Height',measure(136,px),v,[ measure ]).
-html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(13,'Controlname','Button4',v,[ str ]).
-html_comp_i(13,'Class','Button',d,[ str ]).
-html_comp_i(13,'Event','''Actividad''',v,[ str ]).
-html_comp_i(13,'Caption','Actividad',d,[ str ]).
-html_comp_i(13,'Title','Actividad',d,[ str ]).
-html_comp_i(13,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(13,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(13,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(13,'Border','2',d,[ str ]).
-html_comp_i(13,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(13,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(15,'Controlname','Button5',v,[ str ]).
-html_comp_i(15,'Class','Button',d,[ str ]).
-html_comp_i(15,'Event','''Socio''',v,[ str ]).
-html_comp_i(15,'Caption','Socio',d,[ str ]).
-html_comp_i(15,'Title','Socio',d,[ str ]).
-html_comp_i(15,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(15,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(15,'Border','2',d,[ str ]).
-html_comp_i(15,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(15,'Buttonborderstyle',standard,d,[ str ]).
-html_comp_i(18,'Height',measure(74,px),v,[ measure ]).
+html_comp_i(3,'Fill',-1,d,[ bool ]).
+html_comp_i(3,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(3,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Font','',d,[ str ]).
  
  
  
@@ -316,12 +244,8 @@ html_comp_i(18,'Height',measure(74,px),v,[ measure ]).
  
  
  
-lit_i(6,1,button('''Profesores'''),[ ctlname('Button1'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(8,1,button('''clase'''),[ ctlname('Button2'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(10,1,button('''Carne'''),[ ctlname('Button3'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(13,1,button('''Actividad'''),[ ctlname('Button4'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(15,1,button('''Socio'''),[ ctlname('Button5'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(3,1,table(3),[ ctlname('Table1') ]).
+lit_i(3,1,t('El club deportivo los invita a formar parte de sus actividades variadas en compañia de nuestros profesores. Cuenta con varias actividades al aire libre como también en nuestras instalaciones. Con nuestra amplia trayectoria podemos asegurar sus objetivos.',3),[ ctlname('Textblock1') ]).
+lit_i(2,1,div(2),[ ctlname('Section1') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
@@ -331,6 +255,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+calling_main_i(13,31).
  
  
  
@@ -354,14 +279,14 @@ sub_info_i(146,'''Socio''',17,19,[ [],[] ]).
  
 pgm_parm_i(web,25,'WWSOCIO',[],[]).
 pgm_parm_i(web,10,'WWACTIVIDAD',[],[]).
-pgm_parm_i(web,15,'WWCARNE',[],[]).
+pgm_parm_i(web,15,'WWCARNET',[],[]).
 pgm_parm_i(web,21,'WWPROFESOR',[],[]).
 pgm_parm_i(web,18,'WWCLASE',[],[]).
  
 pgm_callprotocol_i(web,31,'INICIO','INTERNAL').
 pgm_callprotocol_i(web,25,'WWSOCIO','INTERNAL').
 pgm_callprotocol_i(web,10,'WWACTIVIDAD','INTERNAL').
-pgm_callprotocol_i(web,15,'WWCARNE','INTERNAL').
+pgm_callprotocol_i(web,15,'WWCARNET','INTERNAL').
 pgm_callprotocol_i(web,21,'WWPROFESOR','INTERNAL').
 pgm_callprotocol_i(web,18,'WWCLASE','INTERNAL').
  

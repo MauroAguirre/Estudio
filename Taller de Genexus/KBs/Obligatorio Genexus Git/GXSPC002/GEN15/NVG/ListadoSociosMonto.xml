@@ -1,0 +1,96 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>36</ObjId>
+<ObjName>ListadoSociosMonto</ObjName>
+<ObjDesc>Listado Socios Monto</ObjDesc>
+<ObjPgmName>ListadoSociosMonto</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ISOCIO</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>SocioTipo</AttriName>
+<Description>Socio Tipo</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>SocioReconocido</AttriName>
+<Description>Socio Reconocido</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>SocioFoto</AttriName>
+<Description>Socio Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>SocioFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>SocioEdad</AttriName>
+<Description>Socio Edad</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>SocioDireccion</AttriName>
+<Description>Socio Direccion</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -18,9 +18,9 @@ las_i(5,[ [ 'Pgmname','Trncontext','Insert_socioid','GXV1','Trncontextatt','Mode
 lac_i(5,[ [ 4,22,5 ] ]).
  
  
-lits_i('Carne',5,10).
+lits_i('Carnet',5,10).
  
-cls_i([ 0,0 ],[ 5,14 ]).
+cls_i([ 0,0 ],[ 5,15 ]).
  
 pos_i(4,[ 0,0,0 ]).
 pos_i(22,[ 0,0,0 ]).
@@ -84,9 +84,9 @@ rule_i(0,datastore(1,'NAME','Default')).
 rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
 rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','Public')).
-rule_i(0,prop('FullyQualifiedName','Carne')).
+rule_i(0,prop('FullyQualifiedName','Carnet')).
 rule_i(0,prop('GenerateObject','-1')).
-rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewCarne'))).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewCarnet'))).
 rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
@@ -166,15 +166,15 @@ rule_i(0,prop('WS_Insert','-1')).
 rule_i(0,prop('WS_View','-1')).
 rule_i(0,prop(idISBCWEBSERVICE,'0')).
 rule_i(0,prop('ExternalNamespace','ObligatorioGenexusGit')).
-rule_i(0,prop('ExternalName','Carne')).
+rule_i(0,prop('ExternalName','Carnet')).
 rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop(idBC,'-1')).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Carne')).
-rule_i(0,prop('ObjName','Carne')).
+rule_i(0,prop('Folder',o(8,'Transacciones'))).
+rule_i(0,prop('ObjDesc','Carnet')).
+rule_i(0,prop('ObjName','Carnet')).
 rule_i(5,prompt([ 4,[ [ 5,5,5 ] ],[ 5 ],[ 5 ],[ t(o(13,'Gx0040'),28),t(5,2) ],[],n,[] ])).
 rule_i(5,rule([ a(23,[ [ 5 ],[ t(o(13,'Gx0040'),28),t(5,2) ] ]) ],[],[],[ 5 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
@@ -274,18 +274,31 @@ upd_i(5,5,d,[ [],[],'ICARNE',[] ]).
  
  
  
+enumerated_i(2,19,69).
+enumerated_i(2,33,68).
  
 enum_value_i(2,25,'"INS"','Insert','"Insert"',[ none ]).
 enum_value_i(2,25,'"UPD"','Update','"Update"',[ none ]).
 enum_value_i(2,25,'"DLT"','Delete','"Delete"',[ none ]).
 enum_value_i(2,25,'"DSP"','Display','"Display"',[ none ]).
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
  
 enum_value_info_i(2,25,'GeneXus\TrnMode').
+enum_value_info_i(2,69,'Sexo').
+enum_value_info_i(2,68,'TipoCuota').
  
 enum_type_i(2,25,char,3,0).
+enum_type_i(2,69,char,20,0).
+enum_type_i(2,68,char,20,0).
  
 dom_info_i(66,[ 'AutoNumero' ]).
 dom_info_i(26,[ 'GeneXus\Address' ]).
+dom_info_i(69,[ 'Sexo' ]).
+dom_info_i(68,[ 'TipoCuota' ]).
  
  
 break_i(2,nvg,1,[],[ [],[],[] ]).
@@ -314,7 +327,7 @@ b_line_i(20,2,2,cmd,3,[ t('',111,3,0) ]).
 b_line_i(23,2,2,cmd,3,[ t('',147,3,0) ]).
 b_line_i(25,2,2,cmd,3,[ t('',146,3,0),t('After Trn',3,25,7) ]).
 b_line_i(29,2,3,cmd,3,[ t('',109,3,0),t('(',0,3,5),t('Mode',23,3,6),t(=,10,3,12),t([ 25,'Delete' ],44,29,14),t('.AND.',9,3,29),t('.NOT.',8,3,35),t([ t('Trncontext',23,29,41),t('Callerondelete',3,29,53) ],29,29,53),t(')',4,3,67) ]).
-b_line_i(30,2,3,cmd,3,[ t('',104,3,0),t(o(13,'WWCarne'),28,3,3) ]).
+b_line_i(30,2,3,cmd,3,[ t('',104,3,0),t(o(13,'WWCarnet'),28,3,3) ]).
 b_line_i(31,2,3,cmd,3,[ t('',111,3,0) ]).
 b_line_i(33,2,3,cmd,3,[ t('',118,3,0) ]).
 b_line_i(36,2,3,cmd,3,[ t('',147,3,0) ]).
@@ -340,7 +353,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Carne',3))).
+html_sub_i(8,9,html_i(0,t('Carnet',3))).
 html_sub_i(6,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,comp(errview))).
@@ -455,7 +468,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Carne',d,[ str ]).
+html_comp_i(9,'Caption','Carnet',d,[ str ]).
 html_comp_i(9,'Id','Title',v,[ str ]).
 html_comp_i(9,'Class','Title',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -923,7 +936,7 @@ html_comp_i(53,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(9,1,t('Carne',3),[ ctlname('Title') ]).
+lit_i(9,1,t('Carnet',3),[ ctlname('Title') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(12,1,comp(errview),[ ctlname('Errorviewer'),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -1164,13 +1177,14 @@ struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
 sub_info_i(146,'Start',1,23,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext','Insert_socioid','GXV1','Trncontextatt' ] ]).
 sub_info_i(146,'After Trn',25,36,[ [ 'Mode','Trncontext' ],[] ]).
  
-pgm_parm_i(web,0,'GX0040',[ [ int,4,0,0 ] ],[ [ 'V5',out,[] ] ]).
-pgm_parm_i(web,15,'WWCARNE',[],[]).
+pgm_parm_i(web,34,'GX0040',[ [ int,4,0,0 ] ],[ [ pSocioId,out,[] ] ]).
+pgm_parm_i(web,15,'WWCARNET',[],[]).
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(trn,3,'CARNE','INTERNAL').
-pgm_callprotocol_i(web,15,'WWCARNE','INTERNAL').
+pgm_callprotocol_i(web,34,'GX0040','INTERNAL').
+pgm_callprotocol_i(web,15,'WWCARNET','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').
  

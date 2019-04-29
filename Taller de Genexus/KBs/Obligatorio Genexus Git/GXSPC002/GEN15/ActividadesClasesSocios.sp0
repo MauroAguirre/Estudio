@@ -1,0 +1,569 @@
+spec_i([ web,51,'Actividades Clases Socios','ActividadesClasesSocios',0,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(4,1,[],[]).
+struct_i(3,2,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+level_i(4,[ 12,[ [ 12,many ],[ 11,one ] ],[],[],[ [ [ 12,11 ],[ 1,3,2 ] ] ],[ [ [ 12,11 ],[] ] ],[ 3 ],'ICLASE',[],[] ]).
+level_i(3,[ 12,[ [ 12,many ],[ 11,one ] ],[],[],[ [ [ 12,11 ],[ 1,3,2 ] ] ],[ [ [ 12,11 ],[] ] ],[ 3 ],'ICLASE',[],[] ]).
+ 
+tw_i(2,[]).
+tw_i(4,[ [ 11,[ [ 12,2,2 ] ] ] ]).
+tw_i(3,[ [ 11,[ [ 12,2,2 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(4,[ [ c([ t(1,2),t(=,10),t('Seleccionactividad',23) ],[ 1 ]) ] ]).
+lwi_i(3,[ [ c([ t(1,2),t(=,10),t('Seleccionactividad',23) ],[ 1 ]) ] ]).
+ 
+ 
+ 
+level_option_i(3,usr_condition,y).
+level_option_i(4,usr_condition,y).
+ 
+ta_i(2,[ [] ]).
+ta_i(4,[ [ [ 12,2 ],[ 11,1 ],[ 12,3 ] ] ]).
+ta_i(3,[ [ [ 12,2 ],[ 11,1 ],[ 12,3 ] ] ]).
+ 
+las_i(2,[ [ 'Seleccionactividad','Seleccionclases' ] ]).
+las_i(4,[ [ 'Seleccionactividad','Seleccionclases',1,3,2 ] ]).
+las_i(3,[ [ 'Seleccionactividad','Seleccionclases',1,3,2 ] ]).
+ 
+lac_i(2,[ [ 'Seleccionactividad','Seleccionclases' ] ]).
+lac_i(4,[ [ 'Seleccionactividad','Seleccionclases' ] ]).
+lac_i(3,[ [ 'Seleccionactividad','Seleccionclases' ] ]).
+ 
+ 
+ 
+cls_i([ 0,0 ],[ 0,3 ]).
+ 
+pos_i('Seleccionactividad',[ 0,0,0 ]).
+pos_i('Seleccionclases',[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ActividadesClasesSocios')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(8,'Menus'))).
+rule_i(0,prop('ObjDesc','Actividades Clases Socios')).
+rule_i(0,prop('ObjName','ActividadesClasesSocios')).
+rule_i(0,dyncombo(t('Seleccionactividad',23),[ 1,13,sort,1 ])).
+rule_i(0,maingen(15)).
+rule_i(0,rule([ a(22,[ '''Mostrar''','''Mostrar''','' ]) ],[],[],[])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,12,[],[ [],'ICLASE',[] ]).
+a_i(3,3,r,11,[],[ [ [ 12,2,2 ] ],'IPROFESOR',[] ]).
+a_i(4,4,t,12,[],[ [],'ICLASE',[] ]).
+a_i(5,4,r,11,[],[ [ [ 12,2,2 ] ],'IPROFESOR',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,2).
+v_i(t,o,2,3).
+v_i(r,i,3,2).
+v_i(r,o,3,1).
+v_i(t,i,4,[]).
+v_i(t,o,4,2).
+v_i(t,o,4,3).
+v_i(r,i,5,2).
+v_i(r,o,5,1).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(13,[ 'ActividadDescripcion',char,20,0,'',0,'Actividad Descripcion','',0 ]).
+attri_i(2,[ 'ProfesorId',int,4,0,'ZZZ9',0,'Profesor Id','',0 ]).
+attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
+attri_i(3,[ 'ClaseId',int,4,0,'ZZZ9',0,'Clase Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',8 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',7 ]).
+attri_i('Seleccionclases',[ 'SeleccionClases',int,4,0,'ZZZ9',0,'Clase Id','',6 ]).
+attri_i('Seleccionactividad',[ 'SeleccionActividad',int,4,0,'ZZZ9',0,'Actividad Id','',5 ]).
+ 
+table_i(1,[ 'Actividad1',[ 1,13 ],'Actividad','Actividad1' ]).
+table_i(11,[ 'Profesor',[ 2,1 ],'Profesor','Profesor' ]).
+table_i(12,[ 'Clase',[ 3,2 ],'Clase','Clase' ]).
+ 
+index_i(12,[ 'ICLASE',u,[ 3 ],'IClase' ]).
+index_i(11,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
+index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,17,'ProfesorFoto_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(26,[ 'GeneXus\Address' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [ 3 ],[ 1 ],[] ]).
+break_i(4,nvg,1,[],[ [ 3 ],[ 1 ],[] ]).
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,1).
+b_group_i(2,3,nvg,3,3,3).
+b_group_i(3,1,lit,0,4,4).
+b_group_i(2,4,lit,0,7,9).
+b_group_i(2,5,lit,0,10,13).
+b_group_i(2,6,lit,0,14,5).
+b_group_i(2,7,nvg,4,15,15).
+b_group_i(4,1,lit,0,16,16).
+b_group_i(2,8,lit,0,19,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t([ t('Seleccionactividad',23,1,7),t('Controlvaluechanged',3,1,27) ],29,1,27) ]).
+b_line_i(2,2,2,cmd,1,[ t('',107,1,0),t([ t('Seleccionclases',23,2,2),t('clear(',1,2,19) ],31,2,2),t(')',4,1,26) ]).
+b_line_i(3,3,1,cmd,4,[ t('',121,3,0),t(table,3,3,11),t(12,3,3,11) ]).
+b_line_i(5,3,1,cmd,4,[ t('',107,4,0),t([ t('Seleccionclases',23,5,3),t('additem(',1,5,20) ],31,5,3),t(3,2,4,29),t(',',7,4,36),t('str(',1,5,45),t(3,2,4,37),t(',',7,4,45),t(4,3,4,45),t(',',7,4,45),t(0,3,4,45),t(')',4,4,55),t(')',4,4,56) ]).
+b_line_i(6,3,1,cmd,4,[ t('',128,4,0) ]).
+b_line_i(7,2,4,cmd,5,[ t('',147,5,0) ]).
+b_line_i(9,2,4,cmd,5,[ t('',146,5,0),t('''Mostrar''',3,9,7) ]).
+b_line_i(10,2,5,cmd,5,[ t('',104,5,0),t(o(1,'ListadoSocioDeClase'),28,5,2),t('Seleccionclases',23,5,22) ]).
+b_line_i(11,2,5,cmd,5,[ t('',147,5,0) ]).
+b_line_i(13,2,5,cmd,5,[ t('',146,5,0),t('Start',3,13,7) ]).
+b_line_i(14,2,6,cmd,5,[ t('',107,5,0),t([ t('Seleccionclases',23,14,2),t('clear(',1,14,19) ],31,14,2),t(')',4,5,26) ]).
+b_line_i(15,4,1,cmd,16,[ t('',121,15,0),t(table,3,15,11),t(12,3,15,11) ]).
+b_line_i(17,4,1,cmd,16,[ t('',107,16,0),t([ t('Seleccionclases',23,17,3),t('additem(',1,17,20) ],31,17,3),t(3,2,16,29),t(',',7,16,36),t('str(',1,17,45),t(3,2,16,37),t(',',7,16,45),t(4,3,16,45),t(',',7,16,45),t(0,3,16,45),t(')',4,16,55),t(')',4,16,56) ]).
+b_line_i(18,4,1,cmd,16,[ t('',128,16,0) ]).
+b_line_i(19,2,8,cmd,9,[ t('',147,9,0) ]).
+b_line_i(1000,2,8,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,8,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,8,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,div(2)).
+ 
+html_sub_i(2,3,html_i(0,div(3))).
+html_sub_i(3,4,html_i(0,div(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,button('''Mostrar'''))).
+html_sub_i(3,7,html_i(1,div(7))).
+html_sub_i(7,8,html_i(0,div(8))).
+html_sub_i(8,9,html_i(0,div(9))).
+html_sub_i(9,10,html_i(0,div(10))).
+html_sub_i(10,11,html_i(0,t('Seleccionactividad',23))).
+html_sub_i(3,12,html_i(2,div(12))).
+html_sub_i(12,13,html_i(0,div(13))).
+html_sub_i(13,14,html_i(0,div(14))).
+html_sub_i(14,15,html_i(0,div(15))).
+html_sub_i(15,16,html_i(0,t('Seleccionclases',23))).
+ 
+html_tags_i(1,'Class','form-horizontal Form').
+html_tags_i(2,'data-abstract-form','').
+html_tags_i(9,'data-gx-att','var:5').
+html_tags_i(11,'data-gx-att','var:5').
+html_tags_i(14,'data-gx-att','var:6').
+html_tags_i(16,'data-gx-att','var:6').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',d,[ str ]).
+html_comp_i(2,'Id','',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Class','Table',v,[ str ]).
+html_comp_i(3,'Id','Maintable',v,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Semanticcontent',div,d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Valign',top,d,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Class',row,v,[ str ]).
+html_comp_i(4,'Id','',d,[ str ]).
+html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Semanticcontent',div,d,[ str ]).
+html_comp_i(4,'Align',left,d,[ str ]).
+html_comp_i(4,'Valign',top,d,[ str ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','col-xs-12',v,[ str ]).
+html_comp_i(5,'Id','',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Controlname','Mostrar',v,[ str ]).
+html_comp_i(6,'Class','Button',v,[ str ]).
+html_comp_i(6,'Event','''Mostrar''',v,[ str ]).
+html_comp_i(6,'Caption','Mostrar',d,[ str ]).
+html_comp_i(6,'Title','Mostrar',d,[ str ]).
+html_comp_i(6,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(6,'Border','2',d,[ str ]).
+html_comp_i(6,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Class',row,v,[ str ]).
+html_comp_i(7,'Id','',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Semanticcontent',div,d,[ str ]).
+html_comp_i(7,'Align',left,d,[ str ]).
+html_comp_i(7,'Valign',top,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Class','col-xs-12',v,[ str ]).
+html_comp_i(8,'Id','',d,[ str ]).
+html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Semanticcontent',div,d,[ str ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Valign',top,d,[ str ]).
+html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(9,'Class','form-group gx-form-group',v,[ str ]).
+html_comp_i(9,'Id','',d,[ str ]).
+html_comp_i(9,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Semanticcontent',div,d,[ str ]).
+html_comp_i(9,'Align',left,d,[ str ]).
+html_comp_i(9,'Valign',top,d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Class','col-sm-9 gx-attribute',v,[ str ]).
+html_comp_i(10,'Id','',d,[ str ]).
+html_comp_i(10,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Semanticcontent',div,d,[ str ]).
+html_comp_i(10,'Align',left,d,[ str ]).
+html_comp_i(10,'Valign',top,d,[ str ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Colcount',20,d,[ num ]).
+html_comp_i(11,'Attid',-5,v,[ num ]).
+html_comp_i(11,'Class','Attribute',v,[ str ]).
+html_comp_i(11,'Controlname','&Seleccionactividad',d,[ str ]).
+html_comp_i(11,'Returnonclick',0,v,[ bool ]).
+html_comp_i(11,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
+html_comp_i(11,'Captionposition','Left',v,[ str ]).
+html_comp_i(11,'Captionvalue','Actividad Id',d,[ str ]).
+html_comp_i(11,'Layoutclass','col-sm-9',v,[ str ]).
+html_comp_i(11,'Controltype',4,d,[ num ]).
+html_comp_i(11,'Datasourcefrom','Attributes',d,[ str ]).
+html_comp_i(11,'Controlitemvalues',1,d,[ num ]).
+html_comp_i(11,'Controlitemdescription',13,v,[ num ]).
+html_comp_i(11,'Controlsortdescription',-1,d,[ bool ]).
+html_comp_i(11,'Controlwhere','',d,[ str ]).
+html_comp_i(11,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(11,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(11,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(11,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(11,'Readonly',0,v,[ bool ]).
+html_comp_i(11,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(11,'Autoresize',-1,d,[ bool ]).
+html_comp_i(11,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(11,'Ismultiline',0,d,[ bool ]).
+html_comp_i(11,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(11,'Fill',-1,d,[ bool ]).
+html_comp_i(11,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(11,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(11,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(11,'Title','',d,[ str ]).
+html_comp_i(11,'Invitemsg','',v,[ str ]).
+html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(12,'Class',row,v,[ str ]).
+html_comp_i(12,'Id','',d,[ str ]).
+html_comp_i(12,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(12,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(12,'Semanticcontent',div,d,[ str ]).
+html_comp_i(12,'Align',left,d,[ str ]).
+html_comp_i(12,'Valign',top,d,[ str ]).
+html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(13,'Class','col-xs-12',v,[ str ]).
+html_comp_i(13,'Id','',d,[ str ]).
+html_comp_i(13,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Semanticcontent',div,d,[ str ]).
+html_comp_i(13,'Align',left,d,[ str ]).
+html_comp_i(13,'Valign',top,d,[ str ]).
+html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(14,'Class','form-group gx-form-group',v,[ str ]).
+html_comp_i(14,'Id','',d,[ str ]).
+html_comp_i(14,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Semanticcontent',div,d,[ str ]).
+html_comp_i(14,'Align',left,d,[ str ]).
+html_comp_i(14,'Valign',top,d,[ str ]).
+html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(15,'Class','col-sm-9 gx-attribute',v,[ str ]).
+html_comp_i(15,'Id','',d,[ str ]).
+html_comp_i(15,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(15,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(15,'Semanticcontent',div,d,[ str ]).
+html_comp_i(15,'Align',left,d,[ str ]).
+html_comp_i(15,'Valign',top,d,[ str ]).
+html_comp_i(16,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(16,'Colcount',4,d,[ num ]).
+html_comp_i(16,'Attid',-6,v,[ num ]).
+html_comp_i(16,'Class','Attribute',v,[ str ]).
+html_comp_i(16,'Controlname','&Seleccionclases',d,[ str ]).
+html_comp_i(16,'Returnonclick',0,v,[ bool ]).
+html_comp_i(16,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
+html_comp_i(16,'Captionposition','Left',v,[ str ]).
+html_comp_i(16,'Captionvalue','Clase Id',d,[ str ]).
+html_comp_i(16,'Layoutclass','col-sm-9',v,[ str ]).
+html_comp_i(16,'Controltype',0,v,[ num ]).
+html_comp_i(16,'Controlvalues','',d,[ str ]).
+html_comp_i(16,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(16,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(16,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(16,'Readonly',0,v,[ bool ]).
+html_comp_i(16,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(16,'Autoresize',-1,d,[ bool ]).
+html_comp_i(16,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(16,'Ismultiline',0,d,[ bool ]).
+html_comp_i(16,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(16,'Fill',-1,d,[ bool ]).
+html_comp_i(16,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(16,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(16,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(16,'Title','',d,[ str ]).
+html_comp_i(16,'Invitemsg','',v,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(6,1,button('''Mostrar'''),[ ctlname('Mostrar'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(11,1,t('Seleccionactividad',23),[ ctlname('&Seleccionactividad'),ctrltype(dyncombo,11),pos(11),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(10,1,div(10),[ ctlname('') ]).
+lit_i(9,1,div(9),[ ctlname('') ]).
+lit_i(8,1,div(8),[ ctlname('') ]).
+lit_i(7,1,div(7),[ ctlname('') ]).
+lit_i(16,1,t('Seleccionclases',23),[ ctlname('&Seleccionclases'),ctrltype(combo,16),pos(16),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(15,1,div(15),[ ctlname('') ]).
+lit_i(14,1,div(14),[ ctlname('') ]).
+lit_i(13,1,div(13),[ ctlname('') ]).
+lit_i(12,1,div(12),[ ctlname('') ]).
+lit_i(3,1,div(3),[ ctlname('Maintable') ]).
+lit_i(2,1,div(2),[ ctlname('') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ctrl_info_i(1,11,[ [ 1,13,sort,[],[],noempty,'' ] ]).
+ctrl_info_i(1,16,[ [],[ '' ] ]).
+ 
+ 
+ 
+att_prop_i(2,3,'ExternalName','ClaseId',d).
+att_prop_i(2,3,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,3,'EmptyAsNull','Yes',d).
+att_prop_i(2,3,idBasedOn,'',d).
+att_prop_i(2,3,'AUTONUMBER','0',d).
+att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,3,'AttRegEx','',d).
+att_prop_i(2,3,'AttValidationFailedMsg','',d).
+att_prop_i(2,3,'FullName','ClaseId',v).
+att_prop_i(2,1,'ExternalName','ActividadId',d).
+att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,'',d).
+att_prop_i(2,1,'AUTONUMBER','0',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'FullName','ActividadId',v).
+att_prop_i(2,2,'ExternalName','ProfesorId',d).
+att_prop_i(2,2,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,'',d).
+att_prop_i(2,2,'AUTONUMBER','0',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'FullName','ProfesorId',v).
+att_prop_i(2,13,'ExternalName','ActividadDescripcion',d).
+att_prop_i(2,13,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,idBasedOn,'',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'FullName','ActividadDescripcion',v).
+ 
+tbl_prop_i(2,11,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,12,'AllDirSuper',[ [ 11,[ 2 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 11,[ 1 ] ] ],v).
+tbl_prop_i(2,11,'DirSubor',[ [ 12,[ 2 ] ] ],v).
+tbl_prop_i(2,11,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,12,'DirSuper',[ [ 11,[ 2 ] ] ],v).
+ 
+tbl_att_prop_i(2,12,3,'AllowNulls',n).
+tbl_att_prop_i(2,12,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,13,'AllowNulls',n).
+ 
+var_prop_i(2,'Seleccionactividad',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,[ t('Seleccionactividad',23,1,7),t('Controlvaluechanged',3,1,27) ],1,7,[ [ 1,'Seleccionactividad',3 ],[ 'Seleccionclases' ] ]).
+sub_info_i(146,'''Mostrar''',9,11,[ [ 'Seleccionclases' ],[] ]).
+sub_info_i(146,'Start',13,19,[ [ 1,'Seleccionactividad',3 ],[ 'Seleccionclases' ] ]).
+ 
+pgm_parm_i(proc,29,'LISTADOSOCIODECLASE',[ [ int,4,0,0 ] ],[ [ id,in,[] ] ]).
+ 
+pgm_callprotocol_i(web,51,'ACTIVIDADESCLASESSOCIOS','INTERNAL').
+pgm_callprotocol_i(proc,29,'LISTADOSOCIODECLASE','HTTP').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

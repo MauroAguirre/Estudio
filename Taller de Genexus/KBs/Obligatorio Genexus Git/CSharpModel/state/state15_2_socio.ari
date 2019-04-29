@@ -4,10 +4,15 @@ current_guid('952c1109-4b85-4b9f-90ca-debe66ce313b').
  
  
 called_tree_i(0,5,1,10).
+called_tree_i(0,5,1,12).
+called_tree_i(0,5,1,14).
+called_tree_i(0,5,1,27).
 called_tree_i(0,5,1000,3).
 called_tree_i(0,5,13,4).
 called_tree_i(0,5,13,7).
 called_tree_i(0,5,13,25).
+called_tree_i(0,5,13,29).
+called_tree_i(0,5,13,49).
  
  
  
@@ -30,6 +35,7 @@ ij_object_dependency(socio,[],[],[],5).
 obj_parms_i([ 'String aP0_Gx_mode','short aP1_SocioId' ],[ [ 'Mode',in ],[ 'Socioid',in ] ]).
  
  
+has_silent_trn_i(socio_bc).
  
  
  

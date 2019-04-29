@@ -1,0 +1,13 @@
+bc_dt_elem_i([ 0,5,0 ],'Socioid',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociodireccion',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociosexo',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Socioedad',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociotipocuota',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Socioreconocido',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociofoto',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociomonto',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Carnetid',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Carnetfechaingreso',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Carnetfechaingreso',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sociofoto_gxi',allownulls,no).
+ 

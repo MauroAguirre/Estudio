@@ -30,15 +30,15 @@
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
-<LevelNumber>6</LevelNumber>
+<LevelNumber>12</LevelNumber>
 <BaseTable>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table></BaseTable>
 <NavigationTree>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description>
 <Updated>Yes</Updated>
@@ -50,7 +50,7 @@
 <Description>Clase Id</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description>
 <RecordsToRead>one</RecordsToRead>
@@ -59,7 +59,18 @@
 <AttriId>2</AttriId>
 <AttriName>ProfesorId</AttriName>
 <Description>Profesor Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas>
@@ -70,7 +81,7 @@
 <TablesToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table>
 <TableAction>insert</TableAction>
@@ -85,7 +96,7 @@
 <Description>Profesor Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table>
 <TableAction>update</TableAction>
@@ -96,7 +107,7 @@
 <Description>Profesor Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table>
 <TableAction>delete</TableAction>
@@ -105,17 +116,143 @@
 <AfterUpdateRules></AfterUpdateRules>
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>13</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels></Levels>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
 <Prompts>
 <Prompt>
 <Table>
-<TableId>3</TableId>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>34</ObjId>
+<ObjName>Gx0040</ObjName>
+<ObjPgmName>Gx0040</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>45</ObjId>
+<ObjName>Gx00D1</ObjName>
+<ObjPgmName>Gx00D1</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table>
-<ProgramName>
-<Token>Gx0030</Token></ProgramName>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>41</ObjId>
+<ObjName>Gx00B0</ObjName>
+<ObjPgmName>Gx00B0</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
 <InputParameters></InputParameters>
 <OutputParameters>
 <Attribute>

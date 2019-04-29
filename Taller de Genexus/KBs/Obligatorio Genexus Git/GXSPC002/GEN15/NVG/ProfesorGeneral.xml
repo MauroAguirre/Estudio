@@ -9,7 +9,7 @@
 <ObjDesc>Profesor General</ObjDesc>
 <ObjPgmName>ProfesorGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -47,7 +47,7 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description></Table></BaseTable>
 <Order>
@@ -89,7 +89,7 @@
 <JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description>
 <RecordsToRead>many</RecordsToRead>

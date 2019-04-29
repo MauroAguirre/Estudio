@@ -1,0 +1,10 @@
+{ 
+    "Resources" : [ { 
+        "IsDefault" : true,
+        "ResourceFile" : "Images_DEFAULT.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "SimpleAndroid",
+        "ResourceFile" : "Images_English_SimpleAndroid.json"
+    } ]
+}

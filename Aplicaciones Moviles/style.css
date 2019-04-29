@@ -1,0 +1,132 @@
+/* Transitions 
+.eg-transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, background 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+
+}
+
+.eg-transition:hover {
+    width: 300px;
+    background: blue;
+}
+
+*/
+
+
+/*Animation1 -1 background
+.eg-animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 2s; 
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}*/
+
+/*Animation1 -2 en x
+.eg-animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes example {
+    from {left: 0px; top: 0px;}
+    to {left: 100px; top: 0px;}
+}
+
+
+@keyframes example {
+    from {left: 0px; top: 0px;}
+    to {left: 100px; top: 0px;}
+}*/
+  
+
+/*Animation1 -3
+.eg-animation1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s 4; 
+    -webkit-animation-direction: alternate; 
+    animation: myfirst 5s 4;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}*/
+
+
+
+
+
+/* Animation2 */
+@keyframes slide {
+  0% {left: -100px; top: 0;}
+  50% {left: 244px;top: 100px;}
+  100% {left: 488px;top: 0;}
+}
+.eg-animation2 .stage {
+  background: #eaeaed; 
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+  min-width: 538px;
+}
+.eg-animation2 .stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.eg-animation2 .stage:active .ball {
+  animation-play-state: paused;
+}
+.eg-animation2 .ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  top:0; left:-100px;
+  width: 50px;
+}

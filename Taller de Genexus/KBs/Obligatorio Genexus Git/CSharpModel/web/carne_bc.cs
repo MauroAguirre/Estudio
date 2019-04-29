@@ -2,7 +2,7 @@
                File: Carne_BC
         Description: Carne
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:0:59.57
+       Generated on: 4/12/2019 5:22:32.45
        Program type: Callable routine
           Main DBMS: SQL Server
 */

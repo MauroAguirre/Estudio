@@ -1,0 +1,146 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>15</ObjId>
+<ObjName>ListadoProfesorActividad</ObjName>
+<ObjDesc>Listado Profesor Actividad</ObjDesc>
+<ObjPgmName>ListadoProfesorActividad</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>File</Device></OutputDevices>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>7</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IACTIVIDAD1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>ActividadDescripcion</AttriName>
+<Description>Actividad Descripcion</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>15</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPROFESOR1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>@ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>@ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>11</TableId>
+<TableName>Profesor</TableName>
+<Description>Profesor</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProfesorNombre</AttriName>
+<Description>Profesor Nombre</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

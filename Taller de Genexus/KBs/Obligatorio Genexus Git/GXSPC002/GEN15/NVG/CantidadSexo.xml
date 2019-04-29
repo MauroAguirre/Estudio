@@ -1,0 +1,203 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>28</ObjId>
+<ObjName>CantidadSexo</ObjName>
+<ObjDesc>Cantidad Sexo</ObjDesc>
+<ObjPgmName>CantidadSexo</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0047</MsgCode>
+<Message>
+<Token>Variable </Token>
+<Token>Cantidad</Token>
+<Token> not defined; </Token>
+<Token>N(1.0)</Token>
+<Token> assumed.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Id</VarId>
+<VarName>&amp;id</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Sexo</VarId>
+<VarName>&amp;sexo</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Cantidad</VarId>
+<VarName>&amp;Cantidad</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>2</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICLASE</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Id</VarId>
+<VarName>&amp;id</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Id</VarId>
+<VarName>&amp;id</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>Aggregate</Type>
+<Expression>
+<Token>count(</Token>
+<Sp></Sp>
+<Token>*</Token>
+<Token>)</Token></Expression></Optimization></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>4</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICLASESOCIOS</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>@ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>@ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>SocioSexo</AttriName>
+<Description>Socio Sexo</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Sexo</VarId>
+<VarName>&amp;sexo</VarName></Variable></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>ClaseSocios</TableName>
+<Description>Socios</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>4</TableId>
+<TableName>Socio</TableName>
+<Description>Socio</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SocioId</AttriName>
+<Description>Socio Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

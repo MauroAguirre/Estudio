@@ -1,0 +1,751 @@
+spec_i([ proc,22,'Ingresar Datos Prueba','IngresarDatosPrueba',78,eng,'15_0_12-126726' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+default_i(e('Today',2,2,'''today''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','IngresarDatosPrueba')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Procesos'))).
+rule_i(0,prop('ObjDesc','Ingresar Datos Prueba')).
+rule_i(0,prop('ObjName','IngresarDatosPrueba')).
+rule_i(0,maingen(15)).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Today',[],[ [],[ t('today(',1),t(')',4) ] ]).
+a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Today').
+v_i(f,i,2,[]).
+v_i(f,o,2,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i('Today',[ 'Gx_date',date,8,0,'99/99/99',1,'','',15 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
+attri_i('Carnet',[ 'Carnet',o('Carnet'),0,0,'',0,'Carnet','',12 ]).
+attri_i('Profesor',[ 'Profesor',o('Profesor'),0,0,'',0,'Profesor','',11 ]).
+attri_i('Actividad',[ 'Actividad',o('Actividad'),0,0,'',0,'Actividad','',10 ]).
+attri_i('Socio',[ 'Socio',o('Socio'),0,0,'',0,'Socio','',9 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
+ 
+enum_value_info_i(2,69,'Sexo').
+enum_value_info_i(2,68,'TipoCuota').
+ 
+enum_type_i(2,69,char,20,0).
+enum_type_i(2,68,char,20,0).
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',107,0,0),t('Carnet',23,0,0),t(=,10,0,0),t([ 'Carnet',[ t('(',0,1,14),t(')',4,1,15) ],n ],46,0,0) ]).
+b_line_i(2,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(3,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetfechaingreso',3,0,0) ],29,0,0),t(=,10,0,0),t('Today',23,0,0) ]).
+b_line_i(4,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,4,1),t('save(',1,4,9) ],31,4,9),t(')',4,0,15) ]).
+b_line_i(5,1,1,cmd,0,[]).
+b_line_i(6,1,1,cmd,0,[ t('',107,0,0),t('Socio',23,0,0),t(=,10,0,0),t([ 'Socio',[ t('(',0,6,13),t(')',4,6,14) ],n ],46,0,0) ]).
+b_line_i(7,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(8,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(9,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociodireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Piedras 395 barrio rivera"',3,0,0) ]).
+b_line_i(10,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociosexo',3,0,0) ],29,0,0),t(=,10,0,0),t([ 69,'Hombre' ],44,0,0) ]).
+b_line_i(11,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioedad',3,0,0) ],29,0,0),t(=,10,0,0),t('24',3,0,0) ]).
+b_line_i(12,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociotipocuota',3,0,0) ],29,0,0),t(=,10,0,0),t([ 68,'Verano' ],44,0,0) ]).
+b_line_i(13,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioreconocido',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(14,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,14,1),t('save(',1,14,8) ],31,14,8),t(')',4,0,14) ]).
+b_line_i(15,1,1,cmd,0,[]).
+b_line_i(16,1,1,cmd,0,[ t('',107,0,0),t('Carnet',23,0,0),t(=,10,0,0),t([ 'Carnet',[ t('(',0,16,14),t(')',4,16,15) ],n ],46,0,0) ]).
+b_line_i(17,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(18,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetfechaingreso',3,0,0) ],29,0,0),t(=,10,0,0),t('addyr(',1,0,0),t('Today',23,0,0),t(',',7,0,0),t('-11',3,0,0),t(')',4,0,0) ]).
+b_line_i(19,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,19,1),t('save(',1,19,9) ],31,19,9),t(')',4,0,15) ]).
+b_line_i(20,1,1,cmd,0,[]).
+b_line_i(21,1,1,cmd,0,[ t('',107,0,0),t('Socio',23,0,0),t(=,10,0,0),t([ 'Socio',[ t('(',0,21,13),t(')',4,21,14) ],n ],46,0,0) ]).
+b_line_i(22,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(23,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(24,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociodireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"18 de julio y noseque"',3,0,0) ]).
+b_line_i(25,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociosexo',3,0,0) ],29,0,0),t(=,10,0,0),t([ 69,'Mujer' ],44,0,0) ]).
+b_line_i(26,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioedad',3,0,0) ],29,0,0),t(=,10,0,0),t('28',3,0,0) ]).
+b_line_i(27,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociotipocuota',3,0,0) ],29,0,0),t(=,10,0,0),t([ 68,'Permanente' ],44,0,0) ]).
+b_line_i(28,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioreconocido',3,0,0) ],29,0,0),t(=,10,0,0),t('FALSE',41,0,0) ]).
+b_line_i(29,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,29,1),t('save(',1,29,8) ],31,29,8),t(')',4,0,14) ]).
+b_line_i(30,1,1,cmd,0,[]).
+b_line_i(31,1,1,cmd,0,[ t('',107,0,0),t('Carnet',23,0,0),t(=,10,0,0),t([ 'Carnet',[ t('(',0,31,14),t(')',4,31,15) ],n ],46,0,0) ]).
+b_line_i(32,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(33,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetfechaingreso',3,0,0) ],29,0,0),t(=,10,0,0),t('addyr(',1,0,0),t('Today',23,0,0),t(',',7,0,0),t('-12',3,0,0),t(')',4,0,0) ]).
+b_line_i(34,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,34,1),t('save(',1,34,9) ],31,34,9),t(')',4,0,15) ]).
+b_line_i(35,1,1,cmd,0,[]).
+b_line_i(36,1,1,cmd,0,[ t('',107,0,0),t('Socio',23,0,0),t(=,10,0,0),t([ 'Socio',[ t('(',0,36,13),t(')',4,36,14) ],n ],46,0,0) ]).
+b_line_i(37,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(38,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(39,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociodireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Laguna del lagunoso 33"',3,0,0) ]).
+b_line_i(40,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociosexo',3,0,0) ],29,0,0),t(=,10,0,0),t([ 69,'Otro' ],44,0,0) ]).
+b_line_i(41,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioedad',3,0,0) ],29,0,0),t(=,10,0,0),t('19',3,0,0) ]).
+b_line_i(42,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociotipocuota',3,0,0) ],29,0,0),t(=,10,0,0),t([ 68,'Permanente' ],44,0,0) ]).
+b_line_i(43,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioreconocido',3,0,0) ],29,0,0),t(=,10,0,0),t('FALSE',41,0,0) ]).
+b_line_i(44,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,44,1),t('save(',1,44,8) ],31,44,8),t(')',4,0,14) ]).
+b_line_i(45,1,1,cmd,0,[]).
+b_line_i(46,1,1,cmd,0,[ t('',107,0,0),t('Carnet',23,0,0),t(=,10,0,0),t([ 'Carnet',[ t('(',0,46,14),t(')',4,46,15) ],n ],46,0,0) ]).
+b_line_i(47,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(48,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetfechaingreso',3,0,0) ],29,0,0),t(=,10,0,0),t('Today',23,0,0) ]).
+b_line_i(49,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,49,1),t('save(',1,49,9) ],31,49,9),t(')',4,0,15) ]).
+b_line_i(50,1,1,cmd,0,[]).
+b_line_i(51,1,1,cmd,0,[ t('',107,0,0),t('Socio',23,0,0),t(=,10,0,0),t([ 'Socio',[ t('(',0,51,13),t(')',4,51,14) ],n ],46,0,0) ]).
+b_line_i(52,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(53,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(54,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociodireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"La luna"',3,0,0) ]).
+b_line_i(55,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociosexo',3,0,0) ],29,0,0),t(=,10,0,0),t([ 69,'Otro' ],44,0,0) ]).
+b_line_i(56,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioedad',3,0,0) ],29,0,0),t(=,10,0,0),t('78',3,0,0) ]).
+b_line_i(57,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociotipocuota',3,0,0) ],29,0,0),t(=,10,0,0),t([ 68,'Verano' ],44,0,0) ]).
+b_line_i(58,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioreconocido',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(59,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,59,1),t('save(',1,59,8) ],31,59,8),t(')',4,0,14) ]).
+b_line_i(60,1,1,cmd,0,[]).
+b_line_i(61,1,1,cmd,0,[ t('',107,0,0),t('Carnet',23,0,0),t(=,10,0,0),t([ 'Carnet',[ t('(',0,61,14),t(')',4,61,15) ],n ],46,0,0) ]).
+b_line_i(62,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(63,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,0,0),t('Carnetfechaingreso',3,0,0) ],29,0,0),t(=,10,0,0),t('Today',23,0,0) ]).
+b_line_i(64,1,1,cmd,0,[ t('',107,0,0),t([ t('Carnet',23,64,1),t('save(',1,64,9) ],31,64,9),t(')',4,0,15) ]).
+b_line_i(65,1,1,cmd,0,[]).
+b_line_i(66,1,1,cmd,0,[ t('',107,0,0),t('Socio',23,0,0),t(=,10,0,0),t([ 'Socio',[ t('(',0,66,13),t(')',4,66,14) ],n ],46,0,0) ]).
+b_line_i(67,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(68,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Carnetid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(69,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociodireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Marte"',3,0,0) ]).
+b_line_i(70,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociosexo',3,0,0) ],29,0,0),t(=,10,0,0),t([ 69,'Otro' ],44,0,0) ]).
+b_line_i(71,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioedad',3,0,0) ],29,0,0),t(=,10,0,0),t('98',3,0,0) ]).
+b_line_i(72,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Sociotipocuota',3,0,0) ],29,0,0),t(=,10,0,0),t([ 68,'Permanente' ],44,0,0) ]).
+b_line_i(73,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,0,0),t('Socioreconocido',3,0,0) ],29,0,0),t(=,10,0,0),t('FALSE',41,0,0) ]).
+b_line_i(74,1,1,cmd,0,[ t('',107,0,0),t([ t('Socio',23,74,1),t('save(',1,74,8) ],31,74,8),t(')',4,0,14) ]).
+b_line_i(75,1,1,cmd,0,[]).
+b_line_i(76,1,1,cmd,0,[ t('',107,0,0),t('Actividad',23,0,0),t(=,10,0,0),t([ 'Actividad',[ t('(',0,76,17),t(')',4,76,18) ],n ],46,0,0) ]).
+b_line_i(77,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(78,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividaddescripcion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Tenis"',3,0,0) ]).
+b_line_i(79,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,79,1),t('save(',1,79,12) ],31,79,12),t(')',4,0,18) ]).
+b_line_i(80,1,1,cmd,0,[]).
+b_line_i(81,1,1,cmd,0,[ t('',107,0,0),t('Actividad',23,0,0),t(=,10,0,0),t([ 'Actividad',[ t('(',0,81,17),t(')',4,81,18) ],n ],46,0,0) ]).
+b_line_i(82,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(83,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividaddescripcion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Futbol"',3,0,0) ]).
+b_line_i(84,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,84,1),t('save(',1,84,12) ],31,84,12),t(')',4,0,18) ]).
+b_line_i(85,1,1,cmd,0,[]).
+b_line_i(86,1,1,cmd,0,[ t('',107,0,0),t('Actividad',23,0,0),t(=,10,0,0),t([ 'Actividad',[ t('(',0,86,17),t(')',4,86,18) ],n ],46,0,0) ]).
+b_line_i(87,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(88,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividaddescripcion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Natacion"',3,0,0) ]).
+b_line_i(89,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,89,1),t('save(',1,89,12) ],31,89,12),t(')',4,0,18) ]).
+b_line_i(90,1,1,cmd,0,[]).
+b_line_i(91,1,1,cmd,0,[ t('',107,0,0),t('Actividad',23,0,0),t(=,10,0,0),t([ 'Actividad',[ t('(',0,91,17),t(')',4,91,18) ],n ],46,0,0) ]).
+b_line_i(92,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(93,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividaddescripcion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Volley"',3,0,0) ]).
+b_line_i(94,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,94,1),t('save(',1,94,12) ],31,94,12),t(')',4,0,18) ]).
+b_line_i(95,1,1,cmd,0,[]).
+b_line_i(96,1,1,cmd,0,[ t('',107,0,0),t('Actividad',23,0,0),t(=,10,0,0),t([ 'Actividad',[ t('(',0,96,17),t(')',4,96,18) ],n ],46,0,0) ]).
+b_line_i(97,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(98,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,0,0),t('Actividaddescripcion',3,0,0) ],29,0,0),t(=,10,0,0),t('"Gimnasia"',3,0,0) ]).
+b_line_i(99,1,1,cmd,0,[ t('',107,0,0),t([ t('Actividad',23,99,1),t('save(',1,99,12) ],31,99,12),t(')',4,0,18) ]).
+b_line_i(100,1,1,cmd,0,[]).
+b_line_i(101,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,101,16),t(')',4,101,17) ],n ],46,0,0) ]).
+b_line_i(102,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(103,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Pedro"',3,0,0) ]).
+b_line_i(104,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(105,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(106,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,106,1),t('save(',1,106,11) ],31,106,11),t(')',4,0,17) ]).
+b_line_i(107,1,1,cmd,0,[]).
+b_line_i(108,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,108,16),t(')',4,108,17) ],n ],46,0,0) ]).
+b_line_i(109,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(110,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Raul"',3,0,0) ]).
+b_line_i(111,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(112,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(113,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,113,1),t('save(',1,113,11) ],31,113,11),t(')',4,0,17) ]).
+b_line_i(114,1,1,cmd,0,[]).
+b_line_i(115,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,115,16),t(')',4,115,17) ],n ],46,0,0) ]).
+b_line_i(116,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(117,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Lautaro"',3,0,0) ]).
+b_line_i(118,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(119,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(120,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,120,1),t('save(',1,120,11) ],31,120,11),t(')',4,0,17) ]).
+b_line_i(121,1,1,cmd,0,[]).
+b_line_i(122,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,122,16),t(')',4,122,17) ],n ],46,0,0) ]).
+b_line_i(123,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(124,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Marta"',3,0,0) ]).
+b_line_i(125,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(126,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(127,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,127,1),t('save(',1,127,11) ],31,127,11),t(')',4,0,17) ]).
+b_line_i(128,1,1,cmd,0,[]).
+b_line_i(129,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,129,16),t(')',4,129,17) ],n ],46,0,0) ]).
+b_line_i(130,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(131,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Sandra"',3,0,0) ]).
+b_line_i(132,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(133,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('2',3,0,0) ]).
+b_line_i(134,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,134,1),t('save(',1,134,11) ],31,134,11),t(')',4,0,17) ]).
+b_line_i(135,1,1,cmd,0,[]).
+b_line_i(136,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,136,16),t(')',4,136,17) ],n ],46,0,0) ]).
+b_line_i(137,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(138,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Pedro"',3,0,0) ]).
+b_line_i(139,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(140,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(141,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,141,1),t('save(',1,141,11) ],31,141,11),t(')',4,0,17) ]).
+b_line_i(142,1,1,cmd,0,[]).
+b_line_i(143,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,143,16),t(')',4,143,17) ],n ],46,0,0) ]).
+b_line_i(144,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('6',3,0,0) ]).
+b_line_i(145,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Maicol"',3,0,0) ]).
+b_line_i(146,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(147,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('3',3,0,0) ]).
+b_line_i(148,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,148,1),t('save(',1,148,11) ],31,148,11),t(')',4,0,17) ]).
+b_line_i(149,1,1,cmd,0,[]).
+b_line_i(150,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,150,16),t(')',4,150,17) ],n ],46,0,0) ]).
+b_line_i(151,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('7',3,0,0) ]).
+b_line_i(152,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Roko"',3,0,0) ]).
+b_line_i(153,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(154,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('4',3,0,0) ]).
+b_line_i(155,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,155,1),t('save(',1,155,11) ],31,155,11),t(')',4,0,17) ]).
+b_line_i(156,1,1,cmd,0,[]).
+b_line_i(157,1,1,cmd,0,[ t('',107,0,0),t('Profesor',23,0,0),t(=,10,0,0),t([ 'Profesor',[ t('(',0,157,16),t(')',4,157,17) ],n ],46,0,0) ]).
+b_line_i(158,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesorid',3,0,0) ],29,0,0),t(=,10,0,0),t('8',3,0,0) ]).
+b_line_i(159,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesornombre',3,0,0) ],29,0,0),t(=,10,0,0),t('"Bety"',3,0,0) ]).
+b_line_i(160,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Profesordireccion',3,0,0) ],29,0,0),t(=,10,0,0),t('"un lugar magico"',3,0,0) ]).
+b_line_i(161,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,0,0),t('Actividadid',3,0,0) ],29,0,0),t(=,10,0,0),t('5',3,0,0) ]).
+b_line_i(162,1,1,cmd,0,[ t('',107,0,0),t([ t('Profesor',23,162,1),t('save(',1,162,11) ],31,162,11),t(')',4,0,17) ]).
+b_line_i(163,1,1,cmd,0,[ t('',132,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(13,8).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 0,5,0 ],name,'Socio').
+struct_dt_i([ 0,5,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,5,0 ],significantName,'Socio').
+struct_dt_i([ 0,5,0 ],'ObjName','Socio').
+struct_dt_i([ 0,5,0 ],'ObjDesc','Socio').
+struct_dt_i([ 0,5,0 ],'ExternalName','Socio').
+struct_dt_i([ 0,5,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,5,0 ],key,[ 5 ]).
+struct_dt_i([ 0,5,0 ],lvl,4).
+struct_dt_i([ 26,8,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,8,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,8,0 ],'ObjName','Messages').
+struct_dt_i([ 26,8,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,8,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,8,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,8,0 ],collection,'True').
+struct_dt_i([ 26,8,0 ],datatype,[ 26,8,25 ]).
+struct_dt_i([ 26,8,0 ],isexternal,'True').
+struct_dt_i([ 26,8,25 ],name,'Message').
+struct_dt_i([ 26,8,25 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 0,1,0 ],name,'Actividad').
+struct_dt_i([ 0,1,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,1,0 ],significantName,'Actividad').
+struct_dt_i([ 0,1,0 ],'ObjName','Actividad').
+struct_dt_i([ 0,1,0 ],'ObjDesc','Actividad').
+struct_dt_i([ 0,1,0 ],'ExternalName','Actividad').
+struct_dt_i([ 0,1,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,1,0 ],key,[ 1 ]).
+struct_dt_i([ 0,1,0 ],lvl,1).
+struct_dt_i([ 0,2,0 ],name,'Profesor').
+struct_dt_i([ 0,2,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,2,0 ],significantName,'Profesor').
+struct_dt_i([ 0,2,0 ],'ObjName','Profesor').
+struct_dt_i([ 0,2,0 ],'ObjDesc','Profesor').
+struct_dt_i([ 0,2,0 ],'ExternalName','Profesor').
+struct_dt_i([ 0,2,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,2,0 ],key,[ 2 ]).
+struct_dt_i([ 0,2,0 ],lvl,11).
+struct_dt_i([ 0,3,0 ],name,'Carnet').
+struct_dt_i([ 0,3,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],significantName,'Carnet').
+struct_dt_i([ 0,3,0 ],'ObjName','Carnet').
+struct_dt_i([ 0,3,0 ],'ObjDesc','Carnet').
+struct_dt_i([ 0,3,0 ],'ExternalName','Carnet').
+struct_dt_i([ 0,3,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 0,3,0 ],key,[ 36 ]).
+struct_dt_i([ 0,3,0 ],lvl,14).
+struct_dt_i([ 0,5,0 ],fullname,'Socio').
+struct_dt_i([ 26,8,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,8,25 ],fullname,'GeneXus\Common\Messages.Message').
+struct_dt_i([ 0,1,0 ],fullname,'Actividad').
+struct_dt_i([ 0,2,0 ],fullname,'Profesor').
+struct_dt_i([ 0,3,0 ],fullname,'Carnet').
+ 
+struct_dt_elem_i([ 0,5,0 ],1,name,'Socioid').
+struct_dt_elem_i([ 0,5,0 ],1,camelname,'SocioId').
+struct_dt_elem_i([ 0,5,0 ],1,length,4).
+struct_dt_elem_i([ 0,5,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],1,sign,0).
+struct_dt_elem_i([ 0,5,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,5,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],1,attributeid,'5').
+struct_dt_elem_i([ 0,5,0 ],1,'ExternalName','SocioId').
+struct_dt_elem_i([ 0,5,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],2,name,'Sociodireccion').
+struct_dt_elem_i([ 0,5,0 ],2,camelname,'SocioDireccion').
+struct_dt_elem_i([ 0,5,0 ],2,basedon,26).
+struct_dt_elem_i([ 0,5,0 ],2,length,1024).
+struct_dt_elem_i([ 0,5,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],2,type,[ 13,1024,0 ]).
+struct_dt_elem_i([ 0,5,0 ],2,pic,'').
+struct_dt_elem_i([ 0,5,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],2,attributeid,'18').
+struct_dt_elem_i([ 0,5,0 ],2,'ExternalName','SocioDireccion').
+struct_dt_elem_i([ 0,5,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],3,name,'Sociosexo').
+struct_dt_elem_i([ 0,5,0 ],3,camelname,'SocioSexo').
+struct_dt_elem_i([ 0,5,0 ],3,basedon,69).
+struct_dt_elem_i([ 0,5,0 ],3,length,20).
+struct_dt_elem_i([ 0,5,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],3,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,5,0 ],3,pic,'').
+struct_dt_elem_i([ 0,5,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],3,attributeid,'19').
+struct_dt_elem_i([ 0,5,0 ],3,'ExternalName','SocioSexo').
+struct_dt_elem_i([ 0,5,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],4,name,'Socioedad').
+struct_dt_elem_i([ 0,5,0 ],4,camelname,'SocioEdad').
+struct_dt_elem_i([ 0,5,0 ],4,length,4).
+struct_dt_elem_i([ 0,5,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],4,sign,0).
+struct_dt_elem_i([ 0,5,0 ],4,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],4,pic,'ZZZ9').
+struct_dt_elem_i([ 0,5,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],4,attributeid,'20').
+struct_dt_elem_i([ 0,5,0 ],4,'ExternalName','SocioEdad').
+struct_dt_elem_i([ 0,5,0 ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],5,name,'Sociotipocuota').
+struct_dt_elem_i([ 0,5,0 ],5,camelname,'SocioTipoCuota').
+struct_dt_elem_i([ 0,5,0 ],5,basedon,68).
+struct_dt_elem_i([ 0,5,0 ],5,length,20).
+struct_dt_elem_i([ 0,5,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],5,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,5,0 ],5,pic,'').
+struct_dt_elem_i([ 0,5,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],5,attributeid,'33').
+struct_dt_elem_i([ 0,5,0 ],5,'ExternalName','SocioTipoCuota').
+struct_dt_elem_i([ 0,5,0 ],5,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],6,name,'Socioreconocido').
+struct_dt_elem_i([ 0,5,0 ],6,camelname,'SocioReconocido').
+struct_dt_elem_i([ 0,5,0 ],6,length,4).
+struct_dt_elem_i([ 0,5,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],6,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],6,pic,'').
+struct_dt_elem_i([ 0,5,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],6,attributeid,'24').
+struct_dt_elem_i([ 0,5,0 ],6,'ExternalName','SocioReconocido').
+struct_dt_elem_i([ 0,5,0 ],6,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],7,name,'Sociofoto').
+struct_dt_elem_i([ 0,5,0 ],7,camelname,'SocioFoto').
+struct_dt_elem_i([ 0,5,0 ],7,length,4).
+struct_dt_elem_i([ 0,5,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],7,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],7,pic,'').
+struct_dt_elem_i([ 0,5,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],7,attributeid,'21').
+struct_dt_elem_i([ 0,5,0 ],7,'ExternalName','SocioFoto').
+struct_dt_elem_i([ 0,5,0 ],7,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],8,name,'Sociofoto_gxi').
+struct_dt_elem_i([ 0,5,0 ],8,camelname,'SocioFoto_GXI').
+struct_dt_elem_i([ 0,5,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],8,isadd,'True').
+struct_dt_elem_i([ 0,5,0 ],8,length,2048).
+struct_dt_elem_i([ 0,5,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],8,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 0,5,0 ],9,name,'Sociomonto').
+struct_dt_elem_i([ 0,5,0 ],9,camelname,'SocioMonto').
+struct_dt_elem_i([ 0,5,0 ],9,length,4).
+struct_dt_elem_i([ 0,5,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],9,sign,0).
+struct_dt_elem_i([ 0,5,0 ],9,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],9,pic,'ZZZ9').
+struct_dt_elem_i([ 0,5,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],9,attributeid,'32').
+struct_dt_elem_i([ 0,5,0 ],9,'ExternalName','SocioMonto').
+struct_dt_elem_i([ 0,5,0 ],9,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],10,name,'Carnetid').
+struct_dt_elem_i([ 0,5,0 ],10,camelname,'CarnetId').
+struct_dt_elem_i([ 0,5,0 ],10,length,4).
+struct_dt_elem_i([ 0,5,0 ],10,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],10,sign,0).
+struct_dt_elem_i([ 0,5,0 ],10,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,5,0 ],10,pic,'ZZZ9').
+struct_dt_elem_i([ 0,5,0 ],10,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],10,attributeid,'36').
+struct_dt_elem_i([ 0,5,0 ],10,'ExternalName','CarnetId').
+struct_dt_elem_i([ 0,5,0 ],10,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],11,name,'Carnetfechaingreso').
+struct_dt_elem_i([ 0,5,0 ],11,camelname,'CarnetFechaIngreso').
+struct_dt_elem_i([ 0,5,0 ],11,length,8).
+struct_dt_elem_i([ 0,5,0 ],11,decimals,0).
+struct_dt_elem_i([ 0,5,0 ],11,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,5,0 ],11,pic,'99/99/99').
+struct_dt_elem_i([ 0,5,0 ],11,collection,'False').
+struct_dt_elem_i([ 0,5,0 ],11,attributeid,'37').
+struct_dt_elem_i([ 0,5,0 ],11,'ExternalName','CarnetFechaIngreso').
+struct_dt_elem_i([ 0,5,0 ],11,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],1,name,'Id').
+struct_dt_elem_i([ 26,8,25 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,8,25 ],1,length,128).
+struct_dt_elem_i([ 26,8,25 ],1,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,8,25 ],1,pic,'').
+struct_dt_elem_i([ 26,8,25 ],1,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,8,25 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],1,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],1,'JsonName','').
+struct_dt_elem_i([ 26,8,25 ],2,name,'Type').
+struct_dt_elem_i([ 26,8,25 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,8,25 ],2,basedon,33).
+struct_dt_elem_i([ 26,8,25 ],2,length,2).
+struct_dt_elem_i([ 26,8,25 ],2,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],2,sign,0).
+struct_dt_elem_i([ 26,8,25 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,8,25 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,8,25 ],2,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,8,25 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],2,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],2,'JsonName','').
+struct_dt_elem_i([ 26,8,25 ],3,name,'Description').
+struct_dt_elem_i([ 26,8,25 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,8,25 ],3,length,256).
+struct_dt_elem_i([ 26,8,25 ],3,decimals,0).
+struct_dt_elem_i([ 26,8,25 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,8,25 ],3,pic,'').
+struct_dt_elem_i([ 26,8,25 ],3,collection,'False').
+struct_dt_elem_i([ 26,8,25 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,8,25 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlName','').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,8,25 ],3,soaptype,'').
+struct_dt_elem_i([ 26,8,25 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,8,25 ],3,'JsonName','').
+struct_dt_elem_i([ 0,1,0 ],1,name,'Actividadid').
+struct_dt_elem_i([ 0,1,0 ],1,camelname,'ActividadId').
+struct_dt_elem_i([ 0,1,0 ],1,length,4).
+struct_dt_elem_i([ 0,1,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],1,sign,0).
+struct_dt_elem_i([ 0,1,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,1,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,1,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],1,attributeid,'1').
+struct_dt_elem_i([ 0,1,0 ],1,'ExternalName','ActividadId').
+struct_dt_elem_i([ 0,1,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,1,0 ],2,name,'Actividaddescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,camelname,'ActividadDescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,length,20).
+struct_dt_elem_i([ 0,1,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],2,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,1,0 ],2,pic,'').
+struct_dt_elem_i([ 0,1,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],2,attributeid,'13').
+struct_dt_elem_i([ 0,1,0 ],2,'ExternalName','ActividadDescripcion').
+struct_dt_elem_i([ 0,1,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,1,0 ],3,name,'Actividadcantidadprofesores').
+struct_dt_elem_i([ 0,1,0 ],3,camelname,'ActividadCantidadProfesores').
+struct_dt_elem_i([ 0,1,0 ],3,length,4).
+struct_dt_elem_i([ 0,1,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,1,0 ],3,sign,0).
+struct_dt_elem_i([ 0,1,0 ],3,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,1,0 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,1,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,1,0 ],3,attributeid,'35').
+struct_dt_elem_i([ 0,1,0 ],3,'ExternalName','ActividadCantidadProfesores').
+struct_dt_elem_i([ 0,1,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],1,name,'Profesorid').
+struct_dt_elem_i([ 0,2,0 ],1,camelname,'ProfesorId').
+struct_dt_elem_i([ 0,2,0 ],1,length,4).
+struct_dt_elem_i([ 0,2,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],1,sign,0).
+struct_dt_elem_i([ 0,2,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,2,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,2,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],1,attributeid,'2').
+struct_dt_elem_i([ 0,2,0 ],1,'ExternalName','ProfesorId').
+struct_dt_elem_i([ 0,2,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],2,name,'Profesornombre').
+struct_dt_elem_i([ 0,2,0 ],2,camelname,'ProfesorNombre').
+struct_dt_elem_i([ 0,2,0 ],2,length,20).
+struct_dt_elem_i([ 0,2,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],2,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,2,0 ],2,pic,'').
+struct_dt_elem_i([ 0,2,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],2,attributeid,'15').
+struct_dt_elem_i([ 0,2,0 ],2,'ExternalName','ProfesorNombre').
+struct_dt_elem_i([ 0,2,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],3,name,'Profesordireccion').
+struct_dt_elem_i([ 0,2,0 ],3,camelname,'ProfesorDireccion').
+struct_dt_elem_i([ 0,2,0 ],3,basedon,26).
+struct_dt_elem_i([ 0,2,0 ],3,length,1024).
+struct_dt_elem_i([ 0,2,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],3,type,[ 13,1024,0 ]).
+struct_dt_elem_i([ 0,2,0 ],3,pic,'').
+struct_dt_elem_i([ 0,2,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],3,attributeid,'16').
+struct_dt_elem_i([ 0,2,0 ],3,'ExternalName','ProfesorDireccion').
+struct_dt_elem_i([ 0,2,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],4,name,'Profesorfoto').
+struct_dt_elem_i([ 0,2,0 ],4,camelname,'ProfesorFoto').
+struct_dt_elem_i([ 0,2,0 ],4,length,4).
+struct_dt_elem_i([ 0,2,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],4,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 0,2,0 ],4,pic,'').
+struct_dt_elem_i([ 0,2,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],4,attributeid,'17').
+struct_dt_elem_i([ 0,2,0 ],4,'ExternalName','ProfesorFoto').
+struct_dt_elem_i([ 0,2,0 ],4,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],5,name,'Profesorfoto_gxi').
+struct_dt_elem_i([ 0,2,0 ],5,camelname,'ProfesorFoto_GXI').
+struct_dt_elem_i([ 0,2,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],5,isadd,'True').
+struct_dt_elem_i([ 0,2,0 ],5,length,2048).
+struct_dt_elem_i([ 0,2,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],5,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 0,2,0 ],6,name,'Actividadid').
+struct_dt_elem_i([ 0,2,0 ],6,camelname,'ActividadId').
+struct_dt_elem_i([ 0,2,0 ],6,length,4).
+struct_dt_elem_i([ 0,2,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],6,sign,0).
+struct_dt_elem_i([ 0,2,0 ],6,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,2,0 ],6,pic,'ZZZ9').
+struct_dt_elem_i([ 0,2,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],6,attributeid,'1').
+struct_dt_elem_i([ 0,2,0 ],6,'ExternalName','ActividadId').
+struct_dt_elem_i([ 0,2,0 ],6,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,2,0 ],7,name,'Actividaddescripcion').
+struct_dt_elem_i([ 0,2,0 ],7,camelname,'ActividadDescripcion').
+struct_dt_elem_i([ 0,2,0 ],7,length,20).
+struct_dt_elem_i([ 0,2,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],7,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,2,0 ],7,pic,'').
+struct_dt_elem_i([ 0,2,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],7,attributeid,'13').
+struct_dt_elem_i([ 0,2,0 ],7,'ExternalName','ActividadDescripcion').
+struct_dt_elem_i([ 0,2,0 ],7,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,3,0 ],1,name,'Carnetid').
+struct_dt_elem_i([ 0,3,0 ],1,camelname,'CarnetId').
+struct_dt_elem_i([ 0,3,0 ],1,length,4).
+struct_dt_elem_i([ 0,3,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],1,sign,0).
+struct_dt_elem_i([ 0,3,0 ],1,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,3,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 0,3,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],1,attributeid,'36').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalName','CarnetId').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,3,0 ],2,name,'Carnetfechaingreso').
+struct_dt_elem_i([ 0,3,0 ],2,camelname,'CarnetFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,length,8).
+struct_dt_elem_i([ 0,3,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],2,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],2,pic,'99/99/99').
+struct_dt_elem_i([ 0,3,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],2,attributeid,'37').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalName','CarnetFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 0,5,0 ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,2,0 ],3,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,22,'INGRESARDATOSPRUEBA','INTERNAL').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

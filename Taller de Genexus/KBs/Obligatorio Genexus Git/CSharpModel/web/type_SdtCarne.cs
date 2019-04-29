@@ -2,7 +2,7 @@
                File: type_SdtCarne
         Description: Carne
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:0.8
+       Generated on: 4/12/2019 5:22:32.78
        Program type: Callable routine
           Main DBMS: SQL Server
 */

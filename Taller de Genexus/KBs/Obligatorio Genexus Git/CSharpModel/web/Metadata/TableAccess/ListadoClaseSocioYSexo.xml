@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="dffaf091-8eaa-47d5-9900-28793f335c67">
+  <Table name="Socio" />
+  <Table name="Clase" />
+  <Table name="ClaseSocios" />
+</Dependencies>

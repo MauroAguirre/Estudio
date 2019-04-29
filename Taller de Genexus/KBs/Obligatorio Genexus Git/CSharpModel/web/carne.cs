@@ -2,7 +2,7 @@
                File: Carne
         Description: Carne
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:0:57.73
+       Generated on: 4/12/2019 5:22:31.8
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -1554,7 +1554,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?2019322190596", false);
+         context.AddJavascriptSource("gxcfg.js", "?2019412522327", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1734,7 +1734,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221905916", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194125223213", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1750,7 +1750,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("carne.js", "?20193221905916", false);
+         context.AddJavascriptSource("carne.js", "?20194125223214", false);
          /* End function include_jscripts */
       }
 

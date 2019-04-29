@@ -2,7 +2,7 @@ spec_i([ web,13,'Actividad Profesor WC','ActividadProfesorWC',0,eng,'15_0_12-126
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 1,17,40000,16,15,2 ] ] ],[ [ [ 3 ],[] ] ],[ 1 ],'IPROFESOR1',[ 3,[ [ [],'Actividadid',1 ] ] ],[] ]).
+level_i(2,[ 11,[ [ 11,many ] ],[],[],[ [ [ 11 ],[ 1,17,40000,16,15,2 ] ] ],[ [ [ 11 ],[] ] ],[ 1 ],'IPROFESOR1',[ 11,[ [ [],'Actividadid',1 ] ] ],[] ]).
  
 tw_i(2,[]).
  
@@ -12,7 +12,7 @@ lwi_i(2,[ [] ]).
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 3,1 ],[ 3,17 ],[ 3,40000 ],[ 3,16 ],[ 3,15 ],[ 3,2 ] ] ]).
+ta_i(2,[ [ [ 11,1 ],[ 11,17 ],[ 11,40000 ],[ 11,16 ],[ 11,15 ],[ 11,2 ] ] ]).
  
 las_i(2,[ [ 'Actividadid','Update','Delete',1,17,40000,16,15,2 ] ]).
  
@@ -131,7 +131,7 @@ rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ActividadProfesorWC"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,3,[],[ [ [ [],'Actividadid',1 ] ],'IPROFESOR1',[] ]).
+a_i(3,2,t,11,[],[ [ [ [],'Actividadid',1 ] ],'IPROFESOR1',[] ]).
 a_i(4,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(5,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
@@ -175,10 +175,10 @@ attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',7 ]).
 attri_i('Actividadid',[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(3,[ 'Profesor',[ 2,15,16,17,40000,1 ],'Profesor','Profesor' ]).
+table_i(11,[ 'Profesor',[ 2,15,16,17,40000,1 ],'Profesor','Profesor' ]).
  
-index_i(3,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
-index_i(3,[ 'IPROFESOR1',d,[ 1 ],'IProfesor1' ]).
+index_i(11,[ 'IPROFESOR',u,[ 2 ],'IProfesor' ]).
+index_i(11,[ 'IPROFESOR1',d,[ 1 ],'IProfesor1' ]).
  
  
  
@@ -811,12 +811,12 @@ att_prop_i(2,40000,'AttValidationFailedMsg','',d).
 att_prop_i(2,40000,'FullName','',v).
  
  
-tbl_att_prop_i(2,3,2,'AllowNulls',n).
-tbl_att_prop_i(2,3,15,'AllowNulls',n).
-tbl_att_prop_i(2,3,16,'AllowNulls',n).
-tbl_att_prop_i(2,3,17,'AllowNulls',n).
-tbl_att_prop_i(2,3,40000,'AllowNulls',n).
-tbl_att_prop_i(2,3,1,'AllowNulls',n).
+tbl_att_prop_i(2,11,2,'AllowNulls',n).
+tbl_att_prop_i(2,11,15,'AllowNulls',n).
+tbl_att_prop_i(2,11,16,'AllowNulls',n).
+tbl_att_prop_i(2,11,17,'AllowNulls',n).
+tbl_att_prop_i(2,11,40000,'AllowNulls',n).
+tbl_att_prop_i(2,11,1,'AllowNulls',n).
  
 var_prop_i(2,'Actividadid',idBasedOn,'',v).
  

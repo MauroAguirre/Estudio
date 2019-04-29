@@ -1,4 +1,4 @@
-spec_i([ web,15,'Carnes','WWCarne',0,eng,'15_0_12-126726' ]).
+spec_i([ web,15,'Carne','WWCarne',0,eng,'15_0_12-126726' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
@@ -20,7 +20,7 @@ las_i(2,[ [ 'Carnefechaingreso','Update','Delete',5,22,4 ] ]).
 lac_i(2,[ [ 'Carnefechaingreso','Update','Delete' ] ]).
  
  
-lits_i('Carnes',5,10).
+lits_i('Carne',5,10).
  
 cls_i([ 0,0 ],[ 5,59 ]).
  
@@ -123,7 +123,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Carnes')).
+rule_i(0,prop('ObjDesc','Carne')).
 rule_i(0,prop('ObjName','WWCarne')).
 rule_i(0,maingen(15)).
 rule_i(2,rule([ a(1,msg([ t('"Field Carne Fecha Ingreso is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t('Carnefechaingreso',2),t(')',4),t('.OR.',9),t('Carnefechaingreso',2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 'Carnefechaingreso' ])).
@@ -242,7 +242,7 @@ b_line_i(4,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,1,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
 b_line_i(7,2,2,cmd,1,[ t('',107,1,0),t('Update',23,1,0),t(=,10,1,0),t('"Update"',3,1,0) ]).
 b_line_i(8,2,2,cmd,1,[ t('',107,1,0),t('Delete',23,1,0),t(=,10,1,0),t('"Delete"',3,1,0) ]).
-b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Carnes''',3,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Carne''',3,1,0) ]).
 b_line_i(11,2,2,cmd,1,[ t('',145,1,0),t('''PREPARETRANSACTION''',3,11,5) ]).
 b_line_i(12,2,2,cmd,1,[ t('',145,1,0),t('''LOADGRIDSTATE''',3,12,5) ]).
 b_line_i(13,2,2,cmd,1,[ t('',147,1,0) ]).
@@ -314,7 +314,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Carnes',3))).
+html_sub_i(8,9,html_i(0,t('Carne',3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -395,7 +395,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Carnes',d,[ str ]).
+html_comp_i(9,'Caption','Carne',d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -737,7 +737,7 @@ html_comp_i(30,'Invitemsg','',d,[ str ]).
  
 warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,22) ],'; poor performance may be noticed',[ ' in grid ''','Grid','''' ],'.' ])).
  
-lit_i(9,1,t('Carnes',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t('Carne',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).

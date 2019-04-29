@@ -1,8 +1,8 @@
-spec_i([ web,10,'Actividads','WWActividad',0,eng,'15_0_12-126726' ]).
+spec_i([ web,10,'Actividades','WWActividad',0,eng,'15_0_12-126726' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 14,13,1 ] ] ],[ [ [ 1 ],[] ] ],[ 13 ],'',[],[] ]).
+level_i(2,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 13,1,35 ] ] ],[ [ [ 1 ],[] ] ],[ 13 ],'',[],[] ]).
  
 tw_i(2,[]).
  
@@ -13,25 +13,25 @@ cond_constraint_i(2,[ [ t(13,2),t('.LIKE.',10),t('Actividaddescripcion',23) ],[ 
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 1,14 ],[ 1,13 ],[ 1,1 ] ] ]).
+ta_i(2,[ [ [ 1,13 ],[ 1,1 ] ] ]).
  
-las_i(2,[ [ 'Actividaddescripcion','Update','Delete',14,13,1 ] ]).
+las_i(2,[ [ 'Actividaddescripcion','Update','Delete',13,1,35 ] ]).
  
 lac_i(2,[ [ 'Actividaddescripcion','Update','Delete' ] ]).
  
  
-lits_i('Actividads',5,10).
+lits_i('Actividades',5,10).
  
-cls_i([ 0,0 ],[ 5,87 ]).
+cls_i([ 0,0 ],[ 5,71 ]).
  
 pos_i('Actividaddescripcion',[ 0,0,0 ]).
 pos_i(1,[ 1,2,0 ]).
 pos_i(13,[ 1,2,5 ]).
-pos_i(14,[ 1,2,26 ]).
-pos_i('Update',[ 1,2,47 ]).
-pos_i('Delete',[ 1,2,68 ]).
+pos_i(35,[ 1,2,26 ]).
+pos_i('Update',[ 1,2,31 ]).
+pos_i('Delete',[ 1,2,52 ]).
  
-repeat_i(2,[ 1,2,[ 1,13,14,'Update','Delete' ],[ 'Update','Delete' ] ]).
+repeat_i(2,[ 1,2,[ 1,13,35,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWActividad"')).
  
@@ -123,36 +123,38 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Actividads')).
+rule_i(0,prop('ObjDesc','Actividades')).
 rule_i(0,prop('ObjName','WWActividad')).
 rule_i(0,maingen(15)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
-a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWActividad"',3) ] ]).
-a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,1,[],[ [],'',[] ]).
-a_i(4,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(5,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(1,2,f,35,[],[ [],[ t('udp(',1),t(35,3),t(0,3),t(1,2),t(')',4) ] ]).
+a_i(2,1,f,'Pgmname',[],[ [],[ t('"WWActividad"',3) ] ]).
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(4,2,t,1,[],[ [],'',[] ]).
+a_i(5,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(6,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
-v_i(f,i,1,[]).
-v_i(f,o,1,'Pgmname').
+v_i(f,i,1,1).
+v_i(f,o,1,35).
 v_i(f,i,2,[]).
-v_i(f,o,2,'Err').
-v_i(t,i,3,[]).
-v_i(t,o,3,14).
-v_i(t,o,3,13).
-v_i(t,o,3,1).
-v_i(f,i,4,[]).
-v_i(f,o,4,[ t('&Update',23),t('Enabled',3) ]).
+v_i(f,o,2,'Pgmname').
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+v_i(t,i,4,[]).
+v_i(t,o,4,13).
+v_i(t,o,4,1).
 v_i(f,i,5,[]).
-v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
+v_i(f,o,5,[ t('&Update',23),t('Enabled',3) ]).
+v_i(f,i,6,[]).
+v_i(f,o,6,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
  
  
  
-attri_i(14,[ 'ActividadTipo',char,20,0,'',0,'Actividad Tipo','',0 ]).
+attri_i(35,[ 'ActividadCantidadProfesores',int,4,0,'ZZZ9',0,'Actividad Cantidad Profesores','',0 ]).
 attri_i(13,[ 'ActividadDescripcion',char,20,0,'',0,'Actividad Descripcion','',0 ]).
 attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',19 ]).
@@ -171,13 +173,14 @@ attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7
 attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(1,[ 'Actividad1',[ 1,13,14 ],'Actividad','Actividad1' ]).
+table_i(1,[ 'Actividad1',[ 1,13 ],'Actividad','Actividad1' ]).
  
 index_i(1,[ '',a,[ 13 ],'' ]).
 index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
  
  
  
+function_i(2,35,yes,udp,o(1,'CantidadDeProfesEnActividad'),[ 1 ],0,35,[ [ t(1,2) ] ]).
  
  
  
@@ -186,6 +189,7 @@ index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
  
  
  
+sql_no_eval_hor_i(2,35).
  
  
  
@@ -218,7 +222,7 @@ enum_type_i(2,55,char,7,0).
  
  
  
-break_i(2,nvg,1,[ 13 ],[ [ 1,13,14 ],[],[] ]).
+break_i(2,nvg,1,[ 13 ],[ [ 1,13,35 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,15).
@@ -236,7 +240,7 @@ b_line_i(4,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,1,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
 b_line_i(7,2,2,cmd,1,[ t('',107,1,0),t('Update',23,1,0),t(=,10,1,0),t('"Update"',3,1,0) ]).
 b_line_i(8,2,2,cmd,1,[ t('',107,1,0),t('Delete',23,1,0),t(=,10,1,0),t('"Delete"',3,1,0) ]).
-b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Actividads''',3,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Actividades''',3,1,0) ]).
 b_line_i(11,2,2,cmd,1,[ t('',145,1,0),t('''PREPARETRANSACTION''',3,11,5) ]).
 b_line_i(12,2,2,cmd,1,[ t('',145,1,0),t('''LOADGRIDSTATE''',3,12,5) ]).
 b_line_i(13,2,2,cmd,1,[ t('',147,1,0) ]).
@@ -308,7 +312,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Actividads',3))).
+html_sub_i(8,9,html_i(0,t('Actividades',3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -389,7 +393,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Actividads',d,[ str ]).
+html_comp_i(9,'Caption','Actividades',d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -638,18 +642,15 @@ html_comp_i(27,'Colvisible',-1,v,[ bool ]).
 html_comp_i(27,'Title','',d,[ str ]).
 html_comp_i(27,'Invitemsg','',d,[ str ]).
 html_comp_i(28,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(28,'Colcount',20,d,[ num ]).
-html_comp_i(28,'Colattid',14,v,[ num ]).
-html_comp_i(28,'Controlname','Actividadtipo',d,[ str ]).
+html_comp_i(28,'Colcount',4,d,[ num ]).
+html_comp_i(28,'Colattid',35,v,[ num ]).
+html_comp_i(28,'Controlname','Actividadcantidadprofesores',d,[ str ]).
 html_comp_i(28,'Class','Attribute',v,[ str ]).
 html_comp_i(28,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(28,'Returnonclick',0,d,[ bool ]).
 html_comp_i(28,'Eventgx','',d,[ str ]).
 html_comp_i(28,'Controltype',2,d,[ num ]).
 html_comp_i(28,'Inputtype',0,d,[ num ]).
-html_comp_i(28,'Editautocomplete',0,d,[ num ]).
-html_comp_i(28,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(28,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(28,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(28,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(28,'Autocomplete',-1,d,[ bool ]).
@@ -660,10 +661,10 @@ html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(28,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(28,'Coltitle','Tipo',d,[ str ]).
+html_comp_i(28,'Coltitle','Cantidad Profesores',d,[ str ]).
 html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(28,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(28,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(28,'Gxformat',0,d,[ num ]).
 html_comp_i(28,'Colvisible',-1,v,[ bool ]).
 html_comp_i(28,'Title','',d,[ str ]).
@@ -738,7 +739,7 @@ html_comp_i(30,'Invitemsg','',d,[ str ]).
  
 warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,13) ],'; poor performance may be noticed',[ ' in grid ''','Grid','''' ],'.' ])).
  
-lit_i(9,1,t('Actividads',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t('Actividades',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).
@@ -756,10 +757,10 @@ lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,s(t(1,2),25),[ ctlname(1),ctrltype(edit,26),pos(26),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(27,1,s(t(13,2),25),[ ctlname(13),ctrltype(edit,27),pos(27),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(28,1,s(t(14,2),25),[ ctlname(14),ctrltype(edit,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(28,1,s(t(35,2),25),[ ctlname(35),ctrltype(edit,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(29,1,s(t('Update',23),25),[ ctlname('&Update'),ctrltype(edit,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(30,1,s(t('Delete',23),25),[ ctlname('&Delete'),ctrltype(edit,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(1,2),t(13,2),t(14,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(1,2),t(13,2),t(35,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(24,1,div(24),[ ctlname('') ]).
 lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Gridtable') ]).
@@ -776,6 +777,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+calling_main_i(13,8).
  
 att_prop_i(2,1,'ExternalName','ActividadId',d).
 att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
@@ -795,20 +797,14 @@ att_prop_i(2,13,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,13,'AttRegEx','',d).
 att_prop_i(2,13,'AttValidationFailedMsg','',d).
 att_prop_i(2,13,'FullName','ActividadDescripcion',v).
-att_prop_i(2,14,'ExternalName','ActividadTipo',d).
-att_prop_i(2,14,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,14,'EmptyAsNull','Yes',d).
-att_prop_i(2,14,idBasedOn,'',d).
-att_prop_i(2,14,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,14,'DB_NLS_SUPPORT','No',d).
-att_prop_i(2,14,'AttRegEx','',d).
-att_prop_i(2,14,'AttValidationFailedMsg','',d).
-att_prop_i(2,14,'FullName','ActividadTipo',v).
+att_prop_i(2,35,'ExternalName','ActividadCantidadProfesores',d).
+att_prop_i(2,35,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,35,idBasedOn,'',d).
+att_prop_i(2,35,'FullName','ActividadCantidadProfesores',v).
  
  
 tbl_att_prop_i(2,1,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,13,'AllowNulls',n).
-tbl_att_prop_i(2,1,14,'AllowNulls',n).
  
 var_prop_i(2,'Actividaddescripcion',idBasedOn,'',v).
  
@@ -836,8 +832,6 @@ struct_dt_i([ 26,42,0 ],fullname,'GridState').
 struct_dt_i([ 26,42,69 ],fullname,'GridState.FilterValue').
 struct_dt_i([ 26,45,0 ],fullname,'TransactionContext').
 struct_dt_i([ 26,45,73 ],fullname,'TransactionContext.Attribute').
-struct_dt_i([ 26,42,0 ],modified,yes).
-struct_dt_i([ 26,42,69 ],modified,yes).
  
 struct_dt_elem_i([ 26,42,0 ],1,name,'Currentpage').
 struct_dt_elem_i([ 26,42,0 ],1,camelname,'CurrentPage').
@@ -1025,6 +1019,8 @@ struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
 struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
 struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
  
  
  
@@ -1036,12 +1032,14 @@ sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,23,[ [ 1 ],[ [ t('Updat
 sub_info_i(146,'''DoInsert''',25,27,[ [ 1 ],[] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ id,in,[] ],[ cantidad,out,[] ] ]).
 pgm_parm_i(web,14,'VIEWACTIVIDAD',[ [ int,4,0,0 ],[ char,50,0,0 ] ],[ [ 'ActividadId',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(trn,1,'ACTIVIDAD',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'ActividadId',in,[] ] ]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,10,'WWACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
+pgm_callprotocol_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(web,14,'VIEWACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(trn,1,'ACTIVIDAD','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').

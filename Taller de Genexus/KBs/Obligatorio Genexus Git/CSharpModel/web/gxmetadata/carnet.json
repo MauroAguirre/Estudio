@@ -1,0 +1,4 @@
+{
+
+"GxObject":{"ObjectType":"BusinessComponent","Name":"Carnet","idConnectivitySupport":"idInherit","Structure":{"Levels":[{"Name":"Carnet","ParentLevel":"","LevelName":"Carnet","Description":"Carnet","Attributes":[{"Name":"CarnetId","Caption":"Carnet Id","default":"0","IsKey":"true","ReadOnly":"false","AttributeType":"int","Description":"Carnet Id","Length":"4","Decimals":"0","Signed":"false","AllowDBNulls":"false","InternalName":"CarnetId","DescriptionAtt":"true","InputPicture":"ZZZ9","Type":"xs:int"},{"Name":"CarnetFechaIngreso","Caption":"Carnet Fecha Ingreso","default":"","IsKey":"false","ReadOnly":"false","AttributeType":"date","Description":"Carnet Fecha Ingreso","Length":"8","Decimals":"0","Signed":"false","AllowDBNulls":"false","InternalName":"CarnetFechaIngreso","InputPicture":"99/99/99","Type":"xs:string"}]}]},"Relations":{"ManyToOne":{"references":[]}}}
+}

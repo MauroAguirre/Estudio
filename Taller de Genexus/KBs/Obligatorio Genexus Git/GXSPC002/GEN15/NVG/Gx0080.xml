@@ -1,0 +1,143 @@
+
+<ObjectSpec>
+<SpecVersion>15_0_12-126726</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>38</ObjId>
+<ObjName>Gx0080</ObjName>
+<ObjDesc>Selection List Clase</ObjDesc>
+<ObjPgmName>Gx0080</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pclaseid</VarId>
+<VarName>&amp;pClaseId</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pactividadid</VarId>
+<VarName>&amp;pActividadId</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pprofesorid</VarId>
+<VarName>&amp;pProfesorId</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>'Toggle'</EventName></Event>
+<Event>
+<EventName>Lblclaseidfilter.Click</EventName></Event>
+<Event>
+<EventName>Lblactividadidfilter.Click</EventName></Event>
+<Event>
+<EventName>Lblprofesoridfilter.Click</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>8</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICLASE</IndexName>
+<LevelOptions></LevelOptions>
+<Optimizations>
+<Optimization>
+<Type>ServerPaging</Type></Optimization></Optimizations>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cclaseid</VarId>
+<VarName>&amp;cClaseId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cactividadid</VarId>
+<VarName>&amp;cActividadId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cprofesorid</VarId>
+<VarName>&amp;cProfesorId</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>Clase</TableName>
+<Description>Clase</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ClaseId</AttriName>
+<Description>Clase Id</Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>ProfesorId</AttriName>
+<Description>Profesor Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>Enter</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

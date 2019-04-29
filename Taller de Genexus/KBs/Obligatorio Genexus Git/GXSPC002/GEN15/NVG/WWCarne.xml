@@ -6,10 +6,10 @@
 <ObjCls>13</ObjCls>
 <ObjId>15</ObjId>
 <ObjName>WWCarne</ObjName>
-<ObjDesc>Carnes</ObjDesc>
+<ObjDesc>Carne</ObjDesc>
 <ObjPgmName>WWCarne</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>

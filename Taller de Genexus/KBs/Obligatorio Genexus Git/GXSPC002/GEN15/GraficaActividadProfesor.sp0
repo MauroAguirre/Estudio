@@ -1,0 +1,464 @@
+spec_i([ web,56,'Grafica Actividad Profesor','GraficaActividadProfesor',0,eng,'15_0_12-126726' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+level_i(3,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 13,1 ] ] ],[ [ [ 1 ],[] ] ],[ 1 ],'IACTIVIDAD1',[],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ta_i(3,[ [ [ 1,13 ],[ 1,1 ] ] ]).
+ 
+las_i(2,[ [ 'Googlechartdata' ] ]).
+las_i(3,[ [ 'Googlechartdata',13,1 ] ]).
+ 
+lac_i(2,[ [ 'Googlechartdata' ] ]).
+lac_i(3,[ [ 'Googlechartdata' ] ]).
+ 
+ 
+ 
+cls_i([ 0,0 ],[ 0,0 ]).
+ 
+pos_i('Googlechartdata',[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','GraficaActividadProfesor')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(8,'Menus'))).
+rule_i(0,prop('ObjDesc','Grafica Actividad Profesor')).
+rule_i(0,prop('ObjName','GraficaActividadProfesor')).
+rule_i(0,maingen(15)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,1,[],[ [],'IACTIVIDAD1',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,13).
+v_i(t,o,2,1).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(13,[ 'ActividadDescripcion',char,20,0,'',0,'Actividad Descripcion','',0 ]).
+attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',9 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',8 ]).
+attri_i('Id',[ id,int,4,0,'ZZZ9',0,'Id','',7 ]).
+attri_i('Googlechartseries',[ 'GoogleChartSeries',o('GoogleChart.Series'),0,0,'',0,'Google Chart Series','',6 ]).
+attri_i('Googlechartdata',[ 'GoogleChartData',o('GoogleChart'),0,0,'',0,'Google Chart Data','',5 ]).
+ 
+table_i(1,[ 'Actividad1',[ 1,13 ],'Actividad','Actividad1' ]).
+ 
+index_i(1,[ 'IACTIVIDAD1',u,[ 1 ],'IActividad1' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(3,nvg,1,[],[ [ 1,13 ],[],[] ]).
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,3).
+b_group_i(2,2,lit,0,4,3).
+b_group_i(2,3,nvg,3,7,7).
+b_group_i(3,1,lit,0,8,8).
+b_group_i(2,4,lit,0,11,15).
+b_group_i(2,5,lit,0,16,19).
+b_group_i(2,6,lit,0,20,0).
+ 
+b_line_i(3,2,1,cmd,3,[ t('',143,3,0),t('''LOADGOOGLECHARTDATA''',3,3,5) ]).
+b_line_i(4,2,2,cmd,3,[ t('',107,3,0),t('Googlechartseries',23,3,0),t(=,10,3,0),t([ 'GoogleChart.Series',[ t('(',0,4,26),t(')',4,4,27) ],n ],46,3,0) ]).
+b_line_i(5,2,2,cmd,3,[ t('',107,3,0),t([ t('Googlechartseries',23,3,0),t('Name',3,3,0) ],29,3,0),t(=,10,3,0),t('''Cantidad de profesores''',3,3,0) ]).
+b_line_i(6,2,2,cmd,3,[ t('',107,3,0),t([ t('Googlechartdata',23,6,18),t('Series',3,6,35),t('add(',1,6,42) ],31,6,18),t('Googlechartseries',23,3,47),t(')',4,3,65) ]).
+b_line_i(7,3,1,cmd,8,[ t('',121,7,0),t(table,3,7,11),t(1,3,7,11) ]).
+b_line_i(8,3,1,cmd,8,[ t('',107,8,0),t([ t('Googlechartdata',23,8,19),t('Categories',3,8,36),t('add(',1,8,47) ],31,8,19),t(13,2,8,52),t(')',4,8,72) ]).
+b_line_i(9,3,1,cmd,8,[ t('',107,8,0),t([ t('Googlechartseries',23,9,21),t('Values',3,9,40),t('add(',1,9,47) ],31,9,21),t('udp(',1,9,79),t(o(1,'CantidadDeProfesEnActividad'),28,9,52),t(',',7,8,0),t(1,2,8,80),t(')',4,8,0),t(')',4,8,92) ]).
+b_line_i(10,3,1,cmd,8,[ t('',128,8,0) ]).
+b_line_i(12,2,4,cmd,8,[ t('',144,8,0) ]).
+b_line_i(15,2,4,cmd,8,[ t('',146,8,0),t([ t('Googlecharts1',3,15,7),t('Select',3,15,21) ],29,15,21) ]).
+b_line_i(16,2,5,cmd,8,[ t('',141,8,0),t('"Selected Category Name: "',3,16,6),t(+,5,8,34),t([ t('Googlecharts1',3,16,36),t('Selectedcategoryname',3,16,50) ],29,16,50),t(+,5,8,71),t('" Selected Series Name: "',3,16,73),t(+,5,8,100),t([ t('Googlecharts1',3,16,102),t('Selectedseriesname',3,16,116) ],29,16,116),t(+,5,8,135),t('" Selected Series Value: "',3,16,137),t(+,5,8,165),t('str(',1,8,167),t([ t('Googlecharts1',3,16,172),t('Selectedseriesvalue',3,16,186) ],29,16,186),t(')',4,8,205),t(')',4,8,206) ]).
+b_line_i(17,2,5,cmd,8,[ t('',147,8,0) ]).
+b_line_i(19,2,5,cmd,8,[ t('',146,8,0),t('Start',3,19,7) ]).
+b_line_i(20,2,6,cmd,8,[ t('',145,8,0),t('''LOADGOOGLECHARTDATA''',3,20,5) ]).
+b_line_i(21,2,6,cmd,8,[ t('',147,8,0) ]).
+b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,div(2)).
+ 
+html_sub_i(2,3,html_i(0,div(3))).
+html_sub_i(3,4,html_i(0,div(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,div(6))).
+html_sub_i(6,7,html_i(0,usercontrol(7))).
+ 
+html_tags_i(1,'Class','form-horizontal Form').
+html_tags_i(2,'data-abstract-form','').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',d,[ str ]).
+html_comp_i(2,'Id','',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Class','Table',v,[ str ]).
+html_comp_i(3,'Id','Maintable',v,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Semanticcontent',div,d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Valign',top,d,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Class',row,v,[ str ]).
+html_comp_i(4,'Id','',d,[ str ]).
+html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Semanticcontent',div,d,[ str ]).
+html_comp_i(4,'Align',left,d,[ str ]).
+html_comp_i(4,'Valign',top,d,[ str ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','col-xs-12',v,[ str ]).
+html_comp_i(5,'Id','',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Class','Section',v,[ str ]).
+html_comp_i(6,'Id','Section1',v,[ str ]).
+html_comp_i(6,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Semanticcontent',div,d,[ str ]).
+html_comp_i(6,'Align',left,d,[ str ]).
+html_comp_i(6,'Valign',top,d,[ str ]).
+html_comp_i(7,'Usercontroltype','GoogleCharts',d,[ str ]).
+html_comp_i(7,'Constructorname','GoogleCharts',d,[ str ]).
+html_comp_i(7,'Showmethodname',show,d,[ str ]).
+html_comp_i(7,'Controlname','GoogleCharts1',v,[ str ]).
+html_comp_i(7,'Width','1300',v,[ str ]).
+html_comp_i(7,'Height','600',v,[ str ]).
+html_comp_i(7,'Type','ColumnChart',d,[ str ]).
+html_comp_i(7,'Mode','Interactive',d,[ str ]).
+html_comp_i(7,'Data',[ t('Googlechartdata',23) ],v,[ params ]).
+html_comp_i(7,'Xtitle','Year',d,[ str ]).
+html_comp_i(7,'Ytitle','Cantidad',v,[ str ]).
+html_comp_i(7,'Title','Cantidad de profesores en actividad',v,[ str ]).
+html_comp_i(7,'Selectedcategoryname','',d,[ str ]).
+html_comp_i(7,'Selectedseriesname','',d,[ str ]).
+html_comp_i(7,'Selectedseriesvalue',0,d,[ num ]).
+html_comp_i(7,'Axiscolor',rgb(192,192,192),d,[ color ]).
+html_comp_i(7,'Backgroundcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(7,'Colors','',d,[ str ]).
+html_comp_i(7,'Focusbordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(7,'Is3d',true,d,[ str ]).
+html_comp_i(7,'Isstacked',false,d,[ str ]).
+html_comp_i(7,'Legend',right,d,[ str ]).
+html_comp_i(7,'Legendbackgroundcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(7,'Legendtextcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Reverseaxis',false,d,[ str ]).
+html_comp_i(7,'Titlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Setdata','SetData',d,[ str ]).
+html_comp_i(7,'Getdata','GetData',d,[ str ]).
+html_comp_i(7,'Setcolors','SetColors',d,[ str ]).
+html_comp_i(7,'Getcolors','GetColors',d,[ str ]).
+html_comp_i(7,'Visible',-1,d,[ bool ]).
+html_comp_i(7,'Csssupportfiles',[],d,[ params ]).
+html_comp_i(7,'Jssupportfiles',[ [ t('''//www.google.com/jsapi''',3) ],[ t('''GXGoogleVisualizationLibrary\GoogleCharts/GoogleChartsRender.js''',3) ] ],d,[ params ]).
+html_comp_i(7,'Csssharedsupportfiles',[],d,[ params ]).
+html_comp_i(7,'Jssharedsupportfiles',[],d,[ params ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(7,1,usercontrol(7),[ ctlname('Googlecharts1'),ctrltype(googlecharts),el([ t('Googlechartdata',23) ]),containers([]) ]).
+lit_i(6,1,div(6),[ ctlname('Section1') ]).
+lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(3,1,div(3),[ ctlname('Maintable') ]).
+lit_i(2,1,div(2),[ ctlname('') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+att_prop_i(2,1,'ExternalName','ActividadId',d).
+att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,'',d).
+att_prop_i(2,1,'AUTONUMBER','0',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'FullName','ActividadId',v).
+att_prop_i(2,13,'ExternalName','ActividadDescripcion',d).
+att_prop_i(2,13,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,idBasedOn,'',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'FullName','ActividadDescripcion',v).
+ 
+ 
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,13,'AllowNulls',n).
+ 
+var_prop_i(2,'Id',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,46,0 ],name,'GoogleChart').
+struct_dt_i([ 26,46,0 ],namespace,'ObligatorioGenexusGit').
+struct_dt_i([ 26,46,0 ],'ObjName','GoogleChart').
+struct_dt_i([ 26,46,0 ],'ObjDesc','Google Chart').
+struct_dt_i([ 26,46,0 ],'ExternalName','GoogleChart').
+struct_dt_i([ 26,46,0 ],'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_i([ 26,46,75 ],name,'Series').
+struct_dt_i([ 26,46,75 ],namespace,'ObligatorioGenexusGit.GoogleChart').
+struct_dt_i([ 26,46,0 ],fullname,'GoogleChart').
+struct_dt_i([ 26,46,75 ],fullname,'GoogleChart.Series').
+ 
+struct_dt_elem_i([ 26,46,0 ],1,name,'Categories').
+struct_dt_elem_i([ 26,46,0 ],1,camelname,'Categories').
+struct_dt_elem_i([ 26,46,0 ],1,length,100).
+struct_dt_elem_i([ 26,46,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,46,0 ],1,type,[ 5,100,0 ]).
+struct_dt_elem_i([ 26,46,0 ],1,pic,'').
+struct_dt_elem_i([ 26,46,0 ],1,collection,'True').
+struct_dt_elem_i([ 26,46,0 ],1,'ExternalName','Categories').
+struct_dt_elem_i([ 26,46,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,46,0 ],1,'CollectionItemName','Item').
+struct_dt_elem_i([ 26,46,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,46,0 ],1,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,46,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,46,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,46,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,46,0 ],1,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,46,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,46,0 ],1,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,46,0 ],2,name,'Series').
+struct_dt_elem_i([ 26,46,0 ],2,camelname,'Series').
+struct_dt_elem_i([ 26,46,0 ],2,type,[ [ 26,46,75 ],0,0 ]).
+struct_dt_elem_i([ 26,46,0 ],2,pic,'').
+struct_dt_elem_i([ 26,46,0 ],2,collection,'True').
+struct_dt_elem_i([ 26,46,0 ],2,'ObjName','Series').
+struct_dt_elem_i([ 26,46,0 ],2,'ObjDesc','Series').
+struct_dt_elem_i([ 26,46,0 ],2,'CollectionItemName','Series').
+struct_dt_elem_i([ 26,46,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,46,0 ],2,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,46,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,46,0 ],2,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,46,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,46,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,46,0 ],2,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,46,75 ],1,name,'Name').
+struct_dt_elem_i([ 26,46,75 ],1,camelname,'Name').
+struct_dt_elem_i([ 26,46,75 ],1,length,20).
+struct_dt_elem_i([ 26,46,75 ],1,decimals,0).
+struct_dt_elem_i([ 26,46,75 ],1,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 26,46,75 ],1,pic,'').
+struct_dt_elem_i([ 26,46,75 ],1,collection,'False').
+struct_dt_elem_i([ 26,46,75 ],1,'ExternalName','Name').
+struct_dt_elem_i([ 26,46,75 ],1,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,46,75 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,46,75 ],1,'XmlName','').
+struct_dt_elem_i([ 26,46,75 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,46,75 ],1,soaptype,'').
+struct_dt_elem_i([ 26,46,75 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,46,75 ],1,'JsonName','').
+struct_dt_elem_i([ 26,46,75 ],2,name,'Values').
+struct_dt_elem_i([ 26,46,75 ],2,camelname,'Values').
+struct_dt_elem_i([ 26,46,75 ],2,length,18).
+struct_dt_elem_i([ 26,46,75 ],2,decimals,5).
+struct_dt_elem_i([ 26,46,75 ],2,sign,0).
+struct_dt_elem_i([ 26,46,75 ],2,type,[ 4,18,5 ]).
+struct_dt_elem_i([ 26,46,75 ],2,pic,'ZZZZZZZZZZZ9.99999').
+struct_dt_elem_i([ 26,46,75 ],2,collection,'True').
+struct_dt_elem_i([ 26,46,75 ],2,'ExternalName','Values').
+struct_dt_elem_i([ 26,46,75 ],2,'ExternalNamespace','ObligatorioGenexusGit').
+struct_dt_elem_i([ 26,46,75 ],2,'CollectionItemName','Item').
+struct_dt_elem_i([ 26,46,75 ],2,'XmlName','').
+struct_dt_elem_i([ 26,46,75 ],2,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,46,75 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,46,75 ],2,soaptype,'').
+struct_dt_elem_i([ 26,46,75 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,46,75 ],2,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,46,75 ],2,'JsonName','').
+struct_dt_elem_i([ 26,46,75 ],2,'JsonInclude',idJsonNoProperty).
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,[ t('Googlecharts1',3,15,7),t('Select',3,15,21) ],15,17,[ [ [ t('Googlecharts1',3),t('Selectedcategoryname',3) ],[ t('Googlecharts1',3),t('Selectedseriesname',3) ],[ t('Googlecharts1',3),t('Selectedseriesvalue',3) ] ],[] ]).
+sub_info_i(146,'Start',19,21,[ [ 'Googlechartdata',13,1 ],[ 'Googlechartdata' ] ]).
+ 
+pgm_parm_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ id,in,[] ],[ cantidad,out,[] ] ]).
+ 
+pgm_callprotocol_i(web,56,'GRAFICAACTIVIDADPROFESOR','INTERNAL').
+pgm_callprotocol_i(proc,19,'CANTIDADDEPROFESENACTIVIDAD','INTERNAL').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

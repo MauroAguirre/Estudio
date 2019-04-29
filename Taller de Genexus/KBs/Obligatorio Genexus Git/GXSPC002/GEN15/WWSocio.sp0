@@ -1,41 +1,42 @@
-spec_i([ web,25,'Socios','WWSocio',0,eng,'15_0_12-126726' ]).
+spec_i([ web,25,'Work With Socio','WWSocio',0,eng,'15_0_12-126726' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 21,40000,24,23,20,19,18,5 ] ] ],[ [ [ 4 ],[] ] ],[ 18 ],'',[],[] ]).
+level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 21,40000,24,19,18,5,20,33,32 ] ] ],[ [ [ 4 ],[] ] ],[ 5 ],'ISOCIO',[],[] ]).
  
 tw_i(2,[]).
  
 lwi_i(2,[ [] ]).
  
-cond_constraint_i(2,[ [ t(18,2),t('.LIKE.',10),t('Sociodireccion',23) ],[ 18 ],[ t('.NOT.',8),t('null(',1),t('Sociodireccion',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(5,2),t(>=,10),t('Socioid',23) ],[ 5 ],[ t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4) ],[] ]).
  
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 4,21 ],[ 4,40000 ],[ 4,24 ],[ 4,23 ],[ 4,20 ],[ 4,19 ],[ 4,18 ],[ 4,5 ] ] ]).
+ta_i(2,[ [ [ 4,21 ],[ 4,40000 ],[ 4,24 ],[ 4,19 ],[ 4,18 ],[ 4,5 ],[ 4,20 ],[ 4,33 ] ] ]).
  
-las_i(2,[ [ 'Sociodireccion','Update','Delete',21,40000,24,23,20,19,18,5 ] ]).
+las_i(2,[ [ 'Socioid','Update','Delete',21,40000,24,19,18,5,20,33,32 ] ]).
  
-lac_i(2,[ [ 'Sociodireccion','Update','Delete' ] ]).
+lac_i(2,[ [ 'Socioid','Update','Delete' ] ]).
  
  
 lits_i('Socios',5,10).
  
-cls_i([ 0,0 ],[ 5,2163 ]).
+cls_i([ 0,0 ],[ 5,2152 ]).
  
-pos_i('Sociodireccion',[ 0,0,0 ]).
+pos_i('Socioid',[ 0,0,0 ]).
 pos_i(5,[ 1,2,0 ]).
 pos_i(18,[ 1,2,5 ]).
 pos_i(19,[ 1,2,1030 ]).
 pos_i(20,[ 1,2,1051 ]).
-pos_i(23,[ 1,2,1056 ]).
-pos_i(24,[ 1,2,1077 ]).
-pos_i(21,[ 1,2,1098 ]).
-pos_i('Update',[ 1,2,2123 ]).
-pos_i('Delete',[ 1,2,2144 ]).
+pos_i(24,[ 1,2,1056 ]).
+pos_i(21,[ 1,2,1061 ]).
+pos_i(32,[ 1,2,2086 ]).
+pos_i(33,[ 1,2,2091 ]).
+pos_i('Update',[ 1,2,2112 ]).
+pos_i('Delete',[ 1,2,2133 ]).
  
-repeat_i(2,[ 1,2,[ 5,18,19,20,23,24,21,'Update','Delete' ],[ 'Update','Delete' ] ]).
+repeat_i(2,[ 1,2,[ 5,18,19,20,24,21,32,33,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWSocio"')).
  
@@ -127,34 +128,38 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Socios')).
+rule_i(0,prop('ObjDesc','Work With Socio')).
 rule_i(0,prop('ObjName','WWSocio')).
 rule_i(0,maingen(15)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
-a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWSocio"',3) ] ]).
-a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,4,[],[ [],'',[] ]).
-a_i(4,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(5,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(1,2,f,32,[],[ [],[ t('1500',3),t(-,5),t('(',0),t('1500',3),t(*,6),t('0.3',3),t(')',4),t('IF',17),t(33,2),t(=,10),t('"P"',3),t('.AND.',9),t(20,2),t(>,10),t('65',3),t(';',18),t('2500',3),t(-,5),t('(',0),t('2500',3),t(*,6),t('0.3',3),t(')',4),t('IF',17),t(33,2),t(=,10),t('"V"',3),t('.AND.',9),t(20,2),t(>,10),t('65',3),t(';',18),t('1500',3),t('IF',17),t(33,2),t(=,10),t('"P"',3),t(';',18),t('2500',3),t(';',18),t('0',3),t('OTHERWISE',19) ] ]).
+a_i(2,1,f,'Pgmname',[],[ [],[ t('"WWSocio"',3) ] ]).
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(4,2,t,4,[],[ [],'ISOCIO',[] ]).
+a_i(5,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(6,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
-v_i(f,i,1,[]).
-v_i(f,o,1,'Pgmname').
+v_i(f,i,1,33).
+v_i(f,i,1,20).
+v_i(f,o,1,32).
 v_i(f,i,2,[]).
-v_i(f,o,2,'Err').
-v_i(t,i,3,[]).
-v_i(t,o,3,21).
-v_i(t,o,3,40000).
-v_i(t,o,3,24).
-v_i(t,o,3,23).
-v_i(t,o,3,20).
-v_i(t,o,3,19).
-v_i(t,o,3,18).
-v_i(t,o,3,5).
-v_i(f,i,4,[]).
-v_i(f,o,4,[ t('&Update',23),t('Enabled',3) ]).
+v_i(f,o,2,'Pgmname').
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+v_i(t,i,4,[]).
+v_i(t,o,4,21).
+v_i(t,o,4,40000).
+v_i(t,o,4,24).
+v_i(t,o,4,19).
+v_i(t,o,4,18).
+v_i(t,o,4,5).
+v_i(t,o,4,20).
+v_i(t,o,4,33).
 v_i(f,i,5,[]).
-v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
+v_i(f,o,5,[ t('&Update',23),t('Enabled',3) ]).
+v_i(f,i,6,[]).
+v_i(f,o,6,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
@@ -162,20 +167,21 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
  
 attri_i(40000,[ 'SocioFoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
+attri_i(33,[ 'SocioTipoCuota',char,20,0,'',0,'Socio Tipo Cuota','',0 ]).
+attri_i(32,[ 'SocioMonto',int,4,0,'ZZZ9',0,'Socio Monto','',0 ]).
 attri_i(21,[ 'SocioFoto',bits,4,0,'',0,'Socio Foto','',0 ]).
-attri_i(24,[ 'SocioReconocido',char,20,0,'',0,'Socio Reconocido','',0 ]).
-attri_i(23,[ 'SocioTipo',char,20,0,'',0,'Socio Tipo','',0 ]).
+attri_i(24,[ 'SocioReconocido',boolean,4,0,'',0,'Socio Reconocido','',0 ]).
 attri_i(20,[ 'SocioEdad',int,4,0,'ZZZ9',0,'Socio Edad','',0 ]).
 attri_i(19,[ 'SocioSexo',char,20,0,'',0,'Socio Sexo','',0 ]).
 attri_i(18,[ 'SocioDireccion',svchar,1024,0,'',0,'Socio Direccion','',0 ]).
 attri_i(5,[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',0 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',19 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',18 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',17 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',20 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',19 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',18 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',16 ]).
 attri_i('Delete',[ 'Delete',char,20,0,'',0,'Delete','',15 ]).
 attri_i('Update',[ 'Update',char,20,0,'',0,'Update','',14 ]).
-attri_i('Sociodireccion',[ 'SocioDireccion',svchar,1024,0,'',0,'Socio Direccion','',13 ]).
+attri_i('Socioid',[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',17 ]).
 attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',12 ]).
 attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',11 ]).
 attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,'Grid Page Count','',10 ]).
@@ -185,9 +191,8 @@ attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7
 attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(4,[ 'Socio',[ 5,18,19,20,23,24,21,40000 ],'Socio','Socio' ]).
+table_i(4,[ 'Socio',[ 5,18,19,20,24,21,40000,33 ],'Socio','Socio' ]).
  
-index_i(4,[ '',a,[ 18 ],'' ]).
 index_i(4,[ 'ISOCIO',u,[ 5 ],'ISocio' ]).
  
  
@@ -200,6 +205,7 @@ index_i(4,[ 'ISOCIO',u,[ 5 ],'ISocio' ]).
  
  
  
+sql_no_eval_hor_i(2,32).
  
 add_att_i(bits,2,40000,21,'SocioFoto_GXI',[ svchar,2048,0,0 ]).
  
@@ -211,6 +217,8 @@ add_att_i(bits,2,40000,21,'SocioFoto_GXI',[ svchar,2048,0,0 ]).
  
  
  
+enumerated_i(2,19,69).
+enumerated_i(2,33,68).
  
 enum_value_i(2,25,'"INS"','Insert','"Insert"',[ none ]).
 enum_value_i(2,25,'"UPD"','Update','"Update"',[ none ]).
@@ -224,17 +232,28 @@ enum_value_i(2,55,'"OPTIONS"','Options','"Options"',[ none ]).
 enum_value_i(2,55,'"HEAD"','Head','"Head"',[ none ]).
 enum_value_i(2,55,'"TRACE"','Trace','"Trace"',[ none ]).
 enum_value_i(2,55,'"CONNECT"','Connect','"Connect"',[ none ]).
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
  
 enum_value_info_i(2,25,'GeneXus\TrnMode').
 enum_value_info_i(2,55,'GeneXus\HttpMethod').
+enum_value_info_i(2,69,'Sexo').
+enum_value_info_i(2,68,'TipoCuota').
  
 enum_type_i(2,25,char,3,0).
 enum_type_i(2,55,char,7,0).
+enum_type_i(2,69,char,20,0).
+enum_type_i(2,68,char,20,0).
  
 dom_info_i(26,[ 'GeneXus\Address' ]).
+dom_info_i(69,[ 'Sexo' ]).
+dom_info_i(68,[ 'TipoCuota' ]).
  
  
-break_i(2,nvg,1,[ 18 ],[ [ 5,18,19,20,23,24,21 ],[],[] ]).
+break_i(2,nvg,1,[ 5 ],[ [ 5,18,19,20,24,21,32,33 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,15).
@@ -262,7 +281,7 @@ b_line_i(17,2,3,cmd,1,[ t('',147,1,0) ]).
 b_line_i(19,2,3,cmd,1,[ t('',146,1,0),t([ t('Grid',3,19,7),t('Load',3,19,12) ],29,19,12) ]).
 b_line_i(20,2,4,cmd,1,[ t('',107,1,0),t([ t('Update',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Socio'),28,1,0),t(',',7,1,0),t([ 25,'Update' ],44,1,0),t(',',7,1,0),t(5,2,1,0),t(')',4,1,0) ]).
 b_line_i(21,2,4,cmd,1,[ t('',107,1,0),t([ t('Delete',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Socio'),28,1,0),t(',',7,1,0),t([ 25,'Delete' ],44,1,0),t(',',7,1,0),t(5,2,1,0),t(')',4,1,0) ]).
-b_line_i(22,2,4,cmd,1,[ t('',107,1,0),t([ t(18,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewSocio'),28,1,0),t(',',7,1,0),t(5,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(22,2,4,cmd,1,[ t('',107,1,0),t([ t(5,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewSocio'),28,1,0),t(',',7,1,0),t(5,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
 b_line_i(23,2,4,cmd,1,[ t('',107,0,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
 b_line_i(23,2,4,cmd,1,[ t('',147,1,0) ]).
 b_line_i(25,2,4,cmd,1,[ t('',146,1,0),t('''DoInsert''',3,25,7) ]).
@@ -272,7 +291,7 @@ b_line_i(31,2,5,cmd,1,[ t('',143,1,0),t('''LOADGRIDSTATE''',3,31,5) ]).
 b_line_i(32,2,6,cmd,1,[ t('',109,1,0),t('(',0,1,5),t([ t('Httprequest',23,32,6),t('Method',3,32,19) ],29,32,19),t(=,10,1,26),t([ 55,'Get' ],44,32,28),t(')',4,1,42) ]).
 b_line_i(34,2,6,cmd,1,[ t('',107,1,0),t([ t('Gridstate',23,34,3),t('fromxml(',1,34,14) ],31,34,3),t([ t('Session',23,34,23),t('get(',1,34,32) ],31,34,32),t('Pgmname',23,1,37),t(+,5,1,46),t('"GridState"',3,34,48),t(')',4,1,60),t(')',4,1,61) ]).
 b_line_i(36,2,6,cmd,1,[ t('',109,1,0),t([ t('Gridstate',23,36,6),t('Filtervalues',3,36,17),t('Count',3,36,30) ],29,36,30),t(>=,10,1,36),t('1',3,1,39) ]).
-b_line_i(37,2,6,cmd,1,[ t('',107,1,0),t('Sociodireccion',23,37,4),t(=,10,37,4),t([ t('Gridstate',23,37,32),t('Filtervalues',3,37,43),[ t('item(',1,0,56),t('1',3,0,62),t(')',4,0,63) ],t('Value',3,37,65) ],29,37,65) ]).
+b_line_i(37,2,6,cmd,1,[ t('',107,1,0),t('Socioid',23,37,4),t(=,10,37,4),t('val(',1,37,4),t([ t('Gridstate',23,37,25),t('Filtervalues',3,37,36),[ t('item(',1,0,49),t('1',3,0,55),t(')',4,0,56) ],t('Value',3,37,58) ],29,37,58),t(')',4,1,63) ]).
 b_line_i(38,2,6,cmd,1,[ t('',111,1,0) ]).
 b_line_i(40,2,6,cmd,1,[ t('',109,1,0),t([ t('Gridstate',23,40,6),t('Currentpage',3,40,17) ],29,40,17),t(>,10,1,29),t('0',3,1,31) ]).
 b_line_i(41,2,6,cmd,1,[ t('',107,1,0),t('Gridpagecount',23,1,0),t(=,10,1,0),t([ t('Grid',3,1,0),t('Pagecount',3,1,0) ],29,1,0) ]).
@@ -289,7 +308,7 @@ b_line_i(52,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstate',23,52,2),t('fromxml(',1,
 b_line_i(55,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstate',23,1,0),t('Currentpage',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Grid',3,1,0),t('Currentpage',3,1,0) ],29,1,0) ]).
 b_line_i(56,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstate',23,56,12),t('Filtervalues',3,56,23),t('clear(',1,56,36) ],31,56,12),t(')',4,1,43) ]).
 b_line_i(57,2,7,cmd,1,[ t('',107,1,0),t('Gridstatefiltervalue',23,1,0),t(=,10,1,0),t([ 'GridState.FilterValue',[ t('(',0,57,29),t(')',4,57,30) ],n ],46,1,0) ]).
-b_line_i(58,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstatefiltervalue',23,1,0),t('Value',3,1,0) ],29,1,0),t(=,10,1,0),t('Sociodireccion',23,1,0) ]).
+b_line_i(58,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstatefiltervalue',23,1,0),t('Value',3,1,0) ],29,1,0),t(=,10,1,0),t('str(',1,1,0),t('Socioid',23,1,0),t(',',7,1,0),t(4,3,1,0),t(',',7,1,0),t(0,3,1,0),t(')',4,1,0) ]).
 b_line_i(59,2,7,cmd,1,[ t('',107,1,0),t([ t('Gridstate',23,59,12),t('Filtervalues',3,59,23),t('add(',1,59,36) ],31,59,12),t('Gridstatefiltervalue',23,1,41),t(')',4,1,62) ]).
 b_line_i(61,2,7,cmd,1,[ t('',107,1,0),t([ t('Session',23,61,2),t('set(',1,61,11) ],31,61,2),t('Pgmname',23,1,16),t(+,5,1,25),t('"GridState"',3,61,27),t(',',7,1,39),t([ t('Gridstate',23,61,41),t('toxml(',1,61,52) ],31,61,52),t(')',4,1,59),t(')',4,1,60) ]).
 b_line_i(62,2,7,cmd,1,[ t('',144,1,0) ]).
@@ -331,7 +350,7 @@ html_sub_i(11,12,html_i(0,div(12))).
 html_sub_i(12,13,html_i(0,button('''DoInsert'''))).
 html_sub_i(7,14,html_i(2,div(14))).
 html_sub_i(14,15,html_i(0,div(15))).
-html_sub_i(15,16,html_i(0,t('Sociodireccion',23))).
+html_sub_i(15,16,html_i(0,t('Socioid',23))).
 html_sub_i(3,17,html_i(1,div(17))).
 html_sub_i(17,18,html_i(0,div(18))).
 html_sub_i(18,19,html_i(0,div(19))).
@@ -345,7 +364,7 @@ html_sub_i(24,25,html_i(0,s(25))).
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
 html_tags_i(11,'data-gx-actiongroup-type',toolbar).
-html_tags_i(16,'data-gx-att','var:13').
+html_tags_i(16,'data-gx-att','var:17').
  
 html_comp_i(22,'Backcolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -469,38 +488,35 @@ html_comp_i(15,'Semanticcontent',div,d,[ str ]).
 html_comp_i(15,'Align',left,d,[ str ]).
 html_comp_i(15,'Valign',top,d,[ str ]).
 html_comp_i(16,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(16,'Colcount',80,d,[ num ]).
-html_comp_i(16,'Attid',-13,v,[ num ]).
+html_comp_i(16,'Colcount',4,d,[ num ]).
+html_comp_i(16,'Attid',-17,v,[ num ]).
 html_comp_i(16,'Class','FilterSearchAttribute',v,[ str ]).
-html_comp_i(16,'Controlname','&Sociodireccion',d,[ str ]).
+html_comp_i(16,'Controlname','&Socioid',d,[ str ]).
 html_comp_i(16,'Returnonclick',0,v,[ bool ]).
 html_comp_i(16,'Captionclass','col-sm-3 FilterSearchAttributeLabel',v,[ str ]).
 html_comp_i(16,'Captionposition','None',v,[ str ]).
-html_comp_i(16,'Captionvalue','Socio Direccion',d,[ str ]).
+html_comp_i(16,'Captionvalue','Socio Id',d,[ str ]).
 html_comp_i(16,'Layoutclass','',v,[ str ]).
 html_comp_i(16,'Controltype',2,d,[ num ]).
 html_comp_i(16,'Inputtype',0,d,[ num ]).
-html_comp_i(16,'Editautocomplete',0,d,[ num ]).
-html_comp_i(16,'Autocorrection',0,d,[ bool ]).
-html_comp_i(16,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(16,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(16,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(16,'Readonly',0,v,[ bool ]).
 html_comp_i(16,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(16,'Ispassword',0,d,[ bool ]).
 html_comp_i(16,'Autoresize',-1,d,[ bool ]).
-html_comp_i(16,'Gxwidth',measure(80,chr),d,[ measure ]).
-html_comp_i(16,'Gxheight',measure(10,row),d,[ measure ]).
-html_comp_i(16,'Ismultiline',-1,d,[ bool ]).
+html_comp_i(16,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(16,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(16,'Ismultiline',0,d,[ bool ]).
 html_comp_i(16,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(16,'Fill',-1,d,[ bool ]).
 html_comp_i(16,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(16,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
-html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(16,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Direccion',v,[ str ]).
+html_comp_i(16,'Invitemsg','Id',v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -566,7 +582,7 @@ html_comp_i(24,'Align',left,d,[ str ]).
 html_comp_i(24,'Valign',top,d,[ str ]).
 html_comp_i(25,'Isabstractlayoutcontrol',-1,v,[ bool ]).
 html_comp_i(25,'Controlname','Grid',v,[ str ]).
-html_comp_i(25,'Controlorder','''.''(''.''(t($ORDER$,39),''.''(t(18,2),$[]$)),$[]$)',v,[ str ]).
+html_comp_i(25,'Controlorder','''.''(''.''(t($ORDER$,39),''.''(t(5,2),$[]$)),$[]$)',v,[ str ]).
 html_comp_i(25,'Controlwhere','',d,[ str ]).
 html_comp_i(25,'Controlunique','',d,[ str ]).
 html_comp_i(25,'Iddataselector','',d,[ str ]).
@@ -598,8 +614,8 @@ html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(26,'Colcount',4,d,[ num ]).
 html_comp_i(26,'Colattid',5,v,[ num ]).
 html_comp_i(26,'Controlname','Socioid',d,[ str ]).
-html_comp_i(26,'Class','Attribute',v,[ str ]).
-html_comp_i(26,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
+html_comp_i(26,'Class','DescriptionAttribute',v,[ str ]).
+html_comp_i(26,'Columnclass','WWColumn',v,[ str ]).
 html_comp_i(26,'Returnonclick',0,d,[ bool ]).
 html_comp_i(26,'Eventgx','',d,[ str ]).
 html_comp_i(26,'Controltype',2,d,[ num ]).
@@ -626,8 +642,8 @@ html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(27,'Colcount',80,d,[ num ]).
 html_comp_i(27,'Colattid',18,v,[ num ]).
 html_comp_i(27,'Controlname','Sociodireccion',d,[ str ]).
-html_comp_i(27,'Class','DescriptionAttribute',v,[ str ]).
-html_comp_i(27,'Columnclass','WWColumn',v,[ str ]).
+html_comp_i(27,'Class','Attribute',v,[ str ]).
+html_comp_i(27,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(27,'Returnonclick',0,d,[ bool ]).
 html_comp_i(27,'Eventgx','',d,[ str ]).
 html_comp_i(27,'Controltype',2,d,[ num ]).
@@ -660,17 +676,13 @@ html_comp_i(28,'Controlname','Sociosexo',d,[ str ]).
 html_comp_i(28,'Class','Attribute',v,[ str ]).
 html_comp_i(28,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(28,'Returnonclick',0,d,[ bool ]).
-html_comp_i(28,'Eventgx','',d,[ str ]).
-html_comp_i(28,'Controltype',2,d,[ num ]).
-html_comp_i(28,'Inputtype',0,d,[ num ]).
-html_comp_i(28,'Editautocomplete',0,d,[ num ]).
-html_comp_i(28,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(28,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(28,'Controltype',0,d,[ num ]).
+html_comp_i(28,'Controlvalues',[ [ 'H','Hombre' ],[ 'M','Mujer' ],[ 'O','Otro' ] ],d,[ values ]).
+html_comp_i(28,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(28,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(28,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(28,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(28,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(28,'Ispassword',0,d,[ bool ]).
 html_comp_i(28,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
@@ -680,7 +692,6 @@ html_comp_i(28,'Coltitle','Sexo',d,[ str ]).
 html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(28,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(28,'Gxformat',0,d,[ num ]).
 html_comp_i(28,'Colvisible',-1,v,[ bool ]).
 html_comp_i(28,'Title','',d,[ str ]).
 html_comp_i(28,'Invitemsg','',d,[ str ]).
@@ -713,127 +724,114 @@ html_comp_i(29,'Colvisible',-1,v,[ bool ]).
 html_comp_i(29,'Title','',d,[ str ]).
 html_comp_i(29,'Invitemsg','',d,[ str ]).
 html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(30,'Colcount',20,d,[ num ]).
-html_comp_i(30,'Colattid',23,v,[ num ]).
-html_comp_i(30,'Controlname','Sociotipo',d,[ str ]).
+html_comp_i(30,'Colcount',4,d,[ num ]).
+html_comp_i(30,'Colattid',24,v,[ num ]).
+html_comp_i(30,'Controlname','Socioreconocido',d,[ str ]).
 html_comp_i(30,'Class','Attribute',v,[ str ]).
 html_comp_i(30,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(30,'Returnonclick',0,d,[ bool ]).
-html_comp_i(30,'Eventgx','',d,[ str ]).
-html_comp_i(30,'Controltype',2,d,[ num ]).
-html_comp_i(30,'Inputtype',0,d,[ num ]).
-html_comp_i(30,'Editautocomplete',0,d,[ num ]).
-html_comp_i(30,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(30,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(30,'Controltype',3,d,[ num ]).
+html_comp_i(30,'Controltitle','',d,[ str ]).
+html_comp_i(30,'Controlcheckvalue',true,d,[ str ]).
+html_comp_i(30,'Controluncheckvalue',false,d,[ str ]).
 html_comp_i(30,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(30,'Colreadonly',-1,d,[ bool ]).
-html_comp_i(30,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(30,'Autocomplete',0,d,[ bool ]).
 html_comp_i(30,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(30,'Ispassword',0,d,[ bool ]).
 html_comp_i(30,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(30,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(30,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(30,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(30,'Coltitle','Tipo',d,[ str ]).
+html_comp_i(30,'Coltitle','Reconocido',d,[ str ]).
 html_comp_i(30,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(30,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(30,'Gxformat',0,d,[ num ]).
 html_comp_i(30,'Colvisible',-1,v,[ bool ]).
 html_comp_i(30,'Title','',d,[ str ]).
 html_comp_i(30,'Invitemsg','',d,[ str ]).
 html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(31,'Colcount',20,d,[ num ]).
-html_comp_i(31,'Colattid',24,v,[ num ]).
-html_comp_i(31,'Controlname','Socioreconocido',d,[ str ]).
-html_comp_i(31,'Class','Attribute',v,[ str ]).
+html_comp_i(31,'Colcount',5,d,[ num ]).
+html_comp_i(31,'Colattid',21,v,[ num ]).
+html_comp_i(31,'Controlname','Sociofoto',d,[ str ]).
+html_comp_i(31,'Class','ImageAttribute',v,[ str ]).
 html_comp_i(31,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(31,'Returnonclick',0,d,[ bool ]).
 html_comp_i(31,'Eventgx','',d,[ str ]).
 html_comp_i(31,'Controltype',2,d,[ num ]).
 html_comp_i(31,'Inputtype',0,d,[ num ]).
-html_comp_i(31,'Editautocomplete',0,d,[ num ]).
-html_comp_i(31,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(31,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(31,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(31,'Colreadonly',-1,d,[ bool ]).
-html_comp_i(31,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(31,'Autocomplete',0,d,[ bool ]).
 html_comp_i(31,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(31,'Ispassword',0,d,[ bool ]).
 html_comp_i(31,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(31,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(31,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(31,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(31,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(31,'Coltitle','Reconocido',d,[ str ]).
+html_comp_i(31,'Coltitle','Foto',d,[ str ]).
 html_comp_i(31,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(31,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(31,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(31,'Gxformat',0,d,[ num ]).
 html_comp_i(31,'Colvisible',-1,v,[ bool ]).
+html_comp_i(31,'Border','1',d,[ str ]).
+html_comp_i(31,'Alt','',d,[ str ]).
 html_comp_i(31,'Title','',d,[ str ]).
-html_comp_i(31,'Invitemsg','',d,[ str ]).
+html_comp_i(31,'Hspace',0,d,[ num ]).
+html_comp_i(31,'Vspace',0,d,[ num ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Colcount',5,d,[ num ]).
-html_comp_i(32,'Colattid',21,v,[ num ]).
-html_comp_i(32,'Controlname','Sociofoto',d,[ str ]).
-html_comp_i(32,'Class','ImageAttribute',v,[ str ]).
+html_comp_i(32,'Colcount',4,d,[ num ]).
+html_comp_i(32,'Colattid',32,v,[ num ]).
+html_comp_i(32,'Controlname','Sociomonto',d,[ str ]).
+html_comp_i(32,'Class','Attribute',v,[ str ]).
 html_comp_i(32,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
 html_comp_i(32,'Eventgx','',d,[ str ]).
 html_comp_i(32,'Controltype',2,d,[ num ]).
 html_comp_i(32,'Inputtype',0,d,[ num ]).
 html_comp_i(32,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(32,'Autocomplete',0,d,[ bool ]).
+html_comp_i(32,'Colreadonly',-1,d,[ bool ]).
+html_comp_i(32,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(32,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(32,'Ispassword',0,d,[ bool ]).
 html_comp_i(32,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(32,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(32,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(32,'Coltitle','Foto',d,[ str ]).
+html_comp_i(32,'Collinesfont',font('Arial',10,[]),d,[ font ]).
+html_comp_i(32,'Collinescolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(32,'Coltitle','Monto',d,[ str ]).
 html_comp_i(32,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(32,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(32,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(32,'Gxformat',0,d,[ num ]).
 html_comp_i(32,'Colvisible',-1,v,[ bool ]).
-html_comp_i(32,'Border','1',d,[ str ]).
-html_comp_i(32,'Alt','',d,[ str ]).
 html_comp_i(32,'Title','',d,[ str ]).
-html_comp_i(32,'Hspace',0,d,[ num ]).
-html_comp_i(32,'Vspace',0,d,[ num ]).
+html_comp_i(32,'Invitemsg','',d,[ str ]).
 html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(33,'Colcount',20,d,[ num ]).
-html_comp_i(33,'Colattid',-14,v,[ num ]).
-html_comp_i(33,'Controlname','&Update',d,[ str ]).
-html_comp_i(33,'Class','TextActionAttribute',v,[ str ]).
-html_comp_i(33,'Columnclass','WWTextActionColumn',v,[ str ]).
+html_comp_i(33,'Colattid',33,v,[ num ]).
+html_comp_i(33,'Controlname','Sociotipocuota',d,[ str ]).
+html_comp_i(33,'Class','Attribute',v,[ str ]).
+html_comp_i(33,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(33,'Returnonclick',0,d,[ bool ]).
-html_comp_i(33,'Eventgx','',d,[ str ]).
-html_comp_i(33,'Controltype',2,d,[ num ]).
-html_comp_i(33,'Inputtype',0,d,[ num ]).
-html_comp_i(33,'Editautocomplete',0,d,[ num ]).
-html_comp_i(33,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(33,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(33,'Controltype',0,d,[ num ]).
+html_comp_i(33,'Controlvalues',[ [ 'Verano','V' ],[ 'Permanente','P' ] ],d,[ values ]).
+html_comp_i(33,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(33,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(33,'Colreadonly',-1,v,[ bool ]).
+html_comp_i(33,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(33,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(33,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(33,'Ispassword',0,d,[ bool ]).
 html_comp_i(33,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(33,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(33,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(33,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(33,'Coltitle','',d,[ str ]).
+html_comp_i(33,'Coltitle','Tipo Cuota',d,[ str ]).
 html_comp_i(33,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(33,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(33,'Gxformat',0,d,[ num ]).
-html_comp_i(33,'Colvisible',-1,d,[ bool ]).
+html_comp_i(33,'Colvisible',-1,v,[ bool ]).
 html_comp_i(33,'Title','',d,[ str ]).
 html_comp_i(33,'Invitemsg','',d,[ str ]).
 html_comp_i(34,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(34,'Colcount',20,d,[ num ]).
-html_comp_i(34,'Colattid',-15,v,[ num ]).
-html_comp_i(34,'Controlname','&Delete',d,[ str ]).
+html_comp_i(34,'Colattid',-14,v,[ num ]).
+html_comp_i(34,'Controlname','&Update',d,[ str ]).
 html_comp_i(34,'Class','TextActionAttribute',v,[ str ]).
 html_comp_i(34,'Columnclass','WWTextActionColumn',v,[ str ]).
 html_comp_i(34,'Returnonclick',0,d,[ bool ]).
@@ -861,13 +859,43 @@ html_comp_i(34,'Gxformat',0,d,[ num ]).
 html_comp_i(34,'Colvisible',-1,d,[ bool ]).
 html_comp_i(34,'Title','',d,[ str ]).
 html_comp_i(34,'Invitemsg','',d,[ str ]).
+html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(35,'Colcount',20,d,[ num ]).
+html_comp_i(35,'Colattid',-15,v,[ num ]).
+html_comp_i(35,'Controlname','&Delete',d,[ str ]).
+html_comp_i(35,'Class','TextActionAttribute',v,[ str ]).
+html_comp_i(35,'Columnclass','WWTextActionColumn',v,[ str ]).
+html_comp_i(35,'Returnonclick',0,d,[ bool ]).
+html_comp_i(35,'Eventgx','',d,[ str ]).
+html_comp_i(35,'Controltype',2,d,[ num ]).
+html_comp_i(35,'Inputtype',0,d,[ num ]).
+html_comp_i(35,'Editautocomplete',0,d,[ num ]).
+html_comp_i(35,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(35,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(35,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(35,'Colreadonly',-1,v,[ bool ]).
+html_comp_i(35,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(35,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(35,'Ispassword',0,d,[ bool ]).
+html_comp_i(35,'Colautoresize',-1,d,[ bool ]).
+html_comp_i(35,'Colwidth',measure(0,px),d,[ measure ]).
+html_comp_i(35,'Height',measure(17,px),d,[ measure ]).
+html_comp_i(35,'Collinesfont',font('Arial',10,[]),d,[ font ]).
+html_comp_i(35,'Collinescolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(35,'Coltitle','',d,[ str ]).
+html_comp_i(35,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
+html_comp_i(35,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(35,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(35,'Gxformat',0,d,[ num ]).
+html_comp_i(35,'Colvisible',-1,d,[ bool ]).
+html_comp_i(35,'Title','',d,[ str ]).
+html_comp_i(35,'Invitemsg','',d,[ str ]).
  
  
  
  
  
  
-warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,18) ],'; poor performance may be noticed',[ ' in grid ''','Grid','''' ],'.' ])).
  
 lit_i(9,1,t('Socios',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
@@ -875,7 +903,7 @@ lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10
 lit_i(12,1,div(12),[ ctlname('') ]).
 lit_i(11,1,div(11),[ ctlname('') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
-lit_i(16,1,t('Sociodireccion',23),[ ctlname('&Sociodireccion'),ctrltype(edit,16),pos(16),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(16,1,t('Socioid',23),[ ctlname('&Socioid'),ctrltype(edit,16),pos(16),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(15,1,div(15),[ ctlname('') ]).
 lit_i(14,1,div(14),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
@@ -887,14 +915,15 @@ lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,s(t(5,2),25),[ ctlname(5),ctrltype(edit,26),pos(26),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(27,1,s(t(18,2),25),[ ctlname(18),ctrltype(edit,27),pos(27),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(28,1,s(t(19,2),25),[ ctlname(19),ctrltype(edit,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(28,1,s(t(19,2),25),[ ctlname(19),ctrltype(combo,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(29,1,s(t(20,2),25),[ ctlname(20),ctrltype(edit,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(30,1,s(t(23,2),25),[ ctlname(23),ctrltype(edit,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(31,1,s(t(24,2),25),[ ctlname(24),ctrltype(edit,31),pos(31),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(32,1,s(t(21,2),25),[ ctlname(21),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(33,1,s(t('Update',23),25),[ ctlname('&Update'),ctrltype(edit,33),pos(33),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(34,1,s(t('Delete',23),25),[ ctlname('&Delete'),ctrltype(edit,34),pos(34),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(5,2),t(18,2),t(19,2),t(20,2),t(23,2),t(24,2),t(21,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(30,1,s(t(24,2),25),[ ctlname(24),ctrltype(checkbox,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(31,1,s(t(21,2),25),[ ctlname(21),ctrltype(edit,31),pos(31),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(32,1,s(t(32,2),25),[ ctlname(32),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(33,1,s(t(33,2),25),[ ctlname(33),ctrltype(combo,33),pos(33),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(34,1,s(t('Update',23),25),[ ctlname('&Update'),ctrltype(edit,34),pos(34),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(35,1,s(t('Delete',23),25),[ ctlname('&Delete'),ctrltype(edit,35),pos(35),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(5,2),t(18,2),t(19,2),t(20,2),t(24,2),t(21,2),t(32,2),t(33,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(24,1,div(24),[ ctlname('') ]).
 lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Gridtable') ]).
@@ -909,6 +938,9 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+ctrl_info_i(1,28,[ [ [ 'H','Hombre' ],[ 'M','Mujer' ],[ 'O','Otro' ] ],[ '' ] ]).
+ctrl_info_i(1,30,[ [ true,false,'' ] ]).
+ctrl_info_i(1,33,[ [ [ 'Verano','V' ],[ 'Permanente','P' ] ],[ '' ] ]).
  
  
  
@@ -933,11 +965,11 @@ att_prop_i(2,18,'FullName','SocioDireccion',v).
 att_prop_i(2,19,'ExternalName','SocioSexo',d).
 att_prop_i(2,19,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,19,'EmptyAsNull','Yes',d).
-att_prop_i(2,19,idBasedOn,'',d).
+att_prop_i(2,19,idBasedOn,69,v).
 att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,19,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,19,'AttRegEx','',d).
-att_prop_i(2,19,'AttValidationFailedMsg','',d).
+att_prop_i(2,19,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
 att_prop_i(2,19,'FullName','SocioSexo',v).
 att_prop_i(2,20,'ExternalName','SocioEdad',d).
 att_prop_i(2,20,'ExternalNamespace','ObligatorioGenexusGit',d).
@@ -948,21 +980,12 @@ att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,20,'AttRegEx','',d).
 att_prop_i(2,20,'AttValidationFailedMsg','',d).
 att_prop_i(2,20,'FullName','SocioEdad',v).
-att_prop_i(2,23,'ExternalName','SocioTipo',d).
-att_prop_i(2,23,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,23,'EmptyAsNull','Yes',d).
-att_prop_i(2,23,idBasedOn,'',d).
-att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,23,'DB_NLS_SUPPORT','No',d).
-att_prop_i(2,23,'AttRegEx','',d).
-att_prop_i(2,23,'AttValidationFailedMsg','',d).
-att_prop_i(2,23,'FullName','SocioTipo',v).
 att_prop_i(2,24,'ExternalName','SocioReconocido',d).
 att_prop_i(2,24,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,24,'EmptyAsNull','Yes',d).
+att_prop_i(2,24,'ExternalStorage','-1',d).
 att_prop_i(2,24,idBasedOn,'',d).
 att_prop_i(2,24,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,24,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,24,'AttRegEx','',d).
 att_prop_i(2,24,'AttValidationFailedMsg','',d).
 att_prop_i(2,24,'FullName','SocioReconocido',v).
@@ -975,6 +998,19 @@ att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,21,'AttRegEx','',d).
 att_prop_i(2,21,'AttValidationFailedMsg','',d).
 att_prop_i(2,21,'FullName','SocioFoto',v).
+att_prop_i(2,32,'ExternalName','SocioMonto',d).
+att_prop_i(2,32,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,32,idBasedOn,'',d).
+att_prop_i(2,32,'FullName','SocioMonto',v).
+att_prop_i(2,33,'ExternalName','SocioTipoCuota',d).
+att_prop_i(2,33,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,33,'EmptyAsNull','Yes',d).
+att_prop_i(2,33,idBasedOn,68,v).
+att_prop_i(2,33,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,33,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,33,'AttRegEx','',d).
+att_prop_i(2,33,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(2,33,'FullName','SocioTipoCuota',v).
 att_prop_i(2,40000,'ExternalName','',d).
 att_prop_i(2,40000,'ExternalNamespace','',d).
 att_prop_i(2,40000,'EmptyAsNull','Yes',d).
@@ -990,12 +1026,12 @@ tbl_att_prop_i(2,4,5,'AllowNulls',n).
 tbl_att_prop_i(2,4,18,'AllowNulls',n).
 tbl_att_prop_i(2,4,19,'AllowNulls',n).
 tbl_att_prop_i(2,4,20,'AllowNulls',n).
-tbl_att_prop_i(2,4,23,'AllowNulls',n).
 tbl_att_prop_i(2,4,24,'AllowNulls',n).
 tbl_att_prop_i(2,4,21,'AllowNulls',n).
 tbl_att_prop_i(2,4,40000,'AllowNulls',n).
+tbl_att_prop_i(2,4,33,'AllowNulls',n).
  
-var_prop_i(2,'Sociodireccion',idBasedOn,'',v).
+var_prop_i(2,'Socioid',idBasedOn,'',v).
  
  
  
@@ -1208,14 +1244,16 @@ struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
 struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
 struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
  
  
  
  
  
-sub_info_i(146,'Start',1,13,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ],[ t('Httprequest',23),t('Method',3) ],'Session',[ t('Grid',3),t('Pagecount',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Update','Delete',[ t('Form',3),t('Caption',3) ],'Session','Sociodireccion',[ t('Grid',3),t('Currentpage',3) ] ] ]).
-sub_info_i(146,'Refresh',15,17,[ [ 'Session','Pgmname',[ t('Grid',3),t('Currentpage',3) ],'Sociodireccion' ],[ 'Session' ] ]).
-sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,23,[ [ 5 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(18,2),t('Link',3) ] ] ]).
+sub_info_i(146,'Start',1,13,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ],[ t('Httprequest',23),t('Method',3) ],'Session',[ t('Grid',3),t('Pagecount',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Update','Delete',[ t('Form',3),t('Caption',3) ],'Session','Socioid',[ t('Grid',3),t('Currentpage',3) ] ] ]).
+sub_info_i(146,'Refresh',15,17,[ [ 'Session','Pgmname',[ t('Grid',3),t('Currentpage',3) ],'Socioid' ],[ 'Session' ] ]).
+sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,23,[ [ 5 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(5,2),t('Link',3) ] ] ]).
 sub_info_i(146,'''DoInsert''',25,27,[ [ 5 ],[] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).

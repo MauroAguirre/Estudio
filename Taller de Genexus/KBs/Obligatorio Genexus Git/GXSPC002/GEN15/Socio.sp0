@@ -1,21 +1,21 @@
 spec_i([ trn,5,'Socio','Socio',[],eng,'15_0_12-126726' ]).
  
-struct_i(4,0,[ 'Pgmname','Trncontext','Mode','Socioid','Websession' ],[]).
+struct_i(4,0,[ 'Pgmname','Trncontext','Insert_carnetid','GXV1','Trncontextatt','Mode','Socioid','Websession' ],[]).
  
-level_i(4,[ 4,[ [ 4,many ] ],[ 5 ],[],[],[],[ 5 ],'ISOCIO',[ 4,[] ],[] ]).
+level_i(4,[ 4,[ [ 4,many ],[ 14,one ] ],[ 5 ],[],[],[],[ 5 ],'ISOCIO',[ 4,[] ],[] ]).
  
-tw_i(4,[]).
+tw_i(4,[ [ 14,[ [ 4,36,36 ] ] ] ]).
  
 lwi_i(4,[ [] ]).
  
  
  
  
-ta_i(4,[ [ [ 4,5 ],[ 4,18 ],[ 4,19 ],[ 4,20 ],[ 4,23 ],[ 4,24 ],[ 4,21 ],[ 4,40000 ] ] ]).
+ta_i(4,[ [ [ 4,5 ],[ 4,18 ],[ 4,19 ],[ 4,20 ],[ 4,33 ],[ 4,24 ],[ 4,21 ],[ 4,40000 ],[ 14,37 ],[ 4,36 ] ] ]).
  
-las_i(4,[ [ 'Pgmname','Trncontext','Mode','Socioid','Websession',5,18,19,20,23,24,21,40000 ] ]).
+las_i(4,[ [ 'Pgmname','Trncontext','Insert_carnetid','GXV1','Trncontextatt','Mode','Socioid','Websession',5,36,'GxBScreen',32,18,19,20,33,24,21,40000,37 ] ]).
  
-lac_i(4,[ [ 5,18,19,20,23,24,21 ] ]).
+lac_i(4,[ [ 5,18,19,20,33,24,21,36 ] ]).
  
  
 lits_i('Socio',5,10).
@@ -26,12 +26,17 @@ pos_i(5,[ 0,0,0 ]).
 pos_i(18,[ 0,0,0 ]).
 pos_i(19,[ 0,0,0 ]).
 pos_i(20,[ 0,0,0 ]).
-pos_i(23,[ 0,0,0 ]).
+pos_i(33,[ 0,0,0 ]).
 pos_i(24,[ 0,0,0 ]).
 pos_i(21,[ 0,0,0 ]).
+pos_i(32,[ 0,0,0 ]).
+pos_i(36,[ 0,0,0 ]).
+pos_i(37,[ 0,0,0 ]).
  
  
 default_i(e('Pgmname',2,2,'"Socio"')).
+default_i(e(5,4,3,[ t('udp(',1),t(o(1,'UltimoIdSocio'),28),t(')',4) ])).
+default_i(e(32,4,3,[ t('2500',3) ])).
  
 rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
 rule_i(0,datastore(1,'LOCK_RETRY','10')).
@@ -90,6 +95,8 @@ rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','Public')).
 rule_i(0,prop('FullyQualifiedName','Socio')).
 rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewSocio'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
 rule_i(0,prop('Hint_firstrows','UMPV')).
@@ -161,85 +168,141 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop('WEBSERVICE_PROTOCOL','REST')).
+rule_i(0,prop(idISBCWEBSERVICE,'-1')).
 rule_i(0,prop('ExternalNamespace','ObligatorioGenexusGit')).
 rule_i(0,prop('ExternalName','Socio')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
-rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
-rule_i(0,prop(idBC,'0')).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop(idBC,'-1')).
+rule_i(0,prop('Folder',o(8,'Transacciones'))).
 rule_i(0,prop('ObjDesc','Socio')).
 rule_i(0,prop('ObjName','Socio')).
+rule_i(4,prompt([ 14,[ [ 4,36,36 ] ],[ 36 ],[ 36 ],[ t(o(13,'Gx00E0'),28),t(36,2) ],[],n,[] ])).
+rule_i(4,rule([ a(23,[ [ 36 ],[ t(o(13,'Gx00E0'),28),t(36,2) ] ]) ],[],[],[ 36 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
 rule_i(0,maingen(15)).
 rule_i(0,rule([ a(10,[ 'Mode','Socioid' ]) ],[],[ insert,update,delete,display ],[])).
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Socioid',in ] ])).
+rule_i(4,rule([ a(1,msg([ t('"Field Socio Sexo is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(19,2),t(=,10),t('''Hombre''',3),t('.OR.',9),t(19,2),t(=,10),t('''Mujer''',3),t('.OR.',9),t(19,2),t(=,10),t('''Otro''',3),t(')',4) ],[ insert,update ],[ 19 ])).
+rule_i(4,rule([ a(1,msg([ t('"Field Socio Tipo Cuota is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(33,2),t(=,10),t('''V''',3),t('.OR.',9),t(33,2),t(=,10),t('''P''',3),t(')',4) ],[ insert,update ],[ 33 ])).
 rule_i(4,rule([ a(3,[ t(5,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4) ],[ insert,update,delete,display ],[ 5,'Socioid' ])).
 rule_i(4,rule([ a(21,[ [ 5 ] ]) ],[],[ insert,update,delete,display ],[ 5 ])).
+rule_i(4,rule([ a(3,[ t(36,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_carnetid',23),t(')',4) ],[ insert,update,delete,display ],[ 36,'Mode','Insert_carnetid' ])).
+rule_i(4,rule([ a(8,[ t(o(1,'IngresarCarneAuto'),28) ]) ],[],[ insert,update,delete,display ],[])).
+rule_i(4,rule([ a(19,[ [ 36 ],msg([ t('"No matching ''Carnet''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 36 ])).
+rule_i(0,rule([ a(22,[ 'Delete','Delete','' ]) ],[],[],[])).
  
-a_i(1,4,f,5,[],[ [],[ t('Socioid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4),t(';',18) ] ]).
-a_i(2,4,f,[ t(5,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
-a_i(3,4,b,3,[],[ [],[ a(3,[ t(5,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4) ] ]).
-a_i(4,4,t,4,[],[ [ [ [],5,5 ] ],'ISOCIO',[] ]).
-a_i(5,4,f,'Pgmname',[],[ [],[ t('"Socio"',3) ] ]).
+a_i(3,4,b,0,[],[ [],[ a(1,msg([ t('"Field Socio Sexo is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(19,2),t(=,10),t('''Hombre''',3),t('.OR.',9),t(19,2),t(=,10),t('''Mujer''',3),t('.OR.',9),t(19,2),t(=,10),t('''Otro''',3),t(')',4) ] ]).
+a_i(4,4,b,0,[],[ [],[ a(1,msg([ t('"Field Socio Tipo Cuota is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(33,2),t(=,10),t('''V''',3),t('.OR.',9),t(33,2),t(=,10),t('''P''',3),t(')',4) ] ]).
+a_i(5,4,f,32,[],[ [],[ t('1500',3),t(-,5),t('(',0),t('1500',3),t(*,6),t('0.3',3),t(')',4),t('IF',17),t(33,2),t(=,10),t('"P"',3),t('.AND.',9),t(20,2),t(>,10),t('65',3),t(';',18),t('2500',3),t(-,5),t('(',0),t('2500',3),t(*,6),t('0.3',3),t(')',4),t('IF',17),t(33,2),t(=,10),t('"V"',3),t('.AND.',9),t(20,2),t(>,10),t('65',3),t(';',18),t('1500',3),t('IF',17),t(33,2),t(=,10),t('"P"',3),t(';',18),t('2500',3),t(';',18),t('0',3),t('OTHERWISE',19) ] ]).
+a_i(6,4,f,5,[],[ [ insert ],[ t('Socioid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4),t(';',18),t('udp(',1),t(5,3),t(0,3),t(')',4),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(5,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
+a_i(7,4,f,[ t(5,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(8,4,f,36,[],[ [],[ t('Insert_carnetid',23),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_carnetid',23),t(')',4),t(';',18) ] ]).
+a_i(9,4,f,[ t(36,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_carnetid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(10,4,f,32,[],[ [ insert ],[ t('2500',3),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(32,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
+a_i(11,4,b,3,[],[ [],[ a(3,[ t(5,2) ]) ],[ t('.NOT.',8),t('null(',1),t('Socioid',23),t(')',4) ] ]).
+a_i(12,4,b,6,[],[ [],[ a(3,[ t(36,2) ]) ],[ t('Mode',23),t(=,10),t([ 25,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_carnetid',23),t(')',4) ] ]).
+a_i(13,4,b,9,[ insert ],[ [],[ a(8,[ t(o(1,'IngresarCarneAuto'),28) ]) ],[] ]).
+a_i(14,4,t,4,[],[ [ [ [],5,5 ] ],'ISOCIO',[] ]).
+a_i(15,4,r,14,[],[ [ [ 4,36,36 ] ],'ICARNET',[] ]).
+a_i(16,4,f,'Pgmname',[],[ [],[ t('"Socio"',3) ] ]).
+a_i(17,4,f,'GxBScreen',[],[ [],[ t('0',3) ] ]).
  
-v_i(f,i,1,'Socioid').
-v_i(f,o,1,5).
-v_i(f,i,2,'Socioid').
-v_i(f,o,2,[ t(5,2),t('Enabled',3) ]).
-v_i(b,i,3,'Socioid').
+v_i(b,i,3,19).
 v_i(b,o,3,[]).
-v_i(t,i,4,5).
-v_i(t,o,4,18).
-v_i(t,o,4,19).
-v_i(t,o,4,20).
-v_i(t,o,4,23).
-v_i(t,o,4,24).
-v_i(t,o,4,21).
-v_i(t,o,4,40000).
-v_i(f,i,5,[]).
-v_i(f,o,5,'Pgmname').
+v_i(b,i,4,33).
+v_i(b,o,4,[]).
+v_i(f,i,5,33).
+v_i(f,i,5,20).
+v_i(f,o,5,32).
+v_i(f,i,6,'Socioid').
+v_i(f,i,6,'GxBScreen').
+v_i(f,o,6,5).
+v_i(f,i,7,'Socioid').
+v_i(f,o,7,[ t(5,2),t('Enabled',3) ]).
+v_i(f,i,8,'Insert_carnetid').
+v_i(f,o,8,36).
+v_i(f,i,9,'Insert_carnetid').
+v_i(f,o,9,[ t(36,2),t('Enabled',3) ]).
+v_i(f,i,10,'GxBScreen').
+v_i(f,o,10,32).
+v_i(b,i,11,'Socioid').
+v_i(b,o,11,[]).
+v_i(b,i,12,'Insert_carnetid').
+v_i(b,o,12,[]).
+v_i(b,i,13,[]).
+v_i(b,o,13,[]).
+v_i(t,i,14,5).
+v_i(t,o,14,18).
+v_i(t,o,14,19).
+v_i(t,o,14,20).
+v_i(t,o,14,33).
+v_i(t,o,14,24).
+v_i(t,o,14,21).
+v_i(t,o,14,40000).
+v_i(t,o,14,36).
+v_i(r,i,15,36).
+v_i(r,o,15,37).
+v_i(f,i,16,[]).
+v_i(f,o,16,'Pgmname').
+v_i(f,i,17,[]).
+v_i(f,o,17,'GxBScreen').
  
-act_info_i(1,[ [ 5 ] ]).
+act_info_i(6,[ [ 5 ] ]).
+act_info_i(8,[ [ 36 ] ]).
+act_info_i(10,[ [ 32 ] ]).
+ 
+ca_i(8,36).
+ 
+tbl_to_delete_i(4,[ 13,[ [ 4,5,5 ] ],c,'ICLASESOCIOS1',[ [ 13,5 ] ],[ 3,5 ],'' ]).
  
  
-tbl_to_delete_i(4,[ 5,[ [ 4,5,5 ] ],c,'ICARNE1',[ [ 5,5 ] ],[ 4 ],'' ]).
-tbl_to_delete_i(4,[ 2,[ [ 4,5,5 ] ],c,'IACTIVIDADSOCIOENACTIVIDAD1',[ [ 2,5 ] ],[ 1,5 ],'' ]).
  
- 
- 
-attri_i(4,[ 'CarneId',int,4,0,'ZZZ9',0,'Carne Id','',0 ]).
-attri_i(1,[ 'ActividadId',int,4,0,'ZZZ9',0,'Actividad Id','',0 ]).
+attri_i(3,[ 'ClaseId',int,4,0,'ZZZ9',0,'Clase Id','',0 ]).
+attri_i(37,[ 'CarnetFechaIngreso',date,8,0,'99/99/99',0,'Carnet Fecha Ingreso','',0 ]).
 attri_i(21,[ 'SocioFoto',bits,4,0,'',0,'Socio Foto','',0 ]).
-attri_i(24,[ 'SocioReconocido',char,20,0,'',0,'Socio Reconocido','',0 ]).
-attri_i(23,[ 'SocioTipo',char,20,0,'',0,'Socio Tipo','',0 ]).
+attri_i(24,[ 'SocioReconocido',boolean,4,0,'',0,'Socio Reconocido','',0 ]).
+attri_i(33,[ 'SocioTipoCuota',char,20,0,'',0,'Socio Tipo Cuota','',0 ]).
 attri_i(20,[ 'SocioEdad',int,4,0,'ZZZ9',0,'Socio Edad','',0 ]).
 attri_i(19,[ 'SocioSexo',char,20,0,'',0,'Socio Sexo','',0 ]).
 attri_i(18,[ 'SocioDireccion',svchar,1024,0,'',0,'Socio Direccion','',0 ]).
+attri_i(36,[ 'CarnetId',int,4,0,'ZZZ9',0,'Carnet Id','',0 ]).
 attri_i(5,[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',0 ]).
+attri_i(32,[ 'SocioMonto',int,4,0,'ZZZ9',0,'Socio Monto','',0 ]).
 attri_i(40000,[ 'SocioFoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',12 ]).
+attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'','',17 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',16 ]).
+attri_i('GxBScreen',[ 'Gx_BScreen',int,1,0,'',0,'','',15 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
-attri_i('Carne',[ 'Carne',o('Carne'),0,0,'',0,'Carne','',11 ]).
+attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',14 ]).
+attri_i('Insert_carnetid',[ 'Insert_CarnetId',int,4,0,'ZZZ9',0,'Insert_Carnet Id','',13 ]).
+attri_i('Socioid',[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',12 ]).
+attri_i('Carne',[ 'Carne',o('Carnet'),0,0,'',0,'Carne','',11 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
 attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',9 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
-attri_i('Socioid',[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(5,[ 'Carne',[ 4,5 ],'Carne','Carne' ]).
-table_i(2,[ 'ActividadSocioEnActividad',[ 1,5 ],'Socio En Actividad','ActividadSocioEnActividad' ]).
-table_i(4,[ 'Socio',[ 5,18,19,20,23,24,21,40000 ],'Socio','Socio' ]).
+table_i(13,[ 'ClaseSocios',[ 3,5 ],'Socios','ClaseSocios' ]).
+table_i(14,[ 'Carnet',[ 36,37 ],'Carnet','Carnet' ]).
+table_i(4,[ 'Socio',[ 5,18,19,20,24,21,40000,33,36 ],'Socio','Socio' ]).
  
 index_i(4,[ 'ISOCIO',u,[ 5 ],'ISocio' ]).
-index_i(2,[ 'IACTIVIDADSOCIOENACTIVIDAD',u,[ 1,5 ],'IActividadSocioEnActividad' ]).
-index_i(2,[ 'IACTIVIDADSOCIOENACTIVIDAD1',d,[ 5 ],'IActividadSocioEnActividad1' ]).
-index_i(5,[ 'ICARNE',u,[ 4 ],'ICarne' ]).
-index_i(5,[ 'ICARNE1',d,[ 5 ],'ICarne1' ]).
+index_i(14,[ 'ICARNET',u,[ 36 ],'ICarnet' ]).
+index_i(13,[ 'ICLASESOCIOS',u,[ 3,5 ],'IClaseSocios' ]).
+index_i(13,[ 'ICLASESOCIOS1',d,[ 5 ],'IClaseSocios1' ]).
  
  
  
+function_i(4,5,yes,udp,o(1,'UltimoIdSocio'),[],0,5,[ [] ]).
  
  
  
@@ -251,8 +314,8 @@ index_i(5,[ 'ICARNE1',d,[ 5 ],'ICarne1' ]).
  
 add_att_i(bits,2,40000,21,'SocioFoto_GXI',[ svchar,2048,0,0 ]).
  
-upd_i(4,4,i,[ [ 5,18,19,20,23,24,21,40000 ],[],'ISOCIO',[ [ [],5,5 ] ] ]).
-upd_i(4,4,u,[ [ 18,19,20,23,24,21,40000 ],[],'ISOCIO',[] ]).
+upd_i(4,4,i,[ [ 5,18,19,20,33,24,21,40000,36 ],[],'ISOCIO',[ [ [],5,5 ] ] ]).
+upd_i(4,4,u,[ [ 18,19,20,33,24,21,40000,36 ],[],'ISOCIO',[] ]).
 upd_i(4,4,d,[ [],[],'ISOCIO',[] ]).
  
  
@@ -262,38 +325,68 @@ upd_i(4,4,d,[ [],[],'ISOCIO',[] ]).
  
  
  
+enumerated_i(2,33,68).
+enumerated_i(2,19,69).
  
 enum_value_i(2,25,'"INS"','Insert','"Insert"',[ none ]).
 enum_value_i(2,25,'"UPD"','Update','"Update"',[ none ]).
 enum_value_i(2,25,'"DLT"','Delete','"Delete"',[ none ]).
 enum_value_i(2,25,'"DSP"','Display','"Display"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
  
 enum_value_info_i(2,25,'GeneXus\TrnMode').
+enum_value_info_i(2,68,'TipoCuota').
+enum_value_info_i(2,69,'Sexo').
  
 enum_type_i(2,25,char,3,0).
+enum_type_i(2,68,char,20,0).
+enum_type_i(2,69,char,20,0).
  
 dom_info_i(26,[ 'GeneXus\Address' ]).
-dom_info_i(66,[ 'AutoNumero' ]).
+dom_info_i(69,[ 'Sexo' ]).
+dom_info_i(68,[ 'TipoCuota' ]).
  
+a_ctrl_i(33,c,[ '''V''','''P''' ]).
+a_ctrl_i(19,c,[ '''Hombre''','''Mujer''','''Otro''' ]).
  
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,14).
-b_group_i(2,3,lit,0,15,0).
+b_group_i(2,2,lit,0,2,25).
+b_group_i(2,3,lit,0,26,41).
+b_group_i(2,4,lit,0,42,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(5,2,2,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,5),t('udp(',1,5,23),t(o(1,'IsAuthorized'),28,5,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',104,1,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(7,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Trncontext',23,9,2),t('fromxml(',1,9,14) ],31,9,2),t([ t('Websession',23,9,23),t('get(',1,9,35) ],31,9,35),t('"TrnContext"',3,9,40),t(')',4,1,53),t(')',4,1,54) ]).
-b_line_i(12,2,2,cmd,1,[ t('',147,1,0) ]).
-b_line_i(14,2,2,cmd,1,[ t('',146,1,0),t('After Trn',3,14,7) ]).
-b_line_i(18,2,3,cmd,1,[ t('',109,1,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 25,'Delete' ],44,18,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,18,41),t('Callerondelete',3,18,53) ],29,18,53),t(')',4,1,67) ]).
-b_line_i(19,2,3,cmd,1,[ t('',104,1,0),t(o(13,'WWSocio'),28,1,3) ]).
-b_line_i(20,2,3,cmd,1,[ t('',111,1,0) ]).
-b_line_i(22,2,3,cmd,1,[ t('',118,1,0) ]).
-b_line_i(26,2,3,cmd,1,[ t('',147,1,0) ]).
+b_line_i(10,2,2,cmd,1,[ t('',107,1,0),t([ t('Insert_carnetid',23,10,2),t('setempty(',1,10,19) ],31,10,2),t(')',4,1,29) ]).
+b_line_i(12,2,2,cmd,1,[ t('',109,1,0),t('(',0,1,5),t([ t('Trncontext',23,12,6),t('Transactionname',3,12,18) ],29,12,18),t(=,10,1,34),t('Pgmname',23,1,36),t('.AND.',9,1,45),t('Mode',23,1,51),t(=,10,1,57),t([ 25,'Insert' ],44,12,59),t(')',4,1,73) ]).
+b_line_i(13,2,2,cmd,1,[ t('',107,1,0),t('GXV1',23,1,0),t(=,10,1,0),t(1,3,1,0) ]).
+b_line_i([ 13,2 ],2,2,cmd,1,[ t('',114,1,0),t('GXV1',23,1,0),t(<=,10,1,0),t([ t('Trncontext',23,13,25),t('Attributes',3,13,37),t('Count',3,13,0) ],29,13,0) ]).
+b_line_i([ 13,3 ],2,2,cmd,1,[ t('',107,1,0),t('Trncontextatt',23,1,0),t(=,10,1,0),t([ t([ t('Trncontext',23,1,0),t('Attributes',3,1,0) ],29,1,0),t('item(',1,1,0) ],31,1,0),t('GXV1',23,1,0),t(')',4,1,0) ]).
+b_line_i(14,2,2,cmd,2,[ t('',152,2,0) ]).
+b_line_i(16,2,2,cmd,2,[ t('',153,2,0),t([ t('Trncontextatt',23,16,10),t('Attributename',3,16,25) ],29,16,25),t(=,10,2,39),t('"CarnetId"',3,16,41) ]).
+b_line_i(17,2,2,cmd,2,[ t('',107,2,0),t('Insert_carnetid',23,17,6),t(=,10,17,6),t('val(',1,17,6),t([ t('Trncontextatt',23,17,35),t('Attributevalue',3,17,50) ],29,17,50),t(')',4,2,64) ]).
+b_line_i(18,2,2,cmd,2,[ t('',154,2,0) ]).
+b_line_i([ 19,1 ],2,2,cmd,2,[ t('',107,2,0),t('GXV1',23,2,0),t(=,10,2,0),t('GXV1',23,2,0),t(+,5,2,0),t(1,3,2,0) ]).
+b_line_i([ 19,2 ],2,2,cmd,2,[ t('',115,2,0) ]).
+b_line_i(20,2,2,cmd,3,[ t('',111,3,0) ]).
+b_line_i(23,2,2,cmd,3,[ t('',147,3,0) ]).
+b_line_i(25,2,2,cmd,3,[ t('',146,3,0),t('After Trn',3,25,7) ]).
+b_line_i(29,2,3,cmd,3,[ t('',109,3,0),t('(',0,3,5),t('Mode',23,3,6),t(=,10,3,12),t([ 25,'Delete' ],44,29,14),t('.AND.',9,3,29),t('.NOT.',8,3,35),t([ t('Trncontext',23,29,41),t('Callerondelete',3,29,53) ],29,29,53),t(')',4,3,67) ]).
+b_line_i(30,2,3,cmd,3,[ t('',104,3,0),t(o(13,'WWSocio'),28,3,3) ]).
+b_line_i(31,2,3,cmd,3,[ t('',111,3,0) ]).
+b_line_i(33,2,3,cmd,3,[ t('',118,3,0) ]).
+b_line_i(36,2,3,cmd,3,[ t('',147,3,0) ]).
+b_line_i(41,2,3,cmd,3,[ t('',146,3,0),t('Delete',3,41,7) ]).
+b_line_i(42,2,4,cmd,3,[ t('',104,3,0),t(o(1,'BorrarCarnets'),28,3,2) ]).
+b_line_i(43,2,4,cmd,3,[ t('',147,3,0) ]).
  
  
  
@@ -361,7 +454,7 @@ html_sub_i(15,50,html_i(5,div(50))).
 html_sub_i(50,51,html_i(0,div(51))).
 html_sub_i(51,52,html_i(0,div(52))).
 html_sub_i(52,53,html_i(0,div(53))).
-html_sub_i(53,54,html_i(0,t(23,2))).
+html_sub_i(53,54,html_i(0,t(33,2))).
 html_sub_i(15,55,html_i(6,div(55))).
 html_sub_i(55,56,html_i(0,div(56))).
 html_sub_i(56,57,html_i(0,div(57))).
@@ -372,15 +465,30 @@ html_sub_i(60,61,html_i(0,div(61))).
 html_sub_i(61,62,html_i(0,div(62))).
 html_sub_i(62,63,html_i(0,div(63))).
 html_sub_i(63,64,html_i(0,t(21,2))).
-html_sub_i(3,65,html_i(2,div(65))).
+html_sub_i(15,65,html_i(8,div(65))).
 html_sub_i(65,66,html_i(0,div(66))).
 html_sub_i(66,67,html_i(0,div(67))).
 html_sub_i(67,68,html_i(0,div(68))).
-html_sub_i(68,69,html_i(0,button('Enter'))).
-html_sub_i(67,70,html_i(1,div(70))).
-html_sub_i(70,71,html_i(0,button('Cancel'))).
-html_sub_i(67,72,html_i(2,div(72))).
-html_sub_i(72,73,html_i(0,button('Delete'))).
+html_sub_i(68,69,html_i(0,t(32,2))).
+html_sub_i(15,70,html_i(9,div(70))).
+html_sub_i(70,71,html_i(0,div(71))).
+html_sub_i(71,72,html_i(0,div(72))).
+html_sub_i(72,73,html_i(0,div(73))).
+html_sub_i(73,74,html_i(0,t(36,2))).
+html_sub_i(15,75,html_i(10,div(75))).
+html_sub_i(75,76,html_i(0,div(76))).
+html_sub_i(76,77,html_i(0,div(77))).
+html_sub_i(77,78,html_i(0,div(78))).
+html_sub_i(78,79,html_i(0,t(37,2))).
+html_sub_i(3,80,html_i(2,div(80))).
+html_sub_i(80,81,html_i(0,div(81))).
+html_sub_i(81,82,html_i(0,div(82))).
+html_sub_i(82,83,html_i(0,div(83))).
+html_sub_i(83,84,html_i(0,button('Enter'))).
+html_sub_i(82,85,html_i(1,div(85))).
+html_sub_i(85,86,html_i(0,button('Cancel'))).
+html_sub_i(82,87,html_i(2,div(87))).
+html_sub_i(87,88,html_i(0,button('Delete'))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
@@ -393,13 +501,19 @@ html_tags_i(42,'data-gx-att','att:19').
 html_tags_i(44,'data-gx-att','att:19').
 html_tags_i(47,'data-gx-att','att:20').
 html_tags_i(49,'data-gx-att','att:20').
-html_tags_i(52,'data-gx-att','att:23').
-html_tags_i(54,'data-gx-att','att:23').
+html_tags_i(52,'data-gx-att','att:33').
+html_tags_i(54,'data-gx-att','att:33').
 html_tags_i(57,'data-gx-att','att:24').
 html_tags_i(59,'data-gx-att','att:24').
 html_tags_i(62,'data-gx-att','att:21').
 html_tags_i(64,'data-gx-att','att:21').
-html_tags_i(67,'data-gx-actiongroup-type',toolbar).
+html_tags_i(67,'data-gx-att','att:32').
+html_tags_i(69,'data-gx-att','att:32').
+html_tags_i(72,'data-gx-att','att:36').
+html_tags_i(74,'data-gx-att','att:36').
+html_tags_i(77,'data-gx-att','att:37').
+html_tags_i(79,'data-gx-att','att:37').
+html_tags_i(82,'data-gx-actiongroup-type',toolbar).
  
 html_comp_i(12,'Backcolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -818,19 +932,15 @@ html_comp_i(44,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(44,'Captionposition','Left',v,[ str ]).
 html_comp_i(44,'Captionvalue','Sexo',d,[ str ]).
 html_comp_i(44,'Layoutclass','col-sm-9',v,[ str ]).
-html_comp_i(44,'Controltype',2,d,[ num ]).
-html_comp_i(44,'Inputtype',0,d,[ num ]).
-html_comp_i(44,'Editautocomplete',0,d,[ num ]).
-html_comp_i(44,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(44,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(44,'Controltype',0,d,[ num ]).
+html_comp_i(44,'Controlvalues',[ [ 'H','Hombre' ],[ 'M','Mujer' ],[ 'O','Otro' ] ],d,[ values ]).
+html_comp_i(44,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(44,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(44,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(44,'Readonly',0,v,[ bool ]).
 html_comp_i(44,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(44,'Ispassword',0,d,[ bool ]).
 html_comp_i(44,'Autoresize',-1,d,[ bool ]).
 html_comp_i(44,'Gxwidth',measure(20,chr),d,[ measure ]).
-html_comp_i(44,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(44,'Ismultiline',0,d,[ bool ]).
 html_comp_i(44,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(44,'Fill',-1,d,[ bool ]).
@@ -838,7 +948,6 @@ html_comp_i(44,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(44,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(44,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(44,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(44,'Gxformat',0,d,[ num ]).
 html_comp_i(44,'Title','',d,[ str ]).
 html_comp_i(44,'Invitemsg','',v,[ str ]).
 html_comp_i(45,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -937,27 +1046,23 @@ html_comp_i(53,'Align',left,d,[ str ]).
 html_comp_i(53,'Valign',top,d,[ str ]).
 html_comp_i(54,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(54,'Colcount',20,d,[ num ]).
-html_comp_i(54,'Attid',23,v,[ num ]).
+html_comp_i(54,'Attid',33,v,[ num ]).
 html_comp_i(54,'Class','Attribute',v,[ str ]).
-html_comp_i(54,'Controlname','Sociotipo',d,[ str ]).
+html_comp_i(54,'Controlname','Sociotipocuota',d,[ str ]).
 html_comp_i(54,'Returnonclick',0,v,[ bool ]).
 html_comp_i(54,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(54,'Captionposition','Left',v,[ str ]).
-html_comp_i(54,'Captionvalue','Tipo',d,[ str ]).
+html_comp_i(54,'Captionvalue','Tipo Cuota',d,[ str ]).
 html_comp_i(54,'Layoutclass','col-sm-9',v,[ str ]).
-html_comp_i(54,'Controltype',2,d,[ num ]).
-html_comp_i(54,'Inputtype',0,d,[ num ]).
-html_comp_i(54,'Editautocomplete',0,d,[ num ]).
-html_comp_i(54,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(54,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(54,'Controltype',0,d,[ num ]).
+html_comp_i(54,'Controlvalues',[ [ 'Verano','V' ],[ 'Permanente','P' ] ],d,[ values ]).
+html_comp_i(54,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(54,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(54,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(54,'Readonly',0,v,[ bool ]).
 html_comp_i(54,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(54,'Ispassword',0,d,[ bool ]).
 html_comp_i(54,'Autoresize',-1,d,[ bool ]).
 html_comp_i(54,'Gxwidth',measure(20,chr),d,[ measure ]).
-html_comp_i(54,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(54,'Ismultiline',0,d,[ bool ]).
 html_comp_i(54,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(54,'Fill',-1,d,[ bool ]).
@@ -965,7 +1070,6 @@ html_comp_i(54,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(54,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(54,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(54,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(54,'Gxformat',0,d,[ num ]).
 html_comp_i(54,'Title','',d,[ str ]).
 html_comp_i(54,'Invitemsg','',v,[ str ]).
 html_comp_i(55,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -1001,7 +1105,7 @@ html_comp_i(58,'Semanticcontent',div,d,[ str ]).
 html_comp_i(58,'Align',left,d,[ str ]).
 html_comp_i(58,'Valign',top,d,[ str ]).
 html_comp_i(59,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(59,'Colcount',20,d,[ num ]).
+html_comp_i(59,'Colcount',4,d,[ num ]).
 html_comp_i(59,'Attid',24,v,[ num ]).
 html_comp_i(59,'Class','Attribute',v,[ str ]).
 html_comp_i(59,'Controlname','Socioreconocido',d,[ str ]).
@@ -1010,18 +1114,16 @@ html_comp_i(59,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(59,'Captionposition','Left',v,[ str ]).
 html_comp_i(59,'Captionvalue','Reconocido',d,[ str ]).
 html_comp_i(59,'Layoutclass','col-sm-9',v,[ str ]).
-html_comp_i(59,'Controltype',2,d,[ num ]).
-html_comp_i(59,'Inputtype',0,d,[ num ]).
-html_comp_i(59,'Editautocomplete',0,d,[ num ]).
-html_comp_i(59,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(59,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(59,'Controltype',3,d,[ num ]).
+html_comp_i(59,'Controltitle','',d,[ str ]).
+html_comp_i(59,'Controlcheckvalue',true,d,[ str ]).
+html_comp_i(59,'Controluncheckvalue',false,d,[ str ]).
 html_comp_i(59,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(59,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(59,'Readonly',0,v,[ bool ]).
-html_comp_i(59,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(59,'Ispassword',0,d,[ bool ]).
+html_comp_i(59,'Autocomplete',0,d,[ bool ]).
 html_comp_i(59,'Autoresize',-1,d,[ bool ]).
-html_comp_i(59,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(59,'Gxwidth',measure(4,chr),d,[ measure ]).
 html_comp_i(59,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(59,'Ismultiline',0,d,[ bool ]).
 html_comp_i(59,'Maxtextnumberlines',0,d,[ num ]).
@@ -1029,8 +1131,6 @@ html_comp_i(59,'Fill',-1,d,[ bool ]).
 html_comp_i(59,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(59,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(59,'Font',font('Arial',10,[]),d,[ font ]).
-html_comp_i(59,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(59,'Gxformat',0,d,[ num ]).
 html_comp_i(59,'Title','',d,[ str ]).
 html_comp_i(59,'Invitemsg','',v,[ str ]).
 html_comp_i(60,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -1098,15 +1198,15 @@ html_comp_i(65,'Semanticcontent',div,d,[ str ]).
 html_comp_i(65,'Align',left,d,[ str ]).
 html_comp_i(65,'Valign',top,d,[ str ]).
 html_comp_i(66,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(66,'Class','col-xs-12',v,[ str ]).
+html_comp_i(66,'Class','col-xs-12 FormCell',v,[ str ]).
 html_comp_i(66,'Id','',d,[ str ]).
 html_comp_i(66,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(66,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(66,'Semanticcontent',div,d,[ str ]).
-html_comp_i(66,'Align','Center',v,[ str ]).
+html_comp_i(66,'Align',left,d,[ str ]).
 html_comp_i(66,'Valign',top,d,[ str ]).
 html_comp_i(67,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(67,'Class','gx-action-group Confirm',v,[ str ]).
+html_comp_i(67,'Class','form-group gx-form-group',v,[ str ]).
 html_comp_i(67,'Id','',d,[ str ]).
 html_comp_i(67,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(67,'Width',measure(0,px),d,[ measure ]).
@@ -1114,7 +1214,7 @@ html_comp_i(67,'Semanticcontent',div,d,[ str ]).
 html_comp_i(67,'Align',left,d,[ str ]).
 html_comp_i(67,'Valign',top,d,[ str ]).
 html_comp_i(68,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(68,'Class','gx-button',v,[ str ]).
+html_comp_i(68,'Class','col-sm-9 gx-attribute',v,[ str ]).
 html_comp_i(68,'Id','',d,[ str ]).
 html_comp_i(68,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(68,'Width',measure(0,px),d,[ measure ]).
@@ -1122,19 +1222,37 @@ html_comp_i(68,'Semanticcontent',div,d,[ str ]).
 html_comp_i(68,'Align',left,d,[ str ]).
 html_comp_i(68,'Valign',top,d,[ str ]).
 html_comp_i(69,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(69,'Controlname','Btn_enter',v,[ str ]).
-html_comp_i(69,'Class','BtnEnter',v,[ str ]).
-html_comp_i(69,'Event','Enter',v,[ str ]).
-html_comp_i(69,'Caption','Confirm',d,[ str ]).
-html_comp_i(69,'Title','Confirm',d,[ str ]).
-html_comp_i(69,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(69,'Forecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(69,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(69,'Border','2',d,[ str ]).
-html_comp_i(69,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(69,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(69,'Colcount',4,d,[ num ]).
+html_comp_i(69,'Attid',32,v,[ num ]).
+html_comp_i(69,'Class','Attribute',v,[ str ]).
+html_comp_i(69,'Controlname','Sociomonto',d,[ str ]).
+html_comp_i(69,'Returnonclick',0,v,[ bool ]).
+html_comp_i(69,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
+html_comp_i(69,'Captionposition','Left',v,[ str ]).
+html_comp_i(69,'Captionvalue','Monto',d,[ str ]).
+html_comp_i(69,'Layoutclass','col-sm-9',v,[ str ]).
+html_comp_i(69,'Controltype',2,d,[ num ]).
+html_comp_i(69,'Inputtype',0,d,[ num ]).
+html_comp_i(69,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(69,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(69,'Readonly',0,v,[ bool ]).
+html_comp_i(69,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(69,'Ispassword',0,d,[ bool ]).
+html_comp_i(69,'Autoresize',-1,d,[ bool ]).
+html_comp_i(69,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(69,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(69,'Ismultiline',0,d,[ bool ]).
+html_comp_i(69,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(69,'Fill',-1,d,[ bool ]).
+html_comp_i(69,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(69,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(69,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(69,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(69,'Gxformat',0,d,[ num ]).
+html_comp_i(69,'Title','',d,[ str ]).
+html_comp_i(69,'Invitemsg','',v,[ str ]).
 html_comp_i(70,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(70,'Class','gx-button',v,[ str ]).
+html_comp_i(70,'Class',row,v,[ str ]).
 html_comp_i(70,'Id','',d,[ str ]).
 html_comp_i(70,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(70,'Width',measure(0,px),d,[ measure ]).
@@ -1142,19 +1260,15 @@ html_comp_i(70,'Semanticcontent',div,d,[ str ]).
 html_comp_i(70,'Align',left,d,[ str ]).
 html_comp_i(70,'Valign',top,d,[ str ]).
 html_comp_i(71,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(71,'Controlname','Btn_cancel',v,[ str ]).
-html_comp_i(71,'Class','BtnCancel',v,[ str ]).
-html_comp_i(71,'Event','Cancel',v,[ str ]).
-html_comp_i(71,'Caption','Cancel',d,[ str ]).
-html_comp_i(71,'Title','Cancel',d,[ str ]).
-html_comp_i(71,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(71,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(71,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(71,'Border','2',d,[ str ]).
-html_comp_i(71,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(71,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(71,'Class','col-xs-12 FormCell',v,[ str ]).
+html_comp_i(71,'Id','',d,[ str ]).
+html_comp_i(71,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(71,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(71,'Semanticcontent',div,d,[ str ]).
+html_comp_i(71,'Align',left,d,[ str ]).
+html_comp_i(71,'Valign',top,d,[ str ]).
 html_comp_i(72,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(72,'Class','gx-button',v,[ str ]).
+html_comp_i(72,'Class','form-group gx-form-group',v,[ str ]).
 html_comp_i(72,'Id','',d,[ str ]).
 html_comp_i(72,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(72,'Width',measure(0,px),d,[ measure ]).
@@ -1162,23 +1276,197 @@ html_comp_i(72,'Semanticcontent',div,d,[ str ]).
 html_comp_i(72,'Align',left,d,[ str ]).
 html_comp_i(72,'Valign',top,d,[ str ]).
 html_comp_i(73,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(73,'Controlname','Btn_delete',v,[ str ]).
-html_comp_i(73,'Class','BtnDelete',v,[ str ]).
-html_comp_i(73,'Event','Delete',v,[ str ]).
-html_comp_i(73,'Caption','Delete',d,[ str ]).
-html_comp_i(73,'Title','Delete',d,[ str ]).
-html_comp_i(73,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(73,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(73,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(73,'Border','2',d,[ str ]).
-html_comp_i(73,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(73,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(73,'Class','col-sm-9 gx-attribute',v,[ str ]).
+html_comp_i(73,'Id','',d,[ str ]).
+html_comp_i(73,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(73,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(73,'Semanticcontent',div,d,[ str ]).
+html_comp_i(73,'Align',left,d,[ str ]).
+html_comp_i(73,'Valign',top,d,[ str ]).
+html_comp_i(74,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(74,'Colcount',4,d,[ num ]).
+html_comp_i(74,'Attid',36,v,[ num ]).
+html_comp_i(74,'Class','Attribute',v,[ str ]).
+html_comp_i(74,'Controlname','Carnetid',d,[ str ]).
+html_comp_i(74,'Returnonclick',0,v,[ bool ]).
+html_comp_i(74,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
+html_comp_i(74,'Captionposition','Left',v,[ str ]).
+html_comp_i(74,'Captionvalue','Carnet Id',d,[ str ]).
+html_comp_i(74,'Layoutclass','col-sm-9',v,[ str ]).
+html_comp_i(74,'Controltype',2,d,[ num ]).
+html_comp_i(74,'Inputtype',0,d,[ num ]).
+html_comp_i(74,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(74,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(74,'Readonly',0,v,[ bool ]).
+html_comp_i(74,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(74,'Ispassword',0,d,[ bool ]).
+html_comp_i(74,'Autoresize',-1,d,[ bool ]).
+html_comp_i(74,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(74,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(74,'Ismultiline',0,d,[ bool ]).
+html_comp_i(74,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(74,'Fill',-1,d,[ bool ]).
+html_comp_i(74,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(74,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(74,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(74,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(74,'Gxformat',0,d,[ num ]).
+html_comp_i(74,'Title','',d,[ str ]).
+html_comp_i(74,'Invitemsg','',v,[ str ]).
+html_comp_i(75,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(75,'Class',row,v,[ str ]).
+html_comp_i(75,'Id','',d,[ str ]).
+html_comp_i(75,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(75,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(75,'Semanticcontent',div,d,[ str ]).
+html_comp_i(75,'Align',left,d,[ str ]).
+html_comp_i(75,'Valign',top,d,[ str ]).
+html_comp_i(76,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(76,'Class','col-xs-12 FormCell',v,[ str ]).
+html_comp_i(76,'Id','',d,[ str ]).
+html_comp_i(76,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(76,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(76,'Semanticcontent',div,d,[ str ]).
+html_comp_i(76,'Align',left,d,[ str ]).
+html_comp_i(76,'Valign',top,d,[ str ]).
+html_comp_i(77,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(77,'Class','form-group gx-form-group',v,[ str ]).
+html_comp_i(77,'Id','',d,[ str ]).
+html_comp_i(77,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(77,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(77,'Semanticcontent',div,d,[ str ]).
+html_comp_i(77,'Align',left,d,[ str ]).
+html_comp_i(77,'Valign',top,d,[ str ]).
+html_comp_i(78,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(78,'Class','col-sm-9 gx-attribute',v,[ str ]).
+html_comp_i(78,'Id','',d,[ str ]).
+html_comp_i(78,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(78,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(78,'Semanticcontent',div,d,[ str ]).
+html_comp_i(78,'Align',left,d,[ str ]).
+html_comp_i(78,'Valign',top,d,[ str ]).
+html_comp_i(79,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(79,'Colcount',8,d,[ num ]).
+html_comp_i(79,'Attid',37,v,[ num ]).
+html_comp_i(79,'Class','Attribute',v,[ str ]).
+html_comp_i(79,'Controlname','Carnetfechaingreso',d,[ str ]).
+html_comp_i(79,'Returnonclick',0,v,[ bool ]).
+html_comp_i(79,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
+html_comp_i(79,'Captionposition','Left',v,[ str ]).
+html_comp_i(79,'Captionvalue','Carnet Fecha Ingreso',d,[ str ]).
+html_comp_i(79,'Layoutclass','col-sm-9',v,[ str ]).
+html_comp_i(79,'Controltype',2,d,[ num ]).
+html_comp_i(79,'Inputtype',0,d,[ num ]).
+html_comp_i(79,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(79,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(79,'Readonly',0,v,[ bool ]).
+html_comp_i(79,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(79,'Ispassword',0,d,[ bool ]).
+html_comp_i(79,'Autoresize',-1,d,[ bool ]).
+html_comp_i(79,'Gxwidth',measure(8,chr),d,[ measure ]).
+html_comp_i(79,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(79,'Ismultiline',0,d,[ bool ]).
+html_comp_i(79,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(79,'Fill',-1,d,[ bool ]).
+html_comp_i(79,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(79,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(79,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(79,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(79,'Gxformat',0,d,[ num ]).
+html_comp_i(79,'Title','',d,[ str ]).
+html_comp_i(79,'Use_datepicker',-1,d,[ bool ]).
+html_comp_i(79,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(80,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(80,'Class',row,v,[ str ]).
+html_comp_i(80,'Id','',d,[ str ]).
+html_comp_i(80,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(80,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(80,'Semanticcontent',div,d,[ str ]).
+html_comp_i(80,'Align',left,d,[ str ]).
+html_comp_i(80,'Valign',top,d,[ str ]).
+html_comp_i(81,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(81,'Class','col-xs-12',v,[ str ]).
+html_comp_i(81,'Id','',d,[ str ]).
+html_comp_i(81,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(81,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(81,'Semanticcontent',div,d,[ str ]).
+html_comp_i(81,'Align','Center',v,[ str ]).
+html_comp_i(81,'Valign',top,d,[ str ]).
+html_comp_i(82,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(82,'Class','gx-action-group Confirm',v,[ str ]).
+html_comp_i(82,'Id','',d,[ str ]).
+html_comp_i(82,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(82,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(82,'Semanticcontent',div,d,[ str ]).
+html_comp_i(82,'Align',left,d,[ str ]).
+html_comp_i(82,'Valign',top,d,[ str ]).
+html_comp_i(83,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(83,'Class','gx-button',v,[ str ]).
+html_comp_i(83,'Id','',d,[ str ]).
+html_comp_i(83,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(83,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(83,'Semanticcontent',div,d,[ str ]).
+html_comp_i(83,'Align',left,d,[ str ]).
+html_comp_i(83,'Valign',top,d,[ str ]).
+html_comp_i(84,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(84,'Controlname','Btn_enter',v,[ str ]).
+html_comp_i(84,'Class','BtnEnter',v,[ str ]).
+html_comp_i(84,'Event','Enter',v,[ str ]).
+html_comp_i(84,'Caption','Confirm',d,[ str ]).
+html_comp_i(84,'Title','Confirm',d,[ str ]).
+html_comp_i(84,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(84,'Forecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(84,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(84,'Border','2',d,[ str ]).
+html_comp_i(84,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(84,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(85,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(85,'Class','gx-button',v,[ str ]).
+html_comp_i(85,'Id','',d,[ str ]).
+html_comp_i(85,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(85,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(85,'Semanticcontent',div,d,[ str ]).
+html_comp_i(85,'Align',left,d,[ str ]).
+html_comp_i(85,'Valign',top,d,[ str ]).
+html_comp_i(86,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(86,'Controlname','Btn_cancel',v,[ str ]).
+html_comp_i(86,'Class','BtnCancel',v,[ str ]).
+html_comp_i(86,'Event','Cancel',v,[ str ]).
+html_comp_i(86,'Caption','Cancel',d,[ str ]).
+html_comp_i(86,'Title','Cancel',d,[ str ]).
+html_comp_i(86,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(86,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(86,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(86,'Border','2',d,[ str ]).
+html_comp_i(86,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(86,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(87,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(87,'Class','gx-button',v,[ str ]).
+html_comp_i(87,'Id','',d,[ str ]).
+html_comp_i(87,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(87,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(87,'Semanticcontent',div,d,[ str ]).
+html_comp_i(87,'Align',left,d,[ str ]).
+html_comp_i(87,'Valign',top,d,[ str ]).
+html_comp_i(88,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(88,'Controlname','Btn_delete',v,[ str ]).
+html_comp_i(88,'Class','BtnDelete',v,[ str ]).
+html_comp_i(88,'Event','Delete',v,[ str ]).
+html_comp_i(88,'Caption','Delete',d,[ str ]).
+html_comp_i(88,'Title','Delete',d,[ str ]).
+html_comp_i(88,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(88,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(88,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(88,'Border','2',d,[ str ]).
+html_comp_i(88,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(88,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
  
  
  
+warn_gen_i(msg([],spc0189,[ 'Rule ''','default( SocioMonto, 2500 ) ',''' has no effect.' ])).
  
 lit_i(9,1,t('Socio',3),[ ctlname('Title') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
@@ -1213,7 +1501,7 @@ lit_i(38,1,div(38),[ ctlname('') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).
 lit_i(36,1,div(36),[ ctlname('') ]).
 lit_i(35,1,div(35),[ ctlname('') ]).
-lit_i(44,1,t(19,2),[ ctlname(19),ctrltype(edit,44),pos(44),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(44,1,t(19,2),[ ctlname(19),ctrltype(combo,44),pos(44),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(43,1,div(43),[ ctlname('') ]).
 lit_i(42,1,div(42),[ ctlname('') ]).
 lit_i(41,1,div(41),[ ctlname('') ]).
@@ -1223,12 +1511,12 @@ lit_i(48,1,div(48),[ ctlname('') ]).
 lit_i(47,1,div(47),[ ctlname('') ]).
 lit_i(46,1,div(46),[ ctlname('') ]).
 lit_i(45,1,div(45),[ ctlname('') ]).
-lit_i(54,1,t(23,2),[ ctlname(23),ctrltype(edit,54),pos(54),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(54,1,t(33,2),[ ctlname(33),ctrltype(combo,54),pos(54),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(53,1,div(53),[ ctlname('') ]).
 lit_i(52,1,div(52),[ ctlname('') ]).
 lit_i(51,1,div(51),[ ctlname('') ]).
 lit_i(50,1,div(50),[ ctlname('') ]).
-lit_i(59,1,t(24,2),[ ctlname(24),ctrltype(edit,59),pos(59),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(59,1,t(24,2),[ ctlname(24),ctrltype(checkbox,59),pos(59),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(58,1,div(58),[ ctlname('') ]).
 lit_i(57,1,div(57),[ ctlname('') ]).
 lit_i(56,1,div(56),[ ctlname('') ]).
@@ -1238,18 +1526,33 @@ lit_i(63,1,div(63),[ ctlname('') ]).
 lit_i(62,1,div(62),[ ctlname('') ]).
 lit_i(61,1,div(61),[ ctlname('') ]).
 lit_i(60,1,div(60),[ ctlname('') ]).
-lit_i(15,1,div(15),[ ctlname('Formcontainer') ]).
-lit_i(14,1,div(14),[ ctlname('') ]).
-lit_i(13,1,div(13),[ ctlname('') ]).
-lit_i(69,1,button('Enter'),[ ctlname('Btn_enter'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(69,1,t(32,2),[ ctlname(32),ctrltype(edit,69),pos(69),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(68,1,div(68),[ ctlname('') ]).
-lit_i(71,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(70,1,div(70),[ ctlname('') ]).
-lit_i(73,1,button('Delete'),[ ctlname('Btn_delete'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(72,1,div(72),[ ctlname('') ]).
 lit_i(67,1,div(67),[ ctlname('') ]).
 lit_i(66,1,div(66),[ ctlname('') ]).
 lit_i(65,1,div(65),[ ctlname('') ]).
+lit_i(74,1,t(36,2),[ ctlname(36),ctrltype(edit,74),pos(74),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(73,1,div(73),[ ctlname('') ]).
+lit_i(72,1,div(72),[ ctlname('') ]).
+lit_i(71,1,div(71),[ ctlname('') ]).
+lit_i(70,1,div(70),[ ctlname('') ]).
+lit_i(79,1,t(37,2),[ ctlname(37),ctrltype(edit,79),pos(79),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(78,1,div(78),[ ctlname('') ]).
+lit_i(77,1,div(77),[ ctlname('') ]).
+lit_i(76,1,div(76),[ ctlname('') ]).
+lit_i(75,1,div(75),[ ctlname('') ]).
+lit_i(15,1,div(15),[ ctlname('Formcontainer') ]).
+lit_i(14,1,div(14),[ ctlname('') ]).
+lit_i(13,1,div(13),[ ctlname('') ]).
+lit_i(84,1,button('Enter'),[ ctlname('Btn_enter'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(83,1,div(83),[ ctlname('') ]).
+lit_i(86,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(85,1,div(85),[ ctlname('') ]).
+lit_i(88,1,button('Delete'),[ ctlname('Btn_delete'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(87,1,div(87),[ ctlname('') ]).
+lit_i(82,1,div(82),[ ctlname('') ]).
+lit_i(81,1,div(81),[ ctlname('') ]).
+lit_i(80,1,div(80),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
@@ -1259,9 +1562,14 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+ctrl_info_i(1,44,[ [ [ 'H','Hombre' ],[ 'M','Mujer' ],[ 'O','Otro' ] ],[ '' ] ]).
+ctrl_info_i(1,54,[ [ [ 'Verano','V' ],[ 'Permanente','P' ] ],[ '' ] ]).
+ctrl_info_i(1,59,[ [ true,false,'' ] ]).
  
  
+calling_main_i(13,8).
  
+att_prop_i(2,5,'HORIZONTAL_DESCRIPTION','Socio Id',d).
 att_prop_i(2,5,'ExternalName','SocioId',d).
 att_prop_i(2,5,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,5,'EmptyAsNull','Yes',d).
@@ -1271,6 +1579,7 @@ att_prop_i(2,5,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,5,'AttRegEx','',d).
 att_prop_i(2,5,'AttValidationFailedMsg','',d).
 att_prop_i(2,5,'FullName','SocioId',v).
+att_prop_i(2,18,'HORIZONTAL_DESCRIPTION','Socio Direccion',d).
 att_prop_i(2,18,'ExternalName','SocioDireccion',d).
 att_prop_i(2,18,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,18,'EmptyAsNull','Yes',d).
@@ -1280,15 +1589,17 @@ att_prop_i(2,18,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,18,'AttRegEx','',d).
 att_prop_i(2,18,'AttValidationFailedMsg','',d).
 att_prop_i(2,18,'FullName','SocioDireccion',v).
+att_prop_i(2,19,'HORIZONTAL_DESCRIPTION','Socio Sexo',d).
 att_prop_i(2,19,'ExternalName','SocioSexo',d).
 att_prop_i(2,19,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,19,'EmptyAsNull','Yes',d).
-att_prop_i(2,19,idBasedOn,'',d).
+att_prop_i(2,19,idBasedOn,69,v).
 att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,19,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,19,'AttRegEx','',d).
-att_prop_i(2,19,'AttValidationFailedMsg','',d).
+att_prop_i(2,19,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
 att_prop_i(2,19,'FullName','SocioSexo',v).
+att_prop_i(2,20,'HORIZONTAL_DESCRIPTION','Socio Edad',d).
 att_prop_i(2,20,'ExternalName','SocioEdad',d).
 att_prop_i(2,20,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,20,'EmptyAsNull','Yes',d).
@@ -1298,24 +1609,27 @@ att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,20,'AttRegEx','',d).
 att_prop_i(2,20,'AttValidationFailedMsg','',d).
 att_prop_i(2,20,'FullName','SocioEdad',v).
-att_prop_i(2,23,'ExternalName','SocioTipo',d).
-att_prop_i(2,23,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,23,'EmptyAsNull','Yes',d).
-att_prop_i(2,23,idBasedOn,'',d).
-att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,23,'DB_NLS_SUPPORT','No',d).
-att_prop_i(2,23,'AttRegEx','',d).
-att_prop_i(2,23,'AttValidationFailedMsg','',d).
-att_prop_i(2,23,'FullName','SocioTipo',v).
+att_prop_i(2,33,'HORIZONTAL_DESCRIPTION','Socio Tipo Cuota',d).
+att_prop_i(2,33,'ExternalName','SocioTipoCuota',d).
+att_prop_i(2,33,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,33,'EmptyAsNull','Yes',d).
+att_prop_i(2,33,idBasedOn,68,v).
+att_prop_i(2,33,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,33,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,33,'AttRegEx','',d).
+att_prop_i(2,33,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(2,33,'FullName','SocioTipoCuota',v).
+att_prop_i(2,24,'HORIZONTAL_DESCRIPTION','Socio Reconocido',d).
 att_prop_i(2,24,'ExternalName','SocioReconocido',d).
 att_prop_i(2,24,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,24,'EmptyAsNull','Yes',d).
+att_prop_i(2,24,'ExternalStorage','-1',d).
 att_prop_i(2,24,idBasedOn,'',d).
 att_prop_i(2,24,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,24,'DB_NLS_SUPPORT','No',d).
 att_prop_i(2,24,'AttRegEx','',d).
 att_prop_i(2,24,'AttValidationFailedMsg','',d).
 att_prop_i(2,24,'FullName','SocioReconocido',v).
+att_prop_i(2,21,'HORIZONTAL_DESCRIPTION','Socio Foto',d).
 att_prop_i(2,21,'ExternalName','SocioFoto',d).
 att_prop_i(2,21,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,21,'EmptyAsNull','Yes',d).
@@ -1325,27 +1639,41 @@ att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,21,'AttRegEx','',d).
 att_prop_i(2,21,'AttValidationFailedMsg','',d).
 att_prop_i(2,21,'FullName','SocioFoto',v).
-att_prop_i(2,1,'ExternalName','ActividadId',d).
-att_prop_i(2,1,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,1,'EmptyAsNull','Yes',d).
-att_prop_i(2,1,idBasedOn,'',d).
-att_prop_i(2,1,'AUTONUMBER','0',d).
-att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,1,'AttRegEx','',d).
-att_prop_i(2,1,'AttValidationFailedMsg','',d).
-att_prop_i(2,1,'FullName','ActividadId',v).
-att_prop_i(2,4,'ExternalName','CarneId',d).
-att_prop_i(2,4,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,4,'EmptyAsNull','Yes',d).
-att_prop_i(2,4,idBasedOn,66,v).
-att_prop_i(2,4,'AUTONUMBER','-1',v).
-att_prop_i(2,4,'AUTONUMBER_START','1',d).
-att_prop_i(2,4,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,4,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,4,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,4,'AttRegEx','',d).
-att_prop_i(2,4,'AttValidationFailedMsg','',d).
-att_prop_i(2,4,'FullName','CarneId',v).
+att_prop_i(2,32,'HORIZONTAL_DESCRIPTION','Socio Monto',d).
+att_prop_i(2,32,'ExternalName','SocioMonto',d).
+att_prop_i(2,32,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,32,idBasedOn,'',d).
+att_prop_i(2,32,'FullName','SocioMonto',v).
+att_prop_i(2,36,'HORIZONTAL_DESCRIPTION','Carnet Id',d).
+att_prop_i(2,36,'ExternalName','CarnetId',d).
+att_prop_i(2,36,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,36,'EmptyAsNull','Yes',d).
+att_prop_i(2,36,idBasedOn,'',d).
+att_prop_i(2,36,'AUTONUMBER','0',d).
+att_prop_i(2,36,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,36,'AttRegEx','',d).
+att_prop_i(2,36,'AttValidationFailedMsg','',d).
+att_prop_i(2,36,'FullName','CarnetId',v).
+att_prop_i(2,37,'HORIZONTAL_DESCRIPTION','Carnet Fecha Ingreso',d).
+att_prop_i(2,37,'ExternalName','CarnetFechaIngreso',d).
+att_prop_i(2,37,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,37,'EmptyAsNull','Yes',d).
+att_prop_i(2,37,idBasedOn,'',d).
+att_prop_i(2,37,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,37,'AttRegEx','',d).
+att_prop_i(2,37,'AttValidationFailedMsg','',d).
+att_prop_i(2,37,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,37,'FullName','CarnetFechaIngreso',v).
+att_prop_i(2,3,'HORIZONTAL_DESCRIPTION','Clase Id',d).
+att_prop_i(2,3,'ExternalName','ClaseId',d).
+att_prop_i(2,3,'ExternalNamespace','ObligatorioGenexusGit',d).
+att_prop_i(2,3,'EmptyAsNull','Yes',d).
+att_prop_i(2,3,idBasedOn,'',d).
+att_prop_i(2,3,'AUTONUMBER','0',d).
+att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,3,'AttRegEx','',d).
+att_prop_i(2,3,'AttValidationFailedMsg','',d).
+att_prop_i(2,3,'FullName','ClaseId',v).
 att_prop_i(2,40000,'ExternalName','',d).
 att_prop_i(2,40000,'ExternalNamespace','',d).
 att_prop_i(2,40000,'EmptyAsNull','Yes',d).
@@ -1356,32 +1684,34 @@ att_prop_i(2,40000,'AttRegEx','',d).
 att_prop_i(2,40000,'AttValidationFailedMsg','',d).
 att_prop_i(2,40000,'FullName','',v).
  
-tbl_prop_i(2,5,'AllDirSuper',[ [ 4,[ 5 ] ] ],v).
-tbl_prop_i(2,2,'AllDirSuper',[ [ 4,[ 5 ] ] ],v).
-tbl_prop_i(2,4,'DirSubor',[ [ 2,[ 5 ] ],[ 5,[ 5 ] ] ],v).
-tbl_prop_i(2,5,'DirSuper',[ [ 4,[ 5 ] ] ],v).
-tbl_prop_i(2,2,'DirSuper',[ [ 4,[ 5 ] ] ],v).
+tbl_prop_i(2,13,'AllDirSuper',[ [ 4,[ 5 ] ] ],v).
+tbl_prop_i(2,4,'AllDirSuper',[ [ 14,[ 36 ] ] ],v).
+tbl_prop_i(2,14,'DirSubor',[ [ 4,[ 36 ] ] ],v).
+tbl_prop_i(2,4,'DirSubor',[ [ 13,[ 5 ] ] ],v).
+tbl_prop_i(2,13,'DirSuper',[ [ 4,[ 5 ] ] ],v).
+tbl_prop_i(2,4,'DirSuper',[ [ 14,[ 36 ] ] ],v).
  
+tbl_att_prop_i(2,4,19,'AllowNulls',n).
+tbl_att_prop_i(2,4,33,'AllowNulls',n).
 tbl_att_prop_i(2,4,5,'AllowNulls',n).
 tbl_att_prop_i(2,4,18,'AllowNulls',n).
-tbl_att_prop_i(2,4,19,'AllowNulls',n).
 tbl_att_prop_i(2,4,20,'AllowNulls',n).
-tbl_att_prop_i(2,4,23,'AllowNulls',n).
 tbl_att_prop_i(2,4,24,'AllowNulls',n).
 tbl_att_prop_i(2,4,21,'AllowNulls',n).
 tbl_att_prop_i(2,4,40000,'AllowNulls',n).
-tbl_att_prop_i(2,2,1,'AllowNulls',n).
-tbl_att_prop_i(2,2,5,'AllowNulls',n).
-tbl_att_prop_i(2,5,4,'AllowNulls',n).
-tbl_att_prop_i(2,5,4,'AUTONUMBER',y).
-tbl_att_prop_i(2,5,5,'AllowNulls',n).
+tbl_att_prop_i(2,4,36,'AllowNulls',n).
+tbl_att_prop_i(2,14,36,'AllowNulls',n).
+tbl_att_prop_i(2,14,37,'AllowNulls',n).
+tbl_att_prop_i(2,13,3,'AllowNulls',n).
+tbl_att_prop_i(2,13,5,'AllowNulls',n).
  
 var_prop_i(2,'Socioid',idBasedOn,'',v).
+var_prop_i(2,'Insert_carnetid',idBasedOn,'',v).
  
  
  
  
-trn_level_i(4,[ [ 5,18,19,20,23,24,21,40000 ],'Socio','Socio','Socio','',18 ]).
+trn_level_i(4,[ [ 5,18,19,20,33,24,21,40000,32,36,37 ],'Socio','Socio','Socio','',5 ]).
  
 struct_dt_i([ 26,45,0 ],name,'TransactionContext').
 struct_dt_i([ 26,45,0 ],namespace,'ObligatorioGenexusGit').
@@ -1391,15 +1721,15 @@ struct_dt_i([ 26,45,0 ],'ExternalName','TransactionContext').
 struct_dt_i([ 26,45,0 ],'ExternalNamespace','ObligatorioGenexusGit').
 struct_dt_i([ 26,45,73 ],name,'Attribute').
 struct_dt_i([ 26,45,73 ],namespace,'ObligatorioGenexusGit.TransactionContext').
-struct_dt_i([ 0,3,0 ],name,'Carne').
+struct_dt_i([ 0,3,0 ],name,'Carnet').
 struct_dt_i([ 0,3,0 ],namespace,'ObligatorioGenexusGit').
-struct_dt_i([ 0,3,0 ],significantName,'Carne').
-struct_dt_i([ 0,3,0 ],'ObjName','Carne').
-struct_dt_i([ 0,3,0 ],'ObjDesc','Carne').
-struct_dt_i([ 0,3,0 ],'ExternalName','Carne').
+struct_dt_i([ 0,3,0 ],significantName,'Carnet').
+struct_dt_i([ 0,3,0 ],'ObjName','Carnet').
+struct_dt_i([ 0,3,0 ],'ObjDesc','Carnet').
+struct_dt_i([ 0,3,0 ],'ExternalName','Carnet').
 struct_dt_i([ 0,3,0 ],'ExternalNamespace','ObligatorioGenexusGit').
-struct_dt_i([ 0,3,0 ],key,[ 4 ]).
-struct_dt_i([ 0,3,0 ],lvl,5).
+struct_dt_i([ 0,3,0 ],key,[ 36 ]).
+struct_dt_i([ 0,3,0 ],lvl,14).
 struct_dt_i([ 26,8,0 ],name,'GeneXus\Common\Messages').
 struct_dt_i([ 26,8,0 ],namespace,'GeneXus').
 struct_dt_i([ 26,8,0 ],'ObjName','Messages').
@@ -1413,7 +1743,7 @@ struct_dt_i([ 26,8,25 ],name,'Message').
 struct_dt_i([ 26,8,25 ],namespace,'GeneXus.Messages').
 struct_dt_i([ 26,45,0 ],fullname,'TransactionContext').
 struct_dt_i([ 26,45,73 ],fullname,'TransactionContext.Attribute').
-struct_dt_i([ 0,3,0 ],fullname,'Carne').
+struct_dt_i([ 0,3,0 ],fullname,'Carnet').
 struct_dt_i([ 26,8,0 ],fullname,'GeneXus\Common\Messages').
 struct_dt_i([ 26,8,25 ],fullname,'GeneXus\Common\Messages.Message').
  
@@ -1525,39 +1855,27 @@ struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
 struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
 struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
-struct_dt_elem_i([ 0,3,0 ],1,name,'Carneid').
-struct_dt_elem_i([ 0,3,0 ],1,camelname,'CarneId').
-struct_dt_elem_i([ 0,3,0 ],1,basedon,66).
+struct_dt_elem_i([ 0,3,0 ],1,name,'Carnetid').
+struct_dt_elem_i([ 0,3,0 ],1,camelname,'CarnetId').
 struct_dt_elem_i([ 0,3,0 ],1,length,4).
 struct_dt_elem_i([ 0,3,0 ],1,decimals,0).
 struct_dt_elem_i([ 0,3,0 ],1,sign,0).
 struct_dt_elem_i([ 0,3,0 ],1,type,[ 4,4,0 ]).
 struct_dt_elem_i([ 0,3,0 ],1,pic,'ZZZ9').
 struct_dt_elem_i([ 0,3,0 ],1,collection,'False').
-struct_dt_elem_i([ 0,3,0 ],1,attributeid,'4').
-struct_dt_elem_i([ 0,3,0 ],1,'ExternalName','CarneId').
+struct_dt_elem_i([ 0,3,0 ],1,attributeid,'36').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalName','CarnetId').
 struct_dt_elem_i([ 0,3,0 ],1,'ExternalNamespace','ObligatorioGenexusGit').
-struct_dt_elem_i([ 0,3,0 ],2,name,'Carnefechaingreso').
-struct_dt_elem_i([ 0,3,0 ],2,camelname,'CarneFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,name,'Carnetfechaingreso').
+struct_dt_elem_i([ 0,3,0 ],2,camelname,'CarnetFechaIngreso').
 struct_dt_elem_i([ 0,3,0 ],2,length,8).
 struct_dt_elem_i([ 0,3,0 ],2,decimals,0).
 struct_dt_elem_i([ 0,3,0 ],2,type,[ 6,8,0 ]).
 struct_dt_elem_i([ 0,3,0 ],2,pic,'99/99/99').
 struct_dt_elem_i([ 0,3,0 ],2,collection,'False').
-struct_dt_elem_i([ 0,3,0 ],2,attributeid,'22').
-struct_dt_elem_i([ 0,3,0 ],2,'ExternalName','CarneFechaIngreso').
+struct_dt_elem_i([ 0,3,0 ],2,attributeid,'37').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalName','CarnetFechaIngreso').
 struct_dt_elem_i([ 0,3,0 ],2,'ExternalNamespace','ObligatorioGenexusGit').
-struct_dt_elem_i([ 0,3,0 ],3,name,'Socioid').
-struct_dt_elem_i([ 0,3,0 ],3,camelname,'SocioId').
-struct_dt_elem_i([ 0,3,0 ],3,length,4).
-struct_dt_elem_i([ 0,3,0 ],3,decimals,0).
-struct_dt_elem_i([ 0,3,0 ],3,sign,0).
-struct_dt_elem_i([ 0,3,0 ],3,type,[ 4,4,0 ]).
-struct_dt_elem_i([ 0,3,0 ],3,pic,'ZZZ9').
-struct_dt_elem_i([ 0,3,0 ],3,collection,'False').
-struct_dt_elem_i([ 0,3,0 ],3,attributeid,'5').
-struct_dt_elem_i([ 0,3,0 ],3,'ExternalName','SocioId').
-struct_dt_elem_i([ 0,3,0 ],3,'ExternalNamespace','ObligatorioGenexusGit').
 struct_dt_elem_i([ 26,8,25 ],1,name,'Id').
 struct_dt_elem_i([ 26,8,25 ],1,camelname,'Id').
 struct_dt_elem_i([ 26,8,25 ],1,length,128).
@@ -1605,21 +1923,32 @@ struct_dt_elem_i([ 26,8,25 ],3,'XmlNamespace','').
 struct_dt_elem_i([ 26,8,25 ],3,soaptype,'').
 struct_dt_elem_i([ 26,8,25 ],3,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,8,25 ],3,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
  
  
  
  
  
-sub_info_i(146,'Start',1,12,[ [ 'Pgmname','Websession' ],[ 'Trncontext' ] ]).
-sub_info_i(146,'After Trn',14,26,[ [ 'Mode','Trncontext' ],[] ]).
+sub_info_i(146,'Start',1,23,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext','Insert_carnetid','GXV1','Trncontextatt' ] ]).
+sub_info_i(146,'After Trn',25,36,[ [ 'Mode','Trncontext' ],[] ]).
+sub_info_i(146,'Delete',41,43,[ [],[] ]).
  
+pgm_parm_i(web,49,'GX00E0',[ [ int,4,0,0 ] ],[ [ pCarnetId,out,[] ] ]).
+pgm_parm_i(proc,12,'INGRESARCARNEAUTO',[],[]).
+pgm_parm_i(proc,27,'BORRARCARNETS',[],[]).
 pgm_parm_i(web,25,'WWSOCIO',[],[]).
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(proc,14,'ULTIMOIDSOCIO',[ [ int,4,0,0 ] ],[ [ id,out,[] ] ]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(trn,5,'SOCIO','INTERNAL').
+pgm_callprotocol_i(web,49,'GX00E0','INTERNAL').
+pgm_callprotocol_i(proc,12,'INGRESARCARNEAUTO','INTERNAL').
+pgm_callprotocol_i(proc,27,'BORRARCARNETS','INTERNAL').
 pgm_callprotocol_i(web,25,'WWSOCIO','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
+pgm_callprotocol_i(proc,14,'ULTIMOIDSOCIO','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').
  
  

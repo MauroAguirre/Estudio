@@ -9,7 +9,7 @@
 <ObjDesc>Carne General</ObjDesc>
 <ObjPgmName>CarneGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

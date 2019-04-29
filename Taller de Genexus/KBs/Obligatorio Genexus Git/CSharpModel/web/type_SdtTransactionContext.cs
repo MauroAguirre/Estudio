@@ -2,7 +2,7 @@
 				   File: type_SdtTransactionContext
 			Description: TransactionContext
 				 Author: Nemo for C# version 15.0.12.126726
-		   Generated on: 22/03/2019 19:01:42
+		   Generated on: 29/03/2019 11:16:54
 		   Program type: Callable routine
 			  Main DBMS: SQL Server
 */

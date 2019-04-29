@@ -2,7 +2,7 @@ spec_i([ web,23,'Profesor Clase WC','ProfesorClaseWC',0,eng,'15_0_12-126726' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 6,[ [ 6,many ] ],[],[],[ [ [ 6 ],[ 2,3 ] ] ],[ [ [ 6 ],[] ] ],[ 2 ],'ICLASE1',[ 6,[ [ [],'Profesorid',2 ] ] ],[] ]).
+level_i(2,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 2,3 ] ] ],[ [ [ 12 ],[] ] ],[ 2 ],'ICLASE1',[ 12,[ [ [],'Profesorid',2 ] ] ],[] ]).
  
 tw_i(2,[]).
  
@@ -12,7 +12,7 @@ lwi_i(2,[ [] ]).
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 6,2 ],[ 6,3 ] ] ]).
+ta_i(2,[ [ [ 12,2 ],[ 12,3 ] ] ]).
  
 las_i(2,[ [ 'Profesorid','Update','Delete',2,3 ] ]).
  
@@ -128,7 +128,7 @@ rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ProfesorClaseWC"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,6,[],[ [ [ [],'Profesorid',2 ] ],'ICLASE1',[] ]).
+a_i(3,2,t,12,[],[ [ [ [],'Profesorid',2 ] ],'ICLASE1',[] ]).
 a_i(4,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(5,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
@@ -164,10 +164,10 @@ attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',7 ]).
 attri_i('Profesorid',[ 'ProfesorId',int,4,0,'ZZZ9',0,'Profesor Id','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(6,[ 'Clase',[ 3,2 ],'Clase','Clase' ]).
+table_i(12,[ 'Clase',[ 3,2 ],'Clase','Clase' ]).
  
-index_i(6,[ 'ICLASE',u,[ 3 ],'IClase' ]).
-index_i(6,[ 'ICLASE1',d,[ 2 ],'IClase1' ]).
+index_i(12,[ 'ICLASE',u,[ 3 ],'IClase' ]).
+index_i(12,[ 'ICLASE1',d,[ 2 ],'IClase1' ]).
  
  
  
@@ -652,6 +652,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+calling_main_i(13,8).
  
 att_prop_i(2,3,'ExternalName','ClaseId',d).
 att_prop_i(2,3,'ExternalNamespace','ObligatorioGenexusGit',d).
@@ -673,8 +674,8 @@ att_prop_i(2,2,'AttValidationFailedMsg','',d).
 att_prop_i(2,2,'FullName','ProfesorId',v).
  
  
-tbl_att_prop_i(2,6,3,'AllowNulls',n).
-tbl_att_prop_i(2,6,2,'AllowNulls',n).
+tbl_att_prop_i(2,12,3,'AllowNulls',n).
+tbl_att_prop_i(2,12,2,'AllowNulls',n).
  
 var_prop_i(2,'Profesorid',idBasedOn,'',v).
  
@@ -801,6 +802,8 @@ struct_dt_elem_i([ 26,45,73 ],2,'XmlNamespace','').
 struct_dt_elem_i([ 26,45,73 ],2,soaptype,'').
 struct_dt_elem_i([ 26,45,73 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,45,73 ],2,'JsonName','').
+struct_dt_elem_i([ 26,45,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,45,0 ],4,pic,'ZZZ9').
  
  
  

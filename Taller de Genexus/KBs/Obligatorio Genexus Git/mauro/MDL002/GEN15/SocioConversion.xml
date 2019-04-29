@@ -95,35 +95,13 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>23</AttriId>
-<AttriName>SocioTipo</AttriName>
-<Description>Socio Tipo</Description>
-<TakesValueFrom></TakesValueFrom>
-<AttriType>
-<DataType>C</DataType>
-<Presicion>20</Presicion>
-<Scale>0</Scale>
-<Properties>
-<Property>
-<Name>Autonumber</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>Autogenerate</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>AllowNulls</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>NLS</Name>
-<Value>No</Value></Property></Properties></AttriType></Attribute>
-<Attribute>
 <AttriId>24</AttriId>
 <AttriName>SocioReconocido</AttriName>
 <Description>Socio Reconocido</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
-<DataType>C</DataType>
-<Presicion>20</Presicion>
+<DataType>1</DataType>
+<Presicion>4</Presicion>
 <Scale>0</Scale>
 <Properties>
 <Property>
@@ -134,9 +112,6 @@
 <Value>No</Value></Property>
 <Property>
 <Name>AllowNulls</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>NLS</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
 <AttriId>21</AttriId>
@@ -158,13 +133,54 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>40000</AttriId>
+<AttriId>40001</AttriId>
 <AttriName>SocioFoto_GXI</AttriName>
 <Description>SocioFoto_GXI</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>V</DataType>
 <Presicion>2048</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>SocioTipoCuota</AttriName>
+<Description>Socio Tipo Cuota</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>C</DataType>
+<Presicion>20</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>NLS</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
 <Scale>0</Scale>
 <Properties>
 <Property>
@@ -189,10 +205,33 @@
 <AttriName>SocioId</AttriName>
 <Description>Socio Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
-<Clustered>Yes</Clustered></Index></Indices></TableIndices>
-<FKConstraints></FKConstraints>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>ISOCIO1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>14</TableId>
+<TableName>Carnet</TableName>
+<Description>Carnet</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>CarnetId</AttriName>
+<Description>Carnet Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
 <Statements>
-<Statement>CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioTipo]  char(20) NOT NULL , [SocioReconocido]  char(20) NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NOT NULL , PRIMARY KEY([SocioId])) </Statement></Statements>
+<Statement>CREATE TABLE [Socio] ([SocioId]  smallint NOT NULL , [SocioDireccion]  varchar(1024) NOT NULL , [SocioSexo]  char(20) NOT NULL , [SocioEdad]  smallint NOT NULL , [SocioReconocido]  BIT NOT NULL , [SocioFoto]  VARBINARY(MAX) NOT NULL , [SocioFoto_GXI]  varchar(2048) NOT NULL , [SocioTipoCuota]  char(20) NOT NULL , [CarnetId]  smallint NOT NULL , PRIMARY KEY([SocioId])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [ISOCIO1] ON [Socio] ([CarnetId] )</Statement>
+<Statement>ALTER TABLE [Socio] ADD CONSTRAINT [ISOCIO1] FOREIGN KEY ([CarnetId]) REFERENCES [Carnet] ([CarnetId])</Statement></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

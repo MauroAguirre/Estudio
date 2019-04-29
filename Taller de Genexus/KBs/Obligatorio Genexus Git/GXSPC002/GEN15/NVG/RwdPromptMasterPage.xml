@@ -9,7 +9,7 @@
 <ObjDesc>Rwd Prompt Master Page</ObjDesc>
 <ObjPgmName>RwdPromptMasterPage</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

@@ -3,8 +3,8 @@ spec_i([ web,29,'View Socio','ViewSocio',0,eng,'15_0_12-126726' ]).
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 5,18 ] ] ],[ [ [ 4 ],[] ] ],[ 5 ],'ISOCIO',[ 4,[ [ [],'Socioid',5 ] ] ],[] ]).
-level_i(3,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 5,18 ] ] ],[ [ [ 4 ],[] ] ],[ 5 ],'ISOCIO',[ 4,[ [ [],'Socioid',5 ] ] ],[] ]).
+level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 5 ] ] ],[ [ [ 4 ],[] ] ],[ 5 ],'ISOCIO',[ 4,[ [ [],'Socioid',5 ] ] ],[] ]).
+level_i(3,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 5 ] ] ],[ [ [ 4 ],[] ] ],[ 5 ],'ISOCIO',[ 4,[ [ [],'Socioid',5 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -17,11 +17,11 @@ lwi_i(3,[ [] ]).
 level_option_i(3,usr_condition,y).
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 4,5 ],[ 4,18 ] ] ]).
-ta_i(3,[ [ [ 4,5 ],[ 4,18 ] ] ]).
+ta_i(2,[ [ [ 4,5 ] ] ]).
+ta_i(3,[ [ [ 4,5 ] ] ]).
  
-las_i(2,[ [ 'Socioid','Tabcode',5,18 ] ]).
-las_i(3,[ [ 'Socioid','Tabcode',5,18 ] ]).
+las_i(2,[ [ 'Socioid','Tabcode',5 ] ]).
+las_i(3,[ [ 'Socioid','Tabcode',5 ] ]).
  
 lac_i(2,[ [] ]).
 lac_i(3,[ [] ]).
@@ -30,12 +30,12 @@ lac_i(3,[ [] ]).
 lits_i('Socio Information',5,10).
 lits_i('Socios',5,10).
 lits_i('General',5,10).
-lits_i('Actividad',5,10).
-lits_i('Carne',5,10).
+lits_i('Clase',5,10).
+lits_i('Carnet',5,10).
  
-cls_i([ 0,0 ],[ 5,1023 ]).
+cls_i([ 0,0 ],[ 5,26 ]).
  
-pos_i(18,[ 0,0,0 ]).
+pos_i(5,[ 0,0,0 ]).
  
  
 default_i(e('Pgmname',2,2,'"ViewSocio"')).
@@ -145,10 +145,8 @@ v_i(f,i,2,[]).
 v_i(f,o,2,'Err').
 v_i(t,i,3,'Socioid').
 v_i(t,o,3,5).
-v_i(t,o,3,18).
 v_i(t,i,4,'Socioid').
 v_i(t,o,4,5).
-v_i(t,o,4,18).
  
  
  
@@ -156,7 +154,6 @@ v_i(t,o,4,18).
  
  
 attri_i(5,[ 'SocioId',int,4,0,'ZZZ9',0,'Socio Id','',0 ]).
-attri_i(18,[ 'SocioDireccion',svchar,1024,0,'',0,'Socio Direccion','',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],16 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -170,7 +167,7 @@ attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code'
 attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(4,[ 'Socio',[ 5,18 ],'Socio','Socio' ]).
+table_i(4,[ 'Socio',[ 5 ],'Socio','Socio' ]).
  
 index_i(4,[ 'ISOCIO',u,[ 5 ],'ISocio' ]).
  
@@ -199,16 +196,29 @@ end_i(3,0,0,[ [ [ t(5,2),t(=,10),t('Socioid',23) ] ] ]).
  
  
  
+enumerated_i(2,19,69).
+enumerated_i(2,33,68).
  
+enum_value_i(2,69,'"Hombre"','Hombre','"H"',[ none ]).
+enum_value_i(2,69,'"Mujer"','Mujer','"M"',[ none ]).
+enum_value_i(2,69,'"Otro"','Otro','"O"',[ none ]).
+enum_value_i(2,68,'"V"','Verano','"Verano"',[ none ]).
+enum_value_i(2,68,'"P"','Permanente','"Permanente"',[ none ]).
  
+enum_value_info_i(2,69,'Sexo').
+enum_value_info_i(2,68,'TipoCuota').
  
+enum_type_i(2,69,char,20,0).
+enum_type_i(2,68,char,20,0).
  
 dom_info_i(26,[ 'GeneXus\Address' ]).
+dom_info_i(69,[ 'Sexo' ]).
+dom_info_i(68,[ 'TipoCuota' ]).
 dom_info_i(65,[ 'TabCode' ]).
  
  
-break_i(3,nvg,1,[],[ [ 18 ],[ 5 ],[] ]).
-break_i(2,nvg,1,[],[ [ 18 ],[],[] ]).
+break_i(3,nvg,1,[],[ [ 5 ],[ 5 ],[] ]).
+break_i(2,nvg,1,[],[ [ 5 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,1).
@@ -225,7 +235,7 @@ b_line_i(4,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i([ 6,0 ],2,2,cmd,1,[ t('',107,1,0),t('GXLvl6',23,1,0),t(=,10,1,0),t('0',3,1,0) ]).
 b_line_i(6,3,1,cmd,7,[ t('',121,6,0) ]).
 b_line_i([ 6,1 ],3,1,cmd,6,[ t('',107,6,0),t('GXLvl6',23,6,0),t(=,10,6,0),t('1',3,6,0) ]).
-b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t([ t('Form',3,7,0),t('Caption',3,7,0) ],29,7,0),t(=,10,7,0),t(18,2,7,0) ]).
+b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t([ t('Form',3,7,0),t('Caption',3,7,0) ],29,7,0),t(=,10,7,0),t('str(',1,7,0),t(5,2,7,0),t(',',7,7,0),t(4,3,7,0),t(',',7,7,0),t(0,3,7,0),t(')',4,7,0) ]).
 b_line_i(9,3,1,cmd,7,[ t('',107,7,0),t([ t('Viewall',3,7,0),t('Link',3,7,0) ],29,7,0),t(=,10,7,0),t('link(',1,7,0),t(o(13,'WWSocio'),28,7,0),t(')',4,7,0) ]).
 b_line_i(10,3,1,cmd,7,[ t('',107,7,0),t('Exists',23,7,0),t(=,10,7,0),t('TRUE',40,7,0) ]).
 b_line_i(12,3,1,cmd,7,[ t('',128,7,0) ]).
@@ -250,11 +260,11 @@ b_line_i(32,2,5,cmd,8,[ t('',143,8,0),t('''LOAD TAB''',3,32,5) ]).
 b_line_i(33,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,33,68) ]).
 b_line_i(34,2,6,cmd,8,[ t('',107,8,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'SocioGeneral'),28,8,0),t(',',7,8,0),t('Socioid',23,8,0),t(')',4,8,0) ]).
 b_line_i(35,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"SocioEnActividad"',3,36,42) ]).
-b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Socioenactividadwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'SocioSocioEnActividadWC'),28,8,0),t(',',7,8,0),t('Socioid',23,8,0),t(')',4,8,0) ]).
+b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Socios"',3,36,42) ]).
+b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Socioswc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'SocioSociosWC'),28,8,0),t(',',7,8,0),t('Socioid',23,8,0),t(')',4,8,0) ]).
 b_line_i(38,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(39,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Carne"',3,39,42) ]).
-b_line_i(40,2,6,cmd,8,[ t('',107,8,0),t([ t('Carnewc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'SocioCarneWC'),28,8,0),t(',',7,8,0),t('Socioid',23,8,0),t(')',4,8,0) ]).
+b_line_i(39,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Carnet"',3,39,42) ]).
+b_line_i(40,2,6,cmd,8,[ t('',107,8,0),t([ t('Carnetwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'SocioCarnetWC'),28,8,0),t(',',7,8,0),t('Socioid',23,8,0),t(')',4,8,0) ]).
 b_line_i(41,2,6,cmd,8,[ t('',111,8,0) ]).
 b_line_i(42,2,6,cmd,8,[ t('',144,8,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
@@ -292,7 +302,7 @@ html_sub_i(14,15,html_i(0,div(15))).
 html_sub_i(15,16,html_i(0,div(16))).
 html_sub_i(16,17,html_i(0,div(17))).
 html_sub_i(17,18,html_i(0,div(18))).
-html_sub_i(18,19,html_i(0,t(18,2))).
+html_sub_i(18,19,html_i(0,t(5,2))).
 html_sub_i(3,20,html_i(2,div(20))).
 html_sub_i(20,21,html_i(0,div(21))).
 html_sub_i(21,22,html_i(0,usercontrol(22))).
@@ -306,18 +316,18 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
 html_sub_i(22,31,html_i(2,container(31))).
-html_sub_i(31,32,html_i(0,t('Actividad',3))).
+html_sub_i(31,32,html_i(0,t('Clase',3))).
 html_sub_i(31,33,html_i(1,div(33))).
-html_sub_i(33,0,html_i(0,html('SocioEnActividad'))).
+html_sub_i(33,0,html_i(0,html('Socios'))).
 html_sub_i(22,34,html_i(3,container(34))).
 html_sub_i(34,35,html_i(0,div(35))).
 html_sub_i(35,36,html_i(0,div(36))).
 html_sub_i(36,37,html_i(0,div(37))).
 html_sub_i(37,38,html_i(0,comp(webcomp))).
 html_sub_i(22,39,html_i(4,container(39))).
-html_sub_i(39,40,html_i(0,t('Carne',3))).
+html_sub_i(39,40,html_i(0,t('Carnet',3))).
 html_sub_i(39,41,html_i(1,div(41))).
-html_sub_i(41,0,html_i(0,html('Carne'))).
+html_sub_i(41,0,html_i(0,html('Carnet'))).
 html_sub_i(22,42,html_i(5,container(42))).
 html_sub_i(42,43,html_i(0,div(43))).
 html_sub_i(43,44,html_i(0,div(44))).
@@ -326,8 +336,8 @@ html_sub_i(45,46,html_i(0,comp(webcomp))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-abstract-form','').
-html_tags_i(17,'data-gx-att','att:18').
-html_tags_i(19,'data-gx-att','att:18').
+html_tags_i(17,'data-gx-att','att:5').
+html_tags_i(19,'data-gx-att','att:5').
 html_tags_i(25,style,'display:none;').
 html_tags_i(30,'Object','').
 html_tags_i(33,style,'display:none;').
@@ -480,36 +490,33 @@ html_comp_i(18,'Semanticcontent',div,d,[ str ]).
 html_comp_i(18,'Align',left,d,[ str ]).
 html_comp_i(18,'Valign',top,d,[ str ]).
 html_comp_i(19,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(19,'Colcount',80,d,[ num ]).
-html_comp_i(19,'Attid',18,v,[ num ]).
+html_comp_i(19,'Colcount',4,d,[ num ]).
+html_comp_i(19,'Attid',5,v,[ num ]).
 html_comp_i(19,'Class','ReadonlyAttribute',v,[ str ]).
-html_comp_i(19,'Controlname','Sociodireccion',d,[ str ]).
+html_comp_i(19,'Controlname','Socioid',d,[ str ]).
 html_comp_i(19,'Returnonclick',0,v,[ bool ]).
 html_comp_i(19,'Eventgx','',d,[ str ]).
 html_comp_i(19,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(19,'Captionposition','Left',v,[ str ]).
-html_comp_i(19,'Captionvalue','Direccion',d,[ str ]).
+html_comp_i(19,'Captionvalue','Id',d,[ str ]).
 html_comp_i(19,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(19,'Controltype',2,d,[ num ]).
 html_comp_i(19,'Inputtype',0,d,[ num ]).
-html_comp_i(19,'Editautocomplete',0,d,[ num ]).
-html_comp_i(19,'Autocorrection',0,d,[ bool ]).
-html_comp_i(19,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(19,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(19,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(19,'Readonly',-1,v,[ bool ]).
 html_comp_i(19,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(19,'Ispassword',0,d,[ bool ]).
 html_comp_i(19,'Autoresize',-1,d,[ bool ]).
-html_comp_i(19,'Gxwidth',measure(80,chr),d,[ measure ]).
-html_comp_i(19,'Gxheight',measure(10,row),d,[ measure ]).
-html_comp_i(19,'Ismultiline',-1,d,[ bool ]).
+html_comp_i(19,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(19,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(19,'Ismultiline',0,d,[ bool ]).
 html_comp_i(19,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(19,'Fill',-1,d,[ bool ]).
 html_comp_i(19,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(19,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(19,'Font',font('Arial',10,[]),d,[ font ]).
-html_comp_i(19,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(19,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(19,'Gxformat',0,d,[ num ]).
 html_comp_i(19,'Title','',d,[ str ]).
 html_comp_i(19,'Invitemsg','',v,[ str ]).
@@ -592,8 +599,8 @@ html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
 html_comp_i(31,'Containerid',title2,v,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Actividad',d,[ str ]).
-html_comp_i(32,'Id','Socioenactividad_title',v,[ str ]).
+html_comp_i(32,'Caption','Clase',d,[ str ]).
+html_comp_i(32,'Id','Socios_title',v,[ str ]).
 html_comp_i(32,'Class','TextBlock',d,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
@@ -614,7 +621,7 @@ html_comp_i(33,'Valign',top,d,[ str ]).
 html_comp_i(34,'Containerid',panel2,v,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(35,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(35,'Id','Tablesocioenactividad',v,[ str ]).
+html_comp_i(35,'Id','Tablesocios',v,[ str ]).
 html_comp_i(35,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Semanticcontent',div,d,[ str ]).
@@ -637,12 +644,12 @@ html_comp_i(37,'Semanticcontent',div,d,[ str ]).
 html_comp_i(37,'Align',left,d,[ str ]).
 html_comp_i(37,'Valign',top,d,[ str ]).
 html_comp_i(38,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(38,'Controlname','Socioenactividadwc',v,[ str ]).
+html_comp_i(38,'Controlname','Socioswc',v,[ str ]).
 html_comp_i(38,'Params',[],v,[ params ]).
 html_comp_i(39,'Containerid',title3,v,[ str ]).
 html_comp_i(40,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(40,'Caption','Carne',d,[ str ]).
-html_comp_i(40,'Id','Carne_title',v,[ str ]).
+html_comp_i(40,'Caption','Carnet',d,[ str ]).
+html_comp_i(40,'Id','Carnet_title',v,[ str ]).
 html_comp_i(40,'Class','TextBlock',d,[ str ]).
 html_comp_i(40,'Event','',d,[ str ]).
 html_comp_i(40,'Returnonclick',0,d,[ bool ]).
@@ -663,7 +670,7 @@ html_comp_i(41,'Valign',top,d,[ str ]).
 html_comp_i(42,'Containerid',panel3,v,[ str ]).
 html_comp_i(43,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(43,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(43,'Id','Tablecarne',v,[ str ]).
+html_comp_i(43,'Id','Tablecarnet',v,[ str ]).
 html_comp_i(43,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(43,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(43,'Semanticcontent',div,d,[ str ]).
@@ -686,7 +693,7 @@ html_comp_i(45,'Semanticcontent',div,d,[ str ]).
 html_comp_i(45,'Align',left,d,[ str ]).
 html_comp_i(45,'Valign',top,d,[ str ]).
 html_comp_i(46,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(46,'Controlname','Carnewc',v,[ str ]).
+html_comp_i(46,'Controlname','Carnetwc',v,[ str ]).
 html_comp_i(46,'Params',[],v,[ params ]).
  
  
@@ -703,7 +710,7 @@ lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
-lit_i(19,1,t(18,2),[ ctlname(18),ctrltype(edit,19),pos(19),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(19,1,t(5,2),[ ctlname(5),ctrltype(edit,19),pos(19),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(18,1,div(18),[ ctlname('') ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
 lit_i(16,1,div(16),[ ctlname('') ]).
@@ -717,18 +724,18 @@ lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(32,1,t('Actividad',3),[ ctlname('Socioenactividad_title') ]).
+lit_i(32,1,t('Clase',3),[ ctlname('Socios_title') ]).
 lit_i(33,1,div(33),[ ctlname('') ]).
-lit_i(38,1,comp(webcomp),[ ctlname('Socioenactividadwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(38,1,comp(webcomp),[ ctlname('Socioswc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).
 lit_i(36,1,div(36),[ ctlname('') ]).
-lit_i(35,1,div(35),[ ctlname('Tablesocioenactividad') ]).
-lit_i(40,1,t('Carne',3),[ ctlname('Carne_title') ]).
+lit_i(35,1,div(35),[ ctlname('Tablesocios') ]).
+lit_i(40,1,t('Carnet',3),[ ctlname('Carnet_title') ]).
 lit_i(41,1,div(41),[ ctlname('') ]).
-lit_i(46,1,comp(webcomp),[ ctlname('Carnewc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(46,1,comp(webcomp),[ ctlname('Carnetwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(45,1,div(45),[ ctlname('') ]).
 lit_i(44,1,div(44),[ ctlname('') ]).
-lit_i(43,1,div(43),[ ctlname('Tablecarne') ]).
+lit_i(43,1,div(43),[ ctlname('Tablecarnet') ]).
 lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26),container(31),container(34),container(39),container(42) ]) ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
@@ -744,15 +751,6 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,18,'ExternalName','SocioDireccion',d).
-att_prop_i(2,18,'ExternalNamespace','ObligatorioGenexusGit',d).
-att_prop_i(2,18,'EmptyAsNull','Yes',d).
-att_prop_i(2,18,idBasedOn,26,v).
-att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,18,'DB_NLS_SUPPORT','No',d).
-att_prop_i(2,18,'AttRegEx','',d).
-att_prop_i(2,18,'AttValidationFailedMsg','',d).
-att_prop_i(2,18,'FullName','SocioDireccion',v).
 att_prop_i(2,5,'ExternalName','SocioId',d).
 att_prop_i(2,5,'ExternalNamespace','ObligatorioGenexusGit',d).
 att_prop_i(2,5,'EmptyAsNull','Yes',d).
@@ -765,7 +763,6 @@ att_prop_i(2,5,'FullName','SocioId',v).
  
  
 tbl_att_prop_i(2,4,5,'AllowNulls',n).
-tbl_att_prop_i(2,4,18,'AllowNulls',n).
  
 var_prop_i(2,'Tabcode',idBasedOn,65,v).
 var_prop_i(2,'Selectedtabcode',idBasedOn,65,v).
@@ -856,20 +853,20 @@ struct_dt_elem_i([ 26,44,71 ],4,'JsonName','').
  
  
  
-sub_info_i(146,'Start',1,24,[ [ 'Pgmname',5,'Socioid',18,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Socioenactividadwc',3),t('Object',3) ],[ t('Carnewc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Socioid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Socioenactividadwc',3),t('Object',3) ],[ t('Carnewc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,24,[ [ 'Pgmname',5,'Socioid','Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Socioswc',3),t('Object',3) ],[ t('Carnetwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Socioid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Socioswc',3),t('Object',3) ],[ t('Carnetwc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,28,'SOCIOCARNEWC',[ [ int,4,0,0 ] ],[ [ 'SocioId',in,[] ] ]).
-pgm_parm_i(web,27,'SOCIOSOCIOENACTIVIDADWC',[ [ int,4,0,0 ] ],[ [ 'SocioId',in,[] ] ]).
+pgm_parm_i(web,48,'SOCIOCARNETWC',[ [ int,4,0,0 ] ],[ [ 'SocioId',in,[] ] ]).
+pgm_parm_i(web,44,'SOCIOSOCIOSWC',[ [ int,4,0,0 ] ],[ [ 'SocioId',in,[] ] ]).
 pgm_parm_i(web,26,'SOCIOGENERAL',[ [ int,4,0,0 ] ],[ [ 'SocioId',in,[] ] ]).
 pgm_parm_i(web,25,'WWSOCIO',[],[]).
 pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,29,'VIEWSOCIO','INTERNAL').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL').
-pgm_callprotocol_i(web,28,'SOCIOCARNEWC','INTERNAL').
-pgm_callprotocol_i(web,27,'SOCIOSOCIOENACTIVIDADWC','INTERNAL').
+pgm_callprotocol_i(web,48,'SOCIOCARNETWC','INTERNAL').
+pgm_callprotocol_i(web,44,'SOCIOSOCIOSWC','INTERNAL').
 pgm_callprotocol_i(web,26,'SOCIOGENERAL','INTERNAL').
 pgm_callprotocol_i(web,25,'WWSOCIO','INTERNAL').
 pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').

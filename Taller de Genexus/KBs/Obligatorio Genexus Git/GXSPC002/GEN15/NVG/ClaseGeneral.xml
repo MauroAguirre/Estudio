@@ -47,7 +47,7 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description></Table></BaseTable>
 <Order>
@@ -89,7 +89,7 @@
 <JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>
-<TableId>6</TableId>
+<TableId>12</TableId>
 <TableName>Clase</TableName>
 <Description>Clase</Description>
 <RecordsToRead>many</RecordsToRead>
@@ -100,7 +100,7 @@
 <Description>Clase Id</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description>
 <RecordsToRead>one</RecordsToRead>
@@ -109,7 +109,18 @@
 <AttriId>2</AttriId>
 <AttriName>ProfesorId</AttriName>
 <Description>Profesor Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Actividad1</TableName>
+<Description>Actividad</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>ActividadId</AttriName>
+<Description>Actividad Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>

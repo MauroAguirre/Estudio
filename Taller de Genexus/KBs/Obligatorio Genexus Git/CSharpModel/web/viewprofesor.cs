@@ -2,7 +2,7 @@
                File: ViewProfesor
         Description: View Profesor
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:30.68
+       Generated on: 4/12/2019 7:32:51.35
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -232,7 +232,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221913072", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194127325137", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -408,7 +408,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-4 ViewActionsBackCell", "Right", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, "Profesors", lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewProfesor.htm");
+            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, "Profesores", lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewProfesor.htm");
             GxWebStd.gx_div_end( context, "Right", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -1040,7 +1040,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2019322191319", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194127325170", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1056,7 +1056,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-         context.AddJavascriptSource("viewprofesor.js", "?2019322191319", false);
+         context.AddJavascriptSource("viewprofesor.js", "?20194127325170", false);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false);

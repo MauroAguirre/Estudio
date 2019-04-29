@@ -2,7 +2,7 @@
                File: SocioGeneral
         Description: Socio General
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:17.63
+       Generated on: 4/12/2019 17:31:0.35
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -76,6 +76,9 @@ namespace GeneXus.Programs {
 
       protected override void createObjects( )
       {
+         cmbSocioSexo = new GXCombobox();
+         chkSocioReconocido = new GXCheckbox();
+         cmbSocioTipoCuota = new GXCombobox();
       }
 
       protected void INITWEB( )
@@ -257,7 +260,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221911766", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194121731038", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -342,7 +345,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("sociogeneral.js", "?20193221911767", false);
+            context.AddJavascriptSource("sociogeneral.js", "?20194121731040", false);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -487,13 +490,15 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtSocioSexo_Internalname+"\"", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+cmbSocioSexo_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtSocioSexo_Internalname, "Sexo", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, cmbSocioSexo_Internalname, "Sexo", "col-sm-3 ReadonlyAttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-            /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtSocioSexo_Internalname, StringUtil.RTrim( A19SocioSexo), StringUtil.RTrim( context.localUtil.Format( A19SocioSexo, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtSocioSexo_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtSocioSexo_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_SocioGeneral.htm");
+            /* ComboBox */
+            GxWebStd.gx_combobox_ctrl1( context, cmbSocioSexo, cmbSocioSexo_Internalname, StringUtil.RTrim( A19SocioSexo), 1, cmbSocioSexo_Jsonclick, 0, "'"+sPrefix+"'"+",false,"+"'"+""+"'", "char", "", 1, cmbSocioSexo.Enabled, 0, 0, 0, "em", 0, "", "", "ReadonlyAttribute", "", "", "", "", true, "HLP_SocioGeneral.htm");
+            cmbSocioSexo.CurrentValue = StringUtil.RTrim( A19SocioSexo);
+            context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, cmbSocioSexo_Internalname, "Values", (String)(cmbSocioSexo.ToJavascriptSource()), true);
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -519,13 +524,15 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtSocioTipo_Internalname+"\"", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+chkSocioReconocido_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtSocioTipo_Internalname, "Tipo", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, chkSocioReconocido_Internalname, "Reconocido", "col-sm-3 ReadonlyAttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-            /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtSocioTipo_Internalname, StringUtil.RTrim( A23SocioTipo), StringUtil.RTrim( context.localUtil.Format( A23SocioTipo, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtSocioTipo_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtSocioTipo_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_SocioGeneral.htm");
+            /* Check box */
+            ClassString = "ReadonlyAttribute";
+            StyleString = "";
+            GxWebStd.gx_checkbox_ctrl( context, chkSocioReconocido_Internalname, StringUtil.BoolToStr( A24SocioReconocido), "", "Reconocido", 1, chkSocioReconocido.Enabled, "true", "", StyleString, ClassString, "", "", "");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -535,13 +542,31 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtSocioReconocido_Internalname+"\"", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtSocioMonto_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtSocioReconocido_Internalname, "Reconocido", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, edtSocioMonto_Internalname, "Monto", "col-sm-3 ReadonlyAttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtSocioReconocido_Internalname, StringUtil.RTrim( A24SocioReconocido), StringUtil.RTrim( context.localUtil.Format( A24SocioReconocido, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtSocioReconocido_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtSocioReconocido_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "HLP_SocioGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtSocioMonto_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A32SocioMonto), 4, 0, ".", "")), ((edtSocioMonto_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A32SocioMonto), "ZZZ9")) : context.localUtil.Format( (decimal)(A32SocioMonto), "ZZZ9")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtSocioMonto_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtSocioMonto_Enabled, 0, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "", "right", false, "HLP_SocioGeneral.htm");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+cmbSocioTipoCuota_Internalname+"\"", "", "div");
+            /* Attribute/Variable Label */
+            GxWebStd.gx_label_element( context, cmbSocioTipoCuota_Internalname, "Tipo Cuota", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+            /* ComboBox */
+            GxWebStd.gx_combobox_ctrl1( context, cmbSocioTipoCuota, cmbSocioTipoCuota_Internalname, StringUtil.RTrim( A33SocioTipoCuota), 1, cmbSocioTipoCuota_Jsonclick, 0, "'"+sPrefix+"'"+",false,"+"'"+""+"'", "char", "", 1, cmbSocioTipoCuota.Enabled, 0, 0, 0, "em", 0, "", "", "ReadonlyAttribute", "", "", "", "", true, "HLP_SocioGeneral.htm");
+            cmbSocioTipoCuota.CurrentValue = StringUtil.RTrim( A33SocioTipoCuota);
+            context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, cmbSocioTipoCuota_Internalname, "Values", (String)(cmbSocioTipoCuota.ToJavascriptSource()), true);
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -817,6 +842,26 @@ namespace GeneXus.Programs {
 
       protected void fix_multi_value_controls( )
       {
+         if ( cmbSocioSexo.ItemCount > 0 )
+         {
+            A19SocioSexo = cmbSocioSexo.getValidValue(A19SocioSexo);
+            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A19SocioSexo", A19SocioSexo);
+         }
+         if ( context.isAjaxRequest( ) )
+         {
+            cmbSocioSexo.CurrentValue = StringUtil.RTrim( A19SocioSexo);
+            context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, cmbSocioSexo_Internalname, "Values", cmbSocioSexo.ToJavascriptSource(), true);
+         }
+         if ( cmbSocioTipoCuota.ItemCount > 0 )
+         {
+            A33SocioTipoCuota = cmbSocioTipoCuota.getValidValue(A33SocioTipoCuota);
+            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A33SocioTipoCuota", A33SocioTipoCuota);
+         }
+         if ( context.isAjaxRequest( ) )
+         {
+            cmbSocioTipoCuota.CurrentValue = StringUtil.RTrim( A33SocioTipoCuota);
+            context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, cmbSocioTipoCuota_Internalname, "Values", cmbSocioTipoCuota.ToJavascriptSource(), true);
+         }
       }
 
       public void Refresh( )
@@ -854,18 +899,52 @@ namespace GeneXus.Programs {
                context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, imgSocioFoto_Internalname, "SrcSet", context.GetImageSrcSet( A21SocioFoto), true);
                A24SocioReconocido = H000Q2_A24SocioReconocido[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A24SocioReconocido", A24SocioReconocido);
-               A23SocioTipo = H000Q2_A23SocioTipo[0];
-               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A23SocioTipo", A23SocioTipo);
-               A20SocioEdad = H000Q2_A20SocioEdad[0];
-               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A20SocioEdad", StringUtil.LTrim( StringUtil.Str( (decimal)(A20SocioEdad), 4, 0)));
                A19SocioSexo = H000Q2_A19SocioSexo[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A19SocioSexo", A19SocioSexo);
                A18SocioDireccion = H000Q2_A18SocioDireccion[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A18SocioDireccion", A18SocioDireccion);
+               A20SocioEdad = H000Q2_A20SocioEdad[0];
+               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A20SocioEdad", StringUtil.LTrim( StringUtil.Str( (decimal)(A20SocioEdad), 4, 0)));
+               A33SocioTipoCuota = H000Q2_A33SocioTipoCuota[0];
+               context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A33SocioTipoCuota", A33SocioTipoCuota);
                A21SocioFoto = H000Q2_A21SocioFoto[0];
                context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A21SocioFoto", A21SocioFoto);
                context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, imgSocioFoto_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( A21SocioFoto)) ? A40000SocioFoto_GXI : context.convertURL( context.PathToRelativeUrl( A21SocioFoto))), true);
                context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, imgSocioFoto_Internalname, "SrcSet", context.GetImageSrcSet( A21SocioFoto), true);
+               if ( ( StringUtil.StrCmp(A33SocioTipoCuota, "P") == 0 ) && ( A20SocioEdad > 65 ) )
+               {
+                  A32SocioMonto = (short)(1500-(1500*0.3m));
+                  context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+               }
+               else
+               {
+                  if ( ( StringUtil.StrCmp(A33SocioTipoCuota, "V") == 0 ) && ( A20SocioEdad > 65 ) )
+                  {
+                     A32SocioMonto = (short)(2500-(2500*0.3m));
+                     context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+                  }
+                  else
+                  {
+                     if ( StringUtil.StrCmp(A33SocioTipoCuota, "P") == 0 )
+                     {
+                        A32SocioMonto = 1500;
+                        context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+                     }
+                     else
+                     {
+                        if ( true )
+                        {
+                           A32SocioMonto = 2500;
+                           context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+                        }
+                        else
+                        {
+                           A32SocioMonto = 0;
+                           context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+                        }
+                     }
+                  }
+               }
                /* Execute user event: Load */
                E140Q2 ();
                /* Exiting from a For First loop. */
@@ -899,14 +978,18 @@ namespace GeneXus.Programs {
             /* Read variables values. */
             A18SocioDireccion = cgiGet( edtSocioDireccion_Internalname);
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A18SocioDireccion", A18SocioDireccion);
-            A19SocioSexo = cgiGet( edtSocioSexo_Internalname);
+            cmbSocioSexo.CurrentValue = cgiGet( cmbSocioSexo_Internalname);
+            A19SocioSexo = cgiGet( cmbSocioSexo_Internalname);
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A19SocioSexo", A19SocioSexo);
             A20SocioEdad = (short)(context.localUtil.CToN( cgiGet( edtSocioEdad_Internalname), ".", ","));
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A20SocioEdad", StringUtil.LTrim( StringUtil.Str( (decimal)(A20SocioEdad), 4, 0)));
-            A23SocioTipo = cgiGet( edtSocioTipo_Internalname);
-            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A23SocioTipo", A23SocioTipo);
-            A24SocioReconocido = cgiGet( edtSocioReconocido_Internalname);
+            A24SocioReconocido = StringUtil.StrToBool( cgiGet( chkSocioReconocido_Internalname));
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A24SocioReconocido", A24SocioReconocido);
+            A32SocioMonto = (short)(context.localUtil.CToN( cgiGet( edtSocioMonto_Internalname), ".", ","));
+            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A32SocioMonto", StringUtil.LTrim( StringUtil.Str( (decimal)(A32SocioMonto), 4, 0)));
+            cmbSocioTipoCuota.CurrentValue = cgiGet( cmbSocioTipoCuota_Internalname);
+            A33SocioTipoCuota = cgiGet( cmbSocioTipoCuota_Internalname);
+            context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A33SocioTipoCuota", A33SocioTipoCuota);
             A21SocioFoto = cgiGet( imgSocioFoto_Internalname);
             context.httpAjaxContext.ajax_rsp_assign_attri(sPrefix, false, "A21SocioFoto", A21SocioFoto);
             /* Read saved values. */
@@ -1169,7 +1252,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221911822", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194121731090", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1184,12 +1267,32 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("sociogeneral.js", "?20193221911822", false);
+         context.AddJavascriptSource("sociogeneral.js", "?20194121731090", false);
          /* End function include_jscripts */
       }
 
       protected void init_web_controls( )
       {
+         cmbSocioSexo.Name = "SOCIOSEXO";
+         cmbSocioSexo.WebTags = "";
+         cmbSocioSexo.addItem("Hombre", "H", 0);
+         cmbSocioSexo.addItem("Mujer", "M", 0);
+         cmbSocioSexo.addItem("Otro", "O", 0);
+         if ( cmbSocioSexo.ItemCount > 0 )
+         {
+         }
+         chkSocioReconocido.Name = "SOCIORECONOCIDO";
+         chkSocioReconocido.WebTags = "";
+         chkSocioReconocido.Caption = "";
+         context.httpAjaxContext.ajax_rsp_assign_prop(sPrefix, false, chkSocioReconocido_Internalname, "TitleCaption", chkSocioReconocido.Caption, true);
+         chkSocioReconocido.CheckedValue = "false";
+         cmbSocioTipoCuota.Name = "SOCIOTIPOCUOTA";
+         cmbSocioTipoCuota.WebTags = "";
+         cmbSocioTipoCuota.addItem("V", "Verano", 0);
+         cmbSocioTipoCuota.addItem("P", "Permanente", 0);
+         if ( cmbSocioTipoCuota.ItemCount > 0 )
+         {
+         }
          /* End function init_web_controls */
       }
 
@@ -1199,10 +1302,11 @@ namespace GeneXus.Programs {
          bttBtndelete_Internalname = sPrefix+"BTNDELETE";
          edtSocioId_Internalname = sPrefix+"SOCIOID";
          edtSocioDireccion_Internalname = sPrefix+"SOCIODIRECCION";
-         edtSocioSexo_Internalname = sPrefix+"SOCIOSEXO";
+         cmbSocioSexo_Internalname = sPrefix+"SOCIOSEXO";
          edtSocioEdad_Internalname = sPrefix+"SOCIOEDAD";
-         edtSocioTipo_Internalname = sPrefix+"SOCIOTIPO";
-         edtSocioReconocido_Internalname = sPrefix+"SOCIORECONOCIDO";
+         chkSocioReconocido_Internalname = sPrefix+"SOCIORECONOCIDO";
+         edtSocioMonto_Internalname = sPrefix+"SOCIOMONTO";
+         cmbSocioTipoCuota_Internalname = sPrefix+"SOCIOTIPOCUOTA";
          divAttributestable_Internalname = sPrefix+"ATTRIBUTESTABLE";
          imgSocioFoto_Internalname = sPrefix+"SOCIOFOTO";
          divImagestable_Internalname = sPrefix+"IMAGESTABLE";
@@ -1224,14 +1328,16 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
-         edtSocioReconocido_Jsonclick = "";
-         edtSocioReconocido_Enabled = 0;
-         edtSocioTipo_Jsonclick = "";
-         edtSocioTipo_Enabled = 0;
+         chkSocioReconocido.Caption = "Reconocido";
+         cmbSocioTipoCuota_Jsonclick = "";
+         cmbSocioTipoCuota.Enabled = 0;
+         edtSocioMonto_Jsonclick = "";
+         edtSocioMonto_Enabled = 0;
+         chkSocioReconocido.Enabled = 0;
          edtSocioEdad_Jsonclick = "";
          edtSocioEdad_Enabled = 0;
-         edtSocioSexo_Jsonclick = "";
-         edtSocioSexo_Enabled = 0;
+         cmbSocioSexo_Jsonclick = "";
+         cmbSocioSexo.Enabled = 0;
          edtSocioDireccion_Enabled = 0;
          edtSocioId_Jsonclick = "";
          edtSocioId_Enabled = 0;
@@ -1292,8 +1398,7 @@ namespace GeneXus.Programs {
          bttBtndelete_Jsonclick = "";
          A18SocioDireccion = "";
          A19SocioSexo = "";
-         A23SocioTipo = "";
-         A24SocioReconocido = "";
+         A33SocioTipoCuota = "";
          A21SocioFoto = "";
          A40000SocioFoto_GXI = "";
          sImgUrl = "";
@@ -1306,11 +1411,11 @@ namespace GeneXus.Programs {
          scmdbuf = "";
          H000Q2_A5SocioId = new short[1] ;
          H000Q2_A40000SocioFoto_GXI = new String[] {""} ;
-         H000Q2_A24SocioReconocido = new String[] {""} ;
-         H000Q2_A23SocioTipo = new String[] {""} ;
-         H000Q2_A20SocioEdad = new short[1] ;
+         H000Q2_A24SocioReconocido = new bool[] {false} ;
          H000Q2_A19SocioSexo = new String[] {""} ;
          H000Q2_A18SocioDireccion = new String[] {""} ;
+         H000Q2_A20SocioEdad = new short[1] ;
+         H000Q2_A33SocioTipoCuota = new String[] {""} ;
          H000Q2_A21SocioFoto = new String[] {""} ;
          AV7TrnContext = new SdtTransactionContext(context);
          AV10HTTPRequest = new GxHttpRequest( context);
@@ -1322,7 +1427,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.sociogeneral__default(),
             new Object[][] {
                 new Object[] {
-               H000Q2_A5SocioId, H000Q2_A40000SocioFoto_GXI, H000Q2_A24SocioReconocido, H000Q2_A23SocioTipo, H000Q2_A20SocioEdad, H000Q2_A19SocioSexo, H000Q2_A18SocioDireccion, H000Q2_A21SocioFoto
+               H000Q2_A5SocioId, H000Q2_A40000SocioFoto_GXI, H000Q2_A24SocioReconocido, H000Q2_A19SocioSexo, H000Q2_A18SocioDireccion, H000Q2_A20SocioEdad, H000Q2_A33SocioTipoCuota, H000Q2_A21SocioFoto
                }
             }
          );
@@ -1341,6 +1446,7 @@ namespace GeneXus.Programs {
       private short wbEnd ;
       private short wbStart ;
       private short A20SocioEdad ;
+      private short A32SocioMonto ;
       private short nDraw ;
       private short nDoneStart ;
       private short nDonePA ;
@@ -1349,10 +1455,8 @@ namespace GeneXus.Programs {
       private short nGXWrapped ;
       private int edtSocioId_Enabled ;
       private int edtSocioDireccion_Enabled ;
-      private int edtSocioSexo_Enabled ;
       private int edtSocioEdad_Enabled ;
-      private int edtSocioTipo_Enabled ;
-      private int edtSocioReconocido_Enabled ;
+      private int edtSocioMonto_Enabled ;
       private int idxLst ;
       private String gxfirstwebparm ;
       private String gxfirstwebparm_bkp ;
@@ -1377,17 +1481,17 @@ namespace GeneXus.Programs {
       private String edtSocioId_Internalname ;
       private String edtSocioId_Jsonclick ;
       private String edtSocioDireccion_Internalname ;
-      private String edtSocioSexo_Internalname ;
+      private String cmbSocioSexo_Internalname ;
       private String A19SocioSexo ;
-      private String edtSocioSexo_Jsonclick ;
+      private String cmbSocioSexo_Jsonclick ;
       private String edtSocioEdad_Internalname ;
       private String edtSocioEdad_Jsonclick ;
-      private String edtSocioTipo_Internalname ;
-      private String A23SocioTipo ;
-      private String edtSocioTipo_Jsonclick ;
-      private String edtSocioReconocido_Internalname ;
-      private String A24SocioReconocido ;
-      private String edtSocioReconocido_Jsonclick ;
+      private String chkSocioReconocido_Internalname ;
+      private String edtSocioMonto_Internalname ;
+      private String edtSocioMonto_Jsonclick ;
+      private String cmbSocioTipoCuota_Internalname ;
+      private String A33SocioTipoCuota ;
+      private String cmbSocioTipoCuota_Jsonclick ;
       private String divImagestable_Internalname ;
       private String imgSocioFoto_Internalname ;
       private String sImgUrl ;
@@ -1401,6 +1505,7 @@ namespace GeneXus.Programs {
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
       private bool wbLoad ;
+      private bool A24SocioReconocido ;
       private bool A21SocioFoto_IsBlob ;
       private bool Rfr0gs ;
       private bool wbErr ;
@@ -1411,14 +1516,17 @@ namespace GeneXus.Programs {
       private String A21SocioFoto ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
+      private GXCombobox cmbSocioSexo ;
+      private GXCheckbox chkSocioReconocido ;
+      private GXCombobox cmbSocioTipoCuota ;
       private IDataStoreProvider pr_default ;
       private short[] H000Q2_A5SocioId ;
       private String[] H000Q2_A40000SocioFoto_GXI ;
-      private String[] H000Q2_A24SocioReconocido ;
-      private String[] H000Q2_A23SocioTipo ;
-      private short[] H000Q2_A20SocioEdad ;
+      private bool[] H000Q2_A24SocioReconocido ;
       private String[] H000Q2_A19SocioSexo ;
       private String[] H000Q2_A18SocioDireccion ;
+      private short[] H000Q2_A20SocioEdad ;
+      private String[] H000Q2_A33SocioTipoCuota ;
       private String[] H000Q2_A21SocioFoto ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
@@ -1448,7 +1556,7 @@ namespace GeneXus.Programs {
           new Object[] {"@SocioId",SqlDbType.SmallInt,4,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("H000Q2", "SELECT [SocioId], [SocioFoto_GXI], [SocioReconocido], [SocioTipo], [SocioEdad], [SocioSexo], [SocioDireccion], [SocioFoto] FROM [Socio] WITH (NOLOCK) WHERE [SocioId] = @SocioId ORDER BY [SocioId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000Q2,1,0,true,true )
+              new CursorDef("H000Q2", "SELECT [SocioId], [SocioFoto_GXI], [SocioReconocido], [SocioSexo], [SocioDireccion], [SocioEdad], [SocioTipoCuota], [SocioFoto] FROM [Socio] WITH (NOLOCK) WHERE [SocioId] = @SocioId ORDER BY [SocioId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000Q2,1,0,true,true )
           };
        }
     }
@@ -1462,11 +1570,11 @@ namespace GeneXus.Programs {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 ((String[]) buf[1])[0] = rslt.getMultimediaUri(2) ;
-                ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
+                ((bool[]) buf[2])[0] = rslt.getBool(3) ;
                 ((String[]) buf[3])[0] = rslt.getString(4, 20) ;
-                ((short[]) buf[4])[0] = rslt.getShort(5) ;
-                ((String[]) buf[5])[0] = rslt.getString(6, 20) ;
-                ((String[]) buf[6])[0] = rslt.getVarchar(7) ;
+                ((String[]) buf[4])[0] = rslt.getVarchar(5) ;
+                ((short[]) buf[5])[0] = rslt.getShort(6) ;
+                ((String[]) buf[6])[0] = rslt.getString(7, 20) ;
                 ((String[]) buf[7])[0] = rslt.getMultimediaFile(8, rslt.getVarchar(2)) ;
                 return;
        }

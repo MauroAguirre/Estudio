@@ -2,7 +2,7 @@
                File: IngresarCliente
         Description: Ingresar Cliente
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:31.36
+       Generated on: 3/29/2019 11:52:9.50
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -216,7 +216,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221913137", false);
+         context.AddJavascriptSource("gxcfg.js", "?20193291152951", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -350,6 +350,9 @@ namespace GeneXus.Programs {
                RenderHtmlOpenForm( ) ;
             }
             GxWebStd.gx_msg_list( context, "", context.GX_msglist.DisplayMode, "", "", "", "false");
+            context.WriteHtmlText( "<p>") ;
+            context.WriteHtmlText( "holas wos todo biengenexus genexus master pagemaster pagegenexus master pagegenexus master page") ;
+            context.WriteHtmlText( "</p>") ;
          }
          wbLoad = true;
       }
@@ -617,7 +620,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221913142", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193291152954", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -635,7 +638,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-            context.AddJavascriptSource("ingresarcliente.js", "?20193221913142", false);
+            context.AddJavascriptSource("ingresarcliente.js", "?20193291152954", false);
          }
          /* End function include_jscripts */
       }

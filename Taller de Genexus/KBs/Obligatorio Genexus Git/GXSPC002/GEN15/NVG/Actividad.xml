@@ -71,11 +71,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ActividadDescripcion</AttriName>
-<Description>Actividad Descripcion</Description></Attribute>
-<Attribute>
-<AttriId>14</AttriId>
-<AttriName>ActividadTipo</AttriName>
-<Description>Actividad Tipo</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Actividad Descripcion</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>1</TableId>
@@ -86,11 +82,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ActividadDescripcion</AttriName>
-<Description>Actividad Descripcion</Description></Attribute>
-<Attribute>
-<AttriId>14</AttriId>
-<AttriName>ActividadTipo</AttriName>
-<Description>Actividad Tipo</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Actividad Descripcion</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>1</TableId>
@@ -103,7 +95,7 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>3</TableId>
+<TableId>11</TableId>
 <TableName>Profesor</TableName>
 <Description>Profesor</Description>
 <RecordsToRead>one</RecordsToRead>
@@ -112,119 +104,7 @@
 <AttriId>1</AttriId>
 <AttriName>ActividadId</AttriName>
 <Description>Actividad Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
-<Levels>
-<Level>
-<LevelType>Trn</LevelType>
-<LevelNumber>2</LevelNumber>
-<BaseTable>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description></Table></BaseTable>
-<NavigationTree>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>1</AttriId>
-<AttriName>ActividadId</AttriName>
-<Description>Actividad Id</Description></Attribute>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></KeyAttributes>
-<Tables>
-<Table>
-<TableId>4</TableId>
-<TableName>Socio</TableName>
-<Description>Socio</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></NavigationTree>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas>
-<DynamicLoads></DynamicLoads>
-<Rules></Rules>
-<AfterAttributeRules></AfterAttributeRules>
-<AfterConfirmRules></AfterConfirmRules>
-<TablesToUpdate>
-<TableToUpdate>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description></Table>
-<TableAction>insert</TableAction>
-<AttrisToUpdate>
-<Attribute>
-<AttriId>1</AttriId>
-<AttriName>ActividadId</AttriName>
-<Description>Actividad Id</Description></Attribute>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
-<TableToUpdate>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description></Table>
-<TableAction>update</TableAction>
-<AttrisToUpdate></AttrisToUpdate></TableToUpdate>
-<TableToUpdate>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description></Table>
-<TableAction>delete</TableAction>
-<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
-<AfterInsertRules></AfterInsertRules>
-<AfterUpdateRules></AfterUpdateRules>
-<AfterDeleteRules></AfterDeleteRules>
-<TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels></Levels>
-<AfterLevelRules></AfterLevelRules></Level></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
-<Prompts>
-<Prompt>
-<Table>
-<TableId>4</TableId>
-<TableName>Socio</TableName>
-<Description>Socio</Description></Table>
-<ProgramName>
-<Token>Gx0040</Token></ProgramName>
-<InputParameters></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt>
-<Prompt>
-<Table>
-<TableId>2</TableId>
-<TableName>ActividadSocioEnActividad</TableName>
-<Description>Socio En Actividad</Description></Table>
-<ProgramName>
-<Token>Gx0021</Token></ProgramName>
-<InputParameters>
-<Attribute>
-<AttriId>1</AttriId>
-<AttriName>ActividadId</AttriName>
-<Description>Actividad Id</Description></Attribute></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>SocioId</AttriName>
-<Description>Socio Id</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

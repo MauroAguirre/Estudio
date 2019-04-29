@@ -173,13 +173,13 @@ b_line_i(1,1,1,cmd,0,[]).
 b_line_i(2,1,1,cmd,0,[ t('',107,0,0),t('Programnames',23,0,0),t(=,10,0,0),t([ 'ProgramNames',[ t('(',0,2,20),t(')',4,2,21) ],n ],46,0,0) ]).
 b_line_i(3,1,1,cmd,0,[]).
 b_line_i(4,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWActividad"',3,0,0) ]).
-b_line_i(5,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Actividads"',3,0,0) ]).
+b_line_i(5,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Actividades"',3,0,0) ]).
 b_line_i(6,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWActividad'),28,0,0),t(')',4,0,0) ]).
 b_line_i(7,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,7,4) ]).
 b_line_i(8,1,1,cmd,0,[]).
-b_line_i(9,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWCarne"',3,0,0) ]).
-b_line_i(10,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Carnes"',3,0,0) ]).
-b_line_i(11,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWCarne'),28,0,0),t(')',4,0,0) ]).
+b_line_i(9,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWCarnet"',3,0,0) ]).
+b_line_i(10,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Carnets"',3,0,0) ]).
+b_line_i(11,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWCarnet'),28,0,0),t(')',4,0,0) ]).
 b_line_i(12,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,12,4) ]).
 b_line_i(13,1,1,cmd,0,[]).
 b_line_i(14,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWClase"',3,0,0) ]).
@@ -188,7 +188,7 @@ b_line_i(16,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0
 b_line_i(17,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,17,4) ]).
 b_line_i(18,1,1,cmd,0,[]).
 b_line_i(19,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWProfesor"',3,0,0) ]).
-b_line_i(20,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Profesors"',3,0,0) ]).
+b_line_i(20,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Profesores"',3,0,0) ]).
 b_line_i(21,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWProfesor'),28,0,0),t(')',4,0,0) ]).
 b_line_i(22,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,22,4) ]).
 b_line_i(23,1,1,cmd,0,[]).
@@ -272,8 +272,6 @@ struct_dt_i([ 26,43,70 ],name,'ProgramName').
 struct_dt_i([ 26,43,70 ],namespace,'ObligatorioGenexusGit.ProgramNames').
 struct_dt_i([ 26,43,0 ],fullname,'ProgramNames').
 struct_dt_i([ 26,43,70 ],fullname,'ProgramNames.ProgramName').
-struct_dt_i([ 26,43,0 ],modified,yes).
-struct_dt_i([ 26,43,70 ],modified,yes).
  
 struct_dt_elem_i([ 26,43,70 ],1,name,'Name').
 struct_dt_elem_i([ 26,43,70 ],1,camelname,'Name').
@@ -322,6 +320,7 @@ struct_dt_elem_i([ 26,43,70 ],3,'XmlNamespace','').
 struct_dt_elem_i([ 26,43,70 ],3,soaptype,'').
 struct_dt_elem_i([ 26,43,70 ],3,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,43,70 ],3,'JsonName','').
+struct_dt_elem_i([ 26,43,70 ],1,pic,'ZZZ9').
  
  
  
@@ -332,7 +331,7 @@ pgm_parm_i(proc,10,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ '
 pgm_parm_i(web,25,'WWSOCIO',[],[]).
 pgm_parm_i(web,21,'WWPROFESOR',[],[]).
 pgm_parm_i(web,18,'WWCLASE',[],[]).
-pgm_parm_i(web,15,'WWCARNE',[],[]).
+pgm_parm_i(web,15,'WWCARNET',[],[]).
 pgm_parm_i(web,10,'WWACTIVIDAD',[],[]).
  
 pgm_callprotocol_i(proc,11,'LISTPROGRAMS','INTERNAL').
@@ -340,7 +339,7 @@ pgm_callprotocol_i(proc,10,'ISAUTHORIZED','INTERNAL').
 pgm_callprotocol_i(web,25,'WWSOCIO','INTERNAL').
 pgm_callprotocol_i(web,21,'WWPROFESOR','INTERNAL').
 pgm_callprotocol_i(web,18,'WWCLASE','INTERNAL').
-pgm_callprotocol_i(web,15,'WWCARNE','INTERNAL').
+pgm_callprotocol_i(web,15,'WWCARNET','INTERNAL').
 pgm_callprotocol_i(web,10,'WWACTIVIDAD','INTERNAL').
  
  

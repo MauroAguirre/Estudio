@@ -2,7 +2,7 @@
                File: ListPrograms
         Description: List Programs
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:0:42.89
+       Generated on: 4/12/2019 21:6:42.82
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -98,7 +98,7 @@ namespace GeneXus.Programs {
          /* Output device settings */
          AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "ObligatorioGenexusGit");
          AV11name = "WWActividad";
-         AV12description = "Actividads";
+         AV12description = "Actividades";
          AV13link = "wwactividad.aspx";
          /* Execute user subroutine: 'ADDPROGRAM' */
          S111 ();
@@ -107,9 +107,9 @@ namespace GeneXus.Programs {
             this.cleanup();
             if (true) return;
          }
-         AV11name = "WWCarne";
-         AV12description = "Carnes";
-         AV13link = "wwcarne.aspx";
+         AV11name = "WWCarnet";
+         AV12description = "Carnets";
+         AV13link = "wwcarnet.aspx";
          /* Execute user subroutine: 'ADDPROGRAM' */
          S111 ();
          if ( returnInSub )
@@ -128,7 +128,7 @@ namespace GeneXus.Programs {
             if (true) return;
          }
          AV11name = "WWProfesor";
-         AV12description = "Profesors";
+         AV12description = "Profesores";
          AV13link = "wwprofesor.aspx";
          /* Execute user subroutine: 'ADDPROGRAM' */
          S111 ();

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="56e9e988-51e0-4370-80af-adf4f3b640f8">
+  <Table name="Socio" />
+  <Table name="Carnet" />
+</Dependencies>

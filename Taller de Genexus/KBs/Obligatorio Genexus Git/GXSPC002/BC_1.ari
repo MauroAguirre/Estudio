@@ -1,0 +1,4 @@
+bc_dt_elem_i([ 0,1,0 ],'Actividadid',allownulls,no).
+bc_dt_elem_i([ 0,1,0 ],'Actividaddescripcion',allownulls,no).
+bc_dt_elem_i([ 0,1,0 ],'Actividadcantidadprofesores',readonly,yes).
+ 

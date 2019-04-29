@@ -112,7 +112,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('Folder',o(8,'Menus'))).
 rule_i(0,prop('ObjDesc','Ingresar Cliente')).
 rule_i(0,prop('ObjName','IngresarCliente')).
 rule_i(0,maingen(15)).
@@ -179,6 +179,9 @@ b_line_i(1002,2,1,cmd,0,[ t('',147,0,0) ]).
  
  
  
+html_i(2,html('<p>')).
+html_i(3,html('holas wos todo biengenexus genexus master pagemaster pagegenexus master pagegenexus master page')).
+html_i(4,html('</p>')).
  
  
 html_tags_i(1,'Class','Form').

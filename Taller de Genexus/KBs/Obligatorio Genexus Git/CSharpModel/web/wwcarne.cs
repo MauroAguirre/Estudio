@@ -1,8 +1,8 @@
 /*
                File: WWCarne
-        Description: Carnes
+        Description: Carne
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:27.5
+       Generated on: 3/29/2019 11:16:48.6
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -253,7 +253,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?2019322191278", false);
+         context.AddJavascriptSource("gxcfg.js", "?201932911164812", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -379,7 +379,7 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Carnes" ;
+         return "Carne" ;
       }
 
       protected void WB0F0( )
@@ -410,7 +410,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-7 col-sm-2 col-sm-offset-1", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Carnes", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWCarne.htm");
+            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Carne", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWCarne.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-5 col-sm-3 col-sm-push-6 WWActionsCell", "Right", "top", "", "", "div");
@@ -645,7 +645,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 15_0_12-126726", 0) ;
-            Form.Meta.addItem("description", "Carnes", 0) ;
+            Form.Meta.addItem("description", "Carne", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -1207,7 +1207,7 @@ namespace GeneXus.Programs {
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, edtavUpdate_Internalname, AV14Update);
          AV15Delete = "Delete";
          context.httpAjaxContext.ajax_rsp_assign_attri("", false, edtavDelete_Internalname, AV15Delete);
-         Form.Caption = "Carnes";
+         Form.Caption = "Carne";
          context.httpAjaxContext.ajax_rsp_assign_prop("", false, "FORM", "Caption", Form.Caption, true);
          /* Execute user subroutine: 'PREPARETRANSACTION' */
          S112 ();
@@ -1359,7 +1359,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221912757", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?201932911164848", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1377,7 +1377,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false);
-            context.AddJavascriptSource("wwcarne.js", "?20193221912758", false);
+            context.AddJavascriptSource("wwcarne.js", "?201932911164848", false);
          }
          /* End function include_jscripts */
       }
@@ -1564,7 +1564,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Carnes";
+         Form.Caption = "Carne";
          subGrid_Rows = 10;
          context.GX_msglist.DisplayMode = 1;
          if ( context.isSpaRequest( ) )

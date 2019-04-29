@@ -9,7 +9,7 @@
 <ObjDesc>Is Authorized</ObjDesc>
 <ObjPgmName>IsAuthorized</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>

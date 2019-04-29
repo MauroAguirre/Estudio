@@ -2,7 +2,7 @@
                File: ActividadProfesorWC
         Description: Actividad Profesor WC
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:0:46.88
+       Generated on: 4/12/2019 7:32:54.19
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -298,7 +298,7 @@ namespace GeneXus.Programs {
          context.AddJavascriptSource("gxtimezone.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 126726), false);
          context.AddJavascriptSource("bootstrap/js/bootstrap.min.js", "?"+context.GetBuildNumber( 126726), false);
-         context.AddJavascriptSource("gxcfg.js", "?20193221904692", false);
+         context.AddJavascriptSource("gxcfg.js", "?20194127325423", false);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -391,7 +391,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("actividadprofesorwc.js", "?20193221904695", false);
+            context.AddJavascriptSource("actividadprofesorwc.js", "?20194127325425", false);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -1586,7 +1586,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20193221904744", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20194127325464", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1603,7 +1603,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("actividadprofesorwc.js", "?20193221904744", false);
+            context.AddJavascriptSource("actividadprofesorwc.js", "?20194127325464", false);
          }
          /* End function include_jscripts */
       }

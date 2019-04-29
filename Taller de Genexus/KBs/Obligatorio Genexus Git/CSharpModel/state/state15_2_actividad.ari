@@ -4,11 +4,12 @@ current_guid('d3d6c998-0b94-46aa-8eb1-0c8788a07e61').
  
  
 called_tree_i(0,1,1,10).
+called_tree_i(0,1,1,18).
+called_tree_i(0,1,1,19).
 called_tree_i(0,1,13,4).
 called_tree_i(0,1,13,7).
 called_tree_i(0,1,13,10).
-called_tree_i(0,1,13,33).
-called_tree_i(0,1,13,34).
+called_tree_i(0,1,13,14).
  
  
  
@@ -31,6 +32,7 @@ ij_object_dependency(actividad,[],[],[],1).
 obj_parms_i([ 'String aP0_Gx_mode','short aP1_ActividadId' ],[ [ 'Mode',in ],[ 'Actividadid',in ] ]).
  
  
+has_silent_trn_i(actividad_bc).
  
  
  

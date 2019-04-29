@@ -1,4 +1,5 @@
-<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?>
+<Objects>
   <Charset>UTF-8</Charset>
   <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus15Trial/</Path>
   <Object>
@@ -10,13 +11,13 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWActividad</ObjName>
-    <ObjDesc>Actividads</ObjDesc>
+    <ObjDesc>Actividades</ObjDesc>
     <ObjLink>wwactividad.aspx</ObjLink>
   </Object>
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWCarne</ObjName>
-    <ObjDesc>Carnes</ObjDesc>
+    <ObjDesc>Carne</ObjDesc>
     <ObjLink>wwcarne.aspx</ObjLink>
   </Object>
   <Object>
@@ -28,7 +29,7 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWProfesor</ObjName>
-    <ObjDesc>Profesors</ObjDesc>
+    <ObjDesc>Profesores</ObjDesc>
     <ObjLink>wwprofesor.aspx</ObjLink>
   </Object>
   <Object>
@@ -49,4 +50,11 @@
     <ObjDesc>Inicio</ObjDesc>
     <ObjLink>inicio.aspx</ObjLink>
   </Object>
+  <Dashboards>
+    <Android>
+      <Name>
+      </Name>
+      <URI>https://trialapps3.genexus.com/Id3352cbb60a570b1e1b044e9784b1e1ba/.apk</URI>
+    </Android>
+  </Dashboards>
 </Objects>

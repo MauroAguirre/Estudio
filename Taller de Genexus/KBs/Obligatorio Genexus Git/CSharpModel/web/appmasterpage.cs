@@ -2,7 +2,7 @@
                File: AppMasterPage
         Description: Application Master Page
              Author: GeneXus C# Generator version 15_0_12-126726
-       Generated on: 3/22/2019 19:1:20.45
+       Generated on: 3/29/2019 11:16:45.94
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -143,7 +143,7 @@ namespace GeneXus.Programs {
          {
             WebComp_Wcrecentlinks.componentjscripts();
          }
-         context.AddJavascriptSource("appmasterpage.js", "?20193221912048", false);
+         context.AddJavascriptSource("appmasterpage.js", "?201932911164596", false);
          context.WriteHtmlTextNl( "</body>") ;
          context.WriteHtmlTextNl( "</html>") ;
          if ( context.isSpaRequest( ) )
@@ -591,7 +591,7 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             context.WriteHtmlText( "<tr>") ;
-            context.WriteHtmlText( "<td colspan=\"2\" >") ;
+            context.WriteHtmlText( "<td colspan=\"2\"  style=\""+CSSHelper.Prettify( "height:14px")+"\">") ;
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
@@ -755,20 +755,22 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<td>") ;
             /* Text block */
             GxWebStd.gx_label_ctrl( context, lblFirsttext_Internalname, "First Option", "", "", lblFirsttext_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "MenuOption", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
-            context.WriteHtmlText( "&nbsp; ") ;
+            context.WriteHtmlText( "&nbsp; 1") ;
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "<td>") ;
             /* Text block */
             GxWebStd.gx_label_ctrl( context, lblSecondtext_Internalname, "Second Option", "", "", lblSecondtext_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "MenuOption", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
+            context.WriteHtmlText( "2") ;
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "<td>") ;
             /* Text block */
             GxWebStd.gx_label_ctrl( context, lblThirdtext_Internalname, "Third Option", "", "", lblThirdtext_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "MenuOption", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
-            context.WriteHtmlText( "&nbsp; ") ;
+            context.WriteHtmlText( "&nbsp; hola") ;
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "<td>") ;
             /* Text block */
             GxWebStd.gx_label_ctrl( context, lblFourthtext_Internalname, "Fourth Option", "", "", lblFourthtext_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "MenuOption", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
+            context.WriteHtmlText( "chau") ;
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             context.WriteHtmlText( "</tbody>") ;
@@ -795,7 +797,7 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<td>") ;
             context.WriteHtmlText( "&nbsp; ") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblApplicationheader_Internalname, "Application Header", "", "", lblApplicationheader_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "TextBlockHeader", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
+            GxWebStd.gx_label_ctrl( context, lblApplicationheader_Internalname, "Club noseque el mas mejor", "", "", lblApplicationheader_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "TextBlockHeader", 0, "", 1, 1, 0, "HLP_AppMasterPage.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "<td data-align=\"right\"  style=\""+CSSHelper.Prettify( "text-align:-khtml-right;text-align:-moz-right;text-align:-webkit-right")+"\">") ;
             context.WriteHtmlText( "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ") ;
@@ -918,7 +920,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= (getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?20193221912064", true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?20193291116469", true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -933,7 +935,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("appmasterpage.js", "?20193221912064", false);
+         context.AddJavascriptSource("appmasterpage.js", "?20193291116469", false);
          /* End function include_jscripts */
       }
 

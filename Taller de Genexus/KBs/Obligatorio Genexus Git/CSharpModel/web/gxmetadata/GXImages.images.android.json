@@ -1,0 +1,7 @@
+{ 
+    "Resources" : [ { 
+        "Language" : "English",
+        "Theme" : "SimpleAndroid",
+        "ResourceFile" : "Images_English_SimpleAndroid.json"
+    } ]
+}

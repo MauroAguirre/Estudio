@@ -1,0 +1,204 @@
+spec_i([ proc,0,'Stub for NotificationsRegistrationHandler','NotificationsRegistrationHandler',80,eng,'15_0_12-126726' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','Övá]yÅªwhLvwyrè¡')).
+rule_i(0,datastore(1,'CC_USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uhwYqqÍøWÃ*Ã:twy|O⁄5')).
+rule_i(0,datastore(1,'USER_ID',uhwYqq3gDBtwylo1)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id3352cbb60a570b1e1b044e9784b1e1ba')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'DeviceType','DeviceId','DeviceToken','DeviceName' ],[])).
+rule_i(0,parmio([ [ 'DeviceType',in ],[ 'DeviceId',in ],[ 'DeviceToken',in ],[ 'DeviceName',in ] ])).
+rule_i(0,stub(proc)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',7 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',6 ]).
+attri_i('DeviceName',[ 'DeviceName',char,128,0,'',0,'','',5 ]).
+attri_i('DeviceToken',[ 'DeviceToken',char,1000,0,'',0,'','',4 ]).
+attri_i('DeviceId',[ 'DeviceId',char,128,0,'',0,'','',3 ]).
+attri_i('DeviceType',[ 'DeviceType',int,1,0,'',0,'','',2 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+enumerated_i(2,'DeviceType',40).
+ 
+enum_value_i(2,40,'0',iOS,'"iOS"',[ none ]).
+enum_value_i(2,40,'1','Android','"Android"',[ none ]).
+enum_value_i(2,40,'2','Blackberry','"Blackberry"',[ none ]).
+enum_value_i(2,40,'3','Windows','"Windows"',[ none ]).
+ 
+enum_value_info_i(2,40,'GeneXus\SmartDeviceType').
+ 
+enum_type_i(2,40,int,1,0).
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(1,1,1,cmd,1,[ t('',163,1,0),t('ANotificationsRegistrationHandler',3,1,0),t(15,3,1,0),t('',3,1,0),t(',',7,1,0),t('DeviceType',23,1,0),t(',',7,1,0),t('DeviceId',23,1,0),t(',',7,1,0),t('DeviceToken',23,1,0),t(',',7,1,0),t('DeviceName',23,1,0),t(')',4,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(1,32).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,32,'ANOTIFICATIONSREGISTRATIONHANDLER',[ [ int,1,0,0 ],[ char,128,0,0 ],[ char,1000,0,0 ],[ char,128,0,0 ] ],[ [ 'DeviceType',in,[] ],[ 'DeviceId',in,[] ],[ 'DeviceToken',in,[] ],[ 'DeviceName',in,[] ] ]).
+ 
+pgm_callprotocol_i(proc,0,'NOTIFICATIONSREGISTRATIONHANDLER','INTERNAL').
+pgm_callprotocol_i(proc,32,'ANOTIFICATIONSREGISTRATIONHANDLER','INTERNAL').
+ 
+ 
+pgm_main_info_i(proc,32,'NOTIFICATIONSREGISTRATIONHANDLER',[ 15,'ANOTIFICATIONSREGISTRATIONHANDLER','Notifications Registration Handler','','','','INTERNAL' ]).
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

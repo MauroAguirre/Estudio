@@ -1,0 +1,18 @@
+bc_dt_elem_i([ 0,4,0 ],'Claseid',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Actividadid',readonly,yes).
+bc_dt_elem_i([ 0,4,0 ],'Actividadid',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Actividaddescripcion',readonly,yes).
+bc_dt_elem_i([ 0,4,0 ],'Actividaddescripcion',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Profesorid',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Profesornombre',readonly,yes).
+bc_dt_elem_i([ 0,4,0 ],'Profesornombre',allownulls,no).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Socioid',allownulls,no).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Socioedad',readonly,yes).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Socioedad',allownulls,no).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociodireccion',readonly,yes).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociodireccion',allownulls,no).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociofoto',readonly,yes).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociofoto',allownulls,no).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociofoto_gxi',readonly,yes).
+bc_dt_elem_i([ 0,4,[ 3,5 ] ],'Sociofoto_gxi',allownulls,no).
+ 

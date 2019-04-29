@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies type="guid" guid="952c1109-4b85-4b9f-90ca-debe66ce313b">
-  <Table name="ActividadSocioEnActividad" />
   <Table name="Socio" />
-  <Table name="Carne" />
+  <Table name="ClaseSocios" />
+  <Table name="Carnet" />
 </Dependencies>
