@@ -1,0 +1,12 @@
+body{
+    background-image: url("../imgs/cafe_libro2.jpg");
+    background-size: cover;
+}
+nav{
+    background-color:green 0.1;
+}
+.bloque{
+    margin-top:1%;
+    margin-left:1%;
+    width:45%;
+}
