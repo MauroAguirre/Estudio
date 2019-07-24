@@ -1,0 +1,107 @@
+Primer examen
+
+1.1
+2.2
+3.V
+4.3    
+5.3    
+6.4
+7.3
+8.2    aftercomplete es despues del commit
+9.1
+10.1    3
+11.V
+12.1    3
+13.2   
+14.F
+15.1
+16.V
+17.V
+18.2
+19.V
+20.1      2	para cargar valores en variables usamos load
+21.V
+22.1      3	se trabaja con kb local
+23.V
+
+Segundo examen
+
+1.2       1  busines component es para cambiar cosas a mano
+2.3
+3.1
+4.1
+5.3
+6.2
+7.1
+8.F
+9.1
+10.3
+11.2
+12.1
+13.V
+14.2
+15.1
+16.1
+17.V       f
+18.1	   2
+19.1       3
+20.2
+21.V
+22.F
+23.3
+24.F
+
+Tercer examen
+
+1.2
+2.1
+3.V
+4.4
+5.3
+6.2
+7.1
+8.F
+9.2
+10.1
+11.F    V
+12.F
+13.V    
+14.1    
+15.1    
+16.3    
+17.2    
+18.1
+19.2     
+20.V     
+21.3     
+22.4      
+23.1
+24.F
+25.V
+
+cuarto examen
+
+1.2  
+2.2    3
+3.F
+4.2   
+5.1
+6.2
+7.2
+8.V
+9.V
+10.2
+11.2   1
+12.2   3
+13.3   
+14.V   
+15.2   
+16.2  
+17.2
+18.V
+19.2
+20.2   1
+21.2
+22.2   1
+
+
