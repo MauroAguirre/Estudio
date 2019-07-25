@@ -1,0 +1,276 @@
+body{
+	background:black;
+	font-size:13px;
+	font-family:Georgia;
+	color:#560d0d;
+}
+input{
+	font-family : inherit;
+}
+input[type="text"]{
+	background:#f9fd50;
+	border-radius: 10px;
+	border-color:rgba(0, 0, 0, 0);
+}
+input[type="password"]{
+	background:#f9fd50;
+	border-radius: 10px;
+	border-color:rgba(0, 0, 0, 0);
+}
+select{
+	border-radius: 10px;
+}
+input[type="button"]{
+	background:#76a21e;
+	border-radius: 10px;
+	border-color:rgba(0, 0, 0, 0);
+}
+#pantalla{
+	background: #f3ff93;
+	height:550px;
+	width: 315px;
+	border: black 2px;
+	border-style: solid;
+	padding: 10px;
+}
+#negroDerecho{
+	left:345px;
+	top:0px;
+	height:600px;
+	width: 400px;
+	position: absolute;
+	background: black;
+}
+#negroIzquierdo{
+	left:0px;
+	top:0px;
+	height:600px;
+	width: 10px;
+	position: absolute;
+	background: black;
+}
+#negroArriba{
+	left:0px;
+	top:0px;
+	height:10px;
+	width: 400px;
+	position: absolute;
+	background: black;
+}
+#negroAbajo{
+	left:0px;
+	top:580px;
+	height:300px;
+	width: 400px;
+	position: absolute;
+	background: black;
+}
+img{
+	position: absolute;
+	height:142px;
+	width: 206px;
+	left:80px;
+	top:70px;
+}
+#txtUsu{
+	position: absolute;
+	height:27px;
+	width: 200px;
+	left:70px;
+	top:276px;
+}
+#pwdCon{
+	position: absolute;
+	height:27px;
+	width: 200px;
+	left:70px;
+	top:346px;
+}
+#btnIng{
+	position: absolute;
+	height:29px;
+	width: 200px;
+	left:70px;
+	top:416px;
+}
+#btnReg{
+	position: absolute;
+	height:29px;
+	width: 200px;
+	left:70px;
+	top:486px;
+}
+
+#MenuPrincipalDiv{
+	position: absolute;
+	left:350px;
+	top:40px;
+	background: #560d0d;
+	color:#c6cf65;
+	height:79px;
+	width: 289px;
+	border: rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+#MenuPrincipalP{
+	font-size: 24px;
+	text-align: center;
+}
+#btnClientes{
+	position: absolute;
+	left:365px;
+	top:180px;
+	width:219px;
+	height:66px;
+}
+#btnRuta{
+	position: absolute;
+	left:365px;
+	top:280px;
+	width:219px;
+	height:66px;
+}
+#btnPerfil{
+	position: absolute;
+	left:365px;
+	top:380px;
+	width:219px;
+	height:66px;
+}
+#btnNotificaciones{
+	position: absolute;
+	left:365px;
+	top:480px;
+	width:219px;
+	height:66px;
+}
+
+#PerfilDiv{
+	position: absolute;
+	left:350px;
+	top:40px;
+	background: #560d0d;
+	color:#c6cf65;
+	height:79px;
+	width: 289px;
+	border: rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+#PerfilP{
+	font-size: 24px;
+	text-align: center;
+}
+#PerfilBody{
+	position: absolute;
+	left:350px;
+	top:180px;
+	background: #560d0d;
+	color:#c6cf65;
+	height:360px;
+	width: 289px;
+	border: rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+#nombre{
+	position: absolute;
+	left:40px;
+	top:60px;
+	height:29px;
+	width: 200px;
+}
+#pago{
+	position: absolute;
+	left:40px;
+	top:120px;
+	height:29px;
+	width: 200px;
+}
+#horario{
+	position: absolute;
+	left:40px;
+	top:180px;
+	height:29px;
+	width: 200px;
+}
+#direccion{
+	position: absolute;
+	left:40px;
+	top:240px;
+	height:29px;
+	width: 200px;
+}
+#btnRege{
+	position: absolute;
+	left:40px;
+	top:300px;
+	height:29px;
+	width: 200px;
+}
+
+
+#Registrar{
+	position: absolute;
+	top:0px;
+	left:330px;
+}
+#RegistrarDiv{
+	position: absolute;
+	left:30px;
+	top:40px;
+	background: #560d0d;
+	color:#c6cf65;
+	height:79px;
+	width: 275px;
+	border: rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+#RegistrarP{
+	font-size: 24px;
+	text-align: center;
+}
+#RegistrarBody{
+	position: absolute;
+	left:30px;
+	top:180px;
+	background: #560d0d;
+	color:#c6cf65;
+	height:360px;
+	width: 275px;
+	border: rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+#usuario{
+	position: absolute;
+	left:40px;
+	top:60px;
+	height:29px;
+	width: 200px;
+}
+#contra{
+	position: absolute;
+	left:40px;
+	top:120px;
+	height:29px;
+	width: 200px;
+}
+#tip{
+	position: absolute;
+	left:40px;
+	top:180px;
+	height:29px;
+	width: 200px;
+}
+#btnRegi{
+	position: absolute;
+	left:40px;
+	top:240px;
+	height:29px;
+	width: 200px;
+}
+#btnSal{
+	position: absolute;
+	left:40px;
+	top:300px;
+	height:29px;
+	width: 200px;
+}
