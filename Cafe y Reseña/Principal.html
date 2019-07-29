@@ -1,43 +1,43 @@
 <html>
     <head>
         <title>Cafe y Reseña</title>
-		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="js/jquery3.4.1.js"></script>
 		<script type="text/javascript" src="js/program.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/estilo.css" type="text/css" rel="stylesheet"></link>
+        <link href="css/estilo.css" type="text/css" rel="stylesheet"></link>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Cafe y Reseña</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand">Cafe y Reseña</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" >
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Informacion <span class="sr-only">(current)</span></a>
+                        <input type="button" value="Reseñas" class="btn btnNav" id="IrReseñas"/>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reseñas</a>
+                        <input type="button" value="Buscar" class="btn btnNav"/>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <input type="button" value="Ingresar" class="btn btnNav" id="IrIngresar"/>
                     </li>
                 </ul>
-             </div>
+            </div>
         </nav>
-        <div class="bloque">
-            <h2>Don Figary</h2>
+        <div id="Reseñas" class="DivPrincipales">
+            <h2>Reseñas</h2>
+            <div class="bloque">
+            <h3>Laralaira</h3>
             <audio controls>
-                <source src="horse.ogg" type="audio/ogg">
-                <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
+                <source src="audios/Jorge drexler - Me haces bien.mp3" type="audio/mpeg">
             </audio> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, metus eget sagittis suscipit, d
                 olor eros tempus orci, molestie malesuada neque metus at erat. Cras cursus, sem id facilisis porttito
@@ -48,13 +48,45 @@
                 ehicula urna. Morbi iaculis volutpat tortor ut faucibus. Nam finibus tellus at sodales porta. Fusce
                  eu urna tristique, faucibus lectus ut, gravida urna. Proin porta ipsum lorem, ac dignissim ante e
                  uismod at. In sit amet ante quis eros eleifend maximus. </p>
-                 <p>Praesent sollicitudin eu leo id consectetur. Phasellus lorem nunc, ultrices eget faucibus sed, eff
-                        icitur in nisl. Cras nec tempus justo. Etiam malesuada leo tellus, eu suscipit augue dignissim se
-                        d. In porttitor tortor arcu. Ut vel maximus arcu. Proin ullamcorper, lacus sit amet luctus pretiu
-                        m, augue leo lobortis felis, eget accumsan arcu elit in odio. Cras lectus risus, molestie quis au
-                        ctor id, congue ac diam. Donec tempor et sapien ut eleifend. Integer nec condimentum tellus. Aliq
-                        uam a vulputate leo. </p>
+            <p>Praesent sollicitudin eu leo id consectetur. Phasellus lorem nunc, ultrices eget faucibus sed, eff
+                icitur in nisl. Cras nec tempus justo. Etiam malesuada leo tellus, eu suscipit augue dignissim se
+                d. In porttitor tortor arcu. Ut vel maximus arcu. Proin ullamcorper, lacus sit amet luctus pretiu
+                m, augue leo lobortis felis, eget accumsan arcu elit in odio. Cras lectus risus, molestie quis au
+                ctor id, congue ac diam. Donec tempor et sapien ut eleifend. Integer nec condimentum tellus. Aliq
+                uam a vulputate leo. </p>
+            </div>
+            <div class="bloque">
+                <h3>Don figary</h3>
+                <audio controls>
+                    <source src="audios/Jorge drexler - Al otro lado del rio.mp3" type="audio/mpeg">
+                </audio> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, metus eget sagittis suscipit, d
+                    olor eros tempus orci, molestie malesuada neque metus at erat. Cras cursus, sem id facilisis porttito
+                    r, mauris ipsum rhoncus mauris, vel varius est orci nec eros. Nulla laoreet tincidunt ex ut sollicitud
+                    in. Quisque bibendum venenatis quam, eget tincidunt nibh feugiat sed. Phasellus semper non nibh quis 
+                    semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+                    . Vivamus purus tellus, auctor vel purus a, gravida efficitur tortor. Nulla non commodo felis, at v
+                    ehicula urna. Morbi iaculis volutpat tortor ut faucibus. Nam finibus tellus at sodales porta. Fusce
+                    eu urna tristique, faucibus lectus ut, gravida urna. Proin porta ipsum lorem, ac dignissim ante e
+                    uismod at. In sit amet ante quis eros eleifend maximus. </p>
+                <p>Praesent sollicitudin eu leo id consectetur. Phasellus lorem nunc, ultrices eget faucibus sed, eff
+                    icitur in nisl. Cras nec tempus justo. Etiam malesuada leo tellus, eu suscipit augue dignissim se
+                    d. In porttitor tortor arcu. Ut vel maximus arcu. Proin ullamcorper, lacus sit amet luctus pretiu
+                    m, augue leo lobortis felis, eget accumsan arcu elit in odio. Cras lectus risus, molestie quis au
+                    ctor id, congue ac diam. Donec tempor et sapien ut eleifend. Integer nec condimentum tellus. Aliq
+                    uam a vulputate leo. </p>
+            </div>
         </div>
-        
+        <div id="Ingreso" class="DivPrincipales">
+            <div class="bloque">
+                <form>
+                    <label>Ingrese sus datos</label>
+                    <Input type="text" placeholder="Usuario" class="inputForm form-control"/>
+                    <input type="password" placeholder="Contraseña" class="inputForm form-control"/>
+                    <input type="button" value="Ingresar" class="btn"/>
+                    <input type="button" value="Registrar" class="btn"/>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

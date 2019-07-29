@@ -1,12 +1,31 @@
 body{
     background-image: url("../imgs/cafe_libro2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 nav{
-    background-color:green 0.1;
+    background-color: black 0.1;
+}
+a{
+    color: white;
 }
 .bloque{
     margin-top:1%;
     margin-left:1%;
     width:45%;
+}
+h2{
+    margin-left:1%;
+}
+.btnNav{
+    background-color:transparent;
+}
+.btnNav:hover {
+    color: white;
+}
+.inputForm{
+    display: block;
+    width: 60%;
+    margin-bottom:1%;
 }
